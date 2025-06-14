@@ -1,0 +1,117 @@
+import React from 'react';
+import Section from '../components/common/Section';
+import Button from '../components/common/Button';
+import siteContent from '../content/siteContent.json';
+
+const GetPaid: React.FC = () => {
+  return (
+    <div className="pt-24">
+      <Section className="pb-0" bgColor="bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="font-display text-hero text-4xl md:text-5xl text-secondary-dark mb-6">
+            {siteContent.getPaid.hero.headline}
+          </h1>
+          <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-8 text-center mx-auto">
+            {siteContent.getPaid.hero.description}
+          </p>
+          <img
+            src="/images/istockphoto-854067898-1024x1024.jpg"
+            alt="Get Paid Hero"
+            className="w-full h-43 object-cover rounded-2xl mx-auto"
+          />
+        </div>
+      </Section>
+
+      <div className="mt-6">
+        <div className="max-w-5xl mx-auto flex flex-col gap-y-7">
+          {/* First card: Keep More of What You Earn */}
+          {(() => {
+            const section = siteContent.getPaid.sections[0];
+            const imageSrc = '/images/01_Keep More of What You Earn.png';
+            return (
+              <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
+                <div className="md:w-1/2 w-full">
+                  <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl" />
+                </div>
+                <div className="md:w-1/2 w-full text-left">
+                  <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Middle two cards: Adapts to You & Reduce Risk by Building Trust */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7">
+            {[
+              siteContent.getPaid.sections[1],
+              siteContent.getPaid.sections[2],
+            ].map((section, idx) => {
+              let imageSrc = '';
+              if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_Adapts to You.png';
+              if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_Reduce Risk by Building Trust.png';
+              return (
+                <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mb-0'}`}>
+                  <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
+                  <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Fourth card: Convenience that Empowers */}
+          {(() => {
+            const section = siteContent.getPaid.sections[3];
+            const imageSrc = '/images/04_Convenience that Empowers.png';
+            return (
+              <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
+                <div className="md:w-1/2 w-full">
+                  <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl" />
+                </div>
+                <div className="md:w-1/2 w-full text-left">
+                  <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Fifth card: More Options for What You Do */}
+          {(() => {
+            const section = siteContent.getPaid.sections[4];
+            const imageSrc = '/images/05_More Options for What You Do.png';
+            return (
+              <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
+                <div className="md:w-1/2 w-full">
+                  <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl" />
+                </div>
+                <div className="md:w-1/2 w-full text-left">
+                  <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+      </div>
+
+      <div className="mt-24"></div>
+      <Section bgColor="bg-secondary-dark" className="relative overflow-hidden">
+        <div className="absolute right-0 bottom-0 w-64 h-64 bg-accent opacity-10 rounded-full transform translate-x-1/3 translate-y-1/3"></div>
+        <div className="absolute left-0 top-0 w-32 h-32 bg-accent opacity-10 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <h2 className="font-display text-cta-header text-3xl md:text-4xl mb-6 text-[#e6e9ed]">
+            {siteContent.getPaid.cta.header}
+          </h2>
+          <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
+            {siteContent.getPaid.cta.subhead}
+          </p>
+          <Button variant="primary" size="lg" className="text-primary">{siteContent.getPaid.cta.button}</Button>
+        </div>
+      </Section>
+    </div>
+  );
+};
+
+export default GetPaid;
