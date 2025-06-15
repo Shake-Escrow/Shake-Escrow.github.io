@@ -2,15 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Layout components
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
+import Navbar from './components/layout/navbar';
+import Footer from './components/layout/footer';
 
 // Pages
-import Home from './pages/Home';
-import HowItWorks from './pages/HowItWorks';
-import GetPaid from './pages/GetPaid';
-import SendPayments from './pages/SendPayments';
-import FAQ from './pages/FAQ';
+import Home from './pages/home';
+import HowItWorks from './pages/howitworks';
+import GetPaid from './pages/getpaid';
+import SendPayments from './pages/sendpayments';
+import FAQ from './pages/faq';
 
 function App() {
   return (
