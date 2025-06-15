@@ -12,29 +12,40 @@ const HowItWorks: React.FC = () => {
             {siteContent.howItWorks.hero.headline}
           </h1>
           <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-8 text-center mx-auto">
-            Shake uses an escrow which is like a safe that keeps the customer’s money secure while a business delivers a product or service.
+            Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.
           </p>
-          <img
-            src="/images/20250613_1616_Green-Illuminated-Safe_remix_01jxnj9zmzfpfad5a34czw0640.jpg"
-            alt="The Escrow Process"
-            className="w-full max-w-2xl h-80 object-cover rounded-2xl shadow-lg mx-auto mb-8"
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
           
-        </div>
-        <div className="max-w-3xl mx-auto text-center mt-16">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>
-            {siteContent.howItWorks.section1.headline}
-          </h2>
-          <p className="font-body text-lg text-secondary mb-8">
-            {siteContent.howItWorks.section1.description}
-          </p>
-          <img
-            src="/images/Safe-Payment-System-Diagram_V1.png"
-            alt="Safe Payment System Diagram"
-            className="mx-auto mb-8 rounded-xl"
-            style={{ maxWidth: '100%', height: 'auto' }}
-          />
+          {/* Image and Process Steps Side by Side */}
+          <div className="flex flex-col lg:flex-row items-start gap-8 mb-8 max-w-5xl mx-auto">
+            <div className="flex-shrink-0 lg:w-[65%]">
+              <img
+                src="/images/escrow-process-illustration.jpg"
+                alt="The Escrow Process - Customer and merchant transaction with secure escrow safe"
+                className="w-full h-auto object-cover rounded-2xl shadow-lg mx-auto"
+                style={{ maxHeight: '630px', objectPosition: 'center -78px' }}
+              />
+            </div>
+            
+            <div className="lg:w-[35%] text-left flex flex-col justify-center">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-secondary-dark mb-6">
+                The Escrow Process
+              </h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">1</span>
+                  <p className="font-body text-lg text-secondary">After making a transaction, your money is placed into an escrow for a set amount of time, which is like a neutral safe, rather than going directly to the merchant.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">2</span>
+                  <p className="font-body text-lg text-secondary">During this waiting period, if you don't receive what you purchased, you can discuss it with the merchant directly or request a refund.</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">3</span>
+                  <p className="font-body text-lg text-secondary">If you don't request a refund during the waiting period, the merchant can withdraw the money.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 

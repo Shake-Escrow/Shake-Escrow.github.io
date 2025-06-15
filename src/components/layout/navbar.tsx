@@ -33,9 +33,9 @@ const Navbar: React.FC = () => {
           onClick={closeMenu}
         >
           <img
-            src="/images/Shake-Logo_Horizontal_Color.png"
+            src="/images/shake-logo_horizontal_color.png"
             alt="Shake Logo"
-            className="h-8 w-auto"
+            className="h-9 w-auto"
           />
         </Link>
 

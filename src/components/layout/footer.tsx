@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-start">
           {/* First column: logo, tagline, disclaimer (left-aligned, col-span-2) */}
           <div className="lg:col-span-2 flex flex-col items-start space-y-2">
-            <img src="/images/Shake-Logo_Horizontal_Color.png" alt="Shake Logo" className="h-16 w-auto mb-2" />
+            <img src="/images/shake-logo_horizontal_color.png" alt="Shake Logo" className="h-16 w-auto mb-2" />
             <div className="font-semibold text-lg font-body text-[#2d3440] mb-1 whitespace-nowrap text-clip overflow-hidden">Enabling crypto’s usability for everyday transactions</div>
             <div className="text-small font-body text-[#2d3440] opacity-70 mt-1">Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.</div>
           </div>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 <li><a href="/get-paid" className="text-[#2d3440] hover:text-accent text-small font-body">Get Paid</a></li>
                 <li><a href="/send-payments" className="text-[#2d3440] hover:text-accent text-small font-body">Send Payments</a></li>
               </ul>
-              <Button size="sm" variant="primary" className="w-full mb-4">Download Shake</Button>
+              <Button size="sm" variant="primary" className="w-full mb-4">Download Coming Soon</Button>
             </div>
             <div>
               <div className="font-semibold text-base mb-2 mt-2">Contact Us</div>

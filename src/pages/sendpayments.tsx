@@ -19,9 +19,9 @@ const SendPayments: React.FC = () => {
             ))}
           </p>
           <img
-            src="/images/istockphoto-1913374153-1024x1024.jpg"
+            src="/images/BuyingCar.jpg"
             alt="Send Payments Hero"
-            className="w-full h-43 object-cover rounded-2xl mx-auto"
+            className="w-2/3 h-auto object-cover rounded-2xl mx-auto"
           />
         </div>
       </Section>
@@ -30,7 +30,7 @@ const SendPayments: React.FC = () => {
     {/* First card: Transactions That Matter */}
     {(() => {
       const section = siteContent.sendPayments.sections[0];
-      const imageSrc = '/images/01_Transactions That Matter.png';
+      const imageSrc = '/images/01_transactions that matter.png';
       return (
         <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-7">
           <div className="md:w-1/2 w-full">
@@ -51,8 +51,8 @@ const SendPayments: React.FC = () => {
         siteContent.sendPayments.sections[2],
       ].map((section, idx) => {
         let imageSrc = '';
-        if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_Level Up as a Sensible Spender.png';
-        if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_Freedom and Flexibility.png';
+        if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_level up as a sensible spender.png';
+        if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_freedom and flexibility.png';
         return (
           <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mb-0'}`}>
             <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
@@ -66,7 +66,7 @@ const SendPayments: React.FC = () => {
     {/* Fourth card: Accountable Where it Counts */}
     {(() => {
       const section = siteContent.sendPayments.sections[3];
-      const imageSrc = '/images/04_Accountable Where it Counts.png';
+      const imageSrc = '/images/04_accountable where it counts.png';
       return (
         <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-7">
           <div className="md:w-1/2 w-full">
@@ -83,7 +83,7 @@ const SendPayments: React.FC = () => {
     {/* Fifth card: Power Back to the People */}
     {(() => {
       const section = siteContent.sendPayments.sections[4];
-      const imageSrc = '/images/05_Power Back to the People.png';
+      const imageSrc = '/images/05_power back to the people.png';
       return (
         <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-7">
           <div className="md:w-1/2 w-full">

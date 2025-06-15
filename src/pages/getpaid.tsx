@@ -15,9 +15,9 @@ const GetPaid: React.FC = () => {
             {siteContent.getPaid.hero.description}
           </p>
           <img
-            src="/images/istockphoto-854067898-1024x1024.jpg"
+            src="/images/YogaSession.jpg"
             alt="Get Paid Hero"
-            className="w-full h-43 object-cover rounded-2xl mx-auto"
+            className="w-2/3 h-auto object-cover rounded-2xl mx-auto"
           />
         </div>
       </Section>
@@ -27,7 +27,7 @@ const GetPaid: React.FC = () => {
           {/* First card: Keep More of What You Earn */}
           {(() => {
             const section = siteContent.getPaid.sections[0];
-            const imageSrc = '/images/01_Keep More of What You Earn.png';
+            const imageSrc = '/images/01_keep more of what you earn.png';
             return (
               <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">
@@ -48,8 +48,8 @@ const GetPaid: React.FC = () => {
               siteContent.getPaid.sections[2],
             ].map((section, idx) => {
               let imageSrc = '';
-              if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_Adapts to You.png';
-              if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_Reduce Risk by Building Trust.png';
+              if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
+              if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
               return (
                 <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mb-0'}`}>
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
@@ -63,7 +63,7 @@ const GetPaid: React.FC = () => {
           {/* Fourth card: Convenience that Empowers */}
           {(() => {
             const section = siteContent.getPaid.sections[3];
-            const imageSrc = '/images/04_Convenience that Empowers.png';
+            const imageSrc = '/images/04_convenience that empowers.png';
             return (
               <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">
@@ -80,7 +80,7 @@ const GetPaid: React.FC = () => {
           {/* Fifth card: More Options for What You Do */}
           {(() => {
             const section = siteContent.getPaid.sections[4];
-            const imageSrc = '/images/05_More Options for What You Do.png';
+            const imageSrc = '/images/05_more options for what you do.png';
             return (
               <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">
