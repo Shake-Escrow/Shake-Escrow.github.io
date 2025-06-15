@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from '../components/sections/Hero';
-import Features from '../components/sections/Features';
-import HowToUse from '../components/sections/HowToUse';
-import BusinessCustomerCards from '../components/sections/BusinessCustomerCards';
+import Hero from '../components/sections/hero';
+import Features from '../components/sections/features';
+import HowToUse from '../components/sections/howtouse';
+import BusinessCustomerCards from '../components/sections/businesscustomercards';
 
 
 const Home: React.FC = () => {
