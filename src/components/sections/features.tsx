@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Zap, DollarSign, Sparkles } from 'lucide-react';
 import Section from '../common/section';
-import styles from './Features.module.css';
+import styles from './features.module.css';
 import siteContent from '../../content/sitecontent.json';
 
 interface FeatureProps {
