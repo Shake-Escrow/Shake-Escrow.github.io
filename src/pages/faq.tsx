@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Section from '../components/common/Section';
-import Button from '../components/common/Button';
-import siteContent from '../content/siteContent.json';
+import Section from '../components/common/section';
+import Button from '../components/common/button';
+import siteContent from '../content/sitecontent.json';
 import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 
 interface FAQItemProps {
