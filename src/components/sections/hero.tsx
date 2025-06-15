@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bitcoin } from 'lucide-react';
-import Button from '../common/Button';
-import siteContent from '../../content/siteContent.json';
+import Button from '../common/button';
+import siteContent from '../../content/sitecontent.json';
 
 
 const Hero: React.FC = () => {

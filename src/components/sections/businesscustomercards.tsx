@@ -1,7 +1,7 @@
 import React from 'react';
-import Section from '../common/Section';
-import Button from '../common/Button';
-import siteContent from '../../content/siteContent.json';
+import Section from '../common/section';
+import Button from '../common/button';
+import siteContent from '../../content/sitecontent.json';
 
 const BusinessCustomerCards: React.FC = () => {
   return (

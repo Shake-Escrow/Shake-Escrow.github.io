@@ -1,6 +1,6 @@
 import React from 'react';
 import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
-import Button from '../common/Button';
+import Button from '../common/button';
 
 const Footer: React.FC = () => {
   return (
