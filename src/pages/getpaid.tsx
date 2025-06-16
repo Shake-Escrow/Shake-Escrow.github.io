@@ -15,9 +15,9 @@ const GetPaid: React.FC = () => {
             {siteContent.getPaid.hero.description}
           </p>
           <img
-            src="/images/YogaSession.jpg"
+            src="/images/iStock-854067898.jpg"
             alt="Get Paid Hero"
-            className="w-2/3 h-auto object-cover rounded-2xl mx-auto"
+            className="w-full h-43 object-cover rounded-2xl mb-8 w-2/3 h-auto mx-auto"
           />
         </div>
       </Section>

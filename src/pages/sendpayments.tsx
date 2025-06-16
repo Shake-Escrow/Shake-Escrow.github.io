@@ -14,14 +14,12 @@ const SendPayments: React.FC = () => {
             ))}
           </h1>
           <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-8 text-center mx-auto">
-            {siteContent.sendPayments.hero.description.split('\n').map((line, idx) => (
-              <React.Fragment key={idx}>{line}{idx < siteContent.sendPayments.hero.description.split('\n').length - 1 && <br />}</React.Fragment>
-            ))}
+            {siteContent.sendPayments.hero.description}
           </p>
           <img
-            src="/images/BuyingCar.jpg"
+            src="/images/iStock-1913374153.jpg"
             alt="Send Payments Hero"
-            className="w-2/3 h-auto object-cover rounded-2xl mx-auto"
+            className="w-full h-43 object-cover rounded-2xl mb-8 w-2/3 h-auto mx-auto"
           />
         </div>
       </Section>

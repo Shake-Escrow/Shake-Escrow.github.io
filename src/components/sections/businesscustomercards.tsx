@@ -33,7 +33,7 @@ const BusinessCustomerCards: React.FC = () => {
           {/* Right: Image */}
           <div className="h-full w-full">
             <img 
-              src="/images/UrbanDogWalker.jpg" 
+              src="/images/iStock-1266980652.jpg" 
               alt="Business Bitcoin Solutions" 
               className="object-cover w-full h-full"
             />
@@ -64,7 +64,7 @@ const BusinessCustomerCards: React.FC = () => {
           {/* Right: Image */}
           <div className="h-full w-full">
             <img 
-              src="/images/BusinessmanKey.jpg" 
+              src="/images/iStock-1360028311.jpg" 
               alt="Customer Bitcoin Solutions" 
               className="object-cover w-full h-full"
             />
