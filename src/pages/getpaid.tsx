@@ -98,8 +98,6 @@ const GetPaid: React.FC = () => {
 
       <div className="mt-24"></div>
       <Section bgColor="bg-secondary-dark" className="relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 w-64 h-64 bg-accent opacity-10 rounded-full transform translate-x-1/3 translate-y-1/3"></div>
-        <div className="absolute left-0 top-0 w-32 h-32 bg-accent opacity-10 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="font-display text-cta-header text-3xl md:text-4xl mb-6 text-[#e6e9ed]">
             {siteContent.getPaid.cta.header}
