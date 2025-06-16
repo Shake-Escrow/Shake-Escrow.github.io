@@ -14,6 +14,9 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
+
+  // To use nav labels from JSON, add a "nav" section to sitecontent.json, e.g. nav: { home: "Home", ... }
+  // Then use: siteContent.nav.home, etc.
   const navItems = [
     { title: 'Home', path: '/' },
     { title: 'How it Works', path: '/how-it-works' },
@@ -46,11 +49,9 @@ const Navbar: React.FC = () => {
               key={item.path}
               to={item.path}
               className={
-              `font-medium text-base font-body text-[#2d3440] px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ` +
-              (location.pathname === item.path
-                ? 'bg-accent shadow-sm'
-                : 'hover:border-accent')
+              `font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ${location.pathname === item.path ? 'bg-accent shadow-sm' : 'hover:border-accent'}`
             }
+            style={{ fontFamily: 'Lexend, sans-serif' }}
             >
               {item.title}
             </Link>
@@ -68,20 +69,28 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       <div 
-        className={`md:hidden fixed inset-0 bg-secondary-dark z-40 transform transition-transform duration-300 ${
+        className={`md:hidden fixed inset-0 bg-secondary-dark z-50 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
+        <button
+          className="absolute top-6 right-6 text-white"
+          onClick={closeMenu}
+          aria-label="Close menu"
+        >
+          <X size={32} />
+        </button>
         <div className="flex flex-col items-center justify-center h-full space-y-8">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className={`font-medium text-xl font-body text-[#2d3440] ${
-                location.pathname === item.path 
-                  ? 'text-accent' 
-                  : 'hover:text-accent'
-              }`}
+              className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200`}
+              style={{
+                fontFamily: 'Lexend, sans-serif',
+                color: location.pathname === item.path ? '#c1e534' : '#d1d5db',
+                background: 'none',
+              }}
               onClick={closeMenu}
             >
               {item.title}
