@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../common/section';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
@@ -16,11 +17,11 @@ const BusinessCustomerCards: React.FC = () => {
             <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>
               {siteContent.home.businessCustomerCards.business.description}
             </p>
-            <a href="/get-paid">
+            <Link to="/get-paid">
               <Button size="md" variant="secondary" className="self-start rounded-full py-3 px-8 text-lg mb-4">
                 {siteContent.home.businessCustomerCards.business.button}
               </Button>
-            </a>
+            </Link>
             
           </div>
           {/* Right: Image */}
@@ -41,11 +42,11 @@ const BusinessCustomerCards: React.FC = () => {
             <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>
               {siteContent.home.businessCustomerCards.customer.description}
             </p>
-            <a href="/send-payments">
+            <Link to="/send-payments">
               <Button size="md" variant="secondary" className="self-start rounded-full py-3 px-8 text-lg mb-4">
                 {siteContent.home.businessCustomerCards.customer.button}
               </Button>
-            </a>
+            </Link>
             
           </div>
           {/* Right: Image */}
