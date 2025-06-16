@@ -27,21 +27,23 @@ const HowItWorks: React.FC = () => {
             </div>
             
             <div className="lg:w-[35%] text-left flex flex-col justify-center">
-              <h2 className="font-display text-2xl md:text-3xl font-bold text-secondary-dark mb-6">
-                The Escrow Process
+              <h2 className="font-display text-2xl md:text-3xl mb-6">
+                {siteContent.howItWorks.process.header}
               </h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">1</span>
-                  <p className="font-body text-lg text-secondary">After making a transaction, your money is placed into an escrow for a set amount of time, which is like a neutral safe, rather than going directly to the merchant.</p>
+                  <p className="font-body text-lg text-secondary">
+                    {siteContent.howItWorks.process.step1}
+                  </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">2</span>
-                  <p className="font-body text-lg text-secondary">During this waiting period, if you don't receive what you purchased, you can discuss it with the merchant directly or request a refund.</p>
+                  <p className="font-body text-lg text-secondary">{siteContent.howItWorks.process.step2}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="font-bold text-secondary bg-transparent border-2 border-secondary rounded-full w-8 h-8 flex items-center justify-center text-sm flex-shrink-0 mt-0.5">3</span>
-                  <p className="font-body text-lg text-secondary">If you don't request a refund during the waiting period, the merchant can withdraw the money.</p>
+                  <p className="font-body text-lg text-secondary">{siteContent.howItWorks.process.step3}</p>
                 </div>
               </div>
             </div>

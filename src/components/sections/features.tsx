@@ -17,7 +17,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description }) => {
         {/* Front Side */}
         <div className={styles.flipFront + ' flex flex-col items-center justify-center text-center p-8 rounded-xl shadow-sm'} style={{ background: '#2d3440', color: '#c1e534' }}>
           <div className="mb-6">{icon}</div>
-          <h3 className="text-2xl font-bold" style={{ color: '#e6e9ed', fontFamily: 'Lexend Deca, Arial, Helvetica, sans-serif' }}>{title.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < title.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+          <h3 className="text-2xl font-bold font-body text-[#e6e9ed]">{title.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < title.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
         </div>
         {/* Back Side */}
         <div className={styles.flipBack + ' flex items-center justify-center text-center p-8 rounded-xl shadow-xl'} style={{ background: '#2d3440', color: '#c1e534' }}>

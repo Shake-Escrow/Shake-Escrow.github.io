@@ -16,9 +16,9 @@ const Step: React.FC<StepProps> = ({ number, title, description }) => {
       </div>
       <div className="flex-1 text-center md:text-left max-w-4xl mx-auto md:mx-0">
         <div className="flex flex-col md:flex-row items-center mb-3 justify-center md:justify-start">
-          <h3 className="font-body text-xl font-bold text-secondary-dark mr-2" style={{letterSpacing: '-0.02em', fontFamily: 'Lexend Deca, sans-serif'}}>{title}</h3>
+          <h3 className="font-body text-xl font-bold text-secondary-dark mr-2" style={{letterSpacing: '-0.02em'}}>{title}</h3>
         </div>
-        <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{description}</p>
+        <p className="text-description mb-6 text-[#2d3440] opacity-90">{description}</p>
       </div>
     </div>
   );
@@ -35,7 +35,7 @@ const HowToUse: React.FC = () => {
     <Section id="how-to-use" bgColor="bg-[#e6e9ed]">
       <div className="text-center mb-12">
         <h2 className="font-display text-4xl md:text-5xl font-bold text-secondary-dark mb-6">{siteContent.home.howToUse.headline}</h2>
-        <p className="text-description mb-6 text-[#2d3440] opacity-90 max-w-2xl mx-auto" style={{fontFamily: 'Lexend Deca, sans-serif'}}>
+        <p className="text-description mb-6 text-[#2d3440] opacity-90 max-w-2xl mx-auto">
           {siteContent.home.howToUse.subhead}
         </p>
       </div>

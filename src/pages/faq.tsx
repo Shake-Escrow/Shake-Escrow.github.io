@@ -18,7 +18,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen 
         className="w-full flex justify-between items-center py-4 text-left"
         onClick={toggleOpen}
       >
-        <span className="font-body text-xl font-bold text-secondary-dark" style={{letterSpacing: '-0.02em', fontFamily: 'Lexend Deca, sans-serif'}}>{question}</span>
+        <span className="font-body text-xl font-bold text-secondary-dark" style={{letterSpacing: '-0.02em'}}>{question}</span>
         {isOpen ? (
           <ChevronUp size={20} className="text-accent" />
         ) : (

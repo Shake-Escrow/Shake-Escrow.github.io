@@ -13,8 +13,7 @@ const BusinessCustomerCards: React.FC = () => {
           {/* Left: Text */}
           <div className="bg-[#e6e9ed] relative min-h-[220px] px-8 sm:px-12 py-8">
   <div
-    className="md:absolute md:left-12 md:top-8 text-eyebrow tracking-widest uppercase z-10 mb-3 md:mb-0"
-    style={{ fontFamily: 'Lexend Exa, sans-serif', fontWeight: 500, letterSpacing: '0.08em', color: '#2d3440', position: 'static' }}
+    className="md:absolute md:left-12 md:top-8 text-eyebrow tracking-widest uppercase z-10 mb-3 md:mb-0 font-bold text-[#2d3440]"
   >
     {siteContent.home.businessCustomerCards.business.label}
   </div>
@@ -44,8 +43,7 @@ const BusinessCustomerCards: React.FC = () => {
           {/* Left: Text */}
           <div className="bg-[#e6e9ed] relative min-h-[220px] px-8 sm:px-12 py-8">
   <div
-    className="md:absolute md:left-12 md:top-8 text-eyebrow tracking-widest uppercase z-10 mb-3 md:mb-0"
-    style={{ fontFamily: 'Lexend Exa, sans-serif', fontWeight: 500, letterSpacing: '0.08em', color: '#2d3440', position: 'static' }}
+    className="md:absolute md:left-12 md:top-8 text-eyebrow tracking-widest uppercase z-10 mb-3 md:mb-0 font-bold text-[#2d3440]"
   >
     {siteContent.home.businessCustomerCards.customer.label}
   </div>

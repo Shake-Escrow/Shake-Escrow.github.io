@@ -35,7 +35,7 @@ const GetPaid: React.FC = () => {
                 </div>
                 <div className="md:w-1/2 w-full text-left">
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{section.description}</p>
                 </div>
               </div>
             );
@@ -54,7 +54,7 @@ const GetPaid: React.FC = () => {
                 <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-16 md:mt-0'}`}>
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{section.description}</p>
                 </div>
               );
             })}
@@ -71,7 +71,7 @@ const GetPaid: React.FC = () => {
                 </div>
                 <div className="md:w-1/2 w-full text-left">
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{section.description}</p>
                 </div>
               </div>
             );
@@ -88,7 +88,7 @@ const GetPaid: React.FC = () => {
                 </div>
                 <div className="md:w-1/2 w-full text-left">
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{section.description}</p>
                 </div>
               </div>
             );

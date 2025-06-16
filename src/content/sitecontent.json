@@ -76,6 +76,12 @@
       "header": "Ready to experience Shake?",
       "subhead": "Create your account today and join the movement to everyday crypto.",
       "button": "Download Coming Soon"
+    },
+    "process": {
+      "header": "The Escrow Process",
+      "step1": "After making a transaction, your money is placed into an escrow for a set amount of time, which is like a neutral safe, rather than going directly to the merchant.",
+      "step2": "During this waiting period, if you don't receive what you purchased, you can discuss it with the merchant directly or request a refund.",
+      "step3": "If you don't request a refund during the waiting period, the merchant can withdraw the money."
     }
   },
   "getPaid": {
@@ -143,6 +149,21 @@
       "subhead": "Create your account today and experience the future of crypto payments",
       "button": "Download Coming Soon"
     }
+  },
+  "footer": {
+    "tagline": "Enabling crypto’s usability for everyday transactions",
+    "disclaimer": "Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
+    "quickLinksLabel": "Quick Links",
+    "quickLinks": [
+      { "label": "Home", "url": "/" },
+      { "label": "How it Works", "url": "/how-it-works" },
+      { "label": "Get Paid", "url": "/get-paid" },
+      { "label": "Send Payments", "url": "/send-payments" }
+    ],
+    "button": "Download Coming Soon",
+    "contactLabel": "Contact Us",
+    "contactEmail": "matt.anderson@alumni.stanford.edu",
+    "copyright": "2025 Shake Defi, Inc."
   },
   "faq": {
     "headline": "Frequently Asked Questions",
