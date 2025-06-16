@@ -43,39 +43,22 @@ const GetPaid: React.FC = () => {
 
           {/* Middle two cards: Adapts to You & Reduce Risk by Building Trust */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7">
-  {[
-    siteContent.getPaid.sections[1],
-    siteContent.getPaid.sections[2],
-  ].map((section, idx) => {
-    let imageSrc = '';
-    if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
-    if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
-    // For mobile: reduce top margin between first and second card by half, restore after second
-    // idx 0: Adapts to You (top), idx 1: Reduce Risk by Building Trust (bottom)
-    // But order may be reversed; check accordingly
-    let mobileMargin = '';
-    if (idx === 1) {
-      // This is the second card (Reduce Risk by Building Trust)
-      mobileMargin = 'mt-4 md:mt-16'; // Half of mt-8 (default is mt-8 or mt-16)
-    } else {
-      mobileMargin = 'mt-0';
-    }
-    return (
-      <div
-        key={section.headline}
-        className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${mobileMargin}`}
-      >
-        <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
-        <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-        <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
-      </div>
-    );
-  })}
-</div>
-
-{/* Add a margin-top after the two-card grid for mobile, restoring original spacing before next card */}
-<div className="block md:hidden mt-8" />
-
+            {[
+              siteContent.getPaid.sections[1],
+              siteContent.getPaid.sections[2],
+            ].map((section, idx) => {
+              let imageSrc = '';
+              if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
+              if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
+              return (
+                <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-16 md:mt-0'}`}>
+                  <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
+                  <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
+                </div>
+              );
+            })}
+          </div>
 
           {/* Fourth card: Convenience that Empowers */}
           {(() => {
