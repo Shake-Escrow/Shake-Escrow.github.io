@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
 import Button from '../common/button';
 
@@ -22,10 +23,10 @@ const Footer: React.FC = () => {
             <div>
               <div className="font-semibold text-base font-body mb-2">Quick Links</div>
               <ul className="space-y-1 mb-3">
-                <li><a href="/" className="text-[#2d3440] hover:text-accent text-small font-body">Home</a></li>
-                <li><a href="/how-it-works" className="text-[#2d3440] hover:text-accent text-small font-body">How it Works</a></li>
-                <li><a href="/get-paid" className="text-[#2d3440] hover:text-accent text-small font-body">Get Paid</a></li>
-                <li><a href="/send-payments" className="text-[#2d3440] hover:text-accent text-small font-body">Send Payments</a></li>
+                <li><Link to="/" className="text-[#2d3440] hover:text-accent text-small font-body">Home</Link></li>
+                <li><Link to="/how-it-works" className="text-[#2d3440] hover:text-accent text-small font-body">How it Works</Link></li>
+                <li><Link to="/get-paid" className="text-[#2d3440] hover:text-accent text-small font-body">Get Paid</Link></li>
+                <li><Link to="/send-payments" className="text-[#2d3440] hover:text-accent text-small font-body">Send Payments</Link></li>
               </ul>
               <Button size="sm" variant="primary" className="w-full mb-4">Download Coming Soon</Button>
             </div>
