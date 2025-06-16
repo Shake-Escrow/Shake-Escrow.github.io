@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           {/* First column: logo, tagline, disclaimer (left-aligned, col-span-2) */}
           <div className="lg:col-span-2 flex flex-col items-start space-y-2">
             <img src="/images/shake-logo_horizontal_color.png" alt="Shake Logo" className="h-16 w-auto mb-2" />
-            <div className="font-semibold text-lg font-body text-[#2d3440] mb-1 max-w-full truncate overflow-ellipsis overflow-hidden">Enabling crypto’s usability for everyday transactions</div>
+            <div className="font-semibold text-lg font-body text-[#2d3440] mb-1 break-words text-center sm:text-left">Enabling crypto’s usability for everyday transactions</div>
             <div className="text-small font-body text-[#2d3440] opacity-70 mt-1">Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.</div>
           </div>
           {/* Second column: QR code, centered */}
