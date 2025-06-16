@@ -52,7 +52,7 @@ const SendPayments: React.FC = () => {
         if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_level up as a sensible spender.png';
         if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_freedom and flexibility.png';
         return (
-          <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl p-8 md:p-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mb-0'}`}>
+          <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl p-8 px-6 md:px-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-6 md:mt-0'}`}>
             <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
             <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
             <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>{section.description}</p>
