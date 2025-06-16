@@ -51,7 +51,7 @@ const GetPaid: React.FC = () => {
               if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
               if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
               return (
-                <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-16 md:mt-0'}`}>
+                <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-8 md:mt-0'}`}>
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
                   <p className="text-description mb-6 text-[#2d3440] opacity-90" >{section.description}</p>
@@ -65,7 +65,7 @@ const GetPaid: React.FC = () => {
             const section = siteContent.getPaid.sections[3];
             const imageSrc = '/images/04_convenience that empowers.png';
             return (
-              <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
+              <div className="mt-8 bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl" />
                 </div>
