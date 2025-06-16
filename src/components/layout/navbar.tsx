@@ -48,10 +48,7 @@ const Navbar: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={
-              `font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ${location.pathname === item.path ? 'bg-accent shadow-sm' : 'hover:border-accent'}`
-            }
-            style={{ fontFamily: 'Lexend Deca, Arial, Helvetica, sans-serif' }}
+              className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ${location.pathname === item.path ? 'bg-accent shadow-sm' : 'hover:border-accent'} font-body`}
             >
               {item.title}
             </Link>
@@ -85,12 +82,7 @@ const Navbar: React.FC = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200`}
-              style={{
-                fontFamily: 'Lexend Deca, Arial, Helvetica, sans-serif',
-                color: location.pathname === item.path ? '#c1e534' : '#d1d5db',
-                background: 'none',
-              }}
+              className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
               onClick={closeMenu}
             >
               {item.title}

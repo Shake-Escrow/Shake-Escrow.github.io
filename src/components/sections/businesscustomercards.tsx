@@ -18,9 +18,9 @@ const BusinessCustomerCards: React.FC = () => {
   >
     {siteContent.home.businessCustomerCards.business.label}
   </div>
-  <div className="flex flex-col justify-center h-full min-h-[180px]" style={{ minHeight: '180px' }}>
+  <div className="flex flex-col justify-center h-full min-h-[44px] md:min-h-[180px]">
     <h3 className="font-display text-cta-header text-3xl md:text-4xl mb-4 text-[#2d3440]">{siteContent.home.businessCustomerCards.business.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}<br/></React.Fragment>))}</h3>
-    <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>
+    <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">
       {siteContent.home.businessCustomerCards.business.description}
     </p>
     <Link to="/get-paid">
@@ -49,9 +49,9 @@ const BusinessCustomerCards: React.FC = () => {
   >
     {siteContent.home.businessCustomerCards.customer.label}
   </div>
-  <div className="flex flex-col justify-center h-full min-h-[180px]" style={{ minHeight: '180px' }}>
+  <div className="flex flex-col justify-center h-full min-h-[44px] md:min-h-[180px]">
     <h3 className="font-display text-cta-header text-3xl md:text-4xl mb-4 text-[#2d3440]">{siteContent.home.businessCustomerCards.customer.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}<br/></React.Fragment>))}</h3>
-    <p className="text-description mb-6 text-[#2d3440] opacity-90" style={{fontFamily: 'Lexend Deca, sans-serif'}}>
+    <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">
       {siteContent.home.businessCustomerCards.customer.description}
     </p>
     <Link to="/send-payments">
