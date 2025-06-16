@@ -44,22 +44,37 @@ const SendPayments: React.FC = () => {
 
     {/* Middle two cards: Level Up as a Sensible Spender & Freedom and Flexibility */}
     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7">
-      {[
-        siteContent.sendPayments.sections[1],
-        siteContent.sendPayments.sections[2],
-      ].map((section, idx) => {
-        let imageSrc = '';
-        if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_level up as a sensible spender.png';
-        if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_freedom and flexibility.png';
-        return (
-          <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-16 md:mt-0'}`}>
-            <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
-            <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-            <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">{section.description}</p>
-          </div>
-        );
-      })}
-    </div>
+  {[
+    siteContent.sendPayments.sections[1],
+    siteContent.sendPayments.sections[2],
+  ].map((section, idx) => {
+    let imageSrc = '';
+    if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_level up as a sensible spender.png';
+    if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_freedom and flexibility.png';
+    // For mobile: reduce top margin between first and second card by half, restore after second
+    let mobileMargin = '';
+    if (idx === 1) {
+      // This is the second card (Freedom and Flexibility)
+      mobileMargin = 'mt-4 md:mt-16'; // Half of mt-8 (default is mt-8 or mt-16)
+    } else {
+      mobileMargin = 'mt-0';
+    }
+    return (
+      <div
+        key={section.headline}
+        className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${mobileMargin}`}
+      >
+        <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
+        <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
+        <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">{section.description}</p>
+      </div>
+    );
+  })}
+</div>
+
+{/* Add a margin-top after the two-card grid for mobile, restoring original spacing before next card */}
+<div className="block md:hidden mt-8" />
+
 
     {/* Fourth card: Accountable Where it Counts */}
     {(() => {
