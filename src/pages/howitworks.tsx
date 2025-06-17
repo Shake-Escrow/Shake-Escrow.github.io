@@ -70,6 +70,9 @@ const HowItWorks: React.FC = () => {
                   alt="Example bike sale agreement with photos and terms"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
+                <p className="font-body text-lg md:text-xl text-secondary mt-3">
+                  AI supports goods OR services
+                </p>
               </div>
             </div>
           </div>
