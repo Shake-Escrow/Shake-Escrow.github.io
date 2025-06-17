@@ -48,6 +48,31 @@ const HowItWorks: React.FC = () => {
               </div>
             </div>
           </div>
+          
+          {/* Agreement Section */}
+          <div className="max-w-4xl mx-auto mt-12 text-center">
+            <p className="font-body text-lg md:text-xl text-secondary mb-8">
+              Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.
+            </p>
+            
+            {/* Screenshots */}
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
+              <div className="flex-1 max-w-sm">
+                <img
+                  src="/images/contract-approval-screen.jpg"
+                  alt="Contract approval screen showing AI generating agreement"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
+              <div className="flex-1 max-w-sm">
+                <img
+                  src="/images/bike-agreement-example.jpg"
+                  alt="Example bike sale agreement with photos and terms"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 
