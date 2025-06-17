@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
                 <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">
+                <a href="https://www.linkedin.com/in/matt-anderson-30463732/" className="text-[#2d3440] hover:text-accent transition-colors font-body" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={20} />
                 </a>
               </div>
