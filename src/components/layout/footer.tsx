@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 <a href={`mailto:${siteContent.footer.contactEmail}`} className="text-[#2d3440] hover:text-accent text-small font-body">{siteContent.footer.contactEmail}</a>
               </div>
               <div className="flex space-x-3 mt-2">
-                <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">
+                <a href="https://x.com/shakedefi" className="text-[#2d3440] hover:text-accent transition-colors font-body">
                   <Twitter size={20} />
                 </a>
                 <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">

@@ -112,7 +112,7 @@ const FAQ: React.FC = () => {
           <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
             {siteContent.faq.cta.subhead}
           </p>
-          <a href="mailto:matt.anderson@alumni.stanford.edu" style={{ textDecoration: 'none' }}>
+          <a href="mailto:matt@shakedefi.com" style={{ textDecoration: 'none' }}>
             <Button size="lg" variant="primary" className="rounded-full">
               {siteContent.faq.cta.button}
             </Button>

@@ -151,7 +151,7 @@
     }
   },
   "footer": {
-    "tagline": "Enabling crypto’s usability for everyday transactions",
+    "tagline": "Enabling crypto’s usability for real world transactions",
     "disclaimer": "Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
     "quickLinksLabel": "Quick Links",
     "quickLinks": [
@@ -162,7 +162,7 @@
     ],
     "button": "Download Coming Soon",
     "contactLabel": "Contact Us",
-    "contactEmail": "matt.anderson@alumni.stanford.edu",
+    "contactEmail": "matt@shakedefi.com",
     "copyright": "2025 Shake Defi, Inc."
   },
   "faq": {
