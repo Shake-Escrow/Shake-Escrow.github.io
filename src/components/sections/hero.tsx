@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
+                placeholder="Enter App Store Account email"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-body text-base"
                 disabled={isSubmitted}
               />
@@ -114,8 +114,8 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                onClick={handleSubmit}
-                disabled={!isFormValid || isSubmitted || isLoading}
+                onClick={isFormValid ? handleSubmit : () => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                disabled={isSubmitted || isLoading}
               >
                 {isSubmitted ? 'Success!' : isFormValid ? 'Submit' : siteContent.home.hero.button}
               </Button>

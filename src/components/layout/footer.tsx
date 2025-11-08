@@ -30,7 +30,9 @@ const Footer: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <Button size="sm" variant="primary" className="w-full mb-4">{siteContent.footer.button}</Button>
+              <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <Button size="sm" variant="primary" className="w-full mb-4">{siteContent.footer.button}</Button>
+              </Link>
             </div>
             <div>
               <div className="font-semibold text-base mb-2 mt-2">{siteContent.footer.contactLabel}</div>

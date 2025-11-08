@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
 import siteContent from '../content/sitecontent.json';
@@ -105,7 +106,9 @@ const GetPaid: React.FC = () => {
           <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
             {siteContent.getPaid.cta.subhead}
           </p>
-          <Button variant="primary" size="lg" className="text-primary">{siteContent.getPaid.cta.button}</Button>
+          <Link to="/">
+            <Button variant="primary" size="lg" className="text-primary">{siteContent.getPaid.cta.button}</Button>
+          </Link>
         </div>
       </Section>
     </div>

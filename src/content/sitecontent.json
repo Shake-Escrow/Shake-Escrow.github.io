@@ -4,7 +4,7 @@
       "headline": "The everyday crypto payment platform",
       "subhead": "Shake is a payment platform that makes cryptocurrency reliable and safe for everyday use, from daily purchases to big transfers.",
       "pill": "Bitcoin for everyone",
-      "button": "Download Coming Soon"
+      "button": "Android beta available now"
     },
     "features": {
       "headline": "Supercharge Your Payment\nwith Refundable Escrow",
@@ -75,7 +75,7 @@
     "cta": {
       "header": "Ready to experience Shake?",
       "subhead": "Create your account today and join the movement to everyday crypto.",
-      "button": "Download Coming Soon"
+      "button": "Android beta available now"
     },
     "process": {
       "header": "The Escrow Process",
@@ -114,7 +114,7 @@
     "cta": {
       "header": "Ready to get paid with Shake?",
       "subhead": "Create your account today and experience the future of crypto payments",
-      "button": "Download Coming Soon"
+      "button": "Android beta available now"
     }
   },
   "sendPayments": {
@@ -147,7 +147,7 @@
     "cta": {
       "header": "Ready to start paying with Shake?",
       "subhead": "Create your account today and experience the future of crypto payments",
-      "button": "Download Coming Soon"
+      "button": "Android beta available now"
     }
   },
   "footer": {
@@ -160,7 +160,7 @@
       { "label": "Get Paid", "url": "/get-paid" },
       { "label": "Send Payments", "url": "/send-payments" }
     ],
-    "button": "Download Coming Soon",
+    "button": "Android beta available now",
     "contactLabel": "Contact Us",
     "contactEmail": "matt@shakedefi.com",
     "copyright": "2025 Shake Defi, Inc."
@@ -200,4 +200,3 @@
     }
   }
 }
-

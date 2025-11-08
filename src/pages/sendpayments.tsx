@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
 import siteContent from '../content/sitecontent.json';
@@ -105,9 +106,11 @@ const SendPayments: React.FC = () => {
           <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
             {siteContent.sendPayments.cta.subhead}
           </p>
-          <Button size="lg" variant="primary" className="rounded-full">
-            {siteContent.sendPayments.cta.button}
-          </Button>
+          <Link to="/">
+            <Button size="lg" variant="primary" className="rounded-full">
+              {siteContent.sendPayments.cta.button}
+            </Button>
+          </Link>
         </div>
       </Section>
     </div>
