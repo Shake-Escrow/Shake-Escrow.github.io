@@ -106,7 +106,10 @@ const GetPaid: React.FC = () => {
           <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
             {siteContent.getPaid.cta.subhead}
           </p>
-          <Link to="/">
+          <Link 
+            to="/"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <Button variant="primary" size="lg" className="text-primary">{siteContent.getPaid.cta.button}</Button>
           </Link>
         </div>

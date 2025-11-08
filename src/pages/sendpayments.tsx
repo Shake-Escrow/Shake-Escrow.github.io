@@ -106,7 +106,10 @@ const SendPayments: React.FC = () => {
           <p className="font-body text-description text-xl mb-8 text-[#e6e9ed]">
             {siteContent.sendPayments.cta.subhead}
           </p>
-          <Link to="/">
+          <Link 
+            to="/"
+            onClick={() => window.scrollTo(0, 0)}
+          >
             <Button size="lg" variant="primary" className="rounded-full">
               {siteContent.sendPayments.cta.button}
             </Button>
