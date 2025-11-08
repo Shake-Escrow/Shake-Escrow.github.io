@@ -1,10 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Bitcoin } from 'lucide-react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 
 
 const Hero: React.FC = () => {
+  const [email, setEmail] = useState('');
+  const [isAndroid, setIsAndroid] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async () => {
+    if (!email || (!isAndroid && !isIOS)) return;
+
+    setIsLoading(true);
+    
+    try {
+      const response = await fetch('https://shake-hub-eeg4gtecepcfepcm.canadacentral-01.azurewebsites.net/api/beta-signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          is_ios: isIOS,
+          is_android: isAndroid
+        })
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setIsSubmitted(true);
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setEmail('');
+          setIsAndroid(false);
+          setIsIOS(false);
+        }, 3000);
+      } else {
+        console.error('Error:', data.error);
+        alert('There was an error submitting your information. Please try again.');
+      }
+    } catch (error) {
+      console.error('Network error:', error);
+      alert('There was an error submitting your information. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const isFormValid = email.trim() !== '' && (isAndroid || isIOS);
+
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
       <div className="container mx-auto px-6">
@@ -22,9 +71,53 @@ const Hero: React.FC = () => {
               {siteContent.home.hero.subhead}
             </p>
             
+            {/* Beta Signup Form */}
+            <div className="space-y-4 max-w-md mx-auto lg:mx-0">
+              <h3 className="font-display text-xl md:text-2xl text-secondary-dark">
+                Sign up for the beta
+              </h3>
+              
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-body text-base"
+                disabled={isSubmitted}
+              />
+              
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={isAndroid}
+                    onChange={(e) => setIsAndroid(e.target.checked)}
+                    className="w-5 h-5 text-accent border-gray-300 rounded focus:ring-accent cursor-pointer"
+                    disabled={isSubmitted}
+                  />
+                  <span className="font-body text-base text-secondary-dark">Android</span>
+                </label>
+                
+                <label className="flex items-center space-x-2 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={isIOS}
+                    onChange={(e) => setIsIOS(e.target.checked)}
+                    className="w-5 h-5 text-accent border-gray-300 rounded focus:ring-accent cursor-pointer"
+                    disabled={isSubmitted}
+                  />
+                  <span className="font-body text-base text-secondary-dark">iOS</span>
+                </label>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button size="lg">
-                {siteContent.home.hero.button}
+              <Button 
+                size="lg" 
+                onClick={handleSubmit}
+                disabled={!isFormValid || isSubmitted || isLoading}
+              >
+                {isSubmitted ? 'Success!' : isFormValid ? 'Submit' : siteContent.home.hero.button}
               </Button>
             </div>
           </div>
