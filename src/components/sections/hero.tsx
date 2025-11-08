@@ -16,6 +16,22 @@ const Hero: React.FC = () => {
 
     setIsLoading(true);
     
+    // Determine the boolean value based on checkbox selection
+    let platformBoolean: boolean | null;
+    if (isAndroid && isIOS) {
+      // Both checked
+      platformBoolean = null;
+    } else if (!isAndroid && !isIOS) {
+      // None checked
+      platformBoolean = null;
+    } else if (isIOS) {
+      // Only iOS checked
+      platformBoolean = true;
+    } else {
+      // Only Android checked
+      platformBoolean = false;
+    }
+    
     try {
       const response = await fetch('https://shake-hub-eeg4gtecepcfepcm.canadacentral-01.azurewebsites.net/api/beta-signup', {
         method: 'POST',
@@ -24,8 +40,7 @@ const Hero: React.FC = () => {
         },
         body: JSON.stringify({
           email: email,
-          is_ios: isIOS,
-          is_android: isAndroid
+          platform: platformBoolean
         })
       });
       
