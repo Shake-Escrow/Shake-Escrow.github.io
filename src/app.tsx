@@ -11,6 +11,7 @@ import HowItWorks from './pages/howitworks';
 import GetPaid from './pages/getpaid';
 import SendPayments from './pages/sendpayments';
 import FAQ from './pages/faq';
+import PrivacyPolicy from './pages/privacy-policy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/get-paid" element={<GetPaid />} />
             <Route path="/send-payments" element={<SendPayments />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
