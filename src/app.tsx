@@ -14,8 +14,12 @@ import FAQ from './pages/faq';
 import PrivacyPolicy from './pages/privacy-policy';
 
 function App() {
+  // For user pages (username.github.io), basename is always '/'
+  // No conditional needed, but keeping the pattern for clarity
+  const basename = '/';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="flex flex-col min-h-screen bg-white">
         <Navbar />
         <main className="flex-grow">
