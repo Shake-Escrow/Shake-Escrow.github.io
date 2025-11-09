@@ -2,6 +2,25 @@ import React from 'react';
 import Section from '../components/common/section';
 import privacyPolicyData from '../content/privacy.json';
 
+// Type definitions for the privacy policy data structure
+interface Subsection {
+  subtitle: string;
+  content: string;
+}
+
+interface PolicySection {
+  title: string;
+  content?: string;
+  subsections?: Subsection[];
+}
+
+interface PrivacyPolicyData {
+  lastUpdated: string;
+  effectiveDate: string;
+  companyName: string;
+  sections: PolicySection[];
+}
+
 const PrivacyPolicy: React.FC = () => {
   return (
     <div className="pt-20">
@@ -22,7 +41,8 @@ const PrivacyPolicy: React.FC = () => {
 
 // Component to render the privacy policy content from JSON
 const PrivacyPolicyContent: React.FC = () => {
-  const { lastUpdated, effectiveDate, companyName, sections } = privacyPolicyData;
+  const data = privacyPolicyData as PrivacyPolicyData;
+  const { lastUpdated, effectiveDate, companyName, sections } = data;
   
   return (
     <>
@@ -37,7 +57,7 @@ const PrivacyPolicyContent: React.FC = () => {
         <hr className="my-6 border-gray-300" />
       </div>
       
-      {sections.map((section, index) => (
+      {sections.map((section: PolicySection, index: number) => (
         <div key={index} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
             {index + 1}. {section.title}
@@ -45,7 +65,7 @@ const PrivacyPolicyContent: React.FC = () => {
           
           {section.subsections ? (
             // Render subsections if they exist
-            section.subsections.map((subsection, subIndex) => (
+            section.subsections.map((subsection: Subsection, subIndex: number) => (
               <div key={subIndex} className="mb-6">
                 <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
                   {index + 1}.{subIndex + 1} {subsection.subtitle}
@@ -58,10 +78,12 @@ const PrivacyPolicyContent: React.FC = () => {
             ))
           ) : (
             // Render main content if no subsections
-            <div 
-              className="text-base text-gray-700 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: section.content }}
-            />
+            section.content && (
+              <div 
+                className="text-base text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: section.content }}
+              />
+            )
           )}
         </div>
       ))}
