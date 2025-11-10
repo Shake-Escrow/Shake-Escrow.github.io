@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           </div>
           {/* Second column: QR code, centered */}
           <div className="lg:col-span-1 flex justify-center items-center">
-            <img src="/images/qr-temp.png" alt="Shake QR Code" className="w-full max-w-xs h-auto aspect-square object-contain mx-auto" />
+            <img src="/images/qr-android.png" alt="Shake QR Code" className="w-full max-w-xs h-auto aspect-square object-contain mx-auto" />
           </div>
           {/* Third column: Quick Links, button, contact, socials */}
           <div className="lg:col-span-1 flex flex-col items-start space-y-3">

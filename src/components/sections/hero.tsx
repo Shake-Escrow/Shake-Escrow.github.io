@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Bitcoin } from 'lucide-react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 
@@ -33,7 +32,7 @@ const Hero: React.FC = () => {
     }
     
     try {
-      const response = await fetch('https://shake-hub-eeg4gtecepcfepcm.canadacentral-01.azurewebsites.net/api/beta-signup', {
+      const response = await fetch(import.meta.env.VITE_API_ENDPOINT || '', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -141,7 +140,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-accent to-primary-light opacity-30 rounded-full blur-lg animate-pulse-slow"></div>
               <img 
-                src="/images/qr-temp.png"
+                src="/images/qr-android.png"
                 alt="Shake QR Code"
                 width={280}
                 height={280}
