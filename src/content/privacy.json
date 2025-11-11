@@ -37,7 +37,7 @@
         },
         {
           "subtitle": "Dispute Resolution",
-          "content": "Facial images and transaction information are used exclusively for dispute resolution purposes. If a dispute arises regarding a transaction:\n\n<ul>\n<li>The facial image captured during signature may be shared <strong>only</strong> with the parties directly involved in the specific dispute</li>\n<li>The image will be used to verify the identity of the signing party</li>\n<li>No other personal information will be shared except as necessary to resolve the dispute</li>\n</ul>"
+          "content": "Facial images, photographs, text descriptions, User statements, and transaction information are used exclusively for dispute resolution purposes. If a dispute arises regarding a transaction:\n\n<ul>\n<li>The facial image and other evidence captured during the transaction may be shared <strong>only</strong> with the parties directly involved in the specific dispute</li>\n<li>The evidence will be used to verify the identity of the signing party and support dispute resolution</li>\n<li>No other personal information will be shared except as necessary to resolve the dispute</li>\n</ul>"
         },
         {
           "subtitle": "Customer Support and Service Improvement",
@@ -78,8 +78,8 @@
           "content": "We take your privacy seriously. We will <strong>never</strong> share your personal information, including:\n\n<ul>\n<li>Home or business addresses</li>\n<li>Email addresses</li>\n<li>Facial images</li>\n<li>Phone numbers</li>\n<li>Transaction details</li>\n</ul>\n\n...with third parties <strong>except</strong> as specifically described in this Privacy Policy."
         },
         {
-          "subtitle": "Dispute Resolution Sharing",
-          "content": "<strong>Limited Disclosure:</strong> In the event of a transaction dispute, we may share relevant information, including facial images, <strong>only</strong> with:\n\n<ul>\n<li>The other party or parties directly involved in the disputed transaction</li>\n<li>Legal representatives of the parties, if applicable</li>\n<li>Arbitrators or mediators involved in resolving the dispute</li>\n</ul>\n\n<strong>No Other Sharing:</strong> Facial images and personal information will not be shared with any other third parties for dispute resolution purposes."
+          "subtitle": "Transaction Disputes",
+          "content": "<strong>Limited Disclosure:</strong> In the event of a transaction dispute, we may share relevant information with involved parties to facilitate resolution. This may include facial images, photographs, text descriptions, and User statements provided as evidence <strong>only</strong> with:\n\n<ul>\n<li>The other party or parties directly involved in the disputed transaction</li>\n<li>Legal representatives of the parties, if applicable</li>\n<li>Arbitrators or mediators involved in resolving the dispute</li>\n</ul>\n\n<strong>No Other Sharing:</strong> Facial images, photographs, text descriptions, User statements, and personal information will not be shared with any other third parties for dispute resolution purposes."
         },
         {
           "subtitle": "Third-Party Service Providers",
