@@ -1,6 +1,34 @@
 import React from 'react';
 import tosContent from '../content/tos.json';
 
+// Type definitions
+interface Definition {
+  term: string;
+  definition: string;
+}
+
+interface Subsection {
+  id: string;
+  title: string;
+  content?: string;
+  list?: string[];
+  definitions?: Definition[];
+}
+
+interface Contact {
+  company: string;
+  email: string;
+  address: string;
+}
+
+interface Section {
+  id: string;
+  title: string;
+  content?: string;
+  subsections?: Subsection[];
+  contact?: Contact;
+}
+
 const TermsOfService: React.FC = () => {
   return (
     <div className="min-h-screen bg-white py-16 px-6">
@@ -28,7 +56,7 @@ const TermsOfService: React.FC = () => {
 
           {/* Sections */}
           <div className="space-y-12">
-            {tosContent.sections.map((section) => (
+            {(tosContent.sections as Section[]).map((section: Section) => (
               <div key={section.id} className="space-y-4">
                 <h2 className="text-2xl font-display font-black text-[#2d3440]">
                   {section.title}
@@ -42,7 +70,7 @@ const TermsOfService: React.FC = () => {
 
                 {section.subsections && (
                   <div className="space-y-6 ml-4">
-                    {section.subsections.map((subsection) => (
+                    {section.subsections.map((subsection: Subsection) => (
                       <div key={subsection.id} className="space-y-3">
                         <h3 className="text-xl font-display font-black text-[#2d3440]">
                           {subsection.title}
@@ -56,7 +84,7 @@ const TermsOfService: React.FC = () => {
 
                         {subsection.list && (
                           <ul className="list-disc list-inside space-y-2 ml-4">
-                            {subsection.list.map((item, idx) => (
+                            {subsection.list.map((item: string, idx: number) => (
                               <li key={idx} className="text-base font-body text-[#2d3440] leading-relaxed">
                                 {item}
                               </li>
@@ -66,7 +94,7 @@ const TermsOfService: React.FC = () => {
 
                         {subsection.definitions && (
                           <div className="space-y-3">
-                            {subsection.definitions.map((def, idx) => (
+                            {subsection.definitions.map((def: Definition, idx: number) => (
                               <div key={idx} className="ml-4">
                                 <span className="font-semibold font-body text-[#2d3440]">
                                   "{def.term}"
