@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:full": "npm run build && npm run generate-privacy",
-    "deploy": "npm run build:full && rm -rf * && cp -r dist/* . ",
+    "deploy": "npm run build:full && node scripts/deploy.js",
     "generate-privacy": "tsx scripts/generate-privacy-html.ts",
     "lint": "eslint .",
     "preview": "vite preview"
