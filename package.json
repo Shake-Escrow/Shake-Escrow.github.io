@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node -e \"const fs=require('fs-extra');fs.existsSync('index.source.html')&&fs.copySync('index.source.html','index.html')\"",
     "build": "vite build",
     "build:full": "npm run build && npm run generate-privacy",
     "deploy": "npm run build:full && node scripts/deploy.js",

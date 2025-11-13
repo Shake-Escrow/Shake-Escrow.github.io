@@ -7,9 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  build: {
-    rollupOptions: {
-      input: 'index.source.html',
-    },
-  },
+  // Remove custom input - Vite will use index.html by default
 });

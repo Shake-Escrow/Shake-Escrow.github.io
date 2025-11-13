@@ -12,13 +12,13 @@ const rootIndexPath = path.join(rootDir, 'index.html');
 async function deploy() {
   console.log('🚀 Starting deployment...');
 
-  // Step 1: Backup source index.html if it exists and is the source version
-  if (fs.existsSync(rootIndexPath)) {
-    const content = fs.readFileSync(rootIndexPath, 'utf-8');
-    if (content.includes('/src/main.tsx')) {
-      console.log('💾 Backing up source index.html...');
-      fs.copySync(rootIndexPath, sourceIndexPath);
-    }
+  // Step 1: Always restore index.html from index.source.html before building
+  if (fs.existsSync(sourceIndexPath)) {
+    console.log('📄 Restoring index.html from index.source.html...');
+    fs.copySync(sourceIndexPath, rootIndexPath);
+  } else {
+    console.error('❌ Error: index.source.html not found. This is your source file.');
+    process.exit(1);
   }
 
   // Step 2: Verify dist folder exists
@@ -35,7 +35,7 @@ async function deploy() {
     'node_modules',
     '.git',
     '.gitignore',
-    'index.source.html',  // Source HTML is safe here
+    'index.source.html',  // Preserve the clean source
     'package.json',
     'package-lock.json',
     'vite.config.ts',
@@ -75,8 +75,8 @@ async function deploy() {
   console.log('✅ Deployment complete!');
   console.log('');
   console.log('📂 Your repository now has:');
-  console.log('   ✓ index.source.html - Source version (for builds)');
-  console.log('   ✓ index.html - Built version (for GitHub Pages)');
+  console.log('   ✓ index.source.html - Clean source version (never modified)');
+  console.log('   ✓ index.html - Built version with hashed assets (for GitHub Pages)');
   console.log('   ✓ assets/ - Hashed JS/CSS files');
   console.log('');
   console.log('📝 Next steps:');
