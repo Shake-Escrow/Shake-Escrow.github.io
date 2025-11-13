@@ -1,0 +1,325 @@
+{
+  "title": "Terms of Service",
+  "company": "Shake Defi, Inc.",
+  "lastUpdated": "November 12, 2025",
+  "introduction": "These Terms of Service (\"Terms\") constitute a legally binding agreement between you (\"User,\" \"you,\" or \"your\") and Shake Defi, Inc. (\"Company,\" \"we,\" \"us,\" or \"our\") governing your use of our mobile application (the \"App\") and related services (collectively, the \"Services\"). These Terms work in conjunction with our End User License Agreement (\"EULA\") and together form the complete agreement governing your use of our Services.",
+  "sections": [
+    {
+      "id": "acceptance",
+      "title": "1. Acceptance of Terms and Definitions",
+      "subsections": [
+        {
+          "id": "agreement",
+          "title": "1.1 Agreement to Terms",
+          "content": "By accessing, downloading, or using the App or Services, you acknowledge that you have read, understood, and agree to be bound by these Terms, our EULA, and our Privacy Policy. If you do not agree to these Terms, you may not access or use the Services."
+        },
+        {
+          "id": "definitions",
+          "title": "1.2 Definitions",
+          "content": "For purposes of these Terms, the following definitions apply:",
+          "definitions": [
+            {
+              "term": "User",
+              "definition": "means any person who creates an account and uses the Services, whether as a Merchant or Client."
+            },
+            {
+              "term": "Merchant",
+              "definition": "(also referred to as \"Seller\") means a User who offers goods or services for sale through the App and creates Agreements for transactions."
+            },
+            {
+              "term": "Client",
+              "definition": "(also referred to as \"Buyer\") means a User who purchases goods or services from a Merchant through the App and agrees to pay according to the terms of an Agreement."
+            },
+            {
+              "term": "Agreement",
+              "definition": "(also referred to as \"Mini Contract\") means the digital contract created by a Merchant that specifies the goods or services to be exchanged, the payment amount, the Payment Holding Period, and any other relevant transaction terms. Each Agreement is digitally signed by both the Merchant and the Client."
+            },
+            {
+              "term": "Payment Holding Period",
+              "definition": "means the period of time, specified in the Agreement by the Merchant, during which payment funds are held in escrow by the Smart Contract before being released to the Merchant. This period may range from zero (0) to any reasonable duration as permitted by the App."
+            },
+            {
+              "term": "Smart Contract",
+              "definition": "means the autonomous, self-executing blockchain-based program that holds Client funds in escrow during the Payment Holding Period and executes the release or refund of funds according to its predetermined logic and any authorized instructions from the Company."
+            },
+            {
+              "term": "Instant Transaction",
+              "definition": "means a transaction where the Payment Holding Period is set to zero (0), resulting in immediate transfer of funds to the Merchant without escrow functionality."
+            },
+            {
+              "term": "Dispute",
+              "definition": "means a formal claim initiated by a Client during the Payment Holding Period alleging that the Merchant has failed to fulfill the terms of the Agreement."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "user-roles",
+      "title": "2. User Roles and Responsibilities",
+      "subsections": [
+        {
+          "id": "dual-capacity",
+          "title": "2.1 Dual User Capacity",
+          "content": "Users may act as both Merchants and Clients at different times. Regardless of role, all Users are bound by these Terms and remain responsible for fulfilling all obligations arising from any Agreements they enter into through the Services."
+        },
+        {
+          "id": "merchant-responsibilities",
+          "title": "2.2 Merchant Responsibilities",
+          "content": "As a Merchant, you agree to:",
+          "list": [
+            "Create clear, accurate, and complete Agreements that truthfully describe the goods or services you are offering",
+            "Deliver all goods or perform all services exactly as described in each Agreement you create and sign",
+            "Fulfill your obligations within the timeframes specified or reasonably implied in the Agreement",
+            "Respond promptly and professionally to Client inquiries and concerns",
+            "Cooperate fully in the event of a Dispute, including providing all requested evidence and documentation",
+            "Maintain sufficient inventory or capacity to fulfill your obligations under active Agreements",
+            "Not create Agreements with false, misleading, or deceptive information",
+            "Set reasonable Payment Holding Periods that align with the nature of the goods or services being provided"
+          ]
+        },
+        {
+          "id": "client-responsibilities",
+          "title": "2.3 Client Responsibilities",
+          "content": "As a Client, you agree to:",
+          "list": [
+            "Carefully review all terms of an Agreement before signing, including the description of goods or services, payment amount, and Payment Holding Period",
+            "Pay the agreed-upon amount promptly after signing an Agreement",
+            "Accept delivery of goods or services as specified in the Agreement",
+            "Only initiate Disputes when you have a legitimate, good-faith basis for believing the Merchant has not fulfilled the Agreement",
+            "Provide truthful and complete information when initiating a Dispute",
+            "Cooperate fully during the dispute resolution process",
+            "Not abuse the dispute process to obtain goods or services without proper payment"
+          ]
+        },
+        {
+          "id": "general-conduct",
+          "title": "2.4 General User Conduct",
+          "content": "All Users, whether acting as Merchants or Clients, agree to:",
+          "list": [
+            "Act in good faith and deal fairly with other Users",
+            "Honor all Agreements they sign through the Services",
+            "Not use the Services for any illegal, fraudulent, or unauthorized purpose",
+            "Not engage in any conduct that could damage, disable, or impair the Services",
+            "Comply with all applicable laws and regulations",
+            "Not impersonate another person or entity",
+            "Not harass, threaten, or abuse other Users"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transaction-process",
+      "title": "3. Transaction Process and Agreements",
+      "content": "Details about creating agreements, payment processes, and escrow transactions including instant and escrow transaction types, smart contract functionality, and dispute processes."
+    },
+    {
+      "id": "eligibility",
+      "title": "4. Eligibility and Account Registration",
+      "content": "Requirements for using the Services including age restrictions, account creation, and verification processes."
+    },
+    {
+      "id": "fees",
+      "title": "5. Fees and Payment",
+      "content": "Information about transaction fees, payment processing, and related costs."
+    },
+    {
+      "id": "termination",
+      "title": "6. Termination and Account Deletion",
+      "content": "Conditions and procedures for account termination, suspension, and deletion."
+    },
+    {
+      "id": "prohibited-conduct",
+      "title": "7. Prohibited Conduct",
+      "content": "Activities and behaviors that are not permitted when using the Services."
+    },
+    {
+      "id": "intellectual-property",
+      "title": "8. Intellectual Property Rights",
+      "content": "Information about ownership of the App, content, and user-generated content."
+    },
+    {
+      "id": "disclaimers",
+      "title": "9. Disclaimers and Warranties",
+      "content": "Important disclaimers about the Services, including the 'AS IS' nature of the platform and limitations of warranties."
+    },
+    {
+      "id": "limitation-liability",
+      "title": "10. Limitation of Liability",
+      "content": "Limitations on the Company's liability for various types of damages and losses."
+    },
+    {
+      "id": "indemnification",
+      "title": "11. Indemnification",
+      "content": "Your agreement to indemnify and hold harmless the Company from certain claims and damages."
+    },
+    {
+      "id": "dispute-resolution",
+      "title": "12. Dispute Resolution and Arbitration",
+      "subsections": [
+        {
+          "id": "informal-resolution",
+          "title": "12.1 Informal Resolution",
+          "content": "Before filing a claim against the Company, you agree to attempt to resolve the dispute informally by contacting us at matt@shakedefi.com. We will attempt to resolve the dispute informally by contacting you. If a dispute is not resolved within sixty (60) days of submission, you or the Company may bring a formal proceeding."
+        },
+        {
+          "id": "arbitration-agreement",
+          "title": "12.2 Arbitration Agreement",
+          "content": "Any dispute, claim, or controversy arising out of or relating to these Terms or the Services that cannot be resolved informally shall be resolved through binding arbitration administered by the American Arbitration Association (\"AAA\") in accordance with its Commercial Arbitration Rules."
+        },
+        {
+          "id": "arbitration-procedures",
+          "title": "12.3 Arbitration Procedures",
+          "list": [
+            "The arbitration shall be conducted in California, United States, unless otherwise agreed by the parties",
+            "The arbitration shall be conducted by a single arbitrator",
+            "The arbitrator's decision shall be final and binding",
+            "Judgment on the award may be entered in any court having jurisdiction",
+            "Each party shall bear its own costs and fees, except as may be allocated by the arbitrator"
+          ]
+        },
+        {
+          "id": "class-action-waiver",
+          "title": "12.4 Class Action Waiver",
+          "content": "YOU AND THE COMPANY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Unless both you and the Company agree otherwise, the arbitrator may not consolidate more than one person's claims and may not otherwise preside over any form of a representative or class proceeding."
+        },
+        {
+          "id": "exceptions",
+          "title": "12.5 Exceptions to Arbitration",
+          "content": "Notwithstanding the above, either party may bring a claim in small claims court if the claim qualifies. Additionally, either party may seek injunctive or other equitable relief in court to prevent actual or threatened infringement, misappropriation, or violation of intellectual property rights."
+        }
+      ]
+    },
+    {
+      "id": "governing-law",
+      "title": "13. Governing Law and Jurisdiction",
+      "subsections": [
+        {
+          "id": "law",
+          "title": "13.1 Governing Law",
+          "content": "These Terms and your use of the Services shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions."
+        },
+        {
+          "id": "jurisdiction",
+          "title": "13.2 Jurisdiction",
+          "content": "Subject to the arbitration provisions in Section 12, you agree that any legal action or proceeding related to these Terms or the Services shall be brought exclusively in the federal or state courts located in California, and you consent to the personal jurisdiction of such courts."
+        }
+      ]
+    },
+    {
+      "id": "modifications",
+      "title": "14. Modifications to Terms",
+      "subsections": [
+        {
+          "id": "right-to-modify",
+          "title": "14.1 Right to Modify",
+          "content": "The Company reserves the right to modify, amend, or update these Terms at any time at its sole discretion.",
+          "list": [
+            "Posting the updated Terms in the App with a new \"Last Updated\" date",
+            "Sending an email notification to your registered email address",
+            "Displaying a prominent notice in the App",
+            "Any other reasonable means of notification"
+          ]
+        },
+        {
+          "id": "acceptance-modifications",
+          "title": "14.2 Acceptance of Modifications",
+          "content": "Your continued use of the Services after the effective date of any modifications constitutes your acceptance of the updated Terms. If you do not agree to the modified Terms, you must stop using the Services and may delete your account (subject to fulfilling any outstanding obligations as described in Section 6)."
+        },
+        {
+          "id": "material-changes",
+          "title": "14.3 Material Changes",
+          "content": "For material changes that significantly affect your rights or obligations, we will provide at least thirty (30) days' notice before the changes take effect. During this period, you may choose to terminate your account and cease using the Services."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "15. Privacy and Data Protection",
+      "subsections": [
+        {
+          "id": "privacy-policy",
+          "title": "15.1 Privacy Policy",
+          "content": "Your privacy is important to us. Our collection, use, and disclosure of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the Services, you consent to the practices described in our Privacy Policy."
+        },
+        {
+          "id": "user-data",
+          "title": "15.2 User Data",
+          "content": "You acknowledge that transaction data, including Agreements, signatures, images, and dispute-related information, may be retained by the Company for legal, regulatory, and operational purposes, even after account deletion."
+        },
+        {
+          "id": "data-security",
+          "title": "15.3 Data Security",
+          "content": "While we implement reasonable security measures to protect your information, you acknowledge that no system is completely secure. You are responsible for maintaining the security of your account credentials and device access."
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "title": "16. General Provisions",
+      "subsections": [
+        {
+          "id": "entire-agreement",
+          "title": "16.1 Entire Agreement",
+          "content": "These Terms, together with the EULA and Privacy Policy, constitute the entire agreement between you and the Company regarding the Services and supersede all prior agreements, representations, and understandings, whether written or oral."
+        },
+        {
+          "id": "severability",
+          "title": "16.2 Severability",
+          "content": "If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable."
+        },
+        {
+          "id": "waiver",
+          "title": "16.3 Waiver",
+          "content": "The Company's failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to in writing by the Company. No waiver shall be deemed a further or continuing waiver of such term or any other term."
+        },
+        {
+          "id": "assignment",
+          "title": "16.4 Assignment",
+          "content": "You may not assign, transfer, or delegate these Terms or your rights and obligations hereunder without the prior written consent of the Company. The Company may freely assign, transfer, or delegate these Terms and its rights and obligations without restriction. Any attempted assignment in violation of this provision is void."
+        },
+        {
+          "id": "relationship",
+          "title": "16.5 Relationship of Parties",
+          "content": "Nothing in these Terms shall be construed to create a partnership, joint venture, employment, or agency relationship between you and the Company. You have no authority to bind the Company or to make representations on behalf of the Company."
+        },
+        {
+          "id": "third-party",
+          "title": "16.6 Third-Party Beneficiaries",
+          "content": "These Terms do not and are not intended to confer any rights or remedies upon any person other than the parties hereto. No third party shall be deemed a beneficiary of these Terms."
+        },
+        {
+          "id": "force-majeure",
+          "title": "16.7 Force Majeure",
+          "content": "The Company shall not be liable for any failure or delay in performing its obligations under these Terms due to causes beyond its reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, labor disputes, governmental actions, blockchain network failures, or interruptions in third-party services."
+        },
+        {
+          "id": "survival",
+          "title": "16.8 Survival",
+          "content": "All provisions of these Terms that by their nature should survive termination shall survive termination, including but not limited to ownership provisions, warranty disclaimers, indemnity obligations, limitations of liability, dispute resolution provisions, and general provisions."
+        },
+        {
+          "id": "language",
+          "title": "16.9 Language",
+          "content": "These Terms are drafted in English. Any translation is provided for convenience only. In the event of any conflict between the English version and any translation, the English version shall prevail."
+        },
+        {
+          "id": "notices",
+          "title": "16.10 Notices",
+          "content": "All notices to the Company under these Terms shall be sent to: Shake Defi, Inc., Email: matt@shakedefi.com, Address: 280 N. Market St, Unit 321, Brookfield, WI 53045. Notices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "17. Contact Information",
+      "content": "For questions about these Terms or the Services, please contact us at:",
+      "contact": {
+        "company": "Shake Defi, Inc.",
+        "email": "matt@shakedefi.com",
+        "address": "280 N. Market St, Unit 321, Brookfield, WI 53045"
+      }
+    }
+  ],
+  "acknowledgment": "BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS, TOGETHER WITH THE END USER LICENSE AGREEMENT AND PRIVACY POLICY, CONSTITUTE THE COMPLETE AND EXCLUSIVE AGREEMENT BETWEEN YOU AND SHAKE DEFI, INC. REGARDING YOUR USE OF THE SERVICES."
+}

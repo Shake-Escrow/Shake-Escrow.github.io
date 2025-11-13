@@ -66,6 +66,12 @@ const Footer: React.FC = () => {
             >
               Privacy Policy
             </Link>
+            <Link 
+              to="/terms-of-service" 
+              className="text-small font-body text-[#2d3440] hover:text-accent transition-colors"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

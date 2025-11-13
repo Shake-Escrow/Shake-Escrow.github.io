@@ -12,6 +12,7 @@ import GetPaid from './pages/getpaid';
 import SendPayments from './pages/sendpayments';
 import FAQ from './pages/faq';
 import PrivacyPolicy from './pages/privacy-policy';
+import TermsOfService from './pages/terms-of-service';
 
 function App() {
   // For custom domain, basename is always '/'
@@ -29,6 +30,7 @@ function App() {
             <Route path="/send-payments" element={<SendPayments />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
           </Routes>
         </main>
         <Footer />
