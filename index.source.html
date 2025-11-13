@@ -14,15 +14,12 @@
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
       (function(l) {
-        if (l.search[1] === '/' ) {
+        // Only process if:
+        // 1. We have a redirect query string starting with /?/
+        // 2. It's not just /?/ alone (which would be root)
+        // 3. There's actually a path to restore
+        if (l.search[1] === '/' && l.search.length > 2) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');
@@ -33,8 +30,8 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
-    <script type="module" crossorigin src="/assets/index.source-C3biCv3-.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C2RFepYc.css">
+    <script type="module" crossorigin src="/assets/index.source-DOlHTWV6.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CZZqiK-G.css">
   </head>
   <body>
     <div id="root"></div>
