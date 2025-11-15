@@ -39,6 +39,8 @@ jobs:
       - name: Install dependencies
         run: npm ci  # Use ci for faster, cleaner installs
       - name: Build
+        env:
+          VITE_API_ENDPOINT: ${{ secrets.VITE_API_ENDPOINT }}
         run: npm run build:full  # Includes generate-privacy
       - name: Setup Pages
         uses: actions/configure-pages@v5
