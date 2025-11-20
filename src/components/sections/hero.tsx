@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
     
     // Determine the boolean value based on checkbox selection
     let platformBoolean: boolean | null;
-    if ((isAndroid && isIOS) && (!isAndroid && !isIOS)) {
+    if ((isAndroid && isIOS) || (!isAndroid && !isIOS)) {
       // Both checked or none checked
       platformBoolean = null;
     }
