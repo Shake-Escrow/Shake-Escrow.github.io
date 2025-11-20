@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async () => {
-    if (!email || (!isAndroid && !isIOS)) return;
+    if (!email) return;
 
     setIsLoading(true);
     
