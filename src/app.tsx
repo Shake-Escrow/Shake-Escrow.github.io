@@ -13,6 +13,7 @@ import SendPayments from './pages/sendpayments';
 import FAQ from './pages/faq';
 import PrivacyPolicy from './pages/privacy-policy';
 import TermsOfService from './pages/terms-of-service';
+import DeleteAccount from './pages/delete-account';
 
 function App() {
   // For custom domain, basename is always '/'
@@ -31,6 +32,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>
         </main>
         <Footer />
