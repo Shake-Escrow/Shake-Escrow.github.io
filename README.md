@@ -31,7 +31,7 @@ Live site: [https://shakedefi.com](https://shakedefi.com)
    ```
    npm run dev
    ```
-   - Opens at `http://localhost:5173` (or similar).
+   - Opens at `http://localhost:5173`
    - Test routes: Navigate to `/how-it-works`, `/privacy-policy`, etc.
 
 4. Lint and type-check (optional):
