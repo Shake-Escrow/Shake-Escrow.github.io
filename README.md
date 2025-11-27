@@ -61,7 +61,7 @@ The app uses Vite for fast builds. A custom script generates a static `privacy-p
    - Test reloads on routes (e.g., `/how-it-works`) to verify SPA fallback.
 
 ## Deployment to GitHub Pages
-This is a GitHub User Pages setup (URL: `https://<username>.github.io`), deploying to the `main` branch root. For project pages, adjust to a `gh-pages` branch.
+This is a GitHub User Pages setup (URL: `https://github.com/Shake-Escrow/Shake-Escrow.github.io`), deploying to the `main` branch root. For project pages, adjust to a `gh-pages` branch.
 
 ### Step 1: Configure GitHub Repo
 1. In your repo: Settings > Pages.
