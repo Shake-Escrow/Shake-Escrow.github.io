@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node -e \"const fs=require('fs-extra');fs.existsSync('index.source.html')&&fs.copySync('index.source.html','index.html')\"",
+    "prebuild": "node -e \"const fs=require('fs-extra');fs.existsSync('index.source.html')&&fs.copySync('index.source.html','index.html')\" && npm run generate-static-pages",
     "build": "vite build",
-    "build:full": "npm run build && npm run generate-privacy",
+    "build:full": "npm run build",
+    "generate-static-pages": "npm run generate-privacy && npm run generate-delete-account",
     "generate-privacy": "tsx scripts/generate-privacy-html.ts",
+    "generate-delete-account": "tsx scripts/generate-delete-account-html.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
