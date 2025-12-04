@@ -11,22 +11,21 @@ const Hero: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async () => {
-    if (!email || (!isAndroid && !isIOS)) return;
+    if (!email) return;
 
     setIsLoading(true);
     
     // Determine the boolean value based on checkbox selection
     let platformBoolean: boolean | null;
-    if (isAndroid && isIOS) {
-      // Both checked
+    if ((isAndroid && isIOS) || (!isAndroid && !isIOS)) {
+      // Both checked or none checked
       platformBoolean = null;
-    } else if (!isAndroid && !isIOS) {
-      // None checked
-      platformBoolean = null;
-    } else if (isIOS) {
+    }
+    else if (isIOS) {
       // Only iOS checked
       platformBoolean = true;
-    } else {
+    }
+    else {
       // Only Android checked
       platformBoolean = false;
     }

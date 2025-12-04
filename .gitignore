@@ -31,5 +31,11 @@ yarn-error.log*
 # TypeScript cache
 *.tsbuildinfo
 
-# NOTE: Build artifacts in root (assets/, index-*.js, etc.) are NOT ignored
-# They must be committed for GitHub Pages deployment
+# Build artifacts in root (ignored now; use GitHub Actions for deploys)
+assets/
+index.html
+privacy.html
+404.html
+index-*.js
+index-*.css
+*.html  # Careful: This catches generated HTML; exclude index.source.html if needed via !index.source.html
