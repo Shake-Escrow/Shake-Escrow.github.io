@@ -412,7 +412,7 @@
         {
           "id": "informal-resolution",
           "title": "12.1 Informal Resolution",
-          "content": "Before filing a claim against the Company, you agree to attempt to resolve the dispute informally by contacting us at matt@shakedefi.com. We will attempt to resolve the dispute informally by contacting you. If a dispute is not resolved within sixty (60) days of submission, you or the Company may bring a formal proceeding."
+          "content": "Before filing a claim against the Company, you agree to attempt to resolve the dispute informally by contacting us at contact@shakedefi.com. We will attempt to resolve the dispute informally by contacting you. If a dispute is not resolved within sixty (60) days of submission, you or the Company may bring a formal proceeding."
         },
         {
           "id": "arbitration-agreement",
@@ -558,7 +558,7 @@
         {
           "id": "notices",
           "title": "16.10 Notices",
-          "content": "All notices to the Company under these Terms shall be sent to: Shake Defi, Inc., Email: matt@shakedefi.com, Address: 280 N. Market St, Unit 321, Brookfield, WI 53045. Notices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
+          "content": "All notices to the Company under these Terms shall be sent to: Shake Defi, Inc., Email: contact@shakedefi.com, Address: 280 N. Market St, Unit 321, Brookfield, WI 53045. Notices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
         }
       ]
     },
@@ -568,7 +568,7 @@
       "content": "For questions about these Terms or the Services, please contact us at:",
       "contact": {
         "company": "Shake Defi, Inc.",
-        "email": "matt@shakedefi.com",
+        "email": "contact@shakedefi.com",
         "address": "280 N. Market St, Unit 321, Brookfield, WI 53045"
       }
     }
