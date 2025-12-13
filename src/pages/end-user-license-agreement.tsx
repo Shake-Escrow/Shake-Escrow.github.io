@@ -1,28 +1,30 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import privacyPolicyData from '../content/privacy.json';
-import { Link } from 'react-router-dom';
+import eulaData from '../content/eula.json';
 
-// Type definitions for the privacy policy data structure
-interface Subsection {
+interface EulaSubsection {
   subtitle: string;
   content: string;
 }
 
-interface PolicySection {
+interface EulaSection {
   title: string;
+  subsections?: EulaSubsection[];
   content?: string;
-  subsections?: Subsection[];
 }
 
-interface PrivacyPolicyData {
-  lastUpdated: string;
-  effectiveDate: string;
+interface EulaData {
+  title: string;
   companyName: string;
-  sections: PolicySection[];
+  lastUpdated: string;
+  introduction: string;
+  sections: EulaSection[];
+  acknowledgment?: string;
 }
 
-const PrivacyPolicy: React.FC = () => {
+const EndUserLicenseAgreement: React.FC = () => {
+  const { title } = eulaData as EulaData;
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -32,11 +34,11 @@ const PrivacyPolicy: React.FC = () => {
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">
-            Privacy Policy
+            {title}
           </h1>
-          
+
           <div className="prose prose-lg max-w-none">
-            <PrivacyPolicyContent />
+            <EulaContent />
           </div>
         </div>
       </Section>
@@ -44,47 +46,46 @@ const PrivacyPolicy: React.FC = () => {
   );
 };
 
-// Component to render the privacy policy content from JSON
-const PrivacyPolicyContent: React.FC = () => {
-  const data = privacyPolicyData as PrivacyPolicyData;
-  const { lastUpdated, effectiveDate, companyName, sections } = data;
-  
+const EulaContent: React.FC = () => {
+  const data = eulaData as EulaData;
+  const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
+
   return (
     <>
       <div className="mb-8">
         <p className="text-lg font-semibold text-gray-900">{companyName}</p>
-        <p className="text-sm text-gray-600">
-          <strong>Effective Date:</strong> {effectiveDate}
-        </p>
         <p className="text-sm text-gray-600 mb-4">
           <strong>Last Updated:</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
       </div>
-      
-      {sections.map((section: PolicySection, index: number) => (
-        <div key={index} className="mb-10">
+
+      <div
+        className="text-base text-gray-700 leading-relaxed mb-10"
+        dangerouslySetInnerHTML={{ __html: introduction }}
+      />
+
+      {sections.map((section: EulaSection, index: number) => (
+        <div key={section.title} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
             {index + 1}. {section.title}
           </h2>
-          
+
           {section.subsections ? (
-            // Render subsections if they exist
-            section.subsections.map((subsection: Subsection, subIndex: number) => (
-              <div key={subIndex} className="mb-6">
+            section.subsections.map((subsection: EulaSubsection, subIndex: number) => (
+              <div key={`${section.title}-${subsection.subtitle}`} className="mb-6">
                 <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
                   {index + 1}.{subIndex + 1} {subsection.subtitle}
                 </h3>
-                <div 
+                <div
                   className="text-base text-gray-700 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: subsection.content }}
                 />
               </div>
             ))
           ) : (
-            // Render main content if no subsections
             section.content && (
-              <div 
+              <div
                 className="text-base text-gray-700 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: section.content }}
               />
@@ -93,14 +94,13 @@ const PrivacyPolicyContent: React.FC = () => {
         </div>
       ))}
 
-      <div className="mt-12 text-base text-gray-700">
-        Looking for our End User License Agreement?{' '}
-        <Link to="/end-user-license-agreement" className="text-accent hover:underline">
-          Read it here.
-        </Link>
-      </div>
+      {acknowledgment && (
+        <div className="mt-12 p-6 bg-secondary-dark text-white rounded-lg">
+          <p className="text-sm font-semibold leading-relaxed">{acknowledgment}</p>
+        </div>
+      )}
     </>
   );
 };
 
-export default PrivacyPolicy;
+export default EndUserLicenseAgreement;

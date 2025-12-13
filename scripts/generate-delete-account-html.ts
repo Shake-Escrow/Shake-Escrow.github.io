@@ -2,7 +2,10 @@ import fs from 'fs-extra';
 import path from 'path';
 
 const generateDeleteAccountHtml = async () => {
-  const apiEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
+  const apiEndpoint =
+    (typeof import.meta !== 'undefined' &&
+      (import.meta as { env?: Record<string, string> }).env?.VITE_API_ENDPOINT) ||
+    '';
   
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">

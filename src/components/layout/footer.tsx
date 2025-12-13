@@ -67,6 +67,12 @@ const Footer: React.FC = () => {
               Privacy Policy
             </Link>
             <Link 
+              to="/end-user-license-agreement" 
+              className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
+            >
+              End User License Agreement
+            </Link>
+            <Link 
               to="/terms-of-service" 
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >

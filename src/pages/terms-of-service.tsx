@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Section from '../components/common/section';
 import tosContent from '../content/tos.json';
+import { Link } from 'react-router-dom';
 
 // Type definitions
 interface Definition {
@@ -40,6 +41,10 @@ interface TOSData {
 }
 
 const TermsOfService: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, []);
+
   return (
     <div className="pt-20">
       <Section bgColor="bg-white">
@@ -149,6 +154,13 @@ const TOSContent: React.FC = () => {
         <p className="text-sm font-semibold leading-relaxed">
           {acknowledgment}
         </p>
+      </div>
+
+      <div className="mt-8 text-base text-gray-700">
+        Looking for our End User License Agreement?{' '}
+        <Link to="/end-user-license-agreement" className="text-accent hover:underline">
+          Read it here.
+        </Link>
       </div>
     </>
   );

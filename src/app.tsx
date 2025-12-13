@@ -13,6 +13,7 @@ import SendPayments from './pages/sendpayments';
 import FAQ from './pages/faq';
 import PrivacyPolicy from './pages/privacy-policy';
 import TermsOfService from './pages/terms-of-service';
+import EndUserLicenseAgreement from './pages/end-user-license-agreement';
 import DeleteAccount from './pages/delete-account';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/send-payments" element={<SendPayments />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/end-user-license-agreement" element={<EndUserLicenseAgreement />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>

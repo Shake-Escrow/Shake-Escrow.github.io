@@ -1,0 +1,240 @@
+{
+  "title": "End User License Agreement",
+  "companyName": "Shake Defi, Inc.",
+  "lastUpdated": "November 2, 2025",
+  "introduction": "<p>Shake Defi, Inc. (\"the Company,\" \"we,\" \"us,\" or \"our\") provides cryptocurrency payment facilitation services through our mobile application (\"the App\") and related services (collectively, the \"Services\"). These Terms constitute a legally binding agreement between you (\"User,\" \"you,\" or \"your\") and the Company governing your use of the Services.</p>",
+  "sections": [
+    {
+      "title": "Agreement to Terms and Definitions",
+      "subsections": [
+        {
+          "subtitle": "Definitions",
+          "content": "<p>For purposes of this Agreement, the following terms shall have the meanings set forth below:</p>\n<p>\"API\" or \"Application Programming Interface\" means the technical software interface and protocols that allow the App to communicate with and access services provided by third-party platforms, including Coinbase. Through APIs, the App can send and receive data and instructions to facilitate cryptocurrency transactions without directly accessing or controlling the underlying systems.</p>\n<p>\"Coinbase\" means the Coinbase entity or entities that provide the wallet services, payment infrastructure, and blockchain transaction capabilities accessible through the App's integration, including but not limited to Coinbase, Inc., Coinbase Global, Inc., and/or Coinbase Bermuda Technologies Limited. Users acknowledge that their use of Coinbase services through the App is also governed by Coinbase's applicable Terms of Service and Privacy Policy.</p>"
+        },
+        {
+          "subtitle": "Agreement to Terms",
+          "content": "<p>By accessing, downloading, or using the App or Services, you agree to be bound by this End User License Agreement (\"Agreement\" or \"Terms\"). If you do not agree to these Terms, you may not access or use the Services. Your continued use of the Services constitutes acceptance of any updates or modifications to these Terms.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Software License and Restrictions",
+      "subsections": [
+        {
+          "subtitle": "Scope of License",
+          "content": "<p>The App is licensed, not sold, to you. The Company grants you a limited, nontransferable license to use the App on any Android-powered device that you own or control and as permitted by the Google Play Terms of Service.</p>\n<p>This license does not allow you to use the App on any Android device that you do not own or control, and you may not distribute or make the App available over a network where it could be used by multiple devices at the same time.</p>"
+        },
+        {
+          "subtitle": "License Restrictions",
+          "content": "<p>You may not, and you agree not to or enable others to:</p>\n<ul>\n<li>Rent, lease, lend, sell, transfer, redistribute, or sublicense the App</li>\n<li>Copy the App (except as expressly permitted by this license and the Google Play Terms of Service)</li>\n<li>Decompile, reverse-engineer, disassemble, or attempt to derive the source code of the App</li>\n<li>Modify or create derivative works of the App, any updates, or any part thereof</li>\n<li>Remove the App from any Android device before selling or transferring that device to a third party</li>\n</ul>\n<p>The foregoing restrictions apply except to the extent that any such restriction is prohibited by applicable law or to the extent as may be permitted by the licensing terms governing use of any open-sourced components included with the App. Any attempt to violate these restrictions is a violation of the rights of the Company and its licensors. If you breach these restrictions, you may be subject to prosecution and damages.</p>\n<p>The terms of this license will govern any upgrades provided by the Company that replace and/or supplement the original App, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern.</p>"
+        },
+        {
+          "subtitle": "Consent to Use of Technical Data",
+          "content": "<p>You agree that the Company may collect and use technical data and related information—including but not limited to technical information about your device, system and application software, and peripherals—that is gathered periodically to facilitate the provision of software updates, product support, and other services to you (if any) related to the App. The Company may use this information, as long as it is in a form that does not personally identify you, to improve its products or to provide services or technologies to you.</p>"
+        },
+        {
+          "subtitle": "License Termination",
+          "content": "<p>The license granted under this Agreement is effective until terminated by you or the Company. Your rights under this license will terminate automatically without notice from the Company if you fail to comply with any term(s) of this license. Upon termination of the license, you shall cease all use of the App and destroy all copies, full or partial, of the App.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Registration and Account Requirements",
+      "subsections": [
+        {
+          "subtitle": "Account Creation and Verification",
+          "content": "<p>To use the Services, you must:</p>\n<ul>\n<li>Be at least 18 years of age or the age of majority in your jurisdiction, whichever is greater</li>\n<li>Register and create an account</li>\n<li>Provide complete and accurate identifying information</li>\n<li>Comply with all Know Your Customer (KYC) and Anti-Money Laundering (AML) verification requirements</li>\n<li>Confirm that you are using the account for yourself and not on behalf of any other person</li>\n</ul>"
+        },
+        {
+          "subtitle": "Identity Verification and User Representations",
+          "content": "<p>The Company makes reasonable efforts to verify User identity through KYC and AML procedures before account creation. However, the Company cannot guarantee the accuracy of information provided by Users and shall not be liable for any losses, damages, or claims arising from:</p>\n<ul>\n<li>A User's misrepresentation of their identity</li>\n<li>False or fraudulent information provided during registration</li>\n<li>Unauthorized use of another person's identity or credentials</li>\n<li>Any failure of third-party identity verification services</li>\n</ul>\n<p>By creating an account, Users represent and warrant that all information provided is accurate, complete, and truthful, and that they are legally authorized to use the identity and credentials provided.</p>"
+        },
+        {
+          "subtitle": "Account Security",
+          "content": "<p>You are solely responsible for maintaining the confidentiality and security of your account credentials, passcodes, and any devices used to access the App. You agree to immediately notify the Company and Coinbase (at https://help.coinbase.com) of any unauthorized use of your account or any other security breach. The Company shall not be liable for any losses arising from unauthorized access to your account.</p>"
+        },
+        {
+          "subtitle": "Account Termination",
+          "content": "<p>The Company reserves the right to suspend or terminate your account and refuse or stop offering access to the Services at any time, at our sole discretion, with or without notice, for any reason including but not limited to violation of these Terms or applicable laws.</p>"
+        },
+        {
+          "subtitle": "Digital Signature and Photographic Capture",
+          "content": "<p>When Users enter into a transaction agreement through the App, they are required to sign the agreement using the App's digital signature functionality. By using this feature, you acknowledge and consent to the following:</p>\n<ul>\n<li><strong>Photographic Capture During Signing:</strong> The App's front-facing camera will capture your photograph at the time of signing. You will be notified immediately before the photograph is taken, and you may cancel the entire signing process at that point if you do not wish to have your photograph captured.</li>\n<li><strong>Purpose of Photographic Capture:</strong> The front-facing camera image serves as a security measure to help verify the identity of the signing party in the event of a transaction dispute. This image may provide information on whether the identity of the person who signed the agreement matches the identity of the person making a dispute claim.</li>\n<li><strong>Voluntary Participation:</strong> By proceeding with the signing process after receiving notification of the photographic capture, you voluntarily consent to having your photograph taken and stored in accordance with this Agreement and our Privacy Policy.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "Service Description and Third-Party Integrations",
+      "subsections": [
+        {
+          "subtitle": "Service Facilitation",
+          "content": "<p>The Company facilitates interactions between Users and Coinbase (as defined herein) through the use of Coinbase's APIs (as defined herein), which allow the App to access Coinbase's wallet and payment infrastructure services. The Company does not:</p>\n<ul>\n<li>Manage or execute transfers of funds</li>\n<li>Provide services to purchase cryptocurrency</li>\n<li>Manage or hold private keys for cryptocurrency wallets</li>\n<li>Have custody of cryptocurrency during any holding period</li>\n</ul>\n<p>The Company provides an interface for Users to transfer funds via Coinbase's financial infrastructure and through independent smart contracts deployed on the blockchain. All wallet functionality and cryptocurrency management are provided by Coinbase, and the smart contracts described in Section 4.3 operate autonomously and outside Coinbase's custody. The Company solely provides an interface for interaction between Users, Coinbase APIs, and these smart contracts. Except as described in Section 7 (Holding Period and Dispute Resolution), where the Company may submit predefined on-chain instructions to signal a refund decision pursuant to the smart contract's immutable logic, the Company has no discretionary control over cryptocurrency transfers or funds.</p>"
+        },
+        {
+          "subtitle": "External Services and Third-Party Materials",
+          "content": "<p>The App may enable access to the Company's and/or third-party services and websites (collectively and individually, \"External Services\"). Use of the External Services requires Internet access and use of certain External Services requires you to accept additional terms.</p>\n<p>You understand that by using any of the External Services, you may encounter content that may be deemed offensive, indecent, or objectionable, which content may or may not be identified as having explicit language, and that the results of any search or entering of a particular URL may automatically and unintentionally generate links or references to objectionable material. Nevertheless, you agree to use the External Services at your sole risk and that neither the Company nor its agents shall have any liability to you for content that may be found to be offensive, indecent, or objectionable.</p>\n<p>Certain External Services may display, include or make available content, data, information, applications or materials from third parties (\"Third Party Materials\") or provide links to certain third party websites. By using the External Services, you acknowledge and agree that neither the Company nor its agents is responsible for examining or evaluating the content, accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect of such Third Party Materials or websites. Neither the Company nor its agents warrant or endorse and does not assume and will not have any liability or responsibility to you or any other person for any third-party services, Third Party Materials or websites, or for any other materials, products, or services of third parties. Third Party Materials and links to other websites are provided solely as a convenience to you.</p>\n<p><strong>Financial Information Disclaimer:</strong> Financial information displayed by any External Services is for general informational purposes only and should not be relied upon as investment advice. Before executing any securities transaction based upon information obtained through the External Services, you should consult with a financial or securities professional who is legally qualified to give financial or securities advice in your country or region.</p>\n<p><strong>Location Data Disclaimer:</strong> Location data provided by any External Services is for basic navigational purposes only and is not intended to be relied upon in situations where precise location information is needed or where erroneous, inaccurate, time-delayed or incomplete location data may lead to death, personal injury, property or environmental damage. Neither the Company, nor its agents, nor any of its content providers guarantees the availability, accuracy, completeness, reliability, or timeliness of location data or any other data displayed by any External Services.</p>\n<p>You agree that the External Services contain proprietary content, information and material that is owned by the Company and/or its agents or licensors, and is protected by applicable intellectual property and other laws, including but not limited to copyright, and that you will not use such proprietary content, information or materials in any way whatsoever except for permitted use of the External Services or in any manner that is inconsistent with the terms of this EULA or that infringes any intellectual property rights of a third party or the Company. No portion of the External Services may be reproduced in any form or by any means.</p>\n<p>You agree not to modify, rent, lease, loan, sell, distribute, or create derivative works based on the External Services, in any manner, and you shall not exploit the External Services in any unauthorized way whatsoever, including but not limited to, using the External Services to transmit any computer viruses, worms, trojan horses or other malware, or by trespass or burdening network capacity. You further agree not to use the External Services in any manner to harass, abuse, stalk, threaten, defame or otherwise infringe or violate the rights of any other party, and that neither the Company nor its agents is in any way responsible for any such use by you, nor for any harassing, threatening, defamatory, offensive, infringing or illegal messages or transmissions that you may receive as a result of using any of the External Services.</p>\n<p>In addition, External Services and Third Party Materials that may be accessed from, displayed on or linked to from Android devices are not available in all languages or in all countries or regions. The Company makes no representation that such External Services and Materials are appropriate or available for use in any particular location. To the extent you choose to use or access such External Services and Materials, you do so at your own initiative and are responsible for compliance with any applicable laws, including but not limited to applicable local laws. The Company reserves the right to change, suspend, remove, or disable access to any External Services at any time without notice. In no event will the Company be liable for the removal of or disabling of access to any such External Services. The Company may also impose limits on the use of or access to certain External Services, in any case and without notice or liability.</p>"
+        },
+        {
+          "subtitle": "Smart Contract Infrastructure",
+          "content": "<p>For transactions involving a cryptocurrency holding period, User funds are held in self-executing smart contracts deployed on the Ethereum Base network. These smart contracts are autonomous and non-custodial—they are not owned or operated by the Company.</p>\n<p>The Company does not at any time hold, store, or have access to User private keys or cryptocurrency funds. The Company cannot confiscate, freeze, or otherwise obtain any User's funds. Any actions by the Company under Section 7 (Holding Period and Dispute Resolution) consist solely of submitting predefined, on-chain instructions to the smart contract pursuant to its immutable logic. The Company's submission of a refund decision constitutes an on-chain signal within the smart contract's parameters and does not involve direct custody or manual transfer of cryptocurrency assets.</p>\n<p>Current contract addresses (subject to update upon redeployment):</p>\n<ul>\n<li>Ethereum Contract: 0x84Dc03077CA4E99a6d853DAfD0C2b1D7576cbB88</li>\n<li>USDC Contract: 0xc2Ed1C8505dd22DB3F484575F3DED745E347b887</li>\n</ul>\n<p>The Company provides the smart contract interface as a technical utility only and does not act as an intermediary, escrow agent, or fiduciary.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Fees and Payment Terms",
+      "subsections": [
+        {
+          "subtitle": "Transaction Fees",
+          "content": "<p>The Company charges a fee of 0.1% of the transaction amount for all transactions facilitated through the App. Any fees exceeding this amount are exclusively for early withdrawals and will be clearly disclosed to the User at the time of withdrawal.</p>"
+        },
+        {
+          "subtitle": "User Responsibility",
+          "content": "<p>Users are responsible for paying all applicable fees associated with their use of the Services, including transaction fees, early withdrawal fees, and any third-party fees imposed by Coinbase or other service providers.</p>"
+        }
+      ]
+    },
+    {
+      "title": "User Roles and Transaction Process",
+      "subsections": [
+        {
+          "subtitle": "Merchant Services",
+          "content": "<p>Users acting as merchants (\"Merchant\") acknowledge that:</p>\n<ul>\n<li>They have the legal capacity to create and consent to payment agreements</li>\n<li>They are responsible for creating agreements that stipulate cryptocurrency type (ETH or USDC), payment amount, and holding period terms</li>\n<li>The decision to include a holding period is at their sole discretion</li>\n<li>They are ultimately responsible for the content of all agreements, regardless of any AI-generated suggestions</li>\n</ul>"
+        },
+        {
+          "subtitle": "Client Services",
+          "content": "<p>Users submitting payments (\"Client\") acknowledge that:</p>\n<ul>\n<li>All transactions are entered into at their sole discretion</li>\n<li>They have the legal capacity to enter into payment agreements</li>\n<li>Payment agreements are created exclusively by the Merchant</li>\n<li>They consent to the arbitration process described in these Terms</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "Holding Period and Dispute Resolution",
+      "subsections": [
+        {
+          "subtitle": "Cryptocurrency Holding Period",
+          "content": "<p>When a Merchant elects to include a cryptocurrency holding period greater than zero (0) days in a transaction:</p>\n<ul>\n<li>The Company will automatically add an additional 48 hours to the specified holding period as an Arbitration Period</li>\n<li>There is no incentive or penalty for choosing a holding period</li>\n<li>Funds are held in smart contracts during this period, not by the Company</li>\n<li>The Merchant may not withdraw funds from the smart contract during the holding period and Arbitration Period</li>\n</ul>\n<p>When a Merchant elects a holding period of zero (0) days, no Arbitration Period is added.</p>"
+        },
+        {
+          "subtitle": "Dispute Resolution Process",
+          "content": "<p>The dispute resolution process described below applies only to transactions where the Merchant has elected a cryptocurrency holding period greater than zero (0) days.</p>\n<p>In the event of a dispute between a Merchant and Client during the holding period:</p>\n<ol>\n<li>The Company will review provided evidence including photographs, text descriptions, and User statements</li>\n<li>The Company will make a determination regarding Client entitlement to a refund</li>\n<li>If a refund is warranted, the Company will inform the smart contract of its decision</li>\n<li>The smart contract will automatically divert the Client's payment back to the Client</li>\n<li>Once diverted, the Merchant will have no ability to collect the refunded funds</li>\n</ol>"
+        },
+        {
+          "subtitle": "Transactions Without Holding Period",
+          "content": "<p>For transactions with no holding period (0 days), the Client is not entitled to the dispute resolution process described above. Funds will be immediately available to the Merchant upon transaction completion.</p>\n<p>By using the App, all Users consent to this dispute resolution process, whether acting as Merchant or Client.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Artificial Intelligence and Data Usage",
+      "subsections": [
+        {
+          "subtitle": "AI-Generated Content",
+          "content": "<p>The App may automatically download, access, or utilize artificial intelligence (\"AI\") or large language models to provide suggested text, clauses, or other content for potential agreements between Merchants and Clients (\"AI-Generated Content\"). Users acknowledge and agree that:</p>\n<ol>\n<li>AI-Generated Content is provided solely for informational and convenience purposes and does not constitute legal, financial, or professional advice.</li>\n<li>The Company does not guarantee the accuracy, completeness, legality, or suitability of any AI-Generated Content for any purpose.</li>\n<li>Users are solely responsible for reviewing, editing, and verifying all AI-Generated Content before use or acceptance, and for ensuring that any resulting agreement complies with all applicable laws and regulations.</li>\n<li>The Company makes no representations or warranties, express or implied, regarding any outcome resulting from the use of AI-Generated Content, and disclaims all liability arising from or related to such use, including any errors, omissions, or reliance thereon.</li>\n<li>Users should consult qualified legal counsel before relying on or executing any agreement that includes or is based on AI-Generated Content.</li>\n</ol>"
+        },
+        {
+          "subtitle": "Data Submission and Ownership",
+          "content": "<p>Users may submit digital photographs and text descriptions of products or services provided by Merchants for payment by Clients. By submitting such data:</p>\n<ul>\n<li>The data becomes the property of the Company</li>\n<li>The Company may use the data for dispute resolution determinations</li>\n<li>The Company may retain the data for legal and operational purposes</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "Disclaimers and Limitation of Liability",
+      "subsections": [
+        {
+          "subtitle": "Service Disclaimer",
+          "content": "<p>THE SERVICES AND THE APP ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY. YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE APP AND SERVICES IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, AND EFFORT IS WITH YOU.</p>\n<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COMPANY SPECIFICALLY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE APP AND SERVICES, EITHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND OF NONINFRINGEMENT OF THIRD-PARTY RIGHTS.</p>\n<p>THE COMPANY DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE APP, THAT THE FUNCTIONS CONTAINED IN OR SERVICES PERFORMED OR PROVIDED BY THE APP WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE APP OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE APP OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY THE COMPANY OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY.</p>\n<p>SHOULD THE APP OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.</p>"
+        },
+        {
+          "subtitle": "No Custody of Funds",
+          "content": "<p>THE COMPANY DOES NOT HAVE CUSTODY OR THE ABILITY TO ACCESS USER FUNDS HELD IN SMART CONTRACTS. THE COMPANY IS NOT RESPONSIBLE FOR ANY LOSSES ARISING FROM SMART CONTRACT VULNERABILITIES, BLOCKCHAIN NETWORK ISSUES, OR THIRD-PARTY SERVICE FAILURES.</p>"
+        },
+        {
+          "subtitle": "Third-Party Services",
+          "content": "<p>THE COMPANY IS NOT LIABLE FOR ANY ACTS, OMISSIONS, OR FAILURES OF COINBASE OR ANY OTHER THIRD-PARTY SERVICE PROVIDERS. USERS ACKNOWLEDGE THAT THEY ARE INDEPENDENTLY BOUND BY COINBASE'S TERMS OF SERVICE (available at https://wallet.coinbase.com/terms-of-service) AND PRIVACY POLICY (available at https://www.coinbase.com/legal/privacy), WHICH GOVERN THEIR USE OF COINBASE SERVICES ACCESSED THROUGH OUR APP.</p>"
+        },
+        {
+          "subtitle": "Limitation of Liability",
+          "content": "<p>TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL THE COMPANY BE LIABLE FOR PERSONAL INJURY OR ANY INCIDENTAL, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE APP OR SERVICES, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, OR OTHERWISE) AND EVEN IF THE COMPANY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>\n<p>SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU.</p>\n<p><strong>App Functionality Liability Cap:</strong> In no event shall the Company's total liability to you for all damages related to the functionality of the App itself (other than as may be required by applicable law in cases involving personal injury) exceed the amount of fifty dollars ($50.00).</p>\n<p><strong>Service-Related Claims:</strong> The foregoing fifty-dollar limitation does not apply to damages arising from the Services provided through the App, including but not limited to cryptocurrency transactions, holding periods, dispute resolutions, or other financial services facilitated by the Company, which remain subject to the other liability limitations set forth in this Agreement.</p>\n<p>The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Indemnification",
+      "subsections": [
+        {
+          "subtitle": "Your Obligations",
+          "content": "<p>You agree to indemnify, defend, and hold harmless the Company, its affiliates, officers, directors, employees, agents, and partners from and against any claims, liabilities, damages, losses, costs, expenses, fees (including reasonable attorneys' fees) arising from:</p>\n<ul>\n<li>Your use or misuse of the App or Services</li>\n<li>Your violation of these Terms</li>\n<li>Your violation of any rights of another party</li>\n<li>Your violation of any applicable laws or regulations</li>\n<li>Any content or data you submit through the App or Services</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "Export Controls and Government Use",
+      "subsections": [
+        {
+          "subtitle": "Export Restrictions",
+          "content": "<p>You may not use or otherwise export or re-export the App except as authorized by United States law and the laws of the jurisdiction in which the App was obtained. In particular, but without limitation, the App may not be exported or re-exported:</p>\n<p>(a) into any U.S.-embargoed countries; or<br>\n(b) to anyone on the U.S. Treasury Department's Specially Designated Nationals List or the U.S. Department of Commerce Denied Persons List or Entity List.</p>\n<p>By using the App, you represent and warrant that you are not located in any such country or on any such list. You also agree that you will not use the App for any purposes prohibited by United States law, including, without limitation, the development, design, manufacture, or production of nuclear, missile, or chemical or biological weapons.</p>"
+        },
+        {
+          "subtitle": "U.S. Government End Users",
+          "content": "<p>The App and related documentation are \"Commercial Items\", as that term is defined at 48 C.F.R. §2.101, consisting of \"Commercial Computer Software\" and \"Commercial Computer Software Documentation\", as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable.</p>\n<p>Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users:</p>\n<p>(a) only as Commercial Items; and<br>\n(b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein.</p>\n<p>Unpublished-rights reserved under the copyright laws of the United States.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Governing Law and Dispute Resolution",
+      "subsections": [
+        {
+          "subtitle": "Governing Law",
+          "content": "<p>These Terms and your use of the App shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.</p>"
+        },
+        {
+          "subtitle": "Arbitration Agreement",
+          "content": "<p>Any dispute arising out of or relating to these Terms or the Services shall be resolved through binding arbitration in accordance with the Commercial Arbitration Rules of the American Arbitration Association. The arbitration shall be conducted in California, and judgment on the award rendered by the arbitrator may be entered in any court having jurisdiction thereof. The laws of the State of California, excluding its conflicts of law rules, shall govern this arbitration agreement and any arbitration proceedings.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Privacy and Data Protection",
+      "subsections": [
+        {
+          "subtitle": "Privacy Policy",
+          "content": "<p>Your use of the Services is subject to our Privacy Policy, which is incorporated into these Terms by reference. By using the Services, you consent to the collection, use, and sharing of your information as described in our Privacy Policy.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Modifications to Terms",
+      "subsections": [
+        {
+          "subtitle": "Updates to this Agreement",
+          "content": "<p>The Company reserves the right to modify these Terms at any time. We will notify Users of any material changes by posting the updated Terms in the App or through other reasonable means. Your continued use of the Services after such modifications constitutes your acceptance of the updated Terms.</p>"
+        }
+      ]
+    },
+    {
+      "title": "General Provisions",
+      "subsections": [
+        {
+          "subtitle": "Entire Agreement",
+          "content": "<p>These Terms constitute the entire agreement between you and the Company regarding the use of the App and Services and supersede all prior agreements and understandings.</p>"
+        },
+        {
+          "subtitle": "Severability",
+          "content": "<p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.</p>"
+        },
+        {
+          "subtitle": "Waiver",
+          "content": "<p>No waiver of any term or condition of these Terms shall be deemed a further or continuing waiver of such term or condition or any other term or condition.</p>"
+        },
+        {
+          "subtitle": "Assignment",
+          "content": "<p>You may not assign or transfer these Terms or your rights under these Terms without the prior written consent of the Company. The Company may assign these Terms without restriction.</p>"
+        },
+        {
+          "subtitle": "Contact Information",
+          "content": "<p>For questions about these Terms or the Services, please contact:</p>\n<p>Shake Defi, Inc.<br>\nEmail: contact@shakedefi.com<br>\nAddress: 280 N. Market St, Unit 321, Brookfield, WI 53045</p>"
+        }
+      ]
+    }
+  ],
+  "acknowledgment": "BY USING THE APP AND SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS."
+}
