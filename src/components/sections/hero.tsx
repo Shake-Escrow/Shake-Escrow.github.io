@@ -4,68 +4,11 @@ import siteContent from '../../content/sitecontent.json';
 
 
 const Hero: React.FC = () => {
-  const [email, setEmail] = useState('');
-  const [isAndroid, setIsAndroid] = useState(false);
-  const [isIOS, setIsIOS] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleSubmit = async () => {
-    if (!email) return;
-
-    setIsLoading(true);
-    
-    // Determine the boolean value based on checkbox selection
-    let platformBoolean: boolean | null;
-    if ((isAndroid && isIOS) || (!isAndroid && !isIOS)) {
-      // Both checked or none checked
-      platformBoolean = null;
-    }
-    else if (isIOS) {
-      // Only iOS checked
-      platformBoolean = true;
-    }
-    else {
-      // Only Android checked
-      platformBoolean = false;
-    }
-    
-    try {
-      const response = await fetch(import.meta.env.VITE_API_ENDPOINT || '', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email,
-          platform: platformBoolean
-        })
-      });
-      
-      const data = await response.json();
-      
-      if (data.success) {
-        setIsSubmitted(true);
-        // Reset form after 3 seconds
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setEmail('');
-          setIsAndroid(false);
-          setIsIOS(false);
-        }, 3000);
-      } else {
-        console.error('Error:', data.error);
-        alert('There was an error submitting your information. Please try again.');
-      }
-    } catch (error) {
-      console.error('Network error:', error);
-      alert('There was an error submitting your information. Please try again.');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const isFormValid = email.trim() !== '' && (isAndroid || isIOS);
+  const [platform, setPlatform] = useState<'ios' | 'android'>('ios');
+  const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
+  const betaLink = platform === 'android'
+    ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
+    : 'https://testflight.apple.com/join/QZNF6n42';
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -87,39 +30,32 @@ const Hero: React.FC = () => {
             {/* Beta Signup Form */}
             <div className="space-y-4 max-w-md mx-auto lg:mx-0">
               <h3 className="font-display text-xl md:text-2xl text-secondary-dark">
-                Sign up for the beta
+                Join the beta
               </h3>
               
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter App Store Account email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-body text-base"
-                disabled={isSubmitted}
-              />
-              
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center space-x-10">
                 <label className="flex items-center space-x-2 cursor-pointer">
                   <input
-                    type="checkbox"
-                    checked={isAndroid}
-                    onChange={(e) => setIsAndroid(e.target.checked)}
-                    className="w-5 h-5 text-accent border-gray-300 rounded focus:ring-accent cursor-pointer"
-                    disabled={isSubmitted}
+                    type="radio"
+                    name="platform"
+                    value="android"
+                    checked={platform === 'android'}
+                    onChange={() => setPlatform('android')}
+                    className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
                   <span className="font-body text-base text-secondary-dark">Android</span>
                 </label>
                 
                 <label className="flex items-center space-x-2 cursor-pointer">
                   <input
-                    type="checkbox"
-                    checked={isIOS}
-                    onChange={(e) => setIsIOS(e.target.checked)}
-                    className="w-5 h-5 text-accent border-gray-300 rounded focus:ring-accent cursor-pointer"
-                    disabled={isSubmitted}
+                    type="radio"
+                    name="platform"
+                    value="ios"
+                    checked={platform === 'ios'}
+                    onChange={() => setPlatform('ios')}
+                    className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
-                  <span className="font-body text-base text-secondary-dark">iOS</span>
+                  <span className="font-body text-base text-secondary-dark">Apple iOS</span>
                 </label>
               </div>
             </div>
@@ -127,10 +63,9 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                onClick={isFormValid ? handleSubmit : () => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                disabled={isSubmitted || isLoading}
+                onClick={() => { window.location.href = betaLink; }}
               >
-                {isSubmitted ? 'Success!' : isFormValid ? 'Submit' : siteContent.home.hero.button}
+                Beta available now
               </Button>
             </div>
           </div>
@@ -139,7 +74,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-accent to-primary-light opacity-30 rounded-full blur-lg animate-pulse-slow"></div>
               <img 
-                src="/images/qr-android.png"
+                src={qrImage}
                 alt="Shake QR Code"
                 width={280}
                 height={280}
