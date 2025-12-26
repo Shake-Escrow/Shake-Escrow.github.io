@@ -3,9 +3,10 @@ import path from 'path';
 
 const generateDeleteAccountHtml = async () => {
   const apiEndpoint =
+    process.env.VITE_API_ENDPOINT ||
     (typeof import.meta !== 'undefined' &&
       (import.meta as { env?: Record<string, string> }).env?.VITE_API_ENDPOINT) ||
-    '';
+    '/api/website';
   
   const htmlContent = `<!DOCTYPE html>
 <html lang="en">
