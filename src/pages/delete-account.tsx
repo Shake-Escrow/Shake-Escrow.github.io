@@ -27,6 +27,7 @@ const DeleteAccount: React.FC = () => {
       
       if (data.success) {
         setIsSubmitted(true);
+        alert('Your request to delete your account was received. Please check your email.');
         setTimeout(() => {
           setIsSubmitted(false);
           setEmail('');
