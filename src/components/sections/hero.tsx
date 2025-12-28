@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
+import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 
 
 const Hero: React.FC = () => {
-  const [platform, setPlatform] = useState<'ios' | 'android'>('ios');
+  const [platform, setPlatform] = useState<'ios' | 'android'>('android');
   const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
   const betaLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : 'https://testflight.apple.com/join/QZNF6n42';
+  const ctaLabel = platform === 'android' ? 'Free Download' : 'Beta available now';
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -27,14 +29,13 @@ const Hero: React.FC = () => {
               {siteContent.home.hero.subhead}
             </p>
             
-            {/* Beta Signup Form */}
             <div className="space-y-4 max-w-md mx-auto lg:mx-0">
               <h3 className="font-display text-xl md:text-2xl text-secondary-dark">
-                Join the beta
+                Available Now
               </h3>
               
-              <div className="flex items-center space-x-10">
-                <label className="flex items-center space-x-2 cursor-pointer">
+              <div className="flex items-center space-x-16">
+                <label className="flex items-center space-x-1 cursor-pointer">
                   <input
                     type="radio"
                     name="platform"
@@ -43,10 +44,11 @@ const Hero: React.FC = () => {
                     onChange={() => setPlatform('android')}
                     className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
+                    <FaGoogle className="text-secondary-dark text-base translate-x-[1px]" aria-hidden="true" />
                   <span className="font-body text-base text-secondary-dark">Android</span>
                 </label>
                 
-                <label className="flex items-center space-x-2 cursor-pointer">
+                <label className="flex items-center space-x-1 cursor-pointer">
                   <input
                     type="radio"
                     name="platform"
@@ -55,7 +57,8 @@ const Hero: React.FC = () => {
                     onChange={() => setPlatform('ios')}
                     className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
-                  <span className="font-body text-base text-secondary-dark">Apple iOS</span>
+                    <FaApple className="text-secondary-dark text-2xl -translate-y-[2px]" aria-hidden="true" />
+                  <span className="font-body text-base text-secondary-dark">iOS</span>
                 </label>
               </div>
             </div>
@@ -65,7 +68,12 @@ const Hero: React.FC = () => {
                 size="lg" 
                 onClick={() => { window.location.href = betaLink; }}
               >
-                Beta available now
+                <span className="inline-flex items-center gap-2">
+                  {ctaLabel}
+                  {platform === 'android' && (
+                    <FaGooglePlay className="text-2xl" aria-hidden="true" />
+                  )}
+                </span>
               </Button>
             </div>
           </div>
