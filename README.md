@@ -1,6 +1,6 @@
 # Shake Defi: Cryptocurrency Escrow Management
 
-Shake Defi is a React-based single-page application (SPA) for secure cryptocurrency escrow services. Built with Vite, React Router, Tailwind CSS, and TypeScript, it provides pages for home, how-it-works, get-paid, send-payments, FAQ, and privacy policy.
+Shake Defi WEBSITE is a React-based single-page application (SPA) for content on Shake Defi app. Built with Vite, React Router, Tailwind CSS, and TypeScript, it provides pages for home, how-it-works, get-paid, send-payments, FAQ, and privacy policy.
 
 Live site: [https://shakedefi.com](https://shakedefi.com)
 

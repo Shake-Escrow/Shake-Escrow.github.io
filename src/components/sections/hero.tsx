@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
+import { GrAppleAppStore } from "react-icons/gr";
 
 
 const Hero: React.FC = () => {
@@ -70,8 +71,10 @@ const Hero: React.FC = () => {
               >
                 <span className="inline-flex items-center gap-2">
                   {ctaLabel}
-                  {platform === 'android' && (
+                  {platform === 'android' ? (
                     <FaGooglePlay className="text-2xl" aria-hidden="true" />
+                  ) : (
+                    <GrAppleAppStore className="text-2xl" aria-hidden="true" />
                   )}
                 </span>
               </Button>
