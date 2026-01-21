@@ -7,10 +7,10 @@ import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 const Hero: React.FC = () => {
   const [platform, setPlatform] = useState<'ios' | 'android'>('android');
   const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
-  const betaLink = platform === 'android'
+  const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
-    : 'https://testflight.apple.com/join/QZNF6n42';
-  const ctaLabel = platform === 'android' ? 'Free Download' : 'Beta available now';
+    : 'https://apps.apple.com/us/app/shake-defi/id6756281576';
+  const ctaLabel = 'Free Download';
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
-                onClick={() => { window.location.href = betaLink; }}
+                onClick={() => { window.location.href = appStoreLink; }}
               >
                 <span className="inline-flex items-center gap-2">
                   {ctaLabel}
