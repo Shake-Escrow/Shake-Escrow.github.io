@@ -48,14 +48,19 @@ const generatePrivacyHtml = async () => {
       }
       h1, h2, h3 { font-family: 'Lexend Exa', sans-serif; }
       h1 { font-size: 3rem; font-weight: 900; color: #1f2937; margin-bottom: 2rem; }
-      h2 { font-size: 2rem; font-weight: 900; color: #1f2937; margin-bottom: 1rem; }
-      h3 { font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem; }
+      h2 { font-size: 2rem; font-weight: 900; color: #1f2937; margin-bottom: 1rem; margin-top: 2rem; }
+      h3 { font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 0.75rem; margin-top: 1.5rem; }
       p { font-size: 1rem; color: #374151; margin-bottom: 1rem; }
       hr { margin: 1.5rem 0; border-color: #d1d5db; }
       .header-info { margin-bottom: 2rem; }
       .header-info p { font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.25rem; }
       .header-info small { color: #6b7280; }
       .section { margin-bottom: 2.5rem; }
+      ul, ol { margin: 0.75rem 0 1rem 1.5rem; }
+      li { margin-bottom: 0.5rem; color: #374151; }
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      strong { color: #1f2937; }
     </style>
   </head>
   <body>
