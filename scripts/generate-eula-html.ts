@@ -25,7 +25,7 @@ interface EulaData {
 
 const generateEulaHtml = async () => {
   const data: EulaData = eulaPolicyData;
-  const { companyName, lastUpdated, introduction, sections, acknowledgment, title } = data;
+  const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
 
   let htmlContent = `
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ const generateEulaHtml = async () => {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shake Defi ${title}</title>
+    <title>Shake Defi End User License Agreement</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&family=Lexend+Exa:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
       body { 
@@ -60,7 +60,7 @@ const generateEulaHtml = async () => {
     </style>
   </head>
   <body>
-    <h1>${title}</h1>
+    <h1>End User License Agreement</h1>
     
     <div class="header-info">
       <p>${companyName}</p>
@@ -70,16 +70,14 @@ const generateEulaHtml = async () => {
     <div>${introduction}</div>
   `;
 
-  sections.forEach((section, index) => {
-    const sectionNum = index + 1;
+  sections.forEach((section) => {
     htmlContent += `<div class="section">
-      <h2>${sectionNum}. ${section.title}</h2>`;
+      <h2>${section.title}</h2>`;
     
     if (section.subsections) {
-      section.subsections.forEach((subsection, subIndex) => {
-        const subNum = subIndex + 1;
+      section.subsections.forEach((subsection) => {
         htmlContent += `
-        <h3>${sectionNum}.${subNum} ${subsection.subtitle}</h3>
+        <h3>${subsection.subtitle}</h3>
         <div>${subsection.content}</div>`;
       });
     } else if (section.content) {

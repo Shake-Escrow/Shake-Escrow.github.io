@@ -23,8 +23,6 @@ interface EulaData {
 }
 
 const EndUserLicenseAgreement: React.FC = () => {
-  const { title } = eulaData as EulaData;
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -34,7 +32,7 @@ const EndUserLicenseAgreement: React.FC = () => {
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">
-            {title}
+            End User License Agreement
           </h1>
 
           <div className="prose prose-lg max-w-none">
@@ -68,14 +66,14 @@ const EulaContent: React.FC = () => {
       {sections.map((section: EulaSection, index: number) => (
         <div key={section.title} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
-            {index + 1}. {section.title}
+            {section.title}
           </h2>
 
           {section.subsections ? (
             section.subsections.map((subsection: EulaSubsection, subIndex: number) => (
               <div key={`${section.title}-${subsection.subtitle}`} className="mb-6">
                 <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
-                  {index + 1}.{subIndex + 1} {subsection.subtitle}
+                  {subsection.subtitle}
                 </h3>
                 <div
                   className="text-base text-gray-700 leading-relaxed"
