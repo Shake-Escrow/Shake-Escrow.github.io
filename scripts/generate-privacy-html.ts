@@ -74,17 +74,15 @@ const generatePrivacyHtml = async () => {
     <hr>
   `;
 
-  // Dynamically render sections/subsections (same logic as your component)
-  sections.forEach((section, index) => {
-    const sectionNum = index + 1;
+  // Dynamically render sections/subsections without adding duplicate numbers
+  sections.forEach((section) => {
     htmlContent += `<div class="section">
-      <h2>${sectionNum}. ${section.title}</h2>`;
+      <h2>${section.title}</h2>`;
     
     if (section.subsections) {
-      section.subsections.forEach((subsection, subIndex) => {
-        const subNum = subIndex + 1;
+      section.subsections.forEach((subsection) => {
         htmlContent += `
-        <h3>${sectionNum}.${subNum} ${subsection.subtitle}</h3>
+        <h3>${subsection.subtitle}</h3>
         <div>${subsection.content}</div>`;
       });
     } else if (section.content) {

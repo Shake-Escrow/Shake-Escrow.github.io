@@ -65,7 +65,7 @@ const PrivacyPolicyContent: React.FC = () => {
       {sections.map((section: PolicySection, index: number) => (
         <div key={index} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
-            {index + 1}. {section.title}
+            {section.title}
           </h2>
           
           {section.subsections ? (
@@ -73,7 +73,7 @@ const PrivacyPolicyContent: React.FC = () => {
             section.subsections.map((subsection: Subsection, subIndex: number) => (
               <div key={subIndex} className="mb-6">
                 <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
-                  {index + 1}.{subIndex + 1} {subsection.subtitle}
+                  {subsection.subtitle}
                 </h3>
                 <div 
                   className="text-base text-gray-700 leading-relaxed"
