@@ -25,10 +25,10 @@ const GetPaid: React.FC = () => {
 
       <div className="mt-6">
         <div className="max-w-5xl mx-auto flex flex-col gap-y-7 px-6 md:px-0">
-          {/* First card: Keep More of What You Earn */}
+          {/* First card: Accept crypto from anyone */}
           {(() => {
-            const section = siteContent.getPaid.sections[0];
-            const imageSrc = '/images/01_keep more of what you earn.png';
+            const section = siteContent.getPaid.sections[2];
+            const imageSrc = '/images/02_accept crypto from anyone.png';
             return (
               <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">
@@ -42,16 +42,16 @@ const GetPaid: React.FC = () => {
             );
           })()}
 
-          {/* Middle two cards: Adapts to You & Accept crypto from anyone */}
+          {/* Middle two cards: Keep More of What You Earn & Adapts to You */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7">
             {[
+              siteContent.getPaid.sections[0],
               siteContent.getPaid.sections[1],
-              siteContent.getPaid.sections[2],
             ].map((section, idx) => {
               let imageSrc = '';
+              if (section.headline.replace(/\n/g, ' ') === 'Keep More of What You Earn') imageSrc = '/images/01_keep more of what you earn.png';
               if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
               if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
-              if (section.headline.replace(/\n/g, ' ') === 'Accept crypto from anyone') imageSrc = '/images/02_accept crypto from anyone.png';
               return (
                 <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-8 md:mt-0'}`}>
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
