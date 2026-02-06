@@ -42,7 +42,7 @@ const GetPaid: React.FC = () => {
             );
           })()}
 
-          {/* Middle two cards: Adapts to You & Reduce Risk by Building Trust */}
+          {/* Middle two cards: Adapts to You & Accept crypto from anyone */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-7">
             {[
               siteContent.getPaid.sections[1],
@@ -51,6 +51,7 @@ const GetPaid: React.FC = () => {
               let imageSrc = '';
               if (section.headline.replace(/\n/g, ' ') === 'Adapts to You') imageSrc = '/images/03_adapts to you.png';
               if (section.headline.replace(/\n/g, ' ') === 'Reduce Risk by Building Trust') imageSrc = '/images/02_reduce risk by building trust.png';
+              if (section.headline.replace(/\n/g, ' ') === 'Accept crypto from anyone') imageSrc = '/images/02_accept crypto from anyone.png';
               return (
                 <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-8 md:mt-0'}`}>
                   <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />

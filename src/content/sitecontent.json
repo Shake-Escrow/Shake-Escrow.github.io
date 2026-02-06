@@ -13,16 +13,16 @@
           "description": "Shake uses a smart-contract escrow — like a neutral digital safe — that locks funds according to transparent rules on the blockchain. Shake never holds your money, and no one can move funds outside the agreed terms."
         },
         {
-          "title": "Trust transactions – and each other",
-          "description": "Every transaction is sealed with a signature, and every person has a reputation – so you can be confident that the person you’re talking to is trustworthy."
+          "title": "Pay with any crypto you own",
+          "description": "Merchants set their preferred currency, but you can pay with what you have. Use our built-in swap feature to convert Bitcoin, Cardano, Dogecoin, Litecoin, XRP, or Staked ETH to match what the merchant needs — seamlessly and securely."
         },
         {
-          "title": "More money in\nyour hands",
-          "description": "Shake’s payment system helps you keep more of what you earn. Cryptocurrencies like ETH have held value better than the U.S. dollar over the past 5 years."
+          "title": "Trust transactions – and each other",
+          "description": "Every transaction is sealed with a signature, and every person has a reputation – so you can be confident that the person you're talking to is trustworthy."
         },
         {
           "title": "Convenience that Empowers",
-          "description": "Add product info right into your contract with AI tools. Each transaction’s details provide a more complete picture of the exchange, and you can add as many images as you want."
+          "description": "Add product info right into your contract with AI tools. Each transaction's details provide a more complete picture of the exchange, and you can add as many images as you want."
         }
       ]
     },
@@ -36,7 +36,7 @@
         },
         {
           "title": "Add a payment method",
-          "description": "Fund your payments using crypto you already own, or use Coinbase Onramp to purchase crypto directly. When you’re ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
+          "description": "Fund your payments using crypto you already own, or use Coinbase Onramp to purchase crypto directly. Need a different currency? Our integrated swap feature lets you convert between supported cryptocurrencies. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
         },
         {
           "title": "Start transacting",
@@ -48,7 +48,7 @@
       "business": {
         "label": "Business",
         "headline": "Grow trust,\ngrow your sales",
-        "description": "Shake’s underlying payment system, thorough transaction records and member reputation increase your credibility and reduce disputes.",
+        "description": "Shake's underlying payment system, thorough transaction records and member reputation increase your credibility and reduce disputes.",
         "button": "Learn more"
       },
       "customer": {
@@ -61,11 +61,11 @@
   },
   "howItWorks": {
     "hero": {
-      "headline": "How Shake’s Payment System Keeps You Safe, Literally"
+      "headline": "How Shake's Payment System Keeps You Safe, Literally"
     },
     "section1": {
       "headline": "The Escrow Process",
-      "description": "The Shake escrow is powered by a smart contract on the blockchain. Once a payment is made, funds are locked by code — not by Shake, not by a bank, and not by a third party. \n\nShake never takes custody of user funds. Payments are held by the smart contract itself, while wallet access and currency exchange are provided by Coinbase’s embedded wallet and Onramp/Offramp services. This design removes single-point-of-failure risk and ensures funds can only move according to the agreed rules."
+      "description": "The Shake escrow is powered by a smart contract on the blockchain. Once a payment is made, funds are locked by code — not by Shake, not by a bank, and not by a third party. \n\nShake never takes custody of user funds. Payments are held by the smart contract itself, while wallet access and currency exchange are provided by Coinbase's embedded wallet and Onramp/Offramp services. This design removes single-point-of-failure risk and ensures funds can only move according to the agreed rules."
     },
     "section2": {
       "headline": "How it Works",
@@ -94,16 +94,16 @@
         "description": "Keep 2% more per transaction without credit card companies or banks taking a cut, eliminating that slow bleed. No need for expensive hardware; customers pay straight from their phones. Grow globally without the pain of high international fees. Shake charges a simple 0.1% escrow service fee, significantly lower than traditional payment processors."
       },
       {
-        "headline": "Reduce Risk by Building Trust",
-        "description": "You can feel confident that your customer’s payment is ready and available for transfer once the waiting period is over, helping to mitigate the risk of non-payment or fraud. Disputes are settled fairly with built-in records, and no late chargebacks to worry about. Check a customer’s score and rating, and see a photo for in-person transactions."
+        "headline": "Adapts\nto You",
+        "description": "Whether you have employees or are flying solo, Shake's dependable payment process and lack of rigid income requirements make it easier to focus on your work. Fully mobile payments mean no terminals to buy or maintain. Withdrawals are secure even for international sales."
       },
       {
-        "headline": "Adapts\nto You",
-        "description": "Whether you have employees or are flying solo, Shake’s dependable payment process and lack of rigid income requirements make it easier to focus on your work. Fully mobile payments mean no terminals to buy or maintain. Withdrawals are secure even for international sales."
+        "headline": "Accept crypto\nfrom anyone",
+        "description": "Set your preferred payment currency — USDC or ETH — and let customers pay with what they have. Through integrated currency swapping, buyers can easily convert Bitcoin, Cardano, Dogecoin, Litecoin, XRP, or Staked ETH into your preferred currency. The swap interface guides them through the conversion process in just a few clicks."
       },
       {
         "headline": "Convenience\nthat Empowers",
-        "description": "Add product info right into your contract with AI tools. Each transaction’s details provide a more complete picture of the exchange, and you can add as many images as you want. Assign managers to oversee payments and employees to handle sales."
+        "description": "Add product info right into your contract with AI tools. Each transaction's details provide a more complete picture of the exchange, and you can add as many images as you want. Assign managers to oversee payments and employees to handle sales."
       },
       {
         "headline": "More Options for\nWhat You Do",
@@ -124,19 +124,19 @@
     "sections": [
       {
         "headline": "Transactions\nThat Matter",
-        "description": "Pay with an app that keeps payments private, documented, and easy to resolve. Your payment is locked in a smart-contract escrow for a fixed period agreed to by both buyer and merchant. During this time, funds cannot be accessed outside the contract’s rules, and disputes can be raised if the agreed terms are not met. Shake and Persona verify every business’s identity, reputation, and feedback. Each transaction comes with a signed agreement and verifiable on-chain proof of payment – so you can trust your purchases and avoid disputes."
+        "description": "Pay with an app that keeps payments private, documented, and easy to resolve. Your payment is locked in a smart-contract escrow for a fixed period agreed to by both buyer and merchant. During this time, funds cannot be accessed outside the contract's rules, and disputes can be raised if the agreed terms are not met. Shake and Persona verify every business's identity, reputation, and feedback. Each transaction comes with a signed agreement and verifiable on-chain proof of payment – so you can trust your purchases and avoid disputes."
       },
       {
         "headline": "Level Up as a Sensible Spender",
-        "description": "Shake shows you the true cost of every transaction, helps you build a real reputation, and keeps your spending in check by using only what you have. It’s the perfect compliment to a conscious spender’s arsenal. In the long run, you avoid the baggage that comes with borrowing debt, interest, and overspending."
+        "description": "Shake shows you the true cost of every transaction, helps you build a real reputation, and keeps your spending in check by using only what you have. It's the perfect compliment to a conscious spender's arsenal. In the long run, you avoid the baggage that comes with borrowing debt, interest, and overspending."
       },
       {
-        "headline": "Freedom and Flexibility",
-        "description": "Pay in dollars or crypto, from your phone or tablet, in person or remote. No limits, no restrictions – just a simple way to pay how you want."
+        "headline": "Pay with the crypto you already own",
+        "description": "Don't let payment limitations hold you back. If a merchant requests USDC or ETH, you can pay using Bitcoin, Cardano, Dogecoin, Litecoin, XRP, or Staked ETH. Simply transfer your crypto to your Coinbase wallet in the app, then use the built-in swap feature powered by Odos to convert it instantly to the required currency."
       },
       {
         "headline": "Accountable\nWhere it Counts",
-        "description": "Every person on Shake is accountable for their actions, whether it’s a business or an individual. Your identity isn’t publicly tied to your on-chain activity. Only the merchant you’re paying sees the information needed to fulfill the purchase, and reputation details are visible only to the counterparty for refunds and dispute resolution."
+        "description": "Every person on Shake is accountable for their actions, whether it's a business or an individual. Your identity isn't publicly tied to your on-chain activity. Only the merchant you're paying sees the information needed to fulfill the purchase, and reputation details are visible only to the counterparty for refunds and dispute resolution."
       },
       {
         "headline": "Power Back\nto the People",
@@ -150,7 +150,7 @@
     }
   },
   "footer": {
-    "tagline": "Enabling crypto’s usability for real world transactions",
+    "tagline": "Enabling crypto's usability for real world transactions",
     "disclaimer": "Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
     "quickLinksLabel": "Quick Links",
     "quickLinks": [
@@ -174,21 +174,22 @@
       "subtitle": "Try searching with different keywords or browse our categories below."
     },
     "questions": [
-      { "question": "How does the app work?", "answer": "Shake uses an escrow, which is like a safe, that keeps the customer’s money secure while a business delivers a product or service. To learn more, see the “How it Works” page." },
-      { "question": "What is an escrow?", "answer": "An escrow is like a safe that keeps the money secure and ensures both the customer and business are fulfilling their obligations before the exchange is made. \n\nFor example, let’s say you’re buying a used phone from someone you found online. Normally, you’d meet up, pay them on the spot, and hope the phone works. But if it’s broken or not what they promised, it’s already too late — the money’s gone. \n\nWith escrow, instead of paying them directly, your money goes into a secure holding account for a fixed amount of time. The seller sees the money is there, and hands over the phone. \n\nDuring the waiting period, you check the quality of the phone. If you discover it's broken, you would dispute the transaction and request a refund. If the phone works, the money is released to the seller once the waiting period is over. \n\nIn essence, the escrow:    \n1) Protects businesses by ensuring that the customer’s payment is ready and available for transfer once the waiting period is over    \n2) Provides protection for both parties by ensuring funds are held securely and can only be released according to the agreed escrow terms, including refunds when warranted by a dispute outcome. \n\nTo learn more, see the “How it Works” page." },
-      { "question": "Do I need to know about crypto / invest in crypto to use Shake?", "answer": "No, you do not need to know about or invest in crypto to use Shake. That’s the magic of it." },
+      { "question": "How does the app work?", "answer": "Shake uses an escrow, which is like a safe, that keeps the customer's money secure while a business delivers a product or service. To learn more, see the \"How it Works\" page." },
+      { "question": "What is an escrow?", "answer": "An escrow is like a safe that keeps the money secure and ensures both the customer and business are fulfilling their obligations before the exchange is made. \n\nFor example, let's say you're buying a used phone from someone you found online. Normally, you'd meet up, pay them on the spot, and hope the phone works. But if it's broken or not what they promised, it's already too late — the money's gone. \n\nWith escrow, instead of paying them directly, your money goes into a secure holding account for a fixed amount of time. The seller sees the money is there, and hands over the phone. \n\nDuring the waiting period, you check the quality of the phone. If you discover it's broken, you would dispute the transaction and request a refund. If the phone works, the money is released to the seller once the waiting period is over. \n\nIn essence, the escrow:    \n1) Protects businesses by ensuring that the customer's payment is ready and available for transfer once the waiting period is over    \n2) Provides protection for both parties by ensuring funds are held securely and can only be released according to the agreed escrow terms, including refunds when warranted by a dispute outcome. \n\nTo learn more, see the \"How it Works\" page." },
+      { "question": "Do I need to know about crypto / invest in crypto to use Shake?", "answer": "No, you do not need to know about or invest in crypto to use Shake. That's the magic of it." },
       { "question": "Who can use the Shake app?", "answer": "Shake is available for those over the age of 18. Creating a Shake account requires identity verification from the Persona service (withpersona.com)." },
-      { "question": "Do I have to accept any ‘arbitrary’ cryptocurrency as payment?", "answer": "No, you specify which crypto you want to receive. When it comes time to withdraw your funds, we integrate with Coinbase to withdraw them to any account Coinbase can access. " },
-      { "question": "How long does it take to send or accept a payment? Is there an instant transfer fee?", "answer": "Payments typically confirm on-chain in seconds. The “waiting” you see in Shake isn’t transfer time—it’s escrow protection. You choose an escrow period (for example, 3 days). After that, there’s a standard 2-day arbitration buffer in case a dispute is filed; if there’s no dispute, funds release automatically when that buffer ends. If a merchant wants to get paid during the 2-day buffer, they can use early withdrawal for an additional fee (up to 1%): withdrawing “2 days early” means getting paid right when your chosen escrow period ends. Shake does not charge a separate instant transfer fee; normal network fees may apply." },
-      { "question": "Are there fees to use Shake?", "answer": "Shake charges a simple, transparent service fee for escrowed transactions. The standard fee is 0.1% of the transaction amount. \n\nIf a merchant chooses to withdraw funds early (before the escrow period ends), an additional early withdrawal fee applies, up to 1% for a 2-day early withdrawal. \n\nBlockchain network fees may also apply, and are paid directly to the network. Currency conversion (fiat ↔ crypto) is handled by Coinbase Onramp and Offramp, which may apply their own fees depending on the asset used. \n\nShake does not add hidden fees, does not take custody of funds, and does not charge recurring subscription fees for basic use."},
+      { "question": "Can I pay with any cryptocurrency I own?", "answer": "Yes! Shake supports flexible payment options through integrated currency swapping. If a merchant requests USDC or ETH, you can pay using Bitcoin, Cardano, Dogecoin, Litecoin, XRP, or Staked ETH. Simply transfer your cryptocurrency to your Coinbase wallet in the app, then use the built-in Odos swap feature to convert it to the required currency. This means merchants can now accept crypto from anyone, regardless of which cryptocurrency they hold.\n\nNote: Coinbase and Odos swap services are not available in all countries." },
+      { "question": "Do I have to accept any 'arbitrary' cryptocurrency as payment?", "answer": "No, you specify which crypto you want to receive (USDC or ETH). When buyers pay with a different cryptocurrency like Bitcoin or Dogecoin, they use the built-in swap feature to convert it to your preferred currency before the transaction completes. You always receive exactly what you requested. When it comes time to withdraw your funds, we integrate with Coinbase to withdraw them to any account Coinbase can access." },
+      { "question": "How long does it take to send or accept a payment? Is there an instant transfer fee?", "answer": "Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow period (for example, 3 days). After that, there's a standard 2-day arbitration buffer in case a dispute is filed; if there's no dispute, funds release automatically when that buffer ends. If a merchant wants to get paid during the 2-day buffer, they can use early withdrawal for an additional fee (up to 1%): withdrawing \"2 days early\" means getting paid right when your chosen escrow period ends. Shake does not charge a separate instant transfer fee; normal network fees may apply." },
+      { "question": "Are there fees to use Shake?", "answer": "Shake charges a simple, transparent service fee for escrowed transactions. The standard fee is 0.1% of the transaction amount. \n\nIf a merchant chooses to withdraw funds early (before the escrow period ends), an additional early withdrawal fee applies, up to 1% for a 2-day early withdrawal. \n\nBlockchain network fees may also apply, and are paid directly to the network. Currency conversion (fiat ↔ crypto) is handled by Coinbase Onramp and Offramp, which may apply their own fees depending on the asset used. Currency swapping between cryptocurrencies uses the Odos protocol and includes standard swap fees.\n\nShake does not add hidden fees, does not take custody of funds, and does not charge recurring subscription fees for basic use."},
       { "question": "Are there any income requirements to use Shake?", "answer": "No, there are no income requirements to use Shake." },
       { "question": "Can I accept international transactions with Shake?", "answer": "Yes, you can accept international transactions from any other Shake user, regardless of country." },
       { "question": "Are there any spending requirements, limits or transaction caps?", "answer": "There are no spending limits or transaction caps imposed by Shake itself." },
-      { "question": "What happens if there is a dispute?", "answer": "Shake’s process records metadata and provides transaction information to resolve disputes. Shake is the default arbiter for disputes. Arbiters issue refunds when warranted. Our next feature is to allow the buyer and seller to delegate any Shake user as the arbiter for their transaction." },
+      { "question": "What happens if there is a dispute?", "answer": "Shake's process records metadata and provides transaction information to resolve disputes. Shake is the default arbiter for disputes. Arbiters issue refunds when warranted. Our next feature is to allow the buyer and seller to delegate any Shake user as the arbiter for their transaction." },
       { "question": "How does Shake protect against fraud and unauthorized transactions?", "answer": "Shake protects against fraud and unauthorized transactions with verified identities, signed agreements for each transaction, and verifiable on-chain proof of payment, backed by detailed records for dispute resolution." },
-      { "question": "Why can’t Shake or a hacker take my money and run?", "answer": "Shake does not have custody of user funds. Payments are held by a smart contract that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake cannot access, move, or redirect escrowed funds. Coinbase provides wallet infrastructure and currency exchange, but escrow logic is enforced by blockchain code — not by human discretion." },
-      { "question": "What is documented when I make a transaction?", "answer": "Shake encrypts all data and logs every detail: Time, location, signatures, and photos that you provide. Each party’s device also takes a front-facing photo of the signer as they are signing. Delivery confirmation can be uploaded, and the system confirms the money is available before a transaction happens." },
-      { "question": "How does Shake create accountability?", "answer": "Every Shake user has a verified identity and feedback score. Persona checks each member’s ID, so no one can make unlimited wallets to hide from accountability." },
+      { "question": "Why can't Shake or a hacker take my money and run?", "answer": "Shake does not have custody of user funds. Payments are held by a smart contract that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake cannot access, move, or redirect escrowed funds. Coinbase provides wallet infrastructure and currency exchange, but escrow logic is enforced by blockchain code — not by human discretion." },
+      { "question": "What is documented when I make a transaction?", "answer": "Shake encrypts all data and logs every detail: Time, location, signatures, and photos that you provide. Each party's device also takes a front-facing photo of the signer as they are signing. Delivery confirmation can be uploaded, and the system confirms the money is available before a transaction happens." },
+      { "question": "How does Shake create accountability?", "answer": "Every Shake user has a verified identity and feedback score. Persona checks each member's ID, so no one can make unlimited wallets to hide from accountability." },
       { "question": "What information is public?", "answer": "While transactions are recorded on the blockchain (which is publicly viewable but anonymous), personal Shake accounts and blockchain accounts are not publicly associated. " },
       { "question": "Is there support for splitting shared expenses amongst a group?", "answer": "While this isn't currently supported, it is on our roadmap for future implementation." }
     ],
