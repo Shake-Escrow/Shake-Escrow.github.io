@@ -1,5 +1,7 @@
+// src/app.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation, Routes, Route } from 'react-router-dom';
 
 // Layout components
 import Navbar from './components/layout/navbar';
@@ -16,30 +18,45 @@ import TermsOfService from './pages/terms-of-service';
 import EndUserLicenseAgreement from './pages/end-user-license-agreement';
 import DeleteAccount from './pages/delete-account';
 
+// Declare gtag on window
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 function App() {
-  // For custom domain, basename is always '/'
-  const basename = '/';
+  const location = useLocation();
+
+  // Track page views on route change
+  useEffect(() => {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+        page_location: window.location.href,
+        page_title: document.title
+      });
+    }
+  }, [location]);
   
   return (
-    <Router basename={basename}>
-      <div className="flex flex-col min-h-screen bg-white">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/how-it-works" element={<HowItWorks />} />
-            <Route path="/get-paid" element={<GetPaid />} />
-            <Route path="/send-payments" element={<SendPayments />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/end-user-license-agreement" element={<EndUserLicenseAgreement />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/delete-account" element={<DeleteAccount />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <div className="flex flex-col min-h-screen bg-white">
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/get-paid" element={<GetPaid />} />
+          <Route path="/send-payments" element={<SendPayments />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/end-user-license-agreement" element={<EndUserLicenseAgreement />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/delete-account" element={<DeleteAccount />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 

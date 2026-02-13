@@ -30,6 +30,31 @@
       }(window.location))
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
+
+    <!-- Google Analytics - Cookieless Mode with Consent -->
+    <script>
+      // Set default consent to denied
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+    </script>
+
+    <!-- Then your regular Google tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8Q7C37YBJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W8Q7C37YBJ', {
+        'send_page_view': false  // Disable automatic page view on load
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
