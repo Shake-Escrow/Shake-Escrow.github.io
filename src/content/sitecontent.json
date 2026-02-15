@@ -40,7 +40,7 @@
         },
         {
           "title": "Start transacting",
-          "description": "Begin sending and receiving with complete confidence. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
+          "description": "Begin sending and receiving with complete confidence because Shake is non-custodial. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
         }
       ]
     },
@@ -187,7 +187,7 @@
       { "question": "Are there any spending requirements, limits or transaction caps?", "answer": "There are no spending limits or transaction caps imposed by Shake itself." },
       { "question": "What happens if there is a dispute?", "answer": "Shake's process records metadata and provides transaction information to resolve disputes. Shake is the default arbiter for disputes. Arbiters issue refunds when warranted. Our next feature is to allow the buyer and seller to delegate any Shake user as the arbiter for their transaction." },
       { "question": "How does Shake protect against fraud and unauthorized transactions?", "answer": "Shake protects against fraud and unauthorized transactions with verified identities, signed agreements for each transaction, and verifiable on-chain proof of payment, backed by detailed records for dispute resolution." },
-      { "question": "Why can't Shake or a hacker take my money and run?", "answer": "Shake does not have custody of user funds. Payments are held by a smart contract that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake cannot access, move, or redirect escrowed funds. Coinbase provides wallet infrastructure and currency exchange, but escrow logic is enforced by blockchain code — not by human discretion." },
+      { "question": "Why can't Shake or a hacker take my money and run?", "answer": "Shake is non-custodial and does not have custody of user funds. Payments are held by a smart contract that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake does not store your wallet private keys — Coinbase does. This means Shake cannot access, move, or redirect escrowed funds. Coinbase provides wallet infrastructure and currency exchange, but escrow logic is enforced by blockchain code — not by human discretion."},
       { "question": "What is documented when I make a transaction?", "answer": "Shake encrypts all data and logs every detail: Time, location, signatures, and photos that you provide. Each party's device also takes a front-facing photo of the signer as they are signing. Delivery confirmation can be uploaded, and the system confirms the money is available before a transaction happens." },
       { "question": "How does Shake create accountability?", "answer": "Every Shake user has a verified identity and feedback score. Persona checks each member's ID, so no one can make unlimited wallets to hide from accountability." },
       { "question": "What information is public?", "answer": "While transactions are recorded on the blockchain (which is publicly viewable but anonymous), personal Shake accounts and blockchain accounts are not publicly associated. " },
