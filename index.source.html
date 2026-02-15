@@ -15,10 +15,6 @@
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
       (function(l) {
-        // Only process if:
-        // 1. We have a redirect query string starting with /?/
-        // 2. It's not just /?/ alone (which would be root)
-        // 3. There's actually a path to restore
         if (l.search[1] === '/' && l.search.length > 2) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
@@ -31,28 +27,14 @@
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
 
-    <!-- Google Analytics - Cookieless Mode with Consent -->
-    <script>
-      // Set default consent to denied
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      
-      gtag('consent', 'default', {
-        'analytics_storage': 'denied',
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied'
-      });
-    </script>
-
-    <!-- Then your regular Google tag -->
+    <!-- Google Analytics - Cookieless Mode -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8Q7C37YBJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-W8Q7C37YBJ', {
-        'send_page_view': false  // Disable automatic page view on load
+        'client_storage': 'none'  // Disable cookies but collect all other data
       });
     </script>
   </head>

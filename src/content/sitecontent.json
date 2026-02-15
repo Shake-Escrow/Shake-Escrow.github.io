@@ -36,11 +36,11 @@
         },
         {
           "title": "Add a payment method",
-          "description": "Fund your payments using crypto you already own, or use Coinbase Onramp to purchase crypto directly. Need a different currency? Our integrated swap feature lets you convert between supported cryptocurrencies. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
+          "description": "Fund your payments using crypto you already own, or use Coinbase Onramp to purchase crypto directly. Need a different currency? Our integrated swap feature lets you convert between supported cryptocurrencies."
         },
         {
           "title": "Start transacting",
-          "description": "Begin sending and receiving with complete confidence."
+          "description": "Begin sending and receiving with complete confidence. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
         }
       ]
     },
