@@ -4,9 +4,25 @@ import siteContent from '../../content/sitecontent.json';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 
+type Platform = 'ios' | 'android';
 
-const Hero: React.FC = () => {
-  const [platform, setPlatform] = useState<'ios' | 'android'>('android');
+interface HeroProps {
+  platform?: Platform;
+  onPlatformChange?: (platform: Platform) => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformChange }) => {
+  const [internalPlatform, setInternalPlatform] = useState<Platform>('android');
+  const platform = controlledPlatform ?? internalPlatform;
+
+  const setPlatform = (nextPlatform: Platform) => {
+    if (onPlatformChange) {
+      onPlatformChange(nextPlatform);
+      return;
+    }
+    setInternalPlatform(nextPlatform);
+  };
+
   const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
   const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'

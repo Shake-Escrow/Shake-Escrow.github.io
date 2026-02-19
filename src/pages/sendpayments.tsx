@@ -50,8 +50,8 @@ const SendPayments: React.FC = () => {
         siteContent.sendPayments.sections[2],
       ].map((section, idx) => {
         let imageSrc = '';
-        if (section.headline === 'Level Up as a Sensible Spender') imageSrc = '/images/02_level up as a sensible spender.png';
-        if (section.headline === 'Freedom and Flexibility') imageSrc = '/images/03_freedom and flexibility.png';
+        if (idx === 0) imageSrc = '/images/03_freedom and flexibility.png';
+        if (idx === 1) imageSrc = '/images/02_accept%20crypto%20from%20anyone.png';
         return (
           <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-8 md:mt-0'}`}>
             <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />

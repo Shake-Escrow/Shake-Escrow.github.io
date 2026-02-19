@@ -1,6 +1,6 @@
 // src/app.tsx
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 
 // Layout components
@@ -27,6 +27,7 @@ declare global {
 
 function App() {
   const location = useLocation();
+  const [platform, setPlatform] = useState<'ios' | 'android'>('android');
 
   // Track page views on route change
   useEffect(() => {
@@ -44,7 +45,7 @@ function App() {
       <Navbar />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home platform={platform} onPlatformChange={setPlatform} />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/get-paid" element={<GetPaid />} />
           <Route path="/send-payments" element={<SendPayments />} />
@@ -55,7 +56,7 @@ function App() {
           <Route path="/delete-account" element={<DeleteAccount />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer platform={platform} />
     </div>
   );
 }

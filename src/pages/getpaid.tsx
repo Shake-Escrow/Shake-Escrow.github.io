@@ -28,7 +28,7 @@ const GetPaid: React.FC = () => {
           {/* First card: Accept crypto from anyone */}
           {(() => {
             const section = siteContent.getPaid.sections[2];
-            const imageSrc = '/images/02_accept crypto from anyone.png';
+            const imageSrc = '/images/02_accept%20crypto%20from%20anyone.png';
             return (
               <div className="bg-[#e6e9ed] rounded-2xl p-8 md:p-12  flex flex-col md:flex-row items-center gap-7">
                 <div className="md:w-1/2 w-full">

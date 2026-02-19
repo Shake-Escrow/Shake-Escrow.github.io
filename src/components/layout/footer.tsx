@@ -4,7 +4,15 @@ import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 
-const Footer: React.FC = () => {
+type Platform = 'ios' | 'android';
+
+interface FooterProps {
+  platform?: Platform;
+}
+
+const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
+  const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
+
   return (
     <footer className="bg-white text-[#2d3440]">
       <div className="container mx-auto px-6 py-12">
@@ -17,7 +25,7 @@ const Footer: React.FC = () => {
           </div>
           {/* Second column: QR code, centered */}
           <div className="lg:col-span-1 flex justify-center items-center">
-            <img src="/images/qr-android.png" alt="Shake QR Code" className="w-full max-w-xs h-auto aspect-square object-contain mx-auto" />
+            <img src={qrImage} alt="Shake QR Code" className="w-full max-w-xs h-auto aspect-square object-contain mx-auto" />
           </div>
           {/* Third column: Quick Links, button, contact, socials */}
           <div className="lg:col-span-1 flex flex-col items-start space-y-3">
@@ -26,7 +34,11 @@ const Footer: React.FC = () => {
               <ul className="space-y-1 mb-3">
                 {siteContent.footer.quickLinks.map((link: {label: string, url: string}, idx: number) => (
                   <li key={idx}>
-                    <Link to={link.url} className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</Link>
+                    {link.url.endsWith('.pdf') ? (
+                      <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</a>
+                    ) : (
+                      <Link to={link.url} className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</Link>
+                    )}
                   </li>
                 ))}
               </ul>

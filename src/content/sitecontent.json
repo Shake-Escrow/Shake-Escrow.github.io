@@ -157,12 +157,13 @@
       { "label": "Home", "url": "/" },
       { "label": "How it Works", "url": "/how-it-works" },
       { "label": "Get Paid", "url": "/get-paid" },
-      { "label": "Send Payments", "url": "/send-payments" }
+      { "label": "Send Payments", "url": "/send-payments" },
+      { "label": "White Paper", "url": "/assets/shake_defi_whitepaper_v2-1.pdf" }
     ],
     "button": "Available Now",
     "contactLabel": "Contact Us",
     "contactEmail": "matt@shakedefi.com",
-    "copyright": "2025 Shake Defi, Inc."
+    "copyright": "2026 Shake Defi, Inc."
   },
   "faq": {
     "headline": "Frequently Asked Questions",
