@@ -1,11 +1,11 @@
 // src/app.tsx
-import React from 'react';
 import { useEffect, useState } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 
 // Layout components
 import Navbar from './components/layout/navbar';
 import Footer from './components/layout/footer';
+import ChatWidget from './components/common/chat-widget';
 
 // Pages
 import Home from './pages/home';
@@ -57,6 +57,7 @@ function App() {
         </Routes>
       </main>
       <Footer platform={platform} />
+      <ChatWidget />
     </div>
   );
 }
