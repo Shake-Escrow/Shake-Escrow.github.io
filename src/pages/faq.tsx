@@ -19,7 +19,7 @@ const renderInlineLinks = (text: string): React.ReactNode[] => {
   while ((match = linkRegex.exec(text)) !== null) {
     if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
     parts.push(
-      <a key={match.index} href={match[2]} target="_blank" rel="noopener noreferrer" className="text-accent underline hover:opacity-80">
+      <a key={match.index} href={match[2]} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80" style={{color: '#1184b0'}}>
         {match[1]}
       </a>
     );
