@@ -11,6 +11,24 @@ interface FAQItemProps {
   toggleOpen: () => void;
 }
 
+const renderInlineLinks = (text: string): React.ReactNode[] => {
+  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match;
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) parts.push(text.slice(lastIndex, match.index));
+    parts.push(
+      <a key={match.index} href={match[2]} target="_blank" rel="noopener noreferrer" className="text-accent underline hover:opacity-80">
+        {match[1]}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts;
+};
+
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen }) => {
   return (
     <div className="border-b border-secondary last:border-b-0">
@@ -32,9 +50,10 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen 
     {para.split('\n').map((line, i) => {
       const trimmed = line.trim();
       const isIndented = /^([1-9]\)|\s{4,})/.test(trimmed);
+      const content = renderInlineLinks(isIndented ? trimmed : line);
       return (
         <React.Fragment key={i}>
-          {isIndented ? <span style={{paddingLeft: '2em', display: 'block'}}>{trimmed}</span> : line}
+          {isIndented ? <span style={{paddingLeft: '2em', display: 'block'}}>{content}</span> : content}
           {i < para.split('\n').length - 1 && <br />}
         </React.Fragment>
       );
