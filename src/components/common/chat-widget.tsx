@@ -181,7 +181,7 @@ const ChatWidget = () => {
                   void submitMessage();
                 }}
                 disabled={isLoading || input.trim().length === 0}
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-white shadow-md transition hover:-translate-y-0.5 hover:shadow-lg disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-secondary-dark shadow-md transition hover:-translate-y-0.5 hover:shadow-lg disabled:cursor-not-allowed disabled:bg-slate-300 disabled:shadow-none"
                 aria-label="Send message"
               >
                 <Send size={18} />
@@ -194,7 +194,7 @@ const ChatWidget = () => {
       <button
         type="button"
         onClick={() => setIsOpen((currentValue) => !currentValue)}
-        className="fixed bottom-4 right-4 z-[60] flex h-16 w-16 items-center justify-center rounded-full bg-accent text-white shadow-xl transition duration-200 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl sm:bottom-6 sm:right-6"
+        className="fixed bottom-4 right-4 z-[60] flex h-16 w-16 items-center justify-center rounded-full bg-accent text-secondary-dark shadow-xl transition duration-200 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl sm:bottom-6 sm:right-6"
         aria-label={isOpen ? 'Close website chat' : 'Open website chat'}
       >
         {isOpen ? <X size={26} /> : <MessageCircle size={26} />}
