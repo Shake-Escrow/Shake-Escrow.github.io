@@ -137,9 +137,9 @@ const ChatWidget = () => {
               >
                 <div
                   className={[
-                    'max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-6 shadow-sm',
+                    'max-w-[85%] whitespace-pre-wrap rounded-2xl px-4 py-3 text-sm leading-6 shadow-sm',
                     message.role === 'user'
-                      ? 'bg-accent text-white'
+                      ? 'bg-accent text-secondary-dark'
                       : message.isError
                         ? 'bg-red-50 text-red-700'
                         : 'bg-white text-secondary-dark'
