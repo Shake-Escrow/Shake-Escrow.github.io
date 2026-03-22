@@ -16,6 +16,31 @@ interface ChatApiResponse {
   error?: string;
 }
 
+const CHAT_SESSION_STORAGE_KEY = 'shake-website-chat-session-id';
+
+const createChatSessionId = (): string => {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+
+  return `chat_${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+};
+
+const getOrCreateChatSessionId = (): string | null => {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
+  const existingSessionId = window.sessionStorage.getItem(CHAT_SESSION_STORAGE_KEY);
+  if (existingSessionId) {
+    return existingSessionId;
+  }
+
+  const nextSessionId = createChatSessionId();
+  window.sessionStorage.setItem(CHAT_SESSION_STORAGE_KEY, nextSessionId);
+  return nextSessionId;
+};
+
 const INITIAL_MESSAGE: ChatMessage = {
   id: 'welcome',
   role: 'assistant',
@@ -54,6 +79,7 @@ const ChatWidget = () => {
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
   const chatEndpoint = useMemo(() => buildChatEndpoint(), []);
+  const chatSessionId = useMemo(() => getOrCreateChatSessionId(), []);
 
   useEffect(() => {
     if (isOpen) {
@@ -96,6 +122,7 @@ const ChatWidget = () => {
         body: JSON.stringify({
           message: trimmedMessage,
           page: window.location.pathname,
+          sessionId: chatSessionId,
           history: nextMessages.slice(-8).map(({ role, text }) => ({ role, text }))
         })
       });
