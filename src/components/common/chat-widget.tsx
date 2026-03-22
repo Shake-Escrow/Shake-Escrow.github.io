@@ -36,6 +36,16 @@ const buildChatEndpoint = (): string => {
   return '/api/website/chat';
 };
 
+const trackChatEvent = (eventName: string, params: Record<string, unknown> = {}) => {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    window.gtag('event', eventName, {
+      event_category: 'chat',
+      page_path: window.location.pathname,
+      ...params
+    });
+  }
+};
+
 const ChatWidget = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
@@ -60,6 +70,11 @@ const ChatWidget = () => {
     if (!trimmedMessage || isLoading) {
       return;
     }
+
+    trackChatEvent('chat_message_sent', {
+      message_length: trimmedMessage.length,
+      history_count: messages.length
+    });
 
     const userMessage: ChatMessage = {
       id: `user-${Date.now()}`,
@@ -96,6 +111,10 @@ const ChatWidget = () => {
         role: 'assistant',
         text: data.reply
       });
+
+      trackChatEvent('chat_response_received', {
+        success: true
+      });
     } catch (error) {
       appendMessage({
         id: `assistant-error-${Date.now()}`,
@@ -104,6 +123,10 @@ const ChatWidget = () => {
           ? error.message
           : 'Something went wrong while contacting support chat.',
         isError: true
+      });
+
+      trackChatEvent('chat_response_received', {
+        success: false
       });
     } finally {
       setIsLoading(false);
@@ -193,7 +216,17 @@ const ChatWidget = () => {
 
       <button
         type="button"
-        onClick={() => setIsOpen((currentValue) => !currentValue)}
+        onClick={() => {
+          setIsOpen((currentValue) => {
+            const nextValue = !currentValue;
+
+            if (nextValue) {
+              trackChatEvent('chat_widget_opened');
+            }
+
+            return nextValue;
+          });
+        }}
         className="fixed bottom-4 right-4 z-[60] flex h-16 w-16 items-center justify-center rounded-full bg-accent text-secondary-dark shadow-xl transition duration-200 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl sm:bottom-6 sm:right-6"
         aria-label={isOpen ? 'Close website chat' : 'Open website chat'}
       >
