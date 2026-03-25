@@ -1,3 +1,4 @@
+// src/pages/home.tsx
 import React from 'react';
 import Hero from '../components/sections/hero';
 import Features from '../components/sections/features';

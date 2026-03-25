@@ -1,3 +1,4 @@
+// src/components/common/section.tsx
 import React from 'react';
 
 interface SectionProps {

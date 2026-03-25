@@ -1,3 +1,4 @@
+// src/components/sections/hero.tsx
 import React, { useState } from 'react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
@@ -28,6 +29,8 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : 'https://apps.apple.com/us/app/shake-defi/id6756281576';
   const ctaLabel = 'Free Download';
+  const partnerLinkText = 'crypto onramp/offramp partner';
+  const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -97,7 +100,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
             </div>
           </div>
           
-          <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="flex-1 flex flex-col items-center lg:items-end gap-6">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-accent to-primary-light opacity-30 rounded-full blur-lg animate-pulse-slow"></div>
               <img 
@@ -107,6 +110,32 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                 height={280}
                 className="animate-float shadow-[0_8px_40px_0_#c1e534] rounded-lg"
               />
+            </div>
+            <div className="flex flex-col items-center lg:items-end gap-3">
+              <p className="font-body text-base text-secondary">
+                {partnerLabelPrefix}
+                <a
+                  href="https://shakedefi.com/assets/coinbase-ramp-approval.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-secondary/40 underline-offset-4 transition-opacity hover:opacity-75"
+                >
+                  {partnerLinkText}
+                </a>
+                {partnerLabelSuffix}
+              </p>
+              <a
+                href="https://www.coinbase.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-75"
+              >
+                <img
+                  src="/images/coinbase-logo.png"
+                  alt="Coinbase"
+                  className="h-8 w-auto"
+                />
+              </a>
             </div>
           </div>
         </div>

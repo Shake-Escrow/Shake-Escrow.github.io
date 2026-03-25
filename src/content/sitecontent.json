@@ -3,7 +3,8 @@
     "hero": {
       "headline": "The everyday crypto payment platform",
       "subhead": "Shake is a payment platform that makes cryptocurrency reliable and safe for everyday use, from daily purchases to big transfers.",
-      "button": "Available Now"
+      "button": "Available Now",
+      "partnerLabel": "Our crypto onramp/offramp partner:"
     },
     "features": {
       "headline": "Supercharge Your Payment\nwith Refundable Escrow",

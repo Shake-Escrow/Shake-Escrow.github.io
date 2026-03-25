@@ -1,3 +1,4 @@
+// src/components/common/qrcode.tsx
 import React from 'react';
 import { QrCode, Bitcoin } from 'lucide-react';
 
