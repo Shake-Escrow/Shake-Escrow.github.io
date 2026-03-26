@@ -125,7 +125,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                 {partnerLabelSuffix}
               </p>
               <a
-                href="https://www.coinbase.com"
+                href="https://www.coinbase.com/developer-platform/products/onramp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-75"
