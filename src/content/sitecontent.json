@@ -53,9 +53,9 @@
         "button": "Learn more"
       },
       "customer": {
-        "label": "Customer",
-        "headline": "Spend on\nwhat matters",
-        "description": "Shake is a safer way to pay, designed for people who take spending seriously and want to avoid traditional banks and credit card issues.",
+        "label": "Buyer",
+        "headline": "Pay with\na safety net",
+        "description": "Deposit funds into escrow through the app. Your money is held securely for the agreed period. If something goes wrong, you can request a refund before the window closes.",
         "button": "Learn more"
       }
     }
