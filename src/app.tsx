@@ -29,6 +29,11 @@ function App() {
   const location = useLocation();
   const [platform, setPlatform] = useState<'ios' | 'android'>('android');
 
+  // Reset scroll position when navigating between routes
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }, [location.pathname]);
+
   // Track page views on route change
   useEffect(() => {
     if (typeof window.gtag !== 'undefined') {
