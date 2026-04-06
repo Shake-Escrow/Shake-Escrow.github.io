@@ -31,8 +31,22 @@ function App() {
 
   // Reset scroll position when navigating between routes
   useEffect(() => {
+    if (location.hash) {
+      const elementId = location.hash.replace('#', '');
+      const timer = setTimeout(() => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   // Track page views on route change
   useEffect(() => {

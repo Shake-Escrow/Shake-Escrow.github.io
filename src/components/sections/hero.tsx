@@ -1,5 +1,6 @@
 // src/components/sections/hero.tsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
@@ -31,6 +32,8 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
   const ctaLabel = 'Free Download';
   const partnerLinkText = 'crypto onramp/offramp partner';
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
+  const subheadLinkText = '95%';
+  const [subheadPrefix, subheadSuffix = ''] = siteContent.home.hero.subhead.split(subheadLinkText);
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -46,7 +49,14 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
             </h1>
             
             <p className="font-body text-lg md:text-xl text-secondary max-w-2xl">
-              {siteContent.home.hero.subhead}
+              {subheadPrefix}
+              <Link
+                to="/get-paid#keep-more-of-what-you-earn"
+                className="underline decoration-secondary/40 underline-offset-4 transition-opacity hover:opacity-75"
+              >
+                {subheadLinkText}
+              </Link>
+              {subheadSuffix}
             </p>
             
             <div className="space-y-4 max-w-md mx-auto lg:mx-0">
