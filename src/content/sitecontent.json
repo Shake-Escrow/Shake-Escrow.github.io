@@ -47,9 +47,9 @@
     },
     "businessCustomerCards": {
       "business": {
-        "label": "Business",
-        "headline": "Grow trust,\ngrow your sales",
-        "description": "Shake's underlying payment system, thorough transaction records and member reputation increase your credibility and reduce disputes.",
+        "label": "Merchant",
+        "headline": "Get paid\nautomatically",
+        "description": "Set your escrow period, share it with your buyer, and receive funds at the end of the window — automatically. No bank, no manual release, no waiting.",
         "button": "Learn more"
       },
       "customer": {
