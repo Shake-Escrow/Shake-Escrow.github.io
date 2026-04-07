@@ -4,6 +4,18 @@ import Section from '../components/common/section';
 import Button from '../components/common/button';
 import siteContent from '../content/sitecontent.json';
 
+const renderWithOdosLink = (text: string) => {
+  const parts = text.split('Odos');
+  if (parts.length === 1) return <>{text}</>;
+  return (
+    <>
+      {parts[0]}
+      <a href="https://odos.xyz" target="_blank" rel="noopener noreferrer" className="underline decoration-[#2d3440]/40 underline-offset-4 transition-opacity hover:opacity-75">Odos</a>
+      {parts[1]}
+    </>
+  );
+};
+
 const SendPayments: React.FC = () => {
   return (
     <div className="pt-24">
@@ -56,7 +68,7 @@ const SendPayments: React.FC = () => {
           <div key={section.headline} className={`bg-[#e6e9ed] rounded-2xl py-8 px-6 md:px-12 md:py-12 flex flex-col items-start text-left h-full ${idx === 0 ? ' md:mb-0' : 'mt-8 md:mt-0'}`}>
             <img src={imageSrc} alt={section.headline} className="w-full h-43 object-cover rounded-2xl " />
             <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-            <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">{section.description}</p>
+            <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">{idx === 1 ? renderWithOdosLink(section.description) : section.description}</p>
           </div>
         );
       })}
