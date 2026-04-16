@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   const variantStyles = {
     primary: 'bg-accent text-secondary-dark hover:bg-opacity-90 focus:ring-accent',
     secondary: 'bg-secondary-dark text-primary hover:bg-opacity-90 focus:ring-secondary-dark',
-    outline: 'border-2 border-accent text-accent hover:bg-accent hover:text-secondary-dark focus:ring-accent',
+    outline: 'border-2 border-accent text-secondary-dark hover:bg-accent focus:ring-accent',
   };
 
   const sizeStyles = {

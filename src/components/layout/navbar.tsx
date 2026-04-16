@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { GoBrowser } from "react-icons/go";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,6 @@ const Navbar: React.FC = () => {
     { title: 'Get Paid', path: '/get-paid' },
     { title: 'Send Payments', path: '/send-payments' },
     { title: 'FAQ', path: '/faq' },
-    { title: 'Substack', path: 'https://substack.com/home/post/p-192785688', external: true },
   ];
 
   return (
@@ -47,26 +47,23 @@ const Navbar: React.FC = () => {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
           {navItems.map((item) => (
-            item.external ? (
-              <a
-                key={item.path}
-                href={item.path}
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent hover:border-accent font-body"
-              >
-                {item.title}
-              </a>
-            ) : (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ${location.pathname === item.path ? 'bg-accent shadow-sm' : 'hover:border-accent'} font-body`}
-              >
-                {item.title}
-              </Link>
-            )
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent ${location.pathname === item.path ? 'bg-accent shadow-sm' : 'hover:border-accent'} font-body`}
+            >
+              {item.title}
+            </Link>
           ))}
+          <a
+            href="https://app.shakedefi.com"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 font-medium text-base px-5 py-1.5 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body"
+          >
+            Launch App
+            <GoBrowser size={24} aria-hidden="true" />
+          </a>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -93,28 +90,25 @@ const Navbar: React.FC = () => {
         </button>
         <div className="flex flex-col items-center justify-center h-full space-y-8">
           {navItems.map((item) => (
-            item.external ? (
-              <a
-                key={item.path}
-                href={item.path}
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body text-gray-300"
-                onClick={closeMenu}
-              >
-                {item.title}
-              </a>
-            ) : (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
-                onClick={closeMenu}
-              >
-                {item.title}
-              </Link>
-            )
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
+              onClick={closeMenu}
+            >
+              {item.title}
+            </Link>
           ))}
+          <a
+            href="https://app.shakedefi.com"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 font-medium text-xl px-6 py-2 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body"
+            onClick={closeMenu}
+          >
+            Launch App
+            <GoBrowser size={24} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </header>

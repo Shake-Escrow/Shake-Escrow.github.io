@@ -5,6 +5,7 @@ import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
+import { GoBrowser } from "react-icons/go";
 
 type Platform = 'ios' | 'android';
 
@@ -94,8 +95,8 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 onClick={() => { window.location.href = appStoreLink; }}
               >
                 <span className="inline-flex items-center gap-2">
@@ -105,6 +106,16 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                   ) : (
                     <GrAppleAppStore className="text-2xl" aria-hidden="true" />
                   )}
+                </span>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => { window.open('https://app.shakedefi.com', '_blank', 'noreferrer'); }}
+              >
+                <span className="inline-flex items-center gap-2">
+                  Use Web App
+                  <GoBrowser size={24} aria-hidden="true" />
                 </span>
               </Button>
             </div>
