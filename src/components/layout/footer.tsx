@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Twitter, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { X, Linkedin } from 'lucide-react';
 import Button from '../common/button';
 import siteContent from '../../content/sitecontent.json';
 
@@ -54,16 +54,15 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
               </div>
               <div className="flex space-x-3 mt-2">
                 <a href="https://x.com/shakedefi" className="text-[#2d3440] hover:text-accent transition-colors font-body">
-                  <Twitter size={20} />
-                </a>
-                <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="text-[#2d3440] hover:text-accent transition-colors font-body">
-                  <Instagram size={20} />
+                  <X size={20} />
                 </a>
                 <a href="https://www.linkedin.com/in/matt-anderson-30463732/" className="text-[#2d3440] hover:text-accent transition-colors font-body" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={20} />
+                </a>
+                <a href="https://shakedefi.substack.com/p/the-activation-energy-of-money" className="text-[#FF6719] hover:text-accent transition-colors font-body" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width={18} height={18} fill="currentColor" aria-label="Substack">
+                    <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
+                  </svg>
                 </a>
               </div>
             </div>
