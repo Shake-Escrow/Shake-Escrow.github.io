@@ -95,7 +95,7 @@ const TOSContent: React.FC = () => {
           
           {section.content && (
             <div
-              className="text-base text-gray-700 leading-relaxed mb-6"
+              className="text-base text-gray-700 leading-relaxed mb-6 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:my-3 [&_li]:mb-1"
               dangerouslySetInnerHTML={{ __html: nl2br(section.content) }}
             />
           )}
@@ -108,7 +108,7 @@ const TOSContent: React.FC = () => {
               
               {subsection.content && (
                 <div
-                  className="text-base text-gray-700 leading-relaxed mb-4"
+                  className="text-base text-gray-700 leading-relaxed mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:my-3 [&_li]:mb-1"
                   dangerouslySetInnerHTML={{ __html: nl2br(subsection.content) }}
                 />
               )}
