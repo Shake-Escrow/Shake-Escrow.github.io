@@ -70,21 +70,23 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
         </div>
         <div className="border-t border-gray-200 pt-6 mt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm font-body opacity-80">{siteContent.footer.copyright}</p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link 
-              to="/privacy-policy" 
+          <div className="flex items-center gap-2 mt-4 md:mt-0 pr-20 sm:pr-24">
+            <Link
+              to="/privacy-policy"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
               Privacy Policy
             </Link>
-            <Link 
-              to="/end-user-license-agreement" 
+            <span className="text-sm text-gray-400 select-none">|</span>
+            <Link
+              to="/end-user-license-agreement"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
               End User License Agreement
             </Link>
-            <Link 
-              to="/terms-of-service" 
+            <span className="text-sm text-gray-400 select-none">|</span>
+            <Link
+              to="/terms-of-service"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
               Terms of Service
