@@ -105,15 +105,16 @@ const TOSContent: React.FC = () => {
               </h3>
               
               {subsection.content && (
-                <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  {subsection.content}
-                </p>
+                <div
+                  className="text-base text-gray-700 leading-relaxed mb-4"
+                  dangerouslySetInnerHTML={{ __html: subsection.content }}
+                />
               )}
-              
+
               {subsection.list && (
                 <ul className="list-disc pl-6 space-y-2 text-base text-gray-700 mb-4">
                   {subsection.list.map((item: string, idx: number) => (
-                    <li key={idx}>{item}</li>
+                    <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
                 </ul>
               )}
