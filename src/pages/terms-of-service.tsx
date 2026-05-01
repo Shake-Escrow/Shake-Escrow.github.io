@@ -62,7 +62,14 @@ const TermsOfService: React.FC = () => {
   );
 };
 
-const nl2br = (html: string) => html.replace(/\n\n/g, '<br><br>').replace(/\n/g, ' ');
+const processHtml = (html: string) =>
+  html
+    .replace(/^#{4}\s+(.+)$/gm, '<h4>$1</h4>')
+    .replace(/^#{3}\s+(.+)$/gm, '<h3>$1</h3>')
+    .replace(/^#{2}\s+(.+)$/gm, '<h2>$1</h2>')
+    .replace(/^#\s+(.+)$/gm, '<h1>$1</h1>')
+    .replace(/\n\n/g, '<br><br>')
+    .replace(/\n/g, ' ');
 
 // Component to render the Terms of Service content from JSON
 const TOSContent: React.FC = () => {
@@ -96,7 +103,7 @@ const TOSContent: React.FC = () => {
           {section.content && (
             <div
               className="tos-content text-base text-gray-700 leading-relaxed mb-6"
-              dangerouslySetInnerHTML={{ __html: nl2br(section.content) }}
+              dangerouslySetInnerHTML={{ __html: processHtml(section.content) }}
             />
           )}
           
@@ -109,7 +116,7 @@ const TOSContent: React.FC = () => {
               {subsection.content && (
                 <div
                   className="tos-content text-base text-gray-700 leading-relaxed mb-4"
-                  dangerouslySetInnerHTML={{ __html: nl2br(subsection.content) }}
+                  dangerouslySetInnerHTML={{ __html: processHtml(subsection.content) }}
                 />
               )}
 
