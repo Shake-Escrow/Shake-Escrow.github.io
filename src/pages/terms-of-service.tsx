@@ -64,10 +64,9 @@ const TermsOfService: React.FC = () => {
 
 const processHtml = (html: string) =>
   html
-    .replace(/^#{4}\s+(.+)$/gm, '<h4>$1</h4>')
-    .replace(/^#{3}\s+(.+)$/gm, '<h3>$1</h3>')
-    .replace(/^#{2}\s+(.+)$/gm, '<h2>$1</h2>')
-    .replace(/^#\s+(.+)$/gm, '<h1>$1</h1>')
+    .replace(/####\s+([^\n\r]+)/g, '<h4>$1</h4>')
+    .replace(/###\s+([^\n\r]+)/g, '<h3>$1</h3>')
+    .replace(/##\s+([^\n\r]+)/g, '<h2>$1</h2>')
     .replace(/\n\n/g, '<br><br>')
     .replace(/\n/g, ' ');
 
