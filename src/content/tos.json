@@ -1,577 +1,413 @@
 {
-  "title": "Terms of Service",
-  "company": "Shake Defi, Inc.",
-  "lastUpdated": "November 12, 2025",
-  "introduction": "These Terms of Service (\"Terms\") constitute a legally binding agreement between you (\"User,\" \"you,\" or \"your\") and Shake Defi, Inc. (\"Company,\" \"we,\" \"us,\" or \"our\") governing your use of our mobile application (the \"App\") and related services (collectively, the \"Services\"). These Terms work in conjunction with our End User License Agreement (\"EULA\") and together form the complete agreement governing your use of our Services.",
+  "lastUpdated": "May 1, 2026",
+  "effectiveDate": "May 1, 2026",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "TERMS OF SERVICE",
   "sections": [
     {
-      "id": "acceptance",
       "title": "1. Acceptance of Terms and Definitions",
       "subsections": [
         {
-          "id": "agreement",
-          "title": "1.1 Agreement to Terms",
+          "subtitle": "1.1 Agreement to Terms",
           "content": "By accessing, downloading, or using the App or Services, you acknowledge that you have read, understood, and agree to be bound by these Terms, our EULA, and our Privacy Policy. If you do not agree to these Terms, you may not access or use the Services."
         },
         {
-          "id": "definitions",
-          "title": "1.2 Definitions",
-          "content": "For purposes of these Terms, the following definitions apply:",
-          "definitions": [
-            {
-              "term": "User",
-              "definition": "means any person who creates an account and uses the Services, whether as a Merchant or Client."
-            },
-            {
-              "term": "Merchant",
-              "definition": "means a User who offers goods or services for sale through the App and creates Agreements for transactions."
-            },
-            {
-              "term": "Client",
-              "definition": "means a User who purchases goods or services from a Merchant through the App and agrees to pay according to the terms of an Agreement."
-            },
-            {
-              "term": "Agreement",
-              "definition": "means the digital contract created by a Merchant that specifies the goods or services to be exchanged, the payment amount, the Payment Holding Period, and any other relevant transaction terms. Each Agreement is digitally signed by both the Merchant and the Client."
-            },
-            {
-              "term": "Payment Holding Period",
-              "definition": "means the period of time, specified in the Agreement by the Merchant, during which payment funds are held in escrow by the Smart Contract before being released to the Merchant. This period may range from zero (0) to any reasonable duration as permitted by the App."
-            },
-            {
-              "term": "Smart Contract",
-              "definition": "means the autonomous, self-executing blockchain-based program that holds Client funds in escrow during the Payment Holding Period and executes the release or refund of funds according to its predetermined logic and any authorized instructions from the Company."
-            },
-            {
-              "term": "Instant Transaction",
-              "definition": "means a transaction where the Payment Holding Period is set to zero (0), resulting in immediate transfer of funds to the Merchant without escrow functionality."
-            },
-            {
-              "term": "Dispute",
-              "definition": "means a formal claim initiated by a Client during the Payment Holding Period alleging that the Merchant has failed to fulfill the terms of the Agreement."
-            }
-          ]
+          "subtitle": "1.2 Definitions",
+          "content": "For purposes of these Terms, the following definitions apply:\n\n<strong>\"User\"</strong> means any person who creates an account and uses the Services, whether as a Merchant or Client.\n\n<strong>\"Merchant\"</strong> means a User who offers goods or services for sale through the App and creates Agreements for transactions.\n\n<strong>\"Client\"</strong> means a User who purchases goods or services from a Merchant through the App and agrees to pay according to the terms of an Agreement.\n\n<strong>\"Agreement\"</strong> means the digital contract created by a Merchant that specifies the goods or services to be exchanged, the payment amount, the Payment Holding Period, and any other relevant transaction terms. Each Agreement is digitally signed by both the Merchant and the Client.\n\n<strong>\"Payment Holding Period\"</strong> means the period of time, specified in the Agreement by the Merchant, during which payment funds are held in escrow by the Smart Contract before being released to the Merchant. This period may range from zero (0) to any reasonable duration as permitted by the App.\n\n<strong>\"Smart Contract\"</strong> means the autonomous, self-executing blockchain-based program that holds Client funds in escrow during the Payment Holding Period and executes the release or refund of funds according to its predetermined logic and any authorized instructions from the Company.\n\n<strong>\"Instant Transaction\"</strong> means a transaction where the Payment Holding Period is set to zero (0), resulting in immediate transfer of funds to the Merchant without escrow functionality.\n\n<strong>\"Dispute\"</strong> means a formal claim initiated by a Client during the Payment Holding Period alleging that the Merchant has failed to fulfill the terms of the Agreement."
         }
       ]
     },
     {
-      "id": "user-roles",
       "title": "2. User Roles and Responsibilities",
       "subsections": [
         {
-          "id": "dual-capacity",
-          "title": "2.1 Dual User Capacity",
+          "subtitle": "2.1 Dual User Capacity",
           "content": "Users may act as both Merchants and Clients at different times. Regardless of role, all Users are bound by these Terms and remain responsible for fulfilling all obligations arising from any Agreements they enter into through the Services."
         },
         {
-          "id": "merchant-responsibilities",
-          "title": "2.2 Merchant Responsibilities",
-          "content": "As a Merchant, you agree to:",
-          "list": [
-            "Create clear, accurate, and complete Agreements that truthfully describe the goods or services you are offering",
-            "Deliver all goods or perform all services exactly as described in each Agreement you create and sign",
-            "Fulfill your obligations within the timeframes specified or reasonably implied in the Agreement",
-            "Respond promptly and professionally to Client inquiries and concerns",
-            "Cooperate fully in the event of a Dispute, including providing all requested evidence and documentation",
-            "Maintain sufficient inventory or capacity to fulfill your obligations under active Agreements",
-            "Not create Agreements with false, misleading, or deceptive information",
-            "Set reasonable Payment Holding Periods that align with the nature of the goods or services being provided"
-          ]
+          "subtitle": "2.2 Merchant Responsibilities",
+          "content": "As a Merchant, you agree to:\n\n<ul>\n<li>Create clear, accurate, and complete Agreements that truthfully describe the goods or services you are offering</li>\n<li>Deliver all goods or perform all services exactly as described in each Agreement you create and sign</li>\n<li>Fulfill your obligations within the timeframes specified or reasonably implied in the Agreement</li>\n<li>Respond promptly and professionally to Client inquiries and concerns</li>\n<li>Cooperate fully in the event of a Dispute, including providing all requested evidence and documentation</li>\n<li>Maintain sufficient inventory or capacity to fulfill your obligations under active Agreements</li>\n<li>Not create Agreements with false, misleading, or deceptive information</li>\n<li>Set reasonable Payment Holding Periods that align with the nature of the goods or services being provided</li>\n</ul>"
         },
         {
-          "id": "client-responsibilities",
-          "title": "2.3 Client Responsibilities",
-          "content": "As a Client, you agree to:",
-          "list": [
-            "Carefully review all terms of an Agreement before signing, including the description of goods or services, payment amount, and Payment Holding Period",
-            "Pay the agreed-upon amount promptly after signing an Agreement",
-            "Accept delivery of goods or services as specified in the Agreement",
-            "Only initiate Disputes when you have a legitimate, good-faith basis for believing the Merchant has not fulfilled the Agreement",
-            "Provide truthful and complete information when initiating a Dispute",
-            "Cooperate fully during the dispute resolution process",
-            "Not abuse the dispute process to obtain goods or services without proper payment"
-          ]
+          "subtitle": "2.3 Client Responsibilities",
+          "content": "As a Client, you agree to:\n\n<ul>\n<li>Carefully review all terms of an Agreement before signing, including the description of goods or services, payment amount, and Payment Holding Period</li>\n<li>Pay the agreed-upon amount promptly after signing an Agreement</li>\n<li>Accept delivery of goods or services as specified in the Agreement</li>\n<li>Only initiate Disputes when you have a legitimate, good-faith basis for believing the Merchant has not fulfilled the Agreement</li>\n<li>Provide truthful and complete information when initiating a Dispute</li>\n<li>Cooperate fully during the dispute resolution process</li>\n<li>Not abuse the dispute process to obtain goods or services without proper payment</li>\n</ul>"
         },
         {
-          "id": "general-conduct",
-          "title": "2.4 General User Conduct",
-          "content": "All Users, whether acting as Merchants or Clients, agree to:",
-          "list": [
-            "Act in good faith and deal fairly with other Users",
-            "Honor all Agreements they sign through the Services",
-            "Not use the Services for any illegal, fraudulent, or unauthorized purpose",
-            "Not engage in any conduct that could damage, disable, or impair the Services",
-            "Comply with all applicable laws and regulations",
-            "Not impersonate another person or entity",
-            "Not harass, threaten, or abuse other Users"
-          ]
+          "subtitle": "2.4 General User Conduct",
+          "content": "All Users, whether acting as Merchants or Clients, agree to:\n\n<ul>\n<li>Act in good faith and deal fairly with other Users</li>\n<li>Honor all Agreements they sign through the Services</li>\n<li>Not use the Services for any illegal, fraudulent, or unauthorized purpose</li>\n<li>Not engage in any conduct that could damage, disable, or impair the Services</li>\n<li>Comply with all applicable laws and regulations</li>\n<li>Not impersonate another person or entity</li>\n<li>Not harass, threaten, or abuse other Users</li>\n</ul>"
         }
       ]
     },
     {
-      "id": "transaction-process",
       "title": "3. Transaction Process and Agreements",
       "subsections": [
         {
-          "id": "creating-agreement",
-          "title": "3.1 Creating an Agreement",
-          "content": "Merchants initiate transactions by creating Agreements through the App. Each Agreement must include: a clear description of the goods or services being offered; the total payment amount in cryptocurrency; the Payment Holding Period duration; and any other material terms relevant to the transaction. Merchants may attach images to the Agreement to further document and clarify the goods or services being offered. By creating an Agreement, the Merchant represents that all information contained therein is accurate, complete, and not misleading."
+          "subtitle": "3.1 Creating an Agreement",
+          "content": "Merchants initiate transactions by creating Agreements through the App. Each Agreement must include:\n\n<ul>\n<li>A clear description of the goods or services being offered</li>\n<li>The total payment amount in cryptocurrency</li>\n<li>The Payment Holding Period duration</li>\n<li>Any other material terms relevant to the transaction</li>\n</ul>\n\nMerchants may attach images to the Agreement to further document and clarify the goods or services being offered. By creating an Agreement, the Merchant represents that all information contained therein is accurate, complete, and not misleading."
         },
         {
-          "id": "agreement-review",
-          "title": "3.2 Agreement Review and Acceptance",
+          "subtitle": "3.2 Agreement Review and Acceptance",
           "content": "Before signing an Agreement, Clients have the opportunity to review all terms, including the description of goods or services, payment amount, Payment Holding Period, and any attached images. By signing an Agreement, the Client acknowledges that they have reviewed and understood all terms and agree to be bound by them."
         },
         {
-          "id": "digital-signature",
-          "title": "3.3 Digital Signature Process",
-          "content": "Both the Merchant and Client must digitally sign the Agreement using the App's signature functionality. The signature process includes: drawing a signature with a finger or stylus on the device screen; photographic capture as described in Section 3.5 of the EULA; and timestamp recording of the signature event. Once both parties have signed, the Agreement becomes legally binding, and the transaction may proceed."
+          "subtitle": "3.3 Digital Signature Process",
+          "content": "Both the Merchant and Client must digitally sign the Agreement using the App's signature functionality. The signature process includes:\n\n<ul>\n<li>Drawing a signature with a finger or stylus on the device screen</li>\n<li>Photographic capture as described in Section 3.5 of the EULA</li>\n<li>Timestamp recording of the signature event</li>\n</ul>\n\nOnce both parties have signed, the Agreement becomes legally binding, and the transaction may proceed."
         },
         {
-          "id": "payment-types",
-          "title": "3.4 Payment and Transaction Types",
-          "subsections": [
-            {
-              "id": "instant-transactions",
-              "title": "3.4.1 Instant Transactions",
-              "content": "When a Merchant sets the Payment Holding Period to zero (0), the transaction becomes an Instant Transaction. Upon the Client's payment: funds are transferred immediately to the Merchant; no escrow period applies; the Client waives the right to initiate a Dispute through the App; and the transaction is considered complete and final, subject only to remedies available outside the App. Merchants should only use Instant Transactions when they can deliver goods or services immediately or when the nature of the transaction does not warrant a holding period."
-            },
-            {
-              "id": "escrow-transactions",
-              "title": "3.4.2 Escrow Transactions",
-              "content": "When a Merchant sets a Payment Holding Period greater than zero (0), the Client's payment is held in escrow by the Smart Contract. During this period: the Merchant should deliver the goods or perform the services as specified in the Agreement; the Client retains the right to initiate a Dispute if the Merchant fails to fulfill the Agreement; funds remain locked in the Smart Contract and cannot be accessed by either party; and upon expiration of the Payment Holding Period without a Dispute, funds are automatically released to the Merchant."
-            }
-          ]
+          "subtitle": "3.4 Payment and Transaction Types",
+          "content": "#### 3.4.1 Instant Transactions\n\nWhen a Merchant sets the Payment Holding Period to zero (0), the transaction becomes an Instant Transaction. Upon the Client's payment:\n\n<ul>\n<li>Funds are transferred immediately to the Merchant</li>\n<li>No escrow period applies</li>\n<li>The Client waives the right to initiate a Dispute through the App</li>\n<li>The transaction is considered complete and final, subject only to remedies available outside the App</li>\n</ul>\n\nMerchants should only use Instant Transactions when they can deliver goods or services immediately or when the nature of the transaction does not warrant a holding period.\n\n#### 3.4.2 Escrow Transactions\n\nWhen a Merchant sets a Payment Holding Period greater than zero (0), the Client's payment is held in escrow by the Smart Contract. During this period:\n\n<ul>\n<li>The Merchant should deliver the goods or perform the services as specified in the Agreement</li>\n<li>The Client retains the right to initiate a Dispute if the Merchant fails to fulfill the Agreement</li>\n<li>Funds remain locked in the Smart Contract and cannot be accessed by either party</li>\n<li>Upon expiration of the Payment Holding Period without a Dispute, funds are automatically released to the Merchant</li>\n</ul>"
         },
         {
-          "id": "smart-contract-nature",
-          "title": "3.5 Nature of Smart Contract Escrow",
-          "content": "You acknowledge and agree that: the Smart Contract is not a bank, financial institution, or licensed escrow agent; the Smart Contract operates autonomously according to its programmed logic; the Company does not have custody or control over funds held in the Smart Contract, except as described in Section 5 regarding dispute resolution; the security and operation of the Smart Contract depends on the underlying blockchain network; and Smart Contract code has been audited but no guarantee can be made regarding its absolute security or functionality."
+          "subtitle": "3.5 Nature of Smart Contract Escrow",
+          "content": "You acknowledge and agree that:\n\n<ul>\n<li>The Smart Contract is not a bank, financial institution, or licensed escrow agent</li>\n<li>The Smart Contract operates autonomously according to its programmed logic</li>\n<li>The Company does not have custody or control over funds held in the Smart Contract, except as described in Section 5 regarding dispute resolution</li>\n<li>The security and operation of the Smart Contract depends on the underlying blockchain network</li>\n<li>Smart Contract code has been audited but no guarantee can be made regarding its absolute security or functionality</li>\n</ul>"
         }
       ]
     },
     {
-      "id": "delivery",
       "title": "4. Delivery and Performance Obligations",
       "subsections": [
         {
-          "id": "merchant-delivery",
-          "title": "4.1 Merchant Delivery Obligations",
-          "content": "Merchants must deliver goods or perform services in strict accordance with the terms of each Agreement they sign. This includes: delivering goods or services that match the description in the Agreement; meeting all quality standards explicitly or implicitly stated in the Agreement; completing delivery or performance within any timeframes specified in the Agreement or, if not specified, within a reasonable time given the nature of the goods or services; and providing any agreed-upon documentation, warranties, or additional materials."
+          "subtitle": "4.1 Merchant Delivery Obligations",
+          "content": "Merchants must deliver goods or perform services in strict accordance with the terms of each Agreement they sign. This includes:\n\n<ul>\n<li>Delivering goods or services that match the description in the Agreement</li>\n<li>Meeting all quality standards explicitly or implicitly stated in the Agreement</li>\n<li>Completing delivery or performance within any timeframes specified in the Agreement or, if not specified, within a reasonable time given the nature of the goods or services</li>\n<li>Providing any agreed-upon documentation, warranties, or additional materials</li>\n</ul>"
         },
         {
-          "id": "proof-delivery",
-          "title": "4.2 Proof of Delivery or Performance",
-          "content": "Merchants are strongly encouraged to obtain and maintain evidence of delivery or performance, which may include: delivery confirmation receipts; photographs of delivered goods; signed acknowledgments from Clients; screenshots of digital delivery; time-stamped documentation of service completion; and any other relevant evidence. Such evidence may be crucial in the event of a Dispute and should be retained for a reasonable period after transaction completion."
+          "subtitle": "4.2 Proof of Delivery or Performance",
+          "content": "Merchants are strongly encouraged to obtain and maintain evidence of delivery or performance, which may include:\n\n<ul>\n<li>Delivery confirmation receipts</li>\n<li>Photographs of delivered goods</li>\n<li>Signed acknowledgments from Clients</li>\n<li>Screenshots of digital delivery</li>\n<li>Time-stamped documentation of service completion</li>\n<li>Any other relevant evidence</li>\n</ul>\n\nSuch evidence may be crucial in the event of a Dispute and should be retained for a reasonable period after transaction completion."
         },
         {
-          "id": "failure-perform",
-          "title": "4.3 Failure to Perform",
-          "content": "If a Merchant fails to deliver goods or perform services as specified in an Agreement: the Client may initiate a Dispute during the Payment Holding Period; the Merchant may be subject to a refund determination by the Company; the Merchant's account may be subject to suspension or termination; and the Merchant may be liable for damages or other legal remedies."
+          "subtitle": "4.3 Failure to Perform",
+          "content": "If a Merchant fails to deliver goods or perform services as specified in an Agreement:\n\n<ul>\n<li>The Client may initiate a Dispute during the Payment Holding Period</li>\n<li>The Merchant may be subject to a refund determination by the Company</li>\n<li>The Merchant's account may be subject to suspension or termination</li>\n<li>The Merchant may be liable for damages or other legal remedies</li>\n</ul>"
         },
         {
-          "id": "client-performance",
-          "title": "4.4 Client Performance Obligations",
-          "content": "Clients must: make payment as specified in the Agreement after signing; accept delivery of goods or services when provided according to the Agreement terms; not refuse delivery or performance that complies with the Agreement terms; and provide any cooperation reasonably necessary for the Merchant to fulfill the Agreement."
+          "subtitle": "4.4 Client Performance Obligations",
+          "content": "Clients must:\n\n<ul>\n<li>Make payment as specified in the Agreement after signing</li>\n<li>Accept delivery of goods or services when provided according to the Agreement terms</li>\n<li>Not refuse delivery or performance that complies with the Agreement terms</li>\n<li>Provide any cooperation reasonably necessary for the Merchant to fulfill the Agreement</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.5 Voluntary Refunds",
+          "content": "A Merchant may, at any time and at the Merchant's sole discretion, provide a refund to a Client in connection with an Agreement (a <strong>\"Voluntary Refund\"</strong>). For purposes of these Terms, a refund authorized by the Company following a Dispute under Section 5.3 is referred to as an <strong>\"Involuntary Refund.\"</strong>\n\nVoluntary Refunds:\n\n<ul>\n<li>May be in full or in part, as determined by the Merchant</li>\n<li>Are distinct from Involuntary Refunds and are not subject to the binary determination standard set forth in Section 5.3</li>\n<li>May be initiated by the Merchant through the mechanisms made available in the App, which may include releasing funds held in escrow during the Payment Holding Period or transferring funds to the Client following release of escrow or in connection with an Instant Transaction</li>\n<li>Once executed, are final and may not be reversed by the Merchant</li>\n</ul>\n\nThe Company does not require Voluntary Refunds, does not adjudicate the appropriateness, amount, or timing of any Voluntary Refund, and is not obligated to facilitate any return of goods or other arrangements between the parties in connection with a Voluntary Refund. Any obligations between the Merchant and Client arising from a Voluntary Refund — including any return of physical goods — are matters between the parties. Section 5.5 governs return of goods only following an Involuntary Refund.\n\nA Client who has accepted a Voluntary Refund covering the full amount of the Agreement may not subsequently initiate a Dispute under Section 5 in connection with the same transaction. A Client who has accepted a partial Voluntary Refund may initiate a Dispute, during the Payment Holding Period and subject to the other requirements of Section 5, only with respect to amounts not refunded.\n\nThe treatment of Voluntary Refunds and Involuntary Refunds for purposes of the rating system is addressed in Section 6.2."
         }
       ]
     },
     {
-      "id": "disputes",
       "title": "5. Disputes and Resolution Process",
       "subsections": [
         {
-          "id": "initiating-dispute",
-          "title": "5.1 Initiating a Dispute",
-          "content": "During the Payment Holding Period, a Client may initiate a Dispute if they believe the Merchant has failed to fulfill the Agreement. To initiate a Dispute, the Client must: provide a clear explanation of the alleged failure to perform; submit any supporting evidence, including photographs, messages, or other documentation; and act in good faith and provide truthful information. Disputes may only be initiated during the Payment Holding Period. Once the Payment Holding Period expires without a Dispute, the transaction is considered complete and final."
+          "subtitle": "5.1 Initiating a Dispute",
+          "content": "During the Payment Holding Period, a Client may initiate a Dispute if they believe the Merchant has failed to fulfill the Agreement. To initiate a Dispute, the Client must:\n\n<ul>\n<li>Provide a clear explanation of the alleged failure to perform</li>\n<li>Submit any supporting evidence, including photographs, messages, or other documentation</li>\n<li>Act in good faith and provide truthful information</li>\n</ul>\n\nDisputes may only be initiated during the Payment Holding Period. Once the Payment Holding Period expires without a Dispute, the transaction is considered complete and final."
         },
         {
-          "id": "dispute-review",
-          "title": "5.2 Dispute Review Process",
-          "content": "Upon receiving a Dispute, the Company will: notify the Merchant of the Dispute and provide details of the Client's claims; request the Merchant to provide their response and any supporting evidence; and review all available evidence, including: the signed Agreement and all its terms; any images attached to the Agreement; photographs taken during the digital signature process; user statements from both parties; any communications between the parties; delivery or performance evidence provided by either party; and any other relevant information."
+          "subtitle": "5.2 Dispute Review Process",
+          "content": "Upon receiving a Dispute, the Company will:\n\n<ul>\n<li>Notify the Merchant of the Dispute and provide details of the Client's claims</li>\n<li>Request the Merchant to provide their response and any supporting evidence</li>\n<li>Review all available evidence, including:</li>\n<li>The signed Agreement and all its terms</li>\n<li>Any images attached to the Agreement</li>\n<li>Photographs taken during the digital signature process</li>\n<li>User statements from both parties</li>\n<li>Any communications between the parties</li>\n<li>Delivery or performance evidence provided by either party</li>\n<li>Any other relevant information</li>\n</ul>"
         },
         {
-          "id": "dispute-determination",
-          "title": "5.3 Dispute Determination",
-          "content": "After reviewing all evidence, the Company will make a determination regarding whether the Client should receive a refund. The Company may: authorize a full refund to the Client; authorize a partial refund to the Client; deny the refund request and release funds to the Merchant; or request additional information from either party before making a determination. The Company's determination will be based on whether the Merchant substantially fulfilled their obligations under the Agreement."
+          "subtitle": "5.3 Dispute Determination",
+          "content": "After reviewing all evidence, the Company will make a determination regarding whether the Client should receive a refund. Refund determinations are binary: the Company will either authorize a full refund to the Client or deny the refund request and release the funds held in escrow to the Merchant. The Company does not authorize partial refunds. The Company may:\n\n<ul>\n<li>Authorize a full refund of the funds held in escrow to the Client</li>\n<li>Deny the refund request and release the funds held in escrow to the Merchant</li>\n<li>Request additional information from either party before making a determination</li>\n</ul>\n\nThe Company's determination will be based on whether the Merchant substantially fulfilled their obligations under the Agreement. The standard of substantial fulfillment is interpreted generously in favor of the Merchant. A refund will be authorized only where the Merchant has materially failed to perform — for example, by failing to deliver the goods or services entirely, by delivering goods or services that differ materially from the description in the Agreement, or by otherwise depriving the Client of the substantial benefit of the bargain. Minor shortfalls, immaterial deviations, or partial performance that nonetheless delivers the substantial benefit of the Agreement will not result in a refund.\n\nPatterns of under-delivery, customer dissatisfaction, or other conduct inconsistent with these Terms — even where individual transactions do not warrant refunds — may be addressed through means other than refunds, including but not limited to account warnings, suspension, or termination under Section 7.7, and any user reputation or feedback mechanisms made available through the App."
         },
         {
-          "id": "dispute-execution",
-          "title": "5.4 Execution of Dispute Resolution",
+          "subtitle": "5.4 Execution of Dispute Resolution",
           "content": "Upon making a determination, the Company will submit the appropriate instruction to the Smart Contract, which will execute the refund or payment release according to its programmed logic. The Company's role is limited to making the determination and providing the instruction; the Smart Contract autonomously executes the financial transaction."
         },
         {
-          "id": "dispute-finality",
-          "title": "5.5 Finality of Determinations",
+          "subtitle": "5.5 Return of Physical Goods Following Refund",
+          "content": "Where the Company authorizes a refund to a Client in connection with an Agreement involving physical goods that have been delivered to the Client, the following provisions apply:\n\n<ul>\n<li><strong>Merchant's Right to Request Return.</strong> The Merchant may, within fourteen (14) days of the refund determination, request the return of the physical goods by notifying the Client through the App.</li>\n<li><strong>Client's Obligation to Return at Client's Expense.</strong> If the Merchant timely requests return and the reasonable cost of return shipping is less than the amount refunded to the Client, the Client shall return the goods to the Merchant at the Client's expense within a reasonable period not to exceed fourteen (14) days from the Merchant's request.</li>\n<li><strong>Return Where Shipping Cost Equals or Exceeds Refund.</strong> If the reasonable cost of return shipping equals or exceeds the amount refunded to the Client, the Client shall have no obligation to return the goods at the Client's expense. In such cases, the Merchant may, at the Merchant's election: (i) prepay or reimburse the Client for the return shipping costs, in which case the Client shall return the goods within a reasonable period; or (ii) forgo the return of the goods.</li>\n<li><strong>Condition of Returned Goods.</strong> Goods must be returned in substantially the same condition as received, accounting for reasonable inspection by the Client. Goods that are damaged, altered, used beyond reasonable inspection, or rendered materially less valuable by the Client's actions may, at the Merchant's option, be deemed not properly returned.</li>\n<li><strong>Failure to Return.</strong> A Client who fails to return goods as required under this Section may, at the Company's discretion, be subject to account suspension or termination, reversal of the refund, liability to the Merchant for the value of the unreturned goods, or other remedies available under these Terms or applicable law.</li>\n<li><strong>Disputes Regarding Return.</strong> Disputes between the Client and Merchant regarding return shipping costs, the condition of returned goods, or compliance with this Section shall be resolved between the parties directly. The Company is not obligated to mediate or determine such matters but may, at its sole discretion, take action against accounts that demonstrate a pattern of non-compliance.</li>\n</ul>\n\nThe Company's authorization of a refund does not constitute the Company taking custody of, or assuming any responsibility for, the physical goods. All return logistics, risk of loss in transit, and related obligations are matters between the Client and the Merchant."
+        },
+        {
+          "subtitle": "5.6 Finality of Determinations",
           "content": "The Company's dispute determinations are final and binding, except as may be required by applicable law. By using the Services, you agree to accept the Company's determinations in Disputes. You retain any legal rights you may have under applicable law to pursue claims outside the App through appropriate legal channels."
         },
         {
-          "id": "dispute-abuse",
-          "title": "5.6 Abuse of Dispute Process",
-          "content": "Users who abuse the dispute process, including by: filing false or fraudulent Disputes; providing false evidence or testimony; filing Disputes without legitimate basis; or using Disputes as a means to obtain goods or services without proper payment; may have their accounts suspended or terminated and may be liable for damages to the affected parties and the Company."
+          "subtitle": "5.7 Abuse of Dispute Process",
+          "content": "Users who abuse the dispute process, including by:\n\n<ul>\n<li>Filing false or fraudulent Disputes</li>\n<li>Providing false evidence or testimony</li>\n<li>Filing Disputes without legitimate basis</li>\n<li>Using Disputes as a means to obtain goods or services without proper payment</li>\n</ul>\n\nmay have their accounts suspended or terminated and may be liable for damages to the affected parties and the Company."
         }
       ]
     },
     {
-      "id": "termination",
-      "title": "6. Account Deletion and Outstanding Obligations",
+      "title": "6. User Ratings",
       "subsections": [
         {
-          "id": "right-delete",
-          "title": "6.1 Right to Delete Account",
+          "subtitle": "6.1 Rating System Overview",
+          "content": "The App provides a bidirectional rating system through which Users may rate one another following the completion of a transaction. After a transaction is finished, both the Merchant and the Client have the opportunity to rate the other party on an integer scale from one (1) to five (5) stars. A User's average rating across their prior rated transactions is displayed to other Users who may consider entering into Agreements with them. The Company may also display the total number of rated transactions and other aggregate information about a User's rating history at its discretion."
+        },
+        {
+          "subtitle": "6.2 Eligibility to Submit a Rating",
+          "content": "A User may submit a rating only:\n\n<ul>\n<li>After the transaction to which the rating relates has been completed, including the expiration or resolution of any applicable Payment Holding Period or Dispute</li>\n<li>For the actual counterparty to that transaction</li>\n<li>Once per transaction (each User may submit a single rating per counterparty per transaction)</li>\n</ul>\n\nA User may not submit a rating for a transaction in which they did not participate or otherwise attempt to submit ratings between Users who are not their counterparties. The Company may set additional reasonable conditions or time limits on the submission of ratings as implemented in the App from time to time.\n\n<strong>Transactions Resulting in an Involuntary Refund.</strong> Notwithstanding the foregoing, ratings are not available in connection with any transaction that resulted in an Involuntary Refund (as defined in Section 4.5) authorized by the Company under Section 5.3. Where an Involuntary Refund has been authorized, neither the Merchant nor the Client may submit a rating for that transaction. The Company has determined that, because such transactions have already been adjudicated by the Company's binding determination process, additional rating activity by the parties would not meaningfully reflect the underlying transaction and could function as an extension of the resolved Dispute.\n\n<strong>Voluntary Refunds.</strong> Voluntary Refunds (as defined in Section 4.5) do not affect rating eligibility. The parties to a transaction in which a Voluntary Refund has been provided may rate one another in accordance with this Section."
+        },
+        {
+          "subtitle": "6.3 Rating Standards and Prohibited Conduct",
+          "content": "When submitting a rating, Users agree to:\n\n<ul>\n<li>Provide ratings that reflect their genuine, good-faith assessment of the counterparty's conduct in the transaction</li>\n<li>Base ratings on the actual performance of the counterparty rather than on factors unrelated to the transaction</li>\n<li>Not submit ratings that are knowingly false or misleading</li>\n<li>Not engage in retaliatory rating, including but not limited to downrating a counterparty solely because that counterparty rated the User negatively, initiated a Dispute, or exercised any other right under these Terms</li>\n<li>Not coordinate with others to inflate or deflate any User's average rating</li>\n<li>Not solicit, accept, or offer payment, threats, or other inducements in exchange for ratings</li>\n<li>Not condition the provision of goods, services, refunds, or any other performance under an Agreement on the receipt of a positive rating</li>\n<li>Not create false, duplicate, or sham accounts to influence ratings</li>\n<li>Not submit ratings in connection with sham or non-bona-fide transactions designed to manipulate the rating system</li>\n</ul>\n\nUsers acknowledge that violations of this Section may, in addition to any other remedies available to the Company, result in removal of the offending rating, suspension or termination of the offending User's account under Section 7.7, and liability to other Users harmed by the violation."
+        },
+        {
+          "subtitle": "6.4 Nature of Ratings; No Company Endorsement",
+          "content": "Ratings reflect the opinions of the Users who submit them and do not constitute statements, representations, or endorsements by the Company. The Company makes no representation or warranty regarding the accuracy of any individual rating or the suitability of any User as a counterparty. Users are responsible for exercising their own judgment when reviewing ratings and entering into Agreements."
+        },
+        {
+          "subtitle": "6.5 Company Rights Regarding Ratings",
+          "content": "The Company reserves the right, at its sole discretion, to:\n\n<ul>\n<li>Remove ratings that violate these Terms, including the standards set forth in Section 6.3</li>\n<li>Investigate suspected manipulation, retaliation, or other abuse of the rating system</li>\n<li>Withhold display of a User's average rating, or display ratings with a notation, where the Company determines that display would be misleading or that ratings have been materially affected by abuse under investigation</li>\n<li>Modify, suspend, or discontinue the rating system, in whole or in part, with reasonable notice where practicable</li>\n</ul>\n\nThe Company is not obligated to remove ratings merely because a User disagrees with the rating, and does not generally adjudicate the substantive accuracy of individual ratings. A User who believes a rating violates these Terms may report the rating through the App or by contacting the Company at the address provided in Section 17.10."
+        },
+        {
+          "subtitle": "6.6 Persistence of Ratings",
+          "content": "Ratings, once submitted, become part of the recipient User's rating record on the platform. Ratings are not removable at the discretion of either the rating User or the rated User, except as the Company may permit in connection with enforcement of these Terms. The Company may retain rating data and continue to display average ratings in accordance with these Terms and the Privacy Policy, including following account suspension, termination, or deletion as described in Section 7."
+        },
+        {
+          "subtitle": "6.7 No Liability for Ratings",
+          "content": "To the maximum extent permitted by applicable law, the Company shall not be liable for any harm, including reputational harm, lost business, or other damages, arising from ratings submitted by Users. Users who submit ratings are solely responsible for the content of their ratings and may be liable to other Users or to third parties for ratings that violate applicable law, including without limitation laws relating to defamation, tortious interference, or unfair competition."
+        }
+      ]
+    },
+    {
+      "title": "7. Account Deletion and Outstanding Obligations",
+      "subsections": [
+        {
+          "subtitle": "7.1 Right to Delete Account",
           "content": "Users may delete their accounts at any time through the App's account settings. However, the right to delete an account is subject to the fulfillment of all outstanding obligations under these Terms."
         },
         {
-          "id": "pre-deletion",
-          "title": "6.2 Pre-Deletion Requirements",
-          "content": "Before an account may be deleted, the User must: fulfill all obligations under any active Agreements they have signed, whether as Merchant or Client; complete all pending transactions; resolve or cooperate in the resolution of any pending Disputes; and pay any outstanding fees or amounts owed to the Company or other Users."
+          "subtitle": "7.2 Pre-Deletion Requirements",
+          "content": "Before an account may be deleted, the User must:\n\n<ul>\n<li>Fulfill all obligations under any active Agreements they have signed, whether as Merchant or Client</li>\n<li>Complete all pending transactions</li>\n<li>Resolve or cooperate in the resolution of any pending Disputes</li>\n<li>Pay any outstanding fees or amounts owed to the Company or other Users</li>\n</ul>"
         },
         {
-          "id": "merchant-deletion",
-          "title": "6.3 Merchant Obligations Before Deletion",
-          "content": "A Merchant may not delete their account until they have: delivered all goods or performed all services specified in every Agreement they signed as Merchant; resolved all Disputes related to their transactions; and ensured that all Payment Holding Periods for their transactions have expired or been resolved. The Company may prevent account deletion or retain certain account information if the Merchant has unfulfilled obligations."
+          "subtitle": "7.3 Merchant Obligations Before Deletion",
+          "content": "A Merchant may not delete their account until they have:\n\n<ul>\n<li>Delivered all goods or performed all services specified in every Agreement they signed as Merchant</li>\n<li>Resolved all Disputes related to their transactions</li>\n<li>Ensured that all Payment Holding Periods for their transactions have expired or been resolved</li>\n</ul>\n\nThe Company may prevent account deletion or retain certain account information if the Merchant has unfulfilled obligations."
         },
         {
-          "id": "client-deletion",
-          "title": "6.4 Client Obligations Before Deletion",
-          "content": "A Client may not delete their account until they have: paid for all goods and services specified in every Agreement they signed as Client; completed all pending transactions for which they have payment obligations; and resolved all Disputes they have initiated."
+          "subtitle": "7.4 Client Obligations Before Deletion",
+          "content": "A Client may not delete their account until they have:\n\n<ul>\n<li>Paid for all goods and services specified in every Agreement they signed as Client</li>\n<li>Completed all pending transactions for which they have payment obligations</li>\n<li>Resolved all Disputes they have initiated</li>\n</ul>"
         },
         {
-          "id": "deletion-process",
-          "title": "6.5 Account Deletion Process",
-          "content": "When a User requests account deletion: the Company will verify that all obligations have been fulfilled; if obligations remain outstanding, the deletion request will be denied and the User will be notified of the outstanding obligations; once all obligations are fulfilled, the account will be deleted according to the procedures specified in our Privacy Policy; and certain information may be retained as required by law or for legitimate business purposes."
+          "subtitle": "7.5 Account Deletion Process",
+          "content": "When a User requests account deletion:\n\n<ul>\n<li>The Company will verify that all obligations have been fulfilled</li>\n<li>If obligations remain outstanding, the deletion request will be denied and the User will be notified of the outstanding obligations</li>\n<li>Once all obligations are fulfilled, the account will be deleted according to the procedures specified in our Privacy Policy</li>\n<li>Certain information may be retained as required by law or for legitimate business purposes</li>\n</ul>"
         },
         {
-          "id": "deletion-effect",
-          "title": "6.6 Effect of Account Deletion",
-          "content": "Upon account deletion: the User loses access to the App and Services; historical transaction records may be retained by the Company as necessary for legal, regulatory, or business purposes; the User remains liable for any obligations that arose prior to deletion; and any warranties, indemnifications, or limitations of liability in these Terms survive account deletion."
+          "subtitle": "7.6 Effect of Account Deletion",
+          "content": "Upon account deletion:\n\n<ul>\n<li>The User loses access to the App and Services</li>\n<li>Historical transaction records may be retained by the Company as necessary for legal, regulatory, or business purposes</li>\n<li>The User remains liable for any obligations that arose prior to deletion</li>\n<li>Any warranties, indemnifications, or limitations of liability in these Terms survive account deletion</li>\n</ul>"
         },
         {
-          "id": "company-termination",
-          "title": "6.7 Company-Initiated Termination",
-          "content": "The Company reserves the right to suspend or terminate any User's account for violation of these Terms or applicable laws. In such cases: the User remains obligated to fulfill all outstanding obligations under signed Agreements; the User may be provided limited access to the App solely for purposes of fulfilling outstanding obligations; and the Company may take appropriate actions to ensure other Users are protected from harm."
+          "subtitle": "7.7 Company-Initiated Termination",
+          "content": "The Company reserves the right to suspend or terminate any User's account for violation of these Terms or applicable laws. In such cases:\n\n<ul>\n<li>The User remains obligated to fulfill all outstanding obligations under signed Agreements</li>\n<li>The User may be provided limited access to the App solely for purposes of fulfilling outstanding obligations</li>\n<li>The Company may take appropriate actions to ensure other Users are protected from harm</li>\n</ul>"
         }
       ]
     },
     {
-      "id": "fees",
-      "title": "7. Fees and Payment Terms",
+      "title": "8. Fees and Payment Terms",
       "subsections": [
         {
-          "id": "service-fees",
-          "title": "7.1 Service Fees",
+          "subtitle": "8.1 Service Fees",
           "content": "The Company may charge fees for use of the Services, including but not limited to transaction fees, subscription fees, or other charges. All applicable fees will be clearly disclosed in the App before you complete a transaction or commit to any paid services."
         },
         {
-          "id": "payment-processing",
-          "title": "7.2 Payment Processing",
+          "subtitle": "8.2 Payment Processing",
           "content": "All cryptocurrency transactions are processed through Coinbase's infrastructure via API integration, as described in the EULA. You agree to pay all fees associated with your transactions, including any fees charged by Coinbase, network fees, or other third-party charges."
         },
         {
-          "id": "no-refund",
-          "title": "7.3 No Refund of Service Fees",
+          "subtitle": "8.3 No Refund of Service Fees",
           "content": "Service fees charged by the Company are generally non-refundable, except as required by applicable law or as expressly stated in these Terms. Refunds related to Disputes, as described in Section 5, pertain to the transaction amount between Users and do not include service fees unless otherwise determined by the Company."
         },
         {
-          "id": "taxes",
-          "title": "7.4 Taxes",
+          "subtitle": "8.4 Taxes",
           "content": "You are responsible for determining and paying any applicable taxes associated with your use of the Services, including sales, use, value-added, or other taxes on your transactions. The Company does not provide tax advice, and you should consult with a tax professional regarding your obligations."
         }
       ]
     },
     {
-      "id": "prohibited",
-      "title": "8. Prohibited Uses and Conduct",
+      "title": "9. Prohibited Uses and Conduct",
       "subsections": [
         {
-          "id": "prohibited-transactions",
-          "title": "8.1 Prohibited Transactions",
-          "content": "Users may not use the Services to buy, sell, or exchange:",
-          "list": [
-            "Illegal goods, substances, or services",
-            "Stolen goods or property",
-            "Counterfeit or unauthorized goods",
-            "Weapons, explosives, or hazardous materials",
-            "Human trafficking services or exploitation",
-            "Regulated goods without proper licensing",
-            "Any goods or services that violate applicable laws or regulations"
-          ]
+          "subtitle": "9.1 Prohibited Transactions",
+          "content": "Users may not use the Services to buy, sell, or exchange:\n\n<ul>\n<li>Illegal goods, substances, or services</li>\n<li>Stolen goods or property</li>\n<li>Counterfeit or unauthorized goods</li>\n<li>Weapons, explosives, or hazardous materials</li>\n<li>Human trafficking services or exploitation</li>\n<li>Regulated goods without proper licensing</li>\n<li>Any goods or services that violate applicable laws or regulations</li>\n</ul>"
         },
         {
-          "id": "prohibited-conduct",
-          "title": "8.2 Prohibited Conduct",
-          "content": "Users may not:",
-          "list": [
-            "Create false or misleading Agreements",
-            "Engage in fraudulent transactions or misrepresent goods or services",
-            "Use the Services to launder money or finance illegal activities",
-            "Manipulate or abuse the dispute resolution process",
-            "Attempt to circumvent fees or payment obligations",
-            "Use automated tools or bots to create accounts or conduct transactions",
-            "Interfere with other Users' use of the Services",
-            "Reverse engineer, decompile, or attempt to extract the source code of the App",
-            "Violate the rights of other Users or third parties"
-          ]
+          "subtitle": "9.2 Prohibited Conduct",
+          "content": "Users may not:\n\n<ul>\n<li>Create false or misleading Agreements</li>\n<li>Engage in fraudulent transactions or misrepresent goods or services</li>\n<li>Use the Services to launder money or finance illegal activities</li>\n<li>Manipulate or abuse the dispute resolution process</li>\n<li>Attempt to circumvent fees or payment obligations</li>\n<li>Use automated tools or bots to create accounts or conduct transactions</li>\n<li>Interfere with other Users' use of the Services</li>\n<li>Reverse engineer, decompile, or attempt to extract the source code of the App</li>\n<li>Violate the rights of other Users or third parties</li>\n</ul>"
         },
         {
-          "id": "prohibited-consequences",
-          "title": "8.3 Consequences of Prohibited Use",
-          "content": "Users who engage in prohibited uses or conduct may face:",
-          "list": [
-            "Immediate account suspension or termination",
-            "Forfeiture of funds held in pending transactions",
-            "Referral to law enforcement authorities",
-            "Legal action by the Company or affected parties",
-            "Liability for damages caused by their conduct"
-          ]
+          "subtitle": "9.3 Consequences of Prohibited Use",
+          "content": "Users who engage in prohibited uses or conduct may face:\n\n<ul>\n<li>Immediate account suspension or termination</li>\n<li>Forfeiture of funds held in pending transactions</li>\n<li>Referral to law enforcement authorities</li>\n<li>Legal action by the Company or affected parties</li>\n<li>Liability for damages caused by their conduct</li>\n</ul>"
         }
       ]
     },
     {
-      "id": "intellectual-property",
-      "title": "9. Intellectual Property Rights",
+      "title": "10. Intellectual Property Rights",
       "subsections": [
         {
-          "id": "company-ip",
-          "title": "9.1 Company Intellectual Property",
+          "subtitle": "10.1 Company Intellectual Property",
           "content": "The App, Services, and all content, features, and functionality thereof are owned by the Company, its licensors, or other providers of such material and are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property laws."
         },
         {
-          "id": "limited-license",
-          "title": "9.2 Limited License",
-          "content": "Subject to your compliance with these Terms, the Company grants you a limited, non-exclusive, non-transferable, non-sublicensable license to access and use the App and Services for your personal or business purposes. This license does not include any right to: modify, copy, or create derivative works of the App or Services; reverse engineer or attempt to extract the source code; sell, rent, lease, or otherwise commercialize the App or Services; or use the App or Services in any way that violates these Terms."
+          "subtitle": "10.2 Limited License",
+          "content": "Subject to your compliance with these Terms, the Company grants you a limited, non-exclusive, non-transferable, non-sublicensable license to access and use the App and Services for your personal or business purposes. This license does not include any right to:\n\n<ul>\n<li>Modify, copy, or create derivative works of the App or Services</li>\n<li>Reverse engineer or attempt to extract the source code</li>\n<li>Sell, rent, lease, or otherwise commercialize the App or Services</li>\n<li>Use the App or Services in any way that violates these Terms</li>\n</ul>"
         },
         {
-          "id": "user-content",
-          "title": "9.3 User Content",
+          "subtitle": "10.3 User Content",
           "content": "Users retain ownership of any content they create or upload to the Services, including Agreement descriptions and images. By uploading content to the Services, you grant the Company a worldwide, royalty-free, non-exclusive license to use, reproduce, modify, and display such content solely for purposes of providing and improving the Services."
         },
         {
-          "id": "feedback",
-          "title": "9.4 Feedback",
+          "subtitle": "10.4 Feedback",
           "content": "If you provide feedback, suggestions, or ideas about the Services, you grant the Company an unrestricted, perpetual, irrevocable, royalty-free right to use such feedback for any purpose without compensation or attribution to you."
         }
       ]
     },
     {
-      "id": "disclaimers",
-      "title": "10. Disclaimers and Limitations of Liability",
+      "title": "11. Disclaimers and Limitations of Liability",
       "subsections": [
         {
-          "id": "no-warranty",
-          "title": "10.1 No Warranty",
-          "content": "THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE COMPANY DOES NOT WARRANT THAT: the Services will be uninterrupted, secure, or error-free; the results obtained from using the Services will be accurate or reliable; the quality of any goods, services, information, or other material obtained through the Services will meet your expectations; any errors in the App will be corrected; the Smart Contract will operate without interruption or error; or transactions will be processed without delay or failure."
+          "subtitle": "11.1 No Warranty",
+          "content": "THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE COMPANY DOES NOT WARRANT THAT:\n\n<ul>\n<li>The Services will be uninterrupted, secure, or error-free</li>\n<li>The results obtained from using the Services will be accurate or reliable</li>\n<li>The quality of any goods, services, information, or other material obtained through the Services will meet your expectations</li>\n<li>Any errors in the App will be corrected</li>\n<li>The Smart Contract will operate without interruption or error</li>\n<li>Transactions will be processed without delay or failure</li>\n</ul>"
         },
         {
-          "id": "third-party-services",
-          "title": "10.2 Third-Party Services",
+          "subtitle": "11.2 Third-Party Services",
           "content": "THE COMPANY IS NOT LIABLE FOR ANY ACTS, OMISSIONS, OR FAILURES OF COINBASE, BLOCKCHAIN NETWORKS, OR ANY OTHER THIRD-PARTY SERVICE PROVIDERS. USERS ACKNOWLEDGE THAT THEY ARE INDEPENDENTLY BOUND BY COINBASE'S TERMS OF SERVICE AND PRIVACY POLICY, WHICH GOVERN THEIR USE OF COINBASE SERVICES ACCESSED THROUGH OUR APP."
         },
         {
-          "id": "user-transactions",
-          "title": "10.3 User Transactions",
-          "content": "THE COMPANY IS NOT A PARTY TO AGREEMENTS BETWEEN USERS. THE COMPANY DOES NOT GUARANTEE THE IDENTITY, LEGITIMACY, OR RELIABILITY OF ANY USER. THE COMPANY IS NOT RESPONSIBLE FOR: the quality, safety, legality, or availability of goods or services offered by Merchants; the performance or non-performance of Users under their Agreements; disputes between Users beyond the dispute resolution process described in these Terms; or loss or damage arising from transactions between Users."
+          "subtitle": "11.3 User Transactions",
+          "content": "THE COMPANY IS NOT A PARTY TO AGREEMENTS BETWEEN USERS. THE COMPANY DOES NOT GUARANTEE THE IDENTITY, LEGITIMACY, OR RELIABILITY OF ANY USER. THE COMPANY IS NOT RESPONSIBLE FOR:\n\n<ul>\n<li>The quality, safety, legality, or availability of goods or services offered by Merchants</li>\n<li>The performance or non-performance of Users under their Agreements</li>\n<li>Disputes between Users beyond the dispute resolution process described in these Terms</li>\n<li>Loss or damage arising from transactions between Users</li>\n</ul>"
         },
         {
-          "id": "limitation-liability",
-          "title": "10.4 Limitation of Liability",
-          "content": "TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL THE COMPANY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO: loss of profits, revenue, or business opportunities; loss of data or cryptocurrency; cost of substitute goods or services; business interruption; or personal injury (except as required by applicable law); arising out of or related to your use of or inability to use the Services, whether based on warranty, contract, tort, or any other legal theory, and whether or not the Company has been advised of the possibility of such damages."
+          "subtitle": "11.4 Limitation of Liability",
+          "content": "TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL THE COMPANY BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:\n\n<ul>\n<li>Loss of profits, revenue, or business opportunities</li>\n<li>Loss of data or cryptocurrency</li>\n<li>Cost of substitute goods or services</li>\n<li>Business interruption</li>\n<li>Personal injury (except as required by applicable law)</li>\n</ul>\n\narising out of or related to your use of or inability to use the Services, whether based on warranty, contract, tort, or any other legal theory, and whether or not the Company has been advised of the possibility of such damages."
         },
         {
-          "id": "liability-cap",
-          "title": "10.5 Liability Cap",
-          "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COMPANY'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE GREATER OF: fifty dollars ($50.00); or the total amount of fees you paid to the Company in the six (6) months preceding the event giving rise to the claim."
+          "subtitle": "11.5 Liability Cap",
+          "content": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COMPANY'S TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE GREATER OF:\n\n<ul>\n<li>Fifty dollars ($50.00); or</li>\n<li>The total amount of fees you paid to the Company in the six (6) months preceding the event giving rise to the claim</li>\n</ul>"
         },
         {
-          "id": "exclusions",
-          "title": "10.6 Exclusions",
+          "subtitle": "11.6 Exclusions",
           "content": "SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN WARRANTIES OR DAMAGES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. IN SUCH JURISDICTIONS, THE COMPANY'S LIABILITY WILL BE LIMITED TO THE GREATEST EXTENT PERMITTED BY LAW."
         }
       ]
     },
     {
-      "id": "indemnification",
-      "title": "11. Indemnification",
+      "title": "12. Indemnification",
       "subsections": [
         {
-          "id": "indemnification-obligation",
-          "title": "11.1 Your Indemnification Obligation",
-          "content": "You agree to indemnify, defend, and hold harmless the Company, its affiliates, officers, directors, employees, agents, licensors, and partners (collectively, the \"Company Parties\") from and against any and all claims, liabilities, damages, losses, costs, expenses, and fees (including reasonable attorneys' fees) arising from or relating to: your use or misuse of the Services; your breach of these Terms or the EULA; your violation of any applicable laws or regulations; any Agreements you enter into as a Merchant or Client; your failure to fulfill obligations under Agreements you have signed; content you submit or upload to the Services; your violation of any rights of another party, including intellectual property rights, privacy rights, or contractual rights; or any claims made by other Users based on your actions or omissions."
+          "subtitle": "12.1 Your Indemnification Obligation",
+          "content": "You agree to indemnify, defend, and hold harmless the Company, its affiliates, officers, directors, employees, agents, licensors, and partners (collectively, the \"Company Parties\") from and against any and all claims, liabilities, damages, losses, costs, expenses, and fees (including reasonable attorneys' fees) arising from or relating to:\n\n<ul>\n<li>Your use or misuse of the Services</li>\n<li>Your breach of these Terms or the EULA</li>\n<li>Your violation of any applicable laws or regulations</li>\n<li>Any Agreements you enter into as a Merchant or Client</li>\n<li>Your failure to fulfill obligations under Agreements you have signed</li>\n<li>Content you submit or upload to the Services</li>\n<li>Your violation of any rights of another party, including intellectual property rights, privacy rights, or contractual rights</li>\n<li>Any claims made by other Users based on your actions or omissions</li>\n</ul>"
         },
         {
-          "id": "defense-settlement",
-          "title": "11.2 Defense and Settlement",
+          "subtitle": "12.2 Defense and Settlement",
           "content": "The Company reserves the right to assume the exclusive defense and control of any matter subject to indemnification by you, in which case you will cooperate with the Company in asserting any available defenses. You may not settle any claim without the Company's prior written consent."
         }
       ]
     },
     {
-      "id": "dispute-resolution",
-      "title": "12. Dispute Resolution and Arbitration",
+      "title": "13. Dispute Resolution and Arbitration",
       "subsections": [
         {
-          "id": "informal-resolution",
-          "title": "12.1 Informal Resolution",
+          "subtitle": "13.1 Informal Resolution",
           "content": "Before filing a claim against the Company, you agree to attempt to resolve the dispute informally by contacting us at contact@shakedefi.com. We will attempt to resolve the dispute informally by contacting you. If a dispute is not resolved within sixty (60) days of submission, you or the Company may bring a formal proceeding."
         },
         {
-          "id": "arbitration-agreement",
-          "title": "12.2 Arbitration Agreement",
+          "subtitle": "13.2 Arbitration Agreement",
           "content": "Any dispute, claim, or controversy arising out of or relating to these Terms or the Services that cannot be resolved informally shall be resolved through binding arbitration administered by the American Arbitration Association (\"AAA\") in accordance with its Commercial Arbitration Rules."
         },
         {
-          "id": "arbitration-procedures",
-          "title": "12.3 Arbitration Procedures",
-          "list": [
-            "The arbitration shall be conducted in California, United States, unless otherwise agreed by the parties",
-            "The arbitration shall be conducted by a single arbitrator",
-            "The arbitrator's decision shall be final and binding",
-            "Judgment on the award may be entered in any court having jurisdiction",
-            "Each party shall bear its own costs and fees, except as may be allocated by the arbitrator"
-          ]
+          "subtitle": "13.3 Arbitration Procedures",
+          "content": "<ul>\n<li>The arbitration shall be conducted in California, United States, unless otherwise agreed by the parties</li>\n<li>The arbitration shall be conducted by a single arbitrator</li>\n<li>The arbitrator's decision shall be final and binding</li>\n<li>Judgment on the award may be entered in any court having jurisdiction</li>\n<li>Each party shall bear its own costs and fees, except as may be allocated by the arbitrator</li>\n</ul>"
         },
         {
-          "id": "class-action-waiver",
-          "title": "12.4 Class Action Waiver",
+          "subtitle": "13.4 Class Action Waiver",
           "content": "YOU AND THE COMPANY AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN YOUR OR ITS INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. Unless both you and the Company agree otherwise, the arbitrator may not consolidate more than one person's claims and may not otherwise preside over any form of a representative or class proceeding."
         },
         {
-          "id": "arbitration-exceptions",
-          "title": "12.5 Exceptions to Arbitration",
+          "subtitle": "13.5 Exceptions to Arbitration",
           "content": "Notwithstanding the above, either party may bring a claim in small claims court if the claim qualifies. Additionally, either party may seek injunctive or other equitable relief in court to prevent actual or threatened infringement, misappropriation, or violation of intellectual property rights."
         }
       ]
     },
     {
-      "id": "governing-law",
-      "title": "13. Governing Law and Jurisdiction",
+      "title": "14. Governing Law and Jurisdiction",
       "subsections": [
         {
-          "id": "law",
-          "title": "13.1 Governing Law",
+          "subtitle": "14.1 Governing Law",
           "content": "These Terms and your use of the Services shall be governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions."
         },
         {
-          "id": "jurisdiction",
-          "title": "13.2 Jurisdiction",
-          "content": "Subject to the arbitration provisions in Section 12, you agree that any legal action or proceeding related to these Terms or the Services shall be brought exclusively in the federal or state courts located in California, and you consent to the personal jurisdiction of such courts."
+          "subtitle": "14.2 Jurisdiction",
+          "content": "Subject to the arbitration provisions in Section 13, you agree that any legal action or proceeding related to these Terms or the Services shall be brought exclusively in the federal or state courts located in California, and you consent to the personal jurisdiction of such courts."
         }
       ]
     },
     {
-      "id": "modifications",
-      "title": "14. Modifications to Terms",
+      "title": "15. Modifications to Terms",
       "subsections": [
         {
-          "id": "right-to-modify",
-          "title": "14.1 Right to Modify",
-          "content": "The Company reserves the right to modify, amend, or update these Terms at any time at its sole discretion. We will provide notice of material changes by:",
-          "list": [
-            "Posting the updated Terms in the App with a new \"Last Updated\" date",
-            "Sending an email notification to your registered email address",
-            "Displaying a prominent notice in the App",
-            "Any other reasonable means of notification"
-          ]
+          "subtitle": "15.1 Right to Modify",
+          "content": "The Company reserves the right to modify, amend, or update these Terms at any time at its sole discretion. We will provide notice of material changes by:\n\n<ul>\n<li>Posting the updated Terms in the App with a new \"Last Updated\" date</li>\n<li>Sending an email notification to your registered email address</li>\n<li>Displaying a prominent notice in the App</li>\n<li>Any other reasonable means of notification</li>\n</ul>"
         },
         {
-          "id": "acceptance-modifications",
-          "title": "14.2 Acceptance of Modifications",
-          "content": "Your continued use of the Services after the effective date of any modifications constitutes your acceptance of the updated Terms. If you do not agree to the modified Terms, you must stop using the Services and may delete your account (subject to fulfilling any outstanding obligations as described in Section 6)."
+          "subtitle": "15.2 Acceptance of Modifications",
+          "content": "Your continued use of the Services after the effective date of any modifications constitutes your acceptance of the updated Terms. If you do not agree to the modified Terms, you must stop using the Services and may delete your account (subject to fulfilling any outstanding obligations as described in Section 7)."
         },
         {
-          "id": "material-changes",
-          "title": "14.3 Material Changes",
+          "subtitle": "15.3 Material Changes",
           "content": "For material changes that significantly affect your rights or obligations, we will provide at least thirty (30) days' notice before the changes take effect. During this period, you may choose to terminate your account and cease using the Services."
         }
       ]
     },
     {
-      "id": "privacy",
-      "title": "15. Privacy and Data Protection",
+      "title": "16. Privacy and Data Protection",
       "subsections": [
         {
-          "id": "privacy-policy",
-          "title": "15.1 Privacy Policy",
+          "subtitle": "16.1 Privacy Policy",
           "content": "Your privacy is important to us. Our collection, use, and disclosure of your personal information is governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the Services, you consent to the practices described in our Privacy Policy."
         },
         {
-          "id": "user-data",
-          "title": "15.2 User Data",
+          "subtitle": "16.2 User Data",
           "content": "You acknowledge that transaction data, including Agreements, signatures, images, and dispute-related information, may be retained by the Company for legal, regulatory, and operational purposes, even after account deletion."
         },
         {
-          "id": "data-security",
-          "title": "15.3 Data Security",
+          "subtitle": "16.3 Data Security",
           "content": "While we implement reasonable security measures to protect your information, you acknowledge that no system is completely secure. You are responsible for maintaining the security of your account credentials and device access."
         }
       ]
     },
     {
-      "id": "general",
-      "title": "16. General Provisions",
+      "title": "17. General Provisions",
       "subsections": [
         {
-          "id": "entire-agreement",
-          "title": "16.1 Entire Agreement",
+          "subtitle": "17.1 Entire Agreement",
           "content": "These Terms, together with the EULA and Privacy Policy, constitute the entire agreement between you and the Company regarding the Services and supersede all prior agreements, representations, and understandings, whether written or oral."
         },
         {
-          "id": "severability",
-          "title": "16.2 Severability",
+          "subtitle": "17.2 Severability",
           "content": "If any provision of these Terms is found to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable."
         },
         {
-          "id": "waiver",
-          "title": "16.3 Waiver",
+          "subtitle": "17.3 Waiver",
           "content": "The Company's failure to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision unless acknowledged and agreed to in writing by the Company. No waiver shall be deemed a further or continuing waiver of such term or any other term."
         },
         {
-          "id": "assignment",
-          "title": "16.4 Assignment",
+          "subtitle": "17.4 Assignment",
           "content": "You may not assign, transfer, or delegate these Terms or your rights and obligations hereunder without the prior written consent of the Company. The Company may freely assign, transfer, or delegate these Terms and its rights and obligations without restriction. Any attempted assignment in violation of this provision is void."
         },
         {
-          "id": "relationship",
-          "title": "16.5 Relationship of Parties",
+          "subtitle": "17.5 Relationship of Parties",
           "content": "Nothing in these Terms shall be construed to create a partnership, joint venture, employment, or agency relationship between you and the Company. You have no authority to bind the Company or to make representations on behalf of the Company."
         },
         {
-          "id": "third-party",
-          "title": "16.6 Third-Party Beneficiaries",
+          "subtitle": "17.6 Third-Party Beneficiaries",
           "content": "These Terms do not and are not intended to confer any rights or remedies upon any person other than the parties hereto. No third party shall be deemed a beneficiary of these Terms."
         },
         {
-          "id": "force-majeure",
-          "title": "16.7 Force Majeure",
+          "subtitle": "17.7 Force Majeure",
           "content": "The Company shall not be liable for any failure or delay in performing its obligations under these Terms due to causes beyond its reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, labor disputes, governmental actions, blockchain network failures, or interruptions in third-party services."
         },
         {
-          "id": "survival",
-          "title": "16.8 Survival",
+          "subtitle": "17.8 Survival",
           "content": "All provisions of these Terms that by their nature should survive termination shall survive termination, including but not limited to ownership provisions, warranty disclaimers, indemnity obligations, limitations of liability, dispute resolution provisions, and general provisions."
         },
         {
-          "id": "language",
-          "title": "16.9 Language",
+          "subtitle": "17.9 Language",
           "content": "These Terms are drafted in English. Any translation is provided for convenience only. In the event of any conflict between the English version and any translation, the English version shall prevail."
         },
         {
-          "id": "notices",
-          "title": "16.10 Notices",
-          "content": "All notices to the Company under these Terms shall be sent to: Shake Defi, Inc., Email: contact@shakedefi.com, Address: 280 N. Market St, Unit 321, Brookfield, WI 53045. Notices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
+          "subtitle": "17.10 Notices",
+          "content": "All notices to the Company under these Terms shall be sent to:\n\nShake Defi, Inc.\nEmail: contact@shakedefi.com\nAddress: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nNotices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
         }
       ]
     },
     {
-      "id": "contact",
-      "title": "17. Contact Information",
-      "content": "For questions about these Terms or the Services, please contact us at:",
-      "contact": {
-        "company": "Shake Defi, Inc.",
-        "email": "contact@shakedefi.com",
-        "address": "280 N. Market St, Unit 321, Brookfield, WI 53045"
-      }
+      "title": "18. Contact Information",
+      "content": "For questions about these Terms or the Services, please contact us at:\n\n<strong>Shake Defi, Inc.</strong>\nEmail: contact@shakedefi.com\nAddress: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS, TOGETHER WITH THE END USER LICENSE AGREEMENT AND PRIVACY POLICY, CONSTITUTE THE COMPLETE AND EXCLUSIVE AGREEMENT BETWEEN YOU AND SHAKE DEFI, INC. REGARDING YOUR USE OF THE SERVICES.</strong>"
     }
-  ],
-  "acknowledgment": "BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS, TOGETHER WITH THE END USER LICENSE AGREEMENT AND PRIVACY POLICY, CONSTITUTE THE COMPLETE AND EXCLUSIVE AGREEMENT BETWEEN YOU AND SHAKE DEFI, INC. REGARDING YOUR USE OF THE SERVICES."
+  ]
 }
