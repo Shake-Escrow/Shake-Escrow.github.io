@@ -20,10 +20,10 @@ const HowItWorks: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-start gap-8 mb-8 max-w-5xl mx-auto">
             <div className="flex-shrink-0 lg:w-[65%]">
               <img
-                src="/images/escrow-process-illustration.jpg"
+                src="/images/splash_cartoon_cropped.png"
                 alt="The Escrow Process - Customer and merchant transaction with secure escrow safe"
                 className="w-full h-auto object-cover rounded-2xl shadow-lg mx-auto"
-                style={{ maxHeight: '630px', objectPosition: 'center -78px' }}
+                style={{ maxHeight: '650px', objectPosition: 'center top' }}
               />
             </div>
             
