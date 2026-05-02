@@ -49,7 +49,7 @@
       "business": {
         "label": "Merchant",
         "headline": "Get paid\nautomatically",
-        "description": "Set your escrow period, share it with your buyer, and receive funds at the end of the window — automatically. No bank, no manual release, no waiting.",
+        "description": "Set your escrow period, share it with your buyer, and receive funds at the end of the window — automatically. No bank, no manual release, no waiting. Set the period to 0 for an instant transfer — you'll still get identity verification, a signed agreement, and buyer ratings.",
         "button": "Learn more"
       },
       "customer": {
@@ -77,6 +77,7 @@
       "subhead": "Create your account today and join the movement to everyday crypto.",
       "button": "Available Now"
     },
+    "smartContractNote": "Under the hood, it's a smart contract: the release timer is written to the blockchain at the moment of payment and cannot be changed by anyone, including Shake. Funds have exactly two exits — to the merchant once the timer expires, or back to the buyer if a refund is issued. No other path exists in the code.",
     "process": {
       "header": "The Escrow Process",
       "step1": "After making a transaction, your money is placed into an escrow for a set amount of time, which is like a neutral safe, rather than going directly to the merchant.",
@@ -179,6 +180,7 @@
       { "question": "How does the app work?", "answer": "Shake uses an escrow, which is like a safe, that keeps the customer's money secure while a business delivers a product or service. To learn more, see the \"How it Works\" page." },
       { "question": "How do I get started?", "answer": "You can get started by [downloading the app on your mobile device](https://shakedefi.com)." },
       { "question": "What is an escrow?", "answer": "An escrow is like a safe that keeps the money secure and ensures both the customer and business are fulfilling their obligations before the exchange is made. \n\nFor example, let's say you're buying a used phone from someone you found online. Normally, you'd meet up, pay them on the spot, and hope the phone works. But if it's broken or not what they promised, it's already too late — the money's gone. \n\nWith escrow, instead of paying them directly, your money goes into a secure holding account for a fixed amount of time. The seller sees the money is there, and hands over the phone. \n\nDuring the waiting period, you check the quality of the phone. If you discover it's broken, you would dispute the transaction and request a refund. If the phone works, the money is released to the seller once the waiting period is over. \n\nIn essence, the escrow:    \n1) Protects businesses by ensuring that the customer's payment is ready and available for transfer once the waiting period is over    \n2) Provides protection for both parties by ensuring funds are held securely and can only be released according to the agreed escrow terms, including refunds when warranted by a dispute outcome. \n\nTo learn more, see the \"How it Works\" page." },
+      { "question": "Do I have to use an escrow period?", "answer": "No. Merchants set the escrow period, and it can be set to 0 for an instant transfer with no waiting and no refund window. You still get all of Shake's other protections: identity verification, a signed agreement with photos, thorough transaction documentation, and buyer ratings. The escrow period is the right choice when you want to give buyers a safety net — instant transfer is the right choice when the sale is straightforward and both parties are ready." },
       { "question": "Do I need to know about crypto / invest in crypto to use Shake?", "answer": "No, you do not need to know about or invest in crypto to use Shake. That's the magic of it." },
       { "question": "Who can use the Shake app?", "answer": "Shake is available for those over the age of 18. Creating a Shake account requires identity verification from the Persona service (withpersona.com)." },
       { "question": "Can I pay with any cryptocurrency I own?", "answer": "Yes! Shake supports flexible payment options through integrated currency swapping. If a merchant requests USDC or ETH, you can pay using Bitcoin, Tether (USDT), or Staked ETH. Simply transfer your cryptocurrency to your Coinbase wallet in the app, then use the built-in Odos swap feature to convert it to the required currency. This means merchants can now accept crypto from anyone, regardless of which cryptocurrency they hold.\n\nNote: Coinbase and Odos swap services are not available in all countries." },

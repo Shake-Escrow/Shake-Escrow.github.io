@@ -12,10 +12,13 @@ const HowItWorks: React.FC = () => {
           <h1 className="font-display text-hero text-4xl md:text-5xl text-secondary-dark mb-6">
             {siteContent.howItWorks.hero.headline}
           </h1>
-          <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-8 text-center mx-auto">
+          <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-4 text-center mx-auto">
             Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.
           </p>
-          
+          <p className="font-body text-base text-secondary-light max-w-2xl mb-8 text-center mx-auto">
+            {siteContent.howItWorks.smartContractNote}
+          </p>
+
           {/* Image and Process Steps Side by Side */}
           <div className="flex flex-col lg:flex-row items-start gap-8 mb-8 max-w-5xl mx-auto">
             <div className="flex-shrink-0 lg:w-[65%]">

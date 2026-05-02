@@ -32,9 +32,9 @@ const BusinessCustomerCards: React.FC = () => {
           {/* Right: Image */}
           <div className="h-full w-full">
             <img 
-              src="/images/iStock-1266980652.png" 
-              alt="Business Bitcoin Solutions" 
-              className="object-cover w-full h-full"
+              src="/images/iStock-1266980652.png"
+              alt="Business Bitcoin Solutions"
+              className="object-contain w-full h-full"
             />
           </div>
         </div>
