@@ -21,7 +21,7 @@ interface PrivacyPolicyData {
 }
 
 // Import your JSON (same path as in the component)
-import privacyPolicyData from '../src/content/privacy.json' assert { type: 'json' };
+import privacyPolicyData from '../src/content/en/privacy.json' with { type: 'json' };
 
 const generatePrivacyHtml = async () => {
   const data: PrivacyPolicyData = privacyPolicyData;

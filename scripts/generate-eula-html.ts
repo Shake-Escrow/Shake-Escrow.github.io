@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 
-import eulaPolicyData from '../src/content/eula.json' assert { type: 'json' };
+import eulaPolicyData from '../src/content/en/eula.json' with { type: 'json' };
 
 interface EulaSubsection {
   subtitle: string;
@@ -15,9 +15,10 @@ interface EulaSection {
 }
 
 interface EulaData {
-  title: string;
+  title?: string;
   companyName: string;
   lastUpdated: string;
+  effectiveDate?: string;
   introduction: string;
   sections: EulaSection[];
   acknowledgment?: string;
