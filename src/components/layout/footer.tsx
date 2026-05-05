@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { X, Linkedin } from 'lucide-react';
 import Button from '../common/button';
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 
 type Platform = 'ios' | 'android';
 

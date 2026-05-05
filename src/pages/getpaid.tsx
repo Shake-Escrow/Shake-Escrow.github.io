@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
-import siteContent from '../content/sitecontent.json';
+import siteContent from '../content/en/sitecontent.json';
 
 const renderWithOdosLink = (text: string) => {
   const parts = text.split('Odos');

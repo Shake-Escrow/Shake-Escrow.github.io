@@ -2,7 +2,7 @@ import React from 'react';
 import { ShieldCheck, Zap, DollarSign, Sparkles } from 'lucide-react';
 import Section from '../common/section';
 import styles from './features.module.css';
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 
 interface FeatureProps {
   icon: React.ReactNode;

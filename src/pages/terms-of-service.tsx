@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import tosContent from '../content/tos.json';
-import siteContent from '../content/sitecontent.json';
+import tosContent from '../content/en/tos.json';
+import siteContent from '../content/en/sitecontent.json';
 import { Link } from 'react-router-dom';
 
 // Type definitions

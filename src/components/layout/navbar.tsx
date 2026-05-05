@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { GoBrowser } from "react-icons/go";
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

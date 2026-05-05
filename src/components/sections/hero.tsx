@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../common/button';
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";

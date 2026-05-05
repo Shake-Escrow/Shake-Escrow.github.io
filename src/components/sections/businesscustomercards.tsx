@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../common/section';
 import Button from '../common/button';
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 
 const BusinessCustomerCards: React.FC = () => {
   return (

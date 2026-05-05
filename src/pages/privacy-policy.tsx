@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import privacyPolicyData from '../content/privacy.json';
-import siteContent from '../content/sitecontent.json';
+import privacyPolicyData from '../content/en/privacy.json';
+import siteContent from '../content/en/sitecontent.json';
 import { Link } from 'react-router-dom';
 
 // Type definitions for the privacy policy data structure

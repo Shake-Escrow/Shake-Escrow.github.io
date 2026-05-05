@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import eulaData from '../content/eula.json';
-import siteContent from '../content/sitecontent.json';
+import eulaData from '../content/en/eula.json';
+import siteContent from '../content/en/sitecontent.json';
 
 interface EulaSubsection {
   subtitle: string;

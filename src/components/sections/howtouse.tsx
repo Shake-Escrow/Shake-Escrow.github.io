@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../common/section';
-import siteContent from '../../content/sitecontent.json';
+import siteContent from '../../content/en/sitecontent.json';
 
 interface StepProps {
   number: number;
