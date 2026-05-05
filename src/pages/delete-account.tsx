@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/common/button';
 import Section from '../components/common/section';
+import siteContent from '../content/sitecontent.json';
 
 const DeleteAccount: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -27,18 +28,18 @@ const DeleteAccount: React.FC = () => {
       
       if (data.success) {
         setIsSubmitted(true);
-        alert('Your request to delete your account was received. Please check your email.');
+        alert(siteContent.deleteAccount.successAlert);
         setTimeout(() => {
           setIsSubmitted(false);
           setEmail('');
         }, 3000);
       } else {
         console.error('Error:', data.error);
-        alert('There was an error processing your request. Please try again.');
+        alert(siteContent.deleteAccount.errorAlert);
       }
     } catch (error) {
       console.error('Network error:', error);
-      alert('There was an error processing your request. Please try again.');
+      alert(siteContent.deleteAccount.errorAlert);
     } finally {
       setIsLoading(false);
     }
@@ -51,19 +52,19 @@ const DeleteAccount: React.FC = () => {
       <div className="max-w-2xl mx-auto">
         <div className="text-center space-y-6">
           <h1 className="font-display text-4xl md:text-5xl text-secondary-dark">
-            Delete Account
+            {siteContent.deleteAccount.heading}
           </h1>
-          
+
           <p className="font-body text-lg text-secondary">
-            Enter your account email address to delete your account
+            {siteContent.deleteAccount.description}
           </p>
-          
+
           <div className="space-y-4 max-w-md mx-auto mt-8">
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
+              placeholder={siteContent.deleteAccount.emailPlaceholder}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent font-body text-base"
               disabled={isSubmitted}
             />
@@ -74,7 +75,7 @@ const DeleteAccount: React.FC = () => {
               onClick={handleSubmit}
               disabled={!isFormValid || isSubmitted || isLoading}
             >
-              {isSubmitted ? 'Request Submitted' : isLoading ? 'Processing...' : 'Submit'}
+              {isSubmitted ? siteContent.deleteAccount.submittedButton : isLoading ? siteContent.deleteAccount.processingButton : siteContent.deleteAccount.submitButton}
             </Button>
           </div>
         </div>

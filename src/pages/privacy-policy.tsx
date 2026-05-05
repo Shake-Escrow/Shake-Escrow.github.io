@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
 import privacyPolicyData from '../content/privacy.json';
+import siteContent from '../content/sitecontent.json';
 import { Link } from 'react-router-dom';
 
 // Type definitions for the privacy policy data structure
@@ -32,7 +33,7 @@ const PrivacyPolicy: React.FC = () => {
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">
-            Privacy Policy
+            {siteContent.privacyPolicy.heading}
           </h1>
           
           <div className="prose prose-lg max-w-none">
@@ -54,10 +55,10 @@ const PrivacyPolicyContent: React.FC = () => {
       <div className="mb-8">
         <p className="text-lg font-semibold text-gray-900">{companyName}</p>
         <p className="text-sm text-gray-600">
-          <strong>Effective Date:</strong> {effectiveDate}
+          <strong>{siteContent.privacyPolicy.effectiveDateLabel}</strong> {effectiveDate}
         </p>
         <p className="text-sm text-gray-600 mb-4">
-          <strong>Last Updated:</strong> {lastUpdated}
+          <strong>{siteContent.privacyPolicy.lastUpdatedLabel}</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
       </div>
@@ -94,9 +95,9 @@ const PrivacyPolicyContent: React.FC = () => {
       ))}
 
       <div className="mt-12 text-base text-gray-700">
-        Looking for our End User License Agreement?{' '}
+        {siteContent.privacyPolicy.eulaPromo}{' '}
         <Link to="/end-user-license-agreement" className="text-accent hover:underline">
-          Read it here.
+          {siteContent.privacyPolicy.eulaPromoLink}
         </Link>
       </div>
     </>

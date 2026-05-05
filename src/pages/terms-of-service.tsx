@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
 import tosContent from '../content/tos.json';
+import siteContent from '../content/sitecontent.json';
 import { Link } from 'react-router-dom';
 
 // Type definitions
@@ -50,7 +51,7 @@ const TermsOfService: React.FC = () => {
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">
-            Terms of Service
+            {siteContent.termsOfService.heading}
           </h1>
           
           <div className="prose prose-lg max-w-none">
@@ -80,7 +81,7 @@ const TOSContent: React.FC = () => {
       <div className="mb-8">
         <p className="text-lg font-semibold text-gray-900">{company}</p>
         <p className="text-sm text-gray-600 mb-4">
-          <strong>Last Updated:</strong> {lastUpdated}
+          <strong>{siteContent.termsOfService.lastUpdatedLabel}</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
       </div>
@@ -148,10 +149,10 @@ const TOSContent: React.FC = () => {
             <div className="bg-gray-50 p-6 rounded-lg mt-4">
               <p className="font-bold text-gray-900 mb-2">{section.contact.company}</p>
               <p className="text-gray-700">
-                <strong>Email:</strong> <a href={`mailto:${section.contact.email}`} className="text-accent hover:underline">{section.contact.email}</a>
+                <strong>{siteContent.termsOfService.emailLabel}</strong> <a href={`mailto:${section.contact.email}`} className="text-accent hover:underline">{section.contact.email}</a>
               </p>
               <p className="text-gray-700">
-                <strong>Address:</strong> {section.contact.address}
+                <strong>{siteContent.termsOfService.addressLabel}</strong> {section.contact.address}
               </p>
             </div>
           )}
@@ -166,9 +167,9 @@ const TOSContent: React.FC = () => {
       </div>
 
       <div className="mt-8 text-base text-gray-700">
-        Looking for our End User License Agreement?{' '}
+        {siteContent.termsOfService.eulaPromo}{' '}
         <Link to="/end-user-license-agreement" className="text-accent hover:underline">
-          Read it here.
+          {siteContent.termsOfService.eulaPromoLink}
         </Link>
       </div>
     </>

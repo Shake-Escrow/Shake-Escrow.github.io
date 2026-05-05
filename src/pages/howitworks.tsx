@@ -13,7 +13,7 @@ const HowItWorks: React.FC = () => {
             {siteContent.howItWorks.hero.headline}
           </h1>
           <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-4 text-center mx-auto">
-            Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.
+            {siteContent.howItWorks.escrowIntro}
           </p>
           <p className="font-body text-base text-secondary-light max-w-2xl mb-8 text-center mx-auto">
             {siteContent.howItWorks.smartContractNote}
@@ -56,7 +56,7 @@ const HowItWorks: React.FC = () => {
           {/* Agreement Section */}
           <div className="max-w-4xl mx-auto mt-12 text-center">
             <p className="font-body text-lg md:text-xl text-secondary mb-8">
-              Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.
+              {siteContent.howItWorks.agreementNote}
             </p>
             
             {/* Screenshots */}
@@ -75,7 +75,7 @@ const HowItWorks: React.FC = () => {
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
                 <p className="font-body text-lg md:text-xl text-secondary mt-3">
-                  AI supports goods OR services
+                  {siteContent.howItWorks.aiCaption}
                 </p>
               </div>
             </div>

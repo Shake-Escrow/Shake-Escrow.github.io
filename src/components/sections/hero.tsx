@@ -30,8 +30,8 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
   const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : 'https://apps.apple.com/us/app/shake-defi/id6756281576';
-  const ctaLabel = 'Free Download';
-  const partnerLinkText = 'crypto onramp/offramp partner';
+  const ctaLabel = siteContent.home.hero.ctaLabel;
+  const partnerLinkText = siteContent.home.hero.partnerLinkText;
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
   const subheadLinkText = '95%';
   const [subheadPrefix, subheadSuffix = ''] = siteContent.home.hero.subhead.split(subheadLinkText);
@@ -62,7 +62,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
             
             <div className="space-y-4 max-w-md mx-auto lg:mx-0">
               <h3 className="font-display text-xl md:text-2xl text-secondary-dark">
-                Available Now
+                {siteContent.home.hero.availableNowHeading}
               </h3>
               
               <div className="flex items-center space-x-16">
@@ -114,7 +114,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                 onClick={() => { window.open('https://app.shakedefi.com', '_blank', 'noreferrer'); }}
               >
                 <span className="inline-flex items-center gap-2">
-                  Use Web App
+                  {siteContent.home.hero.useWebApp}
                   <GoBrowser size={24} aria-hidden="true" />
                 </span>
               </Button>

@@ -75,21 +75,21 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
               to="/privacy-policy"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
-              Privacy Policy
+              {siteContent.footer.privacyPolicyLabel}
             </Link>
             <span className="text-sm text-gray-400 select-none">|</span>
             <Link
               to="/end-user-license-agreement"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
-              End User License Agreement
+              {siteContent.footer.eulaLabel}
             </Link>
             <span className="text-sm text-gray-400 select-none">|</span>
             <Link
               to="/terms-of-service"
               className="text-sm font-body text-[#2d3440] hover:text-accent transition-colors"
             >
-              Terms of Service
+              {siteContent.footer.termsOfServiceLabel}
             </Link>
           </div>
         </div>

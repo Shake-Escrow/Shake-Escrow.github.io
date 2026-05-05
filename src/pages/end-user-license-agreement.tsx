@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
 import eulaData from '../content/eula.json';
+import siteContent from '../content/sitecontent.json';
 
 interface EulaSubsection {
   subtitle: string;
@@ -32,7 +33,7 @@ const EndUserLicenseAgreement: React.FC = () => {
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">
-            End User License Agreement
+            {siteContent.eula.heading}
           </h1>
 
           <div className="prose prose-lg max-w-none">
@@ -53,7 +54,7 @@ const EulaContent: React.FC = () => {
       <div className="mb-8">
         <p className="text-lg font-semibold text-gray-900">{companyName}</p>
         <p className="text-sm text-gray-600 mb-4">
-          <strong>Last Updated:</strong> {lastUpdated}
+          <strong>{siteContent.eula.lastUpdatedLabel}</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
       </div>

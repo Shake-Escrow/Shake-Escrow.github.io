@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { GoBrowser } from "react-icons/go";
+import siteContent from '../../content/sitecontent.json';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +17,7 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   };
 
-
-  // To use nav labels from JSON, add a "nav" section to sitecontent.json, e.g. nav: { home: "Home", ... }
-  // Then use: siteContent.nav.home, etc.
-  const navItems = [
-    { title: 'Home', path: '/' },
-    { title: 'How it Works', path: '/how-it-works' },
-    { title: 'Get Paid', path: '/get-paid' },
-    { title: 'Send Payments', path: '/send-payments' },
-    { title: 'FAQ', path: '/faq' },
-  ];
+  const navItems = siteContent.navbar.links;
 
   return (
     <header
@@ -61,7 +53,7 @@ const Navbar: React.FC = () => {
             rel="noreferrer"
             className="inline-flex items-center gap-2 font-medium text-base px-5 py-1.5 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body"
           >
-            Launch App
+            {siteContent.navbar.launchApp}
             <GoBrowser size={24} aria-hidden="true" />
           </a>
         </div>
@@ -106,7 +98,7 @@ const Navbar: React.FC = () => {
             className="inline-flex items-center gap-2 font-medium text-xl px-6 py-2 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body"
             onClick={closeMenu}
           >
-            Launch App
+            {siteContent.navbar.launchApp}
             <GoBrowser size={24} aria-hidden="true" />
           </a>
         </div>

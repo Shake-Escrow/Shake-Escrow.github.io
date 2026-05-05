@@ -1,10 +1,24 @@
 {
+  "navbar": {
+    "links": [
+      { "title": "Home", "path": "/" },
+      { "title": "How it Works", "path": "/how-it-works" },
+      { "title": "Get Paid", "path": "/get-paid" },
+      { "title": "Send Payments", "path": "/send-payments" },
+      { "title": "FAQ", "path": "/faq" }
+    ],
+    "launchApp": "Launch App"
+  },
   "home": {
     "hero": {
       "headline": "Smart Contract Escrow made easy",
       "subhead": "Using blockchain to reduce your transaction costs by 95%",
       "button": "Available Now",
-      "partnerLabel": "Our crypto onramp/offramp partner:"
+      "availableNowHeading": "Available Now",
+      "ctaLabel": "Free Download",
+      "useWebApp": "Use Web App",
+      "partnerLabel": "Our crypto onramp/offramp partner:",
+      "partnerLinkText": "crypto onramp/offramp partner"
     },
     "features": {
       "headline": "Supercharge Your Payment\nwith Refundable Escrow",
@@ -77,6 +91,9 @@
       "subhead": "Create your account today and join the movement to everyday crypto.",
       "button": "Available Now"
     },
+    "escrowIntro": "Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.",
+    "agreementNote": "Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.",
+    "aiCaption": "AI supports goods OR services",
     "smartContractNote": "Under the hood, it's a smart contract: the release timer is written to the blockchain at the moment of payment and cannot be changed by anyone, including Shake. Funds have exactly two exits — to the merchant once the timer expires, or back to the buyer if a refund is issued. No other path exists in the code.",
     "process": {
       "header": "The Escrow Process",
@@ -155,6 +172,9 @@
     "tagline": "Enabling crypto's usability for real world transactions",
     "disclaimer": "Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
     "quickLinksLabel": "Quick Links",
+    "privacyPolicyLabel": "Privacy Policy",
+    "eulaLabel": "End User License Agreement",
+    "termsOfServiceLabel": "Terms of Service",
     "quickLinks": [
       { "label": "Home", "url": "/" },
       { "label": "How it Works", "url": "/how-it-works" },
@@ -166,6 +186,35 @@
     "contactLabel": "Contact Us",
     "contactEmail": "matt@shakedefi.com",
     "copyright": "© 2026 Shake Defi, Inc."
+  },
+  "privacyPolicy": {
+    "heading": "Privacy Policy",
+    "effectiveDateLabel": "Effective Date:",
+    "lastUpdatedLabel": "Last Updated:",
+    "eulaPromo": "Looking for our End User License Agreement?",
+    "eulaPromoLink": "Read it here."
+  },
+  "termsOfService": {
+    "heading": "Terms of Service",
+    "lastUpdatedLabel": "Last Updated:",
+    "emailLabel": "Email:",
+    "addressLabel": "Address:",
+    "eulaPromo": "Looking for our End User License Agreement?",
+    "eulaPromoLink": "Read it here."
+  },
+  "eula": {
+    "heading": "End User License Agreement",
+    "lastUpdatedLabel": "Last Updated:"
+  },
+  "deleteAccount": {
+    "heading": "Delete Account",
+    "description": "Enter your account email address to delete your account",
+    "emailPlaceholder": "Enter your email address",
+    "submitButton": "Submit",
+    "processingButton": "Processing...",
+    "submittedButton": "Request Submitted",
+    "successAlert": "Your request to delete your account was received. Please check your email.",
+    "errorAlert": "There was an error processing your request. Please try again."
   },
   "faq": {
     "headline": "Frequently Asked Questions",
