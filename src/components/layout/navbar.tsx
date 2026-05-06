@@ -1,5 +1,5 @@
 // src/components/layout/navbar.tsx
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Check, ChevronDown, Globe2, Menu, X } from 'lucide-react';
 import { GoBrowser } from "react-icons/go";
@@ -15,7 +15,18 @@ const selectedLanguage = languages[0];
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const languageRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
+        setIsLanguageOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -56,7 +67,7 @@ const Navbar: React.FC = () => {
               {item.title}
             </Link>
           ))}
-          <div className="relative">
+          <div className="relative" ref={languageRef}>
             <button
               type="button"
               className="group inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-1.5 font-body text-base font-medium text-secondary-dark shadow-sm transition-all duration-200 hover:border-accent hover:bg-[#f7f9fb] focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
