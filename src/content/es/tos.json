@@ -1,0 +1,413 @@
+{
+  "lastUpdated": "1 de mayo de 2026",
+  "effectiveDate": "1 de mayo de 2026",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "TÉRMINOS DE SERVICIO",
+  "sections": [
+    {
+      "title": "1. Aceptación de los Términos y Definiciones",
+      "subsections": [
+        {
+          "subtitle": "1.1 Aceptación de los Términos",
+          "content": "Al acceder, descargar o usar la App o los Servicios, usted reconoce que ha leído, comprendido y acepta estar sujeto a estos Términos, nuestro EULA y nuestra Política de Privacidad. Si no está de acuerdo con estos Términos, no puede acceder ni usar los Servicios."
+        },
+        {
+          "subtitle": "1.2 Definiciones",
+          "content": "Para los efectos de estos Términos, se aplican las siguientes definiciones:\n\n<strong>\"Usuario\"</strong> significa cualquier persona que cree una cuenta y use los Servicios, ya sea como Comerciante o Cliente.\n\n<strong>\"Comerciante\"</strong> significa un Usuario que ofrece bienes o servicios a la venta a través de la App y crea Acuerdos para transacciones.\n\n<strong>\"Cliente\"</strong> significa un Usuario que compra bienes o servicios de un Comerciante a través de la App y acepta pagar según los términos de un Acuerdo.\n\n<strong>\"Acuerdo\"</strong> significa el contrato digital creado por un Comerciante que especifica los bienes o servicios a intercambiar, el monto del pago, el Período de Retención de Pago y cualquier otro término relevante de la transacción. Cada Acuerdo es firmado digitalmente tanto por el Comerciante como por el Cliente.\n\n<strong>\"Período de Retención de Pago\"</strong> significa el período de tiempo, especificado en el Acuerdo por el Comerciante, durante el cual los fondos de pago se retienen en escrow por el Contrato Inteligente antes de ser liberados al Comerciante. Este período puede variar de cero (0) a cualquier duración razonable según lo permita la App.\n\n<strong>\"Contrato Inteligente\"</strong> significa el programa autónomo y autoejecutado basado en blockchain que retiene los fondos del Cliente en escrow durante el Período de Retención de Pago y ejecuta la liberación o el reembolso de los fondos de acuerdo con su lógica predeterminada y cualquier instrucción autorizada de la Empresa.\n\n<strong>\"Transacción Instantánea\"</strong> significa una transacción donde el Período de Retención de Pago se establece en cero (0), resultando en la transferencia inmediata de fondos al Comerciante sin funcionalidad de escrow.\n\n<strong>\"Disputa\"</strong> significa una reclamación formal iniciada por un Cliente durante el Período de Retención de Pago alegando que el Comerciante no ha cumplido los términos del Acuerdo."
+        }
+      ]
+    },
+    {
+      "title": "2. Roles y Responsabilidades del Usuario",
+      "subsections": [
+        {
+          "subtitle": "2.1 Capacidad Dual del Usuario",
+          "content": "Los Usuarios pueden actuar tanto como Comerciantes como Clientes en diferentes momentos. Independientemente del rol, todos los Usuarios están sujetos a estos Términos y siguen siendo responsables de cumplir todas las obligaciones derivadas de cualquier Acuerdo que celebren a través de los Servicios."
+        },
+        {
+          "subtitle": "2.2 Responsabilidades del Comerciante",
+          "content": "Como Comerciante, usted acepta:\n\n<ul>\n<li>Crear Acuerdos claros, precisos y completos que describan verazmente los bienes o servicios que ofrece</li>\n<li>Entregar todos los bienes o realizar todos los servicios exactamente según se describe en cada Acuerdo que cree y firme</li>\n<li>Cumplir sus obligaciones dentro de los plazos especificados o razonablemente implícitos en el Acuerdo</li>\n<li>Responder de forma rápida y profesional a las consultas e inquietudes de los Clientes</li>\n<li>Cooperar plenamente en caso de una Disputa, incluida la presentación de toda la evidencia y documentación solicitada</li>\n<li>Mantener inventario o capacidad suficiente para cumplir sus obligaciones en virtud de los Acuerdos activos</li>\n<li>No crear Acuerdos con información falsa, engañosa o fraudulenta</li>\n<li>Establecer Períodos de Retención de Pago razonables que se ajusten a la naturaleza de los bienes o servicios que se proporcionan</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.3 Responsabilidades del Cliente",
+          "content": "Como Cliente, usted acepta:\n\n<ul>\n<li>Revisar cuidadosamente todos los términos de un Acuerdo antes de firmarlo, incluida la descripción de los bienes o servicios, el monto del pago y el Período de Retención de Pago</li>\n<li>Pagar el monto acordado con prontitud después de firmar un Acuerdo</li>\n<li>Aceptar la entrega de bienes o servicios según se especifica en el Acuerdo</li>\n<li>Iniciar Disputas solo cuando tenga una base legítima y de buena fe para creer que el Comerciante no ha cumplido el Acuerdo</li>\n<li>Proporcionar información veraz y completa al iniciar una Disputa</li>\n<li>Cooperar plenamente durante el proceso de resolución de disputas</li>\n<li>No abusar del proceso de disputas para obtener bienes o servicios sin el pago adecuado</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.4 Conducta General del Usuario",
+          "content": "Todos los Usuarios, ya actúen como Comerciantes o Clientes, aceptan:\n\n<ul>\n<li>Actuar de buena fe y tratar a los demás Usuarios con equidad</li>\n<li>Cumplir todos los Acuerdos que firmen a través de los Servicios</li>\n<li>No usar los Servicios para ningún propósito ilegal, fraudulento o no autorizado</li>\n<li>No participar en ninguna conducta que pueda dañar, deshabilitar o perjudicar los Servicios</li>\n<li>Cumplir con todas las leyes y regulaciones aplicables</li>\n<li>No hacerse pasar por otra persona o entidad</li>\n<li>No acosar, amenazar ni abusar de otros Usuarios</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "3. Proceso de Transacciones y Acuerdos",
+      "subsections": [
+        {
+          "subtitle": "3.1 Creación de un Acuerdo",
+          "content": "Los Comerciantes inician transacciones creando Acuerdos a través de la App. Cada Acuerdo debe incluir:\n\n<ul>\n<li>Una descripción clara de los bienes o servicios que se ofrecen</li>\n<li>El monto total de pago en criptomoneda</li>\n<li>La duración del Período de Retención de Pago</li>\n<li>Cualquier otro término material relevante para la transacción</li>\n</ul>\n\nLos Comerciantes pueden adjuntar imágenes al Acuerdo para documentar y aclarar aún más los bienes o servicios que se ofrecen. Al crear un Acuerdo, el Comerciante declara que toda la información contenida en él es precisa, completa y no engañosa."
+        },
+        {
+          "subtitle": "3.2 Revisión y Aceptación del Acuerdo",
+          "content": "Antes de firmar un Acuerdo, los Clientes tienen la oportunidad de revisar todos los términos, incluida la descripción de los bienes o servicios, el monto del pago, el Período de Retención de Pago y cualquier imagen adjunta. Al firmar un Acuerdo, el Cliente reconoce que ha revisado y comprendido todos los términos y acepta estar sujeto a ellos."
+        },
+        {
+          "subtitle": "3.3 Proceso de Firma Digital",
+          "content": "Tanto el Comerciante como el Cliente deben firmar digitalmente el Acuerdo utilizando la funcionalidad de firma de la App. El proceso de firma incluye:\n\n<ul>\n<li>Dibujar una firma con un dedo o lápiz óptico en la pantalla del dispositivo</li>\n<li>Captura fotográfica según se describe en la Sección 3.5 del EULA</li>\n<li>Registro de marca de tiempo del evento de firma</li>\n</ul>\n\nUna vez que ambas partes hayan firmado, el Acuerdo pasa a ser legalmente vinculante y la transacción puede proceder."
+        },
+        {
+          "subtitle": "3.4 Pago y Tipos de Transacciones",
+          "content": "#### 3.4.1 Transacciones Instantáneas\n\nCuando un Comerciante establece el Período de Retención de Pago en cero (0), la transacción se convierte en una Transacción Instantánea. Al realizar el pago el Cliente:\n\n<ul>\n<li>Los fondos se transfieren inmediatamente al Comerciante</li>\n<li>No se aplica ningún período de escrow</li>\n<li>El Cliente renuncia al derecho de iniciar una Disputa a través de la App</li>\n<li>La transacción se considera completa y definitiva, sujeta únicamente a los recursos disponibles fuera de la App</li>\n</ul>\n\nLos Comerciantes solo deben usar Transacciones Instantáneas cuando puedan entregar bienes o servicios de inmediato o cuando la naturaleza de la transacción no justifique un período de retención.\n\n#### 3.4.2 Transacciones con Escrow\n\nCuando un Comerciante establece un Período de Retención de Pago mayor a cero (0), el pago del Cliente queda en escrow en el Contrato Inteligente. Durante este período:\n\n<ul>\n<li>El Comerciante debe entregar los bienes o realizar los servicios según se especifica en el Acuerdo</li>\n<li>El Cliente conserva el derecho de iniciar una Disputa si el Comerciante no cumple el Acuerdo</li>\n<li>Los fondos permanecen bloqueados en el Contrato Inteligente y ninguna de las partes puede acceder a ellos</li>\n<li>Al expirar el Período de Retención de Pago sin una Disputa, los fondos se liberan automáticamente al Comerciante</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.5 Naturaleza del Escrow con Contrato Inteligente",
+          "content": "Usted reconoce y acepta que:\n\n<ul>\n<li>El Contrato Inteligente no es un banco, institución financiera ni agente de depósito en garantía con licencia</li>\n<li>El Contrato Inteligente opera de forma autónoma según su lógica programada</li>\n<li>La Empresa no tiene custodia ni control sobre los fondos retenidos en el Contrato Inteligente, excepto según se describe en la Sección 5 en relación con la resolución de disputas</li>\n<li>La seguridad y operación del Contrato Inteligente depende de la red blockchain subyacente</li>\n<li>El código del Contrato Inteligente ha sido auditado, pero no se puede garantizar su seguridad o funcionalidad absoluta</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "4. Obligaciones de Entrega y Rendimiento",
+      "subsections": [
+        {
+          "subtitle": "4.1 Obligaciones de Entrega del Comerciante",
+          "content": "Los Comerciantes deben entregar bienes o realizar servicios en estricto cumplimiento de los términos de cada Acuerdo que firmen. Esto incluye:\n\n<ul>\n<li>Entregar bienes o servicios que coincidan con la descripción en el Acuerdo</li>\n<li>Cumplir con todos los estándares de calidad explícita o implícitamente establecidos en el Acuerdo</li>\n<li>Completar la entrega o el cumplimiento dentro de los plazos especificados en el Acuerdo o, si no se especifican, dentro de un tiempo razonable dada la naturaleza de los bienes o servicios</li>\n<li>Proporcionar cualquier documentación, garantías o materiales adicionales acordados</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.2 Prueba de Entrega o Rendimiento",
+          "content": "Se recomienda encarecidamente a los Comerciantes que obtengan y mantengan evidencia de entrega o rendimiento, que puede incluir:\n\n<ul>\n<li>Recibos de confirmación de entrega</li>\n<li>Fotografías de los bienes entregados</li>\n<li>Reconocimientos firmados de los Clientes</li>\n<li>Capturas de pantalla de la entrega digital</li>\n<li>Documentación con marca de tiempo de la finalización del servicio</li>\n<li>Cualquier otra evidencia relevante</li>\n</ul>\n\nDicha evidencia puede ser crucial en caso de una Disputa y debe conservarse durante un período razonable después de completarse la transacción."
+        },
+        {
+          "subtitle": "4.3 Incumplimiento",
+          "content": "Si un Comerciante no entrega bienes o no realiza servicios según se especifica en un Acuerdo:\n\n<ul>\n<li>El Cliente puede iniciar una Disputa durante el Período de Retención de Pago</li>\n<li>El Comerciante puede estar sujeto a una determinación de reembolso por parte de la Empresa</li>\n<li>La cuenta del Comerciante puede estar sujeta a suspensión o cancelación</li>\n<li>El Comerciante puede ser responsable de daños u otros recursos legales</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.4 Obligaciones de Rendimiento del Cliente",
+          "content": "Los Clientes deben:\n\n<ul>\n<li>Realizar el pago según se especifica en el Acuerdo después de firmarlo</li>\n<li>Aceptar la entrega de bienes o servicios cuando se proporcionen de acuerdo con los términos del Acuerdo</li>\n<li>No rechazar la entrega o el rendimiento que cumpla con los términos del Acuerdo</li>\n<li>Proporcionar cualquier cooperación razonablemente necesaria para que el Comerciante cumpla el Acuerdo</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.5 Reembolsos Voluntarios",
+          "content": "Un Comerciante puede, en cualquier momento y a su exclusiva discreción, proporcionar un reembolso a un Cliente en relación con un Acuerdo (un <strong>\"Reembolso Voluntario\"</strong>). Para los efectos de estos Términos, un reembolso autorizado por la Empresa tras una Disputa bajo la Sección 5.3 se denomina <strong>\"Reembolso Involuntario.\"</strong>\n\nLos Reembolsos Voluntarios:\n\n<ul>\n<li>Pueden ser totales o parciales, según lo determine el Comerciante</li>\n<li>Son distintos de los Reembolsos Involuntarios y no están sujetos al estándar de determinación binaria establecido en la Sección 5.3</li>\n<li>Pueden ser iniciados por el Comerciante a través de los mecanismos disponibles en la App, que pueden incluir la liberación de fondos retenidos en escrow durante el Período de Retención de Pago o la transferencia de fondos al Cliente después de la liberación del escrow o en relación con una Transacción Instantánea</li>\n<li>Una vez ejecutados, son definitivos y no pueden ser revertidos por el Comerciante</li>\n</ul>\n\nLa Empresa no requiere Reembolsos Voluntarios, no adjudica la idoneidad, el monto ni el momento de ningún Reembolso Voluntario, y no está obligada a facilitar ninguna devolución de bienes ni otros arreglos entre las partes en relación con un Reembolso Voluntario. Cualquier obligación entre el Comerciante y el Cliente que surja de un Reembolso Voluntario, incluida cualquier devolución de bienes físicos, es un asunto entre las partes. La Sección 5.5 rige la devolución de bienes solo después de un Reembolso Involuntario.\n\nUn Cliente que haya aceptado un Reembolso Voluntario que cubra el monto total del Acuerdo no puede posteriormente iniciar una Disputa bajo la Sección 5 en relación con la misma transacción. Un Cliente que haya aceptado un Reembolso Voluntario parcial puede iniciar una Disputa, durante el Período de Retención de Pago y sujeto a los demás requisitos de la Sección 5, solo con respecto a los montos no reembolsados.\n\nEl tratamiento de los Reembolsos Voluntarios e Involuntarios a los efectos del sistema de calificaciones se aborda en la Sección 6.2."
+        }
+      ]
+    },
+    {
+      "title": "5. Disputas y Proceso de Resolución",
+      "subsections": [
+        {
+          "subtitle": "5.1 Inicio de una Disputa",
+          "content": "Durante el Período de Retención de Pago, un Cliente puede iniciar una Disputa si cree que el Comerciante no ha cumplido el Acuerdo. Para iniciar una Disputa, el Cliente debe:\n\n<ul>\n<li>Proporcionar una explicación clara del supuesto incumplimiento</li>\n<li>Presentar cualquier evidencia de apoyo, incluidas fotografías, mensajes u otra documentación</li>\n<li>Actuar de buena fe y proporcionar información veraz</li>\n</ul>\n\nLas Disputas solo pueden iniciarse durante el Período de Retención de Pago. Una vez que el Período de Retención de Pago expira sin una Disputa, la transacción se considera completa y definitiva."
+        },
+        {
+          "subtitle": "5.2 Proceso de Revisión de Disputas",
+          "content": "Al recibir una Disputa, la Empresa:\n\n<ul>\n<li>Notificará al Comerciante de la Disputa y proporcionará detalles de las reclamaciones del Cliente</li>\n<li>Solicitará al Comerciante que proporcione su respuesta y cualquier evidencia de apoyo</li>\n<li>Revisará toda la evidencia disponible, incluida:</li>\n<li>El Acuerdo firmado y todos sus términos</li>\n<li>Cualquier imagen adjunta al Acuerdo</li>\n<li>Fotografías tomadas durante el proceso de firma digital</li>\n<li>Declaraciones de los Usuarios de ambas partes</li>\n<li>Cualquier comunicación entre las partes</li>\n<li>Evidencia de entrega o rendimiento proporcionada por cualquiera de las partes</li>\n<li>Cualquier otra información relevante</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.3 Determinación de la Disputa",
+          "content": "Después de revisar toda la evidencia, la Empresa hará una determinación sobre si el Cliente debe recibir un reembolso. Las determinaciones de reembolso son binarias: la Empresa autorizará un reembolso total al Cliente o denegará la solicitud de reembolso y liberará los fondos retenidos en escrow al Comerciante. La Empresa no autoriza reembolsos parciales. La Empresa puede:\n\n<ul>\n<li>Autorizar un reembolso total de los fondos retenidos en escrow al Cliente</li>\n<li>Denegar la solicitud de reembolso y liberar los fondos retenidos en escrow al Comerciante</li>\n<li>Solicitar información adicional a cualquiera de las partes antes de tomar una determinación</li>\n</ul>\n\nLa determinación de la Empresa se basará en si el Comerciante cumplió sustancialmente sus obligaciones en virtud del Acuerdo. El estándar de cumplimiento sustancial se interpreta generosamente a favor del Comerciante. Un reembolso solo se autorizará cuando el Comerciante haya incumplido materialmente, por ejemplo, al no entregar los bienes o servicios en absoluto, al entregar bienes o servicios que difieren materialmente de la descripción en el Acuerdo, o al privar de otro modo al Cliente del beneficio sustancial del trato. Las deficiencias menores, las desviaciones no materiales o el rendimiento parcial que aún brinda el beneficio sustancial del Acuerdo no resultarán en un reembolso.\n\nLos patrones de entrega deficiente, insatisfacción del cliente u otra conducta inconsistente con estos Términos, incluso donde las transacciones individuales no justifiquen reembolsos, pueden abordarse por otros medios que no sean reembolsos, incluidos entre otros advertencias de cuenta, suspensión o cancelación bajo la Sección 7.7, y cualquier mecanismo de reputación o retroalimentación del usuario disponible a través de la App."
+        },
+        {
+          "subtitle": "5.4 Ejecución de la Resolución de Disputas",
+          "content": "Al tomar una determinación, la Empresa enviará la instrucción apropiada al Contrato Inteligente, que ejecutará el reembolso o la liberación del pago de acuerdo con su lógica programada. El papel de la Empresa se limita a tomar la determinación y proporcionar la instrucción; el Contrato Inteligente ejecuta de forma autónoma la transacción financiera."
+        },
+        {
+          "subtitle": "5.5 Devolución de Bienes Físicos Tras un Reembolso",
+          "content": "Cuando la Empresa autoriza un reembolso a un Cliente en relación con un Acuerdo que involucra bienes físicos que han sido entregados al Cliente, se aplican las siguientes disposiciones:\n\n<ul>\n<li><strong>Derecho del Comerciante a Solicitar la Devolución.</strong> El Comerciante puede, dentro de los catorce (14) días posteriores a la determinación del reembolso, solicitar la devolución de los bienes físicos notificando al Cliente a través de la App.</li>\n<li><strong>Obligación del Cliente de Devolver a Expensas del Cliente.</strong> Si el Comerciante solicita oportunamente la devolución y el costo razonable del envío de devolución es menor que el monto reembolsado al Cliente, el Cliente deberá devolver los bienes al Comerciante a expensas del Cliente dentro de un período razonable que no exceda los catorce (14) días desde la solicitud del Comerciante.</li>\n<li><strong>Devolución Cuando el Costo de Envío Iguala o Supera el Reembolso.</strong> Si el costo razonable del envío de devolución iguala o supera el monto reembolsado al Cliente, el Cliente no tendrá ninguna obligación de devolver los bienes a expensas del Cliente. En tales casos, el Comerciante puede, a su elección: (i) prepagar o reembolsar al Cliente los costos de envío de devolución, en cuyo caso el Cliente deberá devolver los bienes dentro de un período razonable; o (ii) renunciar a la devolución de los bienes.</li>\n<li><strong>Condición de los Bienes Devueltos.</strong> Los bienes deben devolverse en sustancialmente el mismo estado en que se recibieron, teniendo en cuenta la inspección razonable por parte del Cliente. Los bienes que están dañados, alterados, usados más allá de la inspección razonable o materialmente devaluados por las acciones del Cliente pueden, a opción del Comerciante, considerarse no devueltos correctamente.</li>\n<li><strong>Incumplimiento de la Devolución.</strong> Un Cliente que no devuelva los bienes según lo requerido bajo esta Sección puede, a discreción de la Empresa, estar sujeto a suspensión o cancelación de cuenta, reversión del reembolso, responsabilidad ante el Comerciante por el valor de los bienes no devueltos u otros recursos disponibles bajo estos Términos o la ley aplicable.</li>\n<li><strong>Disputas Relacionadas con la Devolución.</strong> Las disputas entre el Cliente y el Comerciante con respecto a los costos de envío de devolución, la condición de los bienes devueltos o el cumplimiento de esta Sección serán resueltas directamente entre las partes. La Empresa no está obligada a mediar ni determinar tales asuntos, pero puede, a su exclusiva discreción, tomar medidas contra las cuentas que demuestren un patrón de incumplimiento.</li>\n</ul>\n\nLa autorización de un reembolso por parte de la Empresa no constituye que la Empresa tome custodia ni asuma ninguna responsabilidad por los bienes físicos. Toda la logística de devolución, el riesgo de pérdida en tránsito y las obligaciones relacionadas son asuntos entre el Cliente y el Comerciante."
+        },
+        {
+          "subtitle": "5.6 Carácter Definitivo de las Determinaciones",
+          "content": "Las determinaciones de disputas de la Empresa son definitivas y vinculantes, excepto en lo que pueda requerir la ley aplicable. Al usar los Servicios, usted acepta las determinaciones de la Empresa en las Disputas. Usted conserva cualquier derecho legal que pueda tener bajo la ley aplicable para presentar reclamaciones fuera de la App a través de los canales legales apropiados."
+        },
+        {
+          "subtitle": "5.7 Abuso del Proceso de Disputas",
+          "content": "Los Usuarios que abusen del proceso de disputas, incluyendo al:\n\n<ul>\n<li>Presentar Disputas falsas o fraudulentas</li>\n<li>Proporcionar evidencia o testimonio falso</li>\n<li>Presentar Disputas sin base legítima</li>\n<li>Usar Disputas como medio para obtener bienes o servicios sin el pago adecuado</li>\n</ul>\n\npueden tener sus cuentas suspendidas o canceladas y pueden ser responsables de los daños causados a las partes afectadas y a la Empresa."
+        }
+      ]
+    },
+    {
+      "title": "6. Calificaciones de Usuarios",
+      "subsections": [
+        {
+          "subtitle": "6.1 Descripción General del Sistema de Calificaciones",
+          "content": "La App proporciona un sistema de calificaciones bidireccional a través del cual los Usuarios pueden calificarse mutuamente después de completar una transacción. Después de finalizar una transacción, tanto el Comerciante como el Cliente tienen la oportunidad de calificar a la otra parte en una escala de números enteros de uno (1) a cinco (5) estrellas. La calificación promedio de un Usuario en sus transacciones calificadas anteriores se muestra a otros Usuarios que puedan considerar celebrar Acuerdos con ellos. La Empresa también puede mostrar el número total de transacciones calificadas y otra información agregada sobre el historial de calificaciones de un Usuario a su discreción."
+        },
+        {
+          "subtitle": "6.2 Elegibilidad para Enviar una Calificación",
+          "content": "Un Usuario solo puede enviar una calificación:\n\n<ul>\n<li>Después de que la transacción a la que se relaciona la calificación haya sido completada, incluida la expiración o resolución de cualquier Período de Retención de Pago o Disputa aplicable</li>\n<li>Para la contraparte real de esa transacción</li>\n<li>Una vez por transacción (cada Usuario puede enviar una sola calificación por contraparte por transacción)</li>\n</ul>\n\nUn Usuario no puede enviar una calificación por una transacción en la que no haya participado ni intentar enviar calificaciones entre Usuarios que no sean sus contrapartes. La Empresa puede establecer condiciones adicionales razonables o límites de tiempo para el envío de calificaciones según se implemente en la App de vez en cuando.\n\n<strong>Transacciones Resultantes en un Reembolso Involuntario.</strong> No obstante lo anterior, las calificaciones no están disponibles en relación con ninguna transacción que haya resultado en un Reembolso Involuntario (según se define en la Sección 4.5) autorizado por la Empresa bajo la Sección 5.3. Cuando se haya autorizado un Reembolso Involuntario, ni el Comerciante ni el Cliente pueden enviar una calificación por esa transacción. La Empresa ha determinado que, dado que tales transacciones ya han sido adjudicadas por el proceso de determinación vinculante de la Empresa, la actividad de calificación adicional por parte de las partes no reflejaría significativamente la transacción subyacente y podría funcionar como una extensión de la Disputa resuelta.\n\n<strong>Reembolsos Voluntarios.</strong> Los Reembolsos Voluntarios (según se define en la Sección 4.5) no afectan la elegibilidad de calificación. Las partes en una transacción en la que se ha proporcionado un Reembolso Voluntario pueden calificarse mutuamente de acuerdo con esta Sección."
+        },
+        {
+          "subtitle": "6.3 Estándares de Calificación y Conducta Prohibida",
+          "content": "Al enviar una calificación, los Usuarios aceptan:\n\n<ul>\n<li>Proporcionar calificaciones que reflejen su evaluación genuina y de buena fe de la conducta de la contraparte en la transacción</li>\n<li>Basar las calificaciones en el rendimiento real de la contraparte en lugar de en factores no relacionados con la transacción</li>\n<li>No enviar calificaciones que sean deliberadamente falsas o engañosas</li>\n<li>No participar en calificaciones de represalia, incluida entre otras la calificación negativa de una contraparte únicamente porque esa contraparte calificó negativamente al Usuario, inició una Disputa o ejerció cualquier otro derecho bajo estos Términos</li>\n<li>No coordinarse con otros para inflar o deflactar la calificación promedio de ningún Usuario</li>\n<li>No solicitar, aceptar ni ofrecer pagos, amenazas u otros incentivos a cambio de calificaciones</li>\n<li>No condicionar la provisión de bienes, servicios, reembolsos ni cualquier otro rendimiento bajo un Acuerdo a la recepción de una calificación positiva</li>\n<li>No crear cuentas falsas, duplicadas o ficticias para influir en las calificaciones</li>\n<li>No enviar calificaciones en relación con transacciones ficticias o no bona fide diseñadas para manipular el sistema de calificaciones</li>\n</ul>\n\nLos Usuarios reconocen que las violaciones de esta Sección pueden, además de cualquier otro recurso disponible para la Empresa, resultar en la eliminación de la calificación infractora, suspensión o cancelación de la cuenta del Usuario infractor bajo la Sección 7.7, y responsabilidad ante otros Usuarios perjudicados por la violación."
+        },
+        {
+          "subtitle": "6.4 Naturaleza de las Calificaciones; Sin Respaldo de la Empresa",
+          "content": "Las calificaciones reflejan las opiniones de los Usuarios que las envían y no constituyen declaraciones, representaciones ni respaldos de la Empresa. La Empresa no hace ninguna declaración ni garantía con respecto a la exactitud de ninguna calificación individual ni a la idoneidad de ningún Usuario como contraparte. Los Usuarios son responsables de ejercer su propio criterio al revisar las calificaciones y celebrar Acuerdos."
+        },
+        {
+          "subtitle": "6.5 Derechos de la Empresa con Respecto a las Calificaciones",
+          "content": "La Empresa se reserva el derecho, a su exclusiva discreción, de:\n\n<ul>\n<li>Eliminar calificaciones que violen estos Términos, incluidos los estándares establecidos en la Sección 6.3</li>\n<li>Investigar la manipulación, las represalias u otros abusos sospechados del sistema de calificaciones</li>\n<li>Retener la visualización de la calificación promedio de un Usuario, o mostrar calificaciones con una nota, cuando la Empresa determine que la visualización sería engañosa o que las calificaciones han sido materialmente afectadas por abuso bajo investigación</li>\n<li>Modificar, suspender o discontinuar el sistema de calificaciones, total o parcialmente, con aviso razonable cuando sea practicable</li>\n</ul>\n\nLa Empresa no está obligada a eliminar calificaciones simplemente porque un Usuario no esté de acuerdo con ellas, y generalmente no adjudica la exactitud sustantiva de las calificaciones individuales. Un Usuario que crea que una calificación viola estos Términos puede informarla a través de la App o contactando a la Empresa en la dirección proporcionada en la Sección 17.10."
+        },
+        {
+          "subtitle": "6.6 Persistencia de las Calificaciones",
+          "content": "Las calificaciones, una vez enviadas, pasan a formar parte del registro de calificaciones del Usuario receptor en la plataforma. Las calificaciones no son eliminables a discreción del Usuario que las emite ni del Usuario calificado, excepto en la medida en que la Empresa lo permita en relación con la aplicación de estos Términos. La Empresa puede retener datos de calificaciones y continuar mostrando calificaciones promedio de acuerdo con estos Términos y la Política de Privacidad, incluso después de la suspensión, cancelación o eliminación de la cuenta según se describe en la Sección 7."
+        },
+        {
+          "subtitle": "6.7 Sin Responsabilidad por las Calificaciones",
+          "content": "En la máxima medida permitida por la ley aplicable, la Empresa no será responsable de ningún daño, incluido el daño reputacional, la pérdida de negocios u otros daños, derivados de las calificaciones enviadas por los Usuarios. Los Usuarios que envíen calificaciones son los únicos responsables del contenido de sus calificaciones y pueden ser responsables ante otros Usuarios o terceros por calificaciones que violen la ley aplicable, incluidas sin limitación las leyes relacionadas con la difamación, la interferencia ilícita o la competencia desleal."
+        }
+      ]
+    },
+    {
+      "title": "7. Eliminación de Cuenta y Obligaciones Pendientes",
+      "subsections": [
+        {
+          "subtitle": "7.1 Derecho a Eliminar la Cuenta",
+          "content": "Los Usuarios pueden eliminar sus cuentas en cualquier momento a través de la configuración de cuenta de la App. Sin embargo, el derecho a eliminar una cuenta está sujeto al cumplimiento de todas las obligaciones pendientes bajo estos Términos."
+        },
+        {
+          "subtitle": "7.2 Requisitos Previos a la Eliminación",
+          "content": "Antes de poder eliminar una cuenta, el Usuario debe:\n\n<ul>\n<li>Cumplir todas las obligaciones bajo cualquier Acuerdo activo que haya firmado, ya sea como Comerciante o Cliente</li>\n<li>Completar todas las transacciones pendientes</li>\n<li>Resolver o cooperar en la resolución de cualquier Disputa pendiente</li>\n<li>Pagar cualquier comisión o monto pendiente adeudado a la Empresa u otros Usuarios</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.3 Obligaciones del Comerciante Antes de la Eliminación",
+          "content": "Un Comerciante no puede eliminar su cuenta hasta que haya:\n\n<ul>\n<li>Entregado todos los bienes o realizado todos los servicios especificados en cada Acuerdo que firmó como Comerciante</li>\n<li>Resuelto todas las Disputas relacionadas con sus transacciones</li>\n<li>Garantizado que todos los Períodos de Retención de Pago de sus transacciones han expirado o sido resueltos</li>\n</ul>\n\nLa Empresa puede impedir la eliminación de la cuenta o retener cierta información de la cuenta si el Comerciante tiene obligaciones incumplidas."
+        },
+        {
+          "subtitle": "7.4 Obligaciones del Cliente Antes de la Eliminación",
+          "content": "Un Cliente no puede eliminar su cuenta hasta que haya:\n\n<ul>\n<li>Pagado todos los bienes y servicios especificados en cada Acuerdo que firmó como Cliente</li>\n<li>Completado todas las transacciones pendientes por las que tenga obligaciones de pago</li>\n<li>Resuelto todas las Disputas que haya iniciado</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.5 Proceso de Eliminación de Cuenta",
+          "content": "Cuando un Usuario solicita la eliminación de la cuenta:\n\n<ul>\n<li>La Empresa verificará que todas las obligaciones hayan sido cumplidas</li>\n<li>Si quedan obligaciones pendientes, la solicitud de eliminación será denegada y el Usuario será notificado de las obligaciones pendientes</li>\n<li>Una vez cumplidas todas las obligaciones, la cuenta se eliminará de acuerdo con los procedimientos especificados en nuestra Política de Privacidad</li>\n<li>Es posible que se retenga cierta información según lo requiera la ley o para fines legítimos de negocio</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.6 Efecto de la Eliminación de Cuenta",
+          "content": "Al eliminar la cuenta:\n\n<ul>\n<li>El Usuario pierde el acceso a la App y los Servicios</li>\n<li>Los registros históricos de transacciones pueden ser retenidos por la Empresa según sea necesario para fines legales, regulatorios o de negocio</li>\n<li>El Usuario sigue siendo responsable de cualquier obligación que haya surgido antes de la eliminación</li>\n<li>Cualquier garantía, indemnización o limitación de responsabilidad en estos Términos sobrevive a la eliminación de la cuenta</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.7 Cancelación Iniciada por la Empresa",
+          "content": "La Empresa se reserva el derecho de suspender o cancelar la cuenta de cualquier Usuario por violación de estos Términos o de las leyes aplicables. En tales casos:\n\n<ul>\n<li>El Usuario sigue obligado a cumplir todas las obligaciones pendientes bajo los Acuerdos firmados</li>\n<li>Al Usuario se le puede proporcionar acceso limitado a la App únicamente con el fin de cumplir las obligaciones pendientes</li>\n<li>La Empresa puede tomar las medidas apropiadas para garantizar que otros Usuarios estén protegidos de daños</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "8. Comisiones y Condiciones de Pago",
+      "subsections": [
+        {
+          "subtitle": "8.1 Comisiones de Servicio",
+          "content": "La Empresa puede cobrar comisiones por el uso de los Servicios, incluidas entre otras comisiones de transacción, comisiones de suscripción u otros cargos. Todas las comisiones aplicables se revelarán claramente en la App antes de que complete una transacción o se comprometa con cualquier servicio de pago."
+        },
+        {
+          "subtitle": "8.2 Procesamiento de Pagos",
+          "content": "Todas las transacciones de criptomonedas se procesan a través de la infraestructura de Coinbase mediante integración de API, según se describe en el EULA. Usted acepta pagar todas las comisiones asociadas con sus transacciones, incluidas las comisiones cobradas por Coinbase, las comisiones de red u otros cargos de terceros."
+        },
+        {
+          "subtitle": "8.3 Sin Reembolso de Comisiones de Servicio",
+          "content": "Las comisiones de servicio cobradas por la Empresa generalmente no son reembolsables, excepto según lo requiera la ley aplicable o según se establezca expresamente en estos Términos. Los reembolsos relacionados con Disputas, según se describe en la Sección 5, pertenecen al monto de la transacción entre Usuarios y no incluyen las comisiones de servicio a menos que la Empresa lo determine de otra manera."
+        },
+        {
+          "subtitle": "8.4 Impuestos",
+          "content": "Usted es responsable de determinar y pagar cualquier impuesto aplicable asociado con su uso de los Servicios, incluidos los impuestos sobre ventas, uso, valor agregado u otros impuestos sobre sus transacciones. La Empresa no proporciona asesoramiento fiscal, y debe consultar con un profesional fiscal con respecto a sus obligaciones."
+        }
+      ]
+    },
+    {
+      "title": "9. Usos y Conductas Prohibidas",
+      "subsections": [
+        {
+          "subtitle": "9.1 Transacciones Prohibidas",
+          "content": "Los Usuarios no pueden usar los Servicios para comprar, vender o intercambiar:\n\n<ul>\n<li>Bienes, sustancias o servicios ilegales</li>\n<li>Bienes robados o propiedad</li>\n<li>Bienes falsificados o no autorizados</li>\n<li>Armas, explosivos o materiales peligrosos</li>\n<li>Servicios de tráfico humano o explotación</li>\n<li>Bienes regulados sin la licencia apropiada</li>\n<li>Cualquier bien o servicio que viole las leyes o regulaciones aplicables</li>\n</ul>"
+        },
+        {
+          "subtitle": "9.2 Conductas Prohibidas",
+          "content": "Los Usuarios no pueden:\n\n<ul>\n<li>Crear Acuerdos falsos o engañosos</li>\n<li>Participar en transacciones fraudulentas o tergiversar bienes o servicios</li>\n<li>Usar los Servicios para lavar dinero o financiar actividades ilegales</li>\n<li>Manipular o abusar del proceso de resolución de disputas</li>\n<li>Intentar eludir las comisiones u obligaciones de pago</li>\n<li>Usar herramientas automatizadas o bots para crear cuentas o realizar transacciones</li>\n<li>Interferir con el uso de los Servicios por parte de otros Usuarios</li>\n<li>Realizar ingeniería inversa, descompilar o intentar extraer el código fuente de la App</li>\n<li>Violar los derechos de otros Usuarios o terceros</li>\n</ul>"
+        },
+        {
+          "subtitle": "9.3 Consecuencias del Uso Prohibido",
+          "content": "Los Usuarios que participen en usos o conductas prohibidas pueden enfrentar:\n\n<ul>\n<li>Suspensión o cancelación inmediata de la cuenta</li>\n<li>Confiscación de fondos retenidos en transacciones pendientes</li>\n<li>Derivación a las autoridades policiales</li>\n<li>Acción legal por parte de la Empresa o las partes afectadas</li>\n<li>Responsabilidad por los daños causados por su conducta</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "10. Derechos de Propiedad Intelectual",
+      "subsections": [
+        {
+          "subtitle": "10.1 Propiedad Intelectual de la Empresa",
+          "content": "La App, los Servicios y todo el contenido, las características y la funcionalidad de los mismos son propiedad de la Empresa, sus licenciantes u otros proveedores de dicho material y están protegidos por las leyes de derechos de autor, marcas registradas, patentes, secretos comerciales y otras leyes de propiedad intelectual de los Estados Unidos e internacionales."
+        },
+        {
+          "subtitle": "10.2 Licencia Limitada",
+          "content": "Sujeto a su cumplimiento de estos Términos, la Empresa le otorga una licencia limitada, no exclusiva, intransferible e insublicenciable para acceder y usar la App y los Servicios para sus propósitos personales o comerciales. Esta licencia no incluye ningún derecho a:\n\n<ul>\n<li>Modificar, copiar o crear trabajos derivados de la App o los Servicios</li>\n<li>Realizar ingeniería inversa o intentar extraer el código fuente</li>\n<li>Vender, alquilar, arrendar o de otro modo comercializar la App o los Servicios</li>\n<li>Usar la App o los Servicios de cualquier manera que viole estos Términos</li>\n</ul>"
+        },
+        {
+          "subtitle": "10.3 Contenido del Usuario",
+          "content": "Los Usuarios conservan la propiedad de cualquier contenido que creen o suban a los Servicios, incluidas las descripciones e imágenes de los Acuerdos. Al subir contenido a los Servicios, usted otorga a la Empresa una licencia mundial, libre de regalías y no exclusiva para usar, reproducir, modificar y mostrar dicho contenido únicamente con el fin de proporcionar y mejorar los Servicios."
+        },
+        {
+          "subtitle": "10.4 Comentarios",
+          "content": "Si proporciona comentarios, sugerencias o ideas sobre los Servicios, usted otorga a la Empresa un derecho irrestricto, perpetuo e irrevocable libre de regalías para usar dichos comentarios para cualquier propósito sin compensación ni atribución a usted."
+        }
+      ]
+    },
+    {
+      "title": "11. Descargos de Responsabilidad y Limitaciones de Responsabilidad",
+      "subsections": [
+        {
+          "subtitle": "11.1 Sin Garantía",
+          "content": "LOS SERVICIOS SE PROPORCIONAN \"TAL CUAL\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS O IMPLÍCITAS, INCLUIDAS ENTRE OTRAS LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR, TÍTULO Y NO INFRACCIÓN. LA EMPRESA NO GARANTIZA QUE:\n\n<ul>\n<li>Los Servicios sean ininterrumpidos, seguros o libres de errores</li>\n<li>Los resultados obtenidos del uso de los Servicios sean precisos o confiables</li>\n<li>La calidad de cualquier bien, servicio, información u otro material obtenido a través de los Servicios satisfaga sus expectativas</li>\n<li>Cualquier error en la App sea corregido</li>\n<li>El Contrato Inteligente funcione sin interrupciones ni errores</li>\n<li>Las transacciones sean procesadas sin retraso ni falla</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.2 Servicios de Terceros",
+          "content": "LA EMPRESA NO ES RESPONSABLE DE LOS ACTOS, OMISIONES NI FALLAS DE COINBASE, LAS REDES BLOCKCHAIN NI NINGÚN OTRO PROVEEDOR DE SERVICIOS DE TERCEROS. LOS USUARIOS RECONOCEN QUE ESTÁN INDEPENDIENTEMENTE SUJETOS A LOS TÉRMINOS DE SERVICIO Y LA POLÍTICA DE PRIVACIDAD DE COINBASE, QUE RIGEN SU USO DE LOS SERVICIOS DE COINBASE A LOS QUE SE ACCEDE A TRAVÉS DE NUESTRA APP."
+        },
+        {
+          "subtitle": "11.3 Transacciones de Usuarios",
+          "content": "LA EMPRESA NO ES PARTE EN LOS ACUERDOS ENTRE USUARIOS. LA EMPRESA NO GARANTIZA LA IDENTIDAD, LEGITIMIDAD NI FIABILIDAD DE NINGÚN USUARIO. LA EMPRESA NO ES RESPONSABLE DE:\n\n<ul>\n<li>La calidad, seguridad, legalidad o disponibilidad de los bienes o servicios ofrecidos por los Comerciantes</li>\n<li>El rendimiento o incumplimiento de los Usuarios bajo sus Acuerdos</li>\n<li>Las disputas entre Usuarios más allá del proceso de resolución de disputas descrito en estos Términos</li>\n<li>Pérdidas o daños derivados de transacciones entre Usuarios</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.4 Limitación de Responsabilidad",
+          "content": "EN LA MEDIDA EN QUE NO LO PROHÍBA LA LEY, EN NINGÚN CASO LA EMPRESA SERÁ RESPONSABLE DE DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES NI PUNITIVOS, INCLUIDOS ENTRE OTROS:\n\n<ul>\n<li>Pérdida de ganancias, ingresos u oportunidades de negocio</li>\n<li>Pérdida de datos o criptomonedas</li>\n<li>Costo de bienes o servicios sustitutos</li>\n<li>Interrupción del negocio</li>\n<li>Lesiones personales (excepto según lo requiera la ley aplicable)</li>\n</ul>\n\nque surjan de o estén relacionados con su uso o incapacidad de usar los Servicios, ya sea basado en garantía, contrato, agravio o cualquier otra teoría legal, y aunque la Empresa haya sido informada de la posibilidad de dichos daños."
+        },
+        {
+          "subtitle": "11.5 Límite de Responsabilidad",
+          "content": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, LA RESPONSABILIDAD TOTAL DE LA EMPRESA HACIA USTED POR TODAS LAS RECLAMACIONES QUE SURJAN DE O ESTÉN RELACIONADAS CON ESTOS TÉRMINOS O LOS SERVICIOS NO EXCEDERÁ EL MAYOR DE:\n\n<ul>\n<li>Cincuenta dólares ($50,00); o</li>\n<li>El monto total de las comisiones que pagó a la Empresa en los seis (6) meses anteriores al evento que dio lugar a la reclamación</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.6 Exclusiones",
+          "content": "ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN O LIMITACIÓN DE CIERTAS GARANTÍAS O DAÑOS. EN CONSECUENCIA, ALGUNAS DE LAS LIMITACIONES ANTERIORES PUEDEN NO APLICARSE A USTED. EN TALES JURISDICCIONES, LA RESPONSABILIDAD DE LA EMPRESA SE LIMITARÁ EN LA MAYOR MEDIDA PERMITIDA POR LA LEY."
+        }
+      ]
+    },
+    {
+      "title": "12. Indemnización",
+      "subsections": [
+        {
+          "subtitle": "12.1 Su Obligación de Indemnización",
+          "content": "Usted acepta indemnizar, defender y eximir de responsabilidad a la Empresa, sus filiales, directivos, directores, empleados, agentes, licenciantes y socios (colectivamente, las \"Partes de la Empresa\") de y contra todas y cada una de las reclamaciones, responsabilidades, daños, pérdidas, costos, gastos y comisiones (incluidos los honorarios razonables de abogados) que surjan de o estén relacionados con:\n\n<ul>\n<li>Su uso o mal uso de los Servicios</li>\n<li>Su incumplimiento de estos Términos o el EULA</li>\n<li>Su violación de cualquier ley o regulación aplicable</li>\n<li>Cualquier Acuerdo que celebre como Comerciante o Cliente</li>\n<li>Su incumplimiento de las obligaciones bajo los Acuerdos que ha firmado</li>\n<li>Contenido que envíe o suba a los Servicios</li>\n<li>Su violación de cualquier derecho de otra parte, incluidos los derechos de propiedad intelectual, derechos de privacidad o derechos contractuales</li>\n<li>Cualquier reclamación presentada por otros Usuarios basada en sus acciones u omisiones</li>\n</ul>"
+        },
+        {
+          "subtitle": "12.2 Defensa y Acuerdo",
+          "content": "La Empresa se reserva el derecho de asumir la defensa y el control exclusivos de cualquier asunto sujeto a indemnización por su parte, en cuyo caso usted cooperará con la Empresa para hacer valer cualquier defensa disponible. No puede llegar a un acuerdo en ninguna reclamación sin el consentimiento previo por escrito de la Empresa."
+        }
+      ]
+    },
+    {
+      "title": "13. Resolución de Disputas y Arbitraje",
+      "subsections": [
+        {
+          "subtitle": "13.1 Resolución Informal",
+          "content": "Antes de presentar una reclamación contra la Empresa, usted acepta intentar resolver la disputa de manera informal contactándonos en contact@shakedefi.com. Intentaremos resolver la disputa de manera informal contactándolo. Si una disputa no se resuelve dentro de los sesenta (60) días posteriores a la presentación, usted o la Empresa pueden iniciar un procedimiento formal."
+        },
+        {
+          "subtitle": "13.2 Acuerdo de Arbitraje",
+          "content": "Cualquier disputa, reclamación o controversia que surja de o esté relacionada con estos Términos o los Servicios que no pueda resolverse de manera informal se resolverá mediante arbitraje vinculante administrado por la Asociación Americana de Arbitraje (\"AAA\") de acuerdo con sus Reglas de Arbitraje Comercial."
+        },
+        {
+          "subtitle": "13.3 Procedimientos de Arbitraje",
+          "content": "<ul>\n<li>El arbitraje se llevará a cabo en California, Estados Unidos, a menos que las partes acuerden lo contrario</li>\n<li>El arbitraje será conducido por un solo árbitro</li>\n<li>La decisión del árbitro será definitiva y vinculante</li>\n<li>El fallo sobre el laudo puede ser ingresado en cualquier tribunal con jurisdicción</li>\n<li>Cada parte soportará sus propios costos y comisiones, excepto según lo asigne el árbitro</li>\n</ul>"
+        },
+        {
+          "subtitle": "13.4 Renuncia a Acciones Colectivas",
+          "content": "USTED Y LA EMPRESA ACUERDAN QUE CADA UNO PUEDE PRESENTAR RECLAMACIONES CONTRA EL OTRO SOLO EN SU CAPACIDAD INDIVIDUAL Y NO COMO DEMANDANTE NI MIEMBRO DE UNA CLASE EN NINGÚN PROCEDIMIENTO REPRESENTATIVO O DE CLASE PROPUESTO. A menos que usted y la Empresa acuerden lo contrario, el árbitro no puede consolidar las reclamaciones de más de una persona y no puede presidir ninguna forma de procedimiento representativo o de clase."
+        },
+        {
+          "subtitle": "13.5 Excepciones al Arbitraje",
+          "content": "Sin perjuicio de lo anterior, cualquiera de las partes puede presentar una reclamación en el tribunal de reclamos menores si la reclamación cumple los requisitos. Además, cualquiera de las partes puede solicitar medidas cautelares u otro recurso equitativo en un tribunal para prevenir la infracción, apropiación indebida o violación real o amenazada de los derechos de propiedad intelectual."
+        }
+      ]
+    },
+    {
+      "title": "14. Ley Aplicable y Jurisdicción",
+      "subsections": [
+        {
+          "subtitle": "14.1 Ley Aplicable",
+          "content": "Estos Términos y su uso de los Servicios se regirán e interpretarán de acuerdo con las leyes del Estado de California, Estados Unidos, sin tener en cuenta sus disposiciones sobre conflictos de leyes."
+        },
+        {
+          "subtitle": "14.2 Jurisdicción",
+          "content": "Sujeto a las disposiciones de arbitraje en la Sección 13, usted acepta que cualquier acción o procedimiento legal relacionado con estos Términos o los Servicios se presentará exclusivamente en los tribunales federales o estatales ubicados en California, y usted consiente la jurisdicción personal de dichos tribunales."
+        }
+      ]
+    },
+    {
+      "title": "15. Modificaciones a los Términos",
+      "subsections": [
+        {
+          "subtitle": "15.1 Derecho a Modificar",
+          "content": "La Empresa se reserva el derecho de modificar, enmendar o actualizar estos Términos en cualquier momento a su exclusiva discreción. Proporcionaremos aviso de los cambios materiales:\n\n<ul>\n<li>Publicando los Términos actualizados en la App con una nueva fecha de \"Última Actualización\"</li>\n<li>Enviando una notificación por correo electrónico a su dirección de correo electrónico registrada</li>\n<li>Mostrando un aviso prominente en la App</li>\n<li>Cualquier otro medio razonable de notificación</li>\n</ul>"
+        },
+        {
+          "subtitle": "15.2 Aceptación de las Modificaciones",
+          "content": "Su uso continuado de los Servicios después de la fecha de vigencia de cualquier modificación constituye su aceptación de los Términos actualizados. Si no está de acuerdo con los Términos modificados, debe dejar de usar los Servicios y puede eliminar su cuenta (sujeto al cumplimiento de cualquier obligación pendiente según se describe en la Sección 7)."
+        },
+        {
+          "subtitle": "15.3 Cambios Materiales",
+          "content": "Para cambios materiales que afecten significativamente sus derechos u obligaciones, proporcionaremos al menos treinta (30) días de aviso antes de que los cambios entren en vigencia. Durante este período, puede optar por cancelar su cuenta y dejar de usar los Servicios."
+        }
+      ]
+    },
+    {
+      "title": "16. Privacidad y Protección de Datos",
+      "subsections": [
+        {
+          "subtitle": "16.1 Política de Privacidad",
+          "content": "Su privacidad es importante para nosotros. Nuestra recopilación, uso y divulgación de su información personal está regida por nuestra Política de Privacidad, que se incorpora a estos Términos por referencia. Al usar los Servicios, usted consiente las prácticas descritas en nuestra Política de Privacidad."
+        },
+        {
+          "subtitle": "16.2 Datos del Usuario",
+          "content": "Usted reconoce que los datos de transacciones, incluidos los Acuerdos, las firmas, las imágenes y la información relacionada con disputas, pueden ser retenidos por la Empresa para fines legales, regulatorios y operativos, incluso después de la eliminación de la cuenta."
+        },
+        {
+          "subtitle": "16.3 Seguridad de los Datos",
+          "content": "Si bien implementamos medidas de seguridad razonables para proteger su información, usted reconoce que ningún sistema es completamente seguro. Usted es responsable de mantener la seguridad de las credenciales de su cuenta y del acceso a su dispositivo."
+        }
+      ]
+    },
+    {
+      "title": "17. Disposiciones Generales",
+      "subsections": [
+        {
+          "subtitle": "17.1 Acuerdo Completo",
+          "content": "Estos Términos, junto con el EULA y la Política de Privacidad, constituyen el acuerdo completo entre usted y la Empresa con respecto a los Servicios y reemplazan todos los acuerdos, declaraciones y entendimientos previos, ya sean escritos u orales."
+        },
+        {
+          "subtitle": "17.2 Divisibilidad",
+          "content": "Si un tribunal de jurisdicción competente determina que alguna disposición de estos Términos es inválida, ilegal o inaplicable, las disposiciones restantes continuarán en plena vigencia y efecto. La disposición inválida se modificará en la medida mínima necesaria para hacerla válida y aplicable."
+        },
+        {
+          "subtitle": "17.3 Renuncia",
+          "content": "El incumplimiento de la Empresa de hacer valer cualquier derecho o disposición de estos Términos no constituirá una renuncia a dicho derecho o disposición a menos que la Empresa lo reconozca y acuerde por escrito. Ninguna renuncia se considerará una renuncia adicional o continua a dicho término ni a ningún otro término."
+        },
+        {
+          "subtitle": "17.4 Cesión",
+          "content": "No puede ceder, transferir ni delegar estos Términos ni sus derechos y obligaciones bajo los mismos sin el consentimiento previo por escrito de la Empresa. La Empresa puede ceder, transferir o delegar libremente estos Términos y sus derechos y obligaciones sin restricción. Cualquier intento de cesión en violación de esta disposición es nulo."
+        },
+        {
+          "subtitle": "17.5 Relación entre las Partes",
+          "content": "Nada en estos Términos se interpretará para crear una relación de asociación, empresa conjunta, empleo o agencia entre usted y la Empresa. Usted no tiene autoridad para obligar a la Empresa ni para hacer declaraciones en nombre de la Empresa."
+        },
+        {
+          "subtitle": "17.6 Terceros Beneficiarios",
+          "content": "Estos Términos no confieren ni pretenden conferir ningún derecho o recurso a ninguna persona que no sea las partes de los mismos. Ningún tercero será considerado beneficiario de estos Términos."
+        },
+        {
+          "subtitle": "17.7 Fuerza Mayor",
+          "content": "La Empresa no será responsable de ningún incumplimiento o retraso en el cumplimiento de sus obligaciones bajo estos Términos debido a causas fuera de su control razonable, incluidos entre otros actos de Dios, desastres naturales, guerra, terrorismo, conflictos laborales, acciones gubernamentales, fallas de la red blockchain o interrupciones en los servicios de terceros."
+        },
+        {
+          "subtitle": "17.8 Supervivencia",
+          "content": "Todas las disposiciones de estos Términos que por su naturaleza deban sobrevivir a la rescisión sobrevivirán a la misma, incluidas entre otras las disposiciones de propiedad, las exenciones de garantía, las obligaciones de indemnización, las limitaciones de responsabilidad, las disposiciones de resolución de disputas y las disposiciones generales."
+        },
+        {
+          "subtitle": "17.9 Idioma",
+          "content": "Estos Términos están redactados en inglés. Cualquier traducción se proporciona únicamente por conveniencia. En caso de cualquier conflicto entre la versión en inglés y cualquier traducción, prevalecerá la versión en inglés."
+        },
+        {
+          "subtitle": "17.10 Notificaciones",
+          "content": "Todas las notificaciones a la Empresa bajo estos Términos deben enviarse a:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nLas notificaciones para usted pueden enviarse a la dirección de correo electrónico o dirección física asociada con su cuenta. Usted acepta que las notificaciones electrónicas satisfarán cualquier requisito legal de comunicación."
+        }
+      ]
+    },
+    {
+      "title": "18. Información de Contacto",
+      "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con nosotros en:\n\n<strong>Shake Defi, Inc.</strong>\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>AL USAR LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, COMPRENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS DE SERVICIO. ADEMÁS, USTED RECONOCE QUE ESTOS TÉRMINOS, JUNTO CON EL ACUERDO DE LICENCIA DE USUARIO FINAL Y LA POLÍTICA DE PRIVACIDAD, CONSTITUYEN EL ACUERDO COMPLETO Y EXCLUSIVO ENTRE USTED Y SHAKE DEFI, INC. CON RESPECTO A SU USO DE LOS SERVICIOS.</strong>"
+    }
+  ]
+}

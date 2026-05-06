@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../common/button';
-import siteContent from '../../content/en/sitecontent.json';
+import { useContent } from '../../hooks/useContent';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";
@@ -15,6 +15,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformChange }) => {
+  const siteContent = useContent('sitecontent');
   const [internalPlatform, setInternalPlatform] = useState<Platform>('android');
   const platform = controlledPlatform ?? internalPlatform;
 

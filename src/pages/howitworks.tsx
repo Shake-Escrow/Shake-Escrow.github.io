@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 
 const HowItWorks: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   return (
     <div className="pt-24">
       <Section className="pb-0" bgColor="bg-white">
@@ -93,6 +94,7 @@ const HowItWorks: React.FC = () => {
 export default HowItWorks;
 
 function CTASection() {
+  const siteContent = useContent('sitecontent');
   return (
     <Section bgColor="bg-secondary-dark" className="relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center">

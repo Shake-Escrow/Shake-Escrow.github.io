@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '../common/section';
-import siteContent from '../../content/en/sitecontent.json';
+import { useContent } from '../../hooks/useContent';
 
 interface StepProps {
   number: number;
@@ -25,6 +25,7 @@ const Step: React.FC<StepProps> = ({ number, title, description }) => {
 };
 
 const HowToUse: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   const steps = siteContent.home.howToUse.steps.map((step, idx) => ({
   number: idx + 1,
   title: step.title,

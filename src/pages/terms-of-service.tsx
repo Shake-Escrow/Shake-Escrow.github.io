@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import tosContent from '../content/en/tos.json';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 import { Link } from 'react-router-dom';
 
 // Type definitions
@@ -42,6 +41,7 @@ interface TOSData {
 }
 
 const TermsOfService: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -73,6 +73,8 @@ const processHtml = (html: string) =>
 
 // Component to render the Terms of Service content from JSON
 const TOSContent: React.FC = () => {
+  const tosContent = useContent('tos');
+  const siteContent = useContent('sitecontent');
   const data = tosContent as TOSData;
   const { company, lastUpdated, introduction, sections, acknowledgment } = data;
   

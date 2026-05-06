@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import eulaData from '../content/en/eula.json';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 
 interface EulaSubsection {
   subtitle: string;
@@ -24,6 +23,7 @@ interface EulaData {
 }
 
 const EndUserLicenseAgreement: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -46,7 +46,9 @@ const EndUserLicenseAgreement: React.FC = () => {
 };
 
 const EulaContent: React.FC = () => {
-  const data = eulaData as EulaData;
+  const eulaData = useContent('eula');
+  const siteContent = useContent('sitecontent');
+  const data = eulaData as unknown as EulaData;
   const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
 
   return (

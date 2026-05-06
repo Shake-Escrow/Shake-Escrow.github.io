@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Button from '../components/common/button';
 import Section from '../components/common/section';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 
 const DeleteAccount: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);

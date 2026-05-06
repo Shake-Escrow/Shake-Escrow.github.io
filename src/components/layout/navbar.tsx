@@ -3,20 +3,23 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Check, ChevronDown, Globe2, Menu, X } from 'lucide-react';
 import { GoBrowser } from "react-icons/go";
-import siteContent from '../../content/en/sitecontent.json';
+import { useLocale, type Locale } from '../../context/LocaleContext';
+import { useContent } from '../../hooks/useContent';
 
 const languages = [
-  { code: 'EN', label: 'English', region: 'United States' },
-  { code: 'ES', label: 'Español', region: 'Latinoamérica' },
+  { code: 'EN', locale: 'en' as Locale, label: 'English',  region: 'United States' },
+  { code: 'ES', locale: 'es' as Locale, label: 'Español',  region: 'Latinoamérica' },
 ];
-
-const selectedLanguage = languages[0];
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const languageRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
+  const { locale, setLocale } = useLocale();
+  const siteContent = useContent('sitecontent');
+
+  const selectedLanguage = languages.find((l) => l.locale === locale) ?? languages[0];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -28,24 +31,25 @@ const Navbar: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   const closeMenu = () => {
     setIsOpen(false);
     setIsLanguageOpen(false);
   };
 
+  const handleSelectLanguage = (lang: typeof languages[number]) => {
+    setLocale(lang.locale);
+    setIsLanguageOpen(false);
+  };
+
   const navItems = siteContent.navbar.links;
 
   return (
-    <header
-      className="fixed w-full z-50 bg-white border-b border-gray-200 shadow-sm py-5"
-    >
+    <header className="fixed w-full z-50 bg-white border-b border-gray-200 shadow-sm py-5">
       <nav className="container mx-auto px-4 lg:px-6 flex justify-between items-center gap-4">
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="flex items-center space-x-2 shrink-0"
           onClick={closeMenu}
         >
@@ -58,7 +62,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-          {navItems.map((item) => (
+          {navItems.map((item: { title: string; path: string }) => (
             <Link
               key={item.path}
               to={item.path}
@@ -96,12 +100,12 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className="p-2">
                   {languages.map((language) => {
-                    const isSelected = language.code === selectedLanguage.code;
-
+                    const isSelected = language.locale === locale;
                     return (
                       <button
                         key={language.code}
                         type="button"
+                        onClick={() => handleSelectLanguage(language)}
                         className={`flex w-full items-center justify-between rounded-2xl px-3 py-3 text-left font-body transition-colors duration-200 ${
                           isSelected ? 'bg-[#e6e9ed] text-secondary-dark' : 'text-gray-700 hover:bg-gray-50'
                         }`}
@@ -146,7 +150,7 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* Mobile Navigation Menu */}
-      <div 
+      <div
         className={`lg:hidden fixed inset-0 bg-secondary-dark z-50 transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
@@ -159,7 +163,7 @@ const Navbar: React.FC = () => {
           <X size={32} />
         </button>
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          {navItems.map((item) => (
+          {navItems.map((item: { title: string; path: string }) => (
             <Link
               key={item.path}
               to={item.path}
@@ -176,12 +180,12 @@ const Navbar: React.FC = () => {
             </div>
             <div className="grid grid-cols-2 gap-2">
               {languages.map((language) => {
-                const isSelected = language.code === selectedLanguage.code;
-
+                const isSelected = language.locale === locale;
                 return (
                   <button
                     key={language.code}
                     type="button"
+                    onClick={() => { handleSelectLanguage(language); closeMenu(); }}
                     className={`rounded-2xl px-3 py-3 text-center font-body transition-colors duration-200 ${
                       isSelected ? 'bg-accent text-secondary-dark' : 'bg-white/10 text-gray-200 hover:bg-white/20'
                     }`}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 
 interface FAQItemProps {
@@ -66,6 +66,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen 
 };
 
 const FAQ: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [searchTerm, setSearchTerm] = useState('');
   

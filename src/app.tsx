@@ -1,6 +1,7 @@
 // src/app.tsx
 import { useEffect, useState } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
+import { LocaleProvider } from './context/LocaleContext';
 
 // Layout components
 import Navbar from './components/layout/navbar';
@@ -60,6 +61,7 @@ function App() {
   }, [location]);
   
   return (
+    <LocaleProvider>
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
       <main className="flex-grow">
@@ -78,6 +80,7 @@ function App() {
       <Footer platform={platform} />
       <ChatWidget />
     </div>
+    </LocaleProvider>
   );
 }
 

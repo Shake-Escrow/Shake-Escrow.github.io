@@ -1,0 +1,181 @@
+{
+  "lastUpdated": "26 de enero de 2026",
+  "effectiveDate": "26 de enero de 2026",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "# Política de Privacidad\n<strong>Shake Defi, Inc.</strong>",
+  "sections": [
+    {
+      "title": "1. Introducción",
+      "content": "Bienvenido a Shake Defi. Esta Política de Privacidad explica cómo Shake Defi, Inc. (\"Shake Defi\", \"nosotros\", \"nos\" o \"nuestro\") recopila, usa, almacena y protege su información personal cuando utiliza nuestra aplicación móvil (la \"App\"). \n\nShake Defi facilita transacciones seguras entre usuarios que intercambian bienes o servicios por moneda. Como parte de nuestro compromiso con la seguridad de las transacciones y la resolución de disputas, recopilamos cierta información personal, incluidas las imágenes faciales capturadas durante el proceso de firma digital.\n\nAl usar la App, usted acepta la recopilación y el uso de información de acuerdo con esta Política de Privacidad. Si no está de acuerdo con esta Política de Privacidad, por favor no use la App.\n\n<strong>Información de la Empresa:</strong>\n<ul>\n<li><strong>Nombre Legal:</strong> Shake Defi, Inc.</li>\n<li><strong>Dirección Física:</strong> Brookfield, Wisconsin</li>\n<li><strong>Ley Aplicable:</strong> Ley estatal de California</li>\n<li><strong>Sede de Arbitraje:</strong> California</li>\n</ul>\n\n<strong>Definiciones Clave:</strong>\n\n<strong>\"Coinbase\"</strong> significa la entidad o entidades de Coinbase que proporcionan los servicios de billetera, infraestructura de pago y capacidades de transacción en blockchain accesibles a través de la integración de la App, incluidos entre otros Coinbase, Inc., Coinbase Global, Inc. y/o Coinbase Bermuda Technologies Limited. Los Usuarios reconocen que su uso de los servicios de Coinbase a través de la App también está regido por los Términos de Servicio y la Política de Privacidad aplicables de Coinbase.\n\n<strong>\"Azure KeyVault\"</strong> es un servicio en la nube seguro utilizado para almacenar y gestionar claves de cifrado, secretos y certificados. Ayuda a garantizar que los materiales criptográficos utilizados para proteger los datos de los usuarios se generen, almacenen y accedan de forma segura solo por sistemas y personal autorizado.\n\n<strong>\"Microsoft Entra ID\"</strong> es el servicio de gestión de identidad y acceso basado en la nube de Microsoft utilizado para manejar los procesos de autenticación y de inicio de sesión OAuth2 para la App. Microsoft Entra ID puede recopilar y procesar información relacionada con la autenticación de acuerdo con las políticas de privacidad de Microsoft."
+    },
+    {
+      "title": "2. Información que Recopilamos",
+      "subsections": [
+        {
+          "subtitle": "2.1 Información de Verificación de Identidad (Datos KYC)",
+          "content": "Para cumplir con los requisitos legales y regulatorios, recopilamos la siguiente información de Conozca a Su Cliente (KYC):\n\n<ul>\n<li>Nombre legal completo</li>\n<li>Dirección de correo electrónico</li>\n<li>Número de teléfono</li>\n</ul>\n\nEsta información se recopila a través de nuestro socio de verificación de identidad de terceros, Persona, quien puede recopilar información adicional de forma independiente según se describe en su política de privacidad."
+        },
+        {
+          "subtitle": "2.2 Imágenes Faciales",
+          "content": "<strong>Aviso Importante:</strong> Cuando firma un acuerdo de transacción usando la App, nuestra cámara frontal captura una imagen suya durante el proceso de firma. \n\n<strong>Propósito:</strong> Estas imágenes faciales sirven como medida de seguridad para ayudar a verificar la identidad de la persona que firma el acuerdo. En caso de una disputa de transacción, estas imágenes pueden usarse para confirmar si la persona que firmó el acuerdo es la misma persona que presenta la reclamación de disputa.\n\n<strong>Notificación Previa:</strong> Se le notificará claramente antes de que se capture cualquier imagen. Tiene derecho a cancelar el proceso en cualquier momento antes de que se tome la imagen si no desea continuar.\n\n<strong>Consentimiento:</strong> Al proceder con el proceso de firma después de ser notificado, usted da su consentimiento explícito para que se capture y almacene su imagen facial de acuerdo con esta política."
+        },
+        {
+          "subtitle": "2.3 Información de Transacciones",
+          "content": "Recopilamos la siguiente información relacionada con sus transacciones:\n\n<ul>\n<li>Monto de la transacción</li>\n<li>Fecha de la transacción</li>\n<li>Descripción de la transacción</li>\n<li>Datos de ubicación de cada transacción (para ambas partes)</li>\n<li>Hash de transacción de blockchain disponible públicamente</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.4 Información que NO Recopilamos",
+          "content": "No recopilamos:\n\n<ul>\n<li>Información del dispositivo (ID del dispositivo, detalles del sistema operativo, etc.)</li>\n<li>Historial de navegación o análisis de comportamiento dentro de la app</li>\n<li>Datos biométricos que no sean las imágenes faciales descritas anteriormente</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "3. Cómo Usamos Su Información",
+      "content": "Usamos la información que recopilamos para los siguientes propósitos:",
+      "subsections": [
+        {
+          "subtitle": "3.1 Facilitación y Seguridad de Transacciones",
+          "content": "<ul>\n<li>Para facilitar y procesar transacciones entre usuarios</li>\n<li>Para verificar la identidad de las partes en una transacción</li>\n<li>Para prevenir fraudes y transacciones no autorizadas</li>\n<li>Para mantener registros de transacciones</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.2 Resolución de Disputas",
+          "content": "Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información de transacciones se usan exclusivamente para fines de resolución de disputas. Si surge una disputa con respecto a una transacción:\n\n<ul>\n<li>La imagen facial y otras evidencias capturadas durante la transacción pueden compartirse <strong>únicamente</strong> con las partes directamente involucradas en la disputa específica</li>\n<li>La evidencia se usará para verificar la identidad de la parte firmante y apoyar la resolución de la disputa</li>\n<li>No se compartirá ninguna otra información personal excepto la necesaria para resolver la disputa</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.3 Atención al Cliente y Mejora del Servicio",
+          "content": "Podemos usar los datos recopilados internamente para:\n\n<ul>\n<li>Responder a consultas de atención al cliente</li>\n<li>Mejorar la funcionalidad de la App y la experiencia del usuario</li>\n<li>Analizar patrones de transacciones para mejorar las medidas de seguridad</li>\n<li>Análisis interno (agregado y anonimizado donde sea posible)</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.4 Cumplimiento Legal",
+          "content": "Usamos su información para:\n\n<ul>\n<li>Cumplir con las leyes y regulaciones aplicables</li>\n<li>Responder a solicitudes legítimas de las autoridades</li>\n<li>Hacer cumplir nuestros Términos de Servicio y otros acuerdos</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "4. Recopilación y Almacenamiento de Imágenes Faciales",
+      "subsections": [
+        {
+          "subtitle": "4.1 Notificación y Consentimiento",
+          "content": "Antes de capturar cualquier imagen facial:\n\n<ul>\n<li>Recibirá una notificación clara y visible de que la cámara frontal tomará su fotografía</li>\n<li>Tendrá la oportunidad de revisar esta Política de Privacidad</li>\n<li>Puede cancelar el proceso de firma si no desea continuar</li>\n<li>Continuar con la firma constituye su consentimiento explícito</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.2 Limitación de Propósito",
+          "content": "Las imágenes faciales se recopilan <strong>únicamente</strong> para la verificación de identidad en caso de disputas de transacciones. Nunca:\n\n<ul>\n<li>Usaremos imágenes faciales para tecnología de reconocimiento facial o análisis biométrico</li>\n<li>Compartiremos imágenes faciales con terceros con fines de marketing</li>\n<li>Venderemos imágenes faciales a ninguna parte</li>\n<li>Usaremos imágenes faciales para ningún propósito que no sea la resolución de disputas</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.3 Retención de Datos",
+          "content": "<strong>Durante el Período de Retención de Pago:</strong> Las imágenes faciales se retienen durante todo el \"Período de Retención de Pago\" según se define en su acuerdo escrito con la otra parte de la transacción.\n\n<strong>Después del Período de Retención de Pago (Sin Disputa):</strong> Si no surge ninguna disputa, eliminaremos permanentemente su imagen facial dentro de las <strong>24 horas</strong> posteriores al final del Período de Retención de Pago.\n\n<strong>En Caso de Disputa:</strong> Si se inicia una disputa, las imágenes faciales se retendrán hasta que la disputa esté completamente resuelta y hayan expirado todos los períodos de apelación aplicables, tras lo cual se eliminarán permanentemente dentro de los 30 días."
+        },
+        {
+          "subtitle": "4.4 Seguridad del Almacenamiento",
+          "content": "Las imágenes faciales se almacenan en nuestra base de datos segura con las siguientes protecciones:\n\n<ul>\n<li>El acceso a la base de datos está restringido solo a direcciones IP en lista blanca</li>\n<li>Las claves de cifrado de la base de datos se almacenan en Azure KeyVault, un servicio seguro de gestión de claves</li>\n<li>El acceso está limitado al personal autorizado según la necesidad de conocimiento</li>\n<li>Se realizan auditorías de seguridad periódicas</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "5. Intercambio y Divulgación de Información",
+      "subsections": [
+        {
+          "subtitle": "5.1 Nuestro Compromiso con la Privacidad",
+          "content": "Tomamos en serio su privacidad. <strong>Nunca</strong> compartiremos su información personal, incluidas:\n\n<ul>\n<li>Direcciones de hogar o negocio</li>\n<li>Direcciones de correo electrónico</li>\n<li>Imágenes faciales</li>\n<li>Números de teléfono</li>\n<li>Detalles de transacciones</li>\n</ul>\n\n...con terceros <strong>excepto</strong> como se describe específicamente en esta Política de Privacidad."
+        },
+        {
+          "subtitle": "5.2 Disputas de Transacciones",
+          "content": "<strong>Divulgación Limitada:</strong> En caso de una disputa de transacción, podemos compartir información relevante con las partes involucradas para facilitar la resolución. Esto puede incluir imágenes faciales, fotografías, descripciones de texto y declaraciones de los Usuarios proporcionadas como evidencia <strong>únicamente</strong> con:\n\n<ul>\n<li>La otra parte o partes directamente involucradas en la transacción en disputa</li>\n<li>Representantes legales de las partes, si corresponde</li>\n<li>Árbitros o mediadores involucrados en la resolución de la disputa</li>\n</ul>\n\n<strong>Sin Otro Intercambio:</strong> Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información personal no se compartirán con ningún otro tercero para fines de resolución de disputas."
+        },
+        {
+          "subtitle": "5.3 Proveedores de Servicios de Terceros",
+          "content": "Trabajamos con los siguientes proveedores de servicios de terceros que pueden recopilar y procesar su información de forma independiente:\n\n<strong>Persona:</strong> Nuestro socio de verificación de identidad que recopila y procesa información KYC. Persona opera bajo su propia política de privacidad, que debe revisar.\n\n<strong>Microsoft Entra ID:</strong> Nuestro proveedor de servicios de autenticación y gestión de identidad que maneja los procesos de inicio de sesión OAuth2 para la App. Microsoft Entra ID puede recopilar y procesar información relacionada con la autenticación de acuerdo con las políticas de privacidad de Microsoft.\n\n<strong>Coinbase:</strong> Procesador de pagos que facilita los servicios de billetera de criptomonedas, infraestructura de pago y capacidades de transacción en blockchain. \"Coinbase\" se refiere a la entidad o entidades de Coinbase descritas en la Sección 1 anterior. Coinbase puede recopilar datos de usuarios de forma independiente de acuerdo con sus propios Términos de Servicio y Política de Privacidad.\n\nNo compartimos sus imágenes faciales con estos proveedores de servicios."
+        },
+        {
+          "subtitle": "5.4 Requisitos Legales",
+          "content": "Podemos divulgar su información cuando lo requiera la ley, incluyendo:\n\n<ul>\n<li>En respuesta a procesos legales válidos (citaciones, órdenes judiciales, etc.)</li>\n<li>Para cumplir con las leyes y regulaciones aplicables</li>\n<li>Para proteger los derechos, la propiedad o la seguridad de Shake Defi, nuestros usuarios u otros</li>\n<li>En relación con una investigación de fraude, infracción de propiedad intelectual u otra actividad ilegal</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.5 Transferencias Comerciales",
+          "content": "En caso de una fusión, adquisición, quiebra o venta de activos, su información puede ser transferida a la entidad sucesora. Le notificaremos por correo electrónico o mediante un aviso prominente en la App antes de que su información quede sujeta a una política de privacidad diferente."
+        }
+      ]
+    },
+    {
+      "title": "6. Seguridad de los Datos",
+      "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger su información personal:",
+      "subsections": [
+        {
+          "subtitle": "6.1 Medidas de Seguridad",
+          "content": "<ul>\n<li><strong>Control de Acceso a la Base de Datos:</strong> Nuestra base de datos solo es accesible desde direcciones IP en lista blanca</li>\n<li><strong>Cifrado:</strong> Las claves de cifrado de la base de datos se almacenan de forma segura en Azure KeyVault</li>\n<li><strong>Restricciones de Acceso:</strong> El acceso a la información personal está limitado solo al personal autorizado</li>\n<li><strong>Auditorías Periódicas:</strong> Realizamos evaluaciones de seguridad periódicas</li>\n<li><strong>Transmisión Segura:</strong> Los datos transmitidos entre su dispositivo y nuestros servidores están cifrados</li>\n</ul>"
+        },
+        {
+          "subtitle": "6.2 Limitaciones",
+          "content": "Si bien nos esforzamos por proteger su información, ningún método de transmisión o almacenamiento es 100% seguro. No podemos garantizar la seguridad absoluta, pero le notificaremos de cualquier violación de datos que afecte a su información personal según lo requiera la ley aplicable."
+        }
+      ]
+    },
+    {
+      "title": "7. Transferencias Internacionales de Datos",
+      "content": "Shake Defi opera internacionalmente. Su información, incluidas las imágenes faciales, puede transferirse y almacenarse en servidores ubicados fuera de su país de residencia, incluyendo en los Estados Unidos.\n\nAl usar la App, usted consiente la transferencia de su información a países que pueden tener leyes de protección de datos diferentes a las de su país de residencia. Tomamos medidas para garantizar que su información reciba un nivel adecuado de protección dondequiera que se procese."
+    },
+    {
+      "title": "8. Sus Derechos y Opciones",
+      "subsections": [
+        {
+          "subtitle": "8.1 Acceso y Corrección",
+          "content": "Usted tiene el derecho de:\n\n<ul>\n<li>Acceder a la información personal que tenemos sobre usted</li>\n<li>Solicitar la corrección de información inexacta o incompleta</li>\n<li>Recibir una copia de su información personal en un formato portátil</li>\n</ul>\n\nPara ejercer estos derechos, contáctenos en contact@shakedefi.com."
+        },
+        {
+          "subtitle": "8.2 Eliminación de Cuenta y Datos",
+          "content": "Tiene derecho a eliminar su cuenta y los datos asociados en cualquier momento a través de la configuración de la App o contactándonos directamente.\n\n<strong>Al Eliminar la Cuenta:</strong>\n<ul>\n<li>Su cuenta se cerrará permanentemente</li>\n<li>Su información personal, incluidas las imágenes faciales, se eliminará permanentemente dentro de los 30 días</li>\n<li>Es posible que se retenga alguna información según lo requiera la ley o para fines legítimos de negocio (por ejemplo, registros de transacciones para cumplimiento fiscal)</li>\n</ul>"
+        },
+        {
+          "subtitle": "8.3 Retiro del Consentimiento",
+          "content": "Puede retirar su consentimiento a la recopilación de imágenes faciales en cualquier momento:\n\n<ul>\n<li>Negándose a continuar cuando se le notifique antes de la captura de imágenes</li>\n<li>Eliminando su cuenta</li>\n<li>Contactándonos para solicitar la eliminación de imágenes faciales específicas (sujeto a los requisitos legales de retención)</li>\n</ul>"
+        },
+        {
+          "subtitle": "8.4 Comunicaciones de Marketing",
+          "content": "Actualmente no enviamos comunicaciones de marketing. Si esto cambia en el futuro, tendrá derecho a optar por no recibir correos electrónicos de marketing mientras continúa recibiendo comunicaciones relacionadas con el servicio."
+        }
+      ]
+    },
+    {
+      "title": "9. Privacidad de los Menores",
+      "content": "La App no está destinada a ser utilizada por personas menores de 18 años o menores de la mayoría de edad en su jurisdicción, lo que sea mayor. No recopilamos conscientemente información personal de menores. \n\nPara usar la App, debe:\n<ul>\n<li>Tener al menos 18 años de edad o la mayoría de edad en su jurisdicción, lo que sea mayor</li>\n<li>Cumplir con todos los requisitos de registro y verificación de cuenta descritos en nuestros Términos de Servicio</li>\n</ul>\n\nSi tomamos conocimiento de que hemos recopilado información de una persona que no cumple con estos requisitos de edad, tomaremos medidas para eliminar esa información con prontitud. Si cree que hemos recopilado inadvertidamente información de un menor, comuníquese con nosotros de inmediato en contact@shakedefi.com."
+    },
+    {
+      "title": "10. Servicios y Enlaces de Terceros",
+      "content": "La App puede contener enlaces a sitios web o servicios de terceros. Esta Política de Privacidad no se aplica a esos terceros. Le recomendamos que revise las políticas de privacidad de:\n\n<ul>\n<li><strong>Persona:</strong> <a href=\"https://withpersona.com/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Política de Privacidad</a></li>\n<li><strong>Microsoft:</strong> <a href=\"https://privacy.microsoft.com/en-us/privacystatement\" target=\"_blank\" rel=\"noopener noreferrer\">Política de Privacidad</a></li>\n<li><strong>Coinbase:</strong> <a href=\"https://www.coinbase.com/legal/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Política de Privacidad</a></li>\n</ul>\n\nNo somos responsables de las prácticas de privacidad de terceros."
+    },
+    {
+      "title": "11. Almacenamiento de Datos e Infraestructura",
+      "subsections": [
+        {
+          "subtitle": "11.1 Seguridad de la Base de Datos",
+          "content": "Nuestra infraestructura principal de base de datos incluye:\n\n<ul>\n<li><strong>Control de Acceso:</strong> Restricciones de acceso basadas en lista blanca de IP</li>\n<li><strong>Gestión de Claves:</strong> Claves de cifrado almacenadas en Microsoft Azure KeyVault</li>\n<li><strong>Redundancia:</strong> Copias de seguridad periódicas para prevenir pérdida de datos</li>\n<li><strong>Monitoreo:</strong> Monitoreo continuo de intentos de acceso no autorizados</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.2 Ubicación de los Datos",
+          "content": "Los datos de los usuarios, incluidas las imágenes faciales, se almacenan en servidores seguros. Las ubicaciones geográficas específicas pueden variar según nuestras necesidades de infraestructura, pero todas las ubicaciones mantienen estándares de seguridad apropiados."
+        }
+      ]
+    },
+    {
+      "title": "12. Derechos de Privacidad en California",
+      "content": "Si usted es residente de California, puede tener derechos adicionales bajo la Ley de Privacidad del Consumidor de California (CCPA) y otras leyes de privacidad de California. Si bien Shake Defi, Inc. actualmente no está sujeta a la CCPA debido a los umbrales de ingresos, respetamos los derechos de privacidad de los residentes de California."
+    },
+    {
+      "title": "13. Derechos de Privacidad de la Unión Europea e Internacionales",
+      "content": "Si usted se encuentra en la Unión Europea, el Espacio Económico Europeo, el Reino Unido u otras jurisdicciones con leyes integrales de protección de datos, puede tener derechos adicionales bajo regulaciones como el RGPD, que incluyen:\n\n<ul>\n<li>Derecho de supresión (\"derecho al olvido\")</li>\n<li>Derecho a restringir el procesamiento</li>\n<li>Derecho a la portabilidad de los datos</li>\n<li>Derecho a oponerse al procesamiento</li>\n<li>Derecho a presentar una queja ante una autoridad supervisora</li>\n</ul>\n\nPara ejercer estos derechos, comuníquese con nosotros utilizando la información a continuación."
+    },
+    {
+      "title": "14. Cambios a esta Política de Privacidad",
+      "content": "Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en nuestras prácticas, tecnología, requisitos legales u otros factores.\n\n<strong>Notificación de Cambios:</strong>\n<ul>\n<li>Le notificaremos de los cambios materiales por correo electrónico o mediante un aviso prominente en la App</li>\n<li>Se revisará la fecha de \"Última Actualización\" en la parte superior de esta política</li>\n<li>El uso continuado de la App después de los cambios constituye la aceptación de la política actualizada</li>\n</ul>\n\nLe recomendamos que revise esta Política de Privacidad periódicamente."
+    },
+    {
+      "title": "15. Contáctenos",
+      "content": "Si tiene preguntas, inquietudes o solicitudes con respecto a esta Política de Privacidad o nuestras prácticas de datos, comuníquese con nosotros:\n\n<strong>Shake Defi, Inc.</strong>  \n280 N. Market St, Unit 321\nBrookfield, Wisconsin 53045 \n\n<strong>Correo electrónico:</strong> contact@shakedefi.com  \n\nPara asuntos de resolución de disputas, cualquier disputa que surja de o esté relacionada con esta Política de Privacidad o los Servicios se resolverá mediante arbitraje vinculante de conformidad con las Reglas de Arbitraje Comercial de la Asociación Americana de Arbitraje. El arbitraje se llevará a cabo en California. Por favor consulte la Sección 12 de nuestros Términos de Servicio para los procedimientos completos de arbitraje."
+    },
+    {
+      "title": "16. Consentimiento y Reconocimiento",
+      "content": "Al usar la App de Shake Defi, usted reconoce que:\n\n<ol>\n<li>Ha leído y comprendido esta Política de Privacidad</li>\n<li>Consiente la recopilación, el uso y el almacenamiento de su información según se describe</li>\n<li>Comprende que se capturarán imágenes faciales durante la firma de transacciones</li>\n<li>Ha sido notificado de su derecho a cancelar antes de la captura de imágenes</li>\n<li>Consiente las transferencias internacionales de datos según se describe</li>\n<li>Acepta las disposiciones de resolución de disputas relativas al intercambio de información</li>\n</ol>\n\nSi no está de acuerdo con esta Política de Privacidad, no debe usar la App.\n\n<strong>Gracias por confiar a Shake Defi sus transacciones.</strong>"
+    }
+  ]
+}

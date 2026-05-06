@@ -1,0 +1,259 @@
+{
+  "navbar": {
+    "links": [
+      { "title": "Inicio", "path": "/" },
+      { "title": "Cómo Funciona", "path": "/how-it-works" },
+      { "title": "Cobrar", "path": "/get-paid" },
+      { "title": "Enviar Pagos", "path": "/send-payments" },
+      { "title": "Preguntas", "path": "/faq" }
+    ],
+    "launchApp": "Abrir App"
+  },
+  "home": {
+    "hero": {
+      "headline": "Escrow con contrato inteligente, simplificado",
+      "subhead": "Usa blockchain para reducir tus costos de transacción en un 95%",
+      "button": "Disponible Ahora",
+      "availableNowHeading": "Disponible Ahora",
+      "ctaLabel": "Descarga Gratuita",
+      "useWebApp": "Usar App Web",
+      "partnerLabel": "Nuestro socio de entrada/salida de criptomonedas:",
+      "partnerLinkText": "socio de entrada/salida de criptomonedas"
+    },
+    "features": {
+      "headline": "Potencia Tu Pago\ncon Escrow Reembolsable",
+      "items": [
+        {
+          "title": "Escrow\nreembolsable",
+          "description": "Shake utiliza un escrow de contrato inteligente — como una caja fuerte digital neutral — que bloquea los fondos según reglas transparentes en la blockchain. Shake nunca retiene tu dinero, y nadie puede mover fondos fuera de los términos acordados."
+        },
+        {
+          "title": "Paga con cualquier cripto que tengas",
+          "description": "Los comerciantes establecen su moneda preferida, pero tú puedes pagar con lo que tienes. Usa nuestra función de intercambio integrada para convertir Bitcoin, Tether (USDT) o ETH en staking a lo que el comerciante necesita, de forma fluida y segura."
+        },
+        {
+          "title": "Confía en las transacciones – y en los demás",
+          "description": "Cada transacción está sellada con una firma, y cada persona tiene una reputación, para que puedas confiar en que la persona con la que tratas es de fiar."
+        },
+        {
+          "title": "Conveniencia que Empodera",
+          "description": "Agrega información del producto directamente a tu contrato con herramientas de IA. Los detalles de cada transacción ofrecen una imagen más completa del intercambio, y puedes agregar todas las imágenes que quieras."
+        }
+      ]
+    },
+    "howToUse": {
+      "headline": "Comenzar es Fácil",
+      "subhead": "Sigue estos simples pasos para comenzar con Shake.",
+      "steps": [
+        {
+          "title": "Crea una cuenta",
+          "description": "Regístrate gratis en pocos minutos con un ID, número de teléfono y algunas selfies."
+        },
+        {
+          "title": "Agrega un método de pago",
+          "description": "Financia tus pagos con criptomonedas que ya tienes, o usa Coinbase Onramp para comprar cripto directamente. ¿Necesitas otra moneda? Nuestra función de intercambio integrada te permite convertir entre criptomonedas compatibles."
+        },
+        {
+          "title": "Comienza a transaccionar",
+          "description": "Empieza a enviar y recibir con total confianza porque Shake es no custodial. Cuando quieras retirar, Coinbase Offramp te permite convertir cripto a moneda fiat. Shake nunca toca tus fondos durante este proceso."
+        }
+      ]
+    },
+    "businessCustomerCards": {
+      "business": {
+        "label": "Comerciante",
+        "headline": "Cobra\nautomáticamente",
+        "description": "Establece tu período de escrow, compártelo con tu comprador y recibe los fondos al final del período, automáticamente. Sin banco, sin liberación manual, sin esperas. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
+        "button": "Saber más"
+      },
+      "customer": {
+        "label": "Comprador",
+        "headline": "Paga con\nuna red de seguridad",
+        "description": "Deposita fondos en escrow a través de la app. Tu dinero se retiene de forma segura durante el período acordado. Si algo sale mal, puedes solicitar un reembolso antes de que se cierre la ventana.",
+        "button": "Saber más"
+      }
+    }
+  },
+  "howItWorks": {
+    "hero": {
+      "headline": "Cómo el Sistema de Pago de Shake Te Mantiene Seguro, Literalmente"
+    },
+    "section1": {
+      "headline": "El Proceso de Escrow",
+      "description": "El escrow de Shake está impulsado por un contrato inteligente en la blockchain. Una vez realizado un pago, los fondos son bloqueados por código — no por Shake, no por un banco, ni por un tercero. \n\nShake nunca tiene custodia de los fondos de los usuarios. Los pagos son retenidos por el propio contrato inteligente, mientras que el acceso a la billetera y el intercambio de monedas son proporcionados por la billetera integrada de Coinbase y sus servicios Onramp/Offramp. Este diseño elimina el riesgo de punto único de fallo y garantiza que los fondos solo se muevan según las reglas acordadas."
+    },
+    "section2": {
+      "headline": "Cómo Funciona",
+      "description": "El Proceso de Transacción y Sistema de Pago"
+    },
+    "cta": {
+      "header": "¿Listo para experimentar Shake?",
+      "subhead": "Crea tu cuenta hoy y únete al movimiento hacia el cripto de todos los días.",
+      "button": "Disponible Ahora"
+    },
+    "escrowIntro": "Shake usa un escrow que es como una caja fuerte que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio.",
+    "agreementNote": "Todo escrow debe tener un acuerdo que el comprador y el vendedor firmen antes de intercambiar dinero. La IA en la app sugiere un acuerdo, y se incluyen las fotos que tomes. Solo firma con tu dedo.",
+    "aiCaption": "La IA admite bienes O servicios",
+    "smartContractNote": "Internamente, es un contrato inteligente: el temporizador de liberación se escribe en la blockchain en el momento del pago y nadie puede cambiarlo, ni siquiera Shake. Los fondos tienen exactamente dos salidas: al comerciante cuando expira el temporizador, o de vuelta al comprador si se emite un reembolso. No existe ninguna otra ruta en el código.",
+    "process": {
+      "header": "El Proceso de Escrow",
+      "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante un tiempo determinado, que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
+      "step2": "Durante este período de espera, si no recibes lo que compraste, puedes hablarlo directamente con el comerciante o solicitar un reembolso.",
+      "step3": "Si no solicitas un reembolso durante el período de espera, el comerciante puede retirar el dinero."
+    }
+  },
+  "getPaid": {
+    "hero": {
+      "headline": "Aumenta ganancias con un acuerdo sólido como roca",
+      "description": "Shake es una forma segura de recibir pagos en criptomonedas por tus bienes y servicios, tanto si tienes empleados como si trabajas solo."
+    },
+    "sections": [
+      {
+        "headline": "Quédate con Más\nde lo que Ganas",
+        "description": "Los procesadores de tarjetas de crédito suelen cobrar entre 2,5 y 3% por transacción. Shake cobra 0,1%, es decir, un 95% menos. Sin terminales que comprar, sin banco intermediario, sin recargos internacionales. Solo una comisión simple vinculada directamente a la transacción, para que más de cada venta se quede contigo."
+      },
+      {
+        "headline": "Se Adapta\na Ti",
+        "description": "Tanto si tienes empleados como si trabajas solo, el confiable proceso de pago de Shake y la ausencia de requisitos de ingresos rígidos facilitan que te concentres en tu trabajo. Los pagos totalmente móviles significan que no hay terminales que comprar ni mantener. Los retiros son seguros incluso para ventas internacionales."
+      },
+      {
+        "headline": "Acepta Cripto\nde Cualquiera",
+        "description": "Establece tu moneda de pago preferida —USDC o ETH— y deja que los clientes paguen con lo que tienen. A través del intercambio de monedas integrado, los compradores pueden convertir fácilmente Bitcoin, Tether (USDT) o ETH en staking a tu moneda preferida. La interfaz de intercambio los guía a través del proceso de conversión en pocos clics. Función de intercambio impulsada por Odos."
+      },
+      {
+        "headline": "Conveniencia\nque Empodera",
+        "description": "Agrega información del producto directamente a tu contrato con herramientas de IA. Los detalles de cada transacción ofrecen una imagen más completa del intercambio, y puedes agregar todas las imágenes que quieras. Asigna gerentes para supervisar pagos y empleados para manejar ventas."
+      },
+      {
+        "headline": "Más Opciones para\nLo que Haces",
+        "description": "Shake es accesible para tiendas locales, freelancers e incluso quienes no tienen cuenta bancaria, ayudando a más personas a construir su negocio. Acepta pagos en dólares o cripto. Envía y recibe pagos grandes sin la burocracia habitual."
+      }
+    ],
+    "cta": {
+      "header": "¿Listo para cobrar con Shake?",
+      "subhead": "Crea tu cuenta hoy y experimenta el futuro de los pagos cripto",
+      "button": "Disponible Ahora"
+    }
+  },
+  "sendPayments": {
+    "hero": {
+      "headline": "Una app de pagos\ncreada para la vida real",
+      "description": "Shake es la nueva forma de pagar que\ntoma tus gastos en serio, como tú."
+    },
+    "sections": [
+      {
+        "headline": "Transacciones\nQue Importan",
+        "description": "Paga con una app que mantiene los pagos privados, documentados y fáciles de resolver. Tu pago queda bloqueado en un escrow de contrato inteligente por un período fijo acordado por el comprador y el comerciante. Durante este tiempo, los fondos no pueden ser accedidos fuera de las reglas del contrato, y se pueden presentar disputas si no se cumplen los términos acordados. Shake y Persona verifican la identidad, reputación y calificaciones de cada negocio. Cada transacción incluye un acuerdo firmado y prueba de pago verificable en la cadena, para que puedas confiar en tus compras y evitar disputas."
+      },
+      {
+        "headline": "Sé un Consumidor\nInteligente",
+        "description": "Shake te muestra el costo real de cada transacción, te ayuda a construir una reputación sólida y mantiene tus gastos bajo control usando solo lo que tienes. Es el complemento perfecto para el arsenal de un comprador consciente. A largo plazo, evitas la carga que conlleva la deuda, los intereses y el gasto excesivo."
+      },
+      {
+        "headline": "Paga con la cripto que ya tienes",
+        "description": "No dejes que las limitaciones de pago te frenen. Si un comerciante solicita USDC o ETH, puedes pagar usando Bitcoin, Tether (USDT) o ETH en staking. Simplemente transfiere tu cripto a tu billetera Coinbase en la app y luego usa la función de intercambio integrada impulsada por Odos para convertirla instantáneamente a la moneda requerida."
+      },
+      {
+        "headline": "Responsabilidad\nDonde Importa",
+        "description": "Cada persona en Shake es responsable de sus acciones, ya sea un negocio o un particular. Tu identidad no está vinculada públicamente a tu actividad en la cadena. Solo el comerciante al que le pagas ve la información necesaria para completar la compra, y los detalles de reputación solo son visibles para la contraparte en reembolsos y resolución de disputas."
+      },
+      {
+        "headline": "El Poder de\nVuelta al Pueblo",
+        "description": "Shake es accesible para tiendas locales, freelancers e incluso quienes no tienen cuenta bancaria, para que tus pagos apoyen a las personas que eliges, no a las grandes instituciones financieras. Si quieres un reembolso, Shake actúa como intermediario justo y neutral que toma decisiones respaldadas por evidencia."
+      }
+    ],
+    "cta": {
+      "header": "¿Listo para pagar con Shake?",
+      "subhead": "Crea tu cuenta hoy y experimenta el futuro de los pagos cripto",
+      "button": "Disponible Ahora"
+    }
+  },
+  "footer": {
+    "tagline": "Habilitando el uso de cripto para transacciones del mundo real",
+    "disclaimer": "Shake Defi, Inc. es una corporación organizada bajo las leyes del Estado de Wisconsin.",
+    "quickLinksLabel": "Enlaces Rápidos",
+    "privacyPolicyLabel": "Política de Privacidad",
+    "eulaLabel": "Acuerdo de Licencia de Usuario Final",
+    "termsOfServiceLabel": "Términos de Servicio",
+    "quickLinks": [
+      { "label": "Inicio", "url": "/" },
+      { "label": "Cómo Funciona", "url": "/how-it-works" },
+      { "label": "Cobrar", "url": "/get-paid" },
+      { "label": "Enviar Pagos", "url": "/send-payments" },
+      { "label": "Libro Blanco", "url": "/assets/shake_defi_whitepaper_v2-3.pdf" }
+    ],
+    "button": "Disponible Ahora",
+    "contactLabel": "Contáctenos",
+    "contactEmail": "matt@shakedefi.com",
+    "copyright": "© 2026 Shake Defi, Inc."
+  },
+  "privacyPolicy": {
+    "heading": "Política de Privacidad",
+    "effectiveDateLabel": "Fecha de Vigencia:",
+    "lastUpdatedLabel": "Última Actualización:",
+    "eulaPromo": "¿Buscas nuestro Acuerdo de Licencia de Usuario Final?",
+    "eulaPromoLink": "Léelo aquí."
+  },
+  "termsOfService": {
+    "heading": "Términos de Servicio",
+    "lastUpdatedLabel": "Última Actualización:",
+    "emailLabel": "Correo electrónico:",
+    "addressLabel": "Dirección:",
+    "eulaPromo": "¿Buscas nuestro Acuerdo de Licencia de Usuario Final?",
+    "eulaPromoLink": "Léelo aquí."
+  },
+  "eula": {
+    "heading": "Acuerdo de Licencia de Usuario Final",
+    "lastUpdatedLabel": "Última Actualización:"
+  },
+  "deleteAccount": {
+    "heading": "Eliminar Cuenta",
+    "description": "Ingresa el correo electrónico de tu cuenta para eliminarla",
+    "emailPlaceholder": "Ingresa tu correo electrónico",
+    "submitButton": "Enviar",
+    "processingButton": "Procesando...",
+    "submittedButton": "Solicitud Enviada",
+    "successAlert": "Tu solicitud para eliminar tu cuenta fue recibida. Por favor revisa tu correo electrónico.",
+    "errorAlert": "Hubo un error al procesar tu solicitud. Por favor intenta de nuevo."
+  },
+  "faq": {
+    "headline": "Preguntas Frecuentes",
+    "subhead": "Encuentra respuestas a preguntas comunes sobre la app de Shake.",
+    "breadcrumbs": ["Inicio", "Preguntas"],
+    "searchPlaceholder": "Buscar...",
+    "noResults": {
+      "title": "No se encontraron resultados para",
+      "subtitle": "Intenta buscar con otras palabras clave o explora nuestras categorías a continuación."
+    },
+    "questions": [
+      { "question": "¿Cómo funciona la app?", "answer": "Shake usa un escrow, que es como una caja fuerte, que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio. Para saber más, visita la página \"Cómo Funciona\"." },
+      { "question": "¿Cómo comienzo?", "answer": "Puedes comenzar [descargando la app en tu dispositivo móvil](https://shakedefi.com)." },
+      { "question": "¿Qué es un escrow?", "answer": "Un escrow es como una caja fuerte que mantiene el dinero seguro y garantiza que tanto el cliente como el negocio cumplan sus obligaciones antes de realizar el intercambio. \n\nPor ejemplo, imagina que estás comprando un teléfono usado a alguien que encontraste en línea. Normalmente, te reunirías, le pagarías en el acto y esperarías que el teléfono funcione. Pero si está roto o no es lo que prometió, ya es demasiado tarde: el dinero ya se fue. \n\nCon escrow, en lugar de pagarle directamente, tu dinero va a una cuenta segura de retención por un tiempo fijo. El vendedor ve que el dinero está ahí y te entrega el teléfono. \n\nDurante el período de espera, verificas la calidad del teléfono. Si descubres que está roto, disputarías la transacción y solicitarías un reembolso. Si el teléfono funciona, el dinero se libera al vendedor una vez que termina el período de espera. \n\nEn esencia, el escrow:    \n1) Protege a los negocios garantizando que el pago del cliente esté listo y disponible para transferirse cuando termine el período de espera    \n2) Brinda protección a ambas partes asegurando que los fondos se retengan de forma segura y solo puedan liberarse según los términos de escrow acordados, incluidos los reembolsos cuando lo justifique el resultado de una disputa. \n\nPara saber más, visita la página \"Cómo Funciona\"." },
+      { "question": "¿Debo usar un período de escrow?", "answer": "No. Los comerciantes establecen el período de escrow, y puede configurarse en 0 para una transferencia instantánea sin espera ni ventana de reembolso. Aun así obtienes todas las demás protecciones de Shake: verificación de identidad, un acuerdo firmado con fotos, documentación detallada de la transacción y calificaciones del comprador. El período de escrow es la opción correcta cuando quieres dar a los compradores una red de seguridad; la transferencia instantánea es la opción correcta cuando la venta es sencilla y ambas partes están listas." },
+      { "question": "¿Necesito saber sobre cripto o invertir en cripto para usar Shake?", "answer": "No, no necesitas saber sobre cripto ni invertir en ella para usar Shake. Esa es su magia." },
+      { "question": "¿Quién puede usar la app de Shake?", "answer": "Shake está disponible para mayores de 18 años. Crear una cuenta de Shake requiere verificación de identidad a través del servicio Persona (withpersona.com)." },
+      { "question": "¿Puedo pagar con cualquier criptomoneda que tenga?", "answer": "¡Sí! Shake admite opciones de pago flexibles a través del intercambio de monedas integrado. Si un comerciante solicita USDC o ETH, puedes pagar usando Bitcoin, Tether (USDT) o ETH en staking. Simplemente transfiere tu criptomoneda a tu billetera Coinbase en la app y luego usa la función de intercambio integrada de Odos para convertirla a la moneda requerida. Esto significa que los comerciantes ahora pueden aceptar cripto de cualquier persona, independientemente de qué criptomoneda tengan.\n\nNota: Los servicios de intercambio de Coinbase y Odos no están disponibles en todos los países." },
+      { "question": "¿Debo aceptar cualquier criptomoneda 'arbitraria' como pago?", "answer": "No, tú especificas qué cripto quieres recibir (USDC o ETH). Cuando los compradores pagan con una criptomoneda diferente como Bitcoin o Dogecoin, usan la función de intercambio integrada para convertirla a tu moneda preferida antes de que se complete la transacción. Siempre recibes exactamente lo que solicitaste. Cuando llegue el momento de retirar tus fondos, nos integramos con Coinbase para retirarlos a cualquier cuenta a la que Coinbase pueda acceder." },
+      { "question": "¿Cuánto tiempo tarda enviar o aceptar un pago? ¿Hay una comisión por transferencia instantánea?", "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges un período de escrow (por ejemplo, 3 días). Después de eso, hay un período estándar de arbitraje de 2 días en caso de que se presente una disputa; si no hay disputa, los fondos se liberan automáticamente cuando termina ese período. Si un comerciante quiere cobrar durante el período de arbitraje de 2 días, puede usar el retiro anticipado con una comisión adicional (hasta 1%): retirar \"2 días antes\" significa cobrar justo cuando termina el período de escrow elegido. Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar." },
+      { "question": "¿Hay comisiones para usar Shake?", "answer": "Shake cobra una comisión de servicio simple y transparente por las transacciones con escrow. La comisión estándar es del 0,1% del monto de la transacción. \n\nSi un comerciante elige retirar fondos antes de tiempo (antes de que termine el período de escrow), se aplica una comisión adicional de retiro anticipado de hasta 1% para un retiro 2 días antes. \n\nTambién pueden aplicarse comisiones de red de la blockchain, que se pagan directamente a la red. La conversión de moneda (fiat ↔ cripto) es gestionada por Coinbase Onramp y Offramp, que pueden aplicar sus propias comisiones según el activo utilizado. El intercambio de criptomonedas usa el protocolo Odos e incluye comisiones estándar de intercambio.\n\nShake no agrega comisiones ocultas, no tiene custodia de fondos y no cobra comisiones de suscripción recurrentes para el uso básico."},
+      { "question": "¿Necesito reportar mis transacciones de Shake en mis impuestos?", "answer": "En la mayoría de los países, incluidos los Estados Unidos, las transacciones de criptomonedas son eventos imponibles. Esto también aplica a las transacciones de Shake. Hay tres tipos principales de transacciones a tener en cuenta:\n\n1) Pagar bienes o servicios con cripto se trata como una disposición de ese activo. Si el valor de la cripto aumentó desde que la adquiriste, es posible que debas pagar impuesto sobre ganancias de capital por la diferencia.\n2) Intercambiar entre criptomonedas (por ejemplo, convertir Bitcoin a USDC a través de la función de intercambio integrada de Shake) también se trata generalmente como un evento imponible en los EE. UU.\n3) Recibir cripto como comerciante generalmente se trata como ingreso ordinario al valor de mercado justo en el momento de la recepción.\n\nHerramientas de impuestos cripto como [CoinLedger](https://coinledger.io) y [Koinly](https://koinly.io) simplifican este proceso. Pueden importar tu historial de transacciones en la cadena, incluyendo las transacciones de Shake, que quedan registradas permanentemente en la blockchain, y calcular automáticamente tus ganancias, pérdidas e ingresos." },
+      { "question": "¿Hay requisitos de ingresos para usar Shake?", "answer": "No, no hay requisitos de ingresos para usar Shake." },
+      { "question": "¿Puedo aceptar transacciones internacionales con Shake?", "answer": "Sí, puedes aceptar transacciones internacionales de cualquier otro usuario de Shake." },
+      { "question": "¿En qué países no está disponible Shake?", "answer": "Shake no está disponible en Brasil, México, Taiwán, Japón y Reino Unido." },
+      { "question": "¿Hay requisitos de gasto, límites o topes de transacción?", "answer": "Shake no impone límites de gasto ni topes de transacción." },
+      { "question": "¿Qué pasa si hay una disputa?", "answer": "El proceso de Shake registra metadatos y proporciona información de la transacción para resolver disputas. Shake es el árbitro predeterminado de las disputas. Los árbitros emiten reembolsos cuando está justificado. Nuestra próxima función es permitir que el comprador y el vendedor deleguen a cualquier usuario de Shake como árbitro de su transacción." },
+      { "question": "¿Cómo protege Shake contra el fraude y las transacciones no autorizadas?", "answer": "Shake protege contra el fraude y las transacciones no autorizadas con identidades verificadas, acuerdos firmados para cada transacción y prueba de pago verificable en la cadena, respaldada por registros detallados para la resolución de disputas." },
+      { "question": "¿Por qué no puede Shake ni un hacker llevarse mi dinero?", "answer": "Shake es no custodial y no tiene custodia de los fondos de los usuarios. Los pagos son retenidos por un contrato inteligente que solo puede liberar fondos al comerciante después del período de escrow, o de vuelta al comprador en caso de reembolso. \n\nShake no almacena tus claves privadas de billetera; eso lo hace Coinbase. Esto significa que Shake no puede acceder, mover ni redirigir los fondos en escrow. Coinbase proporciona infraestructura de billetera e intercambio de monedas, pero la lógica de escrow es aplicada por el código de la blockchain, no por el criterio humano."},
+      { "question": "¿Qué se documenta cuando realizo una transacción?", "answer": "Shake cifra todos los datos y registra cada detalle: hora, ubicación, firmas y fotos que proporciones. El dispositivo de cada parte también toma una foto frontal del firmante mientras firma. Se puede subir confirmación de entrega, y el sistema confirma que el dinero está disponible antes de que ocurra una transacción." },
+      { "question": "¿Cómo crea responsabilidad Shake?", "answer": "Cada usuario de Shake tiene una identidad verificada y una puntuación de retroalimentación. Persona verifica el ID de cada miembro, por lo que nadie puede crear billeteras ilimitadas para esconderse de la responsabilidad." },
+      { "question": "¿Qué información es pública?", "answer": "Si bien las transacciones se registran en la blockchain (que es públicamente visible pero anónima), las cuentas personales de Shake y las cuentas de blockchain no están asociadas públicamente." },
+      { "question": "¿Hay soporte para dividir gastos compartidos entre un grupo?", "answer": "Aunque esto no está actualmente disponible, está en nuestra hoja de ruta para implementación futura." },
+      { "question": "¿Dónde está incorporado Shake Defi?", "answer": "Shake Defi, Inc. está incorporado en Brookfield, Wisconsin, Estados Unidos." }
+    ],
+    "cta": {
+      "header": "¿No encuentras la respuesta\nque buscas?",
+      "subhead": "El equipo de Shake está aquí para ayudarte con cualquier pregunta que tengas.",
+      "button": "Contactar al equipo"
+    }
+  }
+}

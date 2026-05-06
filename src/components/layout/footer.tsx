@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { X, Linkedin } from 'lucide-react';
 import Button from '../common/button';
-import siteContent from '../../content/en/sitecontent.json';
+import { useContent } from '../../hooks/useContent';
 
 type Platform = 'ios' | 'android';
 
@@ -11,6 +11,7 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
+  const siteContent = useContent('sitecontent');
   const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
 
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 
 const renderWithOdosLink = (text: string) => {
   const parts = text.split('Odos');
@@ -17,6 +17,7 @@ const renderWithOdosLink = (text: string) => {
 };
 
 const SendPayments: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   return (
     <div className="pt-24">
       <Section className="pb-0" bgColor="bg-white">

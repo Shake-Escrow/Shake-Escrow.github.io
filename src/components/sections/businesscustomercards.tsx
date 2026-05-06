@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../common/section';
 import Button from '../common/button';
-import siteContent from '../../content/en/sitecontent.json';
+import { useContent } from '../../hooks/useContent';
 
 const BusinessCustomerCards: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   return (
     <Section bgColor="bg-white">
       <div className="flex flex-col gap-4 container mx-auto px-6">

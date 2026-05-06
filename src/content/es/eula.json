@@ -1,0 +1,236 @@
+{
+  "lastUpdated": "16 de abril de 2026",
+  "effectiveDate": "16 de abril de 2026",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "Acuerdo de Licencia de Usuario Final — Plataforma Web\nShake Defi, Inc. (\"la Empresa\", \"nosotros\", \"nos\" o \"nuestro\") proporciona servicios de facilitación de pagos en criptomonedas a través de nuestra aplicación web (la \"App Web\") y servicios relacionados (colectivamente, los \"Servicios\"). Estos Términos constituyen un acuerdo legalmente vinculante entre usted (\"Usuario\", \"usted\" o \"su\") y la Empresa que rige su uso de los Servicios.",
+  "sections": [
+    {
+      "title": "1. Aceptación de Términos y Definiciones",
+      "subsections": [
+        {
+          "subtitle": "1.1 Definiciones",
+          "content": "Para los efectos de este Acuerdo, los siguientes términos tendrán los significados establecidos a continuación:\n\n<strong>\"API\"</strong> o <strong>\"Interfaz de Programación de Aplicaciones\"</strong> significa la interfaz técnica de software y los protocolos que permiten a la App Web comunicarse y acceder a los servicios proporcionados por plataformas de terceros, incluido Coinbase. A través de las APIs, la App Web puede enviar y recibir datos e instrucciones para facilitar transacciones en criptomonedas sin acceder ni controlar directamente los sistemas subyacentes.\n\n<strong>\"Coinbase\"</strong> significa la entidad o entidades de Coinbase que proporcionan los servicios de billetera, infraestructura de pago y capacidades de transacción en blockchain accesibles a través de la integración de la App Web, incluidos, entre otros, Coinbase, Inc., Coinbase Global, Inc. y/o Coinbase Bermuda Technologies Limited. Los Usuarios reconocen que su uso de los servicios de Coinbase a través de la App Web también está regido por los Términos de Servicio y la Política de Privacidad aplicables de Coinbase.\n\n<strong>\"Protocolo DEX\"</strong> o <strong>\"Protocolo de Intercambio Descentralizado\"</strong> significa sistemas de contratos inteligentes autónomos implementados en redes blockchain que facilitan intercambios de tokens entre pares y contratos sin intermediarios centralizados, incluidos entre otros Uniswap, Odos, 1inch y protocolos similares.\n\n<strong>\"Intercambio de Tokens\"</strong> significa un intercambio en la cadena de un activo digital por otro iniciado por el usuario, ejecutado mediante la interacción con Protocolos DEX de terceros, donde la Empresa proporciona solo la interfaz de software y no intermedia, custodia ni controla la ejecución del intercambio."
+        },
+        {
+          "subtitle": "1.2 Aceptación de los Términos",
+          "content": "Al acceder o usar la App Web o los Servicios, usted acepta estar sujeto a este Acuerdo de Licencia de Usuario Final (\"Acuerdo\" o \"Términos\"). Si no está de acuerdo con estos Términos, no podrá acceder ni usar los Servicios. Su uso continuado de los Servicios constituye la aceptación de cualquier actualización o modificación de estos Términos."
+        }
+      ]
+    },
+    {
+      "title": "2. Licencia de Acceso y Restricciones",
+      "subsections": [
+        {
+          "subtitle": "2.1 Alcance de la Licencia",
+          "content": "La App Web se le licencia, no se le vende. La Empresa le otorga una licencia limitada, no exclusiva e intransferible para acceder y usar la App Web a través de un navegador web compatible en cualquier dispositivo de su propiedad o bajo su control.\n\nEsta licencia no le permite usar la App Web de ninguna manera que permita el uso simultáneo por parte de personas no autorizadas, y no puede redistribuir ni poner la funcionalidad de la App Web a disposición de terceros fuera del uso normal de los Servicios."
+        },
+        {
+          "subtitle": "2.2 Restricciones de Licencia",
+          "content": "No puede, y acepta no hacerlo ni permitir que otros lo hagan:\n\n<ul>\n<li>Copiar, reproducir o extraer sistemáticamente contenido de la App Web</li>\n<li>Descompilar, realizar ingeniería inversa, desensamblar o intentar obtener el código fuente de la App Web</li>\n<li>Modificar o crear trabajos derivados de la App Web, cualquier actualización o cualquier parte de la misma</li>\n<li>Alquilar, arrendar, prestar, vender, transferir, redistribuir o sublicenciar el acceso a la App Web</li>\n<li>Usar scripts automatizados, bots o rastreadores para interactuar con la App Web</li>\n</ul>\n\nLas restricciones anteriores se aplican excepto en la medida en que dicha restricción esté prohibida por la ley aplicable o en la medida en que lo permitan los términos de licencia que rigen el uso de cualquier componente de código abierto incluido en la App Web. Cualquier intento de violar estas restricciones constituye una violación de los derechos de la Empresa y sus licenciantes. Si infringe estas restricciones, puede estar sujeto a enjuiciamiento y daños.\n\nLos términos de esta licencia regirán cualquier actualización o modificación proporcionada por la Empresa que reemplace y/o complemente la App Web original, a menos que dicha actualización vaya acompañada de términos separados, en cuyo caso esos términos la regirán."
+        },
+        {
+          "subtitle": "2.3 Consentimiento para el Uso de Datos Técnicos",
+          "content": "Usted acepta que la Empresa pueda recopilar y usar datos técnicos e información relacionada, incluida entre otros información técnica sobre su dispositivo, navegador, sistema y software de aplicación, que se recopila periódicamente para facilitar la prestación de actualizaciones de software, soporte de productos y otros servicios relacionados con la App Web. La Empresa puede usar esta información, siempre que esté en una forma que no lo identifique personalmente, para mejorar sus productos o para proporcionarle servicios o tecnologías."
+        },
+        {
+          "subtitle": "2.4 Terminación de la Licencia",
+          "content": "La licencia otorgada bajo este Acuerdo es efectiva hasta que usted o la Empresa la rescinda. Sus derechos bajo esta licencia se cancelarán automáticamente sin previo aviso de la Empresa si no cumple con algún término de esta licencia. Al terminar la licencia, deberá cesar todo uso de la App Web."
+        }
+      ]
+    },
+    {
+      "title": "3. Registro y Requisitos de Cuenta",
+      "subsections": [
+        {
+          "subtitle": "3.1 Creación y Verificación de Cuenta",
+          "content": "Para usar los Servicios, debe:\n\n<ul>\n<li>Tener al menos 18 años de edad o la mayoría de edad en su jurisdicción, lo que sea mayor</li>\n<li>Registrarse y crear una cuenta</li>\n<li>Proporcionar información de identificación completa y precisa</li>\n<li>Cumplir con todos los requisitos de verificación de Conozca a Su Cliente (KYC) y Anti-Lavado de Dinero (AML)</li>\n<li>Confirmar que está usando la cuenta para sí mismo y no en nombre de ninguna otra persona</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.2 Verificación de Identidad y Declaraciones del Usuario",
+          "content": "La Empresa realiza esfuerzos razonables para verificar la identidad del Usuario a través de procedimientos KYC y AML antes de la creación de la cuenta. Sin embargo, la Empresa no puede garantizar la exactitud de la información proporcionada por los Usuarios y no será responsable de las pérdidas, daños o reclamaciones que surjan de:\n\n<ul>\n<li>La tergiversación de identidad por parte de un Usuario</li>\n<li>Información falsa o fraudulenta proporcionada durante el registro</li>\n<li>Uso no autorizado de la identidad o credenciales de otra persona</li>\n<li>Cualquier falla de los servicios de verificación de identidad de terceros</li>\n</ul>\n\nAl crear una cuenta, los Usuarios declaran y garantizan que toda la información proporcionada es exacta, completa y veraz, y que están legalmente autorizados a usar la identidad y las credenciales proporcionadas."
+        },
+        {
+          "subtitle": "3.3 Seguridad de la Cuenta",
+          "content": "Usted es el único responsable de mantener la confidencialidad y seguridad de las credenciales de su cuenta y de cualquier dispositivo utilizado para acceder a la App Web. Acepta notificar inmediatamente a la Empresa y a Coinbase (en https://help.coinbase.com) de cualquier uso no autorizado de su cuenta o de cualquier otra violación de seguridad. La Empresa no será responsable de las pérdidas derivadas del acceso no autorizado a su cuenta."
+        },
+        {
+          "subtitle": "3.4 Terminación de Cuenta",
+          "content": "La Empresa se reserva el derecho de suspender o cancelar su cuenta y negarse a continuar ofreciendo acceso a los Servicios en cualquier momento, a su exclusiva discreción, con o sin previo aviso, por cualquier motivo, incluido entre otros la violación de estos Términos o las leyes aplicables."
+        },
+        {
+          "subtitle": "3.5 Firma Digital y Captura Fotográfica",
+          "content": "Cuando los Usuarios celebran un acuerdo de transacción a través de la App Web, se les requiere firmar el acuerdo utilizando la funcionalidad de firma digital de la App Web. Al usar esta función, usted reconoce y consiente lo siguiente:\n\n<ul>\n<li><strong>Captura Fotográfica Durante la Firma:</strong> La App Web solicitará acceso a la cámara de su dispositivo (a través de la API de cámara de su navegador) para capturar su fotografía en el momento de la firma. Se le notificará y se le pedirá permiso de cámara antes de tomar la fotografía, y puede cancelar todo el proceso de firma en ese momento si no desea que le tomen la fotografía. Si su navegador no admite el acceso a la cámara o se deniega el permiso, es posible que el proceso de firma no esté disponible.</li>\n<li><strong>Propósito de la Captura Fotográfica:</strong> La imagen de la cámara sirve como medida de seguridad para ayudar a verificar la identidad de la parte firmante en caso de una disputa de transacción. Esta imagen puede proporcionar información sobre si la identidad de la persona que firmó el acuerdo coincide con la identidad de la persona que presenta una reclamación de disputa.</li>\n<li><strong>Participación Voluntaria:</strong> Al proceder con el proceso de firma después de recibir el mensaje de permiso de cámara del navegador, usted consiente voluntariamente que le tomen y almacenen su fotografía de conformidad con este Acuerdo y nuestra Política de Privacidad.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "4. Descripción del Servicio e Integraciones de Terceros",
+      "subsections": [
+        {
+          "subtitle": "4.1 Facilitación del Servicio",
+          "content": "La Empresa facilita las interacciones entre los Usuarios y Coinbase (según se define en este documento) a través del uso de las APIs de Coinbase, que permiten a la App Web acceder a los servicios de infraestructura de billetera y pago de Coinbase. La Empresa no:\n\n<ul>\n<li>Gestiona ni ejecuta transferencias de fondos</li>\n<li>Proporciona servicios para comprar criptomonedas</li>\n<li>Gestiona ni retiene claves privadas de billeteras de criptomonedas</li>\n<li>Tiene custodia de criptomonedas durante ningún período de retención</li>\n</ul>\n\nLa Empresa proporciona una interfaz para que los Usuarios transfieran fondos a través de la infraestructura financiera de Coinbase y a través de contratos inteligentes independientes implementados en la blockchain. Toda la funcionalidad de billetera y la gestión de criptomonedas son proporcionadas por Coinbase, y los contratos inteligentes descritos en la Sección 4.3 operan de forma autónoma y fuera de la custodia de Coinbase. La Empresa únicamente proporciona una interfaz para la interacción entre los Usuarios, las APIs de Coinbase y estos contratos inteligentes. Excepto según se describe en la Sección 7 (Período de Retención y Resolución de Disputas), donde la Empresa puede enviar instrucciones predefinidas en la cadena para señalar una decisión de reembolso conforme a la lógica inmutable del contrato inteligente, la Empresa no tiene control discrecional sobre las transferencias de criptomonedas ni los fondos.\n\n<strong>Facilitación de Intercambio de Tokens:</strong> Además de los servicios de pago, la App Web puede proporcionar interfaces para que los Usuarios intercambien activos digitales utilizando protocolos y agregadores de intercambio descentralizado de terceros. La Empresa actúa únicamente como proveedor de interfaz de software para estas interacciones y no ejecuta, intermedia ni controla las transacciones de intercambio. Todos los intercambios ocurren directamente entre la billetera del Usuario y los contratos inteligentes en la cadena operados por terceros independientes."
+        },
+        {
+          "subtitle": "4.2 Servicios Externos y Materiales de Terceros",
+          "content": "La App Web puede permitir el acceso a los servicios y/o sitios web de la Empresa y/o de terceros (colectiva e individualmente, \"Servicios Externos\"). El uso de los Servicios Externos requiere acceso a Internet y el uso de ciertos Servicios Externos requiere que acepte términos adicionales.\n\nUsted comprende que al usar cualquiera de los Servicios Externos, puede encontrar contenido que puede considerarse ofensivo, indecente u objetable, que puede o no estar identificado como contenido con lenguaje explícito, y que los resultados de cualquier búsqueda o la introducción de una URL determinada puede generar automática e involuntariamente enlaces o referencias a material objetable. No obstante, usted acepta usar los Servicios Externos bajo su propio riesgo y que ni la Empresa ni sus agentes tendrán responsabilidad alguna ante usted por el contenido que pueda considerarse ofensivo, indecente u objetable.\n\nCiertos Servicios Externos pueden mostrar, incluir o poner a disposición contenido, datos, información, aplicaciones o materiales de terceros (\"Materiales de Terceros\") o proporcionar enlaces a ciertos sitios web de terceros. Al usar los Servicios Externos, usted reconoce y acepta que ni la Empresa ni sus agentes son responsables de examinar o evaluar el contenido, la exactitud, la integridad, la puntualidad, la validez, el cumplimiento de derechos de autor, la legalidad, la decencia, la calidad ni ningún otro aspecto de dichos Materiales de Terceros o sitios web. Ni la Empresa ni sus agentes garantizan ni respaldan, y no asumen ni tendrán responsabilidad u obligación alguna ante usted o cualquier otra persona por cualquier servicio de terceros, Materiales de Terceros o sitios web, ni por ningún otro material, producto o servicio de terceros. Los Materiales de Terceros y los enlaces a otros sitios web se proporcionan únicamente para su conveniencia.\n\n<strong>Descargo de Responsabilidad sobre Información Financiera:</strong> La información financiera mostrada por cualquier Servicio Externo es solo para fines informativos generales y no debe considerarse como asesoramiento de inversión. Antes de ejecutar cualquier transacción de valores basada en información obtenida a través de los Servicios Externos, debe consultar con un profesional financiero o de valores que esté legalmente calificado para brindar asesoramiento financiero o de valores en su país o región.\n\n<strong>Descargo de Responsabilidad sobre Datos de Ubicación:</strong> Los datos de ubicación proporcionados por cualquier Servicio Externo son solo para fines de navegación básica y no están destinados a ser utilizados en situaciones donde se necesita información de ubicación precisa o donde datos de ubicación erróneos, inexactos, retrasados o incompletos puedan causar muerte, lesiones personales, daños a la propiedad o al medio ambiente.\n\nUsted acepta que los Servicios Externos contienen contenido, información y material propietario que es propiedad de la Empresa y/o de sus agentes o licenciantes y está protegido por las leyes de propiedad intelectual y otras leyes aplicables, incluidos entre otros los derechos de autor, y que no usará dicho contenido, información o materiales propietarios de ninguna manera, excepto para el uso permitido de los Servicios Externos o de una manera que sea inconsistente con los términos de este Acuerdo o que infrinja los derechos de propiedad intelectual de un tercero o de la Empresa.\n\nUsted acepta no modificar, alquilar, arrendar, prestar, vender, distribuir ni crear trabajos derivados basados en los Servicios Externos de ninguna manera, y no explotará los Servicios Externos de ninguna manera no autorizada, incluido entre otros el uso de los Servicios Externos para transmitir virus informáticos, gusanos, troyanos u otro malware, o mediante la intrusión o la sobrecarga de la capacidad de la red. Además, acepta no usar los Servicios Externos de ninguna manera para hostigar, abusar, acechar, amenazar, difamar o de otro modo infringir o violar los derechos de cualquier otra parte.\n\nLa Empresa se reserva el derecho de cambiar, suspender, eliminar o deshabilitar el acceso a cualquier Servicio Externo en cualquier momento sin previo aviso. En ningún caso la Empresa será responsable de la eliminación o desactivación del acceso a dichos Servicios Externos. La Empresa también puede imponer límites al uso o acceso a ciertos Servicios Externos, en cualquier caso y sin previo aviso ni responsabilidad."
+        },
+        {
+          "subtitle": "4.3 Infraestructura de Contratos Inteligentes",
+          "content": "Para las transacciones que implican un período de retención de criptomonedas, los fondos del Usuario se mantienen en contratos inteligentes autoejecutables implementados en la red Ethereum Base. Estos contratos inteligentes son autónomos y no custodiales; no son propiedad ni están operados por la Empresa.\n\nLa Empresa no retiene, almacena ni tiene acceso en ningún momento a las claves privadas o fondos de criptomonedas de los Usuarios. La Empresa no puede confiscar, congelar ni de ninguna otra forma obtener los fondos de ningún Usuario. Cualquier acción de la Empresa bajo la Sección 7 (Período de Retención y Resolución de Disputas) consiste únicamente en enviar instrucciones predefinidas en la cadena al contrato inteligente conforme a su lógica inmutable. La presentación de una decisión de reembolso por parte de la Empresa constituye una señal en la cadena dentro de los parámetros del contrato inteligente y no implica custodia directa ni transferencia manual de activos de criptomonedas.\n\nDirecciones de contrato actuales (sujetas a actualización en caso de reimplementación):\n\n<ul>\n<li>Contrato Ethereum: 0x79c3cFF01356DCabf37919e17E8C77a607C4277C</li>\n<li>Contrato USDC: 0xFA385a7952c63309fA12b8CabB6Fa56818C73BEd</li>\n</ul>\n\nLa Empresa proporciona la interfaz del contrato inteligente únicamente como utilidad técnica y no actúa como intermediario, agente de depósito en garantía ni fiduciario."
+        },
+        {
+          "subtitle": "4.4 Interfaz de Intercambio de Tokens",
+          "content": "La App Web proporciona una interfaz no custodial que permite a los Usuarios interactuar con agregadores y protocolos de intercambio descentralizado de terceros (incluido entre otros Odos) para intercambiar activos digitales en redes blockchain.\n\n<strong>Reconocimientos del Usuario:</strong>\n\n<ul>\n<li><strong>Sin Servicios de Intercambio:</strong> La Empresa no opera un intercambio de activos digitales, corretaje ni servicio de transmisión de dinero. Todos los intercambios de tokens ocurren directamente en la cadena entre la billetera del Usuario y contratos inteligentes de terceros.</li>\n<li><strong>Interacción con Protocolo de Terceros:</strong> Los intercambios de tokens se ejecutan a través de protocolos descentralizados independientes de terceros. La Empresa no controla, opera, posee ni respalda estos protocolos, sus mecanismos de precios, grupos de liquidez ni algoritmos de enrutamiento.</li>\n<li><strong>Sin Custodia Durante los Intercambios:</strong> La Empresa no tiene custodia, acceso ni control sobre los activos digitales durante las transacciones de intercambio. Todos los activos permanecen en la billetera del Usuario o se transfieren directamente a contratos inteligentes de terceros.</li>\n<li><strong>Transacciones Iniciadas por el Usuario:</strong> Todas las transacciones de intercambio son iniciadas, autorizadas y firmadas por el Usuario usando sus claves privadas. La Empresa no puede iniciar, modificar, revertir ni cancelar transacciones de intercambio.</li>\n<li><strong>Análisis y Recomendaciones de Intercambio Automatizadas:</strong> La App Web incluye una función de análisis de pago automatizado que evalúa sus saldos de activos digitales disponibles en múltiples tokens y genera algorítmicamente recomendaciones de intercambio, incluyendo selección de tokens sugerida y montos de intercambio, para ayudar a cumplir un requisito de pago. Estas recomendaciones son generadas por software sin revisión humana y se proporcionan únicamente por conveniencia. No constituyen asesoramiento financiero, de inversión ni profesional de ningún tipo. Usted es el único responsable de revisar cualquier recomendación antes de autorizar una transacción, y la Empresa no es responsable de las pérdidas resultantes de seguir o desviarse de dichas recomendaciones.</li>\n<li><strong>Tolerancia de Deslizamiento y Escalada:</strong> Las cotizaciones de intercambio obtenidas a través de la App Web están sujetas a una tolerancia máxima de deslizamiento predeterminada. Si una transacción falla debido al deslizamiento, la App Web puede presentarle la opción de reintentar el intercambio con una mayor tolerancia de deslizamiento. Al seleccionar una opción de mayor deslizamiento, usted reconoce que el resultado final del intercambio puede diferir más sustancialmente del monto cotizado y acepta el riesgo asociado de pérdida de valor adicional.</li>\n<li><strong>Flujo de Intercambio de Múltiples Transacciones:</strong> Al intercambiar tokens ERC20 (es decir, tokens no nativos), el proceso de intercambio requiere dos transacciones en la cadena separadas: (1) una transacción de aprobación de token que otorga al protocolo de terceros permiso para transferir sus tokens, y (2) la transacción de intercambio en sí. Cada transacción incurre en comisiones de gas de red independientes. Se le pedirá que autorice ambas transacciones, y la Empresa no es responsable de las comisiones de gas incurridas si alguna de las transacciones falla o se abandona después de que se ha enviado la aprobación.</li>\n<li><strong>Sin Garantías:</strong> La Empresa no garantiza la ejecución del intercambio, los precios, las tasas de cambio, la disponibilidad de liquidez, la tolerancia de deslizamiento, la velocidad de la transacción ni los resultados. Las condiciones del mercado, la congestión de la red, las comisiones de gas y el comportamiento del protocolo pueden resultar en ejecuciones de intercambio fallidas, retrasadas o desfavorables.</li>\n<li><strong>Precios y Enrutamiento:</strong> Todos los precios cotizados, las decisiones de enrutamiento y las tasas de cambio son determinados por protocolos de terceros. La Empresa muestra esta información únicamente por conveniencia y no controla ni garantiza su exactitud.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "5. Comisiones y Condiciones de Pago",
+      "subsections": [
+        {
+          "subtitle": "5.1 Comisiones de Transacción",
+          "content": "La Empresa cobra una comisión del 0,1% del monto de la transacción por todas las transacciones facilitadas a través de la App Web. Cualquier comisión que exceda este monto es exclusivamente para retiros anticipados y se le informará claramente al Usuario en el momento del retiro."
+        },
+        {
+          "subtitle": "5.2 Responsabilidad del Usuario",
+          "content": "Los Usuarios son responsables de pagar todas las comisiones aplicables asociadas con su uso de los Servicios, incluidas las comisiones de transacción, las comisiones de retiro anticipado y cualquier comisión de terceros impuesta por Coinbase u otros proveedores de servicios. Al usar la función de intercambio de tokens de la App Web con tokens ERC20 no nativos, los Usuarios pueden incurrir en comisiones de gas tanto por una transacción de aprobación de token como por una transacción de intercambio separada, y estas comisiones no son reembolsables independientemente de si el intercambio finalmente tiene éxito."
+        }
+      ]
+    },
+    {
+      "title": "6. Roles de Usuario y Proceso de Transacción",
+      "subsections": [
+        {
+          "subtitle": "6.1 Servicios de Comerciante",
+          "content": "Los Usuarios que actúen como comerciantes (\"Comerciante\") reconocen que:\n\n<ul>\n<li>Tienen la capacidad legal para crear y consentir acuerdos de pago</li>\n<li>Son responsables de crear acuerdos que estipulen el tipo de criptomoneda (ETH o USDC), el monto del pago y los términos del período de retención</li>\n<li>La decisión de incluir un período de retención es de su exclusiva discreción</li>\n<li>Son en última instancia responsables del contenido de todos los acuerdos, independientemente de cualquier sugerencia generada por IA</li>\n</ul>"
+        },
+        {
+          "subtitle": "6.2 Servicios de Cliente",
+          "content": "Los Usuarios que realicen pagos (\"Cliente\") reconocen que:\n\n<ul>\n<li>Todas las transacciones se realizan a su exclusiva discreción</li>\n<li>Tienen la capacidad legal para celebrar acuerdos de pago</li>\n<li>Los acuerdos de pago son creados exclusivamente por el Comerciante</li>\n<li>Consienten el proceso de arbitraje descrito en estos Términos</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "7. Período de Retención y Resolución de Disputas",
+      "subsections": [
+        {
+          "subtitle": "7.1 Período de Retención de Criptomonedas",
+          "content": "Cuando un Comerciante elige incluir un período de retención de criptomonedas mayor a cero (0) días en una transacción:\n\n<ul>\n<li>La Empresa añadirá automáticamente 48 horas adicionales al período de retención especificado como Período de Arbitraje</li>\n<li>No hay incentivo ni penalización por elegir un período de retención</li>\n<li>Los fondos se retienen en contratos inteligentes durante este período, no por la Empresa</li>\n<li>El Comerciante no puede retirar fondos del contrato inteligente durante el período de retención y el Período de Arbitraje</li>\n</ul>\n\nCuando un Comerciante elige un período de retención de cero (0) días, no se añade ningún Período de Arbitraje."
+        },
+        {
+          "subtitle": "7.2 Proceso de Resolución de Disputas",
+          "content": "El proceso de resolución de disputas descrito a continuación solo aplica a transacciones donde el Comerciante ha elegido un período de retención de criptomonedas mayor a cero (0) días.\n\nEn caso de disputa entre un Comerciante y un Cliente durante el período de retención:\n\n<ol>\n<li>La Empresa revisará las evidencias proporcionadas, incluidas fotografías, descripciones de texto y declaraciones de los Usuarios</li>\n<li>La Empresa hará una determinación sobre el derecho del Cliente a un reembolso</li>\n<li>Si se justifica un reembolso, la Empresa informará al contrato inteligente de su decisión</li>\n<li>El contrato inteligente desviará automáticamente el pago del Cliente de vuelta al Cliente</li>\n<li>Una vez desviado, el Comerciante no tendrá capacidad de cobrar los fondos reembolsados</li>\n</ol>"
+        },
+        {
+          "subtitle": "7.3 Transacciones Sin Período de Retención",
+          "content": "Para las transacciones sin período de retención (0 días), el Cliente no tiene derecho al proceso de resolución de disputas descrito anteriormente. Los fondos estarán disponibles inmediatamente para el Comerciante al completarse la transacción.\n\nAl usar la App Web, todos los Usuarios consienten este proceso de resolución de disputas, tanto si actúan como Comerciante como si actúan como Cliente."
+        }
+      ]
+    },
+    {
+      "title": "8. Inteligencia Artificial y Uso de Datos",
+      "subsections": [
+        {
+          "subtitle": "8.1 Contenido Generado por IA",
+          "content": "La App Web puede utilizar inteligencia artificial (\"IA\") o modelos de lenguaje grandes para proporcionar texto, cláusulas u otro contenido sugerido para posibles acuerdos entre Comerciantes y Clientes (\"Contenido Generado por IA\"). Los Usuarios reconocen y aceptan que:\n\n<ol>\n<li>El Contenido Generado por IA se proporciona únicamente con fines informativos y de conveniencia y no constituye asesoramiento legal, financiero ni profesional.</li>\n<li>La Empresa no garantiza la exactitud, integridad, legalidad ni idoneidad del Contenido Generado por IA para ningún propósito.</li>\n<li>Los Usuarios son los únicos responsables de revisar, editar y verificar todo el Contenido Generado por IA antes de su uso o aceptación, y de garantizar que cualquier acuerdo resultante cumpla con todas las leyes y regulaciones aplicables.</li>\n<li>La Empresa no hace ninguna declaración ni garantía, expresa o implícita, con respecto a cualquier resultado derivado del uso del Contenido Generado por IA, y renuncia a toda responsabilidad que surja de dicho uso o se relacione con él, incluidos los errores, omisiones o la dependencia de los mismos.</li>\n<li>Los Usuarios deben consultar con asesoría legal calificada antes de confiar en o ejecutar cualquier acuerdo que incluya o esté basado en Contenido Generado por IA.</li>\n</ol>"
+        },
+        {
+          "subtitle": "8.2 Envío de Datos y Propiedad",
+          "content": "Los Usuarios pueden enviar fotografías digitales y descripciones de texto de productos o servicios proporcionados por los Comerciantes para el pago de los Clientes. Al enviar dichos datos:\n\n<ul>\n<li>Los datos pasan a ser propiedad de la Empresa</li>\n<li>La Empresa puede usar los datos para determinaciones de resolución de disputas</li>\n<li>La Empresa puede retener los datos para fines legales y operativos</li>\n</ul>"
+        },
+        {
+          "subtitle": "8.3 Análisis Financiero Automatizado",
+          "content": "La App Web puede usar algoritmos automatizados para analizar sus saldos de activos digitales y generar recomendaciones de intercambio (\"Recomendaciones Automatizadas\"). Usted reconoce y acepta que:\n\n<ol>\n<li>Las Recomendaciones Automatizadas se basan únicamente en datos de saldo en tiempo real y tasas de cambio en vivo obtenidas de fuentes de terceros (incluida la API de tasas de cambio de Coinbase) y no tienen en cuenta su situación financiera personal, obligaciones fiscales, tolerancia al riesgo ni objetivos de inversión.</li>\n<li>Las tasas de cambio utilizadas en las Recomendaciones Automatizadas se obtienen de APIs de terceros y pueden no reflejar los precios de ejecución reales del intercambio, que son determinados por la liquidez en la cadena en el momento de la ejecución.</li>\n<li>La Empresa no garantiza la exactitud, integridad ni idoneidad de ninguna Recomendación Automatizada.</li>\n<li>La Empresa renuncia a toda responsabilidad por las pérdidas derivadas de su confianza en las Recomendaciones Automatizadas.</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "title": "9. Descargos de Responsabilidad y Limitación de Responsabilidad",
+      "subsections": [
+        {
+          "subtitle": "9.1 Descargo de Responsabilidad del Servicio",
+          "content": "LOS SERVICIOS Y LA APP WEB SE PROPORCIONAN \"TAL CUAL\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, YA SEAN EXPRESAS, IMPLÍCITAS O LEGALES. USTED EXPRESAMENTE RECONOCE Y ACEPTA QUE EL USO DE LA APP WEB Y LOS SERVICIOS ES BAJO SU PROPIO RIESGO Y QUE TODA LA RESPONSABILIDAD EN CUANTO A LA CALIDAD SATISFACTORIA, EL RENDIMIENTO, LA EXACTITUD Y EL ESFUERZO RECAE EN USTED.\n\nEN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, LA EMPRESA RENUNCIA ESPECÍFICAMENTE A TODAS LAS GARANTÍAS Y CONDICIONES CON RESPECTO A LA APP WEB Y LOS SERVICIOS, YA SEAN EXPRESAS, IMPLÍCITAS O LEGALES, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS Y/O CONDICIONES IMPLÍCITAS DE COMERCIABILIDAD, CALIDAD SATISFACTORIA, IDONEIDAD PARA UN PROPÓSITO PARTICULAR, EXACTITUD, DISFRUTE TRANQUILO Y NO INFRACCIÓN DE DERECHOS DE TERCEROS.\n\nLA EMPRESA NO GARANTIZA QUE NO HABRÁ INTERFERENCIA CON SU DISFRUTE DE LA APP WEB, QUE LAS FUNCIONES CONTENIDAS EN LOS SERVICIOS PRESTADOS O PROPORCIONADOS POR LA APP WEB SATISFARÁN SUS REQUISITOS, QUE LA OPERACIÓN DE LA APP WEB O LOS SERVICIOS SERÁ ININTERRUMPIDA O LIBRE DE ERRORES, O QUE LOS DEFECTOS EN LA APP WEB O LOS SERVICIOS SERÁN CORREGIDOS. NINGUNA INFORMACIÓN O ASESORAMIENTO ORAL O ESCRITO PROPORCIONADO POR LA EMPRESA O SU REPRESENTANTE AUTORIZADO CREARÁ UNA GARANTÍA.\n\nSI LA APP WEB O LOS SERVICIOS RESULTAN DEFECTUOSOS, USTED ASUME EL COSTO TOTAL DE TODOS LOS SERVICIOS, REPARACIONES O CORRECCIONES NECESARIOS. ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE GARANTÍAS IMPLÍCITAS O LIMITACIONES EN LOS DERECHOS LEGALES APLICABLES DE UN CONSUMIDOR, POR LO QUE LAS EXCLUSIONES Y LIMITACIONES ANTERIORES PUEDEN NO APLICARSE A USTED."
+        },
+        {
+          "subtitle": "9.2 Sin Custodia de Fondos",
+          "content": "LA EMPRESA NO TIENE CUSTODIA NI LA CAPACIDAD DE ACCEDER A LOS FONDOS DE LOS USUARIOS RETENIDOS EN CONTRATOS INTELIGENTES. LA EMPRESA NO ES RESPONSABLE DE LAS PÉRDIDAS QUE SURJAN DE VULNERABILIDADES DE CONTRATOS INTELIGENTES, PROBLEMAS DE LA RED BLOCKCHAIN O FALLAS DE SERVICIOS DE TERCEROS."
+        },
+        {
+          "subtitle": "9.3 Servicios y Protocolos de Terceros",
+          "content": "LA EMPRESA NO ES RESPONSABLE DE LOS ACTOS, OMISIONES O FALLAS DE COINBASE, ODOS NI DE NINGÚN OTRO PROVEEDOR DE SERVICIOS DE TERCEROS, PROTOCOLOS DESCENTRALIZADOS, CONTRATOS INTELIGENTES O REDES BLOCKCHAIN.\n\nLos Usuarios reconocen que:\n\n<ul>\n<li>Su uso de los servicios de Coinbase está regido por los Términos de Servicio de Coinbase (disponibles en https://wallet.coinbase.com/terms-of-service) y la Política de Privacidad (disponible en https://www.coinbase.com/legal/privacy)</li>\n<li>Su uso de protocolos de intercambio descentralizado (incluidos Odos y cualquier otro agregador o protocolo DEX) está regido por los términos, riesgos y operación autónoma del protocolo respectivo</li>\n<li>La Empresa no tiene control sobre los precios, la liquidez, el enrutamiento, la seguridad ni la disponibilidad de protocolos de terceros</li>\n<li>Los protocolos de terceros pueden tener errores, vulnerabilidades o comportamientos adversos fuera del control o conocimiento de la Empresa</li>\n</ul>"
+        },
+        {
+          "subtitle": "9.4 Limitación de Responsabilidad",
+          "content": "EN LA MEDIDA EN QUE NO LO PROHÍBA LA LEY, EN NINGÚN CASO LA EMPRESA SERÁ RESPONSABLE DE LESIONES PERSONALES NI DE DAÑOS INCIDENTALES, ESPECIALES, INDIRECTOS O CONSECUENTES DE NINGÚN TIPO, INCLUIDOS, ENTRE OTROS, LOS DAÑOS POR PÉRDIDA DE GANANCIAS, PÉRDIDA DE DATOS, INTERRUPCIÓN DEL NEGOCIO U OTROS DAÑOS O PÉRDIDAS COMERCIALES, QUE SURJAN DE O ESTÉN RELACIONADOS CON SU USO O INCAPACIDAD DE USAR LA APP WEB O LOS SERVICIOS, SEA CUAL FUERE LA CAUSA, INDEPENDIENTEMENTE DE LA TEORÍA DE RESPONSABILIDAD (CONTRATO, AGRAVIO U OTRO) Y AUNQUE LA EMPRESA HAYA SIDO INFORMADA DE LA POSIBILIDAD DE DICHOS DAÑOS.\n\nALGUNAS JURISDICCIONES NO PERMITEN LA LIMITACIÓN DE RESPONSABILIDAD POR LESIONES PERSONALES O DAÑOS INCIDENTALES O CONSECUENTES, POR LO QUE ESTA LIMITACIÓN PUEDE NO APLICARSE A USTED.\n\n<strong>Límite de Responsabilidad por Funcionalidad de la App Web:</strong> En ningún caso la responsabilidad total de la Empresa hacia usted por todos los daños relacionados con la funcionalidad de la propia App Web (que no sean los que pueda requerir la ley aplicable en casos que impliquen lesiones personales) excederá la cantidad de cincuenta dólares ($50,00).\n\n<strong>Reclamaciones Relacionadas con el Servicio:</strong> La limitación anterior de cincuenta dólares no aplica a los daños derivados de los Servicios proporcionados a través de la App Web, incluidos entre otros transacciones de criptomonedas, períodos de retención, resoluciones de disputas u otros servicios financieros facilitados por la Empresa, que permanecen sujetos a las demás limitaciones de responsabilidad establecidas en este Acuerdo.\n\nLas limitaciones anteriores se aplicarán incluso si el recurso anterior no cumple su propósito esencial."
+        },
+        {
+          "subtitle": "9.5 Sin Relación de Intermediario o Agencia",
+          "content": "LA EMPRESA NO ACTÚA COMO AGENTE, INTERMEDIARIO, CORREDOR, CUSTODIO, FIDUCIARIO NI CONTRAPARTE EN NINGUNA TRANSACCIÓN FACILITADA A TRAVÉS DE LA APP WEB.\n\nTodas las transacciones ocurren directamente:\n\n<ul>\n<li>Entre Usuarios y Coinbase (para servicios de pago)</li>\n<li>Entre Usuarios y contratos inteligentes de terceros (para intercambios de tokens y funciones de escrow)</li>\n<li>Entre Usuarios y redes blockchain (para todas las interacciones en la cadena)</li>\n</ul>\n\nEl papel de la Empresa se limita a proporcionar interfaces de software y no incluye la ejecución, garantía ni control de ningún resultado de transacción."
+        }
+      ]
+    },
+    {
+      "title": "10. Indemnización",
+      "content": "Usted acepta indemnizar, defender y eximir de responsabilidad a la Empresa, sus filiales, directivos, directores, empleados, agentes y socios de y contra cualquier reclamación, responsabilidad, daño, pérdida, costo, gasto o comisión (incluidos los honorarios razonables de abogados) que surja de:\n\n<ul>\n<li>Su uso o mal uso de la App Web o los Servicios</li>\n<li>Su violación de estos Términos</li>\n<li>Su violación de cualquier derecho de otra parte</li>\n<li>Su violación de cualquier ley o regulación aplicable</li>\n<li>Cualquier contenido o datos que envíe a través de la App Web o los Servicios</li>\n</ul>"
+    },
+    {
+      "title": "11. Controles de Exportación y Uso Gubernamental",
+      "subsections": [
+        {
+          "subtitle": "11.1 Restricciones de Exportación",
+          "content": "No puede usar, exportar ni reexportar la App Web o sus componentes excepto según lo autorizado por la ley de los Estados Unidos y las leyes de la jurisdicción en la que acceda a los Servicios. En particular, pero sin limitación, no se puede acceder a los Servicios:\n\n(a) desde ningún país bajo embargo de los EE. UU.; o\n(b) por parte de nadie en la Lista de Nacionales Especialmente Designados del Departamento del Tesoro de los EE. UU. o la Lista de Personas Denegadas o la Lista de Entidades del Departamento de Comercio de los EE. UU.\n\nAl usar la App Web, usted declara y garantiza que no se encuentra en ninguno de esos países ni en ninguna de esas listas. También acepta que no usará la App Web para ningún propósito prohibido por la ley de los Estados Unidos, incluido entre otros el desarrollo, diseño, fabricación o producción de armas nucleares, de misiles, químicas o biológicas."
+        },
+        {
+          "subtitle": "11.2 Usuarios Finales del Gobierno de los EE. UU.",
+          "content": "La App Web y la documentación relacionada son \"Artículos Comerciales\", según se define ese término en 48 C.F.R. §2.101, que consisten en \"Software Informático Comercial\" y \"Documentación de Software Informático Comercial\", según se usan dichos términos en 48 C.F.R. §12.212 o 48 C.F.R. §227.7202, según corresponda.\n\nDe acuerdo con 48 C.F.R. §12.212 o 48 C.F.R. §227.7202-1 a 227.7202-4, según corresponda, el Software Informático Comercial y la Documentación de Software Informático Comercial se licencian a los usuarios finales del Gobierno de los EE. UU.:\n\n(a) solo como Artículos Comerciales; y\n(b) solo con los derechos otorgados a todos los demás usuarios finales de acuerdo con los términos y condiciones del presente.\n\nDerechos no publicados reservados bajo las leyes de derechos de autor de los Estados Unidos."
+        }
+      ]
+    },
+    {
+      "title": "12. Ley Aplicable y Resolución de Disputas",
+      "subsections": [
+        {
+          "subtitle": "12.1 Ley Aplicable",
+          "content": "Estos Términos y su uso de la App Web se regirán e interpretarán de acuerdo con las leyes del Estado de California, Estados Unidos, sin tener en cuenta sus disposiciones sobre conflictos de leyes."
+        },
+        {
+          "subtitle": "12.2 Acuerdo de Arbitraje",
+          "content": "Cualquier disputa que surja de o esté relacionada con estos Términos o los Servicios se resolverá mediante arbitraje vinculante de conformidad con las Reglas de Arbitraje Comercial de la Asociación Americana de Arbitraje. El arbitraje se llevará a cabo en California, y el fallo sobre el laudo dictado por el árbitro puede ser ingresado en cualquier tribunal con jurisdicción. Las leyes del Estado de California, excluyendo sus reglas de conflictos de leyes, regirán este acuerdo de arbitraje y cualquier procedimiento de arbitraje."
+        }
+      ]
+    },
+    {
+      "title": "13. Privacidad y Protección de Datos",
+      "content": "Su uso de los Servicios está sujeto a nuestra Política de Privacidad, que se incorpora a estos Términos por referencia. Al usar los Servicios, usted consiente la recopilación, el uso y el intercambio de su información según se describe en nuestra Política de Privacidad."
+    },
+    {
+      "title": "14. Modificaciones a los Términos",
+      "content": "La Empresa se reserva el derecho de modificar estos Términos en cualquier momento. Notificaremos a los Usuarios de cualquier cambio material publicando los Términos actualizados en la App Web o por otros medios razonables. Su uso continuado de los Servicios después de dichas modificaciones constituye su aceptación de los Términos actualizados."
+    },
+    {
+      "title": "15. Disposiciones Generales",
+      "subsections": [
+        {
+          "subtitle": "15.1 Acuerdo Completo",
+          "content": "Estos Términos constituyen el acuerdo completo entre usted y la Empresa con respecto al uso de la App Web y los Servicios y reemplazan todos los acuerdos y entendimientos previos."
+        },
+        {
+          "subtitle": "15.2 Divisibilidad",
+          "content": "Si alguna disposición de estos Términos se considera inválida o inaplicable, las disposiciones restantes continuarán en plena vigencia y efecto."
+        },
+        {
+          "subtitle": "15.3 Renuncia",
+          "content": "Ninguna renuncia a ningún término o condición de estos Términos se considerará una renuncia adicional o continua de dicho término o condición o de cualquier otro término o condición."
+        },
+        {
+          "subtitle": "15.4 Cesión",
+          "content": "Usted no puede ceder ni transferir estos Términos ni sus derechos bajo estos Términos sin el consentimiento previo por escrito de la Empresa. La Empresa puede ceder estos Términos sin restricciones."
+        },
+        {
+          "subtitle": "15.5 Información de Contacto",
+          "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>AL USAR LA APP WEB Y LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, ENTENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS.</strong>"
+        }
+      ]
+    }
+  ]
+}

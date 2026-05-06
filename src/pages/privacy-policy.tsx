@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
-import privacyPolicyData from '../content/en/privacy.json';
-import siteContent from '../content/en/sitecontent.json';
+import { useContent } from '../hooks/useContent';
 import { Link } from 'react-router-dom';
 
 // Type definitions for the privacy policy data structure
@@ -24,6 +23,7 @@ interface PrivacyPolicyData {
 }
 
 const PrivacyPolicy: React.FC = () => {
+  const siteContent = useContent('sitecontent');
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -47,6 +47,8 @@ const PrivacyPolicy: React.FC = () => {
 
 // Component to render the privacy policy content from JSON
 const PrivacyPolicyContent: React.FC = () => {
+  const privacyPolicyData = useContent('privacy');
+  const siteContent = useContent('sitecontent');
   const data = privacyPolicyData as PrivacyPolicyData;
   const { lastUpdated, effectiveDate, companyName, sections } = data;
   

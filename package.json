@@ -12,6 +12,7 @@
     "generate-privacy": "tsx scripts/generate-privacy-html.ts",
     "generate-eula": "tsx scripts/generate-eula-html.ts",
     "generate-delete-account": "tsx scripts/generate-delete-account-html.ts",
+    "check-translations": "node scripts/check-translations.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
