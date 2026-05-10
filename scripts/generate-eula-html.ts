@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 
 import eulaPolicyData from '../src/content/en/eula.json' with { type: 'json' };
+import { replaceContentPlaceholders } from '../src/utils/contentPlaceholders';
 
 interface EulaSubsection {
   subtitle: string;
@@ -27,6 +28,7 @@ interface EulaData {
 const generateEulaHtml = async () => {
   const data: EulaData = eulaPolicyData;
   const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
+  const content = replaceContentPlaceholders;
 
   let htmlContent = `
 <!DOCTYPE html>
@@ -68,7 +70,7 @@ const generateEulaHtml = async () => {
       <small><strong>Last Updated:</strong> ${lastUpdated}</small>
     </div>
     <hr>
-    <div>${introduction}</div>
+    <div>${content(introduction)}</div>
   `;
 
   sections.forEach((section) => {
@@ -79,10 +81,10 @@ const generateEulaHtml = async () => {
       section.subsections.forEach((subsection) => {
         htmlContent += `
         <h3>${subsection.subtitle}</h3>
-        <div>${subsection.content}</div>`;
+        <div>${content(subsection.content)}</div>`;
       });
     } else if (section.content) {
-      htmlContent += `<div>${section.content}</div>`;
+      htmlContent += `<div>${content(section.content)}</div>`;
     }
     
     htmlContent += `</div>`;
@@ -91,7 +93,7 @@ const generateEulaHtml = async () => {
   if (acknowledgment) {
     htmlContent += `
     <div class="ack">
-      <p>${acknowledgment}</p>
+      <p>${content(acknowledgment)}</p>
     </div>`;
   }
 

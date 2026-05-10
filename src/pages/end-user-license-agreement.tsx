@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
 import { useContent } from '../hooks/useContent';
+import { replaceContentPlaceholders } from '../utils/contentPlaceholders';
 
 interface EulaSubsection {
   subtitle: string;
@@ -50,6 +51,7 @@ const EulaContent: React.FC = () => {
   const siteContent = useContent('sitecontent');
   const data = eulaData as unknown as EulaData;
   const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
+  const html = (content: string) => ({ __html: replaceContentPlaceholders(content) });
 
   return (
     <>
@@ -62,33 +64,33 @@ const EulaContent: React.FC = () => {
       </div>
 
       <div
-        className="text-base text-gray-700 leading-relaxed mb-10"
-        dangerouslySetInnerHTML={{ __html: introduction }}
+        className="tos-content text-base text-gray-700 leading-relaxed mb-10"
+        dangerouslySetInnerHTML={html(introduction)}
       />
 
-      {sections.map((section: EulaSection, index: number) => (
+      {sections.map((section: EulaSection) => (
         <div key={section.title} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
             {section.title}
           </h2>
 
           {section.subsections ? (
-            section.subsections.map((subsection: EulaSubsection, subIndex: number) => (
+            section.subsections.map((subsection: EulaSubsection) => (
               <div key={`${section.title}-${subsection.subtitle}`} className="mb-6">
                 <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
                   {subsection.subtitle}
                 </h3>
                 <div
-                  className="text-base text-gray-700 leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: subsection.content }}
+                  className="tos-content text-base text-gray-700 leading-relaxed"
+                  dangerouslySetInnerHTML={html(subsection.content)}
                 />
               </div>
             ))
           ) : (
             section.content && (
               <div
-                className="text-base text-gray-700 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: section.content }}
+                className="tos-content text-base text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={html(section.content)}
               />
             )
           )}
@@ -97,7 +99,9 @@ const EulaContent: React.FC = () => {
 
       {acknowledgment && (
         <div className="mt-12 p-6 bg-secondary-dark text-white rounded-lg">
-          <p className="text-sm font-semibold leading-relaxed">{acknowledgment}</p>
+          <p className="text-sm font-semibold leading-relaxed">
+            {replaceContentPlaceholders(acknowledgment)}
+          </p>
         </div>
       )}
     </>
