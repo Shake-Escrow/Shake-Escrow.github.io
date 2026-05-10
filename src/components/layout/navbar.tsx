@@ -7,8 +7,8 @@ import { useLocale, type Locale } from '../../context/LocaleContext';
 import { useContent } from '../../hooks/useContent';
 
 const languages = [
-  { code: 'EN', locale: 'en' as Locale, label: 'English',  region: 'United States' },
-  { code: 'ES', locale: 'es' as Locale, label: 'Español',  region: 'Latinoamérica' },
+  { code: 'EN', locale: 'en' as Locale, label: 'English' },
+  { code: 'ES', locale: 'es' as Locale, label: 'Español' },
 ];
 
 const Navbar: React.FC = () => {
@@ -118,7 +118,6 @@ const Navbar: React.FC = () => {
                           </span>
                           <span>
                             <span className="block text-sm font-semibold">{language.label}</span>
-                            <span className="block text-xs text-gray-500">{language.region}</span>
                           </span>
                         </span>
                         {isSelected && <Check size={18} className="text-accent" aria-hidden="true" />}
