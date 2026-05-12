@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
   const siteContent = useContent('sitecontent');
 
   const selectedLanguage = languages.find((l) => l.locale === locale) ?? languages[0];
+  const appHref = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -129,7 +130,7 @@ const Navbar: React.FC = () => {
             )}
           </div>
           <a
-            href="https://app.shakedefi.com"
+            href={appHref}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 font-medium text-base px-5 py-1.5 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body text-center"
@@ -198,7 +199,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
           <a
-            href="https://app.shakedefi.com"
+            href={appHref}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 font-medium text-xl px-6 py-2 rounded-full bg-accent text-secondary-dark transition-colors duration-200 hover:bg-opacity-90 font-body"

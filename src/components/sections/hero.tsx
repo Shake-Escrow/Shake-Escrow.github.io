@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
+import { useLocale } from '../../context/LocaleContext';
 import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";
@@ -16,6 +17,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformChange }) => {
   const siteContent = useContent('sitecontent');
+  const { locale } = useLocale();
   const [internalPlatform, setInternalPlatform] = useState<Platform>('android');
   const platform = controlledPlatform ?? internalPlatform;
 
@@ -36,6 +38,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
   const subheadLinkText = '95%';
   const [subheadPrefix, subheadSuffix = ''] = siteContent.home.hero.subhead.split(subheadLinkText);
+  const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
@@ -112,7 +115,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => { window.open('https://app.shakedefi.com', '_blank', 'noreferrer'); }}
+                onClick={() => { window.open(webAppUrl, '_blank', 'noreferrer'); }}
               >
                 <span className="inline-flex items-center gap-2">
                   {siteContent.home.hero.useWebApp}
