@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 export type Locale = 'en' | 'es';
 
@@ -14,18 +14,61 @@ const LocaleContext = createContext<LocaleContextValue>({
 
 const STORAGE_KEY = 'shake-locale';
 
-function getSavedLocale(): Locale {
+function isLocale(value: string | null): value is Locale {
+  return value === 'en' || value === 'es';
+}
+
+function getUrlLocale(): Locale | null {
   try {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved === 'en' || saved === 'es') return saved;
+    const urlLocale = new URLSearchParams(window.location.search).get('lang');
+    if (isLocale(urlLocale)) return urlLocale;
   } catch {
-    // localStorage unavailable
+    // window unavailable
   }
+
+  return null;
+}
+
+function getBrowserLocale(): Locale {
+  try {
+    const browserLocales = [
+      navigator.language,
+      ...(navigator.languages ?? []),
+    ].filter(Boolean);
+
+    if (browserLocales.some((language) => language.toLowerCase().startsWith('es'))) {
+      return 'es';
+    }
+  } catch {
+    // navigator unavailable
+  }
+
   return 'en';
 }
 
+function getInitialLocale(): Locale {
+  const urlLocale = getUrlLocale();
+  if (urlLocale) {
+    try { localStorage.setItem(STORAGE_KEY, urlLocale); } catch { /* ignore */ }
+    return urlLocale;
+  }
+
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (isLocale(saved)) return saved;
+  } catch {
+    // localStorage unavailable
+  }
+
+  return getBrowserLocale();
+}
+
 export function LocaleProvider({ children }: { children: React.ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>(getSavedLocale);
+  const [locale, setLocaleState] = useState<Locale>(getInitialLocale);
+
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
 
   const setLocale = (next: Locale) => {
     try { localStorage.setItem(STORAGE_KEY, next); } catch { /* ignore */ }
