@@ -4,3 +4,10 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=()
+
+/tonconnect-manifest.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+
+/images/tonconnect-icon.png
+  Access-Control-Allow-Origin: *
