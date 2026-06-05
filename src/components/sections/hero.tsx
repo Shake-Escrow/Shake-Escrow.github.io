@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
 import { useLocale } from '../../context/LocaleContext';
-import { FaGoogle, FaGooglePlay, FaApple } from "react-icons/fa";
+import { FaGoogle, FaGooglePlay, FaApple, FaTelegramPlane } from "react-icons/fa";
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";
 
-type Platform = 'ios' | 'android';
+type Platform = 'ios' | 'android' | 'telegram';
 
 interface HeroProps {
   platform?: Platform;
@@ -29,11 +29,17 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
     setInternalPlatform(nextPlatform);
   };
 
-  const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
+  const qrImage = platform === 'android'
+    ? '/images/qr-android.png'
+    : platform === 'ios'
+      ? '/images/qr-ios.png'
+      : '/images/qr-telegram.png';
   const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
-    : 'https://apps.apple.com/us/app/shake-defi/id6756281576';
-  const ctaLabel = siteContent.home.hero.ctaLabel;
+    : platform === 'ios'
+      ? 'https://apps.apple.com/us/app/shake-defi/id6756281576'
+      : 'https://t.me/ShakeDefiBot/app';
+  const ctaLabel = platform === 'telegram' ? 'Launch tg app' : siteContent.home.hero.ctaLabel;
   const partnerLinkText = siteContent.home.hero.partnerLinkText;
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
   const subheadLinkText = '95%';
@@ -95,6 +101,19 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     <FaApple className="text-secondary-dark text-2xl -translate-y-[2px]" aria-hidden="true" />
                   <span className="font-body text-base text-secondary-dark">iOS</span>
                 </label>
+
+                <label className="flex items-center space-x-1 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="platform"
+                    value="telegram"
+                    checked={platform === 'telegram'}
+                    onChange={() => setPlatform('telegram')}
+                    className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
+                  />
+                    <FaTelegramPlane className="text-secondary-dark text-xl" aria-hidden="true" />
+                  <span className="font-body text-base text-secondary-dark">Telegram</span>
+                </label>
               </div>
             </div>
             
@@ -107,8 +126,10 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                   {ctaLabel}
                   {platform === 'android' ? (
                     <FaGooglePlay className="text-2xl" aria-hidden="true" />
-                  ) : (
+                  ) : platform === 'ios' ? (
                     <GrAppleAppStore className="text-2xl" aria-hidden="true" />
+                  ) : (
+                    <FaTelegramPlane className="text-2xl" aria-hidden="true" />
                   )}
                 </span>
               </Button>

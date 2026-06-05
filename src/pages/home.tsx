@@ -5,7 +5,7 @@ import Features from '../components/sections/features';
 import HowToUse from '../components/sections/howtouse';
 import BusinessCustomerCards from '../components/sections/businesscustomercards';
 
-type Platform = 'ios' | 'android';
+type Platform = 'ios' | 'android' | 'telegram';
 
 interface HomeProps {
   platform: Platform;

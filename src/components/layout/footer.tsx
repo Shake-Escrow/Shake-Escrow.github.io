@@ -4,7 +4,7 @@ import { X, Linkedin } from 'lucide-react';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
 
-type Platform = 'ios' | 'android';
+type Platform = 'ios' | 'android' | 'telegram';
 
 interface FooterProps {
   platform?: Platform;
@@ -12,7 +12,11 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
   const siteContent = useContent('sitecontent');
-  const qrImage = platform === 'android' ? '/images/qr-android.png' : '/images/qr-ios.png';
+  const qrImage = platform === 'android'
+    ? '/images/qr-android.png'
+    : platform === 'ios'
+      ? '/images/qr-ios.png'
+      : '/images/qr-telegram.png';
 
   return (
     <footer className="bg-white text-[#2d3440]">
