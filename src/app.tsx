@@ -28,7 +28,7 @@ declare global {
 
 function App() {
   const location = useLocation();
-  const [platform, setPlatform] = useState<'ios' | 'android' | 'telegram'>('android');
+  const [platform, setPlatform] = useState<'ios' | 'android' | 'telegram' | 'farcaster'>('android');
 
   // Reset scroll position when navigating between routes
   useEffect(() => {

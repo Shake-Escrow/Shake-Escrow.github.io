@@ -147,7 +147,7 @@ Requires `tsx` (`npm i -D tsx`) for TS script execution.
 3. Commit: `git commit -m "Add X"`.
 4. Push/PR to `main`.
 
-## License
-MIT – See [LICENSE](LICENSE) (add if needed).
+## Assets
+Add new image assets to this directory: public/images/
 
 ---

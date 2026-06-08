@@ -8,7 +8,9 @@ import { FaGoogle, FaGooglePlay, FaApple, FaTelegramPlane } from "react-icons/fa
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";
 
-type Platform = 'ios' | 'android' | 'telegram';
+type Platform = 'ios' | 'android' | 'telegram' | 'farcaster';
+
+const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
 interface HeroProps {
   platform?: Platform;
@@ -33,13 +35,21 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
     ? '/images/qr-android.png'
     : platform === 'ios'
       ? '/images/qr-ios.png'
-      : '/images/qr-telegram.png';
+      : platform === 'telegram'
+        ? '/images/qr-telegram.png'
+        : '/images/qr-farcaster.png';
   const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : platform === 'ios'
       ? 'https://apps.apple.com/us/app/shake-defi/id6756281576'
-      : 'https://t.me/ShakeDefiBot/app';
-  const ctaLabel = platform === 'telegram' ? 'Launch tg app' : siteContent.home.hero.ctaLabel;
+      : platform === 'telegram'
+        ? 'https://t.me/ShakeDefiBot/app'
+        : FARCASTER_APP_URL;
+  const ctaLabel = platform === 'telegram'
+    ? 'Launch TG app'
+    : platform === 'farcaster'
+      ? 'Launch Farcaster'
+      : siteContent.home.hero.ctaLabel;
   const partnerLinkText = siteContent.home.hero.partnerLinkText;
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
   const subheadLinkText = '95%';
@@ -70,13 +80,13 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
               {subheadSuffix}
             </p>
             
-            <div className="space-y-4 max-w-md mx-auto lg:mx-0">
+            <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
               <h3 className="font-display text-xl md:text-2xl text-secondary-dark">
                 {siteContent.home.hero.availableNowHeading}
               </h3>
               
-              <div className="flex items-center space-x-16">
-                <label className="flex items-center space-x-1 cursor-pointer">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-3 sm:gap-x-7">
+                <label className="flex items-center space-x-1 cursor-pointer whitespace-nowrap">
                   <input
                     type="radio"
                     name="platform"
@@ -85,11 +95,11 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     onChange={() => setPlatform('android')}
                     className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
-                    <FaGoogle className="text-secondary-dark text-base translate-x-[1px]" aria-hidden="true" />
+                  <FaGoogle className="text-secondary-dark text-base translate-x-[1px]" aria-hidden="true" />
                   <span className="font-body text-base text-secondary-dark">Android</span>
                 </label>
                 
-                <label className="flex items-center space-x-1 cursor-pointer">
+                <label className="flex items-center space-x-1 cursor-pointer whitespace-nowrap">
                   <input
                     type="radio"
                     name="platform"
@@ -98,11 +108,11 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     onChange={() => setPlatform('ios')}
                     className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
-                    <FaApple className="text-secondary-dark text-2xl -translate-y-[2px]" aria-hidden="true" />
+                  <FaApple className="text-secondary-dark text-2xl -translate-y-[2px]" aria-hidden="true" />
                   <span className="font-body text-base text-secondary-dark">iOS</span>
                 </label>
 
-                <label className="flex items-center space-x-1 cursor-pointer">
+                <label className="flex items-center space-x-1 cursor-pointer whitespace-nowrap">
                   <input
                     type="radio"
                     name="platform"
@@ -111,8 +121,26 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     onChange={() => setPlatform('telegram')}
                     className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
                   />
-                    <FaTelegramPlane className="text-secondary-dark text-xl" aria-hidden="true" />
+                  <FaTelegramPlane className="text-secondary-dark text-xl" aria-hidden="true" />
                   <span className="font-body text-base text-secondary-dark">Telegram</span>
+                </label>
+
+                <label className="flex items-center space-x-1 cursor-pointer whitespace-nowrap">
+                  <input
+                    type="radio"
+                    name="platform"
+                    value="farcaster"
+                    checked={platform === 'farcaster'}
+                    onChange={() => setPlatform('farcaster')}
+                    className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
+                  />
+                  <img
+                    src="/images/farcaster-logo.svg"
+                    alt=""
+                    className="h-5 w-5 object-contain"
+                    aria-hidden="true"
+                  />
+                  <span className="font-body text-base text-secondary-dark">Farcaster</span>
                 </label>
               </div>
             </div>
@@ -128,8 +156,15 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     <FaGooglePlay className="text-2xl" aria-hidden="true" />
                   ) : platform === 'ios' ? (
                     <GrAppleAppStore className="text-2xl" aria-hidden="true" />
-                  ) : (
+                  ) : platform === 'telegram' ? (
                     <FaTelegramPlane className="text-2xl" aria-hidden="true" />
+                  ) : (
+                    <img
+                      src="/images/farcaster-logo.svg"
+                      alt=""
+                      className="h-6 w-6 object-contain"
+                      aria-hidden="true"
+                    />
                   )}
                 </span>
               </Button>
