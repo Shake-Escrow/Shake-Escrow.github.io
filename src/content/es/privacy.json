@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "26 de enero de 2026",
-  "effectiveDate": "26 de enero de 2026",
+  "lastUpdated": "12 de junio de 2026",
+  "effectiveDate": "12 de junio de 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Política de Privacidad\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -64,7 +64,7 @@
         },
         {
           "subtitle": "4.3 Retención de Datos",
-          "content": "<strong>Durante el Período de Retención de Pago:</strong> Las imágenes faciales se retienen durante todo el \"Período de Retención de Pago\" según se define en su acuerdo escrito con la otra parte de la transacción.\n\n<strong>Después del Período de Retención de Pago (Sin Disputa):</strong> Si no surge ninguna disputa, eliminaremos permanentemente su imagen facial dentro de las <strong>24 horas</strong> posteriores al final del Período de Retención de Pago.\n\n<strong>En Caso de Disputa:</strong> Si se inicia una disputa, las imágenes faciales se retendrán hasta que la disputa esté completamente resuelta y hayan expirado todos los períodos de apelación aplicables, tras lo cual se eliminarán permanentemente dentro de los 30 días."
+          "content": "<strong>Durante el Período de Escrow:</strong> Las imágenes faciales se retienen durante todo el \"Período de Escrow\" según se define en su acuerdo escrito con la otra parte de la transacción.\n\n<strong>Después del Período de Escrow (Sin Disputa):</strong> Si no surge ninguna disputa, eliminaremos permanentemente su imagen facial dentro de las <strong>24 horas</strong> posteriores al final del Período de Escrow.\n\n<strong>En Caso de Disputa:</strong> Si se inicia una disputa, las imágenes faciales se retendrán hasta que la disputa esté completamente resuelta y hayan expirado todos los períodos de apelación aplicables, tras lo cual se eliminarán permanentemente dentro de los 30 días."
         },
         {
           "subtitle": "4.4 Seguridad del Almacenamiento",
