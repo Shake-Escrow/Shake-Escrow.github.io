@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "January 26, 2026",
-  "effectiveDate": "January 26, 2026",
+  "lastUpdated": "June 12, 2026",
+  "effectiveDate": "June 12, 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Privacy Policy\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -64,7 +64,7 @@
         },
         {
           "subtitle": "4.3 Data Retention",
-          "content": "<strong>During Payment Holding Period:</strong> Facial images are retained throughout the \"Payment Holding Period\" as defined in your written agreement with the other transaction party.\n\n<strong>After Payment Holding Period (No Dispute):</strong> If no dispute arises, we will permanently delete your facial image within <strong>24 hours</strong> of the end of the Payment Holding Period.\n\n<strong>In Case of Dispute:</strong> If a dispute is initiated, facial images will be retained until the dispute is fully resolved and any applicable appeal periods have expired, after which they will be permanently deleted within 30 days."
+          "content": "<strong>During Escrow Period:</strong> Facial images are retained throughout the \"Escrow Period\" as defined in your written agreement with the other transaction party.\n\n<strong>After Escrow Period (No Dispute):</strong> If no dispute arises, we will permanently delete your facial image within <strong>24 hours</strong> of the end of the Escrow Period.\n\n<strong>In Case of Dispute:</strong> If a dispute is initiated, facial images will be retained until the dispute is fully resolved and any applicable appeal periods have expired, after which they will be permanently deleted within 30 days."
         },
         {
           "subtitle": "4.4 Storage Security",
