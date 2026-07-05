@@ -7,14 +7,14 @@
 /* Lexend Deca Font Faces */
 @font-face {
   font-family: 'Lexend Deca';
-  src: url('/fonts/lexend/LexendDeca-Regular.woff2') format('woff2');
+  src: url('/fonts/lexend/lexenddeca-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Lexend Deca';
-  src: url('/fonts/lexend/LexendDeca-Medium.woff2') format('woff2');
+  src: url('/fonts/lexend/lexenddeca-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -23,14 +23,14 @@
 /* Lexend Exa Font Faces */
 @font-face {
   font-family: 'Lexend Exa';
-  src: url('/fonts/lexend/LexendExa-Medium.woff2') format('woff2');
+  src: url('/fonts/lexend/lexendexa-medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Lexend Exa';
-  src: url('/fonts/lexend/LexendExa-Black.woff2') format('woff2');
+  src: url('/fonts/lexend/lexendexa-black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
