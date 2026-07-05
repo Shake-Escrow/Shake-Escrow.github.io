@@ -1,7 +1,6 @@
 // src/pages/ecommerce.tsx
-import React, { useState, useEffect } from 'react';
-import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code, Wallet } from 'lucide-react';
-import { useSignInWithEmail, useVerifyEmailOTP, useCurrentUser, useExportEvmAccount } from '@coinbase/cdp-hooks';
+import React, { useState } from 'react';
+import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code } from 'lucide-react';
 
 export const secondaryColor = '#1184b0';
 
@@ -28,79 +27,7 @@ const Ecommerce: React.FC = () => {
   const [result, setResult] = useState<ProvisionResult | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
-  const [email, setEmail] = useState('');
-  const [otp, setOtp] = useState('');
-  const [flowId, setFlowId] = useState<string | null>(null);
-  const [showWalletAuth, setShowWalletAuth] = useState(false);
-  const [authError, setAuthError] = useState<string | null>(null);
-  const [exportedPrivateKey, setExportedPrivateKey] = useState<string | null>(null);
-  const [isWalletAuthLoading, setIsWalletAuthLoading] = useState(false);
 
-  const { signInWithEmail } = useSignInWithEmail();
-  const { verifyEmailOTP } = useVerifyEmailOTP();
-  const { currentUser } = useCurrentUser();
-  const { exportEvmAccount } = useExportEvmAccount();
-
-  const walletAddress = currentUser?.evmAccounts?.[0];
-
-  useEffect(() => {
-    if (walletAddress && showWalletAuth) {
-      setMerchantWallet(walletAddress);
-    }
-  }, [walletAddress, showWalletAuth]);
-
-  const handleUseCoinbaseWallet = () => {
-    setShowWalletAuth(!showWalletAuth);
-    if (!showWalletAuth && currentUser?.evmAccounts?.[0]) {
-      setMerchantWallet(currentUser.evmAccounts[0]);
-    }
-  };
-
-  const handleSendOtp = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    setAuthError(null);
-    setIsWalletAuthLoading(true);
-    try {
-      const { flowId: newFlowId } = await signInWithEmail({ email });
-      setFlowId(newFlowId);
-    } catch (err: any) {
-      setAuthError(err.message || 'Failed to send OTP');
-    } finally {
-      setIsWalletAuthLoading(false);
-    }
-  };
-
-  const handleVerifyOtp = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    setAuthError(null);
-    if (!flowId) return;
-    setIsWalletAuthLoading(true);
-    try {
-      const { user } = await verifyEmailOTP({ flowId, otp });
-      if (user.evmAccounts?.[0]) {
-        setMerchantWallet(user.evmAccounts[0]);
-      }
-    } catch (err: any) {
-      setAuthError(err.message || 'Failed to verify OTP');
-    } finally {
-      setIsWalletAuthLoading(false);
-    }
-  };
-
-  const handleExportKey = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (!currentUser?.evmAccounts?.[0]) return;
-    setAuthError(null);
-    setIsWalletAuthLoading(true);
-    try {
-      const result = await exportEvmAccount({ evmAccount: currentUser.evmAccounts[0] });
-      setExportedPrivateKey(result.privateKey);
-    } catch (err: any) {
-      setAuthError(err.message || 'Failed to export private key');
-    } finally {
-      setIsWalletAuthLoading(false);
-    }
-  };
 
   const handleProvision = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -189,96 +116,9 @@ const Ecommerce: React.FC = () => {
                     placeholder="0x..."
                     required
                   />
-                  <p className="mt-2 text-sm text-gray-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <span>This is the address where your settled funds will be deposited.</span>
-                    <button
-                      type="button"
-                      onClick={handleUseCoinbaseWallet}
-                      className="text-indigo-600 hover:text-indigo-700 font-medium inline-flex items-center"
-                    >
-                      <Wallet className="w-4 h-4 mr-1" />
-                      {showWalletAuth ? 'Hide Embedded Wallet' : 'Don’t have a wallet address on Base network? Use Coinbase Embedded Wallet'}
-                    </button>
+                  <p className="mt-2 text-sm text-gray-500">
+                    This is the address where your settled funds will be deposited.
                   </p>
-
-                  {showWalletAuth && (
-                    <div className="mt-4 p-5 bg-indigo-50 border border-indigo-100 rounded-xl space-y-4">
-                      {currentUser ? (
-                        <div className="space-y-3">
-                          <p className="text-sm font-medium text-indigo-900">
-                            Authenticated as: {currentUser.userId}
-                          </p>
-                          <p className="text-sm text-indigo-700 break-all">
-                            EOA Wallet Address: {currentUser.evmAccounts?.[0] || 'Loading...'}
-                          </p>
-                          <button
-                            type="button"
-                            onClick={handleExportKey}
-                            disabled={isWalletAuthLoading}
-                            className="px-4 py-2 bg-white border border-indigo-200 rounded-lg text-sm font-semibold text-indigo-600 hover:bg-indigo-50 disabled:opacity-50"
-                          >
-                            {isWalletAuthLoading ? 'Loading...' : 'Export Private Key'}
-                          </button>
-                          {exportedPrivateKey && (
-                            <div className="mt-3 p-3 bg-white border border-gray-200 rounded-lg shadow-sm">
-                              <p className="text-xs font-bold text-gray-500 uppercase mb-1">Your Private Key</p>
-                              <p className="text-xs font-mono text-gray-800 break-all bg-gray-50 p-2 rounded">{exportedPrivateKey}</p>
-                              <p className="text-xs text-red-500 mt-2 font-medium">⚠️ Store this securely. Do not share it with anyone.</p>
-                            </div>
-                          )}
-                        </div>
-                      ) : (
-                        <div className="space-y-4">
-                          <p className="text-sm font-medium text-indigo-900">
-                            Connect with Coinbase Embedded Wallet to quickly get a Base network address.
-                          </p>
-
-                          {!flowId ? (
-                            <div className="flex gap-2">
-                              <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="Enter your email"
-                                className="flex-1 px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                              />
-                              <button
-                                type="button"
-                                onClick={handleSendOtp}
-                                disabled={isWalletAuthLoading || !email}
-                                className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 disabled:opacity-50"
-                              >
-                                {isWalletAuthLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Send OTP'}
-                              </button>
-                            </div>
-                          ) : (
-                            <div className="flex gap-2">
-                              <input
-                                type="text"
-                                value={otp}
-                                onChange={(e) => setOtp(e.target.value)}
-                                placeholder="Enter 6-digit OTP"
-                                maxLength={6}
-                                className="flex-1 px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                              />
-                              <button
-                                type="button"
-                                onClick={handleVerifyOtp}
-                                disabled={isWalletAuthLoading || otp.length !== 6}
-                                className="px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 disabled:opacity-50"
-                              >
-                                {isWalletAuthLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : 'Verify'}
-                              </button>
-                            </div>
-                          )}
-
-                          {authError && (
-                            <p className="text-sm text-red-600 font-medium">{authError}</p>
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
                 </div>
 
                 {error && (
