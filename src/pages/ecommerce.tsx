@@ -43,14 +43,13 @@ const Ecommerce: React.FC = () => {
     setError(null);
 
     try {
-      // In a real environment, this secret should not be in the frontend. 
-      // For the scope of this project, it's passed directly or we assume a secure admin portal.
-      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
-      const response = await fetch(`${API_ENDPOINT}/admin/provision-full`, {
+      const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
+      // Strip /api/website if present to get the platform root
+      const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
+      const response = await fetch(`${API_ENDPOINT}/v1/provision-full`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'x-admin-secret': 'YOUR_ADMIN_SECRET'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           accountName,
