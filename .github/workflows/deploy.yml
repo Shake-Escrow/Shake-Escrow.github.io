@@ -43,6 +43,7 @@ jobs:
       - name: Build
         env:
           VITE_API_ENDPOINT: ${{ secrets.VITE_API_ENDPOINT }}
+          VITE_COINBASE_PUBLIC_CDP_PROJECT_ID: ${{ secrets.VITE_COINBASE_PUBLIC_CDP_PROJECT_ID }}
         run: npm run build:full  # Includes generate-privacy
       - name: Setup Pages
         uses: actions/configure-pages@v5

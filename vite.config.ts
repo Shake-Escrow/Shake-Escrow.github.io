@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   // Root deployment for Shake-Escrow.github.io
   base: '/',
-  
+
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],

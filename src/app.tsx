@@ -7,6 +7,7 @@ import { LocaleProvider } from './context/LocaleContext';
 import Navbar from './components/layout/navbar';
 import Footer from './components/layout/footer';
 import ChatWidget from './components/common/chat-widget';
+import ErrorBoundary from './components/common/error-boundary';
 
 // Pages
 import Home from './pages/home';
@@ -18,6 +19,7 @@ import PrivacyPolicy from './pages/privacy-policy';
 import TermsOfService from './pages/terms-of-service';
 import EndUserLicenseAgreement from './pages/end-user-license-agreement';
 import DeleteAccount from './pages/delete-account';
+import Ecommerce from './pages/ecommerce';
 
 // Declare gtag on window
 declare global {
@@ -65,17 +67,20 @@ function App() {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
       <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<Home platform={platform} onPlatformChange={setPlatform} />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/get-paid" element={<GetPaid />} />
-          <Route path="/send-payments" element={<SendPayments />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/end-user-license-agreement" element={<EndUserLicenseAgreement />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/delete-account" element={<DeleteAccount />} />
-        </Routes>
+        <ErrorBoundary key={location.pathname}>
+          <Routes>
+            <Route path="/" element={<Home platform={platform} onPlatformChange={setPlatform} />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/get-paid" element={<GetPaid />} />
+            <Route path="/send-payments" element={<SendPayments />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/end-user-license-agreement" element={<EndUserLicenseAgreement />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
+            <Route path="/e-commerce" element={<Ecommerce />} />
+          </Routes>
+        </ErrorBoundary>
       </main>
       <Footer platform={platform} />
       <ChatWidget />
