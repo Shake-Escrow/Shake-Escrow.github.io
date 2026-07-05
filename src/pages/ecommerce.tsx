@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code } from 'lucide-react';
 import { generateMnemonic } from '@scure/bip39';
-import { wordlist as wordlistEn } from '@scure/bip39/wordlists/english';
-import { wordlist as wordlistEs } from '@scure/bip39/wordlists/spanish';
+import { wordlist as wordlistEn } from '@scure/bip39/wordlists/english.js';
+import { wordlist as wordlistEs } from '@scure/bip39/wordlists/spanish.js';
 import { mnemonicToAccount } from 'viem/accounts';
 import { useLocale } from '../context/LocaleContext';
 import { useContent } from '../hooks/useContent';
