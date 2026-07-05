@@ -357,5 +357,36 @@
       "subhead": "The Shake team is here to help with any questions you may have.",
       "button": "Contact the team"
     }
+  },
+  "ecommerce": {
+    "title": "Start Accepting Crypto",
+    "subtitle": "Provision your smart contract and receive your API keys in seconds. Seamlessly integrate Web3 payments into your application.",
+    "companyNameLabel": "Company / Account Name",
+    "companyNamePlaceholder": "e.g. Acme Corp",
+    "merchantWalletLabel": "Merchant Wallet Address (Base Network)",
+    "merchantWalletPlaceholder": "0x...",
+    "merchantWalletDescription": "This is the address where your settled funds will be deposited.",
+    "connectWallet": "Connect Wallet",
+    "createWallet": "Create Wallet",
+    "deployingContract": "Deploying Smart Contract...",
+    "provisionAccount": "Provision Account",
+    "secureDeployment": "Secure smart contract deployment on Base",
+    "restApiReady": "REST API Ready",
+    "accountProvisioned": "Account Provisioned!",
+    "provisionedSubtitle": "Your smart contract is deployed and your API keys are ready.",
+    "smartContract": "Smart Contract",
+    "testKeys": "Test Keys",
+    "publishableKey": "Publishable Key",
+    "secretKey": "Secret Key",
+    "liveKeys": "Live Keys",
+    "saveKeysWarningLabel": "Important:",
+    "saveKeysWarningText": "Please save these secret keys now. For security reasons, we do not store the raw secret keys in our database and they cannot be recovered once you leave this page.",
+    "provisionAnother": "Provision Another Account",
+    "saveRecoveryPhraseTitle": "Save Your Recovery Phrase!",
+    "saveRecoveryPhraseDescription1": "We generated a new wallet for you. This 12-word phrase is the ",
+    "saveRecoveryPhraseDescriptionOnly": "ONLY",
+    "saveRecoveryPhraseDescription2": " way to access your funds. Write it down and keep it safe in a secure location. ",
+    "saveRecoveryPhraseDescriptionWarning": "Shake DeFi does not store private keys or mnemonics.",
+    "saveRecoveryPhraseDescription3": " If you lose them, your funds will be lost forever and you must essentially create a new account."
   }
 }

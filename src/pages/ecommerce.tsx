@@ -1,6 +1,12 @@
 // src/pages/ecommerce.tsx
 import React, { useState } from 'react';
 import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code } from 'lucide-react';
+import { generateMnemonic } from '@scure/bip39';
+import { wordlist as wordlistEn } from '@scure/bip39/wordlists/english';
+import { wordlist as wordlistEs } from '@scure/bip39/wordlists/spanish';
+import { mnemonicToAccount } from 'viem/accounts';
+import { useLocale } from '../context/LocaleContext';
+import { useContent } from '../hooks/useContent';
 
 export const secondaryColor = '#1184b0';
 
@@ -26,8 +32,10 @@ const Ecommerce: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ProvisionResult | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
-
-
+  const [generatedMnemonic, setGeneratedMnemonic] = useState<string | null>(null);
+  const { locale } = useLocale();
+  const siteContent = useContent('sitecontent');
+  const ecommerce = siteContent.ecommerce;
 
   const handleProvision = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,7 +45,7 @@ const Ecommerce: React.FC = () => {
     try {
       // In a real environment, this secret should not be in the frontend. 
       // For the scope of this project, it's passed directly or we assume a secure admin portal.
-      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT || 'https://api.shake-defi.com';
+      const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT;
       const response = await fetch(`${API_ENDPOINT}/admin/provision-full`, {
         method: 'POST',
         headers: {
@@ -66,6 +74,36 @@ const Ecommerce: React.FC = () => {
     }
   };
 
+  const connectWallet = async () => {
+    try {
+      const provider = (window as any).ethereum;
+      if (!provider) {
+        throw new Error('No wallet detected. Please install a wallet extension.');
+      }
+      const accounts = await provider.request({ method: 'eth_requestAccounts' });
+      if (accounts && accounts.length > 0) {
+        setMerchantWallet(accounts[0]);
+        setError(null);
+      }
+    } catch (err: any) {
+      setError(err.message || 'Failed to connect wallet');
+    }
+  };
+
+  const createWallet = () => {
+    try {
+      const activeWordlist = locale === 'es' ? wordlistEs : wordlistEn;
+      const mnemonic = generateMnemonic(activeWordlist);
+      const account = mnemonicToAccount(mnemonic);
+      
+      setGeneratedMnemonic(mnemonic);
+      setMerchantWallet(account.address);
+      setError(null);
+    } catch (err: any) {
+      setError(err.message || 'Failed to generate wallet');
+    }
+  };
+
   const copyToClipboard = (text: string, id: string) => {
     navigator.clipboard.writeText(text);
     setCopiedKey(id);
@@ -77,10 +115,10 @@ const Ecommerce: React.FC = () => {
       <div className="max-w-4xl w-full">
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Start Accepting Crypto
+            {ecommerce.title}
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Provision your smart contract and receive your API keys in seconds. Seamlessly integrate Web3 payments into your application.
+            {ecommerce.subtitle}
           </p>
         </div>
 
@@ -90,7 +128,7 @@ const Ecommerce: React.FC = () => {
               <form onSubmit={handleProvision} className="space-y-8">
                 <div>
                   <label htmlFor="accountName" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Company / Account Name
+                    {ecommerce.companyNameLabel}
                   </label>
                   <input
                     type="text"
@@ -98,28 +136,73 @@ const Ecommerce: React.FC = () => {
                     value={accountName}
                     onChange={(e) => setAccountName(e.target.value)}
                     className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="e.g. Acme Corp"
+                    placeholder={ecommerce.companyNamePlaceholder}
                     required
                   />
                 </div>
 
                 <div>
                   <label htmlFor="merchantWallet" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Merchant Wallet Address (Base Network)
+                    {ecommerce.merchantWalletLabel}
                   </label>
-                  <input
-                    type="text"
-                    id="merchantWallet"
-                    value={merchantWallet}
-                    onChange={(e) => setMerchantWallet(e.target.value)}
-                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 font-mono text-sm placeholder-gray-400"
-                    placeholder="0x..."
-                    required
-                  />
+                  <div className="flex gap-3">
+                    <input
+                      type="text"
+                      id="merchantWallet"
+                      value={merchantWallet}
+                      onChange={(e) => setMerchantWallet(e.target.value)}
+                      className="flex-1 px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 font-mono text-sm placeholder-gray-400"
+                      placeholder={ecommerce.merchantWalletPlaceholder}
+                      required
+                    />
+                    <button
+                      type="button"
+                      onClick={connectWallet}
+                      className="px-6 py-4 bg-white border border-gray-200 shadow-sm rounded-xl text-gray-700 font-semibold hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none flex-shrink-0"
+                    >
+                      {ecommerce.connectWallet}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={createWallet}
+                      className="px-6 py-4 bg-white border border-gray-200 shadow-sm rounded-xl text-gray-700 font-semibold hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none flex-shrink-0"
+                    >
+                      {ecommerce.createWallet}
+                    </button>
+                  </div>
                   <p className="mt-2 text-sm text-gray-500">
-                    This is the address where your settled funds will be deposited.
+                    {ecommerce.merchantWalletDescription}
                   </p>
                 </div>
+
+                {generatedMnemonic && (
+                  <div className="p-5 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 space-y-3">
+                    <div className="flex items-start">
+                      <ShieldCheck className="w-6 h-6 mr-3 flex-shrink-0 text-yellow-600 mt-0.5" />
+                      <div className="flex-1">
+                        <h4 className="font-bold text-yellow-900 text-lg">{ecommerce.saveRecoveryPhraseTitle}</h4>
+                        <p className="text-sm mt-1 mb-3 text-yellow-800 leading-relaxed">
+                          {ecommerce.saveRecoveryPhraseDescription1}
+                          <strong>{ecommerce.saveRecoveryPhraseDescriptionOnly}</strong>
+                          {ecommerce.saveRecoveryPhraseDescription2}
+                          <strong>{ecommerce.saveRecoveryPhraseDescriptionWarning}</strong>
+                          {ecommerce.saveRecoveryPhraseDescription3}
+                        </p>
+                        <div className="bg-white border border-yellow-300 p-4 rounded-lg font-mono text-base break-words relative shadow-sm pr-12">
+                          {generatedMnemonic}
+                          <button
+                            type="button"
+                            onClick={() => copyToClipboard(generatedMnemonic, 'mnemonic')}
+                            className="absolute top-1/2 -translate-y-1/2 right-3 text-gray-400 hover:text-indigo-600 transition-colors"
+                            title="Copy Mnemonic"
+                          >
+                            {copiedKey === 'mnemonic' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {error && (
                   <div className="p-4 bg-red-50 border border-red-100 rounded-xl flex items-start text-red-600">
@@ -138,10 +221,10 @@ const Ecommerce: React.FC = () => {
                     {isLoading ? (
                       <>
                         <Loader2 className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
-                        Deploying Smart Contract...
+                        {ecommerce.deployingContract}
                       </>
                     ) : (
-                      'Provision Account'
+                      ecommerce.provisionAccount
                     )}
                   </div>
                   {/* Subtle shine effect */}
@@ -155,11 +238,11 @@ const Ecommerce: React.FC = () => {
             <div className="bg-gray-50 p-6 md:p-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
               <div className="flex items-center mb-4 md:mb-0">
                 <ShieldCheck className="w-5 h-5 mr-2 text-green-500" />
-                <span>Secure smart contract deployment on Base</span>
+                <span>{ecommerce.secureDeployment}</span>
               </div>
               <div className="flex items-center">
                 <Code className="w-5 h-5 mr-2 text-indigo-500" />
-                <span>REST API Ready</span>
+                <span>{ecommerce.restApiReady}</span>
               </div>
             </div>
           </div>
@@ -169,9 +252,9 @@ const Ecommerce: React.FC = () => {
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
                 <CheckCircle2 className="h-8 w-8 text-green-600" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Account Provisioned!</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">{ecommerce.accountProvisioned}</h2>
               <p className="text-gray-500 text-lg">
-                Your smart contract is deployed and your API keys are ready.
+                {ecommerce.provisionedSubtitle}
               </p>
             </div>
 
@@ -180,7 +263,7 @@ const Ecommerce: React.FC = () => {
 
                 {/* Contract Address */}
                 <div>
-                  <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">Smart Contract</h3>
+                  <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.smartContract}</h3>
                   <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
                     <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddress}</span>
                     <button
@@ -199,11 +282,11 @@ const Ecommerce: React.FC = () => {
                   <div className="space-y-4">
                     <div className="flex items-center space-x-2 text-indigo-600 mb-4">
                       <Key className="w-5 h-5" />
-                      <h3 className="text-lg font-bold">Test Keys</h3>
+                      <h3 className="text-lg font-bold">{ecommerce.testKeys}</h3>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">Publishable Key</label>
+                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.publishableKey}</label>
                       <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
                         <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.test.publishable}</span>
                         <button onClick={() => copyToClipboard(result.keys.test.publishable, 'test-pub')} className="text-gray-400 hover:text-indigo-600">
@@ -213,7 +296,7 @@ const Ecommerce: React.FC = () => {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">Secret Key</label>
+                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.secretKey}</label>
                       <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
                         <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.test.secret}</span>
                         <button onClick={() => copyToClipboard(result.keys.test.secret, 'test-sec')} className="text-gray-400 hover:text-indigo-600">
@@ -227,11 +310,11 @@ const Ecommerce: React.FC = () => {
                   <div className="space-y-4">
                     <div className="flex items-center space-x-2 text-green-600 mb-4">
                       <Key className="w-5 h-5" />
-                      <h3 className="text-lg font-bold">Live Keys</h3>
+                      <h3 className="text-lg font-bold">{ecommerce.liveKeys}</h3>
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">Publishable Key</label>
+                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.publishableKey}</label>
                       <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
                         <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.live.publishable}</span>
                         <button onClick={() => copyToClipboard(result.keys.live.publishable, 'live-pub')} className="text-gray-400 hover:text-indigo-600">
@@ -241,7 +324,7 @@ const Ecommerce: React.FC = () => {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">Secret Key</label>
+                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.secretKey}</label>
                       <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
                         <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.live.secret}</span>
                         <button onClick={() => copyToClipboard(result.keys.live.secret, 'live-sec')} className="text-gray-400 hover:text-indigo-600">
@@ -253,7 +336,7 @@ const Ecommerce: React.FC = () => {
                 </div>
 
                 <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm">
-                  <strong>Important:</strong> Please save these secret keys now. For security reasons, we do not store the raw secret keys in our database and they cannot be recovered once you leave this page.
+                  <strong>{ecommerce.saveKeysWarningLabel}</strong> {ecommerce.saveKeysWarningText}
                 </div>
               </div>
             </div>
@@ -264,10 +347,11 @@ const Ecommerce: React.FC = () => {
                   setResult(null);
                   setAccountName('');
                   setMerchantWallet('');
+                  setGeneratedMnemonic(null);
                 }}
                 className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors"
               >
-                Provision Another Account
+                {ecommerce.provisionAnother}
               </button>
             </div>
           </div>

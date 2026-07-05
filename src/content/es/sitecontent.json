@@ -357,5 +357,36 @@
       "subhead": "El equipo de Shake está aquí para ayudarte con cualquier pregunta que tengas.",
       "button": "Contactar al equipo"
     }
+  },
+  "ecommerce": {
+    "title": "Comienza a Aceptar Cripto",
+    "subtitle": "Aprovisiona tu contrato inteligente y recibe tus claves API en segundos. Integra pagos Web3 en tu aplicación sin problemas.",
+    "companyNameLabel": "Nombre de la Empresa / Cuenta",
+    "companyNamePlaceholder": "ej. Acme Corp",
+    "merchantWalletLabel": "Dirección de Billetera del Comerciante (Red Base)",
+    "merchantWalletPlaceholder": "0x...",
+    "merchantWalletDescription": "Esta es la dirección donde se depositarán tus fondos liquidados.",
+    "connectWallet": "Conectar Billetera",
+    "createWallet": "Crear Billetera",
+    "deployingContract": "Desplegando Contrato Inteligente...",
+    "provisionAccount": "Aprovisionar Cuenta",
+    "secureDeployment": "Despliegue seguro de contrato inteligente en Base",
+    "restApiReady": "API REST Lista",
+    "accountProvisioned": "¡Cuenta Aprovisionada!",
+    "provisionedSubtitle": "Tu contrato inteligente está desplegado y tus claves API están listas.",
+    "smartContract": "Contrato Inteligente",
+    "testKeys": "Claves de Prueba",
+    "publishableKey": "Clave Publicable",
+    "secretKey": "Clave Secreta",
+    "liveKeys": "Claves en Vivo",
+    "saveKeysWarningLabel": "Importante:",
+    "saveKeysWarningText": "Por favor guarda estas claves secretas ahora. Por razones de seguridad, no almacenamos las claves secretas sin cifrar en nuestra base de datos y no se pueden recuperar una vez que salgas de esta página.",
+    "provisionAnother": "Aprovisionar Otra Cuenta",
+    "saveRecoveryPhraseTitle": "¡Guarda tu frase de recuperación!",
+    "saveRecoveryPhraseDescription1": "Hemos generado una nueva billetera para ti. Esta frase de 12 palabras es la ",
+    "saveRecoveryPhraseDescriptionOnly": "ÚNICA",
+    "saveRecoveryPhraseDescription2": " manera de acceder a tus fondos. Escríbela y guárdala en un lugar seguro. ",
+    "saveRecoveryPhraseDescriptionWarning": "Shake DeFi no almacena claves privadas ni mnemónicos.",
+    "saveRecoveryPhraseDescription3": " Si las pierdes, tus fondos se perderán para siempre y esencialmente tendrás que crear una nueva cuenta."
   }
 }
