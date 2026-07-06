@@ -382,6 +382,7 @@
     "saveKeysWarningLabel": "Important:",
     "saveKeysWarningText": "Please save these secret keys now. For security reasons, we do not store the raw secret keys in our database and they cannot be recovered once you leave this page.",
     "provisionAnother": "Provision Another Account",
+    "viewApiDocs": "View API Documentation",
     "saveRecoveryPhraseTitle": "Save Your Recovery Phrase!",
     "saveRecoveryPhraseDescription1": "We generated a new wallet for you. This 12-word phrase is the ",
     "saveRecoveryPhraseDescriptionOnly": "ONLY",

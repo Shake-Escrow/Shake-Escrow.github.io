@@ -382,6 +382,7 @@
     "saveKeysWarningLabel": "Importante:",
     "saveKeysWarningText": "Por favor guarda estas claves secretas ahora. Por razones de seguridad, no almacenamos las claves secretas sin cifrar en nuestra base de datos y no se pueden recuperar una vez que salgas de esta página.",
     "provisionAnother": "Aprovisionar Otra Cuenta",
+    "viewApiDocs": "Ver Documentación de la API",
     "saveRecoveryPhraseTitle": "¡Guarda tu frase de recuperación!",
     "saveRecoveryPhraseDescription1": "Hemos generado una nueva billetera para ti. Esta frase de 12 palabras es la ",
     "saveRecoveryPhraseDescriptionOnly": "ÚNICA",

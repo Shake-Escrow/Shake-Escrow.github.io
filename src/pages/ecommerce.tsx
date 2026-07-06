@@ -241,7 +241,14 @@ const Ecommerce: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Code className="w-5 h-5 mr-2 text-indigo-500" />
-                <span>{ecommerce.restApiReady}</span>
+                <a 
+                  href="https://github.com/Shake-Escrow/Shake-MessageHub/blob/main/docs/platform-openapi.yaml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-indigo-600 transition-colors underline decoration-dotted underline-offset-4"
+                >
+                  {ecommerce.restApiReady}
+                </a>
               </div>
             </div>
           </div>
@@ -337,22 +344,21 @@ const Ecommerce: React.FC = () => {
                 <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm">
                   <strong>{ecommerce.saveKeysWarningLabel}</strong> {ecommerce.saveKeysWarningText}
                 </div>
+
+                <div className="mt-8 flex justify-center">
+                  <a
+                    href="https://github.com/Shake-Escrow/Shake-MessageHub/blob/main/docs/platform-openapi.yaml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 font-semibold rounded-xl hover:bg-indigo-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    <Code className="w-5 h-5 mr-2" />
+                    {ecommerce.viewApiDocs}
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="p-8 border-t border-gray-100 text-center">
-              <button
-                onClick={() => {
-                  setResult(null);
-                  setAccountName('');
-                  setMerchantWallet('');
-                  setGeneratedMnemonic(null);
-                }}
-                className="text-indigo-600 font-semibold hover:text-indigo-800 transition-colors"
-              >
-                {ecommerce.provisionAnother}
-              </button>
-            </div>
           </div>
         )}
       </div>
