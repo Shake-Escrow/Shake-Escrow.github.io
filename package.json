@@ -17,6 +17,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@scalar/api-reference-react": "^0.9.53",
     "@scure/bip39": "^2.2.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",

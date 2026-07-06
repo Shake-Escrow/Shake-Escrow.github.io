@@ -75,9 +75,7 @@ info:
 
 servers:
   - url: https://api.shake-defi.com/v1
-    description: Production (live mode — use sk_live_… / pk_live_… keys)
-  - url: https://api.shake-defi.com/v1
-    description: Sandbox (test mode — use sk_test_… / pk_test_… keys)
+    description: Production & Sandbox (mode determined by API key)
 
 security:
   - SecretKey: []

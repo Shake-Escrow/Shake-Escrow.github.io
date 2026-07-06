@@ -20,6 +20,7 @@ import TermsOfService from './pages/terms-of-service';
 import EndUserLicenseAgreement from './pages/end-user-license-agreement';
 import DeleteAccount from './pages/delete-account';
 import Ecommerce from './pages/ecommerce';
+import ApiDocs from './pages/api-docs';
 
 // Declare gtag on window
 declare global {
@@ -31,6 +32,7 @@ declare global {
 function App() {
   const location = useLocation();
   const [platform, setPlatform] = useState<'ios' | 'android' | 'telegram' | 'farcaster'>('android');
+  const isApiDocs = location.pathname === '/api-docs';
 
   // Reset scroll position when navigating between routes
   useEffect(() => {
@@ -65,7 +67,7 @@ function App() {
   return (
     <LocaleProvider>
     <div className="flex flex-col min-h-screen bg-white">
-      <Navbar />
+      {!isApiDocs && <Navbar />}
       <main className="flex-grow">
         <ErrorBoundary key={location.pathname}>
           <Routes>
@@ -79,11 +81,12 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/e-commerce" element={<Ecommerce />} />
+            <Route path="/api-docs" element={<ApiDocs />} />
           </Routes>
         </ErrorBoundary>
       </main>
-      <Footer platform={platform} />
-      <ChatWidget />
+      {!isApiDocs && <Footer platform={platform} />}
+      {!isApiDocs && <ChatWidget />}
     </div>
     </LocaleProvider>
   );

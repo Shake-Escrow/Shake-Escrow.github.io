@@ -242,7 +242,7 @@ const Ecommerce: React.FC = () => {
               <div className="flex items-center">
                 <Code className="w-5 h-5 mr-2 text-indigo-500" />
                 <a 
-                  href="/docs/platform-openapi.yaml"
+                  href="/api-docs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-indigo-600 transition-colors underline decoration-dotted underline-offset-4"
@@ -347,7 +347,7 @@ const Ecommerce: React.FC = () => {
 
                 <div className="mt-8 flex justify-center">
                   <a
-                    href="/docs/platform-openapi.yaml"
+                    href="/api-docs"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 font-semibold rounded-xl hover:bg-indigo-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
