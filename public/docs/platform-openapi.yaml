@@ -1,0 +1,1261 @@
+openapi: 3.1.0
+
+info:
+  title: Token Purchase Platform API
+  version: "1.1.0"
+  description: |
+    Sell tokens for stablecoins without touching wallets, gas, or smart contracts
+    directly. Modeled on Stripe's Payment Intents API: create a
+    **TokenPurchaseIntent**, a hosted widget confirms it on-chain, and a
+    **webhook** tells you what actually happened.
+
+    ## Authentication
+
+    Pass your secret key in the `Authorization` header on every server-side
+    request:
+
+    ```
+    Authorization: Bearer sk_live_51Hxyz...
+    ```
+
+    Two key types exist:
+
+    | Prefix | Used in | Can do |
+    |---|---|---|
+    | `sk_test_` / `sk_live_` | Your backend | Create and retrieve resources |
+    | `pk_test_` / `pk_live_` | Your frontend (checkout widget) | Initialize the widget only |
+
+    Never expose a secret key (`sk_…`) to the frontend.
+
+    ### Initializing the checkout widget
+
+    `POST /token_purchase_intents` returns two things a frontend can use to
+    drive the widget — pass exactly one to your widget SDK:
+
+    - **`_widget_params`** — a snapshot taken at intent-creation time. No
+      further API calls required.
+    - **`client_secret`** — a bearer credential (`{intent_id}_secret_{random}`)
+      the widget exchanges for live params, including the current on-chain
+      price, via the public `GET /widget/params` endpoint below. Safe to send
+      to the browser by design, but treat it like any other credential: don't
+      log it, and don't let one customer see another's.
+
+    `GET /widget/params` deliberately requires no API key — possession of the
+    `client_secret` is the only authorization, mirroring Stripe's
+    PaymentIntent `client_secret` pattern.
+
+    ## Test vs. live mode
+
+    Every object carries a `livemode` boolean. Which mode you're in is
+    determined entirely by which key you use — no separate network parameter.
+    Test mode runs on **Base Sepolia** with test stablecoins; live mode runs on
+    **Base mainnet** with real stablecoins. Test and live objects are fully
+    isolated from each other.
+
+    ## Supported payment currencies
+
+    The currencies accepted by your account are listed under `currency_contracts`
+    in the `GET /account` response. Pass the currency symbol (e.g. `"USDC"`,
+    `"USDT"`) as `payment_currency` when creating an intent. Attempting to use
+    an unsupported currency returns a `400` with code `missing_required_param`.
+
+    ## Token amounts
+
+    `token_amount_estimate` and `token_amount` are ERC-20 token amounts in
+    18-decimal wei units and can exceed JavaScript's safe integer range
+    (`Number.MAX_SAFE_INTEGER`). Clients **must** treat these fields as
+    arbitrary-precision integers (e.g. `BigInt` in JS, `BigInteger` in Java,
+    `int` in Python 3). They are typed `integer` with `format: uint256` here
+    as a signal; deserialise them accordingly.
+
+    ## Payment amounts
+
+    `amount` and `price_snapshot` are **human-readable decimals** — `5.00`
+    means $5.00 USD equivalent. Do not multiply by 10^6.
+
+servers:
+  - url: https://api.shake-defi.com/v1
+    description: Production (live mode — use sk_live_… / pk_live_… keys)
+  - url: https://api.shake-defi.com/v1
+    description: Sandbox (test mode — use sk_test_… / pk_test_… keys)
+
+security:
+  - SecretKey: []
+
+tags:
+  - name: Customers
+    description: One record per payer; created once per customer.
+  - name: Token Purchase Intents
+    description: |
+      Core resource. Represents a single attempt to buy tokens with a stablecoin.
+  - name: Widget
+    description: |
+      Public, unauthenticated endpoint consumed by the checkout widget itself
+      (not typically called directly from your own backend or frontend code).
+  - name: Account
+    description: Read-only reference info for this API key's account.
+  - name: Webhooks
+    description: |
+      Async settlement events delivered to your endpoint. The API response
+      from creating an intent only ever means "accepted" — final status arrives
+      via webhook.
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Components
+# ──────────────────────────────────────────────────────────────────────────────
+components:
+
+  # ── Security schemes ───────────────────────────────────────────────────────
+  securitySchemes:
+    SecretKey:
+      type: http
+      scheme: bearer
+      description: |
+        `sk_live_…` or `sk_test_…`. Server-side only. Never expose in
+        frontend code.
+    PublishableKey:
+      type: http
+      scheme: bearer
+      description: |
+        `pk_live_…` or `pk_test_…`. Safe to embed in frontend code. Can only
+        initialise the checkout widget.
+
+  # ── Reusable parameters ────────────────────────────────────────────────────
+  parameters:
+
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: false
+      schema:
+        type: string
+        maxLength: 255
+        example: "order_8841_attempt_1"
+      description: |
+        A unique key for this request. If the same key is received again
+        before the original response expires, the original response is
+        returned without creating a duplicate resource. Recommended format:
+        `{order_id}_attempt_{n}`.
+
+    CustomerId:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+        pattern: "^cus_"
+        example: "cus_1JX9k2"
+      description: ID of the Customer.
+
+    TokenPurchaseIntentId:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+        pattern: "^tpi_"
+        example: "tpi_3LMnop"
+      description: ID of the TokenPurchaseIntent.
+
+  # ── Reusable schemas ───────────────────────────────────────────────────────
+  schemas:
+
+    # ── Scalar / enum types ─────────────────────────────────────────────────
+
+    UnixTimestamp:
+      type: integer
+      format: int64
+      description: Seconds since Unix epoch (UTC).
+      example: 1719340800
+
+    Amount:
+      type: number
+      format: double
+      description: |
+        Payment amount in human-readable units. `5.00` means $5.00 USD
+        equivalent. Do not multiply by 10^6.
+      example: 5.00
+      exclusiveMinimum: 0
+
+    PaymentCurrency:
+      type: string
+      description: |
+        Symbol of the stablecoin used for payment (e.g. `"USDC"`, `"USDT"`).
+        Must be one of the currencies listed under `currency_contracts` in
+        the `GET /account` response.
+      example: "USDC"
+
+    TokenAmount:
+      type: integer
+      format: uint256
+      description: |
+        Token amount in 18-decimal wei units.
+        1 token = 1 000 000 000 000 000 000 (multiply by 10^18).
+        **Exceeds JavaScript's safe integer range — use BigInt or equivalent.**
+      example: 5000000000000000000
+
+    EthAddress:
+      type: string
+      pattern: "^0x[0-9a-fA-F]{40}$"
+      description: EVM-compatible hex address (checksummed or lowercase).
+      example: "0x4a1f3c8e9d2b6a0f1c5e7d3a9b4e2f8c0d6a1b3c"
+
+    Bytes32:
+      type: string
+      pattern: "^0x[0-9a-fA-F]{64}$"
+      description: 32-byte hex value (64 hex chars, 0x-prefixed).
+      example: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+
+    TxHash:
+      type: string
+      pattern: "^0x[0-9a-fA-F]{64}$"
+      description: 32-byte transaction hash.
+      example: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+
+    TokenPurchaseIntentStatus:
+      type: string
+      enum:
+        - pending
+        - succeeded
+        - failed
+        - canceled
+      description: |
+        Lifecycle state of a TokenPurchaseIntent.
+
+        | Value | Meaning |
+        |---|---|
+        | `pending` | Created; awaiting on-chain confirmation from the customer. |
+        | `succeeded` | On-chain `Purchase` event confirmed; `tx_hash` is populated. |
+        | `failed` | Transaction reverted or confirmation timed out; `error` is populated. |
+        | `canceled` | Intent expired unconfirmed after 30 minutes. |
+
+    Network:
+      type: string
+      enum:
+        - base-mainnet
+        - base-sepolia
+      description: Which EVM network the API key is pointed at.
+
+    # ── Error types ─────────────────────────────────────────────────────────
+
+    ErrorType:
+      type: string
+      enum:
+        - invalid_request_error
+        - chain_error
+        - api_error
+      description: |
+        | Value | Meaning |
+        |---|---|
+        | `invalid_request_error` | Bad input — missing parameter, unknown currency, etc. |
+        | `chain_error` | Something went wrong on-chain. See `code` for specifics. |
+        | `api_error` | Something went wrong on our end. |
+
+    ChainErrorCode:
+      type: string
+      enum:
+        - insufficient_allowance
+        - transaction_reverted
+        - price_changed
+        - chain_congested
+        - confirmation_timeout
+      description: |
+        Machine-readable code for `chain_error` failures.
+
+        | Code | Meaning |
+        |---|---|
+        | `insufficient_allowance` | Customer hasn't approved enough of the payment currency. |
+        | `transaction_reverted` | The on-chain `buy` call reverted. |
+        | `price_changed` | Live price moved beyond tolerance between intent creation and on-chain confirmation. |
+        | `chain_congested` | RPC or mempool issues prevented submission. |
+        | `confirmation_timeout` | The required number of confirmations was not reached within the expiry window. |
+
+    ErrorDetail:
+      type: object
+      required:
+        - type
+        - message
+      properties:
+        type:
+          $ref: "#/components/schemas/ErrorType"
+        code:
+          type: string
+          description: Machine-readable error code. Present for `chain_error`; may be present for others.
+          example: "insufficient_allowance"
+        message:
+          type: string
+          description: Human-readable explanation.
+          example: "Customer has not approved enough USDC for this purchase."
+        param:
+          type:
+            - string
+            - "null"
+          description: The request parameter this error relates to, if applicable.
+          example: "amount"
+
+    ApiError:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          $ref: "#/components/schemas/ErrorDetail"
+      example:
+        error:
+          type: chain_error
+          code: insufficient_allowance
+          message: "Customer has not approved enough USDC for this purchase."
+          param: amount
+
+    # ── Domain objects ───────────────────────────────────────────────────────
+
+    Customer:
+      type: object
+      required:
+        - id
+        - object
+        - external_customer_id
+        - created
+        - livemode
+      properties:
+        id:
+          type: string
+          pattern: "^cus_"
+          description: Unique identifier for this customer, generated by the platform.
+          example: "cus_1JX9k2"
+        object:
+          type: string
+          enum:
+            - customer
+          description: String literal identifying the object type.
+        external_customer_id:
+          type: string
+          description: |
+            Your internal identifier for this customer. The platform never defines
+            customer identity; this field is whatever you already use.
+          example: "user_88210"
+        created:
+          $ref: "#/components/schemas/UnixTimestamp"
+        livemode:
+          type: boolean
+          description: "`true` if this object exists in live mode, `false` for test mode."
+      example:
+        id: "cus_1JX9k2"
+        object: "customer"
+        external_customer_id: "user_88210"
+        created: 1719340800
+        livemode: true
+
+    TokenPurchaseIntentError:
+      type: object
+      required:
+        - type
+        - code
+        - message
+      properties:
+        type:
+          type: string
+          enum:
+            - chain_error
+        code:
+          $ref: "#/components/schemas/ChainErrorCode"
+        message:
+          type: string
+          example: "The on-chain transaction reverted."
+        param:
+          type:
+            - string
+            - "null"
+          example: null
+
+    WidgetParams:
+      type: object
+      description: |
+        Everything the frontend checkout widget needs to drive the on-chain
+        confirmation step. Present on the create intent response (`POST
+        /token_purchase_intents`, as `_widget_params`) and on the public
+        `GET /widget/params` lookup (as `LiveWidgetParams`, which adds a
+        live price on top of this). Not returned by retrieve or list.
+      required:
+        - contract_address
+        - merchant_contract
+        - payment_currency_contract
+        - customer_ref
+        - amount
+        - payment_currency
+        - network
+        - price_snapshot
+        - expires_at
+      properties:
+        contract_address:
+          $ref: "#/components/schemas/EthAddress"
+          description: Address of the swap/purchase contract.
+        merchant_contract:
+          $ref: "#/components/schemas/EthAddress"
+          description: Address of the token and swap contract.
+        payment_currency_contract:
+          $ref: "#/components/schemas/EthAddress"
+          description: ERC-20 contract address of the payment currency.
+        customer_ref:
+          $ref: "#/components/schemas/Bytes32"
+          description: The bytes32 value to pass as the `customerRef` argument to the on-chain `buy` call.
+        amount:
+          $ref: "#/components/schemas/Amount"
+          description: Payment amount, in human-readable units.
+        payment_currency:
+          $ref: "#/components/schemas/PaymentCurrency"
+        network:
+          $ref: "#/components/schemas/Network"
+        price_snapshot:
+          type: number
+          format: double
+          description: |
+            Price per token in payment currency units at intent-creation
+            time, human-readable. Frozen — does not reflect price movement
+            after the intent was created. For live pricing, use
+            `LiveWidgetParams.current_price` via the `client_secret`
+            initialization pattern instead.
+          example: 1.0
+        expires_at:
+          $ref: "#/components/schemas/UnixTimestamp"
+          description: |
+            When this intent's 30-minute confirmation window elapses. The
+            checkout widget uses this to transition itself to an expired
+            state client-side.
+
+    LiveWidgetParams:
+      description: |
+        Response of `GET /widget/params`. Same fields as `WidgetParams`, plus
+        a live account price read fresh at request time — used by the widget
+        to detect `price_changed` conditions before on-chain confirmation.
+      allOf:
+        - $ref: "#/components/schemas/WidgetParams"
+        - type: object
+          required:
+            - object
+            - current_price
+          properties:
+            object:
+              type: string
+              enum:
+                - widget_params
+              description: String literal identifying the object type.
+            current_price:
+              type: number
+              format: double
+              description: |
+                Current price per token in payment currency units,
+                human-readable, read fresh from the account config at
+                request time (not the frozen `price_snapshot`).
+              example: 1.02
+      example:
+        object: "widget_params"
+        merchant_contract: "0xTokenAddr0000000000000000000000000000000"
+        payment_currency_contract: "0xUsdcAddr0000000000000000000000000000000"
+        customer_ref: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+        amount: 5.00
+        payment_currency: "USDC"
+        network: "base-mainnet"
+        price_snapshot: 1.0
+        expires_at: 1719342600
+        current_price: 1.02
+
+    TokenPurchaseIntent:
+      type: object
+      required:
+        - id
+        - object
+        - status
+        - customer
+        - amount
+        - payment_currency
+        - token_amount_estimate
+        - price_snapshot
+        - customer_ref
+        - tx_hash
+        - error
+        - created
+        - livemode
+      properties:
+        id:
+          type: string
+          pattern: "^tpi_"
+          description: Unique identifier for this intent, generated by the platform.
+          example: "tpi_3LMnop"
+        object:
+          type: string
+          enum:
+            - token_purchase_intent
+          description: String literal identifying the object type.
+        status:
+          $ref: "#/components/schemas/TokenPurchaseIntentStatus"
+        customer:
+          type: string
+          pattern: "^cus_"
+          description: ID of the Customer this intent belongs to.
+          example: "cus_1JX9k2"
+        amount:
+          $ref: "#/components/schemas/Amount"
+          description: Payment amount in human-readable units (e.g. `5.00` = $5.00).
+        payment_currency:
+          $ref: "#/components/schemas/PaymentCurrency"
+          description: The stablecoin used for payment.
+        token_amount_estimate:
+          $ref: "#/components/schemas/TokenAmount"
+          description: Estimated tokens to be received, in 18-decimal wei units, based on `price_snapshot`.
+        token_amount:
+          oneOf:
+            - $ref: "#/components/schemas/TokenAmount"
+            - type: "null"
+          description: |
+            Actual tokens received, in 18-decimal wei units. `null` until
+            `status` is `succeeded`, at which point this reflects the confirmed
+            on-chain amount.
+          example: null
+        price_snapshot:
+          type: number
+          format: double
+          description: |
+            Price per token in payment currency units at intent creation time,
+            human-readable. `1.0` means 1 USDC per token. Used to detect
+            `price_changed` errors if the live price moves beyond tolerance
+            before on-chain confirmation.
+          example: 1.0
+        customer_ref:
+          $ref: "#/components/schemas/Bytes32"
+          description: |
+            32-byte identifier derived from the intent ID. Passed as the
+            `customerRef` argument on-chain; used to match the on-chain
+            `Purchase` event back to this intent.
+        tx_hash:
+          oneOf:
+            - $ref: "#/components/schemas/TxHash"
+            - type: "null"
+          description: |
+            On-chain transaction hash. `null` until `status` is `succeeded`.
+          example: null
+        error:
+          oneOf:
+            - $ref: "#/components/schemas/TokenPurchaseIntentError"
+            - type: "null"
+          description: Populated when `status` is `failed`; `null` otherwise.
+          example: null
+        created:
+          $ref: "#/components/schemas/UnixTimestamp"
+        livemode:
+          type: boolean
+      example:
+        id: "tpi_3LMnop"
+        object: "token_purchase_intent"
+        status: "pending"
+        customer: "cus_1JX9k2"
+        amount: 5.00
+        payment_currency: "USDC"
+        token_amount_estimate: 5000000000000000000
+        token_amount: null
+        price_snapshot: 1.0
+        customer_ref: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+        tx_hash: null
+        error: null
+        created: 1719340800
+        livemode: true
+
+    TokenPurchaseIntentWithWidgetParams:
+      allOf:
+        - $ref: "#/components/schemas/TokenPurchaseIntent"
+        - type: object
+          required:
+            - client_secret
+          properties:
+            _widget_params:
+              $ref: "#/components/schemas/WidgetParams"
+            client_secret:
+              type: string
+              description: |
+                Bearer credential for the public `GET /widget/params`
+                lookup, format `{intent_id}_secret_{random}`. Pass this to
+                your frontend as an alternative to `_widget_params` — see
+                "Initializing the checkout widget" above. Only ever
+                returned here; not present on retrieve or list responses,
+                and not recoverable afterward.
+              example: "tpi_3LMnop_secret_9f8a2b1c3d4e5f60718293a4b5c6d7e8"
+      description: |
+        Returned only by `POST /token_purchase_intents`. Identical to
+        `TokenPurchaseIntent` with the addition of `_widget_params` and
+        `client_secret`, either of which the frontend checkout widget can
+        use to initialize itself.
+
+    Account:
+      type: object
+      required:
+        - object
+        - network
+        - merchant_contract
+        - merchant_wallet
+        - currency_contracts
+        - livemode
+      properties:
+        object:
+          type: string
+          enum:
+            - account
+          description: String literal identifying the object type.
+        network:
+          $ref: "#/components/schemas/Network"
+        merchant_contract:
+          $ref: "#/components/schemas/EthAddress"
+          description: ERC-20 token and swap contract address.
+        merchant_wallet:
+          $ref: "#/components/schemas/EthAddress"
+          description: Destination address for incoming stablecoin payments.
+        currency_contracts:
+          type: object
+          description: |
+            Map of accepted payment currency symbols to their ERC-20 contract
+            addresses on this account's active network. Use this to determine
+            which values are valid for the `payment_currency` field.
+          additionalProperties:
+            $ref: "#/components/schemas/EthAddress"
+          example:
+            USDC: "0xUsdcAddr0000000000000000000000000000000"
+            USDT: "0xUsdtAddr0000000000000000000000000000000"
+        livemode:
+          type: boolean
+      example:
+        object: "account"
+        network: "base-mainnet"
+        merchant_contract: "0xTokenAddr0000000000000000000000000000000"
+        merchant_wallet: "0xCompanyWallet00000000000000000000000000"
+        currency_contracts:
+          USDC: "0xUsdcAddr0000000000000000000000000000000"
+          USDT: "0xUsdtAddr0000000000000000000000000000000"
+        livemode: true
+
+    # ── List wrapper ─────────────────────────────────────────────────────────
+
+    TokenPurchaseIntentList:
+      type: object
+      required:
+        - object
+        - data
+        - has_more
+      properties:
+        object:
+          type: string
+          enum:
+            - list
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/TokenPurchaseIntent"
+        has_more:
+          type: boolean
+          description: Whether there are more results beyond this page.
+        url:
+          type: string
+          description: The URL of this list endpoint.
+          example: "/v1/token_purchase_intents"
+      example:
+        object: "list"
+        data:
+          - id: "tpi_3LMnop"
+            object: "token_purchase_intent"
+            status: "succeeded"
+            customer: "cus_1JX9k2"
+            amount: 5.00
+            payment_currency: "USDC"
+            token_amount_estimate: 5000000000000000000
+            token_amount: 5000000000000000000
+            price_snapshot: 1.0
+            customer_ref: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+            tx_hash: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+            error: null
+            created: 1719340800
+            livemode: true
+        has_more: false
+        url: "/v1/token_purchase_intents"
+
+    # ── Webhook event schemas ────────────────────────────────────────────────
+
+    EventType:
+      type: string
+      enum:
+        - token_purchase_intent.created
+        - token_purchase_intent.succeeded
+        - token_purchase_intent.failed
+        - token_purchase_intent.canceled
+
+    EventBase:
+      type: object
+      required:
+        - id
+        - object
+        - type
+        - created
+        - livemode
+        - data
+      properties:
+        id:
+          type: string
+          pattern: "^evt_"
+          example: "evt_2Pqrst"
+        object:
+          type: string
+          enum:
+            - event
+        type:
+          $ref: "#/components/schemas/EventType"
+        created:
+          $ref: "#/components/schemas/UnixTimestamp"
+        livemode:
+          type: boolean
+        data:
+          type: object
+          required:
+            - object
+          properties:
+            object:
+              $ref: "#/components/schemas/TokenPurchaseIntent"
+
+    TokenPurchaseIntentCreatedEvent:
+      allOf:
+        - $ref: "#/components/schemas/EventBase"
+        - type: object
+          properties:
+            type:
+              type: string
+              enum:
+                - token_purchase_intent.created
+
+    TokenPurchaseIntentSucceededEvent:
+      allOf:
+        - $ref: "#/components/schemas/EventBase"
+        - type: object
+          properties:
+            type:
+              type: string
+              enum:
+                - token_purchase_intent.succeeded
+          description: |
+            Fired when the on-chain `Purchase` event is confirmed.
+            Credit `data.object.token_amount` to the customer's ledger
+            when you receive this event.
+
+    TokenPurchaseIntentFailedEvent:
+      allOf:
+        - $ref: "#/components/schemas/EventBase"
+        - type: object
+          properties:
+            type:
+              type: string
+              enum:
+                - token_purchase_intent.failed
+          description: |
+            Fired when the on-chain transaction reverts or confirmation times
+            out. `data.object.error` is populated with the reason.
+
+    TokenPurchaseIntentCanceledEvent:
+      allOf:
+        - $ref: "#/components/schemas/EventBase"
+        - type: object
+          properties:
+            type:
+              type: string
+              enum:
+                - token_purchase_intent.canceled
+          description: |
+            Fired when an intent expires unconfirmed after 30 minutes.
+            No ledger change is required; optionally prompt the customer
+            to retry.
+
+    WebhookEvent:
+      oneOf:
+        - $ref: "#/components/schemas/TokenPurchaseIntentCreatedEvent"
+        - $ref: "#/components/schemas/TokenPurchaseIntentSucceededEvent"
+        - $ref: "#/components/schemas/TokenPurchaseIntentFailedEvent"
+        - $ref: "#/components/schemas/TokenPurchaseIntentCanceledEvent"
+      discriminator:
+        propertyName: type
+        mapping:
+          "token_purchase_intent.created":   "#/components/schemas/TokenPurchaseIntentCreatedEvent"
+          "token_purchase_intent.succeeded": "#/components/schemas/TokenPurchaseIntentSucceededEvent"
+          "token_purchase_intent.failed":    "#/components/schemas/TokenPurchaseIntentFailedEvent"
+          "token_purchase_intent.canceled":  "#/components/schemas/TokenPurchaseIntentCanceledEvent"
+
+  # ── Reusable responses ─────────────────────────────────────────────────────
+  responses:
+
+    Unauthorized:
+      description: Authentication failed — missing or invalid API key.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+          example:
+            error:
+              type: invalid_request_error
+              message: "No valid API key provided."
+
+    NotFound:
+      description: The requested resource does not exist, or belongs to a different mode.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+          example:
+            error:
+              type: invalid_request_error
+              message: "No such customer: 'cus_unknown'."
+              param: id
+
+    InvalidRequest:
+      description: Bad input — missing or malformed parameter.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+          example:
+            error:
+              type: invalid_request_error
+              message: "Missing required parameter: amount."
+              param: amount
+
+    ServerError:
+      description: Something went wrong on our end.
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+          example:
+            error:
+              type: api_error
+              message: "An unexpected error occurred. Please try again."
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Paths
+# ──────────────────────────────────────────────────────────────────────────────
+paths:
+
+  # ── Customers ──────────────────────────────────────────────────────────────
+
+  /customers:
+    post:
+      operationId: createCustomer
+      summary: Create a customer
+      description: |
+        Creates a new customer record. Call this once per customer, the first
+        time they interact with the Token Purchase API. Store the returned `id`
+        in your own database — you'll pass it to every
+        `token_purchase_intents` call.
+
+        If a customer with the same `external_customer_id` already exists for
+        your account and mode, the existing customer is returned rather than
+        creating a duplicate. This makes the call safe to retry.
+      tags:
+        - Customers
+      parameters:
+        - $ref: "#/components/parameters/IdempotencyKey"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - external_customer_id
+              properties:
+                external_customer_id:
+                  type: string
+                  description: Your internal identifier for this customer.
+                  example: "user_88210"
+            example:
+              external_customer_id: "user_88210"
+      responses:
+        "201":
+          description: Customer created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+        "400":
+          $ref: "#/components/responses/InvalidRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "500":
+          $ref: "#/components/responses/ServerError"
+
+  /customers/{id}:
+    get:
+      operationId: retrieveCustomer
+      summary: Retrieve a customer
+      description: Retrieves an existing customer by their platform-generated ID.
+      tags:
+        - Customers
+      parameters:
+        - $ref: "#/components/parameters/CustomerId"
+      responses:
+        "200":
+          description: Customer retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Customer"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ── Token Purchase Intents ─────────────────────────────────────────────────
+
+  /token_purchase_intents:
+    post:
+      operationId: createTokenPurchaseIntent
+      summary: Create a token purchase intent
+      description: |
+        Creates a new intent to purchase tokens with a stablecoin. The response
+        includes a `_widget_params` object with everything the frontend checkout
+        widget needs to drive the on-chain confirmation step — your backend
+        never constructs a transaction.
+
+        The intent starts in `pending` state and expires to `canceled`
+        if unconfirmed within 30 minutes. Final status arrives via webhook,
+        not in the creation response.
+
+        The accepted values for `payment_currency` are listed under
+        `currency_contracts` in the `GET /account` response.
+      tags:
+        - Token Purchase Intents
+      parameters:
+        - $ref: "#/components/parameters/IdempotencyKey"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - customer
+                - amount
+                - payment_currency
+                - price_per_token
+              properties:
+                customer:
+                  type: string
+                  pattern: "^cus_"
+                  description: ID of the customer making this purchase.
+                  example: "cus_1JX9k2"
+                amount:
+                  $ref: "#/components/schemas/Amount"
+                  description: |
+                    Payment amount in human-readable units. `5.00` = $5.00.
+                payment_currency:
+                  $ref: "#/components/schemas/PaymentCurrency"
+                  description: |
+                    The stablecoin to pay with. Must be one of the currencies
+                    listed in `GET /account` → `currency_contracts`.
+                price_per_token:
+                  type: number
+                  format: double
+                  description: |
+                    The exchange rate for this specific transaction,
+                    expressed as stablecoin units per token (e.g. `1.0` = 1 stablecoin per token).
+            example:
+              customer: "cus_1JX9k2"
+              amount: 5.00
+              payment_currency: "USDC"
+              price_per_token: 1.05
+      responses:
+        "201":
+          description: |
+            Intent created. Status is `pending`. Pass `_widget_params` to
+            the frontend checkout widget to drive the on-chain confirmation.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenPurchaseIntentWithWidgetParams"
+        "400":
+          $ref: "#/components/responses/InvalidRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "500":
+          $ref: "#/components/responses/ServerError"
+
+    get:
+      operationId: listTokenPurchaseIntents
+      summary: List token purchase intents
+      description: |
+        Returns a cursor-paginated list of token purchase intents, most
+        recent first. Supports filtering by customer and/or status.
+      tags:
+        - Token Purchase Intents
+      parameters:
+        - name: customer
+          in: query
+          required: false
+          schema:
+            type: string
+            pattern: "^cus_"
+            example: "cus_1JX9k2"
+          description: Filter to intents belonging to this customer ID.
+
+        - name: status
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/TokenPurchaseIntentStatus"
+          description: Filter by lifecycle status.
+
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
+          description: Maximum number of results to return per page.
+
+        - name: starting_after
+          in: query
+          required: false
+          schema:
+            type: string
+            pattern: "^tpi_"
+            example: "tpi_3LMnop"
+          description: |
+            Cursor for forward pagination. Pass the `id` of the last object
+            from the previous page to retrieve the next page.
+
+      responses:
+        "200":
+          description: Paginated list of intents.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenPurchaseIntentList"
+        "400":
+          $ref: "#/components/responses/InvalidRequest"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /token_purchase_intents/{id}:
+    get:
+      operationId: retrieveTokenPurchaseIntent
+      summary: Retrieve a token purchase intent
+      description: |
+        Retrieves a single intent by its ID. You can poll this endpoint to
+        check status, or rely on webhooks — both patterns work. Webhooks are
+        preferred for production to avoid polling overhead.
+      tags:
+        - Token Purchase Intents
+      parameters:
+        - $ref: "#/components/parameters/TokenPurchaseIntentId"
+      responses:
+        "200":
+          description: Intent retrieved.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenPurchaseIntent"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  # ── Widget ─────────────────────────────────────────────────────────────────
+
+  /widget/params:
+    get:
+      operationId: retrieveWidgetParams
+      summary: Retrieve live widget params by client secret
+      description: |
+        Public, unauthenticated endpoint used internally by the checkout
+        widget when it's initialized with `clientSecret` rather than
+        `params`. Possession of the `client_secret` returned from
+        `POST /token_purchase_intents` is the only authorization required —
+        no `Authorization` header is checked or accepted. There's normally
+        no need to call this endpoint directly; the widget calls it for you.
+
+        Unlike the `_widget_params` snapshot returned at intent-creation
+        time, this adds one live value: `current_price`, read fresh from the
+        account config, used to detect `price_changed` conditions before
+        on-chain confirmation.
+      tags:
+        - Widget
+      security: []
+      parameters:
+        - name: client_secret
+          in: query
+          required: true
+          schema:
+            type: string
+            example: "tpi_3LMnop_secret_9f8a2b1c3d4e5f60718293a4b5c6d7e8"
+          description: |
+            The `client_secret` from the `POST /token_purchase_intents`
+            response for this intent.
+      responses:
+        "200":
+          description: Live widget params for the intent matching this client secret.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LiveWidgetParams"
+        "400":
+          description: Missing `client_secret` query parameter.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+              example:
+                error:
+                  type: invalid_request_error
+                  code: missing_required_param
+                  message: "client_secret query parameter is required."
+                  param: client_secret
+        "404":
+          description: No intent found for that client_secret.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+              example:
+                error:
+                  type: invalid_request_error
+                  code: resource_not_found
+                  message: "No intent found for that client_secret."
+                  param: client_secret
+
+  # ── Account ────────────────────────────────────────────────────────────────
+
+  /account:
+    get:
+      operationId: retrieveAccount
+      summary: Retrieve account configuration
+      description: |
+        Returns read-only reference info for the account associated with the
+        API key in use: current token price, contract addresses, accepted
+        payment currencies, and which network is active.
+
+        Call this on startup to pre-load config before initialising the widget,
+        and to confirm you're using the right key type (test vs. live).
+      tags:
+        - Account
+      responses:
+        "200":
+          description: Account configuration retrieved.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Account"
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Webhooks (OpenAPI 3.1 — described here so clients can validate inbound payloads)
+# ──────────────────────────────────────────────────────────────────────────────
+webhooks:
+
+  token_purchase_intent.created:
+    post:
+      operationId: onTokenPurchaseIntentCreated
+      summary: Token purchase intent created
+      description: Fired when a new intent is created.
+      tags:
+        - Webhooks
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TokenPurchaseIntentCreatedEvent"
+      responses:
+        "200":
+          description: |
+            Return any 2xx status to acknowledge receipt. Anything else causes
+            the platform to retry with exponential back-off (5s → 30s → 5m → 30m → 2h).
+
+  token_purchase_intent.succeeded:
+    post:
+      operationId: onTokenPurchaseIntentSucceeded
+      summary: Token purchase intent succeeded
+      description: |
+        Fired when the on-chain `Purchase` event is confirmed. Credit
+        `data.object.token_amount` to the customer identified by
+        `data.object.customer` in your own ledger.
+      tags:
+        - Webhooks
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TokenPurchaseIntentSucceededEvent"
+            example:
+              id: "evt_2Pqrst"
+              object: "event"
+              type: "token_purchase_intent.succeeded"
+              created: 1719340860
+              livemode: true
+              data:
+                object:
+                  id: "tpi_3LMnop"
+                  object: "token_purchase_intent"
+                  status: "succeeded"
+                  customer: "cus_1JX9k2"
+                  amount: 5.00
+                  payment_currency: "USDC"
+                  token_amount_estimate: 5000000000000000000
+                  token_amount: 5000000000000000000
+                  price_snapshot: 1.0
+                  customer_ref: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+                  tx_hash: "0xabc123def456abc123def456abc123def456abc123def456abc123def456abc1"
+                  error: null
+                  created: 1719340800
+                  livemode: true
+      responses:
+        "200":
+          description: Acknowledged.
+
+  token_purchase_intent.failed:
+    post:
+      operationId: onTokenPurchaseIntentFailed
+      summary: Token purchase intent failed
+      description: |
+        Fired when the on-chain transaction reverts or confirmation times out.
+        No ledger change is required. Notify the customer and prompt a retry
+        if appropriate.
+      tags:
+        - Webhooks
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TokenPurchaseIntentFailedEvent"
+      responses:
+        "200":
+          description: Acknowledged.
+
+  token_purchase_intent.canceled:
+    post:
+      operationId: onTokenPurchaseIntentCanceled
+      summary: Token purchase intent canceled
+      description: |
+        Fired when an intent expires unconfirmed after the 30-minute window.
+        No ledger change required. Optionally prompt the customer to create a
+        new intent and retry.
+      tags:
+        - Webhooks
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TokenPurchaseIntentCanceledEvent"
+      responses:
+        "200":
+          description: Acknowledged.
