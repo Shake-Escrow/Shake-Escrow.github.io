@@ -5,7 +5,7 @@ info:
   version: "1.1.0"
   description: |
     Sell tokens for stablecoins without touching wallets, gas, or smart contracts
-    directly. Modeled on Stripe's Payment Intents API: create a
+    directly. Modeled on popular Payment Intents APIs: create a
     **TokenPurchaseIntent**, a hosted widget confirms it on-chain, and a
     **webhook** tells you what actually happened.
 
@@ -41,7 +41,7 @@ info:
       log it, and don't let one customer see another's.
 
     `GET /widget/params` deliberately requires no API key — possession of the
-    `client_secret` is the only authorization, mirroring Stripe's
+    `client_secret` is the only authorization, mirroring the standard
     PaymentIntent `client_secret` pattern.
 
     ## Test vs. live mode
