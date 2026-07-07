@@ -98,6 +98,21 @@ tags:
       from creating an intent only ever means "accepted" — final status arrives
       via webhook.
 
+      ### Webhook Signatures
+
+      To verify that a webhook actually came from the platform, you must validate
+      the `Platform-Signature` header. The signature is computed using
+      **HMAC SHA-256** over a string formatted as `<timestamp>.<payload>`.
+
+      The `Platform-Signature` header looks like this:
+      `t=1719340800,v1=5d4a...`
+
+      1. Extract the timestamp (`t`) and the signature (`v1`).
+      2. Construct the signed payload: concatenate the timestamp, a dot (`.`), and the raw JSON body (exactly as received).
+      3. Compute the HMAC SHA-256 digest of the signed payload using your endpoint's `signing_secret` (retrieved from `GET /account`).
+      4. Compare your computed digest against the `v1` signature in the header using a constant-time equality check.
+      5. Reject the payload if the signatures don't match, or if the timestamp is more than 5 minutes old (to prevent replay attacks).
+
 # ──────────────────────────────────────────────────────────────────────────────
 # Components
 # ──────────────────────────────────────────────────────────────────────────────
@@ -591,6 +606,7 @@ components:
         - merchant_contract
         - merchant_wallet
         - currency_contracts
+        - webhook_endpoints
         - livemode
       properties:
         object:
@@ -617,6 +633,14 @@ components:
           example:
             USDC: "0xUsdcAddr0000000000000000000000000000000"
             USDT: "0xUsdtAddr0000000000000000000000000000000"
+        webhook_endpoints:
+          type: array
+          items:
+            $ref: "#/components/schemas/WebhookEndpoint"
+          description: |
+            List of webhook endpoints configured for this account. You can use
+            the `signing_secret` from these endpoints to verify incoming
+            `Platform-Signature` headers.
         livemode:
           type: boolean
       example:
@@ -627,7 +651,62 @@ components:
         currency_contracts:
           USDC: "0xUsdcAddr0000000000000000000000000000000"
           USDT: "0xUsdtAddr0000000000000000000000000000000"
+        webhook_endpoints:
+          - id: "we_9BcdeF"
+            object: "webhook_endpoint"
+            url: "https://example.com/webhooks"
+            signing_secret: "whsec_live_abcdef1234567890"
+            enabled_events:
+              - "token_purchase_intent.succeeded"
+              - "token_purchase_intent.failed"
+            active: true
+            created: 1719340800
+            livemode: true
         livemode: true
+
+    WebhookEndpoint:
+      type: object
+      required:
+        - id
+        - object
+        - url
+        - signing_secret
+        - enabled_events
+        - active
+        - created
+        - livemode
+      properties:
+        id:
+          type: string
+          pattern: "^we_"
+          description: Unique identifier for this webhook endpoint.
+          example: "we_9BcdeF"
+        object:
+          type: string
+          enum:
+            - webhook_endpoint
+        url:
+          type: string
+          description: The HTTPS URL where events will be delivered.
+          example: "https://example.com/webhooks"
+        signing_secret:
+          type: string
+          description: |
+            The secret used to sign webhook payloads. Use this to verify the
+            `Platform-Signature` header.
+          example: "whsec_live_abcdef1234567890"
+        enabled_events:
+          type: array
+          items:
+            $ref: "#/components/schemas/EventType"
+          description: List of events this endpoint listens to. Empty array means all events.
+        active:
+          type: boolean
+          description: Whether this endpoint is currently receiving events.
+        created:
+          $ref: "#/components/schemas/UnixTimestamp"
+        livemode:
+          type: boolean
 
     # ── List wrapper ─────────────────────────────────────────────────────────
 
