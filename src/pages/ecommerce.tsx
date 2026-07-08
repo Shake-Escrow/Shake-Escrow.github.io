@@ -282,7 +282,23 @@ const Ecommerce: React.FC = () => {
             <div className="bg-gray-50 p-6 md:p-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
               <div className="flex items-center mb-4 md:mb-0">
                 <ShieldCheck className="w-5 h-5 mr-2 text-green-500" />
-                <span>{ecommerce.secureDeployment}</span>
+                <span>
+                  {ecommerce.secureDeployment.split('Base').map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      {part}
+                      {i < arr.length - 1 && (
+                        <a
+                          href="https://base.org"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-indigo-600 transition-colors underline decoration-dotted underline-offset-4"
+                        >
+                          Base
+                        </a>
+                      )}
+                    </React.Fragment>
+                  ))}
+                </span>
               </div>
               <div className="flex items-center">
                 <Code className="w-5 h-5 mr-2 text-indigo-500" />
