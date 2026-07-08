@@ -388,6 +388,18 @@
     "saveRecoveryPhraseDescriptionOnly": "ÚNICA",
     "saveRecoveryPhraseDescription2": " manera de acceder a tus fondos. Escríbela y guárdala en un lugar seguro. ",
     "saveRecoveryPhraseDescriptionWarning": "Shake DeFi no almacena claves privadas ni mnemónicos.",
-    "saveRecoveryPhraseDescription3": " Si las pierdes, tus fondos se perderán para siempre y esencialmente tendrás que crear una nueva cuenta."
+    "saveRecoveryPhraseDescription3": " Si las pierdes, tus fondos se perderán para siempre y esencialmente tendrás que crear una nueva cuenta.",
+    "explainerTitle": "Cómo funciona el sistema de pagos",
+    "explainerSubtitle1": "Nuestra arquitectura de pagos conecta de forma fluida y segura tu tienda con las billeteras de tus clientes. A continuación se presenta el ciclo de vida completo de un pago, desde la creación del intento hasta la liquidación final.",
+    "explainerSubtitleLinkText": "Haz clic en una acción numerada",
+    "explainerSubtitle2": " en el diagrama para ver su documentación de la API.",
+    "diagramLabel": "Diagrama del flujo de pago",
+    "step1Title": "Intento y Widget",
+    "step1Text": "Tu backend crea un intento de compra a través de nuestra API. El widget utiliza el secreto de cliente resultante para obtener de forma segura los precios y los vales criptográficos para la transacción.",
+    "step2Title": "Firma del Cliente",
+    "step2Text": "La billetera del cliente firma la transacción, llamando directamente al contrato inteligente. Shake DeFi actúa estrictamente como un facilitador descentralizado.",
+    "step3Title": "Liquidación y Webhooks",
+    "step3Text": "Tras una compra exitosa en la cadena, el contrato inteligente liquida los fondos en tu billetera de comerciante de inmediato. Nuestro backend detecta esto y envía un webhook a tu sistema.",
+    "getStartedTitle": "Empezar"
   }
 }

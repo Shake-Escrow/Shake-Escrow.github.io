@@ -2,7 +2,7 @@
 <!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+	 width="612px" height="600px" viewBox="0 0 612 600" enable-background="new 0 0 612 600" xml:space="preserve">
 <title  opacity="1" fill="#000000" stroke="none" color="#0B0B0B" text-anchor="start" font-weight="400" font-size="16px" font-family="&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" dominant-baseline="auto">
 	Full flow: checkout through settlement to merchant withdrawal</title>
 <desc  opacity="1" fill="#000000" stroke="none" color="#0B0B0B" text-anchor="start" font-weight="400" font-size="16px" font-family="&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" dominant-baseline="auto">
@@ -13,12 +13,14 @@
 <path fill="none" stroke="#898781" stroke-width="0.5" stroke-dasharray="4,3" d="M288,87.3v367.2"/>
 <path fill="none" stroke="#898781" stroke-width="0.5" stroke-dasharray="4,3" d="M391.5,87.3v367.2"/>
 <path fill="none" stroke="#898781" stroke-width="0.5" stroke-dasharray="4,3" d="M495,87.3v295.2"/>
-<g>
-	<path fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5" d="M43.2,40.5h75.6c3.977,0,7.2,3.224,7.2,7.2v32.4
-		c0,3.977-3.224,7.2-7.2,7.2H43.2c-3.977,0-7.2-3.223-7.2-7.2V47.7C36,43.724,39.224,40.5,43.2,40.5z"/>
-	<text transform="matrix(1 0 0 1 54.7388 56.7002)" fill="#444441" font-family="'ArialMT'" font-size="12.6">Merchant</text>
-	<text transform="matrix(1 0 0 1 57.1812 72.9004)" fill="#444441" font-family="'ArialMT'" font-size="12.6">backend</text>
-</g>
+<a href="https://www.npmjs.com/package/@shake-defi/node" target="_blank">
+	<g>
+		<path fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5" d="M43.2,40.5h75.6c3.977,0,7.2,3.224,7.2,7.2v32.4
+			c0,3.977-3.224,7.2-7.2,7.2H43.2c-3.977,0-7.2-3.223-7.2-7.2V47.7C36,43.724,39.224,40.5,43.2,40.5z"/>
+		<text transform="matrix(1 0 0 1 54.7388 56.7002)" fill="#444441" font-family="'ArialMT'" font-size="12.6">Merchant</text>
+		<text transform="matrix(1 0 0 1 57.1812 72.9004)" fill="#444441" font-family="'ArialMT'" font-size="12.6">backend</text>
+	</g>
+</a>
 <g>
 	<path fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5" d="M146.7,40.5h75.6c3.977,0,7.2,3.224,7.2,7.2v32.4
 		c0,3.977-3.224,7.2-7.2,7.2h-75.6c-3.977,0-7.2-3.223-7.2-7.2V47.7C139.5,43.724,142.724,40.5,146.7,40.5z"/>
@@ -46,17 +48,23 @@
 	<text transform="matrix(1 0 0 1 472.5898 72.9004)" fill="#085041" font-family="'ArialMT'" font-size="12.6">contract</text>
 </g>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M81,121.5h103.5"/>
-<path fill="#FFFFFF" d="M57.6,105.3H207c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.209,2.7-2.7,2.7H57.6c-1.491,0-2.7-1.209-2.7-2.7v-9
-	C54.9,106.509,56.109,105.3,57.6,105.3z"/>
-<text transform="matrix(1 0 0 1 68.9634 112.5)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">1. Creates purchase intent</text>
+<a href="/api-docs#operation/createTokenPurchaseIntent" target="_blank">
+	<path fill="#FFFFFF" d="M57.6,105.3H207c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.209,2.7-2.7,2.7H57.6c-1.491,0-2.7-1.209-2.7-2.7v-9
+		C54.9,106.509,56.109,105.3,57.6,105.3z"/>
+	<text transform="matrix(1 0 0 1 68.9634 112.5)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">1. Creates purchase intent</text>
+</a>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M81,173.7h207"/>
-<path fill="#FFFFFF" d="M118.8,157.5h132.3c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.208,2.7-2.7,2.7H118.8
-	c-1.491,0-2.7-1.208-2.7-2.7v-9C116.1,158.709,117.309,157.5,118.8,157.5z"/>
-<text transform="matrix(1 0 0 1 128.9736 164.7002)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">2. Passes client_secret</text>
+<a href="/api-docs#description/initializing-the-checkout-widget" target="_blank">
+	<path fill="#FFFFFF" d="M118.8,157.5h132.3c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.208,2.7-2.7,2.7H118.8
+		c-1.491,0-2.7-1.208-2.7-2.7v-9C116.1,158.709,117.309,157.5,118.8,157.5z"/>
+	<text transform="matrix(1 0 0 1 128.9736 164.7002)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">2. Passes client_secret</text>
+</a>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M288,225.9H184.5"/>
-<path fill="#FFFFFF" d="M161.1,209.7h150.3c1.491,0,2.699,1.208,2.699,2.7v9c0,1.491-1.208,2.7-2.699,2.7H161.1
-	c-1.491,0-2.7-1.209-2.7-2.7v-9C158.4,210.909,159.609,209.7,161.1,209.7z"/>
-<text transform="matrix(1 0 0 1 172.0181 216.9004)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">3. Fetches price + voucher</text>
+<a href="/api-docs#operation/retrieveWidgetParams" target="_blank">
+	<path fill="#FFFFFF" d="M161.1,209.7h150.3c1.491,0,2.699,1.208,2.699,2.7v9c0,1.491-1.208,2.7-2.699,2.7H161.1
+		c-1.491,0-2.7-1.209-2.7-2.7v-9C158.4,210.909,159.609,209.7,161.1,209.7z"/>
+	<text transform="matrix(1 0 0 1 172.0181 216.9004)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">3. Fetches price + voucher</text>
+</a>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M288,278.1h103.5"/>
 <path fill="#FFFFFF" d="M279.9,261.9h120.6c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.209,2.7-2.7,2.7H279.9
 	c-1.491,0-2.7-1.208-2.7-2.7v-9C277.2,263.109,278.409,261.9,279.9,261.9z"/>
@@ -70,9 +78,11 @@
 	v-9C261.9,367.509,263.109,366.3,264.6,366.3z"/>
 <text transform="matrix(1 0 0 1 275.9663 373.5)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">6. Detects Purchase event</text>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M184.5,434.7H81"/>
-<path fill="#FFFFFF" d="M72,418.5h120.6c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.208,2.7-2.7,2.7H72c-1.491,0-2.7-1.209-2.7-2.7v-9
-	C69.3,419.709,70.509,418.5,72,418.5z"/>
-<text transform="matrix(1 0 0 1 74.4609 425.7002)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">7. Webhook: succeeded</text>
+<a href="/api-docs#operation/onTokenPurchaseIntentSucceeded" target="_blank">
+	<path fill="#FFFFFF" d="M72,418.5h120.6c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.208,2.7-2.7,2.7H72c-1.491,0-2.7-1.209-2.7-2.7v-9
+		C69.3,419.709,70.509,418.5,72,418.5z"/>
+	<text transform="matrix(1 0 0 1 74.4609 425.7002)" fill="#52514E" font-family="'ArialMT'" font-size="10.8">7. Webhook: succeeded</text>
+</a>
 <path fill="none" stroke="#898781" stroke-width="1.5" d="M495,382.5v144"/>
 <path fill="#FFFFFF" d="M324.9,447.3H483.3c1.491,0,2.7,1.209,2.7,2.7v9c0,1.491-1.209,2.7-2.7,2.7H324.9
 	c-1.491,0-2.7-1.209-2.7-2.7v-9C322.2,448.509,323.409,447.3,324.9,447.3z"/>

@@ -94,7 +94,7 @@ const Ecommerce: React.FC = () => {
       const activeWordlist = locale === 'es' ? wordlistEs : wordlistEn;
       const mnemonic = generateMnemonic(activeWordlist);
       const account = mnemonicToAccount(mnemonic);
-      
+
       setGeneratedMnemonic(mnemonic);
       setMerchantWallet(account.address);
       setError(null);
@@ -110,8 +110,8 @@ const Ecommerce: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6 pt-24">
-      <div className="max-w-4xl w-full">
+    <div className="min-h-screen bg-gray-50 pt-24 pb-12 px-6">
+      <div className="max-w-4xl w-full mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
             {ecommerce.title}
@@ -121,9 +121,54 @@ const Ecommerce: React.FC = () => {
           </p>
         </div>
 
+        {/* Payment Flow Explainer Section */}
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+          <div className="p-8 md:p-12">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-extrabold text-gray-900 mb-4">{ecommerce.explainerTitle}</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                {ecommerce.explainerSubtitle1}
+                <br /><span className="font-semibold text-indigo-600">{ecommerce.explainerSubtitleLinkText}</span>{ecommerce.explainerSubtitle2}
+              </p>
+            </div>
+
+            <div className="flex justify-center bg-white rounded-2xl border border-gray-100 shadow-inner overflow-hidden mb-10 p-4">
+              <object
+                data="/assets/full_checkout_settlement_and_withdrawal_cs3.svg"
+                type="image/svg+xml"
+                className="w-full h-auto max-w-3xl"
+                aria-label={ecommerce.diagramLabel}
+              >
+                {ecommerce.diagramLabel}
+              </object>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-lg mb-4">1</div>
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">{ecommerce.step1Title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">{ecommerce.step1Text}</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-lg mb-4">2</div>
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">{ecommerce.step2Title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">{ecommerce.step2Text}</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center font-bold text-lg mb-4">3</div>
+                <h4 className="font-bold text-gray-900 mb-2 text-lg">{ecommerce.step3Title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">{ecommerce.step3Text}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {!result ? (
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+          <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="p-8 md:p-12">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl font-extrabold text-gray-900 mb-4">{ecommerce.getStartedTitle}</h2>
+              </div>
               <form onSubmit={handleProvision} className="space-y-8">
                 <div>
                   <label htmlFor="accountName" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -241,7 +286,7 @@ const Ecommerce: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Code className="w-5 h-5 mr-2 text-indigo-500" />
-                <a 
+                <a
                   href="/api-docs"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -253,7 +298,7 @@ const Ecommerce: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+          <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="p-8 md:p-12 text-center border-b border-gray-100">
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
                 <CheckCircle2 className="h-8 w-8 text-green-600" />
@@ -361,6 +406,7 @@ const Ecommerce: React.FC = () => {
 
           </div>
         )}
+
       </div>
     </div>
   );

@@ -388,6 +388,18 @@
     "saveRecoveryPhraseDescriptionOnly": "ONLY",
     "saveRecoveryPhraseDescription2": " way to access your funds. Write it down and keep it safe in a secure location. ",
     "saveRecoveryPhraseDescriptionWarning": "Shake DeFi does not store private keys or mnemonics.",
-    "saveRecoveryPhraseDescription3": " If you lose them, your funds will be lost forever and you must essentially create a new account."
+    "saveRecoveryPhraseDescription3": " If you lose them, your funds will be lost forever and you must essentially create a new account.",
+    "explainerTitle": "How the Payment System Works",
+    "explainerSubtitle1": "Our payment architecture seamlessly and securely connects your storefront to your customers' wallets. Below is the complete lifecycle of a payment, from intent creation to final settlement.",
+    "explainerSubtitleLinkText": "Click on a numbered action",
+    "explainerSubtitle2": " in the diagram to view its API documentation.",
+    "diagramLabel": "Payment Flow Diagram",
+    "step1Title": "Intent & Widget",
+    "step1Text": "Your backend creates a purchase intent via our API. The widget uses the resulting client secret to securely fetch pricing and cryptographic vouchers for the transaction.",
+    "step2Title": "Customer Signature",
+    "step2Text": "The customer's wallet signs the transaction, calling the smart contract directly. Shake DeFi acts strictly as a decentralized facilitator.",
+    "step3Title": "Settlement & Webhooks",
+    "step3Text": "Upon successful on-chain purchase, the smart contract settles funds to your merchant wallet immediately. Our backend detects this and sends a webhook to your system.",
+    "getStartedTitle": "Get Started"
   }
 }
