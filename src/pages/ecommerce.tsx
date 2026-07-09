@@ -83,6 +83,7 @@ const Ecommerce: React.FC = () => {
       const accounts = await provider.request({ method: 'eth_requestAccounts' });
       if (accounts && accounts.length > 0) {
         setMerchantWallet(accounts[0]);
+        setGeneratedMnemonic(null);
         setError(null);
       }
     } catch (err: any) {
@@ -228,7 +229,10 @@ const Ecommerce: React.FC = () => {
                       type="text"
                       id="merchantWallet"
                       value={merchantWallet}
-                      onChange={(e) => setMerchantWallet(e.target.value)}
+                      onChange={(e) => {
+                        setMerchantWallet(e.target.value);
+                        setGeneratedMnemonic(null);
+                      }}
                       className="flex-1 px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 font-mono text-sm placeholder-gray-400"
                       placeholder={ecommerce.merchantWalletPlaceholder}
                       required
