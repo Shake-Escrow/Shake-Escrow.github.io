@@ -402,6 +402,7 @@
     "step2Text": "La billetera del cliente firma la transacción, llamando directamente al contrato inteligente. Shake DeFi actúa estrictamente como un facilitador descentralizado.",
     "step3Title": "Liquidación y Webhooks",
     "step3Text": "Tras una compra exitosa en la cadena, el contrato inteligente liquida los fondos en tu billetera de comerciante de inmediato. Nuestro backend detecta esto y envía un webhook a tu sistema.",
-    "getStartedTitle": "Empezar"
+    "getStartedTitle": "Empezar",
+    "downloadData": "Descargar Datos (.txt)"
   }
 }

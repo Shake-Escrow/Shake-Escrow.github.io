@@ -1,6 +1,6 @@
 // src/pages/ecommerce.tsx
 import React, { useState } from 'react';
-import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code } from 'lucide-react';
+import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code, Download } from 'lucide-react';
 import { generateMnemonic } from '@scure/bip39';
 import { wordlist as wordlistEn } from '@scure/bip39/wordlists/english.js';
 import { wordlist as wordlistEs } from '@scure/bip39/wordlists/spanish.js';
@@ -108,6 +108,39 @@ const Ecommerce: React.FC = () => {
     navigator.clipboard.writeText(text);
     setCopiedKey(id);
     setTimeout(() => setCopiedKey(null), 2000);
+  };
+
+  const handleDownloadData = () => {
+    if (!result) return;
+    
+    let content = `Account Name: ${accountName}\n`;
+    content += `Merchant Wallet: ${merchantWallet}\n\n`;
+    if (generatedMnemonic) {
+      content += `Recovery Phrase (Mnemonic): ${generatedMnemonic}\n`;
+      content += `WARNING: Keep this phrase secure. It is the ONLY way to access your funds.\n\n`;
+    }
+    
+    content += `--- Smart Contracts ---\n`;
+    content += `Test Smart Contract: ${result.contractAddressTest}\n`;
+    content += `Live Smart Contract: ${result.contractAddressLive}\n\n`;
+    
+    content += `--- Test API Keys ---\n`;
+    content += `Publishable Key: ${result.keys.test.publishable}\n`;
+    content += `Secret Key: ${result.keys.test.secret}\n\n`;
+    
+    content += `--- Live API Keys ---\n`;
+    content += `Publishable Key: ${result.keys.live.publishable}\n`;
+    content += `Secret Key: ${result.keys.live.secret}\n`;
+
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `shake_keys_${accountName.replace(/[^a-z0-9]/gi, '_').toLowerCase() || 'account'}.txt`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -425,7 +458,14 @@ const Ecommerce: React.FC = () => {
                   <strong>{ecommerce.saveKeysWarningLabel}</strong> {ecommerce.saveKeysWarningText}
                 </div>
 
-                <div className="mt-8 flex justify-center">
+                <div className="mt-8 flex justify-center space-x-4">
+                  <button
+                    onClick={handleDownloadData}
+                    className="inline-flex items-center px-6 py-3 bg-white border border-gray-200 shadow-sm text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  >
+                    <Download className="w-5 h-5 mr-2" />
+                    {ecommerce.downloadData}
+                  </button>
                   <a
                     href="/api-docs"
                     target="_blank"

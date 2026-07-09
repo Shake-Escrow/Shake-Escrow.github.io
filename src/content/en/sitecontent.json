@@ -402,6 +402,7 @@
     "step2Text": "The customer's wallet signs the transaction, calling the smart contract directly. Shake DeFi acts strictly as a decentralized facilitator.",
     "step3Title": "Settlement & Webhooks",
     "step3Text": "Upon successful on-chain purchase, the smart contract settles funds to your merchant wallet immediately. Our backend detects this and sends a webhook to your system.",
-    "getStartedTitle": "Get Started"
+    "getStartedTitle": "Get Started",
+    "downloadData": "Download Data (.txt)"
   }
 }
