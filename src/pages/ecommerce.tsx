@@ -18,7 +18,8 @@ interface Keys {
 interface ProvisionResult {
   success: boolean;
   accountId: string;
-  contractAddress: string;
+  contractAddressTest: string;
+  contractAddressLive: string;
   keys: {
     test: Keys;
     live: Keys;
@@ -328,18 +329,36 @@ const Ecommerce: React.FC = () => {
             <div className="p-8 md:p-12 bg-gray-50">
               <div className="space-y-8">
 
-                {/* Contract Address */}
-                <div>
-                  <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.smartContract}</h3>
-                  <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
-                    <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddress}</span>
-                    <button
-                      onClick={() => copyToClipboard(result.contractAddress, 'contract')}
-                      className="text-gray-400 hover:text-indigo-600 transition-colors"
-                      title="Copy"
-                    >
-                      {copiedKey === 'contract' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
-                    </button>
+                {/* Contract Addresses */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Test Contract */}
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.testSmartContract}</h3>
+                    <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
+                      <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddressTest}</span>
+                      <button
+                        onClick={() => copyToClipboard(result.contractAddressTest, 'contract-test')}
+                        className="text-gray-400 hover:text-indigo-600 transition-colors"
+                        title="Copy"
+                      >
+                        {copiedKey === 'contract-test' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Live Contract */}
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.liveSmartContract}</h3>
+                    <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
+                      <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddressLive}</span>
+                      <button
+                        onClick={() => copyToClipboard(result.contractAddressLive, 'contract-live')}
+                        className="text-gray-400 hover:text-indigo-600 transition-colors"
+                        title="Copy"
+                      >
+                        {copiedKey === 'contract-live' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
+                      </button>
+                    </div>
                   </div>
                 </div>
 

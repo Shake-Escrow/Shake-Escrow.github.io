@@ -375,6 +375,8 @@
     "accountProvisioned": "¡Cuenta Aprovisionada!",
     "provisionedSubtitle": "Tu contrato inteligente está desplegado y tus claves API están listas.",
     "smartContract": "Contrato Inteligente",
+    "testSmartContract": "Contrato Inteligente de Prueba",
+    "liveSmartContract": "Contrato Inteligente en Vivo",
     "testKeys": "Claves de Prueba",
     "publishableKey": "Clave Publicable",
     "secretKey": "Clave Secreta",

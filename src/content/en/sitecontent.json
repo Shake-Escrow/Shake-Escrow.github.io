@@ -375,6 +375,8 @@
     "accountProvisioned": "Account Provisioned!",
     "provisionedSubtitle": "Your smart contract is deployed and your API keys are ready.",
     "smartContract": "Smart Contract",
+    "testSmartContract": "Test Smart Contract",
+    "liveSmartContract": "Live Smart Contract",
     "testKeys": "Test Keys",
     "publishableKey": "Publishable Key",
     "secretKey": "Secret Key",
