@@ -28,7 +28,12 @@ interface ProvisionResult {
 
 const Ecommerce: React.FC = () => {
   const [accountName, setAccountName] = useState('');
-  const [businessAddress, setBusinessAddress] = useState('');
+  const [addressLine1, setAddressLine1] = useState('');
+  const [addressLine2, setAddressLine2] = useState('');
+  const [city, setCity] = useState('');
+  const [stateProvince, setStateProvince] = useState('');
+  const [postalCode, setPostalCode] = useState('');
+  const [country, setCountry] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [uboName, setUboName] = useState('');
@@ -55,7 +60,12 @@ const Ecommerce: React.FC = () => {
       const formData = new FormData();
       formData.append('accountName', accountName);
       formData.append('merchantWalletInput', merchantWallet);
-      formData.append('businessAddress', businessAddress);
+      formData.append('businessAddressLine1', addressLine1);
+      formData.append('businessAddressLine2', addressLine2);
+      formData.append('businessCity', city);
+      formData.append('businessStateProvince', stateProvince);
+      formData.append('businessPostalCode', postalCode);
+      formData.append('businessCountry', country);
       formData.append('phoneNumber', phoneNumber);
       formData.append('emailAddress', emailAddress);
       formData.append('uboName', uboName);
@@ -230,19 +240,67 @@ const Ecommerce: React.FC = () => {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="businessAddress" className="block text-sm font-semibold text-gray-700 mb-2">
+                <div className="space-y-4">
+                  <label className="block text-sm font-semibold text-gray-700">
                     Business Address
                   </label>
+                  
                   <input
                     type="text"
-                    id="businessAddress"
-                    value={businessAddress}
-                    onChange={(e) => setBusinessAddress(e.target.value)}
+                    value={addressLine1}
+                    onChange={(e) => setAddressLine1(e.target.value)}
                     className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="123 Commerce St, City, Country"
+                    placeholder="Street Address or P.O. Box"
                     required
                   />
+                  
+                  <input
+                    type="text"
+                    value={addressLine2}
+                    onChange={(e) => setAddressLine2(e.target.value)}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    placeholder="Apt, Suite, Unit, Building (optional)"
+                  />
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="City"
+                      required
+                    />
+                    
+                    <input
+                      type="text"
+                      value={stateProvince}
+                      onChange={(e) => setStateProvince(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="State / Province"
+                      required
+                    />
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input
+                      type="text"
+                      value={postalCode}
+                      onChange={(e) => setPostalCode(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="Postal Code"
+                      required
+                    />
+                    
+                    <input
+                      type="text"
+                      value={country}
+                      onChange={(e) => setCountry(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="Country"
+                      required
+                    />
+                  </div>
                 </div>
 
                 <div>
