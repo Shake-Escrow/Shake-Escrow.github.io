@@ -1,30 +1,10 @@
 // src/pages/ecommerce.tsx
-import React, { useState } from 'react';
-import { Loader2, CheckCircle2, Copy, ShieldCheck, Key, Code, Download } from 'lucide-react';
-import { generateMnemonic } from '@scure/bip39';
-import { wordlist as wordlistEn } from '@scure/bip39/wordlists/english.js';
-import { wordlist as wordlistEs } from '@scure/bip39/wordlists/spanish.js';
-import { mnemonicToAccount } from 'viem/accounts';
-import { useLocale } from '../context/LocaleContext';
+import React, { useState, useEffect } from 'react';
+import { Loader2, ShieldCheck, CheckCircle2, Code, Mail } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { useContent } from '../hooks/useContent';
 
 export const secondaryColor = '#1184b0';
-
-interface Keys {
-  secret: string;
-  publishable: string;
-}
-
-interface ProvisionResult {
-  success: boolean;
-  accountId: string;
-  contractAddressTest: string;
-  contractAddressLive: string;
-  keys: {
-    test: Keys;
-    live: Keys;
-  };
-}
 
 const Ecommerce: React.FC = () => {
   const [accountName, setAccountName] = useState('');
@@ -38,28 +18,52 @@ const Ecommerce: React.FC = () => {
   const [emailAddress, setEmailAddress] = useState('');
   const [uboName, setUboName] = useState('');
   const [kybFile, setKybFile] = useState<File | null>(null);
-  const [merchantWallet, setMerchantWallet] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [result, setResult] = useState<ProvisionResult | null>(null);
-  const [copiedKey, setCopiedKey] = useState<string | null>(null);
-  const [generatedMnemonic, setGeneratedMnemonic] = useState<string | null>(null);
-  const { locale } = useLocale();
+  const [applicationId, setApplicationId] = useState<string | null>(null);
+  
   const siteContent = useContent('sitecontent');
   const ecommerce = siteContent.ecommerce;
+  const navigate = useNavigate();
 
-  const handleProvision = async (e: React.FormEvent) => {
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout;
+    
+    if (applicationId) {
+      intervalId = setInterval(async () => {
+        try {
+          const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
+          const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
+          const response = await fetch(`${API_ENDPOINT}/v1/applications/${applicationId}`);
+          
+          if (response.ok) {
+            const data = await response.json();
+            if (data.emailVerified) {
+              clearInterval(intervalId);
+              navigate(`/provision?application_id=${applicationId}`);
+            }
+          }
+        } catch (e) {
+          console.error("Polling error", e);
+        }
+      }, 5000);
+    }
+    
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [applicationId, navigate]);
+
+  const handleApplication = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);
 
     try {
       const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
-      // Strip /api/website if present to get the platform root
       const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
       const formData = new FormData();
       formData.append('accountName', accountName);
-      formData.append('merchantWalletInput', merchantWallet);
       formData.append('businessAddressLine1', addressLine1);
       formData.append('businessAddressLine2', addressLine2);
       formData.append('businessCity', city);
@@ -73,7 +77,7 @@ const Ecommerce: React.FC = () => {
         formData.append('kybFile', kybFile);
       }
 
-      const response = await fetch(`${API_ENDPOINT}/v1/provision-full`, {
+      const response = await fetch(`${API_ENDPOINT}/v1/applications`, {
         method: 'POST',
         body: formData,
       });
@@ -81,87 +85,17 @@ const Ecommerce: React.FC = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error?.message || data.error || 'Provisioning failed');
+        throw new Error(data.error?.message || data.error || 'Application submission failed');
       }
 
       if (data.success) {
-        setResult(data);
+        setApplicationId(data.applicationId);
       }
     } catch (err: any) {
       setError(err.message);
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const connectWallet = async () => {
-    try {
-      const provider = (window as any).ethereum;
-      if (!provider) {
-        throw new Error('No wallet detected. Please install a wallet extension.');
-      }
-      const accounts = await provider.request({ method: 'eth_requestAccounts' });
-      if (accounts && accounts.length > 0) {
-        setMerchantWallet(accounts[0]);
-        setGeneratedMnemonic(null);
-        setError(null);
-      }
-    } catch (err: any) {
-      setError(err.message || 'Failed to connect wallet');
-    }
-  };
-
-  const createWallet = () => {
-    try {
-      const activeWordlist = locale === 'es' ? wordlistEs : wordlistEn;
-      const mnemonic = generateMnemonic(activeWordlist);
-      const account = mnemonicToAccount(mnemonic);
-
-      setGeneratedMnemonic(mnemonic);
-      setMerchantWallet(account.address);
-      setError(null);
-    } catch (err: any) {
-      setError(err.message || 'Failed to generate wallet');
-    }
-  };
-
-  const copyToClipboard = (text: string, id: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedKey(id);
-    setTimeout(() => setCopiedKey(null), 2000);
-  };
-
-  const handleDownloadData = () => {
-    if (!result) return;
-    
-    let content = `Account Name: ${accountName}\n`;
-    content += `Merchant Wallet: ${merchantWallet}\n\n`;
-    if (generatedMnemonic) {
-      content += `Recovery Phrase (Mnemonic): ${generatedMnemonic}\n`;
-      content += `WARNING: Keep this phrase secure. It is the ONLY way to access your funds.\n\n`;
-    }
-    
-    content += `--- Smart Contracts ---\n`;
-    content += `Test Smart Contract: ${result.contractAddressTest}\n`;
-    content += `Live Smart Contract: ${result.contractAddressLive}\n\n`;
-    
-    content += `--- Test API Keys ---\n`;
-    content += `Publishable Key: ${result.keys.test.publishable}\n`;
-    content += `Secret Key: ${result.keys.test.secret}\n\n`;
-    
-    content += `--- Live API Keys ---\n`;
-    content += `Publishable Key: ${result.keys.live.publishable}\n`;
-    content += `Secret Key: ${result.keys.live.secret}\n`;
-
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `shake_keys_${accountName.replace(/[^a-z0-9]/gi, '_').toLowerCase() || 'account'}.txt`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -218,13 +152,13 @@ const Ecommerce: React.FC = () => {
           </div>
         </div>
 
-        {!result ? (
+        {!applicationId ? (
           <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="p-8 md:p-12">
               <div className="text-center mb-10">
                 <h2 className="text-3xl font-extrabold text-gray-900 mb-4">{ecommerce.getStartedTitle}</h2>
               </div>
-              <form onSubmit={handleProvision} className="space-y-8">
+              <form onSubmit={handleApplication} className="space-y-8">
                 <div>
                   <label htmlFor="accountName" className="block text-sm font-semibold text-gray-700 mb-2">
                     {ecommerce.companyNameLabel}
@@ -303,137 +237,76 @@ const Ecommerce: React.FC = () => {
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="phoneNumber" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value)}
-                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="+1 234 567 8900"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="emailAddress" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="emailAddress"
-                    value={emailAddress}
-                    onChange={(e) => setEmailAddress(e.target.value)}
-                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="merchant@example.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="uboName" className="block text-sm font-semibold text-gray-700 mb-2">
-                    Name of UBO (Ultimate Beneficial Owner)
-                  </label>
-                  <input
-                    type="text"
-                    id="uboName"
-                    value={uboName}
-                    onChange={(e) => setUboName(e.target.value)}
-                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="Jane Doe"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="kybFile" className="block text-sm font-semibold text-gray-700 mb-2">
-                    KYB Documentation (PDF Only)
-                  </label>
-                  <input
-                    type="file"
-                    id="kybFile"
-                    accept=".pdf,application/pdf"
-                    onChange={(e) => {
-                      if (e.target.files && e.target.files.length > 0) {
-                        setKybFile(e.target.files[0]);
-                      }
-                    }}
-                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    required
-                  />
-                  <p className="mt-2 text-sm text-gray-500">
-                    Please upload Articles of Incorporation or Organization, Bank statement, etc.
-                  </p>
-                </div>
-
-                <div>
-                  <label htmlFor="merchantWallet" className="block text-sm font-semibold text-gray-700 mb-2">
-                    {ecommerce.merchantWalletLabel}
-                  </label>
-                  <div className="flex gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="phoneNumber" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Phone Number
+                    </label>
                     <input
-                      type="text"
-                      id="merchantWallet"
-                      value={merchantWallet}
-                      onChange={(e) => {
-                        setMerchantWallet(e.target.value);
-                        setGeneratedMnemonic(null);
-                      }}
-                      className="flex-1 px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 font-mono text-sm placeholder-gray-400"
-                      placeholder={ecommerce.merchantWalletPlaceholder}
+                      type="tel"
+                      id="phoneNumber"
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="+1 234 567 8900"
                       required
                     />
-                    <button
-                      type="button"
-                      onClick={connectWallet}
-                      className="px-6 py-4 bg-white border border-gray-200 shadow-sm rounded-xl text-gray-700 font-semibold hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none flex-shrink-0"
-                    >
-                      {ecommerce.connectWallet}
-                    </button>
-                    <button
-                      type="button"
-                      onClick={createWallet}
-                      className="px-6 py-4 bg-white border border-gray-200 shadow-sm rounded-xl text-gray-700 font-semibold hover:bg-gray-50 transition-colors focus:ring-2 focus:ring-indigo-500 focus:outline-none flex-shrink-0"
-                    >
-                      {ecommerce.createWallet}
-                    </button>
                   </div>
-                  <p className="mt-2 text-sm text-gray-500">
-                    {ecommerce.merchantWalletDescription}
-                  </p>
+
+                  <div>
+                    <label htmlFor="emailAddress" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="emailAddress"
+                      value={emailAddress}
+                      onChange={(e) => setEmailAddress(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="merchant@example.com"
+                      required
+                      pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                    />
+                  </div>
                 </div>
 
-                {generatedMnemonic && (
-                  <div className="p-5 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 space-y-3">
-                    <div className="flex items-start">
-                      <ShieldCheck className="w-6 h-6 mr-3 flex-shrink-0 text-yellow-600 mt-0.5" />
-                      <div className="flex-1">
-                        <h4 className="font-bold text-yellow-900 text-lg">{ecommerce.saveRecoveryPhraseTitle}</h4>
-                        <p className="text-sm mt-1 mb-3 text-yellow-800 leading-relaxed">
-                          {ecommerce.saveRecoveryPhraseDescription1}
-                          <strong>{ecommerce.saveRecoveryPhraseDescriptionOnly}</strong>
-                          {ecommerce.saveRecoveryPhraseDescription2}
-                          <strong>{ecommerce.saveRecoveryPhraseDescriptionWarning}</strong>
-                          {ecommerce.saveRecoveryPhraseDescription3}
-                        </p>
-                        <div className="bg-white border border-yellow-300 p-4 rounded-lg font-mono text-base break-words relative shadow-sm pr-12">
-                          {generatedMnemonic}
-                          <button
-                            type="button"
-                            onClick={() => copyToClipboard(generatedMnemonic, 'mnemonic')}
-                            className="absolute top-1/2 -translate-y-1/2 right-3 text-gray-400 hover:text-indigo-600 transition-colors"
-                            title="Copy Mnemonic"
-                          >
-                            {copiedKey === 'mnemonic' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="uboName" className="block text-sm font-semibold text-gray-700 mb-2">
+                      Name of UBO (Ultimate Beneficial Owner)
+                    </label>
+                    <input
+                      type="text"
+                      id="uboName"
+                      value={uboName}
+                      onChange={(e) => setUboName(e.target.value)}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      placeholder="Jane Doe"
+                      required
+                    />
                   </div>
-                )}
+
+                  <div>
+                    <label htmlFor="kybFile" className="block text-sm font-semibold text-gray-700 mb-2">
+                      KYB Documentation (PDF Only)
+                    </label>
+                    <input
+                      type="file"
+                      id="kybFile"
+                      accept=".pdf,application/pdf"
+                      onChange={(e) => {
+                        if (e.target.files && e.target.files.length > 0) {
+                          setKybFile(e.target.files[0]);
+                        }
+                      }}
+                      className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                      required
+                    />
+                    <p className="mt-2 text-sm text-gray-500">
+                      Please upload Articles of Incorporation or Organization, Bank statement, etc.
+                    </p>
+                  </div>
+                </div>
 
                 {error && (
                   <div className="p-4 bg-red-50 border border-red-100 rounded-xl flex items-start text-red-600">
@@ -452,10 +325,10 @@ const Ecommerce: React.FC = () => {
                     {isLoading ? (
                       <>
                         <Loader2 className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
-                        {ecommerce.deployingContract}
+                        Submitting Application...
                       </>
                     ) : (
-                      ecommerce.provisionAccount
+                      "Submit Application"
                     )}
                   </div>
                   {/* Subtle shine effect */}
@@ -465,176 +338,28 @@ const Ecommerce: React.FC = () => {
                 </button>
               </form>
             </div>
-            {/* Informational footer */}
-            <div className="bg-gray-50 p-6 md:p-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
-              <div className="flex items-center mb-4 md:mb-0">
-                <ShieldCheck className="w-5 h-5 mr-2 text-green-500" />
-                <span>
-                  {ecommerce.secureDeployment.split('Base').map((part, i, arr) => (
-                    <React.Fragment key={i}>
-                      {part}
-                      {i < arr.length - 1 && (
-                        <a
-                          href="https://base.org"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-indigo-600 transition-colors underline decoration-dotted underline-offset-4"
-                        >
-                          Base
-                        </a>
-                      )}
-                    </React.Fragment>
-                  ))}
-                </span>
-              </div>
-              <div className="flex items-center">
-                <Code className="w-5 h-5 mr-2 text-indigo-500" />
-                <a
-                  href="/api-docs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-indigo-600 transition-colors underline decoration-dotted underline-offset-4"
-                >
-                  {ecommerce.restApiReady}
-                </a>
-              </div>
-            </div>
           </div>
         ) : (
           <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="p-8 md:p-12 text-center border-b border-gray-100">
-              <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
-                <CheckCircle2 className="h-8 w-8 text-green-600" />
+              <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
+                <Mail className="h-8 w-8 text-indigo-600 animate-pulse" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">{ecommerce.accountProvisioned}</h2>
-              <p className="text-gray-500 text-lg">
-                {ecommerce.provisionedSubtitle}
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Check your email</h2>
+              <p className="text-gray-500 text-lg max-w-lg mx-auto">
+                We've sent a verification link to <strong>{emailAddress}</strong>. 
+                Please click the link in the email to verify your address and continue the provisioning process.
               </p>
             </div>
 
-            <div className="p-8 md:p-12 bg-gray-50">
-              <div className="space-y-8">
-
-                {/* Contract Addresses */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {/* Test Contract */}
-                  <div>
-                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.testSmartContract}</h3>
-                    <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
-                      <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddressTest}</span>
-                      <button
-                        onClick={() => copyToClipboard(result.contractAddressTest, 'contract-test')}
-                        className="text-gray-400 hover:text-indigo-600 transition-colors"
-                        title="Copy"
-                      >
-                        {copiedKey === 'contract-test' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Live Contract */}
-                  <div>
-                    <h3 className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">{ecommerce.liveSmartContract}</h3>
-                    <div className="bg-white p-4 rounded-xl border border-gray-200 flex items-center justify-between shadow-sm">
-                      <span className="font-mono text-gray-800 text-sm md:text-base break-all mr-4">{result.contractAddressLive}</span>
-                      <button
-                        onClick={() => copyToClipboard(result.contractAddressLive, 'contract-live')}
-                        className="text-gray-400 hover:text-indigo-600 transition-colors"
-                        title="Copy"
-                      >
-                        {copiedKey === 'contract-live' ? <CheckCircle2 className="h-5 w-5 text-green-500" /> : <Copy className="h-5 w-5" />}
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                {/* API Keys */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  {/* Test Keys */}
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-2 text-indigo-600 mb-4">
-                      <Key className="w-5 h-5" />
-                      <h3 className="text-lg font-bold">{ecommerce.testKeys}</h3>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.publishableKey}</label>
-                      <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
-                        <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.test.publishable}</span>
-                        <button onClick={() => copyToClipboard(result.keys.test.publishable, 'test-pub')} className="text-gray-400 hover:text-indigo-600">
-                          {copiedKey === 'test-pub' ? <CheckCircle2 className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                        </button>
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.secretKey}</label>
-                      <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
-                        <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.test.secret}</span>
-                        <button onClick={() => copyToClipboard(result.keys.test.secret, 'test-sec')} className="text-gray-400 hover:text-indigo-600">
-                          {copiedKey === 'test-sec' ? <CheckCircle2 className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Live Keys */}
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-2 text-green-600 mb-4">
-                      <Key className="w-5 h-5" />
-                      <h3 className="text-lg font-bold">{ecommerce.liveKeys}</h3>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.publishableKey}</label>
-                      <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
-                        <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.live.publishable}</span>
-                        <button onClick={() => copyToClipboard(result.keys.live.publishable, 'live-pub')} className="text-gray-400 hover:text-indigo-600">
-                          {copiedKey === 'live-pub' ? <CheckCircle2 className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                        </button>
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold text-gray-500 mb-1">{ecommerce.secretKey}</label>
-                      <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center justify-between shadow-sm">
-                        <span className="font-mono text-sm text-gray-800 truncate mr-2">{result.keys.live.secret}</span>
-                        <button onClick={() => copyToClipboard(result.keys.live.secret, 'live-sec')} className="text-gray-400 hover:text-indigo-600">
-                          {copiedKey === 'live-sec' ? <CheckCircle2 className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-xl text-yellow-800 text-sm">
-                  <strong>{ecommerce.saveKeysWarningLabel}</strong> {ecommerce.saveKeysWarningText}
-                </div>
-
-                <div className="mt-8 flex justify-center space-x-4">
-                  <button
-                    onClick={handleDownloadData}
-                    className="inline-flex items-center px-6 py-3 bg-white border border-gray-200 shadow-sm text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                  >
-                    <Download className="w-5 h-5 mr-2" />
-                    {ecommerce.downloadData}
-                  </button>
-                  <a
-                    href="/api-docs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-indigo-50 text-indigo-700 font-semibold rounded-xl hover:bg-indigo-100 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                  >
-                    <Code className="w-5 h-5 mr-2" />
-                    {ecommerce.viewApiDocs}
-                  </a>
-                </div>
+            <div className="p-8 md:p-12 bg-gray-50 text-center">
+              <div className="flex items-center justify-center text-gray-500">
+                <Loader2 className="w-5 h-5 animate-spin mr-3" />
+                <span>Waiting for verification...</span>
               </div>
             </div>
-
           </div>
         )}
-
       </div>
     </div>
   );

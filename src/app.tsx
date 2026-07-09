@@ -20,6 +20,7 @@ import TermsOfService from './pages/terms-of-service';
 import EndUserLicenseAgreement from './pages/end-user-license-agreement';
 import DeleteAccount from './pages/delete-account';
 import Ecommerce from './pages/ecommerce';
+import Provision from './pages/provision';
 import ApiDocs from './pages/api-docs';
 
 // Declare gtag on window
@@ -81,6 +82,7 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/e-commerce" element={<Ecommerce />} />
+            <Route path="/provision" element={<Provision />} />
             <Route path="/api-docs" element={<ApiDocs />} />
           </Routes>
         </ErrorBoundary>
