@@ -28,6 +28,11 @@ interface ProvisionResult {
 
 const Ecommerce: React.FC = () => {
   const [accountName, setAccountName] = useState('');
+  const [businessAddress, setBusinessAddress] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [emailAddress, setEmailAddress] = useState('');
+  const [uboName, setUboName] = useState('');
+  const [kybFile, setKybFile] = useState<File | null>(null);
   const [merchantWallet, setMerchantWallet] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -47,15 +52,20 @@ const Ecommerce: React.FC = () => {
       const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
       // Strip /api/website if present to get the platform root
       const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
+      const formData = new FormData();
+      formData.append('accountName', accountName);
+      formData.append('merchantWalletInput', merchantWallet);
+      formData.append('businessAddress', businessAddress);
+      formData.append('phoneNumber', phoneNumber);
+      formData.append('emailAddress', emailAddress);
+      formData.append('uboName', uboName);
+      if (kybFile) {
+        formData.append('kybFile', kybFile);
+      }
+
       const response = await fetch(`${API_ENDPOINT}/v1/provision-full`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          accountName,
-          merchantWalletInput: merchantWallet,
-        }),
+        body: formData,
       });
 
       const data = await response.json();
@@ -218,6 +228,87 @@ const Ecommerce: React.FC = () => {
                     placeholder={ecommerce.companyNamePlaceholder}
                     required
                   />
+                </div>
+
+                <div>
+                  <label htmlFor="businessAddress" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Business Address
+                  </label>
+                  <input
+                    type="text"
+                    id="businessAddress"
+                    value={businessAddress}
+                    onChange={(e) => setBusinessAddress(e.target.value)}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    placeholder="123 Commerce St, City, Country"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phoneNumber" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    placeholder="+1 234 567 8900"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="emailAddress" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="emailAddress"
+                    value={emailAddress}
+                    onChange={(e) => setEmailAddress(e.target.value)}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    placeholder="merchant@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="uboName" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Name of UBO (Ultimate Beneficial Owner)
+                  </label>
+                  <input
+                    type="text"
+                    id="uboName"
+                    value={uboName}
+                    onChange={(e) => setUboName(e.target.value)}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    placeholder="Jane Doe"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="kybFile" className="block text-sm font-semibold text-gray-700 mb-2">
+                    KYB Documentation (PDF Only)
+                  </label>
+                  <input
+                    type="file"
+                    id="kybFile"
+                    accept=".pdf,application/pdf"
+                    onChange={(e) => {
+                      if (e.target.files && e.target.files.length > 0) {
+                        setKybFile(e.target.files[0]);
+                      }
+                    }}
+                    className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
+                    required
+                  />
+                  <p className="mt-2 text-sm text-gray-500">
+                    Please upload Articles of Incorporation or Organization, Bank statement, etc.
+                  </p>
                 </div>
 
                 <div>
