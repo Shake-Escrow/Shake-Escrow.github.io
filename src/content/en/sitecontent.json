@@ -424,7 +424,6 @@
     "checkEmailTitle": "Check your email",
     "checkEmailDescription1": "We've sent a verification link to ",
     "checkEmailDescription2": ". Please click the link in the email to verify your address and continue the provisioning process.",
-    "waitingForVerification": "Waiting for verification...",
     "provisionPageTitle": "Provision Account",
     "provisionPageSubtitle": "Connect your wallet to deploy your smart contracts and generate API keys.",
     "downloadDataMerchantWallet": "Merchant Wallet",

@@ -90,6 +90,7 @@ const Ecommerce: React.FC = () => {
 
       if (data.success) {
         setApplicationId(data.applicationId);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } catch (err: any) {
       setError(err.message);
@@ -341,7 +342,7 @@ const Ecommerce: React.FC = () => {
           </div>
         ) : (
           <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="p-8 md:p-12 text-center border-b border-gray-100">
+            <div className="p-8 md:p-12 text-center">
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
                 <Mail className="h-8 w-8 text-indigo-600 animate-pulse" />
               </div>
@@ -349,13 +350,6 @@ const Ecommerce: React.FC = () => {
               <p className="text-gray-500 text-lg max-w-lg mx-auto">
                 {ecommerce.checkEmailDescription1}<strong>{emailAddress}</strong>{ecommerce.checkEmailDescription2}
               </p>
-            </div>
-
-            <div className="p-8 md:p-12 bg-gray-50 text-center">
-              <div className="flex items-center justify-center text-gray-500">
-                <Loader2 className="w-5 h-5 animate-spin mr-3" />
-                <span>{ecommerce.waitingForVerification}</span>
-              </div>
             </div>
           </div>
         )}

@@ -424,7 +424,6 @@
     "checkEmailTitle": "Revisa tu correo electrónico",
     "checkEmailDescription1": "Hemos enviado un enlace de verificación a ",
     "checkEmailDescription2": ". Por favor, haz clic en el enlace del correo electrónico para verificar tu dirección y continuar el proceso de aprovisionamiento.",
-    "waitingForVerification": "Esperando verificación...",
     "provisionPageTitle": "Aprovisionar Cuenta",
     "provisionPageSubtitle": "Conecta tu billetera para desplegar tus contratos inteligentes y generar claves API.",
     "downloadDataMerchantWallet": "Billetera del Comerciante",
