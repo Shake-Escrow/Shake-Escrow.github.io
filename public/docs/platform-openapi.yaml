@@ -9,6 +9,17 @@ info:
     **TokenPurchaseIntent**, a hosted widget confirms it on-chain, and a
     **webhook** tells you what actually happened.
 
+    ## Official SDKs
+    
+    We maintain an official Node.js SDK to make integrating with this API easier. 
+    You can install it via npm:
+    
+    ```bash
+    npm install @shake-defi/node
+    ```
+    
+    View the package on npm: [**@shake-defi/node**](https://www.npmjs.com/package/@shake-defi/node)
+
     ## Authentication
 
     Pass your secret key in the `Authorization` header on every server-side
