@@ -21,21 +21,21 @@ const Ecommerce: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [applicationId, setApplicationId] = useState<string | null>(null);
-  
+
   const siteContent = useContent('sitecontent');
   const ecommerce = siteContent.ecommerce;
   const navigate = useNavigate();
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
-    
+
     if (applicationId) {
       intervalId = setInterval(async () => {
         try {
           const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
           const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
           const response = await fetch(`${API_ENDPOINT}/v1/applications/${applicationId}`);
-          
+
           if (response.ok) {
             const data = await response.json();
             if (data.emailVerified) {
@@ -48,7 +48,7 @@ const Ecommerce: React.FC = () => {
         }
       }, 5000);
     }
-    
+
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
@@ -85,7 +85,7 @@ const Ecommerce: React.FC = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error?.message || data.error || 'Application submission failed');
+        throw new Error(data.error?.message || data.error || 'Submission failed');
       }
 
       if (data.success) {
@@ -176,62 +176,62 @@ const Ecommerce: React.FC = () => {
 
                 <div className="space-y-4">
                   <label className="block text-sm font-semibold text-gray-700">
-                    Business Address
+                    {ecommerce.businessAddressLabel}
                   </label>
-                  
+
                   <input
                     type="text"
                     value={addressLine1}
                     onChange={(e) => setAddressLine1(e.target.value)}
                     className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="Street Address or P.O. Box"
+                    placeholder={ecommerce.addressLine1Placeholder}
                     required
                   />
-                  
+
                   <input
                     type="text"
                     value={addressLine2}
                     onChange={(e) => setAddressLine2(e.target.value)}
                     className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                    placeholder="Apt, Suite, Unit, Building (optional)"
+                    placeholder={ecommerce.addressLine2Placeholder}
                   />
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
                       value={city}
                       onChange={(e) => setCity(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="City"
+                      placeholder={ecommerce.cityPlaceholder}
                       required
                     />
-                    
+
                     <input
                       type="text"
                       value={stateProvince}
                       onChange={(e) => setStateProvince(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="State / Province"
+                      placeholder={ecommerce.stateProvincePlaceholder}
                       required
                     />
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <input
                       type="text"
                       value={postalCode}
                       onChange={(e) => setPostalCode(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="Postal Code"
+                      placeholder={ecommerce.postalCodePlaceholder}
                       required
                     />
-                    
+
                     <input
                       type="text"
                       value={country}
                       onChange={(e) => setCountry(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="Country"
+                      placeholder={ecommerce.countryPlaceholder}
                       required
                     />
                   </div>
@@ -240,7 +240,7 @@ const Ecommerce: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label htmlFor="phoneNumber" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Phone Number
+                      {ecommerce.phoneNumberLabel}
                     </label>
                     <input
                       type="tel"
@@ -248,14 +248,14 @@ const Ecommerce: React.FC = () => {
                       value={phoneNumber}
                       onChange={(e) => setPhoneNumber(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="+1 234 567 8900"
+                      placeholder={ecommerce.phoneNumberPlaceholder}
                       required
                     />
                   </div>
 
                   <div>
                     <label htmlFor="emailAddress" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Email Address
+                      {ecommerce.emailAddressLabel}
                     </label>
                     <input
                       type="email"
@@ -263,7 +263,7 @@ const Ecommerce: React.FC = () => {
                       value={emailAddress}
                       onChange={(e) => setEmailAddress(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="merchant@example.com"
+                      placeholder={ecommerce.emailAddressPlaceholder}
                       required
                       pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                     />
@@ -273,7 +273,7 @@ const Ecommerce: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label htmlFor="uboName" className="block text-sm font-semibold text-gray-700 mb-2">
-                      Name of UBO (Ultimate Beneficial Owner)
+                      {ecommerce.uboNameLabel}
                     </label>
                     <input
                       type="text"
@@ -281,14 +281,14 @@ const Ecommerce: React.FC = () => {
                       value={uboName}
                       onChange={(e) => setUboName(e.target.value)}
                       className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 placeholder-gray-400"
-                      placeholder="Jane Doe"
+                      placeholder={ecommerce.uboNamePlaceholder}
                       required
                     />
                   </div>
 
                   <div>
                     <label htmlFor="kybFile" className="block text-sm font-semibold text-gray-700 mb-2">
-                      KYB Documentation (PDF Only)
+                      {ecommerce.kybFileLabel}
                     </label>
                     <input
                       type="file"
@@ -303,7 +303,7 @@ const Ecommerce: React.FC = () => {
                       required
                     />
                     <p className="mt-2 text-sm text-gray-500">
-                      Please upload Articles of Incorporation or Organization, Bank statement, etc.
+                      {ecommerce.kybFileDescription}
                     </p>
                   </div>
                 </div>
@@ -325,10 +325,10 @@ const Ecommerce: React.FC = () => {
                     {isLoading ? (
                       <>
                         <Loader2 className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" />
-                        Submitting Application...
+                        {ecommerce.submittingButton}
                       </>
                     ) : (
-                      "Submit Application"
+                      ecommerce.submitButton
                     )}
                   </div>
                   {/* Subtle shine effect */}
@@ -345,17 +345,16 @@ const Ecommerce: React.FC = () => {
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
                 <Mail className="h-8 w-8 text-indigo-600 animate-pulse" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Check your email</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">{ecommerce.checkEmailTitle}</h2>
               <p className="text-gray-500 text-lg max-w-lg mx-auto">
-                We've sent a verification link to <strong>{emailAddress}</strong>. 
-                Please click the link in the email to verify your address and continue the provisioning process.
+                {ecommerce.checkEmailDescription1}<strong>{emailAddress}</strong>{ecommerce.checkEmailDescription2}
               </p>
             </div>
 
             <div className="p-8 md:p-12 bg-gray-50 text-center">
               <div className="flex items-center justify-center text-gray-500">
                 <Loader2 className="w-5 h-5 animate-spin mr-3" />
-                <span>Waiting for verification...</span>
+                <span>{ecommerce.waitingForVerification}</span>
               </div>
             </div>
           </div>
