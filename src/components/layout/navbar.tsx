@@ -63,14 +63,43 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-          {navItems.map((item: { title: string; path: string }) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center ${location.pathname === item.path ? 'bg-[#e6e9ed] shadow-sm' : 'hover:border-accent'} font-body`}
-            >
-              {item.title}
-            </Link>
+          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => (
+            item.sublinks ? (
+              <div key={item.title} className="relative group">
+                <button
+                  className="font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center hover:border-accent font-body flex items-center gap-1"
+                >
+                  {item.title}
+                  <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180" />
+                </button>
+                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="rounded-3xl border border-gray-200 bg-white shadow-xl ring-1 ring-black/5 overflow-hidden py-2 mt-1">
+                    {item.sublinks.map((subItem) => (
+                      <Link
+                        key={subItem.path}
+                        to={subItem.path}
+                        className={`block px-5 py-2.5 text-sm font-medium transition-colors duration-200 font-body ${
+                          location.pathname === subItem.path 
+                            ? 'bg-[#e6e9ed] text-secondary-dark' 
+                            : 'text-gray-700 hover:bg-gray-50'
+                        }`}
+                        onClick={closeMenu}
+                      >
+                        {subItem.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path!}
+                className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center ${location.pathname === item.path ? 'bg-[#e6e9ed] shadow-sm' : 'hover:border-accent'} font-body`}
+              >
+                {item.title}
+              </Link>
+            )
           ))}
           <div className="relative" ref={languageRef}>
             <button
@@ -163,15 +192,33 @@ const Navbar: React.FC = () => {
           <X size={32} />
         </button>
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          {navItems.map((item: { title: string; path: string }) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
-              onClick={closeMenu}
-            >
-              {item.title}
-            </Link>
+          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => (
+            item.sublinks ? (
+              <div key={item.title} className="flex flex-col items-center space-y-4">
+                <div className="font-medium text-xl px-4 py-2 rounded-full font-body text-gray-300">
+                  {item.title}
+                </div>
+                {item.sublinks.map((subItem) => (
+                  <Link
+                    key={subItem.path}
+                    to={subItem.path}
+                    className={`font-medium text-lg px-4 py-1 rounded-full transition-colors duration-200 font-body ${location.pathname === subItem.path ? 'text-accent' : 'text-gray-400'}`}
+                    onClick={closeMenu}
+                  >
+                    {subItem.title}
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path!}
+                className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
+                onClick={closeMenu}
+              >
+                {item.title}
+              </Link>
+            )
           ))}
           <div className="w-full max-w-xs rounded-3xl border border-white/10 bg-white/10 p-3 backdrop-blur">
             <div className="mb-3 flex items-center justify-center gap-2 font-body text-sm font-semibold uppercase tracking-[0.18em] text-accent">

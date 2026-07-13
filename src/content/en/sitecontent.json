@@ -10,12 +10,21 @@
         "path": "/how-it-works"
       },
       {
-        "title": "Get Paid",
-        "path": "/get-paid"
+        "title": "E-Commerce",
+        "path": "/e-commerce"
       },
       {
-        "title": "Send Payments",
-        "path": "/send-payments"
+        "title": "Payments",
+        "sublinks": [
+          {
+            "title": "Get Paid",
+            "path": "/get-paid"
+          },
+          {
+            "title": "Send Payments",
+            "path": "/send-payments"
+          }
+        ]
       },
       {
         "title": "FAQ",
@@ -418,7 +427,7 @@
     "uboNameLabel": "Name of UBO (Ultimate Beneficial Owner)",
     "uboNamePlaceholder": "Jane Doe",
     "kybFileLabel": "KYB Documentation (PDF Only)",
-    "kybFileDescription": "Please upload Articles of Incorporation or Organization, Bank statement, etc.",
+    "kybFileDescription": "Please upload document (e.g. Bank statement, Articles of Incorporation or Organization)",
     "submitButton": "Submit",
     "submittingButton": "Submitting...",
     "checkEmailTitle": "Check your email",

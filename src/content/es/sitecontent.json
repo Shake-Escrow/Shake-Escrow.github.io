@@ -10,12 +10,21 @@
         "path": "/how-it-works"
       },
       {
-        "title": "Cobrar",
-        "path": "/get-paid"
+        "title": "E-Commerce",
+        "path": "/e-commerce"
       },
       {
-        "title": "Enviar Pagos",
-        "path": "/send-payments"
+        "title": "Pagos",
+        "sublinks": [
+          {
+            "title": "Cobrar",
+            "path": "/get-paid"
+          },
+          {
+            "title": "Enviar Pagos",
+            "path": "/send-payments"
+          }
+        ]
       },
       {
         "title": "Preguntas",
@@ -418,7 +427,7 @@
     "uboNameLabel": "Nombre del UBO (Beneficiario Final)",
     "uboNamePlaceholder": "Jane Doe",
     "kybFileLabel": "Documentación KYB (Solo PDF)",
-    "kybFileDescription": "Por favor, sube Artículos de Incorporación u Organización, Estado de cuenta bancario, etc.",
+    "kybFileDescription": "Por favor, sube un documento (ej. Estado de cuenta bancario, Artículos de Incorporación u Organización)",
     "submitButton": "Enviar",
     "submittingButton": "Enviando...",
     "checkEmailTitle": "Revisa tu correo electrónico",
