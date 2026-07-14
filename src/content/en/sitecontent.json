@@ -401,7 +401,7 @@
     "saveRecoveryPhraseDescriptionWarning": "Shake DeFi does not store private keys or mnemonics.",
     "saveRecoveryPhraseDescription3": " If you lose them, your funds will be lost forever and you must essentially create a new account.",
     "explainerTitle": "How the Payment System Works",
-    "explainerSubtitle1": "Our payment architecture seamlessly and securely connects your storefront to your customers' wallets. Below is the complete lifecycle of a payment, from intent creation to final settlement.",
+    "explainerSubtitle1": "Our payment architecture seamlessly and securely connects your storefront to your customers' wallets. Below is the complete lifecycle of a payment, from intent creation to final settlement. E-commerce transactions do not use an escrow. Our fee is 0.1%.",
     "explainerSubtitleLinkText": "Click on a numbered action",
     "explainerSubtitle2": " in the diagram to view its API documentation.",
     "diagramLabel": "Payment Flow Diagram",

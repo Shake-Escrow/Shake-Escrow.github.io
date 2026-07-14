@@ -401,7 +401,7 @@
     "saveRecoveryPhraseDescriptionWarning": "Shake DeFi no almacena claves privadas ni mnemónicos.",
     "saveRecoveryPhraseDescription3": " Si las pierdes, tus fondos se perderán para siempre y esencialmente tendrás que crear una nueva cuenta.",
     "explainerTitle": "Cómo funciona el sistema de pagos",
-    "explainerSubtitle1": "Nuestra arquitectura de pagos conecta de forma fluida y segura tu tienda con las billeteras de tus clientes. A continuación se presenta el ciclo de vida completo de un pago, desde la creación del intento hasta la liquidación final.",
+    "explainerSubtitle1": "Nuestra arquitectura de pagos conecta de forma fluida y segura tu tienda con las billeteras de tus clientes. A continuación se presenta el ciclo de vida completo de un pago, desde la creación del intento hasta la liquidación final. Las transacciones de e-commerce no usan escrow. Nuestra comisión es del 0.1%.",
     "explainerSubtitleLinkText": "Haz clic en una acción numerada",
     "explainerSubtitle2": " en el diagrama para ver su documentación de la API.",
     "diagramLabel": "Diagrama del flujo de pago",
