@@ -426,7 +426,7 @@
     "emailAddressPlaceholder": "merchant@example.com",
     "uboNameLabel": "Name of UBO (Ultimate Beneficial Owner)",
     "uboNamePlaceholder": "Jane Doe",
-    "kybFileLabel": "KYB Documentation (PDF Only)",
+    "kybFileLabel": "KYB Documentation (PDF)",
     "kybFileDescription": "Please upload document (e.g. Bank statement, Articles of Incorporation or Organization)",
     "submitButton": "Submit",
     "submittingButton": "Submitting...",

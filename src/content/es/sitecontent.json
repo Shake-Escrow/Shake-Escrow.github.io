@@ -426,7 +426,7 @@
     "emailAddressPlaceholder": "comerciante@ejemplo.com",
     "uboNameLabel": "Nombre del UBO (Beneficiario Final)",
     "uboNamePlaceholder": "Jane Doe",
-    "kybFileLabel": "Documentación KYB (Solo PDF)",
+    "kybFileLabel": "Documentación KYB (PDF)",
     "kybFileDescription": "Por favor, sube un documento (ej. Estado de cuenta bancario, Artículos de Incorporación u Organización)",
     "submitButton": "Enviar",
     "submittingButton": "Enviando...",
