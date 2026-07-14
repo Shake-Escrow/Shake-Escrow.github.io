@@ -121,6 +121,11 @@ This is a GitHub User Pages setup (URL: `https://github.com/Shake-Escrow/Shake-E
 - **`src/App.tsx`**: Uses `<BrowserRouter basename="/">` for root-relative paths.
 - **`public/privacy-policy.html`**: Static version of policy (generated from JSON).
 
+## Key Files for SEO and Bots
+- **`public/robots.txt`**: Standard SEO file that tells web crawlers (like Googlebot) which pages they are allowed to crawl.
+- **`public/sitemap.xml`**: Provides search engines with a structured list of all the URLs on the website to help them index the site.
+- **`public/llms.txt`**: A newer standard designed to guide AI models and LLM crawlers to markdown-friendly versions of the site content.
+
 ## Custom Scripts
 Add these to `package.json` (already included):
 - `"build:full": "npm run build && npm run generate-privacy"` → Full prod build + static gen.

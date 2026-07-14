@@ -8,6 +8,7 @@
 - [Get Paid](https://shakedefi.com/get-paid): Merchant-focused information about accepting crypto payments, fees, escrow periods, withdrawals, and payment flexibility.
 - [Send Payments](https://shakedefi.com/send-payments): Buyer-focused information about paying through escrow, transaction documentation, reputation, privacy, and dispute protection.
 - [FAQ](https://shakedefi.com/faq): Common questions about escrow, supported crypto payments, fees, refunds, disputes, privacy, eligibility, and country availability.
+- [E-Commerce Registration](https://shakedefi.com/e-commerce): Merchants can set up an account to use Shake's API to accept cryptocurrency in their own e-commerce storefront.
 
 ## Reference Documents
 - [White Paper](https://shakedefi.com/assets/shake_defi_whitepaper_v2-3.pdf): Technical and product background for Shake Defi.
