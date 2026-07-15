@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
                     {link.url.endsWith('.pdf') ? (
                       <a href={link.url} target="_blank" rel="noopener noreferrer" className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</a>
                     ) : (
-                      <Link to={link.url} className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</Link>
+                      <Link to={link.url} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-[#2d3440] hover:text-accent text-sm font-body">{link.label}</Link>
                     )}
                   </li>
                 ))}
