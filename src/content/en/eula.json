@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "July 21, 2026",
-  "effectiveDate": "July 22, 2026",
+  "lastUpdated": "July 22, 2026",
+  "effectiveDate": "July 23, 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "End User License Agreement — Web Platform\nShake Defi, Inc. (\"the Company,\" \"we,\" \"us,\" or \"our\") provides cryptocurrency payment facilitation services through our web application (the \"Web App\") and related services (collectively, the \"Services\"). These Terms constitute a legally binding agreement between you (\"User,\" \"you,\" or \"your\") and the Company governing your use of the Services.",
   "sections": [
@@ -115,7 +115,7 @@
       "subsections": [
         {
           "subtitle": "7.1 Cryptocurrency Holding Period",
-          "content": "When a Merchant elects to include a cryptocurrency holding period greater than zero (0) days in a transaction:\n\n<ul>\n<li>The Company will automatically add an additional 72 hours to the specified holding period as an Arbitration Period</li>\n<li>There is no incentive or penalty for choosing a holding period</li>\n<li>Funds are held in smart contracts during this period, not by the Company</li>\n<li>The Merchant may not withdraw funds from the smart contract during the holding period and Arbitration Period</li>\n</ul>\n\nWhen a Merchant elects a holding period of zero (0) days, no Arbitration Period is added.\n\n<strong>Extension of Arbitration Period.</strong> If a Client initiates a dispute during the holding period, the Company may, at its option, extend the Arbitration Period by up to an additional thirty (30) days beyond the 72 hours described above, whether to allow the Merchant and Client additional time to resolve the matter between themselves or to allow the Company additional time to complete its determination. The Company is not obligated to extend the Arbitration Period and may make its determination, or decline to extend, at its sole discretion."
+          "content": "When a Merchant elects to include a cryptocurrency holding period greater than zero (0) days in a transaction:\n\n<ul>\n<li>The Company will automatically add an additional 72 hours to the specified holding period as an Arbitration Period</li>\n<li>There is no incentive or penalty for choosing a holding period</li>\n<li>Funds are held in smart contracts during this period, not by the Company</li>\n<li>The Merchant may not withdraw funds from the smart contract during the holding period and Arbitration Period</li>\n</ul>\n\nWhen a Merchant elects a holding period of zero (0) days, no Arbitration Period is added.\n\n<strong>Adjustment of Arbitration Period.</strong> If a Client initiates a dispute during the holding period, the Company may, at its option, adjust the Arbitration Period by extending it by up to an additional thirty (30) days beyond the 72 hours described above (whether to allow the Merchant and Client additional time to resolve the matter between themselves or to allow the Company additional time to complete its determination) or by reducing/advancing the release timestamp (for example, where a dispute is resolved early). Any negative adjustment cannot decrease the lockup period below the original creation-time schedule. The Company is not obligated to extend or adjust the Arbitration Period and may make its determination, or decline to adjust, at its sole discretion."
         },
         {
           "subtitle": "7.2 Dispute Resolution Process",
