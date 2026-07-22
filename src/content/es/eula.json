@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "12 de junio de 2026",
-  "effectiveDate": "12 de junio de 2026",
+  "lastUpdated": "21 de julio de 2026",
+  "effectiveDate": "22 de julio de 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "Acuerdo de Licencia de Usuario Final — Plataforma Web\nShake Defi, Inc. (\"la Empresa\", \"nosotros\", \"nos\" o \"nuestro\") proporciona servicios de facilitación de pagos en criptomonedas a través de nuestra aplicación web (la \"App Web\") y servicios relacionados (colectivamente, los \"Servicios\"). Estos Términos constituyen un acuerdo legalmente vinculante entre usted (\"Usuario\", \"usted\" o \"su\") y la Empresa que rige su uso de los Servicios.",
   "sections": [
@@ -115,7 +115,7 @@
       "subsections": [
         {
           "subtitle": "7.1 Período de Escrow de Criptomonedas",
-          "content": "Cuando un Comerciante elige incluir un período de escrow de criptomonedas mayor a cero (0) días en una transacción:\n\n<ul>\n<li>La Empresa añadirá automáticamente 48 horas adicionales al período de escrow especificado como Período de Arbitraje</li>\n<li>No hay incentivo ni penalización por elegir un período de escrow</li>\n<li>Los fondos se retienen en contratos inteligentes durante este período, no por la Empresa</li>\n<li>El Comerciante no puede retirar fondos del contrato inteligente durante el período de escrow y el Período de Arbitraje</li>\n</ul>\n\nCuando un Comerciante elige un período de escrow de cero (0) días, no se añade ningún Período de Arbitraje."
+          "content": "Cuando un Comerciante elige incluir un período de escrow de criptomonedas mayor a cero (0) días en una transacción:\n\n<ul>\n<li>La Empresa añadirá automáticamente 72 horas adicionales al período de escrow especificado como Período de Arbitraje</li>\n<li>No hay incentivo ni penalización por elegir un período de escrow</li>\n<li>Los fondos se retienen en contratos inteligentes durante este período, no por la Empresa</li>\n<li>El Comerciante no puede retirar fondos del contrato inteligente durante el período de escrow y el Período de Arbitraje</li>\n</ul>\n\nCuando un Comerciante elige un período de escrow de cero (0) días, no se añade ningún Período de Arbitraje.\n\n<strong>Extensión del Período de Arbitraje.</strong> Si un Cliente inicia una disputa durante el período de escrow, la Empresa podrá, a su opción, extender el Período de Arbitraje por hasta treinta (30) días adicionales más allá de las 72 horas descritas anteriormente, ya sea para permitir que el Comerciante y el Cliente dispongan de tiempo adicional para resolver el asunto entre ellos o para permitir que la Empresa disponga de tiempo adicional para completar su determinación. La Empresa no está obligada a extender el Período de Arbitraje y puede realizar su determinación, o negarse a extenderlo, a su entera discreción."
         },
         {
           "subtitle": "7.2 Proceso de Resolución de Disputas",
@@ -212,7 +212,7 @@
       "subsections": [
         {
           "subtitle": "15.1 Acuerdo Completo",
-          "content": "Estos Términos constituyen el acuerdo completo entre usted y la Empresa con respecto al uso de la App Web y los Servicios y reemplazan todos los acuerdos y entendimientos previos."
+          "content": "Estos Términos, junto con los Términos de Servicio de la Empresa, constituyen el acuerdo completo entre usted y la Empresa con respecto al uso de la App Web y los Servicios y reemplazan todos los acuerdos y entendimientos previos. En caso de cualquier conflicto o inconsistencia entre este Acuerdo y los Términos de Servicio de la Empresa, prevalecerán los Términos de Servicio."
         },
         {
           "subtitle": "15.2 Divisibilidad",
