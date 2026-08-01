@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { X, Linkedin } from 'lucide-react';
+import QRCode from '../common/qrcode';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
 
 type Platform = 'ios' | 'android' | 'telegram' | 'farcaster';
+
+const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
 interface FooterProps {
   platform?: Platform;
@@ -12,13 +15,13 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
   const siteContent = useContent('sitecontent');
-  const qrImage = platform === 'android'
-    ? '/images/qr-android.png'
+  const appStoreLink = platform === 'android'
+    ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : platform === 'ios'
-      ? '/images/qr-ios.png'
+      ? 'https://apps.apple.com/us/app/shake-defi/id6756281576'
       : platform === 'telegram'
-        ? '/images/qr-telegram.png'
-        : '/images/qr-farcaster.png';
+        ? 'https://t.me/ShakeDefiBot/app'
+        : FARCASTER_APP_URL;
 
   return (
     <footer className="bg-white text-[#2d3440]">
@@ -32,7 +35,16 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
           </div>
           {/* Second column: QR code, centered */}
           <div className="lg:col-span-1 flex justify-center items-center">
-            <img src={qrImage} alt="Shake QR Code" className="w-full max-w-xs h-auto aspect-square object-contain mx-auto" />
+            <QRCode
+              value={appStoreLink}
+              size={140}
+              level="Q"
+              marginSize={2}
+              className="bg-white rounded-lg p-1 shadow-sm mx-auto"
+              title="Shake QR Code"
+              logoSrc="/images/icon_small.png"
+              logoSize={28}
+            />
           </div>
           {/* Third column: Quick Links, button, contact, socials */}
           <div className="lg:col-span-1 flex flex-col items-start space-y-3">

@@ -1,6 +1,6 @@
-// src/components/sections/hero.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import QRCode from '../common/qrcode';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
 import { useLocale } from '../../context/LocaleContext';
@@ -31,13 +31,6 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
     setInternalPlatform(nextPlatform);
   };
 
-  const qrImage = platform === 'android'
-    ? '/images/qr-android.png'
-    : platform === 'ios'
-      ? '/images/qr-ios.png'
-      : platform === 'telegram'
-        ? '/images/qr-telegram.png'
-        : '/images/qr-farcaster.png';
   const appStoreLink = platform === 'android'
     ? 'https://play.google.com/store/apps/details?id=com.shakedefi.app'
     : platform === 'ios'
@@ -184,12 +177,15 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
           <div className="flex-1 flex flex-col items-center lg:items-end gap-6">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-accent to-primary-light opacity-30 rounded-full blur-lg animate-pulse-slow"></div>
-              <img 
-                src={qrImage}
-                alt="Shake QR Code"
-                width={280}
-                height={280}
-                className="animate-float shadow-[0_8px_40px_0_#c1e534] rounded-lg"
+              <QRCode
+                value={appStoreLink}
+                size={280}
+                level="Q"
+                marginSize={2}
+                className="animate-float shadow-[0_8px_40px_0_#c1e534] rounded-lg bg-white p-2"
+                title="Shake QR Code"
+                logoSrc="/images/icon_small.png"
+                logoSize={56}
               />
             </div>
             <div className="flex flex-col items-center lg:items-end gap-3">
