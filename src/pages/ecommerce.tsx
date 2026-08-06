@@ -1,5 +1,5 @@
 // src/pages/ecommerce.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Loader2, ShieldCheck, CheckCircle2, Code, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useContent } from '../hooks/useContent';
@@ -25,6 +25,14 @@ const Ecommerce: React.FC = () => {
   const siteContent = useContent('sitecontent');
   const ecommerce = siteContent.ecommerce;
   const navigate = useNavigate();
+
+  const checkEmailRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (applicationId) {
+      checkEmailRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [applicationId]);
 
   useEffect(() => {
     let intervalId: NodeJS.Timeout;
@@ -90,7 +98,6 @@ const Ecommerce: React.FC = () => {
 
       if (data.success) {
         setApplicationId(data.applicationId);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     } catch (err: any) {
       setError(err.message);
@@ -341,7 +348,7 @@ const Ecommerce: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+          <div ref={checkEmailRef} className="mt-16 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="p-8 md:p-12 text-center">
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-indigo-100 mb-6">
                 <Mail className="h-8 w-8 text-indigo-600 animate-pulse" />
