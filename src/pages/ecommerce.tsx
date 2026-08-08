@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Loader2, ShieldCheck, CheckCircle2, Code, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 
 export const secondaryColor = '#1184b0';
@@ -108,6 +109,11 @@ const Ecommerce: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-12 px-6">
+      <SEO
+        title="E-Commerce Escrow Solutions - Shake Defi"
+        description="Integrate automated smart contract escrow payments into your e-commerce platform and online store."
+        canonical="/e-commerce"
+      />
       <div className="max-w-4xl w-full mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">

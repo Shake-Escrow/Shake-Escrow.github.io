@@ -16,7 +16,13 @@ const ROUTES = [
   '/how-it-works',
   '/get-paid',
   '/send-payments',
-  '/faq'
+  '/faq',
+  '/privacy-policy',
+  '/terms-of-service',
+  '/end-user-license-agreement',
+  '/delete-account',
+  '/provision',
+  '/api-docs'
 ];
 
 async function prerender() {
@@ -24,7 +30,7 @@ async function prerender() {
   const app = express();
   
   // Important: We need a fallback for SPA routing so Puppeteer doesn't get a 404
-  // when navigating to /e-commerce initially
+  // when navigating to routes initially
   app.use(express.static(DIST_DIR));
   app.use((req, res) => {
     res.sendFile(path.join(DIST_DIR, 'index.html'));
@@ -63,15 +69,19 @@ async function prerender() {
         // 3. Extract the fully rendered HTML
         const html = await page.content();
 
-        // 4. Save it to the appropriate route directory (e.g. dist/e-commerce/index.html)
-        // Remove leading slash for folder creation
-        const routeFolder = path.join(DIST_DIR, route.substring(1));
+        // 4. Save it to route directory (e.g. dist/terms-of-service/index.html)
+        const routeName = route.substring(1);
+        const routeFolder = path.join(DIST_DIR, routeName);
         await fs.ensureDir(routeFolder);
         
-        const outputPath = path.join(routeFolder, 'index.html');
-        await fs.writeFile(outputPath, html);
+        const outputIndexPath = path.join(routeFolder, 'index.html');
+        await fs.writeFile(outputIndexPath, html);
         
-        console.log(`✅ Generated ${routeFolder}/index.html`);
+        // Also save flat file fallback (e.g. dist/terms-of-service.html) for GitHub Pages compatibility
+        const outputFlatPath = path.join(DIST_DIR, `${routeName}.html`);
+        await fs.writeFile(outputFlatPath, html);
+        
+        console.log(`✅ Generated ${routeFolder}/index.html and ${routeName}.html`);
       }
 
       await browser.close();

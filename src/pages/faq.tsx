@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 import { ChevronDown, ChevronUp, Search } from 'lucide-react';
 
@@ -83,6 +84,11 @@ const FAQ: React.FC = () => {
   
   return (
     <div className="pt-24">
+      <SEO
+        title="Frequently Asked Questions - Shake Defi Escrow"
+        description="Find answers to common questions about smart contract escrow, payment protection, fees, and dispute resolution."
+        canonical="/faq"
+      />
       <Section className="pb-0" bgColor="bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-hero text-4xl md:text-5xl text-secondary-dark mb-6">{siteContent.faq.headline}</h1>

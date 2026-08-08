@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 
 const renderWithOdosLink = (text: string) => {
@@ -20,6 +21,11 @@ const SendPayments: React.FC = () => {
   const siteContent = useContent('sitecontent');
   return (
     <div className="pt-24">
+      <SEO
+        title="Send Payments Safely with Escrow"
+        description="Send crypto and web3 payments with built-in buyer protection and milestone escrow."
+        canonical="/send-payments"
+      />
       <Section className="pb-0" bgColor="bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-hero text-4xl md:text-5xl text-secondary-dark mb-6">

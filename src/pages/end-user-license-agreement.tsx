@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 import { replaceContentPlaceholders } from '../utils/contentPlaceholders';
 
@@ -31,6 +32,11 @@ const EndUserLicenseAgreement: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="End User License Agreement (EULA) - Shake Defi"
+        description="End User License Agreement terms for Shake Defi software and mobile application."
+        canonical="/end-user-license-agreement"
+      />
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Section from '../components/common/section';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 import { Link } from 'react-router-dom';
 
@@ -48,6 +49,11 @@ const TermsOfService: React.FC = () => {
 
   return (
     <div className="pt-20">
+      <SEO
+        title="Terms of Service - Shake Defi"
+        description="Read the Terms of Service for using Shake Defi smart contract escrow platform and services."
+        canonical="/terms-of-service"
+      />
       <Section bgColor="bg-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-display font-black text-secondary-dark mb-8">

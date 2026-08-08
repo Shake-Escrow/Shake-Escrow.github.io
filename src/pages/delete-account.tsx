@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/common/button';
 import Section from '../components/common/section';
+import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 
 const DeleteAccount: React.FC = () => {
@@ -50,6 +51,11 @@ const DeleteAccount: React.FC = () => {
 
   return (
     <Section bgColor="bg-white">
+      <SEO
+        title="Delete Account - Shake Defi"
+        description="Request account deletion and data removal from Shake Defi services."
+        canonical="/delete-account"
+      />
       <div className="max-w-2xl mx-auto">
         <div className="text-center space-y-6">
           <h1 className="font-display text-4xl md:text-5xl text-secondary-dark">
