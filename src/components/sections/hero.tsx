@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import QRCode from '../common/qrcode';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
@@ -45,8 +44,6 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
       : siteContent.home.hero.ctaLabel;
   const partnerLinkText = siteContent.home.hero.partnerLinkText;
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
-  const subheadLinkText = '95%';
-  const [subheadPrefix, subheadSuffix = ''] = siteContent.home.hero.subhead.split(subheadLinkText);
   const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
   return (
@@ -63,14 +60,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
             </h1>
             
             <p className="font-body text-lg md:text-xl text-secondary max-w-2xl">
-              {subheadPrefix}
-              <Link
-                to="/get-paid#keep-more-of-what-you-earn"
-                className="underline decoration-secondary/40 underline-offset-4 transition-opacity hover:opacity-75"
-              >
-                {subheadLinkText}
-              </Link>
-              {subheadSuffix}
+              {siteContent.home.hero.subhead}
             </p>
             
             <div className="space-y-4 max-w-2xl mx-auto lg:mx-0">
