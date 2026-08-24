@@ -22,6 +22,7 @@ import DeleteAccount from './pages/delete-account';
 import Ecommerce from './pages/ecommerce';
 import Provision from './pages/provision';
 import ApiDocs from './pages/api-docs';
+import Marketplace from './pages/marketplace';
 
 // Declare gtag on window
 declare global {
@@ -32,7 +33,7 @@ declare global {
 
 function App() {
   const location = useLocation();
-  const [platform, setPlatform] = useState<'ios' | 'android' | 'telegram' | 'farcaster'>('android');
+  const [platform, setPlatform] = useState<'ios' | 'android' | 'telegram' | 'farcaster' | 'browser'>('android');
   const isApiDocs = location.pathname === '/api-docs';
 
   // Reset scroll position when navigating between routes
@@ -82,6 +83,7 @@ function App() {
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/e-commerce" element={<Ecommerce />} />
+            <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/provision" element={<Provision />} />
             <Route path="/api-docs" element={<ApiDocs />} />
           </Routes>

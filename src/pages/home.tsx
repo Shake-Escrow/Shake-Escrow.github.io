@@ -4,8 +4,9 @@ import Hero from '../components/sections/hero';
 import Features from '../components/sections/features';
 import HowToUse from '../components/sections/howtouse';
 import BusinessCustomerCards from '../components/sections/businesscustomercards';
+import MarketplaceSpotlight from '../components/sections/marketplace-spotlight';
 
-type Platform = 'ios' | 'android' | 'telegram' | 'farcaster';
+type Platform = 'ios' | 'android' | 'telegram' | 'farcaster' | 'browser';
 
 interface HomeProps {
   platform: Platform;
@@ -22,6 +23,7 @@ const Home: React.FC<HomeProps> = ({ platform, onPlatformChange }) => {
       />
       <Hero platform={platform} onPlatformChange={onPlatformChange} />
       <BusinessCustomerCards />
+      <MarketplaceSpotlight />
       <Features />
       <HowToUse />
     </>

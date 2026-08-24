@@ -117,6 +117,18 @@ const GetPaid: React.FC = () => {
         </div>
       </div>
 
+      <Section bgColor="bg-white" className="pb-0">
+        <div className="max-w-5xl mx-auto rounded-3xl bg-primary-light p-8 md:p-12 flex flex-col md:flex-row gap-7 items-center">
+          <div className="flex-1">
+            <h2 className="font-display text-3xl text-secondary-dark">{siteContent.getPaid.marketplace.headline}</h2>
+            <p className="mt-4 font-body text-lg text-secondary">{siteContent.getPaid.marketplace.description}</p>
+          </div>
+          <a href="https://t.me/Shake_Marketplace" target="_blank" rel="noopener noreferrer" className="shrink-0">
+            <Button variant="outline" size="lg">{siteContent.getPaid.marketplace.button}</Button>
+          </a>
+        </div>
+      </Section>
+
       <div className="mt-24"></div>
       <Section bgColor="bg-secondary-dark" className="relative overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto text-center">

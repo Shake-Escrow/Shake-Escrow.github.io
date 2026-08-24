@@ -7,7 +7,7 @@ import { FaGoogle, FaGooglePlay, FaApple, FaTelegramPlane } from "react-icons/fa
 import { GrAppleAppStore } from "react-icons/gr";
 import { GoBrowser } from "react-icons/go";
 
-type Platform = 'ios' | 'android' | 'telegram' | 'farcaster';
+type Platform = 'ios' | 'android' | 'telegram' | 'farcaster' | 'browser';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
@@ -21,6 +21,7 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
   const { locale } = useLocale();
   const [internalPlatform, setInternalPlatform] = useState<Platform>('android');
   const platform = controlledPlatform ?? internalPlatform;
+  const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
   const setPlatform = (nextPlatform: Platform) => {
     if (onPlatformChange) {
@@ -36,16 +37,18 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
       ? 'https://apps.apple.com/us/app/shake-defi/id6756281576'
       : platform === 'telegram'
         ? 'https://t.me/ShakeDefiBot/app'
-        : FARCASTER_APP_URL;
+        : platform === 'farcaster'
+          ? FARCASTER_APP_URL
+          : webAppUrl;
   const ctaLabel = platform === 'telegram'
     ? 'Launch TG app'
     : platform === 'farcaster'
       ? 'Launch Farcaster'
-      : siteContent.home.hero.ctaLabel;
+      : platform === 'browser'
+        ? siteContent.home.hero.browserCtaLabel
+        : siteContent.home.hero.ctaLabel;
   const partnerLinkText = siteContent.home.hero.partnerLinkText;
   const [partnerLabelPrefix, partnerLabelSuffix = ''] = siteContent.home.hero.partnerLabel.split(partnerLinkText);
-  const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
-
   return (
     <div className="pt-24 md:pt-32 pb-16 md:pb-24 bg-white">
       <div className="container mx-auto px-6">
@@ -125,6 +128,19 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                   />
                   <span className="font-body text-base text-secondary-dark">Farcaster</span>
                 </label>
+
+                <label className="flex items-center space-x-1 cursor-pointer whitespace-nowrap">
+                  <input
+                    type="radio"
+                    name="platform"
+                    value="browser"
+                    checked={platform === 'browser'}
+                    onChange={() => setPlatform('browser')}
+                    className="w-5 h-5 text-accent border-gray-300 focus:ring-accent cursor-pointer"
+                  />
+                  <GoBrowser className="text-secondary-dark text-xl" aria-hidden="true" />
+                  <span className="font-body text-base text-secondary-dark">{siteContent.home.hero.browserLabel}</span>
+                </label>
               </div>
             </div>
             
@@ -141,26 +157,26 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                     <GrAppleAppStore className="text-2xl" aria-hidden="true" />
                   ) : platform === 'telegram' ? (
                     <FaTelegramPlane className="text-2xl" aria-hidden="true" />
-                  ) : (
+                  ) : platform === 'farcaster' ? (
                     <img
                       src="/images/farcaster-logo.svg"
                       alt=""
                       className="h-6 w-6 object-contain"
                       aria-hidden="true"
                     />
+                  ) : (
+                    <GoBrowser size={24} aria-hidden="true" />
                   )}
                 </span>
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={() => { window.open(webAppUrl, '_blank', 'noreferrer'); }}
-              >
+              <a href="https://t.me/Shake_Marketplace" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg">
                 <span className="inline-flex items-center gap-2">
-                  {siteContent.home.hero.useWebApp}
-                  <GoBrowser size={24} aria-hidden="true" />
+                  {siteContent.home.hero.marketplaceCtaLabel}
+                  <FaTelegramPlane size={24} aria-hidden="true" />
                 </span>
               </Button>
+              </a>
             </div>
           </div>
           

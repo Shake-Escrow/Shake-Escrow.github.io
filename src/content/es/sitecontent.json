@@ -10,6 +10,10 @@
         "path": "/how-it-works"
       },
       {
+        "title": "Mercado",
+        "path": "/marketplace"
+      },
+      {
         "title": "E-Commerce",
         "path": "/e-commerce"
       },
@@ -30,8 +34,7 @@
         "title": "Preguntas",
         "path": "/faq"
       }
-    ],
-    "launchApp": "Abrir App"
+    ]
   },
   "home": {
     "hero": {
@@ -40,7 +43,9 @@
       "button": "Disponible Ahora",
       "availableNowHeading": "Disponible Ahora",
       "ctaLabel": "Descarga Gratuita",
-      "useWebApp": "Usar App Web",
+      "browserLabel": "Navegador",
+      "browserCtaLabel": "Abrir App Web",
+      "marketplaceCtaLabel": "Explorar Mercado",
       "partnerLabel": "Nuestro socio de entrada/salida de criptomonedas:",
       "partnerLinkText": "socio de entrada/salida de criptomonedas"
     },
@@ -96,7 +101,57 @@
         "description": "Deposita fondos en escrow a través de la app. Tu dinero se retiene de forma segura durante el período acordado. Si algo sale mal, puedes solicitar un reembolso antes de que se cierre la ventana.",
         "button": "Saber más"
       }
+    },
+    "marketplace": {
+      "eyebrow": "Mercado de Shake",
+      "headline": "Convierte tu anuncio en una oportunidad local",
+      "description": "Cuando creas un anuncio en Shake, puedes elegir compartirlo con el Mercado de Shake en Telegram. Su foto, descripción, precio y ubicación ayudan a los compradores interesados a descubrir lo que ofreces.",
+      "sellerBenefitTitle": "Llega a más compradores",
+      "sellerBenefit": "Comparte el anuncio que ya creaste con personas que buscan bienes y servicios.",
+      "buyerBenefitTitle": "Descubre ofertas cercanas",
+      "buyerBenefit": "Explora anuncios por lo que se vende, dónde está ubicado y su precio.",
+      "learnMoreLabel": "Conoce el Mercado",
+      "exploreLabel": "Explorar Mercado"
     }
+  },
+  "marketplace": {
+    "hero": {
+      "headline": "Encuentra compradores más allá de tus contactos",
+      "description": "Publicar en el Mercado te permite compartir opcionalmente un anuncio de Shake con el canal de Telegram del Mercado de Shake, facilitando que nuevos compradores descubran lo que ofreces."
+    },
+    "exploreLabel": "Explorar Mercado",
+    "createListingLabel": "Crear un Anuncio",
+    "benefits": [
+      {
+        "title": "Para vendedores",
+        "description": "Llega a personas que ya exploran bienes y servicios sin tener que crear tu anuncio de nuevo. Una foto, descripción, precio y ubicación brindan a los compradores los detalles que necesitan para encontrar una oferta relevante."
+      },
+      {
+        "title": "Para compradores",
+        "description": "Explora ofertas en un canal familiar de Telegram y descubre bienes y servicios según lo disponible, dónde se encuentra y su precio."
+      }
+    ],
+    "stepsHeading": "Cómo funciona el Mercado",
+    "stepsDescription": "El Mercado es opcional: úsalo cuando quieras dar más visibilidad a un anuncio.",
+    "steps": [
+      {
+        "title": "Crea un anuncio",
+        "description": "Agrega los detalles que ayuden a un comprador a entender lo que ofreces."
+      },
+      {
+        "title": "Elige Publicar en el Mercado",
+        "description": "Selecciona la opción opcional para compartir en el Mercado cuando quieras llegar a más personas."
+      },
+      {
+        "title": "Haz que te descubran",
+        "description": "Tu anuncio se comparte con la comunidad de Telegram del Mercado de Shake para que los compradores interesados lo exploren."
+      }
+    ],
+    "trust": {
+      "title": "Descubrimiento con una forma más segura de transaccionar",
+      "description": "El Mercado ayuda a compradores y vendedores a encontrarse. Cuando estés listo para organizar una compra, Shake ofrece a ambas partes una forma clara y documentada de transaccionar."
+    },
+    "howItWorksLabel": "Cómo funciona Shake"
   },
   "howItWorks": {
     "hero": {
@@ -157,6 +212,11 @@
       "header": "¿Listo para cobrar con Shake?",
       "subhead": "Crea tu cuenta hoy y experimenta el futuro de los pagos cripto",
       "button": "Disponible Ahora"
+    },
+    "marketplace": {
+      "headline": "Pon tu anuncio frente a más compradores",
+      "description": "Elige Publicar en el Mercado al crear un anuncio para compartir su foto, descripción, precio y ubicación con la comunidad de Telegram del Mercado de Shake.",
+      "button": "Explorar Mercado"
     }
   },
   "sendPayments": {
@@ -190,6 +250,11 @@
       "header": "¿Listo para pagar con Shake?",
       "subhead": "Crea tu cuenta hoy y experimenta el futuro de los pagos cripto",
       "button": "Disponible Ahora"
+    },
+    "marketplace": {
+      "headline": "Descubre anuncios en el Mercado",
+      "description": "Explora el canal de Telegram del Mercado de Shake para encontrar bienes y servicios; después usa Shake cuando estés listo para organizar una compra.",
+      "button": "Explorar Mercado"
     }
   },
   "footer": {
@@ -207,6 +272,10 @@
       {
         "label": "Cómo Funciona",
         "url": "/how-it-works"
+      },
+      {
+        "label": "Mercado",
+        "url": "/marketplace"
       },
       {
         "label": "E-Commerce",
@@ -279,6 +348,22 @@
       {
         "question": "¿Cómo comienzo?",
         "answer": "Puedes comenzar [descargando la app en tu dispositivo móvil](https://shakedefi.com)."
+      },
+      {
+        "question": "¿Qué es Publicar en el Mercado?",
+        "answer": "Publicar en el Mercado es una forma opcional de compartir tu anuncio de Shake con el canal de Telegram del Mercado de Shake para que más compradores potenciales lo descubran."
+      },
+      {
+        "question": "¿Tengo que compartir mi anuncio con el Mercado?",
+        "answer": "No. Compartir es opcional. Tú eliges si cada anuncio se publica en el canal de Telegram del Mercado de Shake."
+      },
+      {
+        "question": "¿Qué información aparece en una publicación del Mercado?",
+        "answer": "Una publicación del Mercado comparte la foto, descripción, precio y ubicación de tu anuncio para que los compradores entiendan rápidamente lo que ofreces."
+      },
+      {
+        "question": "¿Dónde puedo explorar los anuncios del Mercado?",
+        "answer": "Puedes explorar los anuncios actuales en el [canal de Telegram del Mercado de Shake](https://t.me/Shake_Marketplace)."
       },
       {
         "question": "¿Qué es un escrow?",

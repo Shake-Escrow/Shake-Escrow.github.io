@@ -5,7 +5,7 @@ import QRCode from '../common/qrcode';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
 
-type Platform = 'ios' | 'android' | 'telegram' | 'farcaster';
+type Platform = 'ios' | 'android' | 'telegram' | 'farcaster' | 'browser';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
@@ -21,7 +21,9 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
       ? 'https://apps.apple.com/us/app/shake-defi/id6756281576'
       : platform === 'telegram'
         ? 'https://t.me/ShakeDefiBot/app'
-        : FARCASTER_APP_URL;
+        : platform === 'farcaster'
+          ? FARCASTER_APP_URL
+          : 'https://app.shakedefi.com/';
 
   return (
     <footer className="bg-white text-[#2d3440]">

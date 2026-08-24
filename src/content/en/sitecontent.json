@@ -10,6 +10,10 @@
         "path": "/how-it-works"
       },
       {
+        "title": "Marketplace",
+        "path": "/marketplace"
+      },
+      {
         "title": "E-Commerce",
         "path": "/e-commerce"
       },
@@ -30,8 +34,7 @@
         "title": "FAQ",
         "path": "/faq"
       }
-    ],
-    "launchApp": "Launch App"
+    ]
   },
   "home": {
     "hero": {
@@ -40,7 +43,9 @@
       "button": "Available Now",
       "availableNowHeading": "Available Now",
       "ctaLabel": "Free Download",
-      "useWebApp": "Use Web App",
+      "browserLabel": "Browser",
+      "browserCtaLabel": "Open Web App",
+      "marketplaceCtaLabel": "Explore Marketplace",
       "partnerLabel": "Our crypto onramp/offramp partner:",
       "partnerLinkText": "crypto onramp/offramp partner"
     },
@@ -96,7 +101,57 @@
         "description": "Deposit funds into escrow through the app. Your money is held securely for the agreed period. If something goes wrong, you can request a refund before the window closes.",
         "button": "Learn more"
       }
+    },
+    "marketplace": {
+      "eyebrow": "Shake Marketplace",
+      "headline": "Turn your listing into a local opportunity",
+      "description": "When you create a listing in Shake, you can choose to share it with the Shake Marketplace on Telegram. Your photo, description, price, and location help interested buyers discover what you are offering.",
+      "sellerBenefitTitle": "Reach more buyers",
+      "sellerBenefit": "Share the listing you already made with people looking for goods and services.",
+      "buyerBenefitTitle": "Discover nearby offers",
+      "buyerBenefit": "Browse listings by what is being sold, where it is located, and its price.",
+      "learnMoreLabel": "Learn about Marketplace",
+      "exploreLabel": "Explore Marketplace"
     }
+  },
+  "marketplace": {
+    "hero": {
+      "headline": "Find buyers beyond your contacts",
+      "description": "Post to Marketplace lets you optionally share a Shake listing with the Shake Marketplace Telegram channel, making it easier for new buyers to discover what you are offering."
+    },
+    "exploreLabel": "Explore Marketplace",
+    "createListingLabel": "Create a Listing",
+    "benefits": [
+      {
+        "title": "For sellers",
+        "description": "Reach people who are already browsing for goods and services without creating your listing again. A photo, description, price, and location give buyers the details they need to find a relevant offer."
+      },
+      {
+        "title": "For buyers",
+        "description": "Browse offers in a familiar Telegram channel and discover goods and services by what is available, where it is located, and its price."
+      }
+    ],
+    "stepsHeading": "How Marketplace works",
+    "stepsDescription": "Marketplace is optional: use it when you want to give a listing more visibility.",
+    "steps": [
+      {
+        "title": "Create a listing",
+        "description": "Add the details that help a buyer understand what you are offering."
+      },
+      {
+        "title": "Choose Post to Marketplace",
+        "description": "Select the optional Marketplace sharing choice when you want to reach more people."
+      },
+      {
+        "title": "Get discovered",
+        "description": "Your listing is shared with the Shake Marketplace Telegram community for interested buyers to explore."
+      }
+    ],
+    "trust": {
+      "title": "Discovery with a safer way to transact",
+      "description": "Marketplace helps buyers and sellers find each other. When you are ready to arrange a purchase, Shake gives both sides a clear, documented way to transact."
+    },
+    "howItWorksLabel": "How Shake works"
   },
   "howItWorks": {
     "hero": {
@@ -157,6 +212,11 @@
       "header": "Ready to get paid with Shake?",
       "subhead": "Create your account today and experience the future of crypto payments",
       "button": "Available Now"
+    },
+    "marketplace": {
+      "headline": "Put your listing in front of more buyers",
+      "description": "Choose Post to Marketplace when creating a listing to share its photo, description, price, and location with the Shake Marketplace Telegram community.",
+      "button": "Explore Marketplace"
     }
   },
   "sendPayments": {
@@ -190,6 +250,11 @@
       "header": "Ready to start paying with Shake?",
       "subhead": "Create your account today and experience the future of crypto payments",
       "button": "Available Now"
+    },
+    "marketplace": {
+      "headline": "Discover listings in Marketplace",
+      "description": "Browse the Shake Marketplace Telegram channel to find goods and services, then use Shake when you are ready to arrange a purchase.",
+      "button": "Explore Marketplace"
     }
   },
   "footer": {
@@ -207,6 +272,10 @@
       {
         "label": "How it Works",
         "url": "/how-it-works"
+      },
+      {
+        "label": "Marketplace",
+        "url": "/marketplace"
       },
       {
         "label": "E-Commerce",
@@ -279,6 +348,22 @@
       {
         "question": "How do I get started?",
         "answer": "You can get started by [downloading the app on your mobile device](https://shakedefi.com)."
+      },
+      {
+        "question": "What is Post to Marketplace?",
+        "answer": "Post to Marketplace is an optional way to share your Shake listing with the Shake Marketplace Telegram channel so more potential buyers can discover it."
+      },
+      {
+        "question": "Do I have to share my listing with Marketplace?",
+        "answer": "No. Sharing is optional. You choose whether each listing is posted to the Shake Marketplace Telegram channel."
+      },
+      {
+        "question": "What information appears in a Marketplace post?",
+        "answer": "A Marketplace post shares your listing's photo, description, price, and location so buyers can quickly understand what you are offering."
+      },
+      {
+        "question": "Where can I browse Marketplace listings?",
+        "answer": "You can browse current listings in the [Shake Marketplace Telegram channel](https://t.me/Shake_Marketplace)."
       },
       {
         "question": "What is an escrow?",
