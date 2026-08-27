@@ -116,11 +116,34 @@
   },
   "marketplace": {
     "hero": {
+      "badge": "Mercado Comunitario",
       "headline": "Encuentra compradores más allá de tus contactos",
       "description": "Publicar en el Mercado te permite compartir opcionalmente un anuncio de Shake con el canal de Telegram del Mercado de Shake, facilitando que nuevos compradores descubran lo que ofreces."
     },
     "exploreLabel": "Explorar Mercado",
     "createListingLabel": "Crear un Anuncio",
+    "preview": {
+      "badge": "Canal en Vivo de Telegram",
+      "headline": "Descubre cómo ven tus anuncios los compradores",
+      "description": "Al publicar en el Mercado, Shake formatea tus fotos, descripción, precio y ubicación en una tarjeta clara compartida directamente en el canal de Telegram.",
+      "imageAlt": "Captura del canal de Telegram del Mercado P2P de Shake con anuncio de reloj Citizen y botón de Compra con Escrow",
+      "channelTag": "Canal de Telegram",
+      "channelName": "Mercado P2P de Shake",
+      "features": [
+        {
+          "title": "Detalles completos de la publicación",
+          "description": "Fotos, descripción, precio en USDT y ubicación claramente formateados para que los compradores tengan visibilidad total."
+        },
+        {
+          "title": "Compra protegida en un toque",
+          "description": "El botón 'Buy with Escrow' abre Shake para iniciar al instante un depósito en garantía seguro con contratos inteligentes."
+        },
+        {
+          "title": "Términos de protección transparentes",
+          "description": "Períodos de inspección e identificadores de transacción de tres palabras facilitan una verificación sencilla."
+        }
+      ]
+    },
     "benefits": [
       {
         "title": "Para vendedores",

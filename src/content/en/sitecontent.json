@@ -116,11 +116,34 @@
   },
   "marketplace": {
     "hero": {
+      "badge": "Community Marketplace",
       "headline": "Find buyers beyond your contacts",
       "description": "Post to Marketplace lets you optionally share a Shake listing with the Shake Marketplace Telegram channel, making it easier for new buyers to discover what you are offering."
     },
     "exploreLabel": "Explore Marketplace",
     "createListingLabel": "Create a Listing",
+    "preview": {
+      "badge": "Live Telegram Channel",
+      "headline": "See how listings look to buyers",
+      "description": "When you opt in, Shake formats your photos, description, price, and location into a clear listing card posted directly to the Telegram community channel.",
+      "imageAlt": "Shake P2P Marketplace Telegram channel screenshot with Citizen watch listing and Buy with Escrow button",
+      "channelTag": "Telegram Channel",
+      "channelName": "Shake P2P Marketplace",
+      "features": [
+        {
+          "title": "Complete Listing Details",
+          "description": "Photos, description, price in USDT, and location are clearly formatted so buyers have full visibility."
+        },
+        {
+          "title": "One-Tap Escrow Checkout",
+          "description": "The 'Buy with Escrow' button opens Shake to instantly initiate a secure, smart-contract-protected escrow."
+        },
+        {
+          "title": "Transparent Protection Terms",
+          "description": "Inspection periods and unique three-word transaction IDs make verification simple and verifiable."
+        }
+      ]
+    },
     "benefits": [
       {
         "title": "For sellers",
