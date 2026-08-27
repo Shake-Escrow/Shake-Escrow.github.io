@@ -91,8 +91,8 @@
     "businessCustomerCards": {
       "business": {
         "label": "Comerciante",
-        "headline": "Cobra\nautomáticamente",
-        "description": "Establece tu período de escrow, compártelo con tu comprador y recibe los fondos al final del período, automáticamente. Sin banco, sin liberación manual, sin esperas. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
+        "headline": "Cobra con\nseguridad",
+        "description": "Establece tu período de escrow, compártelo con tu comprador y recibe los fondos después de que finalice el período de escrow. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
         "button": "Saber más"
       },
       "customer": {
