@@ -125,22 +125,22 @@
     "preview": {
       "badge": "Live Telegram Channel",
       "headline": "See how listings look to buyers",
-      "description": "When you opt in, Shake formats your photos, description, price, and location into a clear listing card posted directly to the Telegram community channel.",
+      "description": "When you opt in, Shake formats your photo, description, price, and location into a clear listing card posted directly to the Telegram community channel.",
       "imageAlt": "Shake P2P Marketplace Telegram channel screenshot with Citizen watch listing and Buy with Escrow button",
       "channelTag": "Telegram Channel",
       "channelName": "Shake P2P Marketplace",
       "features": [
         {
           "title": "Complete Listing Details",
-          "description": "Photos, description, price in USDT, and location are clearly formatted so buyers have full visibility."
+          "description": "Photos, description, price, and location are clearly formatted so buyers have full visibility."
         },
         {
-          "title": "One-Tap Escrow Checkout",
-          "description": "The 'Buy with Escrow' button opens Shake to instantly initiate a secure, smart-contract-protected escrow."
+          "title": "Optional Escrow Checkout",
+          "description": "Merchants can choose whether to offer escrow. When enabled, the 'Buy with Escrow' button opens Shake to instantly initiate a secure, smart-contract-protected escrow."
         },
         {
           "title": "Transparent Protection Terms",
-          "description": "Inspection periods and unique three-word transaction IDs make verification simple and verifiable."
+          "description": "The escrow period set by the merchant provides a clear and transparent protection window for every transaction."
         }
       ]
     },

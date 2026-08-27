@@ -80,7 +80,7 @@ const Marketplace: React.FC = () => {
 
                 <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
                   {content.preview?.description ||
-                    'When you opt in, Shake formats your photos, description, price, and location into a clear listing card posted directly to the Telegram community channel.'}
+                    'When you opt in, Shake formats your photo, description, price, and location into a clear listing card posted directly to the Telegram community channel.'}
                 </p>
 
                 {/* Highlights List */}

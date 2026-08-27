@@ -125,22 +125,22 @@
     "preview": {
       "badge": "Canal en Vivo de Telegram",
       "headline": "Descubre cómo ven tus anuncios los compradores",
-      "description": "Al publicar en el Mercado, Shake formatea tus fotos, descripción, precio y ubicación en una tarjeta clara compartida directamente en el canal de Telegram.",
+      "description": "Al publicar en el Mercado, Shake formatea tu foto, descripción, precio y ubicación en una tarjeta clara compartida directamente en el canal de Telegram.",
       "imageAlt": "Captura del canal de Telegram del Mercado P2P de Shake con anuncio de reloj Citizen y botón de Compra con Escrow",
       "channelTag": "Canal de Telegram",
       "channelName": "Mercado P2P de Shake",
       "features": [
         {
           "title": "Detalles completos de la publicación",
-          "description": "Fotos, descripción, precio en USDT y ubicación claramente formateados para que los compradores tengan visibilidad total."
+          "description": "Fotos, descripción, precio y ubicación claramente formateados para que los compradores tengan visibilidad total."
         },
         {
-          "title": "Compra protegida en un toque",
-          "description": "El botón 'Buy with Escrow' abre Shake para iniciar al instante un depósito en garantía seguro con contratos inteligentes."
+          "title": "Pago con Escrow Opcional",
+          "description": "Los comerciantes pueden elegir si ofrecer escrow. Cuando está habilitado, el botón 'Buy with Escrow' abre Shake para iniciar al instante un depósito en garantía seguro con contratos inteligentes."
         },
         {
           "title": "Términos de protección transparentes",
-          "description": "Períodos de inspección e identificadores de transacción de tres palabras facilitan una verificación sencilla."
+          "description": "El período de escrow establecido por el comerciante proporciona un plazo de protección claro y transparente para cada transacción."
         }
       ]
     },
