@@ -108,8 +108,8 @@
       "description": "Cuando creas un anuncio en Shake, puedes elegir compartirlo con el Mercado de Shake en Telegram. Su foto, descripción, precio y ubicación ayudan a los compradores interesados a descubrir lo que ofreces.",
       "sellerBenefitTitle": "Llega a más compradores",
       "sellerBenefit": "Comparte el anuncio que ya creaste con personas que buscan bienes y servicios.",
-      "buyerBenefitTitle": "Descubre ofertas cercanas",
-      "buyerBenefit": "Explora anuncios por lo que se vende, dónde está ubicado y su precio.",
+      "buyerBenefitTitle": "Explora publicaciones recientes",
+      "buyerBenefit": "Recorre el canal de Telegram para ver los últimos bienes y servicios compartidos por los miembros.",
       "learnMoreLabel": "Conoce el Mercado",
       "exploreLabel": "Explorar Mercado"
     }
@@ -151,7 +151,7 @@
       },
       {
         "title": "Para compradores",
-        "description": "Explora ofertas en un canal familiar de Telegram y descubre bienes y servicios según lo disponible, dónde se encuentra y su precio."
+        "description": "Recorre el canal de Telegram para descubrir bienes y servicios a medida que la comunidad los publica."
       }
     ],
     "stepsHeading": "Cómo funciona el Mercado",

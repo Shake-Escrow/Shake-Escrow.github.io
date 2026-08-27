@@ -108,8 +108,8 @@
       "description": "When you create a listing in Shake, you can choose to share it with the Shake Marketplace on Telegram. Your photo, description, price, and location help interested buyers discover what you are offering.",
       "sellerBenefitTitle": "Reach more buyers",
       "sellerBenefit": "Share the listing you already made with people looking for goods and services.",
-      "buyerBenefitTitle": "Discover nearby offers",
-      "buyerBenefit": "Browse listings by what is being sold, where it is located, and its price.",
+      "buyerBenefitTitle": "Explore recent listings",
+      "buyerBenefit": "Scroll through the Telegram channel feed to see the latest goods and services shared by community members.",
       "learnMoreLabel": "Learn about Marketplace",
       "exploreLabel": "Explore Marketplace"
     }
@@ -151,7 +151,7 @@
       },
       {
         "title": "For buyers",
-        "description": "Browse offers in a familiar Telegram channel and discover goods and services by what is available, where it is located, and its price."
+        "description": "Scroll through the Telegram channel feed to discover goods and services as community members post them."
       }
     ],
     "stepsHeading": "How Marketplace works",
