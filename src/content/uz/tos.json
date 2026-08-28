@@ -1,0 +1,425 @@
+{
+  "lastUpdated": "2026-yil 28-avgust",
+  "effectiveDate": "2026-yil 28-avgust",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "XIZMAT KO'RSATISH SHARTLARI",
+  "sections": [
+    {
+      "title": "1. Shartlarga rozilik va ta'riflar",
+      "subsections": [
+        {
+          "subtitle": "1.1 Shartlarga rozilik",
+          "content": "Ilova yoki Xizmatlarga kirish, ularni yuklab olish yoki ulardan foydalanish orqali siz ushbu Shartlar, bizning Yakuniy Foydalanuvchi Litsenziya Shartnomamiz (EULA) va Maxfiylik Siyosatimizni o'qib chiqqaningizni, tushunganingizni va ularga rioya qilish majburiyatini qabul qilganingizni tasdiqlaysiz. Agar siz ushbu Shartlarga rozi bo'lmasangiz, Xizmatlarga kirishingiz yoki ulardan foydalanishingiz mumkin emas."
+        },
+        {
+          "subtitle": "1.2 Ta'riflar",
+          "content": "Ushbu Shartlar maqsadlari uchun quyidagi ta'riflar qo'llaniladi:\n\n<strong>\"Foydalanuvchi\"</strong> — Savdogar yoki Mijoz sifatida hisob yaratgan va Xizmatlardan foydalanadigan har qanday shaxsni bildiradi.\n\n<strong>\"Savdogar\"</strong> — Ilova orqali sotuvga tovarlar yoki xizmatlarni taklif qiluvchi va tranzaksiyalar uchun Shartnomalar tuzuvchi Foydalanuvchini bildiradi.\n\n<strong>\"Mijoz\"</strong> — Ilova orqali Savdogardan tovarlar yoki xizmatlarni sotib oluvchi va Shartnoma shartlariga muvofiq to'lovni amalga oshirishga rozi bo'lgan Foydalanuvchini bildiradi.\n\n<strong>\"Shartnoma\"</strong> — Savdogar tomonidan yaratilgan va almashiladigan tovarlar yoki xizmatlar, to'lov miqdori, Eskrow Davri hamda tranzaksiyaga oid boshqa muhim shartlarni belgilovchi raqamli bitimni bildiradi. Har bir Shartnoma ham Savdogar, ham Mijoz tomonidan raqamli ravishda imzolanadi.\n\n<strong>\"Eskrow Davri\"</strong> — Savdogar tomonidan Shartnomada ko'rsatilgan, to'lov mablag'lari Savdogarga chiqarilishidan oldin Aqlli Shartnoma tomonidan eskrowda ushlab turiladigan vaqt davrini bildiradi. Ushbu davr noldan (0) boshlab Ilova tomonidan ruxsat etilgan har qanday oqilona muddatgacha bo'lishi mumkin.\n\n<strong>\"Aqlli Shartnoma\"</strong> — Eskrow Davrida Mijoz mablag'larini eskrowda saqlaydigan hamda o'zining oldindan belgilangan mantig'i va Kompaniyaning vakolatli ko'rsatmalariga muvofiq mablag'larni chiqarish yoki qaytarishni amalga oshiradigan avtonom, o'z-o'zini bajaruvchi blokcheyn dasturini bildiradi.\n\n<strong>\"Tezkor Tranzaksiya\"</strong> — Eskrow Davri nolga (0) teng qilib belgilangan, natijada mablag'lar eskrow funksiyasisiz darhol Savdogarga o'tkaziladigan tranzaksiyani bildiradi.\n\n<strong>\"Nizo\"</strong> — Eskrow Davrida Mijoz tomonidan Savdogar Shartnoma shartlarini bajarmaganligini da'vo qilib bildirilgan rasmiy shikoyatni bildiradi.\n\n<strong>\"Bozor Kanali\"</strong> yoki <strong>\"P2P Bozori\"</strong> — Foydalanuvchilar o'zaro (peer-to-peer) tranzaksiyalarni osonlashtirish uchun ixtiyoriy ravishda tranzaksiya e'lonlari, mahsulot tavsiflari va to'lov havolalarini tarqatishlari va topishlari mumkin bo'lgan uchinchi tomon xabar almashish platformalarida (jumladan Telegramda) faoliyat yurituvchi ommaviy yoki jamoaviy aloqa kanallarini bildiradi."
+        }
+      ]
+    },
+    {
+      "title": "2. Foydalanuvchi rollari va majburiyatlari",
+      "subsections": [
+        {
+          "subtitle": "2.1 Foydalanuvchining ikki tomonlama maqomi",
+          "content": "Foydalanuvchilar turli vaqtlarda ham Savdogar, ham Mijoz sifatida harakat qilishlari mumkin. Rolingizdan qat'i nazar, barcha Foydalanuvchilar ushbu Shartlarga bo'ysunadilar va Xizmatlar orqali tuzilgan har qanday Shartnomalardan kelib chiqadigan barcha majburiyatlarni bajarish uchun javobgardirlar."
+        },
+        {
+          "subtitle": "2.2 Savdogar majburiyatlari",
+          "content": "Savdogar sifatida siz quyidagilarga rozilik bildirasiz:\n\n<ul>\n<li>Siz taklif qilayotgan tovarlar yoki xizmatlarni to'g'ri va haqqoniy tavsiflovchi aniq, to'g'ri va to'liq Shartnomalar tuzish</li>\n<li>Siz yaratgan va imzolagan har bir Shartnomada tavsiflanganidek barcha tovarlarni yetkazib berish yoki barcha xizmatlarni aynan ko'rsatilgan tarzda bajarish</li>\n<li>Shartnomada ko'rsatilgan yoki oqilona nazarda tutilgan muddatlarda o'z majburiyatlaringizni bajarish</li>\n<li>Mijozlarning so'rovlari va xavotirlariga tezkorlik va professionallik bilan javob berish</li>\n<li>Nizo yuzaga kelgan taqdirda to'liq hamkorlik qilish, jumladan so'ralgan barcha dalillar va hujjatlarni taqdim etish</li>\n<li>Faol Shartnomalar bo'yicha o'z majburiyatlaringizni bajarish uchun yetarli zaxira yoki imkoniyatni saqlab turish</li>\n<li>Yolg'on, chalg'ituvchi yoki aldamchi ma'lumotlarga ega Shartnomalarni yaratmaslik</li>\n<li>Taqdim etilayotgan tovarlar yoki xizmatlarning xususiyatiga mos keladigan oqilona Eskrow Davrlarini belgilash</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.3 Mijoz majburiyatlari",
+          "content": "Mijoz sifatida siz quyidagilarga rozilik bildirasiz:\n\n<ul>\n<li>Shartnomani imzolashdan oldin uning barcha shartlarini, jumladan tovarlar yoki xizmatlar tavsifi, to'lov miqdori va Eskrow Davrini diqqat bilan ko'rib chiqish</li>\n<li>Shartnomani imzolagandan so'ng kelishilgan miqdordagi to'lovni kechiktirmasdan amalga oshirish</li>\n<li>Shartnoma shartlariga muvofiq taqdim etilgan tovarlar yoki xizmatlarni qabul qilib olish</li>\n<li>Faqat Savdogar Shartnomani bajarmagan deb ishonish uchun qonuniy va vijdoniy asoslar mavjud bo'lgandagina Nizolarni boshlash</li>\n<li>Nizo boshlashda to'g'ri va to'liq ma'lumotlarni taqdim etish</li>\n<li>Nizolarni hal qilish jarayonida to'liq hamkorlik qilish</li>\n<li>Tegishli to'lovni amalga oshirmasdan tovarlar yoki xizmatlarni olish maqsadida nizo jarayonini suiiste'mol qilmaslik</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.4 Foydalanuvchining umumiy xatti-harakat qoidalari",
+          "content": "Barcha Foydalanuvchilar, xoh Savdogar, xoh Mijoz sifatida harakat qilishlaridan qat'i nazar, quyidagilarga rozilik bildiradilar:\n\n<ul>\n<li>Vijdonan harakat qilish va boshqa Foydalanuvchilar bilan halol munosabatda bo'lish</li>\n<li>Xizmatlar orqali imzolangan barcha Shartnomalarni hurmat qilish va bajarish</li>\n<li>Xizmatlardan noqonuniy, firibgarlik yoki ruxsatsiz maqsadlarda foydalanmaslik</li>\n<li>Xizmatlarga zarar yetkazishi, ularni ishdan chiqarishi yoki faoliyatini yomonlashtirishi mumkin bo'lgan har qanday xatti-harakatlardan tiyilish</li>\n<li>Barcha amaldagi qonunlar va qoidalarga rioya qilish</li>\n<li>Boshqa shaxs yoki yuridik shaxs nomidan o'zini ko'rsatmaslik</li>\n<li>Boshqa Foydalanuvchilarni bezovta qilmaslik, tahdid qilmaslik yoki haqorat qilmaslik</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "3. Tranzaksiya jarayoni va shartnomalar",
+      "subsections": [
+        {
+          "subtitle": "3.1 Shartnoma yaratish",
+          "content": "Savdogarlar Ilova orqali Shartnomalar yaratish orqali tranzaksiyalarni boshlaydilar. Har bir Shartnoma quyidagilarni o'z ichiga olishi shart:\n\n<ul>\n<li>Taklif etilayotgan tovarlar yoki xizmatlarning aniq tavsifi</li>\n<li>Kriptovalyutadagi umumiy to'lov miqdori</li>\n<li>Eskrow Davrining davomiyligi</li>\n<li>Tranzaksiyaga taalluqli har qanday boshqa muhim shartlar</li>\n</ul>\n\nSavdogarlar taklif etilayotgan tovarlar yoki xizmatlarni yanada aniqroq hujjatlashtirish va oydinlashtirish uchun Shartnomaga fotosuratlarni biriktirishlari mumkin. Shartnoma yaratish orqali Savdogar undagi barcha ma'lumotlar to'g'ri, to'liq va chalg'itmaydigan ekanligini tasdiqlaydi."
+        },
+        {
+          "subtitle": "3.2 Shartnomani ko'rib chiqish va qabul qilish",
+          "content": "Shartnomani imzolashdan oldin Mijozlar uning barcha shartlarini, jumladan tovarlar yoki xizmatlar tavsifi, to'lov miqdori, Eskrow Davri va har qanday biriktirilgan fotosuratlarni ko'rib chiqish imkoniyatiga ega bo'ladilar. Shartnomani imzolash orqali Mijoz barcha shartlarni ko'rib chiqqanini, tushunganini va ularga rioya qilishga rozi ekanligini tasdiqlaydi."
+        },
+        {
+          "subtitle": "3.3 Raqamli imzolash jarayoni",
+          "content": "Ham Savdogar, ham Mijoz Ilovaning imzolash funksiyasidan foydalangan holda Shartnomani raqamli imzolashlari shart. Imzolash jarayoni quyidagilarni o'z ichiga oladi:\n\n<ul>\n<li>Qurilma ekranida barmoq yoki stilus yordamida imzo chizish</li>\n<li>EULA-ning 3.5-bo'limida tavsiflanganidek fotosuratga olish</li>\n<li>Imzolash voqeasining vaqt tamg'asini qayd etish</li>\n</ul>\n\nIkkala tomon imzolagandan so'ng, Shartnoma yuridik jihatdan majburiy kuchga kiradi va tranzaksiya davom etishi mumkin."
+        },
+        {
+          "subtitle": "3.4 To'lov va tranzaksiya turlari",
+          "content": "#### 3.4.1 Tezkor tranzaksiyalar\n\nSavdogar Eskrow Davrini nolga (0) o'rnatganda, tranzaksiya Tezkor Tranzaksiyaga aylanadi. Mijoz to'lovni amalga oshirgandan so'ng:\n\n<ul>\n<li>Mablag'lar darhol Savdogarga o'tkaziladi</li>\n<li>Hech qanday Eskrow Davri qo'llanilmaydi</li>\n<li>Mijoz Ilova orqali Nizo boshlash huquqidan voz kechadi</li>\n<li>Tranzaksiya to'liq va yakuniy deb hisoblanadi va faqat Ilovadan tashqaridagi huquqiy himoya vositalariga bog'liq bo'ladi</li>\n</ul>\n\nSavdogarlar Tezkor Tranzaksiyalardan faqat tovar yoki xizmatlarni darhol yetkazib bera oladigan hollarda yoki tranzaksiya xususiyati saqlash davrini talab qilmaydigan hollardagina foydalanishlari kerak.\n\n#### 3.4.2 Eskrow tranzaksiyalari\n\nSavdogar noldan (0) katta bo'lgan Eskrow Davrini belgilaganida, Mijozning to'lovi Aqlli Shartnoma tomonidan eskrowda saqlanadi. Ushbu davrda:\n\n<ul>\n<li>Savdogar tovarlarni yetkazib berishi yoki xizmatlarni Shartnomada ko'rsatilganidek bajarishi kerak</li>\n<li>Savdogar Shartnomani bajarmagan taqdirda, Mijoz Nizo boshlash huquqini saqlab qoladi</li>\n<li>Mablag'lar Aqlli Shartnomada qulflangan holda qoladi va hech bir tomon ularga kira olmaydi</li>\n<li>Eskrow Davri nizo boshlanmasdan tugaganidan so'ng, mablag'lar avtomatik ravishda Savdogarga chiqariladi</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.5 Aqlli shartnoma eskrowining mohiyati",
+          "content": "Siz quyidagilarni tan olasiz va ularga rozilik bildirasiz:\n\n<ul>\n<li>Aqlli Shartnoma bank, moliya muassasasi yoki litsenziyalangan eskrow agenti hisoblanmaydi</li>\n<li>Aqlli Shartnoma o'zining dasturlashtirilgan mantig'iga muvofiq avtonom ishlaydi</li>\n<li>Nizolarni hal qilish bo'yicha 5-bo'limda tavsiflangan holatlardan tashqari, Kompaniya Aqlli Shartnomada saqlanadigan mablag'larga egalik qilmaydi yoki ularni nazorat qilmaydi</li>\n<li>Aqlli Shartnomaning xavfsizligi va ishlashi asosiy blokcheyn tarmog'iga bog'liq</li>\n<li>Aqlli Shartnoma kodi auditdan o'tkazilgan, biroq uning mutlaq xavfsizligi yoki funksionalligi bo'yicha hech qanday kafolat berilishi mumkin emas</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.6 P2P bozori va Telegram kanaliga tarqatish",
+          "content": "Ilova va Xizmatlar Foydalanuvchilarga (masalan, Savdogarlarga) tranzaksiya e'lonlarini bevosita uchinchi tomon xabar almashish platformalaridagi ommaviy yoki jamoaviy aloqa kanallariga, jumladan P2P Bozori Telegram kanaliga (\"Bozor Kanali\"), tarqatish imkonini beruvchi ixtiyoriy funksiyani taqdim etishi mumkin. Bozor Kanali funksiyasidan foydalanish yoki u bilan o'zaro aloqa qilish orqali siz quyidagilarni tan olasiz va ularga rozilik bildirasiz:\n\n<ul>\n<li><strong>Ixtiyoriy ommaviy tarqatish:</strong> Bozor Kanaliga e'lon joylashtirish butunlay ixtiyoriy va foydalanuvchi tomonidan boshlanadi. E'lon joylashtirishni tanlaganingizda, siz Kompaniyaning sizning e'lon ma'lumotlaringizni — jumladan, tranzaksiya fotosuratlari, buyum tavsiflari, narxlash, qabul qilinadigan valyutalar, eskrow saqlash davri shartlari, umumiy joylashuv ma'lumotlari (masalan, shahar, shtat/viloyat yoki mamlakat), shaxsan uchrashib bitim tuzish afzalliklari va tegishli tranzaksiya identifikatsiya kalit so'zlari yoki chuqur havolalarini (deep links) — uchinchi tomonlar kirishi mumkin bo'lgan ommaviy kanallarga uzatishi va ommaviy ko'rsatishiga aniq ruxsat berasiz.</li>\n<li><strong>Tarqatilgan ma'lumotlarning ommaviy xususiyati:</strong> Siz Bozor Kanaliga joylashtirilgan ma'lumot uchinchi tomon xabar almashish platformasining istalgan foydalanuvchisi uchun ochiq ekanligini va Ilovaning shaxsiy, autentifikatsiyadan o'tgan muhitidan tashqarida ekanligini tan olasiz. Siz o'z e'lonlaringiz tavsiflari yoki fotosuratlariga maxfiy, shaxsiy yoki nozik shaxsiy ma'lumotlarni kiritmaslikka rozilik bildirasiz.</li>\n<li><strong>Savdogar mazmuni bo'yicha kafolatlar:</strong> Bozor Kanaliga e'lon joylashtirishda siz quyidagilarni kafolatlaysiz va tasdiqlaysiz: (i) siz e'longa kiritilgan barcha matn, fotosuratlar va mazmunning qonuniy egasi ekaningiz yoki ularga nisbatan barcha zarur litsenziyalar va ruxsatnomalarga ega ekaningiz; (ii) e'lon sizning egaligingizdagi yoki nazoratingizdagi haqiqiy, qonuniy tovarlar yoki xizmatlarni tasvirlashi; (iii) e'londa 9-bo'limda ko'rsatilgan soxta, o'g'irlangan, xavfli, huquqbuzar yoki qonun bilan taqiqlangan har qanday tovarlar yoki xizmatlar taklif qilinmasligi; va (iv) e'lon barcha amaldagi qonunlar va qoidalarga muvofiqligi.</li>\n<li><strong>Uchinchi tomon platformalari (Telegram) bo'yicha ogohlantirishlar:</strong> Bozor Kanallari Kompaniyaga tegishli bo'lmagan, u tomonidan boshqarilmaydigan yoki nazorat qilinmaydigan uchinchi tomon platformalarida (masalan, Telegramda) joylashtirilgan va ishlaydi. Telegram kanallaridan foydalanishingiz yoki ular bilan o'zaro muloqotingiz Telegramning tegishli Xizmat Ko'rsatish Shartlari va Maxfiylik Siyosati bilan tartibga solinadi. Kompaniya Telegramning mavjudligi, uzluksiz ishlash vaqti, xabarlar yetkazilishi, mazmun moderatsiyasi, xavfsizligi yoki ma'lumotlarni qayta ishlash amaliyotlari bo'yicha hech qanday bayonot yoki kafolat bermaydi va uchinchi tomon xabar almashish xizmatlarining har qanday uzilishi, o'chirilishi, cheklanishi yoki to'xtatilishi uchun hech qanday javobgarlikni o'z zimmasiga olmaydi.</li>\n<li><strong>Broker, diler yoki kontragent roli yo'qligi:</strong> Kompaniya Bozor Kanaliga tarqatish funksiyasini faqat texnik aloqa vositasi sifatida taqdim etadi va joylashtirilgan har qanday tovarlar yoki tranzaksiyalar bo'yicha broker, diler, auksionchi, chakana sotuvchi, reklama beruvchi yoki agent sifatida harakat qilmaydi. Kompaniya Bozor Kanali orqali reklama qilingan hech qanday tovar yoki xizmatlarning sifati, xavfsizligi, holati, qonuniyligi yoki yetkazib berilishini ko'rib chiqmaydi, tekshirmaydi, nazorat qilmaydi, haqiqiyligini tasdiqlamaydi, kafolatlamaydi yoki ularga kafil bo'lmaydi. Bozor Kanali e'lonlari orqali boshlangan barcha tranzaksiyalar bevosita xaridor va sotuvchi o'rtasida amalga oshiriladi va tanlangan taqdirda Aqlli Shartnoma Eskrow himoyasiga bo'ysunadi.</li>\n<li><strong>E'lonlarning hayotiy davri, yangilanishlar va o'chirishlar:</strong> Ilova e'lon ma'lumotlarini yangilash (masalan, narx yoki tavsif), real vaqt holatidagi o'zgarishlarni aks ettirish (masalan, xaridor ulanganda tovarni \"Kutilmoqda\" yoki to'lov tugallanganda \"Sotildi\" deb belgilash) yoki tranzaksiya yakunlanganda, bekor qilinganda, muddati o'tganda yoxud foydalanuvchi so'roviga ko'ra e'lonlarni Bozor Kanalidan o'chirish funksiyasini taqdim etishi mumkin. Biroq, Kompaniya o'chirilgan yoki o'zgartirilgan e'lonlar uchinchi tomon mijozlarining keshlaridan, xabar yo'naltirishlaridan yoki tashqi platformalardagi foydalanuvchi arxivlaridan darhol o'chirilishini yoki yangilanishini kafolatlay olmaydi.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "4. Yetkazib berish va bajarish majburiyatlari",
+      "subsections": [
+        {
+          "subtitle": "4.1 Savdogarning yetkazib berish majburiyatlari",
+          "content": "Savdogarlar o'zlari imzolagan har bir Shartnoma shartlariga qat'iy muvofiq ravishda tovarlarni yetkazib berishlari yoki xizmatlarni ko'rsatishlari shart. Bunga quyidagilar kiradi:\n\n<ul>\n<li>Shartnomadagi tavsifga to'liq mos keladigan tovarlar yoki xizmatlarni yetkazib berish</li>\n<li>Shartnomada aniq yoki nazarda tutilgan holda ko'rsatilgan barcha sifat standartlariga javob berish</li>\n<li>Shartnomada belgilangan muddatlarda yoki agar muddat belgilanmagan bo'lsa, tovarlar yoki xizmatlarning xususiyatidan kelib chiqqan holda oqilona vaqt ichida yetkazib berish yoki ijroni yakunlash</li>\n<li>Kelishilgan har qanday hujjatlar, kafolatlar yoki qo'shimcha materiallarni taqdim etish</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.2 Yetkazib berish yoki bajarishni tasdiqlovchi dalillar",
+          "content": "Savdogarlarga yetkazib berish yoki xizmat ko'rsatilganligini tasdiqlovchi dalillarni olish va saqlash qat'iy tavsiya etiladi, bular quyidagilarni o'z ichiga olishi mumkin:\n\n<ul>\n<li>Yetkazib berishni tasdiqlovchi kvitansiyalar</li>\n<li>Yetkazib berilgan tovarlarning fotosuratlari</li>\n<li>Mijozlar tomonidan imzolangan qabul dalolatnomalari</li>\n<li>Raqamli yetkazib berish skrinshotlari</li>\n<li>Xizmat ko'rsatilganligi vaqt tamg'asi bilan qayd etilgan hujjatlar</li>\n<li>Boshqa har qanday tegishli dalillar</li>\n</ul>\n\nBunday dalillar Nizo yuzaga kelgan taqdirda hal qiluvchi ahamiyatga ega bo'lishi mumkin va tranzaksiya yakunlangandan keyin oqilona muddat davomida saqlanishi kerak."
+        },
+        {
+          "subtitle": "4.3 Majburiyatlarni bajarmaslik",
+          "content": "Agar Savdogar tovarlarni yetkazib bermasa yoki xizmatlarni Shartnomada ko'rsatilganidek bajarmasa:\n\n<ul>\n<li>Mijoz Eskrow Davrida Nizo boshlashi mumkin</li>\n<li>Savdogarga nisbatan Kompaniya tomonidan to'lovni qaytarish to'g'risida qaror chiqarilishi mumkin</li>\n<li>Savdogarning hisobi to'xtatilishi yoki butunlay yopilishi mumkin</li>\n<li>Savdogar yetkazilgan zararlar yoki boshqa huquqiy choralar uchun javobgar bo'lishi mumkin</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.4 Mijozning bajarish majburiyatlari",
+          "content": "Mijozlar quyidagilarni bajarishlari shart:\n\n<ul>\n<li>Shartnomani imzolagandan so'ng unda ko'rsatilganidek to'lovni amalga oshirish</li>\n<li>Shartnoma shartlariga muvofiq taqdim etilganda tovarlar yoki xizmatlarni qabul qilib olish</li>\n<li>Shartnoma shartlariga muvofiq bo'lgan yetkazib berish yoki ijroni qabul qilishdan bosh tortmaslik</li>\n<li>Savdogarga Shartnomani bajarishi uchun oqilona zarur bo'lgan har qanday yordamni ko'rsatish</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.5 Ixtiyoriy to'lov qaytarishlari",
+          "content": "Savdogar istalgan vaqtda va o'zining yagona ixtiyoriga ko'ra, Shartnoma bo'yicha Mijozga to'lovni to'liq qaytarib berishi mumkin (<strong>\"Ixtiyoriy To'lov Qaytarish\"</strong>). Ushbu Shartlar maqsadlari uchun, 5.3-bo'limga muvofiq Nizo yuzasidan Kompaniya tomonidan ruxsat etilgan to'lov qaytarishi <strong>\"Majburiy To'lov Qaytarish\"</strong> deb ataladi.\n\nIxtiyoriy To'lov Qaytarishlar:\n\n<ul>\n<li>Shartnomaning to'liq summasi miqdorida bo'lishi shart; Savdogar qisman Ixtiyoriy To'lov Qaytarishni amalga oshira olmaydi</li>\n<li>Majburiy To'lov Qaytarishlardan farq qiladi va 5.3-bo'limda belgilangan ikkilik (binar) qaror qabul qilish standartiga bo'ysunmaydi</li>\n<li>Savdogar tomonidan Ilovada taqdim etilgan mexanizmlar orqali boshlanishi mumkin, bu Eskrow Davrida eskrowda saqlanayotgan mablag'larni chiqarishni yoki Eskrow chiqarilgandan so'ng yoxud Tezkor Tranzaksiya munosabati bilan mablag'larni Mijozga o'tkazishni o'z ichiga olishi mumkin</li>\n<li>Amalga oshirilgandan so'ng yakuniy hisoblanadi va Savdogar tomonidan bekor qilinishi mumkin emas</li>\n</ul>\n\nKompaniya Ixtiyoriy To'lov Qaytarishlarni talab qilmaydi, biron bir Ixtiyoriy To'lov Qaytarishning maqsadga muvofiqligi yoki vaqtini baholamaydi va Ixtiyoriy To'lov Qaytarish munosabati bilan tovarlarni qaytarish yoki tomonlar o'rtasidagi boshqa choralarni tashkillashtirishga majbur emas. Ixtiyoriy To'lov Qaytarishdan kelib chiqadigan har qanday majburiyatlar — jumladan jismoniy tovarlarni qaytarish — tomonlarning o'zaro masalasidir. 5.5-bo'lim faqat Majburiy To'lov Qaytarishdan keyin tovarlarni qaytarishni tartibga soladi.\n\nIxtiyoriy To'lov Qaytarishni qabul qilgan Mijoz keyinchalik xuddi shu tranzaksiya bo'yicha 5-bo'limga muvofiq Nizo boshlay olmaydi.\n\nReyting tizimi maqsadlarida Ixtiyoriy To'lov Qaytarishlar va Majburiy To'lov Qaytarishlarga qanday munosabatda bo'linishi 6.2-bo'limda yoritilgan."
+        }
+      ]
+    },
+    {
+      "title": "5. Nizolar va ularni hal qilish jarayoni",
+      "subsections": [
+        {
+          "subtitle": "5.1 Nizo boshlash",
+          "content": "Eskrow Davrida Mijoz Savdogar Shartnomani bajarmagan deb hisoblasa, Nizo boshlashi mumkin. Nizo boshlash uchun Mijoz quyidagilarni bajarishi shart:\n\n<ul>\n<li>Majburiyatning bajarilmaganligi to'g'risida aniq tushuntirish berish</li>\n<li>Fotosuratlar, xabarlar yoki boshqa hujjatlar shaklidagi har qanday tasdiqlovchi dalillarni taqdim etish</li>\n<li>Vijdonan harakat qilish va to'g'ri ma'lumotlarni taqdim etish</li>\n</ul>\n\nNizolar faqat Eskrow Davrida boshlanishi mumkin. Eskrow Davri hech qanday Nizo boshlanmasdan tugagach, tranzaksiya to'liq va yakuniy deb hisoblanadi.\n\nMijoz Kompaniya 5.3-bo'limga muvofiq qaror chiqarishidan oldin istalgan vaqtda Ilovadagi mexanizm orqali Nizoni qaytarib olishi mumkin. Nizoni qaytarib olish yakuniy hisoblanadi: u eskrowda ushlab turilgan mablag'larni go'yo Nizo hech qachon boshlanmagandek Savdogarga chiqaradi va Mijoz xuddi shu tranzaksiya bo'yicha qayta Nizo boshlay olmaydi. Qaytarib olingan Nizo Kompaniya qarori hisoblanmaydi, Majburiy To'lov Qaytarishni tashkil etmaydi va 6.2-bo'lim bo'yicha hech bir tomonning reyting huquqiga ta'sir qilmaydi."
+        },
+        {
+          "subtitle": "5.2 Nizoni ko'rib chiqish jarayoni",
+          "content": "Nizo kelib tushgach, Kompaniya quyidagilarni amalga oshiradi:\n\n<ul>\n<li>Savdogarga Nizo haqida xabar beradi va Mijozning da'volari tafsilotlarini taqdim etadi</li>\n<li>Savdogardan o'z javobi va tasdiqlovchi dalillarini taqdim etishni so'raydi</li>\n<li>Mavjud barcha dalillarni ko'rib chiqadi, jumladan:</li>\n<li>Imzolangan Shartnoma va uning barcha shartlarini</li>\n<li>Shartnomaga biriktirilgan har qanday fotosuratlarni</li>\n<li>Raqamli imzolash jarayonida olingan fotosuratlarni</li>\n<li>Har ikki tomonning Foydalanuvchi bayonotlarini</li>\n<li>Tomonlar o'rtasidagi har qanday yozishmalarni</li>\n<li>Har ikki tomon taqdim etgan yetkazib berish yoki ijro dalillarini</li>\n<li>Boshqa har qanday tegishli ma'lumotlarni</li>\n</ul>\n\n<strong>Savdogarning javob berish muddati.</strong> Savdogar ushbu Bo'lim bo'yicha Kompaniya bildirishnomasidan keyin uch (3) kun ichida Nizoga o'z javobini va tasdiqlovchi dalillarni taqdim etishi shart. Agar Savdogar ushbu uch (3) kunlik muddat ichida javob taqdim etmasa, Nizo avtomatik ravishda Mijoz foydasiga hal qilinadi va Kompaniya eskrowda ushlab turilgan mablag'larni Mijozga to'liq qaytarishni ruxsat beradi, bunda Shartnoma Mijozga yetkazib berilgan jismoniy tovarlarni o'z ichiga olgan bo'lsa, 5.5-bo'limdagi shartli tovar qaytarish talablari qo'llaniladi.\n\n<strong>Ko'rib chiqish muddatini o'zgartirish.</strong> Kompaniya o'z xohishiga ko'ra yuqorida tavsiflangan uch (3) kunlik muddatni o'ttiz (30) kungacha uzaytirish orqali (Savdogar va Mijozga masalani o'zaro hal qilish uchun qo'shimcha vaqt berish yoki Kompaniyaga o'z ko'rib chiqishi va qarorini yakunlash uchun qo'shimcha vaqt berish uchun) yoki chiqarish vaqt tamg'asini qisqartirish/oldinga surish orqali (masalan, nizo erta hal qilinganda) o'zgartirishi mumkin. Salbiy o'zgartirish qulflash muddatini asl yaratilish vaqtidagi jadvaldan pastroqqa tushira olmaydi. Kompaniya muddatni uzaytirish yoki o'zgartirishga majbur emas va buni o'z ixtiyoriga ko'ra rad etishi mumkin. Ushbu Bo'lim EULA-da \"Arbitraj Davri\" deb ataladi."
+        },
+        {
+          "subtitle": "5.2A Tuzilmaviy muloqot tartibi",
+          "content": "Quyidagi tuzilmaviy muloqot tartibi Ilovada mavjud bo'lganda yuqoridagi ko'rib chiqish jarayonini to'ldiradi va boshqaradi. Kompaniya ko'rib chiqishidan oldin tomonlar tranzaksiya doirasidagi bitta chegaralangan almashinuvda ishtirok etishlari mumkin: (1) Mijozning boshlang'ich da'vosi, (2) Savdogarning javobi, (3) Mijozning bitta e'tirozi (raddiysi), va (4) Savdogarning bitta yakuniy javobi. Har bir yuborilgan ma'lumot vaqt tamg'asiga ega bo'lib, o'zgarmas, har ikki tomonga va ko'rib chiquvchiga ko'rinadigan hamda Ilovaning so'z va dalil fayli cheklovlari bilan cheklangan. Ilova jonli yoki cheklanmagan erkin xabarlashuvni taqdim etmaydi. Mazmun shaxsiy ma'lumotlar, tahdidlar yoki haqoratomuz materiallar uchun tahrirlanishi (redaksiyalanishi) yoki moderatsiya qilinishi mumkin. Eskrow Davrining istalgan vaqtida Savdogar 4.5-bo'limga muvofiq Mijozga to'liq to'lov qaytarishni amalga oshirishi mumkin, bu esa tranzaksiyani darhol hal qiladi va Nizoni yopadi. Mijoz to'lov qaytarishni taklif qilish imkoniyatiga ega emas va hech qanday to'lov qaytarishi boshqa tomonning qabul qilishiga bog'liq emas; Kompaniya ushbu muloqot doirasida ikki tomonlama kelishuv taklifi mexanizmini yuritmaydi. Savdogar tomonidan 4.5-bo'lim bo'yicha to'lov qaytarilishi yoki Mijoz tomonidan 5.1-bo'lim bo'yicha Nizo qaytarib olinishidan tashqari, muloqot o'zining to'rtta taqdimoti orqali davom etadi va keyin Kompaniya ko'rib chiqishi uchun yopiladi. Savdogarning birinchi javob muddati — bu Ilovada ko'rsatilgan muddat bo'lib, u tegishli eskrow vaqt qoidalariga muvofiq da'vo kiritilgandan so'ng uch (3) kundan kam bo'lmagan va besh (5) kungacha bo'lgan muddatni tashkil etadi. Har bir keyingi tomon o'zining belgilangan taqdimoti uchun uch (3) kunga ega bo'ladi. Keyingi ixtiyoriy bayonotni taqdim etmaslik o'sha bayonotdan voz kechish hisoblanadi va muloqotni Kompaniya ko'rib chiqishi uchun yopadi; faqat Savdogarning birinchi javobni o'tkazib yuborishi avtomatik ravishda Mijoz foydasiga natijaga olib keladi. Kompaniya muloqot yoki ko'rib chiqish faol bo'lgan paytda kamida uch (3) kun qolishini ta'minlash uchun eskrow qulflash muddatini zarur darajada uzaytirishi mumkin."
+        },
+        {
+          "subtitle": "5.3 Nizo bo'yicha qaror qabul qilish",
+          "content": "Savdogar amaldagi uch (3) kunlik muddat ichida javob bermaganligi sababli 5.2-bo'limga muvofiq Nizo avtomatik ravishda Mijoz foydasiga hal qilingan holatlar bundan mustasno, barcha dalillarni ko'rib chiqqandan so'ng, Kompaniya Mijozga to'lov qaytarilishi kerakmi yoki yo'qligi to'g'risida qaror qabul qiladi. To'lovni qaytarish qarorlari ikkilik (binar) xarakterga ega: Kompaniya yo Mijozga to'lovni to'liq qaytarishga ruxsat beradi yoki to'lovni qaytarish so'rovini rad etib, eskrowda ushlab turilgan mablag'larni Savdogarga chiqaradi. Kompaniya qisman to'lov qaytarishlarga ruxsat bermaydi. Kompaniya quyidagilarni amalga oshirishi mumkin:\n\n<ul>\n<li>Eskrowda saqlanayotgan mablag'larni Mijozga to'liq qaytarishga ruxsat berish</li>\n<li>To'lovni qaytarish so'rovini rad etish va eskrowda saqlanayotgan mablag'larni Savdogarga chiqarish</li>\n<li>Qaror qabul qilishdan oldin har ikki tomondan qo'shimcha ma'lumot so'rash</li>\n</ul>\n\nKompaniyaning qarori dalillar ustunligi (preponderance of the evidence) standartini qo'llagan holda, Savdogar Shartnoma bo'yicha o'z majburiyatlarini mohiyatan bajargan-bajarmaganligiga asoslanadi. To'lov faqat Savdogar majburiyatlarni jiddiy ravishda bajarmagan hollardagina qaytariladi — masalan, tovarlar yoki xizmatlarni umuman yetkazib bermaslik, Shartnomadagi tavsifdan jiddiy farq qiluvchi tovarlar yoki xizmatlarni yetkazib berish yoki boshqa tarzda Mijozni bitimning asosiy nafidan mahrum qilish orqali. Kichik kamchiliklar, ahamiyatsiz chetlanishlar yoki shunga qaramay Shartnomaning asosiy nafiga erishishni ta'minlaydigan qisman ijro to'lovning qaytarilishiga olib kelmaydi.\n\nHar ikki tomon taqdim etgan dalillar haqiqatan ham teng (muvozanatda) bo'lsa, natijada Kompaniya dalillar ustunligiga ko'ra Savdogar majburiyatni mohiyatan bajargan-bajarmaganini aniqlay olmasa, Kompaniya qarorni Mijoz foydasiga hal qiladi. Ushbu hal qiluvchi qoida ikkita omilni aks ettiradi: (i) Shartnomadagi tovarlar yoki xizmatlar tavsifidagi noaniqliklar odatda e'lon mazmuni va uni oydinlashtiruvchi dalillarni nazorat qiluvchi Savdogarning zimmasiga yuklanadi; va (ii) Shartnoma jismoniy tovarlarni o'z ichiga olgan hollarda, teng bahsli ishda yutgan Mijoz baribir 5.5-bo'limdagi majburiy, Mijoz hisobidan tovar qaytarish majburiyatiga va 5.8-bo'limdagi Qaytarish Halolligi Dasturiga bo'ysunadi, shuning uchun xato ravishda ma'qullangan Mijoz barcha oqibatlardan butunlay qutulib qolmaydi, holbuki to'lov qaytarilishi noto'g'ri rad etilgan Mijoz hech qanday kompensatsiyasiz tranzaksiyaning to'liq zarariga duchor bo'ladi.\n\nShartnoma Mijozga yetkazib berilgan jismoniy tovarlarni o'z ichiga olgan bo'lsa, Mijoz foydasiga chiqarilgan qaror faqat shartli ravishda to'lov qaytarilishini tasdiqlaydi. Kompaniya Mijoz 5.5-bo'limda belgilangan majburiy tovar qaytarish talablarini bajarmaguncha Aqlli Shartnomaga mablag'larni Mijozga chiqarish bo'yicha ko'rsatma yubormaydi va hech qanday to'lov qaytarilishi yakuniy deb hisoblanmaydi. Ushbu shart qo'llanilishi uchun Savdogardan tovarlarni qaytarishni so'rash talab etilmaydi.\n\nYetarlicha yetkazib bermaslik, mijozlarning noroziligi yoki ushbu Shartlarga zid bo'lgan boshqa xatti-harakatlar namunalari — hatto alohida tranzaksiyalar to'lovni qaytarishni talab qilmagan taqdirda ham — to'lov qaytarishdan boshqa vositalar orqali, jumladan 7.7-bo'lim bo'yicha hisob bo'yicha ogohlantirishlar, hisobni to'xtatish yoki bekor qilish hamda Ilova orqali taqdim etilgan har qanday foydalanuvchi obro'si (reputatsiyasi) yoki reyting mexanizmlari orqali hal qilinishi mumkin."
+        },
+        {
+          "subtitle": "5.4 Nizolarni hal qilish qarorini ijro etish",
+          "content": "Qaror 5.5-bo'limga muvofiq jismoniy tovarlarni qaytarishni o'z ichiga olmagan hollarda, Kompaniya qaror qabul qilingan zahoti Aqlli Shartnomaga tegishli ko'rsatmani yuboradi va Aqlli Shartnoma o'zining dasturlashtirilgan mantig'iga muvofiq to'lovni qaytarish yoki to'lovni chiqarishni amalga oshiradi.\n\nQaror 5.5-bo'limga muvofiq jismoniy tovarlarni qaytarishni o'z ichiga olgan hollarda, qarorga daxldor mablag'lar Mijozning 5.5-bo'lim talablariga rioya qilishi kutilgunga qadar saqlanishda davom etadi. Kompaniya faqat Mijoz 5.5-bo'limning qaytarish talablarini bajarganligini tasdiqlagach, Aqlli Shartnomaga mablag'larni chiqarish ko'rsatmasini yuboradi yoki agar Mijoz ushbu Bo'limda belgilangan muddatlarda buni bajarmasa, mablag'larni Savdogarga chiqarish to'g'risida ko'rsatma yuboradi.\n\nKompaniyaning roli qarorlar qabul qilish va ko'rsatmalar berish bilan cheklanadi; Aqlli Shartnoma moliyaviy tranzaksiyani avtonom tarzda amalga oshiradi."
+        },
+        {
+          "subtitle": "5.5 To'lovni qaytarish sharti sifatida jismoniy tovarlarni majburiy qaytarish",
+          "content": "Shartnoma Mijozga yetkazib berilgan jismoniy tovarlarni o'z ichiga olgan bo'lsa, ushbu tovarlarni Savdogarga qaytarish har qanday Majburiy To'lov Qaytarishning majburiy shartidir. Ushbu tovarlarni qaytarish majburiyati 5.3-bo'limga muvofiq Mijoz foydasiga qaror qabul qilinganda avtomatik ravishda kuchga kiradi; Savdogardan tovarlarni qaytarishni so'rash talab qilinmaydi. Quyidagi qoidalar qo'llaniladi:\n\n<ul>\n<li><strong>Majburiy qaytarish.</strong> Mijoz to'lov qaytarilishini olish uchun tovarlarni Savdogarga qaytarishi shart. Mijoz ushbu Bo'lim talablarini bajarmaguncha Mijozga hech qanday to'lov chiqarilmaydi va Aqlli Shartnomaga mablag'larni chiqarish bo'yicha hech qanday ko'rsatma yuborilmaydi.</li>\n<li><strong>Jo'natish muddati.</strong> Mijoz Kompaniyaning 5.3-bo'lim bo'yicha qaroridan keyin o'n to'rt (14) kun ichida tovarlarni Savdogar tomonidan belgilangan qaytarish manziliga jo'natishi shart.</li>\n<li><strong>Qaytarishni tasdiqlovchi dalil talab qilinishi.</strong> Mijoz Ilova orqali tovarlar Savdogarning belgilangan qaytarish manziliga jo'natilganligini ko'rsatuvchi kuryerlik xizmatining haqiqiy kuzatuv raqamini (trek-raqam) taqdim etishi shart. Kuzatuv ma'lumotlari to'liq bo'lmagan, yaroqsiz yoki mavjud bo'lmagan hollarda, Kompaniya topshirish kvitansiyasi yoki qadoqlangan tovarning fotosuratlari kabi qo'shimcha hujjatlarni talab qilishi mumkin. Jo'natishning haqiqiy dalili taqdim etilmaguncha va Kompaniya tomonidan qabul qilinmaguncha to'lov ushbu Bo'lim talablariga javob bergan deb hisoblanmaydi.</li>\n<li><strong>Qaytarish yetkazib berish xarajatlari.</strong> Qaytarib yetkazib berish xarajatlari, jumladan pochta xarajatlari, qadoqlash va Mijoz olishni tanlagan har qanday sug'urta uchun faqat Mijoz javobgardir. Kompaniya va Savdogar Mijozga qaytarib yetkazib berish xarajatlarini qoplashga majbur emas.</li>\n<li><strong>Tranzit paytida yo'qotish xavfi.</strong> Qaytarib yuborish paytida tovarlarning yo'qolishi yoki shikastlanishi xavfi Savdogar qabul qilib olganini tasdiqlamaguncha Mijoz zimmasida qoladi. Mijozga yetkazib berishni sug'urtalash va Ilova orqali kiritilgan trek-raqamdan tashqari tovar topshirilganligini tasdiqlovchi alohida kvitansiyani saqlash qat'iy tavsiya etiladi.</li>\n<li><strong>To'lovni chiqarish.</strong> Tovarlar Savdogarning belgilangan qaytarish manziliga jo'natilganligini ko'rsatuvchi haqiqiy kuzatuv ma'lumotlari taqdim etilgani Kompaniya tomonidan tasdiqlangach, Kompaniya Aqlli Shartnomaga to'lovni Mijozga chiqarish bo'yicha ko'rsatma beradi.</li>\n<li><strong>Qaytarishni bajarmaslik.</strong> Agar Mijoz yuqorida ko'rsatilgan muddat ichida tovarlarni jo'natmasa va haqiqiy kuzatuv ma'lumotlarini taqdim etmasa, Kompaniyaning Mijoz foydasiga chiqargan qarori o'z kuchini yo'qotadi. Hech qanday to'lov qaytarilmaydi va eskrowda saqlanayotgan mablag'lar buning o'rniga Savdogarga chiqariladi.</li>\n<li><strong>Qaytarish bilan bog'liq nizolar.</strong> Mijoz va Savdogar o'rtasida qaytarilgan tovarlarning holati (masalan, odatiy yetkazib berishga to'g'ri kelmaydigan shikastlanish) yoki ushbu Bo'limga rioya qilinishi bo'yicha yuzaga kelgan nizolar ko'rib chiqish uchun Kompaniyaga topshirilishi mumkin va Kompaniyaning bunday masalalar bo'yicha qarori 5.3-bo'limdagi qarorlar kabi yakuniy hisoblanadi. Ushbu band Savdogar qaytarilgan jo'natmaning bo'sh bo'lgani yoki dastlab jo'natilgan tovardan jiddiy farq qiluvchi buyum borligi haqida xabar bergan hollarga nisbatan qo'llanilmaydi; bunday xabarlar faqat 5.8-bo'lim (Bo'sh quti va noto'g'ri tovar haqidagi xabarlar; Qaytarish halolligi dasturi) bo'yicha ko'rib chiqiladi va to'lov qaytarishining o'zini qayta ko'rib chiqishga yoki bekor qilishga olib kelmaydi.</li>\n</ul>\n\nUshbu Bo'lim faqat Majburiy To'lov Qaytarishlarni tartibga soladi. 4.5-bo'limga muvofiq Ixtiyoriy To'lov Qaytarish munosabati bilan tovarlarni qaytarish Savdogar va Mijoz o'rtasidagi masala bo'lib qoladi va ushbu Bo'limga bo'ysunmaydi. Kompaniyaning ushbu Bo'lim bo'yicha qaytarishni tasdiqlashi Kompaniyaning jismoniy tovarlarni o'z saqloviga olishini yoki ular uchun javobgarlikni o'z zimmasiga olishini anglatmaydi."
+        },
+        {
+          "subtitle": "5.6 Qarorlarning yakuniyligi",
+          "content": "Kompaniyaning nizolar bo'yicha qarorlari amaldagi qonunchilik talab qilishi mumkin bo'lgan hollar bundan mustasno, yakuniy va majburiydir. Xizmatlardan foydalanish orqali siz Kompaniyaning Nizolar bo'yicha chiqargan qarorlarini qabul qilishga rozilik bildirasiz. Siz tegishli qonuniy yo'llar orqali Ilovadan tashqarida da'volar bilan chiqish bo'yicha amaldagi qonunchilikda ko'zda tutilgan har qanday qonuniy huquqlaringizni saqlab qolasiz."
+        },
+        {
+          "subtitle": "5.7 Nizo jarayonini suiiste'mol qilish",
+          "content": "Nizo jarayonini suiiste'mol qilgan, jumladan quyidagi harakatlarni sodir etgan Foydalanuvchilar:\n\n<ul>\n<li>Soxta yoki firibgarlik xarakteridagi Nizolarni boshlash</li>\n<li>Yolg'on dalillar yoki guvohlik ko'rsatuvlarini taqdim etish</li>\n<li>Qonuniy asossiz Nizolarni boshlash</li>\n<li>Tegishli to'lovni amalga oshirmasdan tovarlar yoki xizmatlarni olish vositasi sifatida Nizolardan foydalanish</li>\n<li>5.5-bo'lim bo'yicha tovarlarni qaytarishda Savdogarlar tomonidan qabul qilingan tovarlar bo'sh, dastlab yetkazib berilgan tovarlardan jiddiy farq qiluvchi yoki odatiy jo'natish holatiga to'g'ri kelmaydigan darajada shikastlangan deb xabar qilingan qaytarishlar namunasini muntazam sodir etish — hatto bunday qaytarish bilan bog'liq alohida to'lov qaytarishi bekor qilinmagan bo'lsa ham</li>\n</ul>\n\nhisoblarining to'xtatilishiga yoki bekor qilinishiga duch kelishi hamda jabrlangan tomonlar va Kompaniyaga yetkazilgan zararlar uchun javobgar bo'lishi mumkin. 5.5-bo'lim to'lovni qaytarishni yetkazib berish yoki tovar tarkibi tasdiqlanishiga emas, balki jo'natilganlik faktining isbotiga bog'laganligi sababli, Kompaniya yuqorida tavsiflangan holatlarni 5.3 yoki 5.5-bo'limlar bo'yicha chiqarilgan har qanday alohida to'lov qaytarish qarorlarini qayta ochmasdan va ulardan alohida holda, ushbu Bo'lim doirasida hisob darajasidagi chora sifatida ko'rib chiqadi. Agar bunday holat qaytarilgan jo'natmaning bo'sh bo'lgani yoki jiddiy farq qiluvchi buyum bo'lgani haqidagi xabarlardan iborat bo'lsa, xabar berishning maxsus tartibi, chegaralari va oqibatlari yuqoridagi umumiy standart o'rniga qo'llaniladigan 5.8-bo'limda belgilangan."
+        },
+        {
+          "subtitle": "5.8 Bo'sh quti va noto'g'ri tovar haqidagi xabarlar; Qaytarish halolligi dasturi",
+          "content": "Mijoz 5.5-bo'limga muvofiq tovarlarni Savdogarga qaytarganda, Savdogar qaytarilgan jo'natma bo'sh bo'lgani yoki Savdogar dastlab yuborgan tovardan jiddiy farq qiluvchi buyumni o'z ichiga olgani to'g'risida xabar berishi mumkin (<strong>\"Bo'sh quti/Noto'g'ri tovar haqidagi xabar\"</strong> yoki <strong>\"Xabar\"</strong>), bu ushbu Bo'limda belgilangan tartib va oqibatlarga bo'ysunadi. Ushbu Bo'lim qaytarilgan tovar bo'sh bo'lmagan yoki almashtirilmagan holda shikastlangan, ishlatilgan yoki boshqa tarzda yomonlashganligi to'g'risidagi xabarlarga nisbatan qo'llanilmaydi; bunday vaziyatlar 5.5-bo'limning \"Qaytarish bilan bog'liq nizolar\" qoidasi bilan tartibga solinadi.\n\nKompaniya ma'lum bir qaytarilgan posilkaning haqiqatda bo'sh bo'lganligi yoki almashtirilgan buyumni o'z ichiga olganligi faktini fotosuratlar, videolar yoki boshqa tranzaksiyaga oid dalillar orqali voqeadan keyin uzil-kesil isbotlab bo'lmasligini tan oladi. Shunga ko'ra, ushbu Bo'lim Savdogardan Xabar topshirish sharti sifatida jo'natma bo'sh yoki almashtirilganligini isbotlashni talab qilmaydi va Kompaniya har bir alohida Xabarning to'g'riligini tranzaksiyama-tranzaksiya tartibida ko'rib chiqmaydi. 5.7-bo'limga muvofiq, ushbu Bo'limda tavsiflangan oqibatlar biron bir yagona Xabarning to'g'riligi to'g'risidagi xulosaga emas, balki Mijozning butun platforma bo'ylab Xabarlar qoldirish amaliyotiga (namunasiga) asoslanadi.\n\n<ul>\n<li><strong>Xabar topshirish.</strong> Xabar Savdogar tomonidan Ilova orqali alohida, vaqt tamg'asi bosilgan ariza sifatida topshirilishi shart. Reyting, sharh matni yoki Mijozga yoxud Kompaniyaga yuborilgan norasmiy xabar Xabar hisoblanmaydi. Xabar Savdogar qaytarilgan jo'natmani qabul qilib olganini tasdiqlaganidan keyin uch (3) kun ichida topshirilishi shart; ushbu muddatdan keyin topshirilgan Xabar ushbu Bo'lim maqsadlari uchun haqiqiy hisoblanmaydi. Kompaniya qaytarilgan jo'natma bo'yicha kuryerlik xizmati tomonidan qayd etilgan og'irlik yoki o'lcham ma'lumotlariga ega bo'lsa, Kompaniya ushbu ma'lumotlarni Savdogar taqdim etishni tanlagan har qanday ma'lumotlar bilan birga quyida tavsiflangan tizimli tekshiruvga ta'sir qiluvchi bitta omil sifatida ko'rib chiqishi mumkin. Bunday ma'lumotlar faqat signal hisoblanadi va biron bir alohida Xabarni mustaqil ravishda isbotlamaydi yoki rad etmaydi.</li>\n<li><strong>Boshlang'ich reyting cheklovi.</strong> 6.2-bo'limda belgilanganidek, tranzaksiya 5.5-bo'limga muvofiq Majburiy To'lov Qaytarishi va tovarlarning qaytarilishi bilan yakunlangan taqdirda, Savdogar ushbu tranzaksiya uchun reyting qoldira olmaydi. Ushbu cheklovni reyting, sharh izohi yoki boshqa vositalar orqali chetlab o'tish taqiqlanadi.</li>\n<li><strong>O'z vaqtida topshirilgan birinchi xabar: Cheklangan istisno va Ogohlantirish.</strong> Savdogar o'z vaqtida Xabar topshirganda va bu Mijoz hisobiga nisbatan quyida tavsiflangan davr ichidagi birinchi qayd etilgan Xabar bo'lsa, reyting cheklovi faqatgina Savdogarga ushbu tranzaksiya uchun roppa-rosa uch (3) yulduzli reyting qoldirishga ruxsat berish maqsadida bekor qilinadi — ko'p ham emas, kam ham emas. Mijozning hisobi Ogohlantirish bilan belgilanadi. Kompaniya Mijozga Xabar topshirilgani haqida bildirishnoma yuboradi, Mijozga Kompaniyaning ichki yozuvlari uchun javob berishga oqilona imkoniyat yaratadi va Mijozning javobini (agar mavjud bo'lsa) Xabar bilan birga saqlaydi. Ogohlantirishning o'zi Mijoz hisobining to'xtatilishiga yoki bekor qilinishiga olib kelmaydi.</li>\n<li><strong>O'z vaqtida topshirilgan ikkinchi xabar: Hisobni o'chirish.</strong> Birinchi Xabardan boshlab hisoblanadigan yigirma to'rt (24) oylik suriluvchi davr ichida bitta Mijozning hisobiga nisbatan — xoh o'sha Savdogar, xoh boshqa Savdogar tomonidan — ikkinchi bor o'z vaqtida Xabar topshirilsa, Mijozning hisobi 7.7-bo'lim bo'yicha to'xtatilishi yoki butunlay bekor qilinishi mumkin. Xabarlar har bir Savdogar bilan alohida munosabat darajasida emas, balki platformadagi barcha Savdogarlar bo'yicha Mijoz hisobi darajasida kuzatiladi.</li>\n<li><strong>Apellyatsiya.</strong> Hisobi ushbu Bo'lim bo'yicha to'xtatilgan yoki bekor qilingan Mijoz Ilova orqali apellyatsiya topshirishi mumkin. Kompaniya apellyatsiyani ko'rib chiqadi va o'zining yagona ixtiyoriga ko'ra qaror qabul qiladi, va bu qaror yakuniy hisoblanadi. Kompaniya ushbu Bo'lim bo'yicha har qanday apellyatsiya yuzasidan qabul qilingan qaror asoslarining ichki yozuvini yuritadi.</li>\n<li><strong>Sud jarayonlarida dalil sifatida foydalanish.</strong> Shartnoma, tranzaksiya, qaytarilgan jo'natma va ushbu Bo'lim bo'yicha topshirilgan har qanday Xabar bilan bog'liq fotosuratlar va boshqa yozuvlar Savdogar, Mijoz yoki Kompaniya tomonidan tranzaksiyaga oid kichik da'volar sudida yoki boshqa sud jarayonlarida dalil sifatida ishlatilishi mumkin. Kompaniya bunday yozuvlarni ular taalluqli bo'lgan tranzaksiyadan keyin kamida uch (3) yil davomida saqlaydi va Foydalanuvchi 17.10-bo'limda ko'rsatilganidek Kompaniya bilan bog'lanib, o'z tranzaksiyalariga oid yozuvlarning nusxalarini so'rashi mumkin.</li>\n</ul>\n\nUshbu Bo'lim Eskrow Davri nolga (0) teng qilib belgilangan Shartnomalarga yoki 4.5-bo'lim bo'yicha Ixtiyoriy To'lov Qaytarishlarga nisbatan qo'llanilmaydi. Ushbu Bo'lim bo'yicha topshirilgan Xabarlar va ushbu Bo'limda tavsiflangan oqibatlar 5.3 yoki 5.5-bo'limlar bo'yicha chiqarilgan to'lov qaytarish qarorlaridan alohida bo'lib, ularni qayta ochmaydi hamda 5.7-bo'limda tavsiflangan hisob darajasidagi choralarning asosiy qo'zg'atuvchi mexanizmi sifatida uning yonida amal qiladi."
+        }
+      ]
+    },
+    {
+      "title": "6. Foydalanuvchi reytinglari",
+      "subsections": [
+        {
+          "subtitle": "6.1 Reyting tizimiga umumiy sharh",
+          "content": "Ilova ikki tomonlama reyting tizimini taqdim etadi, uning yordamida Foydalanuvchilar tranzaksiya yakunlangandan so'ng bir-birlarini baholashlari mumkin. Tranzaksiya tugagandan so'ng, Savdogar ham, Mijoz ham bir (1) dan besh (5) yulduzgacha bo'lgan butun sonli shkala bo'yicha boshqa tomonni baholash imkoniyatiga ega bo'ladilar. Foydalanuvchining oldingi baholangan tranzaksiyalari bo'yicha o'rtacha reytingi u bilan Shartnoma tuzishni ko'rib chiqayotgan boshqa Foydalanuvchilarga ko'rsatiladi. Kompaniya, shuningdek, o'z ixtiyoriga ko'ra baholangan tranzaksiyalarning umumiy sonini va Foydalanuvchining reyting tarixi haqidagi boshqa jamlangan ma'lumotlarni ko'rsatishi mumkin."
+        },
+        {
+          "subtitle": "6.2 Reyting qoldirish huquqi",
+          "content": "Foydalanuvchi quyidagi hollardagina reyting qoldirishi mumkin:\n\n<ul>\n<li>Reyting tegishli bo'lgan tranzaksiya yakunlangandan so'ng, jumladan har qanday amaldagi Eskrow Davri yoki Nizo muddati tugashi yoki hal etilishidan keyin</li>\n<li>Faqat ushbu tranzaksiyadagi haqiqiy kontragent uchun</li>\n<li>Har bir tranzaksiya uchun faqat bir marta (har bir Foydalanuvchi har bir tranzaksiya uchun bitta kontragentga faqat bitta reyting qoldirishi mumkin)</li>\n</ul>\n\nFoydalanuvchi o'zi ishtirok etmagan tranzaksiya uchun reyting qoldirishi yoki o'z kontragenti bo'lmagan Foydalanuvchilar o'rtasida reyting qoldirishga urinishi mumkin emas. Kompaniya vaqti-vaqti bilan Ilovada joriy etiladigan reyting qoldirish bo'yicha qo'shimcha oqilona shartlar yoki vaqt cheklovlarini belgilashi mumkin.\n\n<strong>Majburiy To'lov Qaytarishi bilan yakunlangan tranzaksiyalar.</strong> Yuqoridagilarga qaramasdan, agar tranzaksiya 5.3-bo'limga muvofiq Kompaniya tomonidan ruxsat etilgan Majburiy To'lov Qaytarishi (4.5-bo'limda belgilanganidek) bilan yakunlansa, 5.8-bo'limda (Bo'sh quti va noto'g'ri tovar haqidagi xabarlar; Qaytarish halolligi dasturi) aniq ruxsat etilgan hollar bundan mustasno, Savdogar ushbu tranzaksiya uchun reyting qoldira olmaydi. Ushbu cheklov Ilovaning o'zi tomonidan amalga oshiriladi, Savdogar Kompaniyaning qaroriga rozi yoki noroziligidan qat'i nazar qo'llaniladi va uni reyting, sharh izohi yoki boshqa vositalar orqali chetlab o'tish taqiqlanadi. Kompaniya bunday tranzaksiyalar bo'yicha Kompaniyaning majburiy qaror qabul qilish jarayoni orqali allaqachon yakuniy xulosa chiqarilganligi sababli, Savdogar tomonidan qo'shimcha salbiy reyting bildirilishi asosiy tranzaksiyani mazmunan aks ettirmasligini va Nizo natijasida yutib chiqqan Mijozdan qasos olish sifatida xizmat qilishi mumkinligini belgiladi. Ushbu cheklov faqat Savdogarga nisbatan qo'llaniladi; Mijoz ushbu Bo'limga muvofiq tranzaksiya uchun reyting qoldirish huquqini saqlab qoladi.\n\n<strong>To'lov qaytarilishi rad etilgan tranzaksiyalar.</strong> Kompaniya 5.3-bo'lim bo'yicha Mijozning to'lovni qaytarish so'rovini rad etgan taqdirda, ushbu Bo'lim har ikki tomonning tranzaksiya uchun reyting qoldirish imkoniyatini cheklamaydi. Mijoz o'z noroziligini aks ettiruvchi reytingni o'z ichiga olgan holda reyting qoldirishi mumkin, va Savdogar boshqa har qanday yakunlangan tranzaksiyadagi kabi reyting qoldirishi mumkin, har ikki holatda ham 6.3-bo'limdagi standartlarga rioya qilinadi.\n\n<strong>Ixtiyoriy to'lov qaytarishlari.</strong> Ixtiyoriy To'lov Qaytarishlar (4.5-bo'limda belgilanganidek) reyting qoldirish huquqiga ta'sir qilmaydi. Ixtiyoriy To'lov Qaytarishi amalga oshirilgan tranzaksiya tomonlari ushbu Bo'limga muvofiq bir-birlarini baholashlari mumkin."
+        },
+        {
+          "subtitle": "6.3 Reyting standartlari va taqiqlangan xatti-harakatlar",
+          "content": "Reyting qoldirishda Foydalanuvchilar quyidagilarga rozilik bildiradilar:\n\n<ul>\n<li>Kontragentning tranzaksiyadagi xatti-harakatlariga o'zlarining haqiqiy va vijdoniy bahosini aks ettiruvchi reytinglarni taqdim etish</li>\n<li>Reytinglarni tranzaksiyaga aloqasi bo'lmagan omillarga emas, balki kontragentning haqiqiy xatti-harakatiga asoslash</li>\n<li>Bila turib yolg'on yoki chalg'ituvchi reytinglarni kiritmaslik</li>\n<li>Qasoskorona baholash bilan shug'ullanmaslik, jumladan faqat kontragent Foydalanuvchiga salbiy baho bergani, Nizo boshlagani yoki ushbu Shartlar bo'yicha boshqa har qanday huquqidan foydalangani uchungina uning reytingini tushirmaslik</li>\n<li>Biron bir Foydalanuvchining o'rtacha reytingini sun'iy oshirish yoki pasaytirish uchun boshqalar bilan til biriktirmaslik</li>\n<li>Reyting evaziga haq, tahdid yoki boshqa rag'batlantirishlarni talab qilmaslik, qabul qilmaslik yoki taklif qilmaslik</li>\n<li>Shartnoma bo'yicha tovarlar, xizmatlar, to'lovni qaytarish yoki boshqa har qanday majburiyatlarni ijobiy reyting olish shartiga bog'lab qo'ymaslik</li>\n<li>Reytinglarga ta'sir o'tkazish uchun soxta, dublikat yoki soxtalashtirilgan hisoblar yaratmaslik</li>\n<li>Reyting tizimini manipulyatsiya qilish uchun mo'ljallangan soxta yoki haqiqiy bo'lmagan tranzaksiyalar yuzasidan reytinglar qoldirmaslik</li>\n</ul>\n\nFoydalanuvchilar ushbu Bo'limning buzilishi Kompaniyaga mavjud bo'lgan boshqa choralarga qo'shimcha ravishda qoidabuzar reytingning o'chirilishiga, 7.7-bo'limga muvofiq qoidabuzar Foydalanuvchi hisobining to'xtatilishi yoki bekor qilinishiga hamda ushbu buzilishdan zarar ko'rgan boshqa Foydalanuvchilar oldida javobgarlikka olib kelishi mumkinligini tan oladilar.\n\nSavdogar tomonidan 5.8.3-bo'limga muvofiq berilgan reyting, uning qiymati Savdogar tomonidan mustaqil tanlanmasdan o'sha Bo'lim tomonidan roppa-rosa uch (3) yulduz qilib belgilanganiga qaramay, ushbu Bo'limning vijdonlilik va mustaqil baholash talablariga javob beradi deb hisoblanadi."
+        },
+        {
+          "subtitle": "6.4 Reytinglarning tabiati; Kompaniya tomonidan ma'qullanmaslik",
+          "content": "Reytinglar ularni qoldirgan Foydalanuvchilarning shaxsiy fikrlarini aks ettiradi va Kompaniyaning bayonotlari, tasdiqlari yoki ma'qullashlarini tashkil etmaydi. Kompaniya har qanday alohida reytingning to'g'riligi yoki biron bir Foydalanuvchining kontragent sifatida yaroqliligi to'g'risida hech qanday bayonot yoki kafolat bermaydi. Foydalanuvchilar reytinglarni ko'rib chiqishda va Shartnomalar tuzishda o'zlarining mustaqil mulohazalarini yuritish uchun javobgardirlar."
+        },
+        {
+          "subtitle": "6.5 Reytinglar bo'yicha Kompaniya huquqlari",
+          "content": "Kompaniya o'zining yagona ixtiyoriga ko'ra quyidagi huquqlarni o'zida saqlab qoladi:\n\n<ul>\n<li>Ushbu Shartlarni, jumladan 6.3-bo'limda belgilangan standartlarni buzuvchi reytinglarni o'chirib tashlash</li>\n<li>Reyting tizimidan shubhali manipulyatsiya, qasoskorlik yoki boshqa suiiste'molliklarni tekshirish</li>\n<li>Kompaniya ko'rsatish chalg'ituvchi bo'lishini yoki reytinglar tekshirilayotgan suiiste'mollik tufayli jiddiy buzilganini aniqlagan hollarda Foydalanuvchining o'rtacha reytingini ko'rsatishni to'xtatib turish yoki maxsus belgi bilan ko'rsatish</li>\n<li>Imkon qadar oqilona bildirishnoma bilan reyting tizimini to'liq yoki qisman o'zgartirish, to'xtatib turish yoki tugatish</li>\n</ul>\n\nKompaniya faqat Foydalanuvchi reytingga rozi bo'lmagani uchungina reytinglarni o'chirishga majbur emas va odatda alohida reytinglarning mazmuniy to'g'riligi bo'yicha qaror chiqarmaydi. Reyting ushbu Shartlarni buzadi deb hisoblagan Foydalanuvchi bu haqda Ilova orqali yoki 17.10-bo'limda ko'rsatilgan manzil bo'yicha Kompaniyaga murojaat qilish orqali xabar berishi mumkin."
+        },
+        {
+          "subtitle": "6.6 Reytinglarning saqlanishi",
+          "content": "Reytinglar kiritilgandan so'ng, qabul qiluvchi Foydalanuvchining platformadagi reyting tarixining bir qismiga aylanadi. Reytinglar, Kompaniya ushbu Shartlarni ijro etish munosabati bilan ruxsat berishi mumkin bo'lgan hollar bundan mustasno, reyting qoldirgan Foydalanuvchining ham, reytinglangan Foydalanuvchining ham ixtiyoriga ko'ra o'chirib tashlanishi mumkin emas. Kompaniya reyting ma'lumotlarini saqlab qolishi va ushbu Shartlar hamda Maxfiylik Siyosatiga muvofiq o'rtacha reytinglarni ko'rsatishda davom etishi mumkin, jumladan 7-bo'limda tavsiflanganidek hisob to'xtatilgandan, bekor qilingandan yoki o'chirilgandan keyin ham."
+        },
+        {
+          "subtitle": "6.7 Reytinglar uchun javobgarlikning yo'qligi",
+          "content": "Amaldagi qonunchilik ruxsat bergan maksimal darajada, Kompaniya Foydalanuvchilar tomonidan taqdim etilgan reytinglardan kelib chiqadigan har qanday zarar, jumladan obro'ga yetkazilgan zarar, yo'qotilgan biznes yoki boshqa zararlar uchun javobgar bo'lmaydi. Reyting qoldirgan Foydalanuvchilar o'z reytinglarining mazmuni uchun to'liq javobgardirlar va amaldagi qonunlarni, jumladan tuhmat, shartnomaviy munosabatlarga noqonuniy aralashuv yoki insofsiz raqobat to'g'risidagi qonunlarni buzuvchi reytinglar uchun boshqa Foydalanuvchilar yoki uchinchi shaxslar oldida javobgar bo'lishlari mumkin."
+        }
+      ]
+    },
+    {
+      "title": "7. Hisobni o'chirish va qoldiq majburiyatlar",
+      "subsections": [
+        {
+          "subtitle": "7.1 Hisobni o'chirish huquqi",
+          "content": "Foydalanuvchilar o'z hisoblarini istalgan vaqtda Ilovaning hisob sozlamalari orqali o'chirishlari mumkin. Biroq, hisobni o'chirish huquqi ushbu Shartlar bo'yicha barcha bajarilmagan qoldiq majburiyatlarning bajarilishiga bog'liqdir."
+        },
+        {
+          "subtitle": "7.2 O'chirishdan oldingi talablar",
+          "content": "Hisob o'chirilishidan oldin Foydalanuvchi quyidagilarni bajarishi shart:\n\n<ul>\n<li>Savdogar yoki Mijoz sifatida imzolagan har qanday faol Shartnomalar bo'yicha barcha majburiyatlarni to'liq bajarish</li>\n<li>Barcha kutilayotgan tranzaksiyalarni yakunlash</li>\n<li>Har qanday kutilayotgan Nizolarni hal qilish yoki ularni hal qilishda to'liq hamkorlik qilish</li>\n<li>Kompaniya yoki boshqa Foydalanuvchilarga to'lanishi kerak bo'lgan barcha qoldiq to'lovlar yoki qarzlarni to'lash</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.3 O'chirishdan oldin Savdogar majburiyatlari",
+          "content": "Savdogar quyidagi shartlarni bajarmaguncha o'z hisobini o'chira olmaydi:\n\n<ul>\n<li>Savdogar sifatida imzolagan har bir Shartnomada ko'rsatilgan barcha tovarlarni yetkazib berish yoki barcha xizmatlarni to'liq bajarish</li>\n<li>O'z tranzaksiyalari bilan bog'liq barcha Nizolarni hal qilish</li>\n<li>O'z tranzaksiyalari bo'yicha barcha Eskrow Davrlari tugaganini yoki hal qilinganini ta'minlash</li>\n</ul>\n\nAgar Savdogarning bajarilmagan majburiyatlari bo'lsa, Kompaniya hisobni o'chirishga to'sqinlik qilishi yoki ma'lum hisob ma'lumotlarini saqlab qolishi mumkin."
+        },
+        {
+          "subtitle": "7.4 O'chirishdan oldin Mijoz majburiyatlari",
+          "content": "Mijoz quyidagi shartlarni bajarmaguncha o'z hisobini o'chira olmaydi:\n\n<ul>\n<li>Mijoz sifatida imzolagan har bir Shartnomada ko'rsatilgan barcha tovarlar va xizmatlar uchun to'lovni amalga oshirish</li>\n<li>To'lov majburiyatlari bo'lgan barcha kutilayotgan tranzaksiyalarni yakunlash</li>\n<li>O'zi boshlagan barcha Nizolarni to'liq hal qilish</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.5 Hisobni o'chirish jarayoni",
+          "content": "Foydalanuvchi hisobni o'chirishni so'raganida:\n\n<ul>\n<li>Kompaniya barcha majburiyatlar bajarilganligini tekshiradi</li>\n<li>Agar bajarilmagan majburiyatlar mavjud bo'lsa, o'chirish so'rovi rad etiladi va Foydalanuvchiga bajarilmagan majburiyatlar haqida xabar beriladi</li>\n<li>Barcha majburiyatlar bajarilgach, hisob bizning Maxfiylik Siyosatimizda ko'rsatilgan tartib-qoidalarga muvofiq o'chiriladi</li>\n<li>Muayyan ma'lumotlar qonun talabi bilan yoki qonuniy biznes maqsadlari uchun saqlab qolinishi mumkin</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.6 Hisobni o'chirish oqibatlari",
+          "content": "Hisob o'chirilgach:\n\n<ul>\n<li>Foydalanuvchi Ilova va Xizmatlarga kirish huquqini yo'qotadi</li>\n<li>Tranzaksiyalarning tarixiy yozuvlari yuridik, tartibga soluvchi yoki biznes maqsadlarida zarur bo'lgan hollarda Kompaniya tomonidan saqlanishi mumkin</li>\n<li>Foydalanuvchi hisob o'chirilishidan oldin yuzaga kelgan har qanday majburiyatlar uchun javobgar bo'lib qoladi</li>\n<li>Ushbu Shartlardagi barcha kafolatlar, zararni qoplash (indemnifikatsiya) yoki javobgarlikni cheklash qoidalari hisob o'chirilgandan keyin ham o'z kuchini saqlab qoladi</li>\n</ul>"
+        },
+        {
+          "subtitle": "7.7 Kompaniya tashabbusi bilan bekor qilish",
+          "content": "Kompaniya ushbu Shartlarni yoki amaldagi qonunlarni buzganligi uchun har qanday Foydalanuvchining hisobini to'xtatib turish yoki bekor qilish huquqini o'zida saqlab qoladi. Bunday hollarda:\n\n<ul>\n<li>Foydalanuvchi imzolangan Shartnomalar bo'yicha barcha bajarilmagan majburiyatlarini bajarishga majbur bo'lib qoladi</li>\n<li>Foydalanuvchiga faqat bajarilmagan majburiyatlarni bajarish maqsadida Ilovaga cheklangan kirish huquqi berilishi mumkin</li>\n<li>Kompaniya boshqa Foydalanuvchilarni zarardan himoya qilishni ta'minlash uchun tegishli choralarni ko'rishi mumkin</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "8. To'lovlar va hisob-kitob shartlari",
+      "subsections": [
+        {
+          "subtitle": "8.1 Xizmat to'lovlari",
+          "content": "Kompaniya Xizmatlardan foydalanganlik uchun to'lovlar, jumladan, lekin ular bilan cheklanmagan holda, tranzaksiya to'lovlari, obuna to'lovlari yoki boshqa to'lovlarni undirishi mumkin. Siz tranzaksiyani yakunlashdan yoki pullik xizmatlardan foydalanish majburiyatini olishdan oldin barcha amaldagi to'lovlar Ilovada aniq ko'rsatiladi."
+        },
+        {
+          "subtitle": "8.2 To'lovlarni qayta ishlash",
+          "content": "Barcha kriptovalyuta tranzaksiyalari EULA-da tavsiflanganidek, API integratsiyasi orqali Coinbase infratuzilmasi orqali qayta ishlanadi. Siz o'z tranzaksiyalaringiz bilan bog'liq barcha to'lovlarni, jumladan Coinbase tomonidan undiriladigan to'lovlarni, tarmoq to'lovlarini (gaz to'lovlari) yoki boshqa uchinchi tomon to'lovlarini to'lashga rozilik bildirasiz."
+        },
+        {
+          "subtitle": "8.3 Xizmat to'lovlarining qaytarilmasligi",
+          "content": "Kompaniya tomonidan undiriladigan xizmat to'lovlari, amaldagi qonunchilik talab qiladigan yoki ushbu Shartlarda aniq ko'rsatilgan hollar bundan mustasno, odatda qaytarilmaydi. 5-bo'limda tavsiflangan Nizolar bo'yicha to'lov qaytarishlari Foydalanuvchilar o'rtasidagi tranzaksiya summasiga taalluqli bo'lib, Kompaniya tomonidan boshqacha qaror qabul qilinmasa, xizmat to'lovlarini o'z ichiga olmaydi."
+        },
+        {
+          "subtitle": "8.4 Soliqlar",
+          "content": "Siz Xizmatlardan foydalanishingiz bilan bog'liq bo'lgan barcha tegishli soliqlarni, jumladan tranzaksiyalaringiz bo'yicha sotuv, foydalanish, qo'shilgan qiymat solig'i (QQS) yoki boshqa soliqlarni aniqlash va to'lash uchun to'liq javobgarsiz. Kompaniya soliq bo'yicha maslahat bermaydi va siz o'z majburiyatlaringiz bo'yicha soliq mutaxassisi bilan maslahatlashishingiz kerak."
+        }
+      ]
+    },
+    {
+      "title": "9. Taqiqlangan foydalanish va xatti-harakatlar",
+      "subsections": [
+        {
+          "subtitle": "9.1 Taqiqlangan tranzaksiyalar",
+          "content": "Foydalanuvchilar Xizmatlardan quyidagilarni sotib olish, sotish yoki almashish uchun foydalana olmaydilar:\n\n<ul>\n<li>Noqonuniy tovarlar, moddalar yoki xizmatlar</li>\n<li>O'g'irlangan tovarlar yoki mulk</li>\n<li>Kontrafakt, soxta yoki ruxsatsiz tovarlar</li>\n<li>Qurol-yarog', portlovchi moddalar yoki xavfli materiallar</li>\n<li>Odam savdosi xizmatlari yoki ekspluatatsiya</li>\n<li>Tegishli litsenziyasiz tartibga solinadigan tovarlar</li>\n<li>Amaldagi qonunlar yoki qoidalarni buzuvchi har qanday tovar yoki xizmatlar</li>\n</ul>"
+        },
+        {
+          "subtitle": "9.2 Taqiqlangan xatti-harakatlar",
+          "content": "Foydalanuvchilar quyidagilarni amalga oshira olmaydilar:\n\n<ul>\n<li>Yolg'on yoki chalg'ituvchi Shartnomalar tuzish</li>\n<li>Firibgarlik tranzaksiyalari bilan shug'ullanish yoki tovarlar yoxud xizmatlarni noto'g'ri ko'rsatish</li>\n<li>Xizmatlardan pul yuvish yoki noqonuniy faoliyatni moliyalashtirish uchun foydalanish</li>\n<li>Nizolarni hal qilish jarayonini manipulyatsiya qilish yoki suiiste'mol qilish</li>\n<li>To'lovlar yoki to'lov majburiyatlarini chetlab o'tishga urinish</li>\n<li>Hisoblar yaratish yoki tranzaksiyalarni amalga oshirish uchun avtomatlashtirilgan vositalar yoki botlardan foydalanish</li>\n<li>Boshqa Foydalanuvchilarning Xizmatlardan foydalanishiga to'sqinlik qilish</li>\n<li>Ilovaning manba kodini teskari muhandislik qilish, dekompilyatsiya qilish yoki ajratib olishga urinish</li>\n<li>Boshqa Foydalanuvchilar yoki uchinchi shaxslarning huquqlarini buzish</li>\n</ul>"
+        },
+        {
+          "subtitle": "9.3 Taqiqlangan foydalanish oqibatlari",
+          "content": "Taqiqlangan foydalanish yoki xatti-harakatlar bilan shug'ullangan Foydalanuvchilar quyidagilarga duch kelishi mumkin:\n\n<ul>\n<li>Hisobning darhol to'xtatilishi yoki butunlay bekor qilinishi</li>\n<li>Kutilayotgan tranzaksiyalarda ushlab turilgan mablag'larning musodara qilinishi</li>\n<li>Huquqni muhofaza qiluvchi organlarga xabar berilishi</li>\n<li>Kompaniya yoki jabrlangan tomonlar tomonidan qonuniy choralar ko'rilishi</li>\n<li>O'z xatti-harakatlari tufayli yetkazilgan zararlar uchun javobgarlik</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "10. Intellektual mulk huquqlari",
+      "subsections": [
+        {
+          "subtitle": "10.1 Kompaniyaning intellektual mulki",
+          "content": "Ilova, Xizmatlar hamda ularning barcha tarkibi, xususiyatlari va funksionalligi Kompaniyaga, uning litsenziarlariga yoki bunday materiallarning boshqa provayderlariga tegishli bo'lib, Amerika Qo'shma Shtatlari va xalqaro mualliflik huquqi, tovar belgisi, patent, tijorat siri va boshqa intellektual mulk to'g'risidagi qonunlar bilan himoyalangan."
+        },
+        {
+          "subtitle": "10.2 Cheklangan litsenziya",
+          "content": "Ushbu Shartlarga rioya qilishingiz sharti bilan, Kompaniya sizga Ilova va Xizmatlarga shaxsiy yoki biznes maqsadlaringiz uchun kirish va ulardan foydalanish uchun cheklangan, eksklyuziv bo'lmagan, boshqaga o'tkazib bo'lmaydigan va quyi litsenziyalanmaydigan litsenziya beradi. Ushbu litsenziya quyidagi huquqlarni o'z ichiga olmaydi:\n\n<ul>\n<li>Ilova yoki Xizmatlarni o'zgartirish, nusxalash yoki ulardan hosila asarlar yaratish</li>\n<li>Manba kodini teskari muhandislik qilish yoki ajratib olishga urinish</li>\n<li>Ilova yoki Xizmatlarni sotish, ijaraga berish, lizingga berish yoki boshqa tarzda tijoratlashtirish</li>\n<li>Ilova yoki Xizmatlardan ushbu Shartlarni buzuvchi har qanday tarzda foydalanish</li>\n</ul>"
+        },
+        {
+          "subtitle": "10.3 Foydalanuvchi mazmuni",
+          "content": "Foydalanuvchilar o'zlari yaratgan yoki Xizmatlarga yuklagan har qanday mazmunga, jumladan Shartnoma tavsiflari va fotosuratlariga egalik huquqini saqlab qoladilar. Xizmatlarga mazmun yuklash orqali siz Kompaniyaga ushbu mazmundan faqat Xizmatlarni taqdim etish va yaxshilash maqsadida foydalanish, nusxalash, o'zgartirish va ko'rsatish uchun butun dunyo bo'ylab, royaltisiz, noeksklyuziv litsenziya berasiz."
+        },
+        {
+          "subtitle": "10.4 Fikr-mulohazalar",
+          "content": "Agar siz Xizmatlar haqida fikr-mulohazalar, takliflar yoki g'oyalar taqdim etsangiz, siz Kompaniyaga bunday mulohazalardan sizga hech qanday tovon to'lamasdan va mualliflikni ko'rsatmasdan har qanday maqsadda foydalanish uchun cheklanmagan, doimiy, qaytarib olinmaydigan, royaltisiz huquq berasiz."
+        }
+      ]
+    },
+    {
+      "title": "11. Kafolatlarni rad etish va javobgarlikni cheklash",
+      "subsections": [
+        {
+          "subtitle": "11.1 Kafolat berilmasligi",
+          "content": "XIZMATLAR HECH QANDAY TO'G'RIDAN-TO'G'RI YOKI NAZARDA TUTILGAN KAFOLATLARSIZ, JUMLADAN, LEKIN ULAR BILAN CHEKLANMAGAN HOLDA, TIJORATGA YAROQLILIK, MA'LUM MAQSADGA MOSLIK, HUQUQ EGALIGI VA HUQUQLARNI BUZMASLIK BO'YICHA NAZARDA TUTILGAN KAFOLATLARSIZ \"BORICHA\" VA \"MAVJUD BO'LGANICHA\" TAQDIM ETILADI. KOMPANIYA QUYIDAGILARNI KAFOLATLAMAYDI:\n\n<ul>\n<li>Xizmatlar uzluksiz, xavfsiz yoki xatosiz bo'lishini</li>\n<li>Xizmatlardan foydalanish natijasida olinadigan natijalar aniq yoki ishonchli bo'lishini</li>\n<li>Xizmatlar orqali olingan har qanday tovarlar, xizmatlar, ma'lumotlar yoki boshqa materiallarning sifati sizning talablaringizga javob berishini</li>\n<li>Ilovadagi har qanday xatolar tuzatilishini</li>\n<li>Aqlli Shartnoma uzluksiz yoki xatosiz ishlashini</li>\n<li>Tranzaksiyalar kechikishlarsiz yoki uzilishlarsiz qayta ishlanishini</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.2 Uchinchi tomon xizmatlari",
+          "content": "KOMPANIYA COINBASE, TELEGRAM, BLOKCHEYN TARMOQLARI YOKI BOSHQA HAR QANDAY UCHINCHI TOMON XIZMAT KO'RSATUVCHILARI YOXUD XABAR ALMASHISH PLATFORMALARINING HAR QANDAY HARAKATI, HARAKATSIZLIGI YOKI NOSOZLIKLARI UCHUN JAVOBGAR EMAS. FOYDALANUVCHILAR COINBASE-NING XIZMAT KO'RSATISH SHARTLARI VA MAXFIYLIK SIYOSATI HAMDA TELEGRAM-NING XIZMAT KO'RSATISH SHARTLARI VA MAXFIYLIK SIYOSATIGA MUSTAQIL RAVISHDA BO'YSUNISHLARINI VA USHBU HUJJATLAR BIZNING XIZMATLARIMIZ ORQALI YOKI ULAR BILAN BOG'LIQ HOLDA FOYDALANILADIGAN TEGISHLI UCHINCHI TOMON XIZMATLARIDAN FOYDALANISHNI TARTIBGA SOLISHINI TAN OLADILAR."
+        },
+        {
+          "subtitle": "11.3 Foydalanuvchilar o'rtasidagi tranzaksiyalar",
+          "content": "KOMPANIYA FOYDALANUVCHILAR O'RTASIDAGI SHARTNOMALARNING TOMONI HISOBLANMAYDI. KOMPANIYA HECH BIR FOYDALANUVCHINING SHAXSI, QONUNIYLIGI YOKI ISHONCHLILIGINI KAFOLATLAMAYDI. KOMPANIYA QUYIDAGILAR UCHUN JAVOBGAR EMAS:\n\n<ul>\n<li>Savdogarlar tomonidan taklif etilayotgan tovarlar yoki xizmatlarning sifati, xavfsizligi, qonuniyligi yoki mavjudligi</li>\n<li>Foydalanuvchilarning o'z Shartnomalari bo'yicha majburiyatlarini bajarishi yoki bajarmasligi</li>\n<li>Foydalanuvchilar o'rtasida ushbu Shartlarda tavsiflangan nizolarni hal qilish jarayonidan tashqaridagi nizolar</li>\n<li>Foydalanuvchilar o'rtasidagi tranzaksiyalardan kelib chiqadigan yo'qotishlar yoki zararlar</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.4 Javobgarlikni cheklash",
+          "content": "QONUN BILAN TAQIQLANMAGAN DARAJADA, KOMPANIYA HECH QANDAY HOLATDA HAR QANDAY BILVOSITA, TASODIFIY, MAXSUS, OQIBATLI YOKI JAZOLOVCHI ZARARLAR UCHUN, JUMLADAN, LEKIN ULAR BILAN CHEKLANMAGAN HOLDA:\n\n<ul>\n<li>Foyda, daromad yoki biznes imkoniyatlarining yo'qotilishi</li>\n<li>Ma'lumotlar yoki kriptovalyutaning yo'qotilishi</li>\n<li>O'rnini bosuvchi tovarlar yoki xizmatlarni sotib olish xarajatlari</li>\n<li>Biznes faoliyatining to'xtab qolishi</li>\n<li>Shaxsiy jarohat (amaldagi qonun talab qiladigan hollar bundan mustasno)</li>\n</ul>\n\nUCHUN, BU KAFOLAT, SHARTNOMA, DELIKT YOKI BOSHQA HAR QANDAY HUQUQIY NAZARIYAGA ASOSLANGANLIGIDAN VA KOMPANIYA BUNDAY ZARARLAR EHTIMOLI TO'G'RISIDA OGOHLANTIRILGANLIGIDAN QAT'I NAZAR, SIZNING XIZMATLARDAN FOYDALANISHINGIZ YOKI FOYDALANA OLMASLIGINGIZ BILAN BOG'LIQ BO'LGAN ZARARLAR UCHUN JAVOBGAR BO'LMAYDI."
+        },
+        {
+          "subtitle": "11.5 Javobgarlik chegarasi",
+          "content": "AMALDAGI QONUNCHILIK RUXSAT BERGAN MAKSIMAL DARAJADA, USHBU SHARTLAR YOKI XIZMATLARDAN KELIB CHIQADIGAN YOKI ULAR BILAN BOG'LIQ BO'LGAN BARCHA DA'VOLAR BO'YICHA KOMPANIYANING SIZ OLDINGIZDAGI UMUMIY JAVOBGARLIGI QUYIDAGILARNING QAYSI BIRI KATTA BO'LSA, O'SHA MIQDORDAN OSHMAYDI:\n\n<ul>\n<li>Ellik dollar ($50.00); yoki</li>\n<li>Da'voga sabab bo'lgan voqeadan oldingi olti (6) oy davomida siz Kompaniyaga to'lagan to'lovlarning umumiy miqdori</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.6 Istisnolar",
+          "content": "AYRIM YURISDIKSIYALAR MUAYYAN KAFOLATLAR YOKI ZARARLARNI ISTISNO QILISH YOKI CHEKLASHGA RUXSAT BERMAYDI. SHUNGA KO'RA, YUQORIDAGI CHEKLOVLARNING AYRIM TURLARI SIZGA NISBATAN QO'LLANILMASLIGI MUMKIN. BUNDAY YURISDIKSIYALARDA KOMPANIYANING JAVOBGARLIGI QONUN TOMONIDAN RUXSAT ETILGAN ENG YUQORI DARAJADA CHEKLANADI."
+        }
+      ]
+    },
+    {
+      "title": "12. Zararni qoplash (Indemnifikatsiya)",
+      "subsections": [
+        {
+          "subtitle": "12.1 Zararni qoplash majburiyatingiz",
+          "content": "Siz Kompaniyani, uning filiallarini, mansabdor shaxslarini, direktorlarini, xodimlarini, agentlarini, litsenziarlarini va hamkorlarini (birgalikda \"Kompaniya Tomonlari\") quyidagilardan kelib chiqadigan yoki ular bilan bog'liq bo'lgan har qanday va barcha da'volar, majburiyatlar, zararlar, yo'qotishlar, xarajatlar va to'lovlardan (jumladan oqilona advokatlik to'lovlaridan) himoya qilish, zararni qoplash va zararsizlantirishga rozilik bildirasiz:\n\n<ul>\n<li>Xizmatlardan foydalanishingiz yoki noto'g'ri foydalanishingiz</li>\n<li>Ushbu Shartlarni yoki EULA-ni buzishingiz</li>\n<li>Har qanday amaldagi qonunlar yoki qoidalarni buzishingiz</li>\n<li>Savdogar yoki Mijoz sifatida tuzgan har qanday Shartnomalaringiz</li>\n<li>O'zingiz imzolagan Shartnomalar bo'yicha majburiyatlarni bajarmasligingiz</li>\n<li>Xizmatlarga yuborgan yoki yuklagan mazmuningiz</li>\n<li>Boshqa tomonning har qanday huquqlarini, jumladan intellektual mulk huquqlari, maxfiylik huquqlari yoki shartnomaviy huquqlarini buzishingiz</li>\n<li>Sizning harakatlaringiz yoki harakatsizligingiz tufayli boshqa Foydalanuvchilar tomonidan bildirilgan har qanday da'volar</li>\n</ul>"
+        },
+        {
+          "subtitle": "12.2 Himoya va kelishuv",
+          "content": "Kompaniya sizning zararni qoplash majburiyatingizga taalluqli har qanday masala bo'yicha mutlaq himoya va nazoratni o'z zimmasiga olish huquqini o'zida saqlab qoladi, bunday holatda siz mavjud bo'lgan har qanday himoya choralarini ilgari surishda Kompaniya bilan hamkorlik qilasiz. Siz Kompaniyaning oldindan yozma roziligisiz hech qanday da'voni o'zaro kelishuv bilan hal qila olmaysiz."
+        }
+      ]
+    },
+    {
+      "title": "13. Nizolarni hal qilish va arbitraj",
+      "subsections": [
+        {
+          "subtitle": "13.1 Norasmiy hal qilish",
+          "content": "Kompaniyaga qarshi da'vo qo'zg'atishdan oldin, siz contact@shakedefi.com manzili orqali biz bilan bog'lanib, nizoni norasmiy tartibda hal qilishga urinishga rozilik bildirasiz. Biz siz bilan bog'lanish orqali nizoni norasmiy hal qilishga harakat qilamiz. Agar nizo ariza berilgan kundan boshlab oltmish (60) kun ichida hal qilinmasa, siz yoki Kompaniya rasmiy sud/arbitraj jarayonini boshlashi mumkin."
+        },
+        {
+          "subtitle": "13.2 Arbitraj shartnomasi",
+          "content": "Ushbu Shartlar yoki Xizmatlardan kelib chiqadigan yoki ular bilan bog'liq bo'lgan va norasmiy tarzda hal qilib bo'lmaydigan har qanday nizo, da'vo yoki ziddiyat Amerika Arbitraj Assotsiatsiyasi (\"AAA\") tomonidan uning Tijorat Arbitraj Qoidalariga muvofiq boshqariladigan majburiy arbitraj orqali hal qilinadi."
+        },
+        {
+          "subtitle": "13.3 Arbitraj tartib-qoidalari",
+          "content": "<ul>\n<li>Arbitraj jarayoni tomonlar boshqacha kelishmagan taqdirda, Amerika Qo'shma Shtatlarining Kaliforniya shtatida o'tkaziladi</li>\n<li>Arbitraj yagona arbitr tomonidan ko'rib chiqiladi</li>\n<li>Arbitrning qarori yakuniy va majburiy hisoblanadi</li>\n<li>Arbitraj qarori bo'yicha hukm tegishli yurisdiksiyaga ega bo'lgan har qanday sudda kiritilishi mumkin</li>\n<li>Arbitr tomonidan boshqacha taqsimlanmagan bo'lsa, har bir tomon o'z xarajatlari va to'lovlarini o'zi to'laydi</li>\n</ul>"
+        },
+        {
+          "subtitle": "13.4 Jamoaviy da'vodan voz kechish",
+          "content": "SIZ VA KOMPANIYA HAR BIR TOMON BOSHQA TOMONGA NISBATAN DA'VOLARNI FAQAT O'ZINING YAKKA TARTIBIDAGI MAQOMIDA QO'ZG'ATISHI MUMKINLIGI VA HECH QANDAY FARAZIY JAMOAVIY YOKI VAKILLIK JARAYONIDA DA'VOGAR YOKI JAMOAT A'ZOSI SIFATIDA ISHTIROK ETOLMASLIGIGA ROZILIK BILDIRASIZ. Agar siz ham, Kompaniya ham boshqacha kelishmasa, arbitr bir nechta shaxsning da'volarini birlashtira olmaydi va har qanday shakldagi vakillik yoki jamoaviy jarayonga raislik qila olmaydi."
+        },
+        {
+          "subtitle": "13.5 Arbitrajdan istisnolar",
+          "content": "Yuqoridagilarga qaramasdan, har qanday tomon, agar da'vo talablarga javob bersa, kichik da'volar sudiga murojaat qilishi mumkin. Bundan tashqari, har qanday tomon intellektual mulk huquqlarining amaldagi yoki kutilayotgan buzilishi, noqonuniy o'zlashtirilishi yoki poymol qilinishining oldini olish uchun suddan vaqtinchalik taqiq (sud buyrug'i) yoki boshqa adolatli himoya choralarini so'rashi mumkin."
+        }
+      ]
+    },
+    {
+      "title": "14. Amaldagi qonunchilik va yurisdiksiya",
+      "subsections": [
+        {
+          "subtitle": "14.1 Amaldagi qonunchilik",
+          "content": "Ushbu Shartlar va sizning Xizmatlardan foydalanishingiz uning qonunlar kolliziyasi qoidalarini hisobga olmagan holda, Amerika Qo'shma Shtatlarining Kaliforniya shtati qonunlari bilan tartibga solinadi va ularga muvofiq talqin qilinadi."
+        },
+        {
+          "subtitle": "14.2 Yurisdiksiya",
+          "content": "13-bo'limdagi arbitraj qoidalariga bo'ysungan holda, siz ushbu Shartlar yoki Xizmatlar bilan bog'liq har qanday huquqiy harakat yoki da'vo jarayoni faqat Kaliforniyada joylashgan federal yoki shtat sudlariga topshirilishiga rozilik bildirasiz va ushbu sudlarning shaxsiy yurisdiksiyasiga bo'ysunasiz."
+        }
+      ]
+    },
+    {
+      "title": "15. Shartlarga o'zgartirishlar kiritish",
+      "subsections": [
+        {
+          "subtitle": "15.1 O'zgartirish kiritish huquqi",
+          "content": "Kompaniya istalgan vaqtda o'zining yagona ixtiyoriga ko'ra ushbu Shartlarni o'zgartirish, tuzatish yoki yangilash huquqini o'zida saqlab qoladi. Biz muhim o'zgarishlar to'g'risida quyidagi yo'llar bilan xabar beramiz:\n\n<ul>\n<li>Yangilangan Shartlarni Ilovada yangi \"Oxirgi yangilangan sana\" bilan e'lon qilish orqali</li>\n<li>Ro'yxatdan o'tgan elektron pochta manzilingizga elektron bildirishnoma yuborish orqali</li>\n<li>Ilovada ko'zga tashlanadigan bildirishnomani ko'rsatish orqali</li>\n<li>Boshqa har qanday oqilona xabar berish vositalari orqali</li>\n</ul>"
+        },
+        {
+          "subtitle": "15.2 O'zgartirishlarni qabul qilish",
+          "content": "Har qanday o'zgartirishlar kuchga kirgan sanadan keyin Xizmatlardan foydalanishni davom ettirishingiz yangilangan Shartlarni qabul qilganingizni anglatadi. Agar siz o'zgartirilgan Shartlarga rozi bo'lmasangiz, Xizmatlardan foydalanishni to'xtatishingiz shart va o'z hisobingizni o'chirishingiz mumkin (7-bo'limda tavsiflanganidek har qanday bajarilmagan qoldiq majburiyatlarni bajarish sharti bilan)."
+        },
+        {
+          "subtitle": "15.3 Muhim o'zgarishlar",
+          "content": "Sizning huquqlaringiz yoki majburiyatlaringizga jiddiy ta'sir ko'rsatadigan muhim o'zgarishlar uchun biz o'zgarishlar kuchga kirishidan kamida o'ttiz (30) kun oldin bildirishnoma taqdim etamiz. Ushbu davrda siz hisobingizni tugatishni va Xizmatlardan foydalanishni to'xtatishni tanlashingiz mumkin."
+        }
+      ]
+    },
+    {
+      "title": "16. Maxfiylik va ma'lumotlarni himoya qilish",
+      "subsections": [
+        {
+          "subtitle": "16.1 Maxfiylik siyosati",
+          "content": "Sizning maxfiyligingiz biz uchun muhim. Shaxsiy ma'lumotlaringizni to'plashimiz, ulardan foydalanishimiz va oshkor qilishimiz havola orqali ushbu Shartlarga kiritilgan bizning Maxfiylik Siyosatimiz bilan tartibga solinadi. Xizmatlardan foydalanish orqali siz Maxfiylik Siyosatimizda tavsiflangan amaliyotlarga rozilik bildirasiz."
+        },
+        {
+          "subtitle": "16.2 Foydalanuvchi ma'lumotlari",
+          "content": "Siz tranzaksiya ma'lumotlari, jumladan Shartnomalar, imzolar, fotosuratlar va nizo bilan bog'liq axborotlar hatto hisob o'chirilgandan keyin ham qonuniy, tartibga soluvchi va operatsion maqsadlar uchun Kompaniya tomonidan saqlanishi mumkinligini tan olasiz."
+        },
+        {
+          "subtitle": "16.3 Ma'lumotlar xavfsizligi",
+          "content": "Biz ma'lumotlaringizni himoya qilish uchun oqilona xavfsizlik choralarini ko'rsak-da, hech bir tizim mutlaqo xavfsiz emasligini tan olasiz. Siz hisob qaydnomangiz ma'lumotlari va qurilmangizga kirish xavfsizligini ta'minlash uchun javobgarsiz."
+        }
+      ]
+    },
+    {
+      "title": "17. Umumiy qoidalar",
+      "subsections": [
+        {
+          "subtitle": "17.1 To'liq shartnoma",
+          "content": "Ushbu Shartlar EULA va Maxfiylik Siyosati bilan birgalikda siz va Kompaniya o'rtasidagi Xizmatlarga oid to'liq shartnomani tashkil etadi va yozma yoki og'zaki barcha oldingi shartnomalar, bayonotlar va kelishuvlarning o'rnini bosadi. Ushbu Shartlar va EULA o'rtasida har qanday ziddiyat yoki nomuvofiqlik yuzaga kelgan taqdirda, ushbu Shartlar ustunlik qiladi."
+        },
+        {
+          "subtitle": "17.2 Ajratiluvchanlik",
+          "content": "Agar ushbu Shartlarning biron bir qoidasi vakolatli sud tomonidan haqiqiy emas, noqonuniy yoki ijro etib bo'lmaydigan deb topilsa, qolgan qoidalar to'liq kuchda va amalda qoladi. Haqiqiy emas deb topilgan qoida uni haqiqiy va ijro etilishi mumkin qilish uchun zarur bo'lgan minimal darajada o'zgartiriladi."
+        },
+        {
+          "subtitle": "17.3 Huquqdan voz kechmaslik",
+          "content": "Kompaniyaning ushbu Shartlarning biron bir huquqi yoki qoidasini ijro etmasligi, agar Kompaniya tomonidan yozma ravishda tan olinmagan va kelishilmagan bo'lsa, bunday huquq yoki qoidadan voz kechish hisoblanmaydi. Hech qanday voz kechish bunday shartdan yoki boshqa har qanday shartdan kelgusida yoki davomiy voz kechish deb hisoblanmaydi."
+        },
+        {
+          "subtitle": "17.4 Huquqlarni boshqaga o'tkazish",
+          "content": "Siz ushbu Shartlarni yoki ushbu Shartlar bo'yicha o'z huquqlaringiz va majburiyatlaringizni Kompaniyaning oldindan yozma roziligisiz boshqa shaxsga o'tkaza olmaysiz yoki topshira olmaysiz. Kompaniya ushbu Shartlarni va o'z huquqlari hamda majburiyatlarini hech qanday cheklovlarsiz erkin o'tkazishi, topshirishi yoki vakolat berishi mumkin. Ushbu qoidani buzgan holda amalga oshirilgan har qanday o'tkazishga urinish haqiqiy emas deb hisoblanadi."
+        },
+        {
+          "subtitle": "17.5 Tomonlar o'rtasidagi munosabat",
+          "content": "Ushbu Shartlardagi hech bir qoida siz va Kompaniya o'rtasida sheriklik, qo'shma korxona, mehnat munosabatlari yoki agentlik munosabatlarini yaratuvchi deb talqin qilinmasligi kerak. Siz Kompaniya nomidan majburiyat olish yoki Kompaniya nomidan bayonotlar berish vakolatiga ega emassiz."
+        },
+        {
+          "subtitle": "17.6 Uchinchi tomon benefitsiarlari",
+          "content": "Ushbu Shartlar ushbu shartnoma tomonlaridan boshqa hech bir shaxsga biron bir huquq yoki huquqiy himoya vositalarini taqdim etmaydi va taqdim etishga mo'ljallanmagan. Hech qanday uchinchi tomon ushbu Shartlarning benefitsiari deb hisoblanmaydi."
+        },
+        {
+          "subtitle": "17.7 Fors-major",
+          "content": "Kompaniya o'zining oqilona nazoratidan tashqaridagi sabablar, jumladan, lekin ular bilan cheklanmagan holda, fors-major holatlari, tabiiy ofatlar, urush, terrorizm, mehnat nizolari, davlat organlarining harakatlari, blokcheyn tarmog'idagi nosozliklar yoki uchinchi tomon xizmatlaridagi uzilishlar tufayli ushbu Shartlar bo'yicha o'z majburiyatlarini bajarmaslik yoki kechiktirish uchun javobgar bo'lmaydi."
+        },
+        {
+          "subtitle": "17.8 Shartlarning amalda qolishi",
+          "content": "Ushbu Shartlarning o'z tabiatiga ko'ra bekor qilingandan keyin ham amal qilishi kerak bo'lgan barcha qoidalari, jumladan, lekin ular bilan cheklanmagan holda, mulk huquqlari to'g'risidagi qoidalar, kafolatlar rad etilishi, zararni qoplash majburiyatlari, javobgarlikni cheklash, nizolarni hal qilish qoidalari va umumiy qoidalar bekor qilingandan keyin ham amalda qoladi."
+        },
+        {
+          "subtitle": "17.9 Til",
+          "content": "Ushbu Shartlar ingliz tilida tuzilgan. Har qanday tarjima faqat qulaylik uchun taqdim etiladi. Ingliz tilidagi versiya va har qanday tarjima o'rtasida ziddiyat yuzaga kelgan taqdirda, ingliz tilidagi versiya ustunlik qiladi."
+        },
+        {
+          "subtitle": "17.10 Bildirishnomalar",
+          "content": "Ushbu Shartlar bo'yicha Kompaniyaga yuboriladigan barcha bildirishnomalar quyidagi manzilga yuborilishi shart:\n\nShake Defi, Inc.\nElektron pochta: contact@shakedefi.com\nManzil: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nSizga yuboriladigan bildirishnomalar hisobingizga bog'langan elektron pochta manziliga yoki jismoniy manzilga yuborilishi mumkin. Siz elektron bildirishnomalar har qanday qonuniy aloqa talablariga javob berishiga rozilik bildirasiz."
+        }
+      ]
+    },
+    {
+      "title": "18. Aloqa ma'lumotlari",
+      "content": "Ushbu Shartlar yoki Xizmatlar bo'yicha savollar uchun, iltimos, biz bilan quyidagi manzil orqali bog'laning:\n\n<strong>Shake Defi, Inc.</strong>\nElektron pochta: contact@shakedefi.com\nManzil: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>XIZMATLARDAN FOYDALANISH ORQALI SIZ USHBU XIZMAT KO'RSATISH SHARTLARINI O'QIB CHIQIB, TUSHUNGANINGIZNI VA ULARGA RIOYA QILISHGA ROZI EKANINGIZNI TASDIQLAYSIZ. SIZ, SHUNINGDEK, USHBU SHARTLAR YAKUNIY FOYDALANUVCHI LITSENZIYA SHARTNOMASI VA MAXFIYLIK SIYOSATI BILAN BIRGALIKDA SIZNING XIZMATLARDAN FOYDALANISHINGIZ BO'YICHA SIZ VA SHAKE DEFI, INC. O'RTASIDAGI TO'LIQ VA EKSKLYUZIV SHARTNOMANI TASHKIL ETISHINI TAN OLASIZ.</strong>"
+    }
+  ]
+}

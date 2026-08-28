@@ -8,6 +8,7 @@ import { useContent } from '../../hooks/useContent';
 const languages = [
   { code: 'EN', locale: 'en' as Locale, label: 'English' },
   { code: 'ES', locale: 'es' as Locale, label: 'Español' },
+  { code: 'UZ', locale: 'uz' as Locale, label: "O'zbek" },
 ];
 
 const Navbar: React.FC = () => {
@@ -214,7 +215,7 @@ const Navbar: React.FC = () => {
               <Globe2 size={18} aria-hidden="true" />
               Language
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               {languages.map((language) => {
                 const isSelected = language.locale === locale;
                 return (

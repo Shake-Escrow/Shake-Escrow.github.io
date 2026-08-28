@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-export type Locale = 'en' | 'es';
+export type Locale = 'en' | 'es' | 'uz';
 
 interface LocaleContextValue {
   locale: Locale;
@@ -15,7 +15,7 @@ const LocaleContext = createContext<LocaleContextValue>({
 const STORAGE_KEY = 'shake-locale';
 
 function isLocale(value: string | null): value is Locale {
-  return value === 'en' || value === 'es';
+  return value === 'en' || value === 'es' || value === 'uz';
 }
 
 function getUrlLocale(): Locale | null {
@@ -38,6 +38,9 @@ function getBrowserLocale(): Locale {
 
     if (browserLocales.some((language) => language.toLowerCase().startsWith('es'))) {
       return 'es';
+    }
+    if (browserLocales.some((language) => language.toLowerCase().startsWith('uz'))) {
+      return 'uz';
     }
   } catch {
     // navigator unavailable

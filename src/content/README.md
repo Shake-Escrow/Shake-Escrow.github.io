@@ -14,6 +14,11 @@ src/content/
 │   ├── eula.json
 │   ├── privacy.json
 │   └── tos.json
+├── uz/               ← Uzbek
+│   ├── sitecontent.json
+│   ├── eula.json
+│   ├── privacy.json
+│   └── tos.json
 └── README.md         ← this file
 ```
 

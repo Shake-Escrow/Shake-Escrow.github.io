@@ -1,0 +1,189 @@
+{
+  "lastUpdated": "2026-yil 28-avgust",
+  "effectiveDate": "2026-yil 28-avgust",
+  "companyName": "Shake Defi, Inc.",
+  "introduction": "# Maxfiylik Siyosati\n<strong>Shake Defi, Inc.</strong>",
+  "sections": [
+    {
+      "title": "1. Kirish",
+      "content": "Shake Defi-ga xush kelibsiz. Ushbu Maxfiylik Siyosati Shake Defi, Inc. (\"Shake Defi\", \"biz\", \"bizga\" yoki \"bizning\") siz bizning mobil ilovamizdan (\"Ilova\") foydalanganingizda shaxsiy ma'lumotlaringizni qanday to'plashi, foydalanishi, saqlashi va himoya qilishini tushuntiradi.\n\nShake Defi tovarlar yoki xizmatlarni valyutaga almashtiruvchi foydalanuvchilar o'rtasida xavfsiz tranzaksiyalarni amalga oshirishga ko'maklashadi. Tranzaksiya xavfsizligi va nizolarni hal qilish bo'yicha majburiyatimiz doirasida biz ma'lum shaxsiy ma'lumotlarni, jumladan raqamli imzolash jarayonida olingan yuz tasvirlarini to'playmiz.\n\nIlovadan foydalanish orqali siz ma'lumotlarning ushbu Maxfiylik Siyosatiga muvofiq to'planishi va foydalanilishiga rozilik bildirasiz. Agar siz ushbu Maxfiylik Siyosatiga rozi bo'lmasangiz, iltimos, Ilovadan foydalanmang.\n\n<strong>Kompaniya haqida ma'lumot:</strong>\n<ul>\n<li><strong>Yuridik nomi:</strong> Shake Defi, Inc.</li>\n<li><strong>Jismoniy manzili:</strong> Brookfield, Wisconsin</li>\n<li><strong>Amaldagi qonunchilik:</strong> Kaliforniya shtati qonunchiligi</li>\n<li><strong>Arbitraj joyi:</strong> Kaliforniya</li>\n</ul>\n\n<strong>Asosiy ta'riflar:</strong>\n\n<strong>\"Coinbase\"</strong> — Ilovaning integratsiyasi orqali kirish mumkin bo'lgan hamyon xizmatlari, to'lov infratuzilmasi va blokcheyn operatsiyalari imkoniyatlarini taqdim etuvchi Coinbase yuridik shaxsi yoki shaxslarini, jumladan, lekin ular bilan cheklanmagan holda, Coinbase, Inc., Coinbase Global, Inc. va/yoki Coinbase Bermuda Technologies Limited-ni bildiradi. Foydalanuvchilar Ilova orqali Coinbase xizmatlaridan foydalanishlari, shuningdek, Coinbase-ning tegishli Xizmat Ko'rsatish Shartlari va Maxfiylik Siyosati bilan tartibga solinishini tan oladilar.\n\n<strong>\"Azure KeyVault\"</strong> — shifrlash kalitlari, maxfiy ma'lumotlar va sertifikatlarni saqlash va boshqarish uchun foydalaniladigan xavfsiz bulut xizmatidir. U foydalanuvchi ma'lumotlarini himoya qilish uchun foydalaniladigan kriptografik materiallarning xavfsiz tarzda yaratilishi, saqlanishi va faqat vakolatli tizimlar va xodimlar tomonidan kirilishini ta'minlashga yordam beradi.\n\n<strong>\"Microsoft Entra ID\"</strong> — Ilova uchun autentifikatsiya va OAuth2 kirish jarayonlarini boshqarish uchun foydalaniladigan Microsoft-ning bulutga asoslangan identifikatsiya va kirishni boshqarish xizmatidir. Microsoft Entra ID autentifikatsiya bilan bog'liq ma'lumotlarni Microsoft-ning maxfiylik siyosatiga muvofiq to'plashi va qayta ishlashi mumkin.\n\n<strong>\"Telegram\"</strong> — Telegram FZ-LLC va Telegram Group Inc. tomonidan boshqariladigan, Telegram Bot API, jamoat kanallari va Telegram Mini Ilovalari orqali kiriladigan bulutli tezkor xabar almashish va tarqatish platformasini bildiradi. Foydalanuvchilar Telegram kanallari, botlari yoki Mini Ilovalari bilan o'zaro aloqalar, shuningdek, Telegram-ning tegishli Xizmat Ko'rsatish Shartlari va Maxfiylik Siyosati bilan tartibga solinishini tan oladilar.\n\n<strong>\"Bozor Kanali\"</strong> yoki <strong>\"P2P Bozori\"</strong> — Foydalanuvchilar ixtiyoriy ravishda tranzaksiya e'lonlarini, mahsulot tavsiflarini va to'lov havolalarini tarqatishlari va topishlari mumkin bo'lgan uchinchi tomon xabar almashish platformalarida (jumladan Telegramda) ishlaydigan ommaviy yoki jamoaviy aloqa kanallarini bildiradi."
+    },
+    {
+      "title": "2. Biz to'playdigan ma'lumotlar",
+      "subsections": [
+        {
+          "subtitle": "2.1 Shaxsni tasdiqlash ma'lumotlari (KYC ma'lumotlari)",
+          "content": "Qonuniy va tartibga soluvchi talablarga rioya qilish uchun biz quyidagi \"Mijozingizni biling\" (KYC) ma'lumotlarini to'playmiz:\n\n<ul>\n<li>To'liq qonuniy ism-sharif</li>\n<li>Elektron pochta manzili</li>\n<li>Telefon raqami</li>\n</ul>\n\nUshbu ma'lumotlar bizning uchinchi tomon shaxsni tasdiqlash bo'yicha hamkorimiz Persona orqali to'planadi, u o'zining maxfiylik siyosatida tavsiflanganidek mustaqil ravishda qo'shimcha ma'lumotlarni to'plashi mumkin."
+        },
+        {
+          "subtitle": "2.2 Yuz tasvirlari",
+          "content": "<strong>Muhim eslatma:</strong> Ilova yordamida tranzaksiya shartnomasini imzolaganingizda, bizning old kameramiz imzolash jarayonida sizning tasviringizni oladi.\n\n<strong>Maqsad:</strong> Ushbu yuz tasvirlari shartnomani imzolagan shaxsning shaxsini tasdiqlashga yordam beruvchi xavfsizlik chorasi sifatida xizmat qiladi. Tranzaksiya bo'yicha nizo yuzaga kelgan taqdirda, ushbu tasvirlar shartnomani imzolagan shaxs nizo da'vosini bergan shaxs bilan bir xilligini tasdiqlash uchun ishlatilishi mumkin.\n\n<strong>Oldindan bildirishnoma:</strong> Har qanday tasvir olinishidan oldin sizga aniq xabar beriladi. Agar jarayonni davom ettirishni istamasangiz, tasvir olinishidan oldin istalgan vaqtda jarayonni bekor qilish huquqiga egasiz.\n\n<strong>Rozilik:</strong> Bildirishnoma olgandan so'ng imzolash jarayonini davom ettirish orqali siz yuz tasviringiz olinishi va ushbu siyosatga muvofiq saqlanishiga aniq rozilik bildirasiz."
+        },
+        {
+          "subtitle": "2.3 Tranzaksiya ma'lumotlari",
+          "content": "Biz sizning tranzaksiyalaringiz bilan bog'liq quyidagi ma'lumotlarni to'playmiz:\n\n<ul>\n<li>Tranzaksiya miqdori</li>\n<li>Tranzaksiya sanasi</li>\n<li>Tranzaksiya tavsifi</li>\n<li>Har bir tranzaksiya uchun joylashuv ma'lumotlari (ikkala tomon uchun)</li>\n<li>Ommaviy ravishda mavjud bo'lgan blokcheyn tranzaksiya xeshi (hash)</li>\n</ul>"
+        },
+        {
+          "subtitle": "2.4 Biz to'plamaydigan ma'lumotlar",
+          "content": "Biz quyidagilarni to'plamaymiz:\n\n<ul>\n<li>Qurilma ma'lumotlari (qurilma identifikatori, operatsion tizim tafsilotlari va h.k.)</li>\n<li>Ko'rish tarixi yoki ilova ichidagi xatti-harakatlar tahlili</li>\n<li>Yuqorida tavsiflangan yuz tasvirlaridan tashqari biometrik ma'lumotlar</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "3. Ma'lumotlaringizdan qanday foydalanamiz",
+      "content": "Biz to'plangan ma'lumotlardan quyidagi maqsadlarda foydalanamiz:",
+      "subsections": [
+        {
+          "subtitle": "3.1 Tranzaksiyalarni amalga oshirish va xavfsizlik",
+          "content": "<ul>\n<li>Foydalanuvchilar o'rtasida tranzaksiyalarni amalga oshirish va qayta ishlash</li>\n<li>Tranzaksiyadagi tomonlarning shaxsini tasdiqlash</li>\n<li>Firibgarlik va ruxsatsiz tranzaksiyalarning oldini olish</li>\n<li>Tranzaksiya yozuvlarini yuritish</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.2 Nizolarni hal qilish",
+          "content": "Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va tranzaksiya ma'lumotlari faqat nizolarni hal qilish maqsadlarida ishlatiladi. Agar tranzaksiya bo'yicha nizo yuzaga kelsa:\n\n<ul>\n<li>Tranzaksiya paytida olingan yuz tasviri va boshqa dalillar <strong>faqat</strong> muayyan nizoda bevosita ishtirok etgan tomonlar bilan bo'lishilishi mumkin</li>\n<li>Dalillar imzolagan tomonning shaxsini tasdiqlash va nizoni hal qilishni qo'llab-quvvatlash uchun ishlatiladi</li>\n<li>Nizoni hal qilish uchun zarur bo'lganidan tashqari hech qanday boshqa shaxsiy ma'lumotlar ulashilmaydi</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.3 Mijozlarni qo'llab-quvvatlash va xizmatni yaxshilash",
+          "content": "Biz to'plangan ma'lumotlardan ichki maqsadlarda quyidagilar uchun foydalanishimiz mumkin:\n\n<ul>\n<li>Mijozlarni qo'llab-quvvatlash so'rovlariga javob berish</li>\n<li>Ilova funksionalligi va foydalanuvchi tajribasini yaxshilash</li>\n<li>Xavfsizlik choralarini kuchaytirish uchun tranzaksiya modellarini tahlil qilish</li>\n<li>Ichki tahlillar (imkon qadar umumlashtirilgan va anonimlashtirilgan holda)</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.4 Qonuniy talablarga rioya qilish",
+          "content": "Biz sizning ma'lumotlaringizdan quyidagilar uchun foydalanamiz:\n\n<ul>\n<li>Amaldagi qonunlar va qoidalarga rioya qilish</li>\n<li>Rasmiy idoralarning qonuniy so'rovlariga javob berish</li>\n<li>Xizmat Ko'rsatish Shartlarimiz va boshqa shartnomalarimizni ijro etish</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.5 Ommaviy bozorda tarqatish",
+          "content": "Ixtiyoriy \"Bozorga joylashtirish\" funksiyasidan foydalanishni tanlaganingizda, biz sizning so'rovingiz bo'yicha e'lonni Telegram ommaviy aloqa kanallariga uzatish va tarqatish uchun sizning tranzaksiya e'loni ma'lumotlaringizni — jumladan, mahsulot fotosuratlari, tavsifi, narxi, valyutasi, eskrow saqlash muddati, umumiy joylashuvi (shahar, viloyat/shtat va mamlakat), shaxsiy uchrashuv afzalliklari va Mini Ilova chuqur havolalarini — qayta ishlaymiz va formatlaymiz."
+        }
+      ]
+    },
+    {
+      "title": "4. Yuz tasvirlarini to'plash va saqlash",
+      "subsections": [
+        {
+          "subtitle": "4.1 Bildirishnoma va rozilik",
+          "content": "Har qanday yuz tasviri olinishidan oldin:\n\n<ul>\n<li>Old kamera sizni suratga olishi haqida aniq va yaqqol bildirishnoma olasiz</li>\n<li>Ushbu Maxfiylik Siyosatini ko'rib chiqish imkoniyatiga ega bo'lasiz</li>\n<li>Agar davom ettirishni istamasangiz, imzolash jarayonini bekor qilishingiz mumkin</li>\n<li>Imzolashni davom ettirish sizning aniq roziligingizni bildiradi</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.2 Maqsadni cheklash",
+          "content": "Yuz tasvirlari <strong>faqat</strong> tranzaksiya nizolari yuzaga kelganda shaxsni tasdiqlash uchun to'planadi. Biz hech qachon:\n\n<ul>\n<li>Yuz tasvirlaridan yuzni aniqlash texnologiyasi yoki biometrik tahlil uchun foydalanmaymiz</li>\n<li>Marketing maqsadlarida yuz tasvirlarini uchinchi tomonlar bilan bo'lishmaymiz</li>\n<li>Yuz tasvirlarini hech kimga sotmaymiz</li>\n<li>Yuz tasvirlaridan nizolarni hal qilishdan boshqa har qanday maqsadda foydalanmaymiz</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.3 Ma'lumotlarni saqlash muddati",
+          "content": "<strong>Eskrow davrida:</strong> Yuz tasvirlari boshqa tranzaksiya tomoni bilan tuzilgan yozma shartnomangizda ko'rsatilgan \"Eskrow davri\" davomida saqlanadi.\n\n<strong>Eskrow davridan keyin (nizo bo'lmaganda):</strong> Agar hech qanday nizo yuzaga kelmasa, biz Eskrow davri tugaganidan keyin <strong>24 soat</strong> ichida yuz tasviringizni butunlay o'chirib tashlaymiz.\n\n<strong>Nizo yuzaga kelgan taqdirda:</strong> Agar nizo boshlansa, yuz tasvirlari nizo to'liq hal qilinguncha va har qanday amaldagi apellyatsiya muddatlari tugaguncha saqlanadi, shundan so'ng ular 30 kun ichida butunlay o'chirib tashlanadi."
+        },
+        {
+          "subtitle": "4.4 Saqlash xavfsizligi",
+          "content": "Yuz tasvirlari bizning xavfsiz ma'lumotlar bazamizda quyidagi himoya choralari bilan saqlanadi:\n\n<ul>\n<li>Ma'lumotlar bazasiga kirish faqat oq ro'yxatga kiritilgan IP manzillar bilan cheklangan</li>\n<li>Ma'lumotlar bazasini shifrlash kalitlari xavfsiz kalitlarni boshqarish xizmati bo'lgan Azure KeyVault-da saqlanadi</li>\n<li>Kirish huquqi faqat zaruriy ehtiyojga ega vakolatli xodimlar bilan cheklangan</li>\n<li>Muntazam ravishda xavfsizlik tekshiruvlari o'tkaziladi</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "5. Axborot almashish va oshkor qilish",
+      "subsections": [
+        {
+          "subtitle": "5.1 Maxfiylik bo'yicha majburiyatimiz",
+          "content": "Biz sizning maxfiyligingizga jiddiy qaraymiz. Biz sizning shaxsiy ma'lumotlaringizni, jumladan:\n\n<ul>\n<li>Uy yoki ish manzillari</li>\n<li>Elektron pochta manzillari</li>\n<li>Yuz tasvirlari</li>\n<li>Telefon raqamlari</li>\n<li>Tranzaksiya tafsilotlari</li>\n</ul>\n\n...ushbu Maxfiylik Siyosatida alohida ko'rsatilgan hollar (masalan, 5.6-bandda tavsiflangan ommaviy Bozor Kanaliga foydalanuvchi tomonidan tanlangan tarqatishlar yoki 5.2-bandda tavsiflangan nizolarni hal qilish bo'yicha dalillar bilan bo'lishish) <strong>bundan mustasno</strong>, uchinchi tomonlar bilan <strong>hech qachon</strong> bo'lishmaymiz."
+        },
+        {
+          "subtitle": "5.2 Tranzaksiya nizolari",
+          "content": "<strong>Cheklangan oshkor qilish:</strong> Tranzaksiya bo'yicha nizo yuzaga kelganda, biz nizoni hal qilishga ko'maklashish uchun tegishli ma'lumotlarni jalb qilingan tomonlar bilan bo'lishishimiz mumkin. Bunga dalil sifatida taqdim etilgan yuz tasvirlari, fotosuratlar, matnli tavsiflar va Foydalanuvchi bayonotlarini <strong>faqat</strong> quyidagilar bilan bo'lishish kirishi mumkin:\n\n<ul>\n<li>Nizoli tranzaksiyada bevosita ishtirok etuvchi boshqa tomon yoki tomonlar</li>\n<li>Tomonlarning qonuniy vakillari (agar mavjud bo'lsa)</li>\n<li>Nizoni hal qilishga jalb qilingan hakamlar yoki mediatorlar</li>\n</ul>\n\n<strong>Boshqa bo'lishishlarning yo'qligi:</strong> Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va shaxsiy ma'lumotlar nizolarni hal qilish maqsadida boshqa hech qanday uchinchi tomonlar bilan bo'lishilmaydi."
+        },
+        {
+          "subtitle": "5.3 Uchinchi tomon xizmat ko'rsatuvchilari",
+          "content": "Biz sizning ma'lumotlaringizni mustaqil ravishda to'plashi va qayta ishlashi mumkin bo'lgan quyidagi uchinchi tomon xizmat ko'rsatuvchilari bilan ishlaymiz:\n\n<strong>Persona:</strong> KYC ma'lumotlarini to'playdigan va qayta ishlaydigan shaxsni tasdiqlash bo'yicha hamkorimiz. Persona o'zining maxfiylik siyosati asosida ishlaydi, uni ko'rib chiqishingiz tavsiya etiladi.\n\n<strong>Microsoft Entra ID:</strong> Ilova uchun OAuth2 kirish jarayonlarini boshqaradigan autentifikatsiya va identifikatsiyani boshqarish bo'yicha xizmat ko'rsatuvchimiz. Microsoft Entra ID autentifikatsiya bilan bog'liq ma'lumotlarni Microsoft-ning maxfiylik siyosatiga muvofiq to'plashi va qayta ishlashi mumkin.\n\n<strong>Coinbase:</strong> Kriptovalyuta hamyon xizmatlari, to'lov infratuzilmasi va blokcheyn operatsiyalari imkoniyatlariga ko'maklashuvchi to'lov protsessori. \"Coinbase\" yuqoridagi 1-bandda tavsiflangan Coinbase yuridik shaxsi yoki shaxslarini bildiradi. Coinbase o'zining Xizmat Ko'rsatish Shartlari va Maxfiylik Siyosatiga muvofiq foydalanuvchi ma'lumotlarini mustaqil ravishda to'plashi mumkin.\n\n<strong>Telegram:</strong> Ommaviy Bozor Kanallarini joylashtiradigan hamda bot va Mini Ilova integratsiyalarini quvvatlaydigan uchinchi tomon xabar almashish platformasi. E'lonlarni tarqatishni tanlaganingizda, Telegram tarqatilgan e'lon tarkibini qabul qiladi va saqlaydi. Telegram ma'lumotlarni o'zining Maxfiylik Siyosatiga muvofiq qayta ishlaydi.\n\nBiz yuz tasvirlaringiz, to'liq qonuniy ism-sharifingiz, telefon raqamingiz yoki elektron pochta manzilingizni Telegram bilan bo'lishmaymiz."
+        },
+        {
+          "subtitle": "5.4 Qonuniy talablar",
+          "content": "Qonun talab qilganda biz sizning ma'lumotlaringizni quyidagi hollarda oshkor qilishimiz mumkin:\n\n<ul>\n<li>Yuridik jarayonlarga (sud chaqiruvlari, sud qarorlari va h.k.) javoban</li>\n<li>Amaldagi qonunlar va qoidalarga rioya qilish uchun</li>\n<li>Shake Defi, bizning foydalanuvchilarimiz yoki boshqalarning huquqlari, mulki yoki xavfsizligini himoya qilish uchun</li>\n<li>Firibgarlik, intellektual mulkni buzish yoki boshqa noqonuniy faoliyatni tergov qilish bilan bog'liq holda</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.5 Biznesni topshirish",
+          "content": "Kompaniyaning qo'shilishi, sotib olinishi, bankrotligi yoki aktivlari sotilishi holatlarida sizning ma'lumotlaringiz huquqiy voris tashkilotga o'tkazilishi mumkin. Ma'lumotlaringiz boshqa maxfiylik siyosatiga bo'ysunishidan oldin biz sizni elektron pochta yoki Ilovadagi ko'zga ko'ringan bildirishnoma orqali xabardor qilamiz."
+        },
+        {
+          "subtitle": "5.6 Ommaviy Bozor Kanalida tarqatishlar",
+          "content": "Foydalanuvchi (masalan, Savdogar) ixtiyoriy \"Bozorga joylashtirish\" funksiyasidan foydalanishni tanlaganda, quyidagi maxfiylik amaliyotlari qo'llaniladi:\n\n<ul>\n<li><strong>Ixtiyoriy va Foydalanuvchi tomonidan boshlangan:</strong> E'lonni Bozor Kanaliga tarqatish butunlay ixtiyoriy bo'lib, faqat Foydalanuvchi tomonidan tasdiqlab boshlangandagina amalga oshiriladi.</li>\n<li><strong>Ommaviy tarqatiladigan ma'lumotlar:</strong> Ommaviy Telegram kanaliga uzatiladigan ma'lumotlarga mahsulot fotosuratlari, mahsulot tavsiflari, narx, valyuta, eskrow shartlari, sotuvchining umumiy joylashuvi (shahar, viloyat/shtat va mamlakat), shaxsiy tranzaksiya afzalliklari hamda tranzaksiya identifikatori kalit so'zlari yoki Mini Ilova chuqur havolalari kiradi.</li>\n<li><strong>Himoyalangan ma'lumotlar (tarqatishlardan chiqarib tashlangan):</strong> Biz ommaviy tarqatishlardan to'g'ridan-to'g'ri shaxsiy identifikatorlarni qat'iy ravishda chiqarib tashlaymiz. Sotuvchining to'liq qonuniy ism-sharifi, telefon raqami, elektron pochta manzili, aniq jismoniy ko'cha manzili va yuz imzosini tasdiqlovchi tasvirlar hech qachon Bozor Kanali tarqatishlariga kiritilmaydi.</li>\n<li><strong>Ommaviy muhit va uchinchi tomon saqlanishi:</strong> Ommaviy Telegram kanallariga joylashtirilgan mazmun barcha kanal a'zolari va ko'ruvchilar uchun ochiq bo'ladi. Garchi Ilova e'lon tafsilotlarini yangilash, holat o'zgarishlarini ko'rsatish (masalan, \"Kutilmoqda\" yoki \"Sotilgan\") yoki e'lonlarni o'chirish vositalarini taqdim etsa-da, Kompaniya uchinchi tomon foydalanuvchilari yoki tashqi platforma arxivlari tomonidan saqlangan nusxalar, xabar forvardlari, skrinshotlar yoki mahalliy qurilma keshlarini nazorat qila olmaydi yoki o'chira olmaydi.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "title": "6. Ma'lumotlar xavfsizligi",
+      "content": "Biz shaxsiy ma'lumotlaringizni himoya qilish uchun tegishli texnik va tashkiliy choralarni amalga oshiramiz:",
+      "subsections": [
+        {
+          "subtitle": "6.1 Xavfsizlik choralari",
+          "content": "<ul>\n<li><strong>Ma'lumotlar bazasiga kirishni nazorat qilish:</strong> Ma'lumotlar bazamizga faqat oq ro'yxatga kiritilgan IP manzillardan kirish mumkin</li>\n<li><strong>Shifrlash:</strong> Ma'lumotlar bazasini shifrlash kalitlari Azure KeyVault-da xavfsiz saqlanadi</li>\n<li><strong>Kirish cheklovlari:</strong> Shaxsiy ma'lumotlarga kirish faqat vakolatli xodimlar bilan cheklangan</li>\n<li><strong>Muntazam auditlar:</strong> Biz davriy xavfsizlik baholashlarini o'tkazamiz</li>\n<li><strong>Xavfsiz uzatish:</strong> Sizning qurilmangiz va bizning serverlarimiz o'rtasida uzatiladigan ma'lumotlar shifrlanadi</li>\n</ul>"
+        },
+        {
+          "subtitle": "6.2 Cheklovlar",
+          "content": "Biz sizning ma'lumotlaringizni himoya qilishga harakat qilsak-da, uzatish yoki saqlashning hech bir usuli 100% xavfsiz emas. Biz mutlaq xavfsizlikni kafolatlay olmaymiz, lekin amaldagi qonunchilik talabiga ko'ra shaxsiy ma'lumotlaringizga ta'sir qiluvchi har qanday ma'lumotlar buzilishi haqida sizni xabardor qilamiz."
+        }
+      ]
+    },
+    {
+      "title": "7. Ma'lumotlarni xalqaro uzatish",
+      "content": "Shake Defi xalqaro miqyosda ishlaydi. Sizning ma'lumotlaringiz, jumladan yuz tasvirlari, siz istiqomat qiladigan mamlakatdan tashqarida, jumladan AQSHda joylashgan serverlarga uzatilishi va ularda saqlanishi mumkin.\n\nIlovadan foydalanish orqali siz ma'lumotlaringiz siz istiqomat qiladigan mamlakatdagidan farqli ma'lumotlarni himoya qilish qonunlariga ega bo'lishi mumkin bo'lgan mamlakatlarga uzatilishiga rozilik bildirasiz. Biz ma'lumotlaringiz qayerda qayta ishlanishidan qat'i nazar, ularga tegishli darajada himoya berilishini ta'minlash choralarini ko'ramiz."
+    },
+    {
+      "title": "8. Sizning huquqlaringiz va tanlovlaringiz",
+      "subsections": [
+        {
+          "subtitle": "8.1 Kirish va tuzatish",
+          "content": "Siz quyidagi huquqlarga egasiz:\n\n<ul>\n<li>Biz siz haqingizda saqlaydigan shaxsiy ma'lumotlarga kirish</li>\n<li>Noto'g'ri yoki to'liq bo'lmagan ma'lumotlarni tuzatishni talab qilish</li>\n<li>Shaxsiy ma'lumotlaringizning nusxasini qulay ko'chiriladigan formatda olish</li>\n</ul>\n\nUshbu huquqlardan foydalanish uchun biz bilan contact@shakedefi.com manzili orqali bog'laning."
+        },
+        {
+          "subtitle": "8.2 Hisob va ma'lumotlarni o'chirish",
+          "content": "Siz istalgan vaqtda Ilova sozlamalari orqali yoki biz bilan bevosita bog'lanib, o'z hisobingizni va tegishli ma'lumotlarni o'chirish huquqiga egasiz.\n\n<strong>Hisob o'chirilganda:</strong>\n<ul>\n<li>Hisobingiz butunlay yopiladi</li>\n<li>Shaxsiy ma'lumotlaringiz, jumladan yuz tasvirlari 30 kun ichida butunlay o'chirib tashlanadi</li>\n<li>Ba'zi ma'lumotlar qonun talabiga ko'ra yoki qonuniy biznes maqsadlarida (masalan, soliq hisoboti uchun tranzaksiya yozuvlari) saqlanishi mumkin</li>\n</ul>"
+        },
+        {
+          "subtitle": "8.3 Rozilikni qaytarib olish",
+          "content": "Siz quyidagi yo'llar bilan yuz tasvirini to'plashga bergan roziligingizni istalgan vaqtda qaytarib olishingiz mumkin:\n\n<ul>\n<li>Tasvir olinishidan oldin xabar berilganda davom etishdan bosh tortish</li>\n<li>Hisobingizni o'chirish</li>\n<li>Muayyan yuz tasvirlarini o'chirishni so'rab biz bilan bog'lanish (qonuniy saqlash talablariga rioya qilgan holda)</li>\n</ul>"
+        },
+        {
+          "subtitle": "8.4 Marketing xabarlari",
+          "content": "Biz hozirda marketing xabarlarini yubormaymiz. Agar bu kelajakda o'zgarsa, siz xizmatga oid xabarlarni olishni davom ettirgan holda marketing elektron xatlaridan voz kechish huquqiga ega bo'lasiz."
+        }
+      ]
+    },
+    {
+      "title": "9. Bolalar maxfiyligi",
+      "content": "Ilova 18 yoshga to'lmagan yoki o'z yurisdiksiyasida voyaga yetish yoshiga yetmagan (qaysi biri katta bo'lsa) shaxslar tomonidan foydalanish uchun mo'ljallanmagan. Biz voyaga yetmaganlardan bila turib shaxsiy ma'lumotlarni to'plamaymiz.\n\nIlovadan foydalanish uchun siz:\n<ul>\n<li>Kamida 18 yoshda bo'lishingiz yoki o'z yurisdiksiyangizdagi voyaga yetish yoshiga (qaysi biri katta bo'lsa) ega bo'lishingiz kerak</li>\n<li>Bizning Xizmat Ko'rsatish Shartlarimizda ko'rsatilgan barcha hisobni ro'yxatdan o'tkazish va tekshirish talablariga javob berishingiz kerak</li>\n</ul>\n\nAgar ushbu yosh talablariga javob bermaydigan shaxsdan ma'lumot to'plaganimizdan xabardor bo'lsak, biz ushbu ma'lumotlarni zudlik bilan o'chirib tashlash choralarini ko'ramiz. Agar biz voyaga yetmagan shaxsdan beixtiyor ma'lumot to'plagan deb hisoblasangiz, iltimos, biz bilan zudlik bilan contact@shakedefi.com manzili orqali bog'laning."
+    },
+    {
+      "title": "10. Uchinchi tomon havolalari va xizmatlari",
+      "content": "Ilova uchinchi tomon veb-saytlari yoki xizmatlariga havolalarni o'z ichiga olishi mumkin. Ushbu Maxfiylik Siyosati ushbu uchinchi tomonlarga nisbatan qo'llanilmaydi. Biz sizga quyidagilarning maxfiylik siyosatlarini ko'rib chiqishni tavsiya qilamiz:\n\n<ul>\n<li><strong>Persona:</strong> <a href=\"https://withpersona.com/legal/privacy-policy\" target=\"_blank\" rel=\"noopener noreferrer\">Maxfiylik Siyosati</a></li>\n<li><strong>Microsoft:</strong> <a href=\"https://privacy.microsoft.com/en-us/privacystatement\" target=\"_blank\" rel=\"noopener noreferrer\">Maxfiylik Siyosati</a></li>\n<li><strong>Coinbase:</strong> <a href=\"https://www.coinbase.com/legal/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Maxfiylik Siyosati</a></li>\n<li><strong>Telegram:</strong> <a href=\"https://telegram.org/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Maxfiylik Siyosati</a></li>\n</ul>\n\nBiz uchinchi tomonlarning maxfiylik amaliyotlari uchun javobgar emasmiz."
+    },
+    {
+      "title": "11. Ma'lumotlarni saqlash va infratuzilma",
+      "subsections": [
+        {
+          "subtitle": "11.1 Ma'lumotlar bazasi xavfsizligi",
+          "content": "Bizning asosiy ma'lumotlar bazasi infratuzilmamiz quyidagilarni o'z ichiga oladi:\n\n<ul>\n<li><strong>Kirishni boshqarish:</strong> IP oq ro'yxatiga asoslangan kirish cheklovlari</li>\n<li><strong>Kalitlarni boshqarish:</strong> Microsoft Azure KeyVault-da saqlanadigan shifrlash kalitlari</li>\n<li><strong>Zaxiralash:</strong> Ma'lumotlar yo'qolishining oldini olish uchun muntazam zaxira nusxalari</li>\n<li><strong>Monitoring:</strong> Ruxsatsiz kirish urinishlarini uzluksiz kuzatib borish</li>\n</ul>"
+        },
+        {
+          "subtitle": "11.2 Ma'lumotlar joylashuvi",
+          "content": "Foydalanuvchi ma'lumotlari, jumladan yuz tasvirlari xavfsiz serverlarda saqlanadi. Muayyan geografik joylashuvlar bizning infratuzilma ehtiyojlarimizga qarab farq qilishi mumkin, ammo barcha joylashuvlar tegishli xavfsizlik standartlariga javob beradi."
+        }
+      ]
+    },
+    {
+      "title": "12. Kaliforniya maxfiylik huquqlari",
+      "content": "Agar siz Kaliforniya rezidenti bo'lsangiz, Kaliforniya Iste'molchilar Maxfiyligi To'g'risidagi Qonuni (CCPA) va Kaliforniyaning boshqa maxfiylik qonunlariga muvofiq qo'shimcha huquqlarga ega bo'lishingiz mumkin. Hozirda Shake Defi, Inc. daromad chegaralari tufayli CCPA talablariga bo'ysunmasa-da, biz Kaliforniya rezidentlarining maxfiylik huquqlarini hurmat qilamiz."
+    },
+    {
+      "title": "13. Yevropa Ittifoqi va xalqaro maxfiylik huquqlari",
+      "content": "Agar siz Yevropa Ittifoqi, Yevropa Iqtisodiy Hududi, Buyuk Britaniya yoki ma'lumotlarni himoya qilish bo'yicha keng qamrovli qonunlarga ega boshqa yurisdiksiyalarda joylashgan bo'lsangiz, GDPR kabi qoidalarga muvofiq quyidagi qo'shimcha huquqlarga ega bo'lishingiz mumkin:\n\n<ul>\n<li>O'chirib tashlash huquqi (\"unutilish huquqi\")</li>\n<li>Qayta ishlashni cheklash huquqi</li>\n<li>Ma'lumotlar ko'chirilishi huquqi</li>\n<li>Qayta ishlashga e'tiroz bildirish huquqi</li>\n<li>Nazorat qiluvchi organga shikoyat qilish huquqi</li>\n</ul>\n\nUshbu huquqlardan foydalanish uchun, iltimos, quyidagi ma'lumotlar orqali biz bilan bog'laning."
+    },
+    {
+      "title": "14. Ushbu Maxfiylik Siyosatiga o'zgartirishlar",
+      "content": "Amaliyotlarimiz, texnologiyalarimiz, huquqiy talablarimiz yoki boshqa omillardagi o'zgarishlarni aks ettirish uchun ushbu Maxfiylik Siyosatini vaqti-vaqti bilan yangilab turishimiz mumkin.\n\n<strong>O'zgarishlar haqida bildirishnoma:</strong>\n<ul>\n<li>Muhim o'zgarishlar haqida sizga elektron pochta yoki Ilovadagi ko'zga ko'ringan bildirishnoma orqali xabar beramiz</li>\n<li>Ushbu siyosatning yuqori qismidagi \"Oxirgi yangilanish\" sanasi qayta ko'rib chiqiladi</li>\n<li>O'zgarishlardan keyin Ilovadan foydalanishni davom ettirish yangilangan siyosatni qabul qilganingizni bildiradi</li>\n</ul>\n\nSizga ushbu Maxfiylik Siyosatini vaqti-vaqti bilan ko'rib chiqishni tavsiya qilamiz."
+    },
+    {
+      "title": "15. Biz bilan bog'lanish",
+      "content": "Agar ushbu Maxfiylik Siyosati yoki ma'lumotlar bilan bog'liq amaliyotlarimiz bo'yicha savollaringiz, xavotirlaringiz yoki so'rovlaringiz bo'lsa, iltimos, biz bilan bog'laning:\n\n<strong>Shake Defi, Inc.</strong>  \n280 N. Market St, Unit 321\nBrookfield, Wisconsin 53045 \n\n<strong>Elektron pochta:</strong> contact@shakedefi.com  \n\nNizolarni hal qilish masalalari bo'yicha ushbu Maxfiylik Siyosati yoki Xizmatlardan kelib chiqadigan yoki ular bilan bog'liq har qanday nizo Amerika Arbitraj Assotsiatsiyasining Tijorat Arbitraj Qoidalariga muvofiq majburiy arbitraj orqali hal qilinadi. Arbitraj Kaliforniyada o'tkaziladi. To'liq arbitraj tartib-qoidalari uchun Xizmat Ko'rsatish Shartlarimizning 12-bandiga qarang."
+    },
+    {
+      "title": "16. Rozilik va tasdiqlash",
+      "content": "Shake Defi Ilovasidan foydalanish orqali siz quyidagilarni tasdiqlaysiz:\n\n<ol>\n<li>Siz ushbu Maxfiylik Siyosatini o'qib chiqdingiz va tushundingiz</li>\n<li>Ma'lumotlaringiz tavsiflanganidek to'planishi, foydalanilishi va saqlanishiga rozilik bildirasiz</li>\n<li>Tranzaksiyani imzolash paytida yuz tasvirlari olinishini tushunasiz</li>\n<li>Tasvir olinishidan oldin bekor qilish huquqingiz haqida xabardor qilingansiz</li>\n<li>Ma'lumotlarning xalqaro uzatilishiga tavsiflanganidek rozilik bildirasiz</li>\n<li>Ma'lumot almashish bo'yicha nizolarni hal qilish qoidalariga rozilik bildirasiz</li>\n<li>Bozor Kanalini tanlash sizning e'lon tafsilotlaringiz va umumiy joylashuvingizni uchinchi tomonning ommaviy kanalida tarqatishini tushunasiz</li>\n</ol>\n\nAgar siz ushbu Maxfiylik Siyosatiga rozi bo'lmasangiz, Ilovadan foydalanmasligingiz kerak.\n\n<strong>Tranzaksiyalaringizda Shake Defi-ga ishonganingiz uchun tashakkur.</strong>"
+    }
+  ]
+}

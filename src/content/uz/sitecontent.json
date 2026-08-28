@@ -1,0 +1,566 @@
+{
+    "navbar": {
+        "links": [
+            {
+                "title": "Bosh sahifa",
+                "path": "/"
+            },
+            {
+                "title": "Qanday ishlaydi",
+                "path": "/how-it-works"
+            },
+            {
+                "title": "Bozor",
+                "path": "/marketplace"
+            },
+            {
+                "title": "Elektron tijorat",
+                "path": "/e-commerce"
+            },
+            {
+                "title": "Toʻlovlar",
+                "sublinks": [
+                    {
+                        "title": "Toʻlov oling",
+                        "path": "/get-paid"
+                    },
+                    {
+                        "title": "Toʻlovlarni yuboring",
+                        "path": "/send-payments"
+                    }
+                ]
+            },
+            {
+                "title": "Savol-javoblar",
+                "path": "/faq"
+            }
+        ]
+    },
+    "home": {
+        "hero": {
+            "headline": "Xarid qilish va sotishning xavfsizroq yoʻli",
+            "subhead": "Bepul hisob yarating va 100 GRACE tokenini bepul olish uchun KYC tekshiruvini yakunlang!",
+            "button": "Hozir mavjud",
+            "availableNowHeading": "Hozir mavjud",
+            "ctaLabel": "Bepul yuklab olish",
+            "browserLabel": "Brauzer",
+            "browserCtaLabel": "Veb-ilovani ochish",
+            "marketplaceCtaLabel": "Bozorni koʻrib chiqish",
+            "partnerLabel": "Bizning kripto onramp/offramp hamkorimiz:",
+            "partnerLinkText": "kripto onramp/offramp hamkori"
+        },
+        "features": {
+            "headline": "Toʻlovingizni qaytariladigan eskrou bilan kuchaytiring",
+            "items": [
+                {
+                    "title": "Qaytariladigan\neskrou",
+                    "description": "Shake — neytral raqamli seyf kabi ishlaydigan smart-kontrakt eskroudan foydalanadi, u mablagʻlarni blokcheyndagi shaffof qoidalarga muvofiq bloklab qoʻyadi. Shake hech qachon sizning pulingizni saqlamaydi va hech kim mablagʻlarni kelishilgan shartlardan tashqarida koʻchira olmaydi."
+                },
+                {
+                    "title": "Sizda mavjud boʻlgan istalgan kripto bilan toʻlang",
+                    "description": "Sotuvchilar oʻzlari xohlagan valyutani belgilaydi, lekin siz oʻzingizda mavjud boʻlgan mablagʻ bilan toʻlashingiz mumkin. Bitcoin, Tether (USDT) yoki Staked ETH’ni sotuvchiga kerakli valyutaga aylantirish uchun bizning oʻrnatilgan svop funksiyamizdan — qulay va xavfsiz tarzda — foydalaning."
+                },
+                {
+                    "title": "Tranzaksiyalarga – va bir-biringizga ishoning",
+                    "description": "Har bir tranzaksiya imzo bilan tasdiqlanadi va har bir foydalanuvchining obroʻ-reytingi mavjud – shuning uchun siz suhbatlashayotgan odamning ishonchli ekanligiga amin boʻlishingiz mumkin."
+                },
+                {
+                    "title": "Imkoniyat beruvchi qulaylik",
+                    "description": "Sun'iy intellekt vositalari yordamida mahsulot maʼlumotlarini toʻgʻridan-toʻgʻri shartnomangizga qoʻshing. Har bir tranzaksiya tafsilotlari almashuv haqida toʻliqroq tasavvur beradi va siz istalgancha rasm qoʻshishingiz mumkin."
+                }
+            ]
+        },
+        "howToUse": {
+            "headline": "Boshlash oson",
+            "subhead": "Shake bilan ishni boshlash uchun quyidagi oddiy qadamlarni bajaring.",
+            "steps": [
+                {
+                    "title": "Hisob yarating",
+                    "description": "ID, telefon raqami va bir nechta selfi yordamida bir necha daqiqada bepul hisob oching."
+                },
+                {
+                    "title": "Toʻlov usulini qoʻshing",
+                    "description": "Toʻlovlaringizni allaqachon mavjud boʻlgan kripto bilan toʻldiring yoki Coinbase Onramp orqali toʻgʻridan-toʻgʻri kripto sotib oling. Boshqa valyuta kerakmi? Bizning integratsiyalashgan svop funksiyamiz qoʻllab-quvvatlanadigan kriptovalyutalar oʻrtasida almashtirish imkonini beradi."
+                },
+                {
+                    "title": "Tranzaksiyalarni boshlang",
+                    "description": "Shake mablagʻlarni saqlamagani uchun toʻliq ishonch bilan yuborish va qabul qilishni boshlang. Pulni yechib olishga tayyor boʻlganingizda, Coinbase Offramp kriptoni qaytadan fiat valyutaga aylantirish imkonini beradi. Bu jarayon davomida Shake hech qachon mablagʻlaringizga tegmaydi."
+                }
+            ]
+        },
+        "businessCustomerCards": {
+            "business": {
+                "label": "Sotuvchi",
+                "headline": "Xavfsiz\ntoʻlov oling",
+                "description": "Eskrou muddatini belgilang, uni xaridoringiz bilan baham koʻring va eskrou muddati tugagach mablagʻlarni oling. Muddatni 0 ga oʻrnatib, tezkor oʻtkazma qiling — baribir shaxsni tasdiqlash, imzolangan kelishuv va xaridor reytinglariga ega boʻlasiz.",
+                "button": "Batafsil"
+            },
+            "customer": {
+                "label": "Xaridor",
+                "headline": "Xavfsizlik tarmogʻi\nbilan toʻlang",
+                "description": "Ilova orqali mablagʻlarni eskrouga joylashtiring. Pulingiz kelishilgan muddat davomida xavfsiz saqlanadi. Agar biror narsa notoʻgʻri ketsa, muddat tugashidan oldin pulni qaytarishni soʻrashingiz mumkin.",
+                "button": "Batafsil"
+            }
+        },
+        "marketplace": {
+            "eyebrow": "Shake Marketplace",
+            "headline": "Eʼloningizni mahalliy imkoniyatga aylantiring",
+            "description": "Shake’da eʼlon yaratganingizda, uni Telegramdagi Shake Marketplace bilan baham koʻrishni tanlashingiz mumkin. Rasmingiz, tavsifingiz, narxingiz va manzilingiz qiziqqan xaridorlarga taklifingizni topishga yordam beradi.",
+            "sellerBenefitTitle": "Koʻproq xaridorga yeting",
+            "sellerBenefit": "Allaqachon yaratgan eʼloningizni tovar va xizmat izlayotgan odamlar bilan baham koʻring.",
+            "buyerBenefitTitle": "Soʻnggi eʼlonlarni koʻrib chiqing",
+            "buyerBenefit": "Jamiyat aʼzolari tomonidan joylangan eng soʻnggi tovar va xizmatlarni koʻrish uchun Telegram kanali lentasini varaqlang.",
+            "learnMoreLabel": "Bozor haqida bilib oling",
+            "exploreLabel": "Bozorni koʻrib chiqish"
+        }
+    },
+    "marketplace": {
+        "hero": {
+            "badge": "Jamoat bozori",
+            "headline": "Kontaktlaringizdan tashqarida xaridorlarni toping",
+            "description": "Post to Marketplace funksiyasi Shake eʼloningizni ixtiyoriy ravishda Shake Marketplace Telegram kanali bilan baham koʻrish imkonini beradi, bu yangi xaridorlarga taklifingizni topishni osonlashtiradi."
+        },
+        "exploreLabel": "Bozorni koʻrib chiqish",
+        "createListingLabel": "Eʼlon yaratish",
+        "preview": {
+            "badge": "Jonli Telegram kanali",
+            "headline": "Eʼlonlar xaridorlarga qanday koʻrinishini koʻring",
+            "description": "Roziligingiz bilan Shake rasmingiz, tavsifingiz, narxingiz va manzilingizni toʻgʻridan-toʻgʻri Telegram jamoat kanaliga joylanadigan aniq eʼlon kartochkasiga formatlaydi.",
+            "imageAlt": "Citizen soat eʼloni va \"Eskrou bilan sotib olish\" tugmasi koʻrinib turgan Shake P2P Marketplace Telegram kanali skrinshoti",
+            "channelTag": "Telegram kanali",
+            "channelName": "Shake P2P Marketplace",
+            "features": [
+                {
+                    "title": "Toʻliq eʼlon tafsilotlari",
+                    "description": "Rasmlar, tavsif, narx va manzil aniq formatlanadi, shunda xaridorlar toʻliq koʻrinishga ega boʻladi."
+                },
+                {
+                    "title": "Ixtiyoriy eskrou orqali toʻlov",
+                    "description": "Sotuvchilar eskrou taklif qilish yoki qilmaslikni tanlashlari mumkin. Yoqilgan boʻlsa, \"Eskrou bilan sotib olish\" tugmasi Shake’ni ochib, smart-kontrakt bilan himoyalangan xavfsiz eskrouni darhol boshlaydi."
+                },
+                {
+                    "title": "Shaffof himoya shartlari",
+                    "description": "Sotuvchi tomonidan belgilangan eskrou muddati har bir tranzaksiya uchun aniq va shaffof himoya oynasini taʼminlaydi."
+                }
+            ]
+        },
+        "benefits": [
+            {
+                "title": "Sotuvchilar uchun",
+                "description": "Eʼloningizni qayta yaratmasdan, allaqachon tovar va xizmat qidirayotgan odamlarga yeting. Rasm, tavsif, narx va manzil xaridorlarga mos taklifni topish uchun kerakli maʼlumotlarni beradi."
+            },
+            {
+                "title": "Xaridorlar uchun",
+                "description": "Jamoat aʼzolari joylagan tovar va xizmatlarni topish uchun Telegram kanali lentasini varaqlang."
+            }
+        ],
+        "stepsHeading": "Bozor qanday ishlaydi",
+        "stepsDescription": "Bozor ixtiyoriy: eʼloningizga koʻproq koʻrinish berishni istaganingizda undan foydalaning.",
+        "steps": [
+            {
+                "title": "Eʼlon yarating",
+                "description": "Xaridorga nima taklif qilayotganingizni tushunishga yordam beradigan tafsilotlarni qoʻshing."
+            },
+            {
+                "title": "\"Bozorga joylash\"ni tanlang",
+                "description": "Koʻproq odamga yetmoqchi boʻlsangiz, ixtiyoriy Bozorda ulashish variantini tanlang."
+            },
+            {
+                "title": "Topiling",
+                "description": "Eʼloningiz qiziqqan xaridorlar koʻrib chiqishi uchun Shake Marketplace Telegram jamoasi bilan baham koʻriladi."
+            }
+        ],
+        "trust": {
+            "title": "Xavfsizroq tranzaksiya usuli bilan topish",
+            "description": "Bozor xaridorlar va sotuvchilarning bir-birini topishiga yordam beradi. Xaridni amalga oshirishga tayyor boʻlganingizda, Shake ikkala tomonga ham aniq va hujjatlashtirilgan tranzaksiya usulini taqdim etadi."
+        },
+        "howItWorksLabel": "Shake qanday ishlaydi"
+    },
+    "howItWorks": {
+        "hero": {
+            "headline": "Shake toʻlov tizimi sizni qanday qilib, aynan, xavfsiz saqlaydi"
+        },
+        "section1": {
+            "headline": "Eskrou jarayoni",
+            "description": "Shake eskrousi blokcheyndagi smart-kontrakt orqali ishlaydi. Toʻlov amalga oshirilgach, mablagʻlar kod tomonidan bloklanadi — Shake, bank yoki uchinchi tomon tomonidan emas. \n\nShake foydalanuvchi mablagʻlarini hech qachon oʻz ixtiyoriga olmaydi. Toʻlovlar smart-kontraktning oʻzida saqlanadi, hamyonga kirish va valyuta almashinuvi esa Coinbase’ning oʻrnatilgan hamyoni va Onramp/Offramp xizmatlari orqali taʼminlanadi. Bu tuzilma yagona nosozlik nuqtasi xavfini bartaraf etadi va mablagʻlar faqat kelishilgan qoidalarga muvofiq harakat qilishini taʼminlaydi."
+        },
+        "section2": {
+            "headline": "Qanday ishlaydi",
+            "description": "Tranzaksiya jarayoni va toʻlov tizimi"
+        },
+        "cta": {
+            "header": "Shake’ni sinab koʻrishga tayyormisiz?",
+            "subhead": "Bugun hisobingizni yarating va kundalik kripto harakatiga qoʻshiling.",
+            "button": "Hozir mavjud"
+        },
+        "escrowIntro": "Shake, biznes mahsulot yoki xizmatni yetkazib berayotgan vaqtda mijozning pulini xavfsiz saqlaydigan seyf kabi eskroudan foydalanadi.",
+        "agreementNote": "Har qanday eskrou pul almashinuvidan oldin xaridor va sotuvchi imzolashi kerak boʻlgan kelishuvga ega boʻlishi kerak. Ilovadagi sunʼiy intellekt kelishuvni taklif qiladi va siz olgan rasmlar unga qoʻshiladi. Shunchaki barmogʻingiz bilan imzolang.",
+        "aiCaption": "Sun'iy intellekt tovarlar YOKI xizmatlarni qoʻllab-quvvatlaydi",
+        "smartContractNote": "Aslida, bu smart-kontrakt: chiqarish taymeri toʻlov amalga oshirilgan lahzada blokcheynga yoziladi va uni Shake ham boʻlsa hech kim oʻzgartira olmaydi. Mablagʻlarning aynan ikkita chiqish yoʻli bor — taymer tugagach sotuvchiga yoki pul qaytarilsa xaridorga. Kodda boshqa yoʻl mavjud emas. Smart-kontrakt faqat pulni qaytarish yoʻlini amalga oshiradi — pulni qaytarish kerakligi haqidagi qaror kod tomonidan emas, balki inson-hakam tomonidan qabul qilinadi.",
+        "process": {
+            "header": "Eskrou jarayoni",
+            "step1": "Tranzaksiyani amalga oshirgandan soʻng, pulingiz toʻgʻridan-toʻgʻri sotuvchiga borish oʻrniga, neytral seyf kabi boʻlgan eskrouga belgilangan muddatga joylashtiriladi.",
+            "step2": "Ushbu kutish davrida, agar siz sotib olgan narsangizni olmagan boʻlsangiz, sotuvchi bilan toʻgʻridan-toʻgʻri muhokama qilishingiz yoki pulni qaytarishni soʻrashingiz mumkin, buni inson-tekshiruvchi baholaydi.",
+            "step3": "Agar kutish davrida pulni qaytarishni soʻramasangiz, sotuvchi pulni yechib olishi mumkin."
+        }
+    },
+    "getPaid": {
+        "hero": {
+            "headline": "Mustahkam qoʻl siqish bilan foydangizni oshiring",
+            "description": "Shake — xoh xodimlaringiz boʻlsin, xoh yolgʻiz ishlang, tovar va xizmatlaringiz uchun kripto toʻlovlarni qabul qilishning xavfsiz usuli."
+        },
+        "sections": [
+            {
+                "headline": "Ishlab topganingizning\nkoʻprogʻini saqlang",
+                "description": "Kredit karta protsessorlari odatda har bir tranzaksiya uchun 2,5–3% oladi. Shake esa 0,1% oladi — bu 95% arzonroq. Terminal sotib olish shart emas, orada bank yoʻq, xalqaro qoʻshimcha toʻlovlar yoʻq. Faqat tranzaksiyaga bevosita bogʻliq boʻlgan oddiy toʻlov, shunda har bir sotuvdan koʻproq mablagʻ sizda qoladi."
+            },
+            {
+                "headline": "Sizga\nmoslashadi",
+                "description": "Xoh xodimlaringiz boʻlsin, xoh yolgʻiz ishlasangiz, Shake’ning ishonchli toʻlov jarayoni va qat'iy daromad talablarining yoʻqligi ishingizga eʼtibor qaratishni osonlashtiradi. Toʻliq mobil toʻlovlar terminal sotib olish yoki xizmat koʻrsatish shart emasligini anglatadi. Xalqaro savdolarda ham pul yechib olish xavfsiz."
+            },
+            {
+                "headline": "Har kimdan\nkripto qabul qiling",
+                "description": "Oʻzingiz xohlagan toʻlov valyutasini — USDC yoki ETH’ni — belgilang va mijozlar oʻzlarida mavjud narsa bilan toʻlasin. Integratsiyalashgan valyuta almashtirish orqali xaridorlar Bitcoin, Tether (USDT) yoki Staked ETH’ni oson tarzda sizning valyutangizga aylantirishlari mumkin. Svop interfeysi ularni bir necha bosishda almashtirish jarayoni boʻylab yoʻnaltiradi. Svop funksiyasi Odos tomonidan taʼminlanadi."
+            },
+            {
+                "headline": "Imkoniyat beruvchi\nqulaylik",
+                "description": "Sun'iy intellekt vositalari yordamida mahsulot maʼlumotlarini toʻgʻridan-toʻgʻri shartnomangizga qoʻshing. Har bir tranzaksiya tafsilotlari almashuv haqida toʻliqroq tasavvur beradi va siz istalgancha rasm qoʻshishingiz mumkin. Toʻlovlarni nazorat qilish uchun menejerlar va savdoni boshqarish uchun xodimlarni tayinlang."
+            },
+            {
+                "headline": "Ishingiz uchun\nkoʻproq imkoniyatlar",
+                "description": "Shake mahalliy doʻkonlar, frilanserlar va hatto bank hisobiga ega boʻlmaganlar uchun ham ochiq – bu koʻproq odamga biznesini rivojlantirishga yordam beradi. Dollar yoki kriptoda toʻlovlarni qabul qiling. Odatiy byurokratiyasiz katta toʻlovlarni yuboring va qabul qiling."
+            }
+        ],
+        "cta": {
+            "header": "Shake orqali toʻlov olishga tayyormisiz?",
+            "subhead": "Bugun hisobingizni yarating va kripto toʻlovlar kelajagini his qiling",
+            "button": "Hozir mavjud"
+        },
+        "marketplace": {
+            "headline": "Eʼloningizni koʻproq xaridor oldiga qoʻying",
+            "description": "Eʼlon yaratayotganda \"Bozorga joylash\"ni tanlab, rasm, tavsif, narx va manzilni Shake Marketplace Telegram jamoasi bilan baham koʻring.",
+            "button": "Bozorni koʻrib chiqish"
+        }
+    },
+    "sendPayments": {
+        "hero": {
+            "headline": "Haqiqiy hayot uchun\nyaratilgan toʻlov ilovasi",
+            "description": "Shake — xarajatlaringizga siz kabi jiddiy qaraydigan\nyangi toʻlov usuli."
+        },
+        "sections": [
+            {
+                "headline": "Ahamiyatli\ntranzaksiyalar",
+                "description": "Toʻlovlarni maxfiy, hujjatlashtirilgan va oson hal qilinadigan holda saqlaydigan ilova bilan toʻlang. Toʻlovingiz xaridor va sotuvchi kelishgan belgilangan muddatga smart-kontrakt eskrousida bloklanadi. Bu vaqt davomida mablagʻlarga shartnoma qoidalaridan tashqarida kirish mumkin emas va kelishilgan shartlar bajarilmasa, nizo koʻtarilishi mumkin. Shake va Persona har bir biznesning shaxsini, obroʻsini va fikr-mulohazalarini tekshiradi. Har bir tranzaksiya imzolangan kelishuv va tekshiriladigan on-chain toʻlov isboti bilan birga keladi – shunday qilib siz xaridlaringizga ishonishingiz va nizolardan qochishingiz mumkin."
+            },
+            {
+                "headline": "Oqilona xarajat qiluvchi sifatida rivojlaning",
+                "description": "Shake sizga har bir tranzaksiyaning haqiqiy narxini koʻrsatadi, haqiqiy obroʻ qozonishga yordam beradi va faqat oʻzingizda mavjud mablagʻdan foydalanish orqali xarajatlaringizni nazorat ostida tutadi. Bu ongli xarajat qiluvchi arsenaliga mukammal qoʻshimcha. Uzoq muddatda siz qarz olish, foiz va ortiqcha xarajat bilan bogʻliq yukdan qochasiz."
+            },
+            {
+                "headline": "Sizda allaqachon mavjud boʻlgan kripto bilan toʻlang",
+                "description": "Toʻlov cheklovlari sizni ushlab turmasin. Agar sotuvchi USDC yoki ETH talab qilsa, siz Bitcoin, Tether (USDT) yoki Staked ETH bilan toʻlashingiz mumkin. Shunchaki kriptongizni ilovadagi Coinbase hamyoningizga oʻtkazing, soʻngra Odos tomonidan taʼminlangan oʻrnatilgan svop funksiyasidan foydalanib, uni darhol kerakli valyutaga aylantiring."
+            },
+            {
+                "headline": "Kerak boʻlgan joyda\njavobgar",
+                "description": "Shake’dagi har bir shaxs — biznes boʻladimi yoki jismoniy shaxs — oʻz harakatlari uchun javobgardir. Sizning shaxsingiz on-chain faoliyatingiz bilan ommaviy ravishda bogʻlanmagan. Faqat siz toʻlov qilayotgan sotuvchi xaridni bajarish uchun zarur maʼlumotlarni koʻradi, obroʻ tafsilotlari esa faqat pulni qaytarish va nizolarni hal qilish uchun qarshi tomonga koʻrinadi."
+            },
+            {
+                "headline": "Kuch xalqqa\nqaytadi",
+                "description": "Shake mahalliy doʻkonlar, frilanserlar va hatto bank hisobiga ega boʻlmaganlar uchun ham ochiq – shunday qilib toʻlovlaringiz katta moliyaviy institutlar emas, balki siz tanlagan odamlarni qoʻllab-quvvatlaydi. Agar pulni qaytarishni istasangiz, Shake jamoasidagi haqiqiy inson dalillarni koʻrib chiqadi va adolatli, neytral hakam sifatida ish yuritadi."
+            }
+        ],
+        "cta": {
+            "header": "Shake orqali toʻlashni boshlashga tayyormisiz?",
+            "subhead": "Bugun hisobingizni yarating va kripto toʻlovlar kelajagini his qiling",
+            "button": "Hozir mavjud"
+        },
+        "marketplace": {
+            "headline": "Bozordagi eʼlonlarni kashf eting",
+            "description": "Tovar va xizmatlarni topish uchun Shake Marketplace Telegram kanalini koʻrib chiqing, soʻngra xaridni amalga oshirishga tayyor boʻlganingizda Shake’dan foydalaning.",
+            "button": "Bozorni koʻrib chiqish"
+        }
+    },
+    "footer": {
+        "tagline": "Kriptoning haqiqiy hayotdagi tranzaksiyalar uchun foydalanishga yaroqliligini taʼminlash",
+        "disclaimer": "Shake Defi, Inc. — Viskonsin shtati qonunlariga muvofiq tashkil etilgan korporatsiya.",
+        "quickLinksLabel": "Tezkor havolalar",
+        "privacyPolicyLabel": "Maxfiylik siyosati",
+        "eulaLabel": "Yakuniy foydalanuvchi litsenziya shartnomasi",
+        "termsOfServiceLabel": "Xizmat koʻrsatish shartlari",
+        "quickLinks": [
+            {
+                "label": "Bosh sahifa",
+                "url": "/"
+            },
+            {
+                "label": "Qanday ishlaydi",
+                "url": "/how-it-works"
+            },
+            {
+                "label": "Bozor",
+                "url": "/marketplace"
+            },
+            {
+                "label": "Elektron tijorat",
+                "url": "/e-commerce"
+            },
+            {
+                "label": "Toʻlov oling",
+                "url": "/get-paid"
+            },
+            {
+                "label": "Toʻlovlarni yuboring",
+                "url": "/send-payments"
+            },
+            {
+                "label": "Oq kitob",
+                "url": "/assets/shake_defi_whitepaper_v2-3.pdf"
+            }
+        ],
+        "button": "Hozir mavjud",
+        "contactLabel": "Biz bilan bogʻlaning",
+        "contactEmail": "matt@shakedefi.com",
+        "copyright": "© 2026 Shake Defi, Inc."
+    },
+    "privacyPolicy": {
+        "heading": "Maxfiylik siyosati",
+        "effectiveDateLabel": "Kuchga kirish sanasi:",
+        "lastUpdatedLabel": "Oxirgi yangilanish:",
+        "eulaPromo": "Yakuniy foydalanuvchi litsenziya shartnomasini qidiryapsizmi?",
+        "eulaPromoLink": "Bu yerda oʻqing."
+    },
+    "termsOfService": {
+        "heading": "Xizmat koʻrsatish shartlari",
+        "lastUpdatedLabel": "Oxirgi yangilanish:",
+        "emailLabel": "Elektron pochta:",
+        "addressLabel": "Manzil:",
+        "eulaPromo": "Yakuniy foydalanuvchi litsenziya shartnomasini qidiryapsizmi?",
+        "eulaPromoLink": "Bu yerda oʻqing."
+    },
+    "eula": {
+        "heading": "Yakuniy foydalanuvchi litsenziya shartnomasi",
+        "lastUpdatedLabel": "Oxirgi yangilanish:"
+    },
+    "deleteAccount": {
+        "heading": "Hisobni oʻchirish",
+        "description": "Hisobingizni oʻchirish uchun hisob elektron pochta manzilingizni kiriting",
+        "emailPlaceholder": "Elektron pochta manzilingizni kiriting",
+        "submitButton": "Yuborish",
+        "processingButton": "Qayta ishlanmoqda...",
+        "submittedButton": "Soʻrov yuborildi",
+        "successAlert": "Hisobingizni oʻchirish soʻrovingiz qabul qilindi. Iltimos, elektron pochtangizni tekshiring.",
+        "errorAlert": "Soʻrovingizni qayta ishlashda xatolik yuz berdi. Iltimos, qayta urinib koʻring."
+    },
+    "faq": {
+        "headline": "Koʻp beriladigan savollar",
+        "subhead": "Shake ilovasi haqidagi umumiy savollarga javob toping.",
+        "breadcrumbs": [
+            "Bosh sahifa",
+            "Savol-javoblar"
+        ],
+        "searchPlaceholder": "Savol-javoblardan qidirish...",
+        "noResults": {
+            "title": "Quyidagi soʻrov boʻyicha natija topilmadi",
+            "subtitle": "Boshqa kalit soʻzlar bilan qidirib koʻring yoki quyidagi kategoriyalarni koʻrib chiqing."
+        },
+        "questions": [
+            {
+                "question": "Ilova qanday ishlaydi?",
+                "answer": "Shake, biznes mahsulot yoki xizmatni yetkazib berayotgan vaqtda mijozning pulini xavfsiz saqlaydigan seyf kabi eskroudan foydalanadi. Batafsil maʼlumot uchun \"Qanday ishlaydi\" sahifasiga qarang."
+            },
+            {
+                "question": "Qanday boshlasam boʻladi?",
+                "answer": "Siz [ilovani mobil qurilmangizga yuklab olish](https://shakedefi.com) orqali boshlashingiz mumkin."
+            },
+            {
+                "question": "Post to Marketplace nima?",
+                "answer": "Post to Marketplace — Shake eʼloningizni Shake Marketplace Telegram kanali bilan baham koʻrishning ixtiyoriy usuli boʻlib, koʻproq potensial xaridorlar uni topishi mumkin."
+            },
+            {
+                "question": "Eʼlonimni Bozor bilan baham koʻrishim shartmi?",
+                "answer": "Yoʻq. Baham koʻrish ixtiyoriy. Har bir eʼlonning Shake Marketplace Telegram kanaliga joylanishini oʻzingiz tanlaysiz."
+            },
+            {
+                "question": "Bozor postida qanday maʼlumot koʻrsatiladi?",
+                "answer": "Bozor posti eʼloningizning rasmi, tavsifi, narxi va manzilini baham koʻradi, shunda xaridorlar taklifingizni tezda tushunishlari mumkin."
+            },
+            {
+                "question": "Bozor eʼlonlarini qayerda koʻrib chiqishim mumkin?",
+                "answer": "Joriy eʼlonlarni [Shake Marketplace Telegram kanalida](https://t.me/Shake_Marketplace) koʻrib chiqishingiz mumkin."
+            },
+            {
+                "question": "Eskrou nima?",
+                "answer": "Eskrou — pulni xavfsiz saqlaydigan va almashinuv amalga oshirilishidan oldin mijoz va biznesning ikkalasi ham oʻz majburiyatlarini bajarayotganini taʼminlaydigan seyf kabidir. \n\nMasalan, siz onlaynda topgan kimdandir ishlatilgan telefon sotib olyapsiz deylik. Odatda siz uchrashasiz, joyida toʻlaysiz va telefon ishlashiga umid qilasiz. Lekin agar u buzuq boʻlsa yoki vaʼda qilingandek boʻlmasa, allaqachon kech boʻladi — pul ketgan boʻladi. \n\nEskrou bilan esa, ularga toʻgʻridan-toʻgʻri toʻlash oʻrniga, pulingiz belgilangan muddatga xavfsiz saqlash hisobiga tushadi. Sotuvchi pul mavjudligini koʻradi va telefonni topshiradi. \n\nKutish davrida siz telefon sifatini tekshirasiz. Agar u buzuq ekanligini aniqlasangiz, tranzaksiyaga eʼtiroz bildirib, pulni qaytarishni soʻraysiz. Agar telefon ishlasa, kutish davri tugagach pul sotuvchiga beriladi. \n\nAslida, eskrou:    \n1) Kutish davri tugagach mijozning toʻlovi tayyor va oʻtkazish uchun mavjud ekanligini taʼminlash orqali bizneslarni himoya qiladi    \n2) Mablagʻlarning xavfsiz saqlanishini va faqat kelishilgan eskrou shartlariga muvofiq, jumladan nizo natijasi taqozo etganda pulni qaytarish orqali, chiqarilishini taʼminlash orqali ikkala tomonga ham himoya taqdim etadi. \n\nBatafsil maʼlumot uchun \"Qanday ishlaydi\" sahifasiga qarang."
+            },
+            {
+                "question": "Eskrou muddatidan foydalanishim shartmi?",
+                "answer": "Yoʻq. Sotuvchilar eskrou muddatini belgilaydi va uni kutishsiz va pulni qaytarish oynasisiz tezkor oʻtkazma uchun 0 ga oʻrnatish mumkin. Baribir siz Shake’ning boshqa barcha himoyalariga ega boʻlasiz: shaxsni tasdiqlash, rasmlar bilan imzolangan kelishuv, batafsil tranzaksiya hujjatlari va xaridor reytinglari. Xaridorlarga xavfsizlik tarmogʻini taʼminlamoqchi boʻlsangiz eskrou muddati toʻgʻri tanlov, savdo oddiy boʻlib ikkala tomon ham tayyor boʻlganda esa tezkor oʻtkazma toʻgʻri tanlovdir."
+            },
+            {
+                "question": "Shake’dan foydalanish uchun kripto haqida bilishim / kriptoga investitsiya qilishim kerakmi?",
+                "answer": "Yoʻq, Shake’dan foydalanish uchun kripto haqida bilishingiz yoki unga investitsiya qilishingiz shart emas. Uning sehri ham shunda."
+            },
+            {
+                "question": "Shake ilovasidan kim foydalanishi mumkin?",
+                "answer": "Shake 18 yoshdan oshgan shaxslar uchun mavjud. Shake hisobini yaratish uchun Persona xizmati (withpersona.com) orqali shaxsni tasdiqlash talab qilinadi."
+            },
+            {
+                "question": "Menda mavjud boʻlgan istalgan kriptovalyuta bilan toʻlashim mumkinmi?",
+                "answer": "Ha! Shake integratsiyalashgan valyuta almashtirish orqali moslashuvchan toʻlov variantlarini qoʻllab-quvvatlaydi. Agar sotuvchi USDC yoki ETH talab qilsa, siz Bitcoin, Tether (USDT) yoki Staked ETH bilan toʻlashingiz mumkin. Shunchaki kriptovalyutangizni ilovadagi Coinbase hamyoningizga oʻtkazing, soʻngra uni kerakli valyutaga aylantirish uchun oʻrnatilgan Odos svop funksiyasidan foydalaning. Bu shuni anglatadiki, endi sotuvchilar qaysi kriptovalyutaga ega boʻlishlaridan qatʼi nazar, har kimdan kripto qabul qilishlari mumkin.\n\nEslatma: Coinbase va Odos svop xizmatlari barcha mamlakatlarda mavjud emas."
+            },
+            {
+                "question": "Toʻlov sifatida istalgan \"ixtiyoriy\" kriptovalyutani qabul qilishim shartmi?",
+                "answer": "Yoʻq, siz qaysi kriptoni olishni xohlashingizni (USDC yoki ETH) belgilaysiz. Xaridorlar Bitcoin yoki Dogecoin kabi boshqa kriptovalyuta bilan toʻlaganda, tranzaksiya yakunlanishidan oldin uni sizning valyutangizga aylantirish uchun oʻrnatilgan svop funksiyasidan foydalanadilar. Siz doimo aynan soʻragan narsangizni olasiz. Mablagʻlaringizni yechib olish vaqti kelganda, biz Coinbase bilan integratsiyalashib, ularni Coinbase kira oladigan istalgan hisobga yechib olamiz."
+            },
+            {
+                "question": "Toʻlov yuborish yoki qabul qilish qancha vaqt oladi? Tezkor oʻtkazma uchun toʻlov bormi?",
+                "answer": "Toʻlovlar odatda bir necha soniyada on-chain tasdiqlanadi. Shake’da koʻradigan \"kutish\" oʻtkazma vaqti emas — bu eskrou himoyasi. Siz eskrou muddatini tanlaysiz (masalan, 3 kun). Shundan soʻng, nizo bildirilgan holat uchun standart 2 kunlik arbitraj bufer davri boʻladi; agar nizo boʻlmasa, bufer tugaganda mablagʻlar avtomatik ravishda chiqariladi. Agar sotuvchi 2 kunlik bufer davomida toʻlov olishni istasa, u qoʻshimcha toʻlov (1% gacha) evaziga erta yechib olishdan foydalanishi mumkin: \"2 kun erta\" yechib olish tanlangan eskrou muddati tugashi bilanoq toʻlov olishni anglatadi. Shake alohida tezkor oʻtkazma toʻlovini olmaydi; oddiy tarmoq toʻlovlari qoʻllanilishi mumkin."
+            },
+            {
+                "question": "Shake’dan foydalanish uchun toʻlovlar bormi?",
+                "answer": "Shake eskrou orqali amalga oshiriladigan tranzaksiyalar uchun oddiy va shaffof xizmat toʻlovini oladi. Standart toʻlov tranzaksiya summasining 0,1% ni tashkil qiladi. \n\nAgar sotuvchi mablagʻlarni erta (eskrou muddati tugashidan oldin) yechib olishni tanlasa, 2 kunlik erta yechib olish uchun 1% gacha qoʻshimcha toʻlov qoʻllaniladi. \n\nBlokcheyn tarmoq toʻlovlari ham qoʻllanilishi mumkin va ular toʻgʻridan-toʻgʻri tarmoqqa toʻlanadi. Valyuta konvertatsiyasi (fiat ↔ kripto) Coinbase Onramp va Offramp orqali amalga oshiriladi, ular ishlatilayotgan aktivga qarab oʻz toʻlovlarini qoʻllashi mumkin. Kriptovalyutalar oʻrtasidagi valyuta almashtirish Odos protokolidan foydalanadi va standart svop toʻlovlarini oʻz ichiga oladi.\n\nShake yashirin toʻlovlar qoʻshmaydi, mablagʻlarni oʻz ixtiyoriga olmaydi va oddiy foydalanish uchun takrorlanuvchi obuna toʻlovlarini olmaydi."
+            },
+            {
+                "question": "Shake tranzaksiyalarimni soliqlarimda koʻrsatishim kerakmi?",
+                "answer": "Koʻpgina mamlakatlarda, jumladan Amerika Qoʻshma Shtatlarida, kriptovalyuta tranzaksiyalari soliqqa tortiladigan hodisalar hisoblanadi. Bu Shake tranzaksiyalariga ham tegishli. Eʼtibor berish kerak boʻlgan uchta asosiy tranzaksiya turi mavjud:\n\n1) Tovar yoki xizmatlar uchun kripto bilan toʻlash ushbu aktivni realizatsiya qilish sifatida koʻriladi. Agar kriptoning qiymati siz uni olgandan beri oshgan boʻlsa, farq boʻyicha kapital daromad solig'ini toʻlashingiz kerak boʻlishi mumkin.\n2) Kriptovalyutalar oʻrtasida almashtirish (masalan, Shake’ning oʻrnatilgan svop funksiyasi orqali Bitcoin’ni USDC’ga aylantirish) ham odatda AQShda soliqqa tortiladigan hodisa sifatida koʻriladi.\n3) Sotuvchi sifatida kripto qabul qilish odatda qabul qilingan vaqtdagi adolatli bozor qiymati boʻyicha oddiy daromad sifatida koʻriladi.\n\n[CoinLedger](https://coinledger.io) va [Koinly](https://koinly.io) kabi kripto soliq vositalari bu jarayonni soddalashtiradi. Ular sizning on-chain tranzaksiya tarixingizni — jumladan blokcheynda doimiy ravishda qayd etilgan Shake tranzaksiyalarini — import qilib, daromad, zarar va foydangizni avtomatik hisoblab beradi."
+            },
+            {
+                "question": "Shake’dan foydalanish uchun daromad talablari bormi?",
+                "answer": "Yoʻq, Shake’dan foydalanish uchun daromad talablari mavjud emas."
+            },
+            {
+                "question": "Shake orqali xalqaro tranzaksiyalarni qabul qilishim mumkinmi?",
+                "answer": "Ha, siz boshqa istalgan Shake foydalanuvchisidan xalqaro tranzaksiyalarni qabul qilishingiz mumkin."
+            },
+            {
+                "question": "Shake qaysi mamlakatlarda mavjud emas?",
+                "answer": "Shake Braziliya, Meksika, Tayvan, Yaponiya va Buyuk Britaniyada mavjud emas."
+            },
+            {
+                "question": "Sarflash talablari, chegaralari yoki tranzaksiya chegarasi bormi?",
+                "answer": "Shake’ning oʻzi tomonidan belgilangan sarflash chegaralari yoki tranzaksiya chegaralari mavjud emas."
+            },
+            {
+                "question": "Agar nizo yuzaga kelsa, nima boʻladi?",
+                "answer": "Shake jarayoni metama'lumotlarni qayd etadi va inson-tekshiruvchi nizolarni adolatli hal qilishi uchun tranzaksiya maʼlumotlarini taqdim etadi. Odatda, Shake jamoasi aʼzosi dalillarni koʻrib chiqadi va natijani hal qiladi — bu qarorni algoritm yoki smart-kontrakt qabul qilmaydi. Hakamlar zarur boʻlganda pulni qaytaradi."
+            },
+            {
+                "question": "Shake firibgarlik va ruxsatsiz tranzaksiyalardan qanday himoya qiladi?",
+                "answer": "Shake tasdiqlangan shaxslar, har bir tranzaksiya uchun imzolangan kelishuvlar va tekshiriladigan on-chain toʻlov isboti orqali, nizolarni hal qilish uchun batafsil yozuvlar bilan qoʻllab-quvvatlangan holda, firibgarlik va ruxsatsiz tranzaksiyalardan himoya qiladi."
+            },
+            {
+                "question": "Nega Shake yoki xaker mening pulimni olib qochib keta olmaydi?",
+                "answer": "Shake mablagʻlarni saqlamaydi va foydalanuvchi mablagʻlarini oʻz ixtiyoriga olmaydi. Toʻlovlar smart-kontrakt tomonidan saqlanadi, u faqat eskrou muddati tugagach sotuvchiga yoki pul qaytarilganda xaridorga mablagʻlarni chiqarishi mumkin. \n\nShake sizning hamyon shaxsiy kalitlaringizni saqlamaydi — buni Coinbase qiladi. Bu Shake’ning eskroudagi mablagʻlarga kira olmasligi, ularni koʻchira yoki yoʻnaltira olmasligini anglatadi. Coinbase hamyon infratuzilmasi va valyuta almashinuvini taʼminlaydi, ammo eskrou mantigʻi inson xohishi bilan emas, balki blokcheyn kodi orqali amalga oshiriladi — yagona inson aralashuvi hakamning nizo boʻyicha qarori boʻlib, shartnoma keyin uni avtomatik ravishda bajaradi."
+            },
+            {
+                "question": "Tranzaksiya amalga oshirganimda nima hujjatlashtiriladi?",
+                "answer": "Shake barcha maʼlumotlarni shifrlaydi va har bir tafsilotni qayd etadi: vaqt, joylashuv, imzolar va siz taqdim etgan rasmlar. Har bir tomon qurilmasi imzolayotgan shaxsning imzolash vaqtidagi old kamera rasmini ham oladi. Yetkazib berish tasdigʻini yuklash mumkin va tizim tranzaksiya amalga oshirilishidan oldin pul mavjudligini tasdiqlaydi."
+            },
+            {
+                "question": "Shake javobgarlikni qanday shakllantiradi?",
+                "answer": "Har bir Shake foydalanuvchisi tasdiqlangan shaxsga va fikr-mulohaza balliga ega. Persona har bir aʼzoning shaxsini tekshiradi, shuning uchun hech kim javobgarlikdan qochish uchun cheksiz hamyon yarata olmaydi."
+            },
+            {
+                "question": "Qanday maʼlumot ommaviy?",
+                "answer": "Tranzaksiyalar blokcheynda qayd etilsa-da (u ommaga ochiq, lekin anonim), shaxsiy Shake hisoblari va blokcheyn hisoblari ommaviy ravishda bogʻlanmagan."
+            },
+            {
+                "question": "Guruh ichida umumiy xarajatlarni boʻlish uchun qoʻllab-quvvatlash bormi?",
+                "answer": "Hozircha bu qoʻllab-quvvatlanmaydi, lekin bu kelajakda amalga oshirish rejamizda bor."
+            },
+            {
+                "question": "Shake Defi qayerda roʻyxatdan oʻtgan?",
+                "answer": "Shake Defi, Inc. AQSh, Viskonsin shtati, Brukfild shahrida roʻyxatdan oʻtgan."
+            }
+        ],
+        "cta": {
+            "header": "Izlagan javobingizni\ntopa olmadingizmi?",
+            "subhead": "Shake jamoasi sizda paydo boʻlishi mumkin boʻlgan har qanday savolga yordam berish uchun shu yerda.",
+            "button": "Jamoa bilan bogʻlaning"
+        }
+    },
+    "ecommerce": {
+        "title": "Kripto qabul qilishni boshlang",
+        "subtitle": "Smart-kontraktingizni sozlang va bir necha soniyada API kalitlaringizni oling. Web3 toʻlovlarini ilovangizga muammosiz integratsiya qiling.",
+        "companyNameLabel": "Kompaniya / Hisob nomi",
+        "companyNamePlaceholder": "masalan, Acme Corp",
+        "merchantWalletLabel": "Sotuvchi hamyoni manzili (Base tarmogʻi)",
+        "merchantWalletPlaceholder": "0x...",
+        "merchantWalletDescription": "Bu hisob-kitob qilingan mablagʻlaringiz joylanadigan manzil.",
+        "connectWallet": "Hamyonni ulash",
+        "createWallet": "Hamyon yaratish",
+        "deployingContract": "Smart-kontrakt joylashtirilmoqda...",
+        "provisionAccount": "Hisobni sozlash",
+        "secureDeployment": "Base tarmogʻida xavfsiz smart-kontrakt joylashtirish",
+        "restApiReady": "REST API tayyor",
+        "accountProvisioned": "Hisob sozlandi!",
+        "provisionedSubtitle": "Smart-kontraktingiz joylashtirildi va API kalitlaringiz tayyor.",
+        "smartContract": "Smart-kontrakt",
+        "testSmartContract": "Test smart-kontrakt",
+        "liveSmartContract": "Jonli smart-kontrakt",
+        "testKeys": "Test kalitlar",
+        "publishableKey": "Ochiq kalit",
+        "secretKey": "Maxfiy kalit",
+        "liveKeys": "Jonli kalitlar",
+        "saveKeysWarningLabel": "Muhim:",
+        "saveKeysWarningText": "Iltimos, ushbu maxfiy kalitlarni hozir saqlab qoʻying. Xavfsizlik nuqtai nazaridan, biz xom maxfiy kalitlarni maʼlumotlar bazamizda saqlamaymiz va ushbu sahifadan chiqqaningizdan soʻng ularni tiklab boʻlmaydi.",
+        "provisionAnother": "Boshqa hisob sozlash",
+        "viewApiDocs": "API hujjatlarini koʻrish",
+        "saveRecoveryPhraseTitle": "Tiklash iborangizni saqlang!",
+        "saveRecoveryPhraseDescription1": "Siz uchun yangi hamyon yaratdik. Ushbu 12 soʻzdan iborat ibora mablagʻlaringizga kirishning ",
+        "saveRecoveryPhraseDescriptionOnly": "YAGONA",
+        "saveRecoveryPhraseDescription2": " usulidir. Uni yozib oling va xavfsiz joyda saqlang. ",
+        "saveRecoveryPhraseDescriptionWarning": "Shake DeFi shaxsiy kalitlar yoki mnemonik iboralarni saqlamaydi.",
+        "saveRecoveryPhraseDescription3": " Agar ularni yoʻqotsangiz, mablagʻlaringiz butunlay yoʻqoladi va siz aslida yangi hisob yaratishingiz kerak boʻladi.",
+        "explainerTitle": "Toʻlov tizimi qanday ishlaydi",
+        "explainerSubtitle1": "Bizning toʻlov arxitekturamiz doʻkoningizni mijozlaringizning hamyonlariga muammosiz va xavfsiz tarzda ulaydi. Quyida niyat yaratishdan yakuniy hisob-kitobgacha boʻlgan toʻlovning toʻliq hayot davri keltirilgan. Elektron tijorat tranzaksiyalari eskroudan foydalanmaydi. Bizning toʻlovimiz 0,1%.",
+        "explainerSubtitleLinkText": "Raqamlangan amalni bosing",
+        "explainerSubtitle2": " diagrammada uning API hujjatlarini koʻrish uchun.",
+        "diagramLabel": "Toʻlov oqimi diagrammasi",
+        "step1Title": "Niyat va vidjet",
+        "step1Text": "Sizning backendingiz bizning API orqali xarid niyatini yaratadi. Vidjet olingan mijoz sirini ishlatib, tranzaksiya uchun narxlash va kriptografik vaucherlarni xavfsiz tarzda oladi.",
+        "step2Title": "Mijoz imzosi",
+        "step2Text": "Mijozning hamyoni tranzaksiyani imzolaydi va toʻgʻridan-toʻgʻri smart-kontraktga murojaat qiladi. Shake DeFi qatʼiy ravishda markazlashtirilmagan vositachi sifatida ish yuritadi.",
+        "step3Title": "Hisob-kitob va vebhuklar",
+        "step3Text": "On-chain xarid muvaffaqiyatli amalga oshirilgandan soʻng, smart-kontrakt mablagʻlarni darhol sotuvchi hamyoningizga oʻtkazadi. Bizning backendimiz buni aniqlaydi va tizimingizga vebhuk yuboradi.",
+        "getStartedTitle": "Boshlash",
+        "downloadData": "Maʼlumotlarni yuklab olish (.txt)",
+        "businessAddressLabel": "Biznes manzili",
+        "addressLine1Placeholder": "Koʻcha manzili yoki pochta qutisi",
+        "addressLine2Placeholder": "Kvartira, ofis, blok, bino (ixtiyoriy)",
+        "cityPlaceholder": "Shahar",
+        "stateProvincePlaceholder": "Shtat / Viloyat",
+        "postalCodePlaceholder": "Pochta indeksi",
+        "countryPlaceholder": "Mamlakat",
+        "phoneNumberLabel": "Telefon raqami",
+        "phoneNumberPlaceholder": "+1 234 567 8900",
+        "emailAddressLabel": "Elektron pochta manzili",
+        "emailAddressPlaceholder": "merchant@example.com",
+        "uboNameLabel": "UBO (Yakuniy foydali egasi) ismi",
+        "uboNamePlaceholder": "Jane Doe",
+        "kybFileLabel": "KYB hujjatlari (PDF)",
+        "kybFileDescription": "Iltimos, hujjatni yuklang (masalan, bank hisobvarag'i, tashkil etish hujjatlari)",
+        "submitButton": "Yuborish",
+        "submittingButton": "Yuborilmoqda...",
+        "checkEmailTitle": "Elektron pochtangizni tekshiring",
+        "checkEmailDescription1": "Biz tasdiqlash havolasini ",
+        "checkEmailDescription2": " manziliga yubordik. Iltimos, manzilingizni tasdiqlash va sozlash jarayonini davom ettirish uchun xatdagi havolani bosing.",
+        "provisionPageTitle": "Hisobni sozlash",
+        "provisionPageSubtitle": "Smart-kontraktlaringizni joylashtirish va API kalitlarini yaratish uchun hamyoningizni ulang.",
+        "downloadDataMerchantWallet": "Sotuvchi hamyoni",
+        "downloadDataRecoveryPhrase": "Tiklash iborasi (Mnemonik)",
+        "downloadDataWarning": "OGOHLANTIRISH: Ushbu iborani xavfsiz saqlang. Bu mablagʻlaringizga kirishning YAGONA usuli.",
+        "downloadDataSmartContracts": "--- Smart-kontraktlar ---",
+        "downloadDataTestSmartContract": "Test smart-kontrakt",
+        "downloadDataLiveSmartContract": "Jonli smart-kontrakt",
+        "downloadDataTestApiKeys": "--- Test API kalitlari ---",
+        "downloadDataLiveApiKeys": "--- Jonli API kalitlari ---",
+        "downloadDataPublishableKey": "Ochiq kalit",
+        "downloadDataSecretKey": "Maxfiy kalit",
+        "errorNoWallet": "Hamyon aniqlanmadi. Iltimos, hamyon kengaytmasini oʻrnating.",
+        "errorConnectWallet": "Hamyonni ulash muvaffaqiyatsiz tugadi",
+        "errorGenerateWallet": "Hamyon yaratish muvaffaqiyatsiz tugadi",
+        "errorProvisioning": "Sozlash muvaffaqiyatsiz tugadi",
+        "downloadFilename": "shake_keys.txt"
+    }
+}
