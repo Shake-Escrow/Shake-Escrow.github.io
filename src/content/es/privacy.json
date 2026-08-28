@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "12 de junio de 2026",
-  "effectiveDate": "12 de junio de 2026",
+  "lastUpdated": "28 de agosto de 2026",
+  "effectiveDate": "28 de agosto de 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Política de Privacidad\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -48,6 +48,10 @@
         {
           "subtitle": "3.4 Cumplimiento Legal",
           "content": "Usamos su información para:\n\n<ul>\n<li>Cumplir con las leyes y regulaciones aplicables</li>\n<li>Responder a solicitudes legítimas de las autoridades</li>\n<li>Hacer cumplir nuestros Términos de Servicio y otros acuerdos</li>\n</ul>"
+        },
+        {
+          "subtitle": "3.5 Difusión Pública en el Marketplace",
+          "content": "Cuando decide utilizar la función opcional \"Publicar en Marketplace\", procesamos y formateamos la información de su publicación de transacción —incluidas las fotos del artículo, la descripción, el precio, la moneda, el período de retención en escrow, la ubicación general (ciudad, estado/provincia y país), las preferencias de transacciones en persona y los enlaces profundos (deep links) de la Mini App— para transmitir y difundir la publicación en canales de comunicación públicos de Telegram a solicitud suya."
         }
       ]
     },
@@ -77,7 +81,7 @@
       "subsections": [
         {
           "subtitle": "5.1 Nuestro Compromiso con la Privacidad",
-          "content": "Tomamos en serio su privacidad. <strong>Nunca</strong> compartiremos su información personal, incluidas:\n\n<ul>\n<li>Direcciones de hogar o negocio</li>\n<li>Direcciones de correo electrónico</li>\n<li>Imágenes faciales</li>\n<li>Números de teléfono</li>\n<li>Detalles de transacciones</li>\n</ul>\n\n...con terceros <strong>excepto</strong> como se describe específicamente en esta Política de Privacidad."
+          "content": "Tomamos en serio su privacidad. <strong>Nunca</strong> compartiremos su información personal, incluidas:\n\n<ul>\n<li>Direcciones de hogar o negocio</li>\n<li>Direcciones de correo electrónico</li>\n<li>Imágenes faciales</li>\n<li>Números de teléfono</li>\n<li>Detalles de transacciones</li>\n</ul>\n\n...con terceros <strong>excepto</strong> como se describe específicamente en esta Política de Privacidad (como las difusiones elegidas por el usuario al Canal público del Marketplace descritas en la Sección 5.6 o el intercambio de evidencia para la resolución de disputas descrito en la Sección 5.2)."
         },
         {
           "subtitle": "5.2 Disputas de Transacciones",
@@ -85,7 +89,7 @@
         },
         {
           "subtitle": "5.3 Proveedores de Servicios de Terceros",
-          "content": "Trabajamos con los siguientes proveedores de servicios de terceros que pueden recopilar y procesar su información de forma independiente:\n\n<strong>Persona:</strong> Nuestro socio de verificación de identidad que recopila y procesa información KYC. Persona opera bajo su propia política de privacidad, que debe revisar.\n\n<strong>Microsoft Entra ID:</strong> Nuestro proveedor de servicios de autenticación y gestión de identidad que maneja los procesos de inicio de sesión OAuth2 para la App. Microsoft Entra ID puede recopilar y procesar información relacionada con la autenticación de acuerdo con las políticas de privacidad de Microsoft.\n\n<strong>Coinbase:</strong> Procesador de pagos que facilita los servicios de billetera de criptomonedas, infraestructura de pago y capacidades de transacción en blockchain. \"Coinbase\" se refiere a la entidad o entidades de Coinbase descritas en la Sección 1 anterior. Coinbase puede recopilar datos de usuarios de forma independiente de acuerdo con sus propios Términos de Servicio y Política de Privacidad.\n\nNo compartimos sus imágenes faciales con estos proveedores de servicios."
+          "content": "Trabajamos con los siguientes proveedores de servicios de terceros que pueden recopilar y procesar su información de forma independiente:\n\n<strong>Persona:</strong> Nuestro socio de verificación de identidad que recopila y procesa información KYC. Persona opera bajo su propia política de privacidad, que debe revisar.\n\n<strong>Microsoft Entra ID:</strong> Nuestro proveedor de servicios de autenticación y gestión de identidad que maneja los procesos de inicio de sesión OAuth2 para la App. Microsoft Entra ID puede recopilar y procesar información relacionada con la autenticación de acuerdo con las políticas de privacidad de Microsoft.\n\n<strong>Coinbase:</strong> Procesador de pagos que facilita los servicios de billetera de criptomonedas, infraestructura de pago y capacidades de transacción en blockchain. \"Coinbase\" se refiere a la entidad o entidades de Coinbase descritas en la Sección 1 anterior. Coinbase puede recopilar datos de usuarios de forma independiente de acuerdo con sus propios Términos de Servicio y Política de Privacidad.\n\n<strong>Telegram:</strong> Plataforma de mensajería de terceros que aloja Canales públicos del Marketplace e impulsa las integraciones de bots y Mini Apps. Cuando decide difundir publicaciones, Telegram recibe y aloja el contenido de la publicación difundida. Telegram procesa los datos de acuerdo con su propia Política de Privacidad.\n\nNo compartimos sus imágenes faciales, nombre legal completo, número de teléfono ni dirección de correo electrónico con Telegram."
         },
         {
           "subtitle": "5.4 Requisitos Legales",
@@ -94,6 +98,10 @@
         {
           "subtitle": "5.5 Transferencias Comerciales",
           "content": "En caso de una fusión, adquisición, quiebra o venta de activos, su información puede ser transferida a la entidad sucesora. Le notificaremos por correo electrónico o mediante un aviso prominente en la App antes de que su información quede sujeta a una política de privacidad diferente."
+        },
+        {
+          "subtitle": "5.6 Difusiones Públicas en Canales del Marketplace",
+          "content": "Cuando un Usuario (como un Comerciante) elige utilizar la función opcional \"Publicar en Marketplace\", se aplican las siguientes prácticas de privacidad:\n\n<ul>\n<li><strong>Voluntario e Iniciado por el Usuario:</strong> La difusión de una publicación en el Canal del Marketplace es totalmente opcional y ocurre únicamente cuando el Usuario lo inicia afirmativamente.</li>\n<li><strong>Datos Difundidos Públicamente:</strong> La información transmitida al canal público de Telegram incluye fotografías del artículo, descripciones del artículo, precio, moneda, términos de escrow, la ubicación general del vendedor (ciudad, estado/provincia y país), preferencias de transacciones en persona y palabras clave de ID de transacción o enlaces profundos (deep links) de la Mini App.</li>\n<li><strong>Datos Protegidos (Omitidos de las Difusiones):</strong> Excluimos estrictamente los identificadores personales directos de las transmisiones públicas. El nombre legal completo del vendedor, el número de teléfono, la dirección de correo electrónico, la dirección física exacta de la calle y las imágenes de verificación de firma facial nunca se incluyen en las difusiones del Canal del Marketplace.</li>\n<li><strong>Entorno Público y Persistencia de Terceros:</strong> El contenido publicado en los canales públicos de Telegram es visible para todos los miembros y espectadores del canal. Si bien la App proporciona herramientas para actualizar los detalles de la publicación, reflejar cambios de estado (por ejemplo, \"Pendiente\" o \"Vendido\") o eliminar publicaciones, la Empresa no puede controlar ni borrar copias, reenvíos de mensajes, capturas de pantalla o memorias caché de dispositivos locales retenidas por usuarios terceros o archivos de plataformas externas.</li>\n</ul>"
         }
       ]
     },
