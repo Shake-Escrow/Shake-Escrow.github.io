@@ -54,11 +54,11 @@
       "items": [
         {
           "title": "Escrow\nreembolsable",
-          "description": "Shake utiliza un escrow de contrato inteligente — como una caja fuerte digital neutral — que bloquea los fondos según reglas transparentes en la blockchain. Shake nunca retiene tu dinero, y nadie puede mover fondos fuera de los términos acordados."
+          "description": "Shake utiliza un escrow de contrato inteligente — como una caja fuerte digital neutral — que bloquea los fondos según reglas transparentes en la red Ethereum Base. Shake nunca retiene tu dinero, y nadie puede mover fondos fuera de los términos acordados."
         },
         {
           "title": "Paga con cualquier cripto que tengas",
-          "description": "Los comerciantes establecen su moneda preferida, pero tú puedes pagar con lo que tienes. Usa nuestra función de intercambio integrada para convertir Bitcoin, Tether (USDT) o ETH en staking a lo que el comerciante necesita, de forma fluida y segura."
+          "description": "Los comerciantes establecen su moneda preferida, pero tú puedes pagar con lo que tienes — incluyendo USDC, ETH, TON, USDT, Bitcoin o ETH en staking. Usa nuestra función de intercambio integrada para adaptarte a lo que el comerciante necesita, de forma fluida y segura."
         },
         {
           "title": "Confía en las transacciones – y en los demás",
@@ -92,7 +92,7 @@
       "business": {
         "label": "Comerciante",
         "headline": "Cobra con\nseguridad",
-        "description": "Establece tu período de escrow, compártelo con tu comprador y recibe los fondos después de que finalice el período de escrow. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
+        "description": "Establece la duración de tu escrow (de 0 a 180 días), compártelo con tu comprador y recibe los fondos después de que finalice el período de escrow. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
         "button": "Saber más"
       },
       "customer": {
@@ -105,11 +105,11 @@
     "marketplace": {
       "eyebrow": "Mercado de Shake",
       "headline": "Convierte tu anuncio en una oportunidad local",
-      "description": "Cuando creas un anuncio en Shake, puedes elegir compartirlo con el Mercado de Shake en Telegram. Su foto, descripción, precio y ubicación ayudan a los compradores interesados a descubrir lo que ofreces.",
+      "description": "Comparte anuncios en Shake Marketplace en Telegram, o pega cualquier anuncio de Craigslist o Facebook Marketplace en Shake o @ShakeDefiBot para invitar al vendedor a un trato seguro en custodia.",
       "sellerBenefitTitle": "Llega a más compradores",
-      "sellerBenefit": "Comparte el anuncio que ya creaste con personas que buscan bienes y servicios.",
-      "buyerBenefitTitle": "Explora publicaciones recientes",
-      "buyerBenefit": "Recorre el canal de Telegram para ver los últimos bienes y servicios compartidos por los miembros.",
+      "sellerBenefit": "Comparte el anuncio que ya creaste con personas que buscan bienes y servicios en Telegram.",
+      "buyerBenefitTitle": "Pegar en custodia y descubrir",
+      "buyerBenefit": "Pega cualquier anuncio de Craigslist o Facebook en Shake o @ShakeDefiBot para iniciar un trato en custodia, o explora el canal de la comunidad.",
       "learnMoreLabel": "Conoce el Mercado",
       "exploreLabel": "Explorar Mercado"
     }
@@ -118,10 +118,11 @@
     "hero": {
       "badge": "Mercado Comunitario",
       "headline": "Encuentra compradores más allá de tus contactos",
-      "description": "Publicar en el Mercado te permite compartir opcionalmente un anuncio de Shake con el canal de Telegram del Mercado de Shake, facilitando que nuevos compradores descubran lo que ofreces."
+      "description": "Publicar en el Mercado te permite compartir opcionalmente un anuncio de Shake con el canal de Telegram del Mercado de Shake, o usar Pegar en custodia con @ShakeDefiBot para convertir cualquier anuncio de Craigslist o Facebook Marketplace en un trato seguro en custodia."
     },
     "exploreLabel": "Explorar Mercado",
     "createListingLabel": "Crear un Anuncio",
+    "botCtaLabel": "Chatear con @ShakeDefiBot",
     "preview": {
       "badge": "Canal en Vivo de Telegram",
       "headline": "Descubre cómo ven tus anuncios los compradores",
@@ -139,40 +140,40 @@
           "description": "Los comerciantes pueden elegir si ofrecer escrow. Cuando está habilitado, el botón 'Buy with Escrow' abre Shake para iniciar al instante un depósito en garantía seguro con contratos inteligentes."
         },
         {
-          "title": "Términos de protección transparentes",
-          "description": "El período de escrow establecido por el comerciante proporciona un plazo de protección claro y transparente para cada transacción."
+          "title": "Pegar en custodia y @ShakeDefiBot",
+          "description": "¿Encontraste un anuncio en Craigslist o Facebook Marketplace? Pega el texto en Shake o chatea con @ShakeDefiBot para convertirlo automáticamente en un trato con custodia mediante contratos inteligentes."
         }
       ]
     },
     "benefits": [
       {
         "title": "Para vendedores",
-        "description": "Llega a personas que ya exploran bienes y servicios sin tener que crear tu anuncio de nuevo. Una foto, descripción, precio y ubicación brindan a los compradores los detalles que necesitan para encontrar una oferta relevante."
+        "description": "Llega a personas que ya exploran bienes y servicios sin tener que crear tu anuncio de nuevo. Con la opción Publicar en el Mercado, tu foto, descripción, precio y ubicación se comparten directamente en el canal de Telegram de la comunidad."
       },
       {
         "title": "Para compradores",
-        "description": "Recorre el canal de Telegram para descubrir bienes y servicios a medida que la comunidad los publica."
+        "description": "¿Encontraste un artículo en Craigslist, Facebook Marketplace u otro sitio? Copia el texto del anuncio y pégalo en Shake o envía un mensaje a @ShakeDefiBot en Telegram para iniciar un trato en custodia. También puedes explorar el canal de Telegram de la comunidad para ver nuevas ofertas."
       }
     ],
     "stepsHeading": "Cómo funciona el Mercado",
-    "stepsDescription": "El Mercado es opcional: úsalo cuando quieras dar más visibilidad a un anuncio.",
+    "stepsDescription": "Dos formas sencillas de comprar y vender con protección de custodia mediante contratos inteligentes.",
     "steps": [
       {
-        "title": "Crea un anuncio",
-        "description": "Agrega los detalles que ayuden a un comprador a entender lo que ofreces."
+        "title": "Pegar en custodia",
+        "description": "Copia el texto de cualquier anuncio de Craigslist, Facebook u otros marketplaces en Shake o @ShakeDefiBot para analizar los detalles y configurar un trato en custodia automáticamente."
       },
       {
-        "title": "Elige Publicar en el Mercado",
-        "description": "Selecciona la opción opcional para compartir en el Mercado cuando quieras llegar a más personas."
+        "title": "Publicar en el Mercado",
+        "description": "Comparte opcionalmente tu anuncio de Shake con un solo toque en el canal de Telegram de Shake Marketplace para que los compradores de la comunidad descubran lo que ofreces."
       },
       {
-        "title": "Haz que te descubran",
-        "description": "Tu anuncio se comparte con la comunidad de Telegram del Mercado de Shake para que los compradores interesados lo exploren."
+        "title": "Transacciona con protección",
+        "description": "Ambas partes acuerdan los términos y los fondos quedan bloqueados de forma segura en un contrato inteligente en la red Ethereum Base hasta que se complete la entrega."
       }
     ],
     "trust": {
       "title": "Descubrimiento con una forma más segura de transaccionar",
-      "description": "El Mercado ayuda a compradores y vendedores a encontrarse. Cuando estés listo para organizar una compra, Shake ofrece a ambas partes una forma clara y documentada de transaccionar."
+      "description": "El Mercado ayuda a compradores y vendedores a encontrarse. Ya sea descubriendo ofertas en el canal de Telegram o importando anuncios externos a través de @ShakeDefiBot, Shake brinda a ambas partes una protección transparente basada en contratos inteligentes."
     },
     "howItWorksLabel": "Cómo funciona Shake"
   },
@@ -182,7 +183,7 @@
     },
     "section1": {
       "headline": "El Proceso de Escrow",
-      "description": "El escrow de Shake está impulsado por un contrato inteligente en la blockchain. Una vez realizado un pago, los fondos son bloqueados por código — no por Shake, no por un banco, ni por un tercero. \n\nShake nunca tiene custodia de los fondos de los usuarios. Los pagos son retenidos por el propio contrato inteligente, mientras que el acceso a la billetera y el intercambio de monedas son proporcionados por la billetera integrada de Coinbase y sus servicios Onramp/Offramp. Este diseño elimina el riesgo de punto único de fallo y garantiza que los fondos solo se muevan según las reglas acordadas."
+      "description": "El escrow de Shake está impulsado por un contrato inteligente en la red Ethereum Base. Una vez realizado un pago, los fondos son bloqueados por código — no por Shake, no por un banco, ni por un tercero. \n\nShake nunca tiene custodia de los fondos de los usuarios. Los pagos son retenidos por el propio contrato inteligente, mientras que los usuarios operan utilizando su billetera preferida — incluyendo la billetera integrada de Coinbase en dispositivos móviles, la billetera de Telegram y Tonkeeper en Telegram, o billeteras nativas de ETH en Farcaster. Los servicios de entrada y salida fiat están impulsados por Coinbase en dispositivos móviles. Este diseño elimina el riesgo de punto único de fallo y garantiza que los fondos solo se muevan según las reglas acordadas."
     },
     "section2": {
       "headline": "Cómo Funciona",
@@ -196,10 +197,10 @@
     "escrowIntro": "Shake usa un escrow que es como una caja fuerte que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio.",
     "agreementNote": "Todo escrow debe tener un acuerdo que el comprador y el vendedor firmen antes de intercambiar dinero. La IA en la app sugiere un acuerdo, y se incluyen las fotos que tomes. Solo firma con tu dedo.",
     "aiCaption": "La IA admite bienes O servicios",
-    "smartContractNote": "Internamente, es un contrato inteligente: el temporizador de liberación se escribe en la blockchain en el momento del pago y nadie puede cambiarlo, ni siquiera Shake. Los fondos tienen exactamente dos salidas: al comerciante cuando expira el temporizador, o de vuelta al comprador si se emite un reembolso. No existe ninguna otra ruta en el código. El contrato inteligente solo ejecuta la ruta del reembolso — la decisión de si un reembolso está justificado la toma un árbitro humano, no el código en sí.",
+    "smartContractNote": "Internamente, es un contrato inteligente en la red Ethereum Base: el temporizador de liberación se escribe en la blockchain en el momento del pago y nadie puede cambiarlo, ni siquiera Shake. Los fondos tienen exactamente dos salidas: al comerciante cuando expira el temporizador, o de vuelta al comprador si se emite un reembolso. No existe ninguna otra ruta en el código. El contrato inteligente solo ejecuta la ruta del reembolso — la decisión de si un reembolso está justificado la toma un árbitro humano, no el código en sí.",
     "process": {
       "header": "El Proceso de Escrow",
-      "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante un tiempo determinado, que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
+      "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante la duración acordada (de 0 a 180 días), que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
       "step2": "Durante este período de espera, si no recibes lo que compraste, puedes hablarlo directamente con el comerciante o solicitar un reembolso, que será evaluado por un revisor humano.",
       "step3": "Si no solicitas un reembolso durante el período de espera, el comerciante puede retirar el dinero."
     }
@@ -220,11 +221,11 @@
       },
       {
         "headline": "Acepta Cripto\nde Cualquiera",
-        "description": "Establece tu moneda de pago preferida —USDC o ETH— y deja que los clientes paguen con lo que tienen. A través del intercambio de monedas integrado, los compradores pueden convertir fácilmente Bitcoin, Tether (USDT) o ETH en staking a tu moneda preferida. La interfaz de intercambio los guía a través del proceso de conversión en pocos clics. Función de intercambio impulsada por Odos."
+        "description": "Establece tu moneda de pago preferida —como USDC, ETH, TON o USDT— y deja que los clientes paguen con lo que tienen. A través del intercambio de monedas integrado impulsado por Odos, los compradores pueden convertir fácilmente Bitcoin, Tether (USDT) o ETH en staking a tu moneda preferida en pocos clics."
       },
       {
         "headline": "Conveniencia\nque Empodera",
-        "description": "Agrega información del producto directamente a tu contrato con herramientas de IA. Los detalles de cada transacción ofrecen una imagen más completa del intercambio, y puedes agregar todas las imágenes que quieras. Asigna gerentes para supervisar pagos y empleados para manejar ventas."
+        "description": "Agrega información del producto directamente a tu contrato con herramientas de IA. Los detalles de cada transacción ofrecen una imagen más completa del intercambio, y puedes agregar todas las imágenes que quieras."
       },
       {
         "headline": "Más Opciones para\nLo que Haces",
@@ -250,7 +251,7 @@
     "sections": [
       {
         "headline": "Transacciones\nQue Importan",
-        "description": "Paga con una app que mantiene los pagos privados, documentados y fáciles de resolver. Tu pago queda bloqueado en un escrow de contrato inteligente por un período fijo acordado por el comprador y el comerciante. Durante este tiempo, los fondos no pueden ser accedidos fuera de las reglas del contrato, y se pueden presentar disputas si no se cumplen los términos acordados. Shake y Persona verifican la identidad, reputación y calificaciones de cada negocio. Cada transacción incluye un acuerdo firmado y prueba de pago verificable en la cadena, para que puedas confiar en tus compras y evitar disputas."
+        "description": "Paga con una app que mantiene los pagos privados, documentados y fáciles de resolver. Tu pago queda bloqueado en un escrow de contrato inteligente en la red Ethereum Base por un período fijo acordado por el comprador y el comerciante. Durante este tiempo, los fondos no pueden ser accedidos fuera de las reglas del contrato, y se pueden presentar disputas si no se cumplen los términos acordados. Shake y Persona verifican la identidad, reputación y calificaciones de cada negocio. Cada transacción incluye un acuerdo firmado y prueba de pago verificable en la cadena, para que puedas confiar en tus compras y evitar disputas."
       },
       {
         "headline": "Sé un Consumidor\nInteligente",
@@ -258,7 +259,7 @@
       },
       {
         "headline": "Paga con la cripto que ya tienes",
-        "description": "No dejes que las limitaciones de pago te frenen. Si un comerciante solicita USDC o ETH, puedes pagar usando Bitcoin, Tether (USDT) o ETH en staking. Simplemente transfiere tu cripto a tu billetera Coinbase en la app y luego usa la función de intercambio integrada impulsada por Odos para convertirla instantáneamente a la moneda requerida."
+        "description": "No dejes que las limitaciones de pago te frenen. Paga con USDC, ETH, TON, USDT, Bitcoin o ETH en staking. En dispositivos móviles, usa tu billetera Coinbase con la función integrada de Odos para convertir al instante a la moneda requerida. En Telegram, conecta tu billetera de Telegram o Tonkeeper, y en Farcaster, opera directamente utilizando tu billetera nativa de ETH."
       },
       {
         "headline": "Responsabilidad\nDonde Importa",
@@ -275,8 +276,8 @@
       "button": "Disponible Ahora"
     },
     "marketplace": {
-      "headline": "Descubre anuncios en el Mercado",
-      "description": "Explora el canal de Telegram del Mercado de Shake para encontrar bienes y servicios; después usa Shake cuando estés listo para organizar una compra.",
+      "headline": "Pegar en custodia y Mercado",
+      "description": "¿Encontraste algo en Craigslist o Facebook? Pega el anuncio en Shake o @ShakeDefiBot para comprar con custodia, o explora el canal de Telegram de Shake Marketplace.",
       "button": "Explorar Mercado"
     }
   },
@@ -366,11 +367,15 @@
     "questions": [
       {
         "question": "¿Cómo funciona la app?",
-        "answer": "Shake usa un escrow, que es como una caja fuerte, que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio. Para saber más, visita la página \"Cómo Funciona\"."
+        "answer": "Shake utiliza un depósito en garantía (escrow) mediante contratos inteligentes en la red Ethereum Base, que es como una caja fuerte que mantiene seguro el dinero del cliente mientras un negocio entrega un producto o servicio. Para saber más, visita la página \"Cómo Funciona\"."
       },
       {
         "question": "¿Cómo comienzo?",
-        "answer": "Puedes comenzar [descargando la app en tu dispositivo móvil](https://shakedefi.com)."
+        "answer": "Puedes comenzar en múltiples plataformas:\n- **iOS y Android**: [Descarga la aplicación móvil](https://shakedefi.com) para acceder a todas las funciones, billetera integrada de Coinbase y entrada/salida de dinero fiat.\n- **Telegram**: Chatea con [@ShakeDefiBot](https://t.me/ShakeDefiBot) o abre la [mini-aplicación de Telegram](https://t.me/ShakeDefiBot/app) para crear acuerdos de custodia y conectar tu billetera de Telegram o Tonkeeper.\n- **Farcaster**: Abre la [mini-aplicación de Shake en Farcaster](https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi) y opera con tu billetera nativa de ETH en Base."
+      },
+      {
+        "question": "¿Qué plataformas y billeteras admite Shake DeFi?",
+        "answer": "Shake DeFi está disponible en iOS, Android, Telegram y Farcaster, admitiendo:\n- **Billetera integrada de Coinbase** (iOS y Android): Acceso completo a funciones, incluyendo entrada/salida de dinero fiat e intercambio de monedas con Odos.\n- **Billetera de Telegram y Tonkeeper** (Telegram): Opera con TON y USDT, explora el canal del Mercado P2P o chatea con [@ShakeDefiBot](https://t.me/ShakeDefiBot).\n- **Billetera nativa de ETH** (Farcaster): Opera en la red Ethereum Base directamente desde tu cliente de Farcaster."
       },
       {
         "question": "¿Qué es Publicar en el Mercado?",
@@ -389,12 +394,20 @@
         "answer": "Puedes explorar los anuncios actuales en el [canal de Telegram del Mercado de Shake](https://t.me/Shake_Marketplace)."
       },
       {
+        "question": "¿Qué es Pegar en custodia (Paste to Escrow)?",
+        "answer": "Pegar en custodia te permite convertir cualquier artículo que encuentres en un marketplace entre pares (como Craigslist, OfferUp o Facebook Marketplace) en una transacción segura en custodia. Simplemente copia el texto del anuncio en tu portapapeles y pégalo en Shake DeFi, ya sea en la pantalla de Pago de la aplicación o en un chat con [@ShakeDefiBot](https://t.me/ShakeDefiBot) en Telegram. Shake analiza automáticamente los detalles, te permite seleccionar la criptomoneda deseada e invita al vendedor a unirse a una custodia protegida por contratos inteligentes."
+      },
+      {
+        "question": "¿Qué puedo hacer con @ShakeDefiBot en Telegram?",
+        "answer": "Con [@ShakeDefiBot](https://t.me/ShakeDefiBot) en Telegram, puedes pegar cualquier anuncio de un marketplace directamente en tu chat para generar un contrato de custodia, abrir la mini-aplicación de Shake en Telegram, conectar billeteras de TON o Ethereum y pagar con TON, USDT, USDC o ETH, todo sin salir de Telegram."
+      },
+      {
         "question": "¿Qué es un escrow?",
         "answer": "Un escrow es como una caja fuerte que mantiene el dinero seguro y garantiza que tanto el cliente como el negocio cumplan sus obligaciones antes de realizar el intercambio. \n\nPor ejemplo, imagina que estás comprando un teléfono usado a alguien que encontraste en línea. Normalmente, te reunirías, le pagarías en el acto y esperarías que el teléfono funcione. Pero si está roto o no es lo que prometió, ya es demasiado tarde: el dinero ya se fue. \n\nCon escrow, en lugar de pagarle directamente, tu dinero va a una cuenta segura de retención por un tiempo fijo. El vendedor ve que el dinero está ahí y te entrega el teléfono. \n\nDurante el período de espera, verificas la calidad del teléfono. Si descubres que está roto, disputarías la transacción y solicitarías un reembolso. Si el teléfono funciona, el dinero se libera al vendedor una vez que termina el período de espera. \n\nEn esencia, el escrow:    \n1) Protege a los negocios garantizando que el pago del cliente esté listo y disponible para transferirse cuando termine el período de espera    \n2) Brinda protección a ambas partes asegurando que los fondos se retengan de forma segura y solo puedan liberarse según los términos de escrow acordados, incluidos los reembolsos cuando lo justifique el resultado de una disputa. \n\nPara saber más, visita la página \"Cómo Funciona\"."
       },
       {
         "question": "¿Debo usar un período de escrow?",
-        "answer": "No. Los comerciantes establecen el período de escrow, y puede configurarse en 0 para una transferencia instantánea sin espera ni ventana de reembolso. Aun así obtienes todas las demás protecciones de Shake: verificación de identidad, un acuerdo firmado con fotos, documentación detallada de la transacción y calificaciones del comprador. El período de escrow es la opción correcta cuando quieres dar a los compradores una red de seguridad; la transferencia instantánea es la opción correcta cuando la venta es sencilla y ambas partes están listas."
+        "answer": "No. Los comerciantes pueden elegir cualquier duración de escrow de 0 a 180 días, y puede configurarse en 0 para una transferencia instantánea sin espera ni ventana de reembolso. Aun así obtienes todas las demás protecciones de Shake: verificación de identidad, un acuerdo firmado con fotos, documentación detallada de la transacción y calificaciones del comprador. El período de escrow es la opción correcta cuando quieres dar a los compradores una red de seguridad; la transferencia instantánea es la opción correcta cuando la venta es sencilla y ambas partes están listas."
       },
       {
         "question": "¿Necesito saber sobre cripto o invertir en cripto para usar Shake?",
@@ -406,15 +419,15 @@
       },
       {
         "question": "¿Puedo pagar con cualquier criptomoneda que tenga?",
-        "answer": "¡Sí! Shake admite opciones de pago flexibles a través del intercambio de monedas integrado. Si un comerciante solicita USDC o ETH, puedes pagar usando Bitcoin, Tether (USDT) o ETH en staking. Simplemente transfiere tu criptomoneda a tu billetera Coinbase en la app y luego usa la función de intercambio integrada de Odos para convertirla a la moneda requerida. Esto significa que los comerciantes ahora pueden aceptar cripto de cualquier persona, independientemente de qué criptomoneda tengan.\n\nNota: Los servicios de intercambio de Coinbase y Odos no están disponibles en todos los países."
+        "answer": "¡Sí! Shake admite opciones de pago flexibles a través de las criptomonedas compatibles: USDC, ETH, TON y USDT, además de Bitcoin y ETH en staking mediante intercambio. En dispositivos móviles, puedes transferir tu criptomoneda a tu billetera Coinbase en la app y convertirla mediante la función de intercambio integrada de Odos. En Telegram, puedes pagar con TON o USDT a través de tu billetera de Telegram o Tonkeeper. En Farcaster, puedes operar directamente usando tu billetera nativa de ETH en Base.\n\nNota: Los servicios de intercambio de Coinbase y Odos no están disponibles en todos los países."
       },
       {
         "question": "¿Debo aceptar cualquier criptomoneda 'arbitraria' como pago?",
-        "answer": "No, tú especificas qué cripto quieres recibir (USDC o ETH). Cuando los compradores pagan con una criptomoneda diferente como Bitcoin o Dogecoin, usan la función de intercambio integrada para convertirla a tu moneda preferida antes de que se complete la transacción. Siempre recibes exactamente lo que solicitaste. Cuando llegue el momento de retirar tus fondos, nos integramos con Coinbase para retirarlos a cualquier cuenta a la que Coinbase pueda acceder."
+        "answer": "No, tú especificas qué criptomoneda deseas recibir (como USDC, ETH, TON o USDT). Cuando los compradores pagan con una criptomoneda diferente como Bitcoin o ETH en staking, usan la función de intercambio integrada para convertirla a tu moneda preferida antes de que se complete la transacción. Siempre recibes exactamente lo que solicitaste. Al retirar fondos, los usuarios móviles pueden retirar a moneda fiat a través de Coinbase, mientras que los usuarios de Telegram, Tonkeeper o Farcaster reciben los fondos liquidados directamente en sus billeteras conectadas."
       },
       {
         "question": "¿Cuánto tiempo tarda enviar o aceptar un pago? ¿Hay una comisión por transferencia instantánea?",
-        "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges un período de escrow (por ejemplo, 3 días). Después de eso, hay un período estándar de arbitraje de 2 días en caso de que se presente una disputa; si no hay disputa, los fondos se liberan automáticamente cuando termina ese período. Si un comerciante quiere cobrar durante el período de arbitraje de 2 días, puede usar el retiro anticipado con una comisión adicional (hasta 1%): retirar \"2 días antes\" significa cobrar justo cuando termina el período de escrow elegido. Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar."
+        "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges una duración de escrow entre 0 y 180 días (por ejemplo, 3 días o 0 para una liquidación instantánea). Después de eso, hay un período estándar de arbitraje de 2 días en caso de que se presente una disputa; si no hay disputa, los fondos se liberan automáticamente cuando termina ese período. Si un comerciante quiere cobrar durante el período de arbitraje de 2 días, puede usar el retiro anticipado con una comisión adicional (hasta 1%): retirar \"2 días antes\" significa cobrar justo cuando termina el período de escrow elegido. Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar."
       },
       {
         "question": "¿Hay comisiones para usar Shake?",
@@ -450,7 +463,7 @@
       },
       {
         "question": "¿Por qué no puede Shake ni un hacker llevarse mi dinero?",
-        "answer": "Shake es no custodial y no tiene custodia de los fondos de los usuarios. Los pagos son retenidos por un contrato inteligente que solo puede liberar fondos al comerciante después del período de escrow, o de vuelta al comprador en caso de reembolso. \n\nShake no almacena tus claves privadas de billetera; eso lo hace Coinbase. Esto significa que Shake no puede acceder, mover ni redirigir los fondos en escrow. Coinbase proporciona infraestructura de billetera e intercambio de monedas, pero la lógica de escrow es aplicada por el código de la blockchain, no por el criterio humano — la única intervención humana es la decisión del árbitro en una disputa, que el contrato luego ejecuta automáticamente."
+        "answer": "Shake es no custodial y nunca tiene la custodia de los fondos de los usuarios ni de sus claves privadas. Los pagos son retenidos por un contrato inteligente en la red Ethereum Base que solo puede liberar fondos al comerciante después del período de custodia, o de vuelta al comprador en caso de reembolso. \n\nShake no almacena tus claves privadas de billetera en ninguna plataforma. En dispositivos móviles, Coinbase proporciona infraestructura segura de billetera integrada. En Telegram, las claves permanecen seguras en tu billetera de Telegram o Tonkeeper. En Farcaster, las transacciones se firman directamente con tu billetera nativa de ETH. Shake no puede acceder, mover ni redirigir los fondos en custodia. La lógica de custodia es ejecutada por el código de la blockchain, no por el criterio humano — la única intervención humana es la decisión del árbitro en una disputa, que el contrato ejecuta automáticamente."
       },
       {
         "question": "¿Qué se documenta cuando realizo una transacción?",

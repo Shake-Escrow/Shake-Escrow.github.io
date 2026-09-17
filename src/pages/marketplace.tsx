@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, MapPin, Send, Store, ShieldCheck, ShoppingBag, Layers, ArrowRight } from 'lucide-react';
+import { CheckCircle2, MapPin, Send, Store, ShieldCheck, ShoppingBag, ClipboardCheck, ArrowRight } from 'lucide-react';
 import { FaTelegramPlane } from 'react-icons/fa';
 import Button from '../components/common/button';
 import Section from '../components/common/section';
@@ -11,7 +11,7 @@ const Marketplace: React.FC = () => {
   const siteContent = useContent('sitecontent');
   const content = siteContent.marketplace;
 
-  const previewFeatureIcons = [ShoppingBag, ShieldCheck, Layers];
+  const previewFeatureIcons = [ShoppingBag, ShieldCheck, ClipboardCheck];
 
   return (
     <div className="pt-24">
@@ -40,6 +40,14 @@ const Marketplace: React.FC = () => {
                 <span className="inline-flex items-center gap-2">
                   <FaTelegramPlane aria-hidden="true" />
                   {content.exploreLabel}
+                </span>
+              </Button>
+            </a>
+            <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                <span className="inline-flex items-center gap-2">
+                  <FaTelegramPlane aria-hidden="true" />
+                  {content.botCtaLabel || 'Chat with @ShakeDefiBot'}
                 </span>
               </Button>
             </a>
@@ -115,6 +123,14 @@ const Marketplace: React.FC = () => {
                       <span className="inline-flex items-center gap-2">
                         <FaTelegramPlane size={18} aria-hidden="true" />
                         <span>{content.exploreLabel}</span>
+                      </span>
+                    </Button>
+                  </a>
+                  <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto shadow-sm hover:shadow-md">
+                      <span className="inline-flex items-center gap-2">
+                        <FaTelegramPlane size={18} aria-hidden="true" />
+                        <span>{content.botCtaLabel || 'Chat with @ShakeDefiBot'}</span>
                       </span>
                     </Button>
                   </a>
@@ -227,6 +243,14 @@ const Marketplace: React.FC = () => {
                 <span className="inline-flex items-center gap-2">
                   <FaTelegramPlane aria-hidden="true" />
                   {content.exploreLabel}
+                </span>
+              </Button>
+            </a>
+            <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:text-secondary-dark hover:bg-white">
+                <span className="inline-flex items-center gap-2">
+                  <FaTelegramPlane aria-hidden="true" />
+                  {content.botCtaLabel || 'Chat with @ShakeDefiBot'}
                 </span>
               </Button>
             </a>

@@ -4,7 +4,7 @@
 
 ## Key Pages
 - [Home](https://shakedefi.com/): Overview of Shake Defi's smart-contract escrow payment app and core benefits.
-- [How It Works](https://shakedefi.com/how-it-works): Explanation of Shake's non-custodial escrow process, payment release rules, refund path, and on-chain smart contract design.
+- [How It Works](https://shakedefi.com/how-it-works): Explanation of Shake's non-custodial escrow process, payment release rules, refund path, and on-chain smart contract design on the Ethereum Base network.
 - [Get Paid](https://shakedefi.com/get-paid): Merchant-focused information about accepting crypto payments, fees, escrow periods, withdrawals, and payment flexibility.
 - [Send Payments](https://shakedefi.com/send-payments): Buyer-focused information about paying through escrow, transaction documentation, reputation, privacy, and dispute protection.
 - [FAQ](https://shakedefi.com/faq): Common questions about escrow, supported crypto payments, fees, refunds, disputes, privacy, eligibility, and country availability.

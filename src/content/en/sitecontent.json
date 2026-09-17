@@ -54,11 +54,11 @@
       "items": [
         {
           "title": "Refundable\nescrow",
-          "description": "Shake uses a smart-contract escrow — like a neutral digital safe — that locks funds according to transparent rules on the blockchain. Shake never holds your money, and no one can move funds outside the agreed terms."
+          "description": "Shake uses a smart-contract escrow — like a neutral digital safe — that locks funds according to transparent rules on the Ethereum Base network. Shake never holds your money, and no one can move funds outside the agreed terms."
         },
         {
           "title": "Pay with any crypto you own",
-          "description": "Merchants set their preferred currency, but you can pay with what you have. Use our built-in swap feature to convert Bitcoin, Tether (USDT), or Staked ETH to match what the merchant needs — seamlessly and securely."
+          "description": "Merchants set their preferred currency, but you can pay with what you have — including USDC, ETH, TON, USDT, Bitcoin, or Staked ETH. Use our built-in swapping to match what the merchant needs, seamlessly and securely."
         },
         {
           "title": "Trust transactions – and each other",
@@ -92,7 +92,7 @@
       "business": {
         "label": "Merchant",
         "headline": "Get paid\nsecurely",
-        "description": "Set your escrow period, share it with your buyer, and receive funds after the escrow period ends. Set the period to 0 for an instant transfer — you'll still get identity verification, a signed agreement, and buyer ratings.",
+        "description": "Set your escrow duration (0–180 days), share it with your buyer, and receive funds after the escrow period ends. Set the period to 0 for an instant transfer — you'll still get identity verification, a signed agreement, and buyer ratings.",
         "button": "Learn more"
       },
       "customer": {
@@ -105,11 +105,11 @@
     "marketplace": {
       "eyebrow": "Shake Marketplace",
       "headline": "Turn your listing into a local opportunity",
-      "description": "When you create a listing in Shake, you can choose to share it with the Shake Marketplace on Telegram. Your photo, description, price, and location help interested buyers discover what you are offering.",
+      "description": "Share listings to the Shake Marketplace on Telegram, or paste any listing from Craigslist or Facebook Marketplace into Shake or @ShakeDefiBot to invite the seller to a secure escrow deal.",
       "sellerBenefitTitle": "Reach more buyers",
-      "sellerBenefit": "Share the listing you already made with people looking for goods and services.",
-      "buyerBenefitTitle": "Explore recent listings",
-      "buyerBenefit": "Scroll through the Telegram channel feed to see the latest goods and services shared by community members.",
+      "sellerBenefit": "Share the listing you already made with people looking for goods and services on Telegram.",
+      "buyerBenefitTitle": "Paste to Escrow & discover",
+      "buyerBenefit": "Paste any external marketplace listing into Shake or @ShakeDefiBot to start an escrow deal, or scroll the community channel feed.",
       "learnMoreLabel": "Learn about Marketplace",
       "exploreLabel": "Explore Marketplace"
     }
@@ -118,10 +118,11 @@
     "hero": {
       "badge": "Community Marketplace",
       "headline": "Find buyers beyond your contacts",
-      "description": "Post to Marketplace lets you optionally share a Shake listing with the Shake Marketplace Telegram channel, making it easier for new buyers to discover what you are offering."
+      "description": "Post to Marketplace lets you optionally share a Shake listing with the Shake Marketplace Telegram channel, or use Paste to Escrow with @ShakeDefiBot to turn any Craigslist or Facebook Marketplace listing into a secure escrow deal."
     },
     "exploreLabel": "Explore Marketplace",
     "createListingLabel": "Create a Listing",
+    "botCtaLabel": "Chat with @ShakeDefiBot",
     "preview": {
       "badge": "Live Telegram Channel",
       "headline": "See how listings look to buyers",
@@ -139,40 +140,40 @@
           "description": "Merchants can choose whether to offer escrow. When enabled, the 'Buy with Escrow' button opens Shake to instantly initiate a secure, smart-contract-protected escrow."
         },
         {
-          "title": "Transparent Protection Terms",
-          "description": "The escrow period set by the merchant provides a clear and transparent protection window for every transaction."
+          "title": "Paste to Escrow & @ShakeDefiBot",
+          "description": "Found a listing on Craigslist or Facebook Marketplace? Paste the text into Shake or chat with @ShakeDefiBot to automatically turn it into a smart-contract escrow deal."
         }
       ]
     },
     "benefits": [
       {
         "title": "For sellers",
-        "description": "Reach people who are already browsing for goods and services without creating your listing again. A photo, description, price, and location give buyers the details they need to find a relevant offer."
+        "description": "Reach people who are already browsing for goods and services without creating your listing again. With optional Post to Marketplace, your photo, description, price, and location are shared straight to the community Telegram channel."
       },
       {
         "title": "For buyers",
-        "description": "Scroll through the Telegram channel feed to discover goods and services as community members post them."
+        "description": "Found an item on Craigslist, Facebook Marketplace, or another site? Copy the listing text and paste it into Shake or message @ShakeDefiBot on Telegram to start an escrow deal. You can also browse the community Telegram channel for new offers."
       }
     ],
     "stepsHeading": "How Marketplace works",
-    "stepsDescription": "Marketplace is optional: use it when you want to give a listing more visibility.",
+    "stepsDescription": "Two simple ways to buy and sell with smart-contract escrow protection.",
     "steps": [
       {
-        "title": "Create a listing",
-        "description": "Add the details that help a buyer understand what you are offering."
+        "title": "Paste to Escrow",
+        "description": "Copy any listing text from Craigslist, Facebook, or other marketplaces into Shake or @ShakeDefiBot to automatically parse details and set up an escrow deal."
       },
       {
-        "title": "Choose Post to Marketplace",
-        "description": "Select the optional Marketplace sharing choice when you want to reach more people."
+        "title": "Post to Marketplace",
+        "description": "Optionally share your Shake listing with one tap to the Shake Marketplace Telegram channel so community buyers can discover what you offer."
       },
       {
-        "title": "Get discovered",
-        "description": "Your listing is shared with the Shake Marketplace Telegram community for interested buyers to explore."
+        "title": "Transact with Protection",
+        "description": "Both parties agree to terms, and funds are locked securely in a smart contract on the Ethereum Base network until delivery is complete."
       }
     ],
     "trust": {
       "title": "Discovery with a safer way to transact",
-      "description": "Marketplace helps buyers and sellers find each other. When you are ready to arrange a purchase, Shake gives both sides a clear, documented way to transact."
+      "description": "Marketplace helps buyers and sellers find each other. Whether discovering deals in the Telegram channel or importing external listings via @ShakeDefiBot, Shake gives both sides transparent smart-contract protection."
     },
     "howItWorksLabel": "How Shake works"
   },
@@ -182,7 +183,7 @@
     },
     "section1": {
       "headline": "The Escrow Process",
-      "description": "The Shake escrow is powered by a smart contract on the blockchain. Once a payment is made, funds are locked by code — not by Shake, not by a bank, and not by a third party. \n\nShake never takes custody of user funds. Payments are held by the smart contract itself, while wallet access and currency exchange are provided by Coinbase's embedded wallet and Onramp/Offramp services. This design removes single-point-of-failure risk and ensures funds can only move according to the agreed rules."
+      "description": "The Shake escrow is powered by a smart contract on the Ethereum Base network. Once a payment is made, funds are locked by code — not by Shake, not by a bank, and not by a third party. \n\nShake never takes custody of user funds. Payments are held by the smart contract itself, while users transact using their preferred wallet — including Coinbase Embedded Wallet on mobile, Telegram wallet and Tonkeeper on Telegram, or native ETH wallets on Farcaster. Fiat onramp and offramp services are powered by Coinbase on mobile. This design removes single-point-of-failure risk and ensures funds can only move according to the agreed rules."
     },
     "section2": {
       "headline": "How it Works",
@@ -196,10 +197,10 @@
     "escrowIntro": "Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.",
     "agreementNote": "Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.",
     "aiCaption": "AI supports goods OR services",
-    "smartContractNote": "Under the hood, it's a smart contract: the release timer is written to the blockchain at the moment of payment and cannot be changed by anyone, including Shake. Funds have exactly two exits — to the merchant once the timer expires, or back to the buyer if a refund is issued. No other path exists in the code. The smart contract only executes the refund path — the decision of whether a refund is warranted is made by a human arbiter, not by the code itself.",
+    "smartContractNote": "Under the hood, it's a smart contract on the Ethereum Base network: the release timer is written to the blockchain at the moment of payment and cannot be changed by anyone, including Shake. Funds have exactly two exits — to the merchant once the timer expires, or back to the buyer if a refund is issued. No other path exists in the code. The smart contract only executes the refund path — the decision of whether a refund is warranted is made by a human arbiter, not by the code itself.",
     "process": {
       "header": "The Escrow Process",
-      "step1": "After making a transaction, your money is placed into an escrow for a set amount of time, which is like a neutral safe, rather than going directly to the merchant.",
+      "step1": "After making a transaction, your money is placed into an escrow for the agreed duration (0–180 days), which is like a neutral safe, rather than going directly to the merchant.",
       "step2": "During this waiting period, if you don't receive what you purchased, you can discuss it with the merchant directly or request a refund, which a human reviewer will evaluate.",
       "step3": "If you don't request a refund during the waiting period, the merchant can withdraw the money."
     }
@@ -220,11 +221,11 @@
       },
       {
         "headline": "Accept Crypto\nfrom Anyone",
-        "description": "Set your preferred payment currency — USDC or ETH — and let customers pay with what they have. Through integrated currency swapping, buyers can easily convert Bitcoin, Tether (USDT), or Staked ETH into your preferred currency. The swap interface guides them through the conversion process in just a few clicks. Swap feature is powered by Odos."
+        "description": "Set your preferred payment currency — such as USDC, ETH, TON, or USDT — and let customers pay with what they have. Through integrated currency swapping powered by Odos, buyers can easily convert Bitcoin, Tether (USDT), or Staked ETH into your preferred currency in just a few clicks."
       },
       {
         "headline": "Convenience\nthat Empowers",
-        "description": "Add product info right into your contract with AI tools. Each transaction's details provide a more complete picture of the exchange, and you can add as many images as you want. Assign managers to oversee payments and employees to handle sales."
+        "description": "Add product info right into your contract with AI tools. Each transaction's details provide a more complete picture of the exchange, and you can add as many images as you want."
       },
       {
         "headline": "More Options for\nWhat You Do",
@@ -250,7 +251,7 @@
     "sections": [
       {
         "headline": "Transactions\nThat Matter",
-        "description": "Pay with an app that keeps payments private, documented, and easy to resolve. Your payment is locked in a smart-contract escrow for a fixed period agreed to by both buyer and merchant. During this time, funds cannot be accessed outside the contract's rules, and disputes can be raised if the agreed terms are not met. Shake and Persona verify every business's identity, reputation, and feedback. Each transaction comes with a signed agreement and verifiable on-chain proof of payment – so you can trust your purchases and avoid disputes."
+        "description": "Pay with an app that keeps payments private, documented, and easy to resolve. Your payment is locked in a smart-contract escrow on the Ethereum Base network for a fixed period agreed to by both buyer and merchant. During this time, funds cannot be accessed outside the contract's rules, and disputes can be raised if the agreed terms are not met. Shake and Persona verify every business's identity, reputation, and feedback. Each transaction comes with a signed agreement and verifiable on-chain proof of payment – so you can trust your purchases and avoid disputes."
       },
       {
         "headline": "Level Up as a Sensible Spender",
@@ -258,7 +259,7 @@
       },
       {
         "headline": "Pay with the crypto you already own",
-        "description": "Don't let payment limitations hold you back. If a merchant requests USDC or ETH, you can pay using Bitcoin, Tether (USDT), or Staked ETH. Simply transfer your crypto to your Coinbase wallet in the app, then use the built-in swap feature powered by Odos to convert it instantly to the required currency."
+        "description": "Don't let payment limitations hold you back. Pay with USDC, ETH, TON, USDT, Bitcoin, or Staked ETH. On mobile, use your Coinbase wallet with built-in Odos swapping to convert instantly to the required currency. On Telegram, connect your Telegram wallet or Tonkeeper, and on Farcaster, transact directly using your native ETH wallet."
       },
       {
         "headline": "Accountable\nWhere it Counts",
@@ -275,8 +276,8 @@
       "button": "Available Now"
     },
     "marketplace": {
-      "headline": "Discover listings in Marketplace",
-      "description": "Browse the Shake Marketplace Telegram channel to find goods and services, then use Shake when you are ready to arrange a purchase.",
+      "headline": "Paste to Escrow & Marketplace",
+      "description": "Found something on Craigslist or Facebook? Paste the listing into Shake or @ShakeDefiBot to buy with escrow, or explore the Shake Marketplace Telegram channel.",
       "button": "Explore Marketplace"
     }
   },
@@ -366,11 +367,15 @@
     "questions": [
       {
         "question": "How does the app work?",
-        "answer": "Shake uses an escrow, which is like a safe, that keeps the customer's money secure while a business delivers a product or service. To learn more, see the \"How it Works\" page."
+        "answer": "Shake uses smart-contract escrow on the Ethereum Base network, which acts like a safe that keeps the customer's money secure while a business delivers a product or service. To learn more, see the \"How it Works\" page."
       },
       {
         "question": "How do I get started?",
-        "answer": "You can get started by [downloading the app on your mobile device](https://shakedefi.com)."
+        "answer": "You can get started across multiple platforms:\n- **iOS & Android**: [Download the mobile app](https://shakedefi.com) for full features, Coinbase embedded wallet, and fiat onramp/offramp.\n- **Telegram**: Chat with [@ShakeDefiBot](https://t.me/ShakeDefiBot) or open the [Telegram mini-app](https://t.me/ShakeDefiBot/app) to create escrow deals and connect your Telegram wallet or Tonkeeper.\n- **Farcaster**: Open the [Shake mini-app on Farcaster](https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi) and transact with your native Base ETH wallet."
+      },
+      {
+        "question": "Which platforms and wallets does Shake DeFi support?",
+        "answer": "Shake DeFi is available on iOS, Android, Telegram, and Farcaster, supporting:\n- **Coinbase Embedded Wallet** (iOS & Android): Full feature access including fiat onramp/offramp and Odos currency swapping.\n- **Telegram Wallet & Tonkeeper** (Telegram): Transact with TON and USDT, browse the P2P Marketplace channel, or chat with [@ShakeDefiBot](https://t.me/ShakeDefiBot).\n- **Native ETH Wallet** (Farcaster): Transact on the Ethereum Base network directly from your Farcaster client."
       },
       {
         "question": "What is Post to Marketplace?",
@@ -389,12 +394,20 @@
         "answer": "You can browse current listings in the [Shake Marketplace Telegram channel](https://t.me/Shake_Marketplace)."
       },
       {
+        "question": "What is Paste to Escrow?",
+        "answer": "Paste to Escrow lets you turn any item you find on a peer-to-peer marketplace (like Craigslist, OfferUp, or Facebook Marketplace) into a secure escrow transaction. Simply copy the listing text to your clipboard and paste it into Shake DeFi — either on the app's Payment screen or in a chat with [@ShakeDefiBot](https://t.me/ShakeDefiBot) on Telegram. Shake automatically parses the details, lets you select your desired cryptocurrency, and invites the seller to join a smart-contract-protected escrow."
+      },
+      {
+        "question": "What can I do with @ShakeDefiBot on Telegram?",
+        "answer": "With [@ShakeDefiBot](https://t.me/ShakeDefiBot) on Telegram, you can paste any marketplace listing directly into your chat to generate an escrow contract, open the Shake Telegram mini-app, connect TON or Ethereum wallets, and pay with TON, USDT, USDC, or ETH — all without leaving Telegram."
+      },
+      {
         "question": "What is an escrow?",
         "answer": "An escrow is like a safe that keeps the money secure and ensures both the customer and business are fulfilling their obligations before the exchange is made. \n\nFor example, let's say you're buying a used phone from someone you found online. Normally, you'd meet up, pay them on the spot, and hope the phone works. But if it's broken or not what they promised, it's already too late — the money's gone. \n\nWith escrow, instead of paying them directly, your money goes into a secure holding account for a fixed amount of time. The seller sees the money is there, and hands over the phone. \n\nDuring the waiting period, you check the quality of the phone. If you discover it's broken, you would dispute the transaction and request a refund. If the phone works, the money is released to the seller once the waiting period is over. \n\nIn essence, the escrow:    \n1) Protects businesses by ensuring that the customer's payment is ready and available for transfer once the waiting period is over    \n2) Provides protection for both parties by ensuring funds are held securely and can only be released according to the agreed escrow terms, including refunds when warranted by a dispute outcome. \n\nTo learn more, see the \"How it Works\" page."
       },
       {
         "question": "Do I have to use an escrow period?",
-        "answer": "No. Merchants set the escrow period, and it can be set to 0 for an instant transfer with no waiting and no refund window. You still get all of Shake's other protections: identity verification, a signed agreement with photos, thorough transaction documentation, and buyer ratings. The escrow period is the right choice when you want to give buyers a safety net — instant transfer is the right choice when the sale is straightforward and both parties are ready."
+        "answer": "No. Merchants can choose any escrow duration from 0 to 180 days, and it can be set to 0 for an instant transfer with no waiting and no refund window. You still get all of Shake's other protections: identity verification, a signed agreement with photos, thorough transaction documentation, and buyer ratings. The escrow period is the right choice when you want to give buyers a safety net — instant transfer is the right choice when the sale is straightforward and both parties are ready."
       },
       {
         "question": "Do I need to know about crypto / invest in crypto to use Shake?",
@@ -406,15 +419,15 @@
       },
       {
         "question": "Can I pay with any cryptocurrency I own?",
-        "answer": "Yes! Shake supports flexible payment options through integrated currency swapping. If a merchant requests USDC or ETH, you can pay using Bitcoin, Tether (USDT), or Staked ETH. Simply transfer your cryptocurrency to your Coinbase wallet in the app, then use the built-in Odos swap feature to convert it to the required currency. This means merchants can now accept crypto from anyone, regardless of which cryptocurrency they hold.\n\nNote: Coinbase and Odos swap services are not available in all countries."
+        "answer": "Yes! Shake supports flexible payment options across supported cryptocurrencies: USDC, ETH, TON, and USDT, plus Bitcoin and Staked ETH via swapping. On mobile, you can transfer cryptocurrency to your Coinbase wallet in the app and convert it using the built-in Odos swap feature. On Telegram, you can pay with TON or USDT via your Telegram wallet or Tonkeeper. On Farcaster, you can transact directly using your native Base ETH wallet.\n\nNote: Coinbase and Odos swap services are not available in all countries."
       },
       {
         "question": "Do I have to accept any 'arbitrary' cryptocurrency as payment?",
-        "answer": "No, you specify which crypto you want to receive (USDC or ETH). When buyers pay with a different cryptocurrency like Bitcoin or Dogecoin, they use the built-in swap feature to convert it to your preferred currency before the transaction completes. You always receive exactly what you requested. When it comes time to withdraw your funds, we integrate with Coinbase to withdraw them to any account Coinbase can access."
+        "answer": "No, you specify which crypto you want to receive (such as USDC, ETH, TON, or USDT). When buyers pay with a different cryptocurrency like Bitcoin or Staked ETH, they use the built-in swap feature to convert it to your preferred currency before the transaction completes. You always receive exactly what you requested. When withdrawing funds, mobile users can offramp to fiat via Coinbase, while Telegram, Tonkeeper, and Farcaster users receive settled funds directly to their connected wallets."
       },
       {
         "question": "How long does it take to send or accept a payment? Is there an instant transfer fee?",
-        "answer": "Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow period (for example, 3 days). After that, there's a standard 2-day arbitration buffer in case a dispute is filed; if there's no dispute, funds release automatically when that buffer ends. If a merchant wants to get paid during the 2-day buffer, they can use early withdrawal for an additional fee (up to 1%): withdrawing \"2 days early\" means getting paid right when your chosen escrow period ends. Shake does not charge a separate instant transfer fee; normal network fees may apply."
+        "answer": "Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow duration between 0 and 180 days (for example, 3 days, or 0 for instant settlement). After that, there's a standard 2-day arbitration buffer in case a dispute is filed; if there's no dispute, funds release automatically when that buffer ends. If a merchant wants to get paid during the 2-day buffer, they can use early withdrawal for an additional fee (up to 1%): withdrawing \"2 days early\" means getting paid right when your chosen escrow period ends. Shake does not charge a separate instant transfer fee; normal network fees may apply."
       },
       {
         "question": "Are there fees to use Shake?",
@@ -450,7 +463,7 @@
       },
       {
         "question": "Why can't Shake or a hacker take my money and run?",
-        "answer": "Shake is non-custodial and does not have custody of user funds. Payments are held by a smart contract that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake does not store your wallet private keys — Coinbase does. This means Shake cannot access, move, or redirect escrowed funds. Coinbase provides wallet infrastructure and currency exchange, but escrow logic is enforced by blockchain code, not by human discretion — the only human input is the arbiter's dispute decision, which the contract then carries out automatically."
+        "answer": "Shake is non-custodial and never has custody of user funds or private keys. Payments are held by an on-chain smart contract on the Ethereum Base network that can only release funds to the merchant after the escrow period, or back to the buyer in the case of a refund. \n\nShake does not store your wallet private keys on any platform. On mobile, Coinbase provides secure embedded wallet infrastructure. On Telegram, keys stay secured in your Telegram wallet or Tonkeeper. On Farcaster, transactions are signed directly with your native ETH wallet. Shake cannot access, move, or redirect escrowed funds. Escrow logic is enforced by blockchain code, not by human discretion — the only human input is the arbiter's dispute decision, which the contract then carries out automatically."
       },
       {
         "question": "What is documented when I make a transaction?",
