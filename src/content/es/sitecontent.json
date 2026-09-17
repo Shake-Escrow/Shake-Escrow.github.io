@@ -197,12 +197,12 @@
     "escrowIntro": "Shake usa un escrow que es como una caja fuerte que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio.",
     "agreementNote": "Todo escrow debe tener un acuerdo que el comprador y el vendedor firmen antes de intercambiar dinero. La IA en la app sugiere un acuerdo, y se incluyen las fotos que tomes. Solo firma con tu dedo.",
     "aiCaption": "La IA admite bienes O servicios",
-    "smartContractNote": "Internamente, es un contrato inteligente en la red Ethereum Base: el temporizador de liberación se escribe en la blockchain en el momento del pago y nadie puede cambiarlo, ni siquiera Shake. Los fondos tienen exactamente dos salidas: al comerciante cuando expira el temporizador, o de vuelta al comprador si se emite un reembolso. No existe ninguna otra ruta en el código. El contrato inteligente solo ejecuta la ruta del reembolso — la decisión de si un reembolso está justificado la toma un árbitro humano, no el código en sí.",
+    "smartContractNote": "Internamente, es un contrato inteligente en la red Ethereum Base: las reglas de bloqueo se escriben en la blockchain en el momento del pago y nadie puede alterarlas, ni siquiera Shake. Los fondos solo pueden liberarse al comerciante (ya sea al vencer el temporizador de bloqueo o mediante retiro anticipado firmado tras cerrarse la ventana de disputa sin reclamos) o devolverse al comprador si un árbitro aprueba un reembolso. No existe ninguna otra ruta en el código.",
     "process": {
       "header": "El Proceso de Escrow",
       "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante la duración acordada (de 0 a 180 días), que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
       "step2": "Durante este período de espera, si no recibes lo que compraste, puedes hablarlo directamente con el comerciante o solicitar un reembolso, que será evaluado por un revisor humano.",
-      "step3": "Si no solicitas un reembolso durante el período de espera, el comerciante puede retirar el dinero."
+      "step3": "Si no se solicita una disputa durante el período de escrow acordado, el comerciante puede retirar los fondos de inmediato, o recibirlos automáticamente una vez que concluya el período estándar de arbitraje con la comisión básica."
     }
   },
   "getPaid": {
@@ -213,7 +213,7 @@
     "sections": [
       {
         "headline": "Quédate con Más\nde lo que Ganas",
-        "description": "Los procesadores de tarjetas de crédito suelen cobrar entre 2,5 y 3% por transacción. Shake cobra 0,1%, es decir, un 95% menos. Sin terminales que comprar, sin banco intermediario, sin recargos internacionales. Solo una comisión simple vinculada directamente a la transacción, para que más de cada venta se quede contigo."
+        "description": "Los procesadores de tarjetas de crédito suelen cobrar entre 2,5 y 3% por transacción, y los servicios de escrow tradicionales cobran aún más. Shake cuesta solo entre 0,1% y 1% por transacción: 0,1% para liberación estándar y transferencias instantáneas de 0 días, y hasta 1% para retiro anticipado inmediato justo cuando finaliza la ventana de escrow. Sin terminales que comprar, sin banco intermediario, sin recargos internacionales. Más de cada venta se queda contigo."
       },
       {
         "headline": "Se Adapta\na Ti",
@@ -427,11 +427,11 @@
       },
       {
         "question": "¿Cuánto tiempo tarda enviar o aceptar un pago? ¿Hay una comisión por transferencia instantánea?",
-        "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges una duración de escrow entre 0 y 180 días (por ejemplo, 3 días o 0 para una liquidación instantánea). Después de eso, hay un período estándar de arbitraje de 2 días en caso de que se presente una disputa; si no hay disputa, los fondos se liberan automáticamente cuando termina ese período. Si un comerciante quiere cobrar durante el período de arbitraje de 2 días, puede usar el retiro anticipado con una comisión adicional (hasta 1%): retirar \"2 días antes\" significa cobrar justo cuando termina el período de escrow elegido. Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar."
+        "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges una duración de escrow entre 0 y 180 días (por ejemplo, 3 días o 0 para una liquidación instantánea). Durante esta ventana acordada, el comprador puede inspeccionar la compra y presentar una disputa si es necesario. Una vez que esa ventana se cierra sin disputa, hay un período estándar de arbitraje de 3 días antes de la liberación automática con la comisión básica del 0,1%. Si un comerciante desea cobrar de inmediato justo cuando termina el período de escrow del comprador, puede usar el retiro anticipado por una comisión adicional (hasta 0,9% adicional, para una comisión total del 1,0%): retirar antes durante el período de amortiguación incurre en 0,4% (1 día antes), 0,7% (2 días antes) o 1,0% (3 días antes). Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar."
       },
       {
         "question": "¿Hay comisiones para usar Shake?",
-        "answer": "Shake cobra una comisión de servicio simple y transparente por las transacciones con escrow. La comisión estándar es del 0,1% del monto de la transacción. \n\nSi un comerciante elige retirar fondos antes de tiempo (antes de que termine el período de escrow), se aplica una comisión adicional de retiro anticipado de hasta 1% para un retiro 2 días antes. \n\nTambién pueden aplicarse comisiones de red de la blockchain, que se pagan directamente a la red. La conversión de moneda (fiat ↔ cripto) es gestionada por Coinbase Onramp y Offramp, que pueden aplicar sus propias comisiones según el activo utilizado. El intercambio de criptomonedas usa el protocolo Odos e incluye comisiones estándar de intercambio.\n\nShake no agrega comisiones ocultas, no tiene custodia de fondos y no cobra comisiones de suscripción recurrentes para el uso básico."
+        "answer": "Shake cobra una comisión de servicio transparente de solo 0,1% a 1% por transacciones con escrow. La comisión básica es del 0,1% del monto de la transacción (para transferencias instantáneas de 0 días y liberación estándar tras el período de arbitraje). \n\nSi un comerciante elige retirar fondos antes de tiempo una vez finalizada la ventana de disputa del comprador, se aplica una comisión escalonada de retiro anticipado (un 0,3% a 0,9% adicional, totalizando entre 0,4% y 1,0% según cuántos días antes ocurra el retiro, hasta 3 días antes). \n\nTambién pueden aplicarse comisiones de red de la blockchain, que se pagan directamente a la red. La conversión de moneda (fiat ↔ cripto) es gestionada por Coinbase Onramp y Offramp, que pueden aplicar sus propias comisiones según el activo utilizado. El intercambio de criptomonedas usa el protocolo Odos e incluye comisiones estándar de intercambio.\n\nShake no agrega comisiones ocultas, no tiene custodia de fondos y no cobra comisiones de suscripción recurrentes para el uso básico."
       },
       {
         "question": "¿Necesito reportar mis transacciones de Shake en mis impuestos?",

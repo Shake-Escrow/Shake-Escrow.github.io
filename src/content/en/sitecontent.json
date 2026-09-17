@@ -197,12 +197,12 @@
     "escrowIntro": "Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.",
     "agreementNote": "Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.",
     "aiCaption": "AI supports goods OR services",
-    "smartContractNote": "Under the hood, it's a smart contract on the Ethereum Base network: the release timer is written to the blockchain at the moment of payment and cannot be changed by anyone, including Shake. Funds have exactly two exits — to the merchant once the timer expires, or back to the buyer if a refund is issued. No other path exists in the code. The smart contract only executes the refund path — the decision of whether a refund is warranted is made by a human arbiter, not by the code itself.",
+    "smartContractNote": "Under the hood, it's a smart contract on the Ethereum Base network: the lockup rules are written to the blockchain at the moment of payment and cannot be altered by anyone, including Shake. Funds can only be released to the merchant (either upon lockup expiry or via signed early withdrawal after the dispute window closes without dispute) or returned to the buyer if a refund is approved by an arbiter. No other path exists in the code.",
     "process": {
       "header": "The Escrow Process",
       "step1": "After making a transaction, your money is placed into an escrow for the agreed duration (0–180 days), which is like a neutral safe, rather than going directly to the merchant.",
       "step2": "During this waiting period, if you don't receive what you purchased, you can discuss it with the merchant directly or request a refund, which a human reviewer will evaluate.",
-      "step3": "If you don't request a refund during the waiting period, the merchant can withdraw the money."
+      "step3": "If no dispute is requested during the agreed escrow period, the merchant can withdraw funds immediately, or receive them automatically once the standard arbitration buffer concludes at the baseline fee."
     }
   },
   "getPaid": {
@@ -213,7 +213,7 @@
     "sections": [
       {
         "headline": "Keep More of\nWhat You Earn",
-        "description": "Credit card processors typically charge 2.5–3% per transaction. Shake charges 0.1% — that's 95% lower. No terminals to buy, no bank in the middle, no international surcharges. Just a simple fee tied directly to the transaction, so more of every sale stays with you."
+        "description": "Credit card processors typically charge 2.5–3% per transaction, and traditional escrow services charge even more. Shake costs just 0.1% – 1% per transaction — 0.1% for standard release and 0-day instant transfers, and up to 1% for immediate early withdrawal right when the escrow window ends. No terminals to buy, no bank in the middle, no international surcharges. More of every sale stays with you."
       },
       {
         "headline": "Adapts\nto You",
@@ -427,11 +427,11 @@
       },
       {
         "question": "How long does it take to send or accept a payment? Is there an instant transfer fee?",
-        "answer": "Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow duration between 0 and 180 days (for example, 3 days, or 0 for instant settlement). After that, there's a standard 2-day arbitration buffer in case a dispute is filed; if there's no dispute, funds release automatically when that buffer ends. If a merchant wants to get paid during the 2-day buffer, they can use early withdrawal for an additional fee (up to 1%): withdrawing \"2 days early\" means getting paid right when your chosen escrow period ends. Shake does not charge a separate instant transfer fee; normal network fees may apply."
+        "answer": "Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow duration between 0 and 180 days (for example, 3 days, or 0 for instant settlement). During this agreed window, the buyer can inspect the purchase and file a dispute if needed. After that window closes without a dispute, there is a standard 3-day arbitration buffer before automatic release at the baseline 0.1% fee. If a merchant wants to get paid immediately right when the buyer's escrow period ends, they can use early withdrawal for an additional fee (up to 0.9% additional, for a total fee of 1.0%): withdrawing earlier during the buffer incurs 0.4% (1 day early), 0.7% (2 days early), or 1.0% (3 days early). Shake does not charge a separate instant transfer fee; normal network fees may apply."
       },
       {
         "question": "Are there fees to use Shake?",
-        "answer": "Shake charges a simple, transparent service fee for escrowed transactions. The standard fee is 0.1% of the transaction amount. \n\nIf a merchant chooses to withdraw funds early (before the escrow period ends), an additional early withdrawal fee applies, up to 1% for a 2-day early withdrawal. \n\nBlockchain network fees may also apply, and are paid directly to the network. Currency conversion (fiat ↔ crypto) is handled by Coinbase Onramp and Offramp, which may apply their own fees depending on the asset used. Currency swapping between cryptocurrencies uses the Odos protocol and includes standard swap fees.\n\nShake does not add hidden fees, does not take custody of funds, and does not charge recurring subscription fees for basic use."
+        "answer": "Shake charges a transparent service fee of just 0.1% – 1% for escrowed transactions. The baseline fee is 0.1% of the transaction amount (for 0-day instant transfers and standard release after the arbitration buffer). \n\nIf a merchant chooses to withdraw funds early once the buyer's dispute window ends, a tiered early withdrawal fee applies (an additional 0.3% to 0.9%, totaling 0.4% to 1.0% depending on how many days early the withdrawal occurs, up to 3 days early). \n\nBlockchain network fees may also apply, and are paid directly to the network. Currency conversion (fiat ↔ crypto) is handled by Coinbase Onramp and Offramp, which may apply their own fees depending on the asset used. Currency swapping between cryptocurrencies uses the Odos protocol and includes standard swap fees.\n\nShake does not add hidden fees, does not take custody of funds, and does not charge recurring subscription fees for basic use."
       },
       {
         "question": "Do I need to report my Shake transactions on my taxes?",
