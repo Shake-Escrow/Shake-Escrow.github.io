@@ -575,5 +575,208 @@
     "errorGenerateWallet": "Failed to generate wallet",
     "errorProvisioning": "Provisioning failed",
     "downloadFilename": "shake_keys.txt"
+  },
+  "securePayments": {
+    "seo": {
+      "title": "Secure Payments With Smart-Contract Escrow",
+      "description": "Buy and sell with payment terms both sides agree to. Non-custodial smart-contract escrow on Base for commercial trade, wholesale commodities, vehicles, services, and direct transactions."
+    },
+    "hero": {
+      "chip": "Smart-Contract Escrow on Base",
+      "headline": "Secure Payments With Smart-Contract Escrow",
+      "subheadline": "Buy and sell with payment terms both sides agree to.",
+      "description": "Shake DeFi provides non-custodial payment escrow for commercial and direct transactions. Agree on the transaction, lock the payment in a smart contract on Base, and release the funds according to the agreed escrow terms.",
+      "cta": "Get Started",
+      "availableOn": "Available on:",
+      "availablePlatforms": "Telegram • Browser • iOS • Android • Farcaster",
+      "preview": {
+        "activeSmartContract": "Active Smart Contract",
+        "escrowSafe": "Shake Escrow Safe",
+        "fundsLocked": "Funds Locked on Base",
+        "agreementTermsTitle": "Agreement Terms",
+        "agreementTermsValue": "Mutual Signed Terms",
+        "agreementTermsStatus": "Both sides approved ✓",
+        "escrowProtectionTitle": "Escrow Protection",
+        "escrowProtectionValue": "Non-Custodial",
+        "escrowProtectionStatus": "Base Smart Contract",
+        "standardFeeTitle": "Standard Fee",
+        "standardFeeValue": "0.1% Service Fee",
+        "standardFeeStatus": "No monthly subscriptions"
+      }
+    },
+    "overview": {
+      "headline": "Payment Escrow for Real-World Transactions",
+      "subheadline": "Buying a vehicle, sourcing bulk commodities, purchasing equipment, hiring a contractor, or selling goods?",
+      "description": "Shake gives buyers and sellers a structured way to transact without sending payment directly to the other party.",
+      "callout": "You choose the escrow duration, agree to the transaction terms, and fund the smart contract. The payment remains locked while the transaction is completed.",
+      "billImageCaption": "Clear transaction terms & escrow deposit",
+      "signatureImageCaption": "Signed agreement with item photos & terms"
+    },
+    "howItWorks": {
+      "tag": "Step-by-Step Flow",
+      "headline": "How It Works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Agree on the transaction",
+          "description": "The buyer and seller agree on the item or service, price, escrow duration, and other transaction terms."
+        },
+        {
+          "step": "2",
+          "title": "Fund the escrow",
+          "description1": "The buyer sends the agreed payment to the Shake smart contract.",
+          "description2": "Shake supports USDC and USDT, as well as other supported cryptocurrencies including ETH and TON. Additional assets may be available through supported currency-swapping features.",
+          "swappingBadge": "+ Swapping Features"
+        },
+        {
+          "step": "3",
+          "title": "Complete the transaction",
+          "description": "The seller delivers the goods or services while the payment remains locked according to the agreed escrow terms."
+        },
+        {
+          "step": "4",
+          "title": "Release the payment",
+          "description": "When the applicable escrow period and release conditions are satisfied, the payment is released to the seller according to the smart contract rules."
+        },
+        {
+          "step": "5",
+          "title": "Dispute when necessary",
+          "description": "If the transaction does not go as agreed, the buyer can request a refund during the applicable dispute period. Shake's human review process evaluates the available transaction evidence and processes the outcome according to the escrow rules."
+        }
+      ]
+    },
+    "nonCustodial": {
+      "title": "Non-Custodial by Design",
+      "badge": "Base Network Smart Contract",
+      "lead": "Shake does not take custody of escrowed customer funds.",
+      "body1": "Your payment is held by a smart contract on the Base network rather than in a Shake-controlled account. The smart contract defines the conditions under which funds can be released or returned.",
+      "body2": "You use your connected wallet to authorize transactions."
+    },
+    "cryptocurrency": {
+      "headline": "Use the Cryptocurrency You Already Have",
+      "body1": "Shake supports USDC and USDT, along with ETH, TON, and other supported cryptocurrencies.",
+      "body2": "The seller can specify the cryptocurrency they want to receive. Where supported, buyers can use integrated currency-swapping functionality to convert another supported cryptocurrency into the required payment currency.",
+      "body3": "Shake is designed around cryptocurrency payments, but you do not need investment expertise to understand the basic transaction process: agree on terms, fund the escrow, complete the transaction, and release the payment according to those terms.",
+      "directlySupportedLabel": "Directly Supported:",
+      "swappingLabel": "Currency Swapping"
+    },
+    "fiatConversion": {
+      "headline": "Optional Fiat Conversion",
+      "poweredBy": "Powered by",
+      "body1": "On supported mobile platforms and in eligible locations, Coinbase provides optional fiat onramp and offramp services.",
+      "body2": "You can use Coinbase to purchase supported cryptocurrency using available payment methods or convert cryptocurrency back to fiat.",
+      "disclaimer": "Shake does not hold your fiat money or operate the Coinbase conversion service. Coinbase availability, supported assets, payment methods, and fees vary by country."
+    },
+    "fees": {
+      "headline": "Transparent Fees",
+      "standardFeeLabel": "Standard Escrow Fee",
+      "standardFeeValue": "0.1%",
+      "standardFeeSub": "0.1%–1.0% depending on release option",
+      "body1": "Shake charges 0.1%–1.0% for escrow transactions depending on the release option selected.",
+      "body2": "The standard service fee is 0.1%. Additional fees may apply when a merchant chooses an early withdrawal option.",
+      "body3": "Blockchain network fees may also apply. Third-party services such as cryptocurrency conversion and swapping may have their own fees.",
+      "noSubscriptions": "✓ There are no recurring subscription fees for basic Shake use."
+    },
+    "identityRecords": {
+      "headline": "Identity and Transaction Records",
+      "lead": "Shake uses identity verification to establish accountability between transaction participants.",
+      "body1": "Each transaction can include a signed agreement, transaction details, supporting documentation, and on-chain payment records.",
+      "body2": "For disputed transactions, a human reviewer evaluates the available evidence.",
+      "pillars": {
+        "accountability": {
+          "title": "Accountability",
+          "description": "Identity-verified participants"
+        },
+        "signedRecords": {
+          "title": "Signed Records",
+          "description": "On-chain transaction proof"
+        },
+        "humanReview": {
+          "title": "Human Review",
+          "description": "Evidence-based dispute evaluation"
+        }
+      }
+    },
+    "useCases": {
+      "headline": "Built for Real-World Commerce",
+      "subtitle": "Shake can be used for transactions involving:",
+      "items": {
+        "vehicles": {
+          "title": "Vehicles",
+          "description": "Buy and sell vehicles with agreed payment terms."
+        },
+        "commodities": {
+          "title": "Commodities & Wholesale",
+          "description": "Secure high-value orders, raw materials, wholesale goods, and commercial bulk supply."
+        },
+        "marketplace": {
+          "title": "Marketplace Goods",
+          "description": "Add escrow to purchases originating from online marketplaces and direct commerce."
+        },
+        "services": {
+          "title": "Services",
+          "description": "Use payment escrow when hiring contractors, freelancers, or other service providers."
+        },
+        "other": {
+          "title": "Other Transactions",
+          "description": "Create an escrow transaction whenever both parties want payment held according to agreed terms."
+        }
+      }
+    },
+    "disclaimerBanner": {
+      "headline": "Payment Service, Not an Investment Product",
+      "body1": "Shake DeFi is a payment and escrow service. It is not an investment platform and does not offer investment products or investment advice.",
+      "body2": "Cryptocurrency is used as the payment method for transactions."
+    },
+    "finalCta": {
+      "headline": "Your Payment. Your Terms. Your Escrow.",
+      "description": "Create a Shake transaction and give both sides a clear payment process backed by smart-contract escrow.",
+      "cta": "Get Started",
+      "subtext": "Choose from Telegram, Web Browser, iOS, Android, or Farcaster"
+    },
+    "legal": {
+      "headline": "Important Information",
+      "paragraphs": [
+        "Shake DeFi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
+        "Shake services and third-party integrations are subject to geographic and other availability restrictions. Coinbase and other third-party services are not available in all countries.",
+        "Cryptocurrency transactions may have tax and other legal consequences. Users are responsible for understanding and complying with applicable laws and tax requirements.",
+        "Shake is intended for users age 18 and older."
+      ],
+      "links": {
+        "termsOfService": "Terms of Service",
+        "privacyPolicy": "Privacy Policy",
+        "contact": "Contact Shake DeFi"
+      }
+    },
+    "platformModal": {
+      "tag": "Select Your Platform",
+      "headline": "Get Started With Shake",
+      "subtitle": "Choose how you'd like to open or install Shake:",
+      "cancel": "Cancel",
+      "platforms": {
+        "telegram": {
+          "name": "Telegram Mini App",
+          "badge": "Most Popular",
+          "description": "Instant launch directly inside Telegram without any app downloads"
+        },
+        "browser": {
+          "name": "Web Browser App",
+          "badge": "Instant Access",
+          "description": "Use the web app on any mobile or desktop browser with your connected wallet"
+        },
+        "ios": {
+          "name": "Apple iOS",
+          "description": "Native mobile app for iPhone and iPad on the App Store"
+        },
+        "android": {
+          "name": "Google Android",
+          "description": "Native mobile app for Android devices via Google Play"
+        },
+        "farcaster": {
+          "name": "Farcaster Mini App",
+          "description": "Interact seamlessly within the decentralized social feed"
+        }
+      }
+    }
   }
 }

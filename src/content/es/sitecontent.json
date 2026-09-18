@@ -575,5 +575,208 @@
     "errorGenerateWallet": "Fallo al generar la billetera",
     "errorProvisioning": "El aprovisionamiento falló",
     "downloadFilename": "claves_shake.txt"
+  },
+  "securePayments": {
+    "seo": {
+      "title": "Pagos Seguros con Escrow de Contrato Inteligente",
+      "description": "Compra y vende con términos de pago que ambas partes acuerdan. Escrow de contrato inteligente no custodial en Base para comercio, materias primas al por mayor, vehículos, servicios y transacciones directas."
+    },
+    "hero": {
+      "chip": "Escrow de Contrato Inteligente en Base",
+      "headline": "Pagos Seguros con Escrow de Contrato Inteligente",
+      "subheadline": "Compra y vende con términos de pago que ambas partes acuerdan.",
+      "description": "Shake DeFi ofrece escrow de pagos no custodial para transacciones comerciales y directas. Acuerda la transacción, bloquea el pago en un contrato inteligente en Base y libera los fondos según los términos de escrow acordados.",
+      "cta": "Empezar",
+      "availableOn": "Disponible en:",
+      "availablePlatforms": "Telegram • Navegador • iOS • Android • Farcaster",
+      "preview": {
+        "activeSmartContract": "Contrato Inteligente Activo",
+        "escrowSafe": "Caja Fuerte de Escrow de Shake",
+        "fundsLocked": "Fondos Bloqueados en Base",
+        "agreementTermsTitle": "Términos del Acuerdo",
+        "agreementTermsValue": "Términos Firmados Mutuamente",
+        "agreementTermsStatus": "Ambas partes aprobaron ✓",
+        "escrowProtectionTitle": "Protección de Escrow",
+        "escrowProtectionValue": "No Custodial",
+        "escrowProtectionStatus": "Contrato Inteligente en Base",
+        "standardFeeTitle": "Comisión Estándar",
+        "standardFeeValue": "0.1% de Comisión por Servicio",
+        "standardFeeStatus": "Sin suscripciones mensuales"
+      }
+    },
+    "overview": {
+      "headline": "Escrow de Pagos para Transacciones del Mundo Real",
+      "subheadline": "¿Comprando un vehículo, obteniendo materias primas al por mayor, adquiriendo equipo, contratando a un contratista o vendiendo bienes?",
+      "description": "Shake ofrece a compradores y vendedores una forma estructurada de transaccionar sin enviar el pago directamente a la otra parte.",
+      "callout": "Eliges la duración del escrow, acuerdas los términos de la transacción y financias el contrato inteligente. El pago permanece bloqueado mientras se completa la transacción.",
+      "billImageCaption": "Términos claros de la transacción y depósito de escrow",
+      "signatureImageCaption": "Acuerdo firmado con fotos del artículo y términos"
+    },
+    "howItWorks": {
+      "tag": "Flujo Paso a Paso",
+      "headline": "Cómo Funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Acuerden la transacción",
+          "description": "El comprador y el vendedor acuerdan el artículo o servicio, el precio, la duración del escrow y otros términos de la transacción."
+        },
+        {
+          "step": "2",
+          "title": "Financien el escrow",
+          "description1": "El comprador envía el pago acordado al contrato inteligente de Shake.",
+          "description2": "Shake admite USDC y USDT, además de otras criptomonedas compatibles como ETH y TON. Es posible que haya otros activos disponibles a través de las funciones de intercambio de monedas compatibles.",
+          "swappingBadge": "+ Funciones de Intercambio"
+        },
+        {
+          "step": "3",
+          "title": "Completen la transacción",
+          "description": "El vendedor entrega los bienes o servicios mientras el pago permanece bloqueado según los términos de escrow acordados."
+        },
+        {
+          "step": "4",
+          "title": "Liberen el pago",
+          "description": "Cuando se cumplen el período de escrow aplicable y las condiciones de liberación, el pago se libera al vendedor según las reglas del contrato inteligente."
+        },
+        {
+          "step": "5",
+          "title": "Disputen cuando sea necesario",
+          "description": "Si la transacción no se desarrolla según lo acordado, el comprador puede solicitar un reembolso durante el período de disputa aplicable. El proceso de revisión humana de Shake evalúa la evidencia disponible de la transacción y procesa el resultado según las reglas del escrow."
+        }
+      ]
+    },
+    "nonCustodial": {
+      "title": "No Custodial por Diseño",
+      "badge": "Contrato Inteligente de la Red Base",
+      "lead": "Shake no toma custodia de los fondos de los clientes en escrow.",
+      "body1": "Tu pago es retenido por un contrato inteligente en la red Base, en lugar de en una cuenta controlada por Shake. El contrato inteligente define las condiciones bajo las cuales los fondos pueden liberarse o devolverse.",
+      "body2": "Usas tu billetera conectada para autorizar transacciones."
+    },
+    "cryptocurrency": {
+      "headline": "Usa la Criptomoneda que Ya Tienes",
+      "body1": "Shake admite USDC y USDT, junto con ETH, TON y otras criptomonedas compatibles.",
+      "body2": "El vendedor puede especificar la criptomoneda que desea recibir. Cuando esté disponible, los compradores pueden usar la función integrada de intercambio de monedas para convertir otra criptomoneda compatible a la moneda de pago requerida.",
+      "body3": "Shake está diseñado en torno a los pagos con criptomonedas, pero no necesitas experiencia en inversiones para entender el proceso básico de la transacción: acuerda los términos, financia el escrow, completa la transacción y libera el pago según esos términos.",
+      "directlySupportedLabel": "Compatibles Directamente:",
+      "swappingLabel": "Intercambio de Monedas"
+    },
+    "fiatConversion": {
+      "headline": "Conversión Opcional a Moneda Fiat",
+      "poweredBy": "Con tecnología de",
+      "body1": "En plataformas móviles compatibles y en ubicaciones elegibles, Coinbase ofrece servicios opcionales de entrada y salida a moneda fiat.",
+      "body2": "Puedes usar Coinbase para comprar criptomonedas compatibles con los métodos de pago disponibles, o para convertir criptomonedas de nuevo a moneda fiat.",
+      "disclaimer": "Shake no retiene tu dinero fiat ni opera el servicio de conversión de Coinbase. La disponibilidad de Coinbase, los activos compatibles, los métodos de pago y las comisiones varían según el país."
+    },
+    "fees": {
+      "headline": "Comisiones Transparentes",
+      "standardFeeLabel": "Comisión Estándar de Escrow",
+      "standardFeeValue": "0.1%",
+      "standardFeeSub": "0.1%–1.0% según la opción de liberación",
+      "body1": "Shake cobra entre 0.1% y 1.0% por las transacciones de escrow, según la opción de liberación seleccionada.",
+      "body2": "La comisión estándar por servicio es del 0.1%. Pueden aplicarse comisiones adicionales cuando un comerciante elige una opción de retiro anticipado.",
+      "body3": "También pueden aplicarse comisiones de red de la cadena de bloques. Los servicios de terceros, como la conversión y el intercambio de criptomonedas, pueden tener sus propias comisiones.",
+      "noSubscriptions": "✓ No hay comisiones de suscripción recurrentes para el uso básico de Shake."
+    },
+    "identityRecords": {
+      "headline": "Identidad y Registros de Transacciones",
+      "lead": "Shake usa verificación de identidad para establecer responsabilidad entre los participantes de la transacción.",
+      "body1": "Cada transacción puede incluir un acuerdo firmado, detalles de la transacción, documentación de respaldo y registros de pago en la cadena de bloques.",
+      "body2": "Para transacciones en disputa, un revisor humano evalúa la evidencia disponible.",
+      "pillars": {
+        "accountability": {
+          "title": "Responsabilidad",
+          "description": "Participantes con identidad verificada"
+        },
+        "signedRecords": {
+          "title": "Registros Firmados",
+          "description": "Prueba de transacción en la cadena de bloques"
+        },
+        "humanReview": {
+          "title": "Revisión Humana",
+          "description": "Evaluación de disputas basada en evidencia"
+        }
+      }
+    },
+    "useCases": {
+      "headline": "Diseñado para el Comercio del Mundo Real",
+      "subtitle": "Shake se puede usar para transacciones que involucren:",
+      "items": {
+        "vehicles": {
+          "title": "Vehículos",
+          "description": "Compra y vende vehículos con términos de pago acordados."
+        },
+        "commodities": {
+          "title": "Materias Primas y Mayoreo",
+          "description": "Asegura pedidos de alto valor, materias primas, bienes al por mayor y suministro comercial a granel."
+        },
+        "marketplace": {
+          "title": "Bienes de Mercado",
+          "description": "Agrega escrow a compras provenientes de mercados en línea y comercio directo."
+        },
+        "services": {
+          "title": "Servicios",
+          "description": "Usa escrow de pagos al contratar contratistas, freelancers u otros proveedores de servicios."
+        },
+        "other": {
+          "title": "Otras Transacciones",
+          "description": "Crea una transacción de escrow siempre que ambas partes quieran que el pago se retenga según términos acordados."
+        }
+      }
+    },
+    "disclaimerBanner": {
+      "headline": "Servicio de Pago, No un Producto de Inversión",
+      "body1": "Shake DeFi es un servicio de pago y escrow. No es una plataforma de inversión y no ofrece productos de inversión ni asesoría de inversión.",
+      "body2": "La criptomoneda se usa como método de pago para las transacciones."
+    },
+    "finalCta": {
+      "headline": "Tu Pago. Tus Términos. Tu Escrow.",
+      "description": "Crea una transacción de Shake y dale a ambas partes un proceso de pago claro respaldado por escrow de contrato inteligente.",
+      "cta": "Empezar",
+      "subtext": "Elige entre Telegram, Navegador Web, iOS, Android o Farcaster"
+    },
+    "legal": {
+      "headline": "Información Importante",
+      "paragraphs": [
+        "Shake DeFi, Inc. es una corporación organizada bajo las leyes del Estado de Wisconsin.",
+        "Los servicios de Shake y las integraciones de terceros están sujetos a restricciones geográficas y de otro tipo de disponibilidad. Coinbase y otros servicios de terceros no están disponibles en todos los países.",
+        "Las transacciones de criptomonedas pueden tener consecuencias fiscales y legales. Los usuarios son responsables de comprender y cumplir con las leyes y requisitos fiscales aplicables.",
+        "Shake está destinado a usuarios de 18 años o más."
+      ],
+      "links": {
+        "termsOfService": "Términos de Servicio",
+        "privacyPolicy": "Política de Privacidad",
+        "contact": "Contactar a Shake DeFi"
+      }
+    },
+    "platformModal": {
+      "tag": "Selecciona Tu Plataforma",
+      "headline": "Empieza con Shake",
+      "subtitle": "Elige cómo quieres abrir o instalar Shake:",
+      "cancel": "Cancelar",
+      "platforms": {
+        "telegram": {
+          "name": "Mini App de Telegram",
+          "badge": "Más Popular",
+          "description": "Inicio instantáneo directamente dentro de Telegram sin descargar ninguna app"
+        },
+        "browser": {
+          "name": "App Web en el Navegador",
+          "badge": "Acceso Instantáneo",
+          "description": "Usa la app web en cualquier navegador móvil o de escritorio con tu billetera conectada"
+        },
+        "ios": {
+          "name": "Apple iOS",
+          "description": "App móvil nativa para iPhone y iPad en la App Store"
+        },
+        "android": {
+          "name": "Google Android",
+          "description": "App móvil nativa para dispositivos Android a través de Google Play"
+        },
+        "farcaster": {
+          "name": "Mini App de Farcaster",
+          "description": "Interactúa sin problemas dentro del feed social descentralizado"
+        }
+      }
+    }
   }
 }

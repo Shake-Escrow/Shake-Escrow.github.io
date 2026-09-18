@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
   ShieldCheck,
   Lock,
-  CheckCircle2,
   AlertCircle,
   FileCheck2,
   Car,
@@ -12,10 +11,8 @@ import {
   Briefcase,
   Layers,
   ArrowRight,
-  ExternalLink,
   X,
   Scale,
-  DollarSign,
   ArrowLeftRight,
   UserCheck,
   Boxes,
@@ -27,6 +24,8 @@ import Section from '../components/common/section';
 import Button from '../components/common/button';
 import SEO from '../components/common/seo';
 import { useLocale } from '../context/LocaleContext';
+import { useContent } from '../hooks/useContent';
+import enSite from '../content/en/sitecontent.json';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
@@ -43,45 +42,47 @@ interface PlatformOption {
 const SecurePayments: React.FC = () => {
   const { locale } = useLocale();
   const [isPlatformModalOpen, setIsPlatformModalOpen] = useState(false);
+  const siteContent = useContent('sitecontent');
+  const content = siteContent.securePayments || enSite.securePayments;
 
   const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
   const platforms: PlatformOption[] = [
     {
       id: 'telegram',
-      name: 'Telegram Mini App',
-      badge: 'Most Popular',
-      description: 'Instant launch directly inside Telegram without any app downloads',
+      name: content.platformModal.platforms.telegram.name,
+      badge: content.platformModal.platforms.telegram.badge,
+      description: content.platformModal.platforms.telegram.description,
       url: 'https://t.me/ShakeDefiBot/app',
       icon: FaTelegramPlane,
       highlight: true,
     },
     {
       id: 'browser',
-      name: 'Web Browser App',
-      badge: 'Instant Access',
-      description: 'Use the web app on any mobile or desktop browser with your connected wallet',
+      name: content.platformModal.platforms.browser.name,
+      badge: content.platformModal.platforms.browser.badge,
+      description: content.platformModal.platforms.browser.description,
       url: webAppUrl,
       icon: GoBrowser,
     },
     {
       id: 'ios',
-      name: 'Apple iOS',
-      description: 'Native mobile app for iPhone and iPad on the App Store',
+      name: content.platformModal.platforms.ios.name,
+      description: content.platformModal.platforms.ios.description,
       url: 'https://apps.apple.com/us/app/shake-defi/id6756281576',
       icon: FaApple,
     },
     {
       id: 'android',
-      name: 'Google Android',
-      description: 'Native mobile app for Android devices via Google Play',
+      name: content.platformModal.platforms.android.name,
+      description: content.platformModal.platforms.android.description,
       url: 'https://play.google.com/store/apps/details?id=com.shakedefi.app',
       icon: FaGooglePlay,
     },
     {
       id: 'farcaster',
-      name: 'Farcaster Mini App',
-      description: 'Interact seamlessly within the decentralized social feed',
+      name: content.platformModal.platforms.farcaster.name,
+      description: content.platformModal.platforms.farcaster.description,
       url: FARCASTER_APP_URL,
       icon: () => (
         <img
@@ -104,8 +105,8 @@ const SecurePayments: React.FC = () => {
   return (
     <div className="pt-20 md:pt-24 bg-white text-secondary-dark font-body overflow-x-hidden">
       <SEO
-        title="Secure Payments With Smart-Contract Escrow"
-        description="Buy and sell with payment terms both sides agree to. Non-custodial smart-contract escrow on Base for commercial trade, wholesale commodities, vehicles, services, and direct transactions."
+        title={content.seo.title}
+        description={content.seo.description}
         canonical="/secure-payments"
       />
 
@@ -116,22 +117,22 @@ const SecurePayments: React.FC = () => {
           <div className="flex justify-center mb-5">
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/25 px-4 py-1.5 font-body text-xs sm:text-sm font-semibold text-secondary-dark border border-accent/40 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Smart-Contract Escrow on Base</span>
+              <span>{content.hero.chip}</span>
             </div>
           </div>
 
           {/* Hero text */}
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-secondary-dark tracking-tight leading-[1.15]">
-              Secure Payments With Smart-Contract Escrow
+              {content.hero.headline}
             </h1>
 
             <h2 className="mt-4 font-display text-lg sm:text-xl md:text-2xl text-secondary-dark font-semibold">
-              Buy and sell with payment terms both sides agree to.
+              {content.hero.subheadline}
             </h2>
 
             <p className="mt-5 font-body text-base sm:text-lg md:text-xl text-secondary leading-relaxed max-w-2xl mx-auto">
-              Shake DeFi provides non-custodial payment escrow for commercial and direct transactions. Agree on the transaction, lock the payment in a smart contract on Base, and release the funds according to the agreed escrow terms.
+              {content.hero.description}
             </p>
 
             {/* Primary Hero CTA */}
@@ -142,19 +143,19 @@ const SecurePayments: React.FC = () => {
                 onClick={handleOpenModal}
                 className="w-full sm:w-auto px-8 py-4 text-lg font-bold rounded-full shadow-md hover:shadow-lg transition-transform transform active:scale-95"
               >
-                Get Started
+                {content.hero.cta}
               </Button>
             </div>
 
             {/* Quick multi-platform badges below button */}
             <div className="mt-4 flex items-center justify-center gap-2 text-xs sm:text-sm text-secondary">
-              <span className="opacity-75">Available on:</span>
+              <span className="opacity-75">{content.hero.availableOn}</span>
               <button
                 type="button"
                 onClick={handleOpenModal}
                 className="underline hover:text-secondary-dark font-medium cursor-pointer"
               >
-                Telegram • Browser • iOS • Android • Farcaster
+                {content.hero.availablePlatforms}
               </button>
             </div>
           </div>
@@ -172,35 +173,35 @@ const SecurePayments: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-xs uppercase font-bold tracking-wider text-secondary">
-                      Active Smart Contract
+                      {content.hero.preview.activeSmartContract}
                     </div>
                     <div className="font-display text-sm sm:text-base font-bold text-secondary-dark">
-                      Shake Escrow Safe
+                      {content.hero.preview.escrowSafe}
                     </div>
                   </div>
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  Funds Locked on Base
+                  {content.hero.preview.fundsLocked}
                 </span>
               </div>
 
               {/* Agreement summary lines */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
                 <div className="bg-white/85 rounded-xl p-3 border border-gray-200/60">
-                  <div className="text-[11px] text-secondary font-medium">Agreement Terms</div>
-                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">Mutual Signed Terms</div>
-                  <div className="text-[11px] text-emerald-600 font-medium mt-1">Both sides approved ✓</div>
+                  <div className="text-[11px] text-secondary font-medium">{content.hero.preview.agreementTermsTitle}</div>
+                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">{content.hero.preview.agreementTermsValue}</div>
+                  <div className="text-[11px] text-emerald-600 font-medium mt-1">{content.hero.preview.agreementTermsStatus}</div>
                 </div>
                 <div className="bg-white/85 rounded-xl p-3 border border-gray-200/60">
-                  <div className="text-[11px] text-secondary font-medium">Escrow Protection</div>
-                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">Non-Custodial</div>
-                  <div className="text-[11px] text-secondary font-medium mt-1">Base Smart Contract</div>
+                  <div className="text-[11px] text-secondary font-medium">{content.hero.preview.escrowProtectionTitle}</div>
+                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">{content.hero.preview.escrowProtectionValue}</div>
+                  <div className="text-[11px] text-secondary font-medium mt-1">{content.hero.preview.escrowProtectionStatus}</div>
                 </div>
                 <div className="bg-white/85 rounded-xl p-3 border border-gray-200/60">
-                  <div className="text-[11px] text-secondary font-medium">Standard Fee</div>
-                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">0.1% Service Fee</div>
-                  <div className="text-[11px] text-secondary font-medium mt-1">No monthly subscriptions</div>
+                  <div className="text-[11px] text-secondary font-medium">{content.hero.preview.standardFeeTitle}</div>
+                  <div className="font-semibold text-secondary-dark text-sm mt-0.5">{content.hero.preview.standardFeeValue}</div>
+                  <div className="text-[11px] text-secondary font-medium mt-1">{content.hero.preview.standardFeeStatus}</div>
                 </div>
               </div>
             </div>
@@ -212,15 +213,15 @@ const SecurePayments: React.FC = () => {
       <Section bgColor="bg-white" className="py-12 md:py-20 border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold leading-snug">
-            Payment Escrow for Real-World Transactions
+            {content.overview.headline}
           </h2>
 
           <p className="mt-5 font-display text-base sm:text-lg md:text-xl font-semibold text-secondary-dark">
-            Buying a vehicle, sourcing bulk commodities, purchasing equipment, hiring a contractor, or selling goods?
+            {content.overview.subheadline}
           </p>
 
           <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed max-w-2xl mx-auto">
-            Shake gives buyers and sellers a structured way to transact without sending payment directly to the other party.
+            {content.overview.description}
           </p>
 
           <div className="mt-8 rounded-2xl bg-[#e6e9ed] p-6 sm:p-8 text-left border border-gray-200/80 max-w-2xl mx-auto">
@@ -230,7 +231,7 @@ const SecurePayments: React.FC = () => {
               </div>
               <div>
                 <p className="font-body text-base sm:text-lg text-secondary-dark leading-relaxed font-medium">
-                  You choose the escrow duration, agree to the transaction terms, and fund the smart contract. The payment remains locked while the transaction is completed.
+                  {content.overview.callout}
                 </p>
               </div>
             </div>
@@ -246,7 +247,7 @@ const SecurePayments: React.FC = () => {
                 loading="lazy"
               />
               <div className="p-3 text-xs text-secondary font-medium text-center">
-                Clear transaction terms & escrow deposit
+                {content.overview.billImageCaption}
               </div>
             </div>
             <div className="w-full sm:w-1/2 bg-white rounded-2xl p-2 shadow-md border border-gray-200/70">
@@ -257,7 +258,7 @@ const SecurePayments: React.FC = () => {
                 loading="lazy"
               />
               <div className="p-3 text-xs text-secondary font-medium text-center">
-                Signed agreement with item photos & terms
+                {content.overview.signatureImageCaption}
               </div>
             </div>
           </div>
@@ -269,10 +270,10 @@ const SecurePayments: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10 md:mb-14">
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/25 px-3.5 py-1 font-body text-xs sm:text-sm font-semibold text-secondary-dark mb-3">
-              <span>Step-by-Step Flow</span>
+              <span>{content.howItWorks.tag}</span>
             </div>
             <h2 className="font-display text-3xl sm:text-4xl text-secondary-dark font-bold">
-              How It Works
+              {content.howItWorks.headline}
             </h2>
           </div>
 
@@ -282,14 +283,14 @@ const SecurePayments: React.FC = () => {
             <div className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-xs hover:border-accent transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-dark text-white flex items-center justify-center font-display font-bold text-base shrink-0">
-                  1
+                  {content.howItWorks.steps[0].step}
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                    Agree on the transaction
+                    {content.howItWorks.steps[0].title}
                   </h3>
                   <p className="mt-2 font-body text-base sm:text-lg text-secondary leading-relaxed">
-                    The buyer and seller agree on the item or service, price, escrow duration, and other transaction terms.
+                    {content.howItWorks.steps[0].description}
                   </p>
                 </div>
               </div>
@@ -299,17 +300,17 @@ const SecurePayments: React.FC = () => {
             <div className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-xs hover:border-accent transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-dark text-white flex items-center justify-center font-display font-bold text-base shrink-0">
-                  2
+                  {content.howItWorks.steps[1].step}
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                    Fund the escrow
+                    {content.howItWorks.steps[1].title}
                   </h3>
                   <p className="mt-2 font-body text-base sm:text-lg text-secondary leading-relaxed">
-                    The buyer sends the agreed payment to the Shake smart contract.
+                    {content.howItWorks.steps[1].description1}
                   </p>
                   <p className="mt-3 font-body text-base text-secondary leading-relaxed">
-                    Shake supports <strong className="text-secondary-dark font-semibold">USDC and USDT</strong>, as well as other supported cryptocurrencies including ETH and TON. Additional assets may be available through supported currency-swapping features.
+                    {content.howItWorks.steps[1].description2}
                   </p>
                   {/* Supported badges */}
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -326,7 +327,7 @@ const SecurePayments: React.FC = () => {
                       TON
                     </span>
                     <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-gray-50 text-gray-700 text-xs font-medium border border-gray-200">
-                      + Swapping Features
+                      {content.howItWorks.steps[1].swappingBadge}
                     </span>
                   </div>
                 </div>
@@ -337,14 +338,14 @@ const SecurePayments: React.FC = () => {
             <div className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-xs hover:border-accent transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-dark text-white flex items-center justify-center font-display font-bold text-base shrink-0">
-                  3
+                  {content.howItWorks.steps[2].step}
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                    Complete the transaction
+                    {content.howItWorks.steps[2].title}
                   </h3>
                   <p className="mt-2 font-body text-base sm:text-lg text-secondary leading-relaxed">
-                    The seller delivers the goods or services while the payment remains locked according to the agreed escrow terms.
+                    {content.howItWorks.steps[2].description}
                   </p>
                 </div>
               </div>
@@ -354,14 +355,14 @@ const SecurePayments: React.FC = () => {
             <div className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-xs hover:border-accent transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-dark text-white flex items-center justify-center font-display font-bold text-base shrink-0">
-                  4
+                  {content.howItWorks.steps[3].step}
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                    Release the payment
+                    {content.howItWorks.steps[3].title}
                   </h3>
                   <p className="mt-2 font-body text-base sm:text-lg text-secondary leading-relaxed">
-                    When the applicable escrow period and release conditions are satisfied, the payment is released to the seller according to the smart contract rules.
+                    {content.howItWorks.steps[3].description}
                   </p>
                 </div>
               </div>
@@ -371,14 +372,14 @@ const SecurePayments: React.FC = () => {
             <div className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-xs hover:border-accent transition-colors">
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-secondary-dark text-white flex items-center justify-center font-display font-bold text-base shrink-0">
-                  5
+                  {content.howItWorks.steps[4].step}
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                    Dispute when necessary
+                    {content.howItWorks.steps[4].title}
                   </h3>
                   <p className="mt-2 font-body text-base sm:text-lg text-secondary leading-relaxed">
-                    If the transaction does not go as agreed, the buyer can request a refund during the applicable dispute period. Shake's human review process evaluates the available transaction evidence and processes the outcome according to the escrow rules.
+                    {content.howItWorks.steps[4].description}
                   </p>
                 </div>
               </div>
@@ -397,23 +398,23 @@ const SecurePayments: React.FC = () => {
               </div>
               <div>
                 <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-                  Non-Custodial by Design
+                  {content.nonCustodial.title}
                 </h2>
                 <div className="mt-3 inline-block rounded-full bg-accent/30 px-3 py-0.5 text-xs font-bold text-secondary-dark">
-                  Base Network Smart Contract
+                  {content.nonCustodial.badge}
                 </div>
               </div>
             </div>
 
             <div className="mt-6 space-y-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
               <p className="font-semibold text-secondary-dark">
-                Shake does not take custody of escrowed customer funds.
+                {content.nonCustodial.lead}
               </p>
               <p>
-                Your payment is held by a smart contract on the Base network rather than in a Shake-controlled account. The smart contract defines the conditions under which funds can be released or returned.
+                {content.nonCustodial.body1}
               </p>
               <p>
-                You use your connected wallet to authorize transactions.
+                {content.nonCustodial.body2}
               </p>
             </div>
           </div>
@@ -425,27 +426,27 @@ const SecurePayments: React.FC = () => {
         <div className="max-w-4xl mx-auto text-left">
           <div className="text-center md:text-left mb-8">
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-              Use the Cryptocurrency You Already Have
+              {content.cryptocurrency.headline}
             </h2>
           </div>
 
           <div className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-200/80 shadow-xs">
             <p className="font-body text-base sm:text-lg text-secondary leading-relaxed">
-              Shake supports <strong className="text-secondary-dark font-semibold">USDC and USDT</strong>, along with ETH, TON, and other supported cryptocurrencies.
+              {content.cryptocurrency.body1}
             </p>
 
             <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
-              The seller can specify the cryptocurrency they want to receive. Where supported, buyers can use integrated currency-swapping functionality to convert another supported cryptocurrency into the required payment currency.
+              {content.cryptocurrency.body2}
             </p>
 
             <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
-              Shake is designed around cryptocurrency payments, but you do not need investment expertise to understand the basic transaction process: agree on terms, fund the escrow, complete the transaction, and release the payment according to those terms.
+              {content.cryptocurrency.body3}
             </p>
 
             {/* Currency Pill showcase */}
             <div className="mt-8 pt-6 border-t border-gray-100 flex flex-wrap items-center gap-3">
               <div className="font-medium text-xs sm:text-sm text-secondary">
-                Directly Supported:
+                {content.cryptocurrency.directlySupportedLabel}
               </div>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3.5 py-1.5 rounded-full bg-[#e6e9ed] text-secondary-dark text-xs sm:text-sm font-semibold">
@@ -461,7 +462,7 @@ const SecurePayments: React.FC = () => {
                   TON
                 </span>
                 <span className="px-3.5 py-1.5 rounded-full bg-accent/40 text-secondary-dark text-xs sm:text-sm font-semibold flex items-center gap-1.5">
-                  <ArrowLeftRight className="w-3.5 h-3.5" /> Currency Swapping
+                  <ArrowLeftRight className="w-3.5 h-3.5" /> {content.cryptocurrency.swappingLabel}
                 </span>
               </div>
             </div>
@@ -475,10 +476,10 @@ const SecurePayments: React.FC = () => {
           <div className="rounded-3xl bg-white p-6 sm:p-10 border border-gray-200/90 shadow-sm relative overflow-hidden">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-gray-100">
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-                Optional Fiat Conversion
+                {content.fiatConversion.headline}
               </h2>
               <div className="flex items-center gap-2 bg-[#f8fafc] px-3.5 py-1.5 rounded-xl border border-gray-200/80">
-                <span className="text-xs text-secondary font-medium">Powered by</span>
+                <span className="text-xs text-secondary font-medium">{content.fiatConversion.poweredBy}</span>
                 <img
                   src="/images/coinbase-logo.png"
                   alt="Coinbase"
@@ -489,13 +490,13 @@ const SecurePayments: React.FC = () => {
 
             <div className="mt-6 space-y-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
               <p>
-                On supported mobile platforms and in eligible locations, <strong className="text-secondary-dark font-semibold">Coinbase provides optional fiat onramp and offramp services</strong>.
+                {content.fiatConversion.body1}
               </p>
               <p>
-                You can use Coinbase to purchase supported cryptocurrency using available payment methods or convert cryptocurrency back to fiat.
+                {content.fiatConversion.body2}
               </p>
               <p className="text-sm text-secondary opacity-90 pt-2">
-                Shake does not hold your fiat money or operate the Coinbase conversion service. Coinbase availability, supported assets, payment methods, and fees vary by country.
+                {content.fiatConversion.disclaimer}
               </p>
             </div>
           </div>
@@ -507,7 +508,7 @@ const SecurePayments: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-              Transparent Fees
+              {content.fees.headline}
             </h2>
           </div>
 
@@ -515,29 +516,29 @@ const SecurePayments: React.FC = () => {
             {/* Main Stat Card */}
             <div className="md:col-span-1 rounded-2xl bg-secondary-dark text-white p-6 flex flex-col justify-center items-center text-center shadow-sm">
               <div className="text-xs uppercase font-semibold text-accent tracking-wider">
-                Standard Escrow Fee
+                {content.fees.standardFeeLabel}
               </div>
               <div className="font-display text-4xl sm:text-5xl font-black text-accent my-2">
-                0.1%
+                {content.fees.standardFeeValue}
               </div>
               <div className="text-xs text-gray-300">
-                0.1%–1.0% depending on release option
+                {content.fees.standardFeeSub}
               </div>
             </div>
 
             {/* Detail Card */}
             <div className="md:col-span-2 rounded-2xl bg-white p-6 sm:p-7 border border-gray-200/80 flex flex-col justify-center space-y-3 font-body text-base text-secondary">
               <p>
-                Shake charges <strong className="text-secondary-dark font-semibold">0.1%–1.0%</strong> for escrow transactions depending on the release option selected.
+                {content.fees.body1}
               </p>
               <p>
-                The standard service fee is <strong className="text-secondary-dark font-semibold">0.1%</strong>. Additional fees may apply when a merchant chooses an early withdrawal option.
+                {content.fees.body2}
               </p>
               <p className="text-sm">
-                Blockchain network fees may also apply. Third-party services such as cryptocurrency conversion and swapping may have their own fees.
+                {content.fees.body3}
               </p>
               <div className="pt-2 border-t border-gray-100 text-sm font-semibold text-secondary-dark">
-                ✓ There are no recurring subscription fees for basic Shake use.
+                {content.fees.noSubscriptions}
               </div>
             </div>
           </div>
@@ -549,19 +550,19 @@ const SecurePayments: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-              Identity and Transaction Records
+              {content.identityRecords.headline}
             </h2>
           </div>
 
           <div className="rounded-3xl bg-[#e6e9ed] p-6 sm:p-10 border border-gray-200/80">
             <p className="font-body text-base sm:text-lg text-secondary-dark font-medium leading-relaxed">
-              Shake uses identity verification to establish accountability between transaction participants.
+              {content.identityRecords.lead}
             </p>
             <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
-              Each transaction can include a signed agreement, transaction details, supporting documentation, and on-chain payment records.
+              {content.identityRecords.body1}
             </p>
             <p className="mt-4 font-body text-base sm:text-lg text-secondary leading-relaxed">
-              For disputed transactions, a human reviewer evaluates the available evidence.
+              {content.identityRecords.body2}
             </p>
 
             {/* 3 Pillars */}
@@ -569,23 +570,29 @@ const SecurePayments: React.FC = () => {
               <div className="bg-white rounded-xl p-4 border border-gray-200/60 shadow-2xs">
                 <div className="flex items-center gap-2 font-display text-sm font-bold text-secondary-dark">
                   <UserCheck className="w-4 h-4 text-emerald-600" />
-                  Accountability
+                  {content.identityRecords.pillars.accountability.title}
                 </div>
-                <div className="text-xs text-secondary mt-1">Identity-verified participants</div>
+                <div className="text-xs text-secondary mt-1">
+                  {content.identityRecords.pillars.accountability.description}
+                </div>
               </div>
               <div className="bg-white rounded-xl p-4 border border-gray-200/60 shadow-2xs">
                 <div className="flex items-center gap-2 font-display text-sm font-bold text-secondary-dark">
                   <FileCheck2 className="w-4 h-4 text-emerald-600" />
-                  Signed Records
+                  {content.identityRecords.pillars.signedRecords.title}
                 </div>
-                <div className="text-xs text-secondary mt-1">On-chain transaction proof</div>
+                <div className="text-xs text-secondary mt-1">
+                  {content.identityRecords.pillars.signedRecords.description}
+                </div>
               </div>
               <div className="bg-white rounded-xl p-4 border border-gray-200/60 shadow-2xs">
                 <div className="flex items-center gap-2 font-display text-sm font-bold text-secondary-dark">
                   <Scale className="w-4 h-4 text-emerald-600" />
-                  Human Review
+                  {content.identityRecords.pillars.humanReview.title}
                 </div>
-                <div className="text-xs text-secondary mt-1">Evidence-based dispute evaluation</div>
+                <div className="text-xs text-secondary mt-1">
+                  {content.identityRecords.pillars.humanReview.description}
+                </div>
               </div>
             </div>
           </div>
@@ -597,10 +604,10 @@ const SecurePayments: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-secondary-dark font-bold">
-              Built for Real-World Commerce
+              {content.useCases.headline}
             </h2>
             <p className="mt-3 font-body text-base sm:text-lg text-secondary">
-              Shake can be used for transactions involving:
+              {content.useCases.subtitle}
             </p>
           </div>
 
@@ -611,10 +618,10 @@ const SecurePayments: React.FC = () => {
                 <Car className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-bold text-secondary-dark">
-                Vehicles
+                {content.useCases.items.vehicles.title}
               </h3>
               <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                Buy and sell vehicles with agreed payment terms.
+                {content.useCases.items.vehicles.description}
               </p>
             </div>
 
@@ -624,10 +631,10 @@ const SecurePayments: React.FC = () => {
                 <Boxes className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-bold text-secondary-dark">
-                Commodities & Wholesale
+                {content.useCases.items.commodities.title}
               </h3>
               <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                Secure high-value orders, raw materials, wholesale goods, and commercial bulk supply.
+                {content.useCases.items.commodities.description}
               </p>
             </div>
 
@@ -637,10 +644,10 @@ const SecurePayments: React.FC = () => {
                 <ShoppingBag className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-bold text-secondary-dark">
-                Marketplace Goods
+                {content.useCases.items.marketplace.title}
               </h3>
               <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                Add escrow to purchases originating from online marketplaces and direct commerce.
+                {content.useCases.items.marketplace.description}
               </p>
             </div>
 
@@ -650,10 +657,10 @@ const SecurePayments: React.FC = () => {
                 <Briefcase className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-bold text-secondary-dark">
-                Services
+                {content.useCases.items.services.title}
               </h3>
               <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                Use payment escrow when hiring contractors, freelancers, or other service providers.
+                {content.useCases.items.services.description}
               </p>
             </div>
 
@@ -663,10 +670,10 @@ const SecurePayments: React.FC = () => {
                 <Layers className="w-6 h-6" />
               </div>
               <h3 className="font-display text-xl font-bold text-secondary-dark">
-                Other Transactions
+                {content.useCases.items.other.title}
               </h3>
               <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                Create an escrow transaction whenever both parties want payment held according to agreed terms.
+                {content.useCases.items.other.description}
               </p>
             </div>
           </div>
@@ -683,13 +690,13 @@ const SecurePayments: React.FC = () => {
               </div>
               <div>
                 <h2 className="font-display text-lg sm:text-xl font-bold text-secondary-dark">
-                  Payment Service, Not an Investment Product
+                  {content.disclaimerBanner.headline}
                 </h2>
                 <p className="mt-2 font-body text-base text-secondary-dark leading-relaxed">
-                  Shake DeFi is a payment and escrow service. It is not an investment platform and does not offer investment products or investment advice.
+                  {content.disclaimerBanner.body1}
                 </p>
                 <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                  Cryptocurrency is used as the payment method for transactions.
+                  {content.disclaimerBanner.body2}
                 </p>
               </div>
             </div>
@@ -705,10 +712,10 @@ const SecurePayments: React.FC = () => {
 
         <div className="max-w-3xl mx-auto text-center relative z-10 px-4">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight">
-            Your Payment. Your Terms. Your Escrow.
+            {content.finalCta.headline}
           </h2>
           <p className="mt-5 font-body text-base sm:text-xl text-[#e6e9ed]/90 max-w-2xl mx-auto leading-relaxed">
-            Create a Shake transaction and give both sides a clear payment process backed by smart-contract escrow.
+            {content.finalCta.description}
           </p>
 
           <div className="mt-8 flex justify-center">
@@ -718,12 +725,12 @@ const SecurePayments: React.FC = () => {
               onClick={handleOpenModal}
               className="px-10 py-4 text-lg font-bold rounded-full shadow-lg hover:scale-105 transition-all"
             >
-              Get Started
+              {content.finalCta.cta}
             </Button>
           </div>
 
           <p className="mt-4 text-xs sm:text-sm text-[#e6e9ed]/70">
-            Choose from Telegram, Web Browser, iOS, Android, or Farcaster
+            {content.finalCta.subtext}
           </p>
         </div>
       </Section>
@@ -732,22 +739,13 @@ const SecurePayments: React.FC = () => {
       <section className="bg-[#f8fafc] py-12 md:py-16 border-t border-gray-200">
         <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
           <h3 className="font-display text-lg sm:text-xl font-bold text-secondary-dark mb-4">
-            Important Information
+            {content.legal.headline}
           </h3>
 
           <div className="space-y-3 font-body text-xs sm:text-sm text-secondary leading-relaxed">
-            <p>
-              Shake DeFi, Inc. is a corporation organized under the laws of the State of Wisconsin.
-            </p>
-            <p>
-              Shake services and third-party integrations are subject to geographic and other availability restrictions. Coinbase and other third-party services are not available in all countries.
-            </p>
-            <p>
-              Cryptocurrency transactions may have tax and other legal consequences. Users are responsible for understanding and complying with applicable laws and tax requirements.
-            </p>
-            <p>
-              Shake is intended for users age 18 and older.
-            </p>
+            {content.legal.paragraphs.map((paragraph, idx) => (
+              <p key={idx}>{paragraph}</p>
+            ))}
           </div>
 
           {/* Legal Links */}
@@ -756,19 +754,19 @@ const SecurePayments: React.FC = () => {
               to="/terms-of-service"
               className="hover:text-accent underline underline-offset-4 transition-colors"
             >
-              Terms of Service
+              {content.legal.links.termsOfService}
             </Link>
             <Link
               to="/privacy-policy"
               className="hover:text-accent underline underline-offset-4 transition-colors"
             >
-              Privacy Policy
+              {content.legal.links.privacyPolicy}
             </Link>
             <a
               href="mailto:contact@shakedefi.com"
               className="hover:text-accent underline underline-offset-4 transition-colors"
             >
-              Contact Shake DeFi
+              {content.legal.links.contact}
             </a>
           </div>
         </div>
@@ -801,13 +799,13 @@ const SecurePayments: React.FC = () => {
             <div className="pr-8">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/30 text-secondary-dark text-xs font-bold mb-2">
                 <Sparkles className="w-3.5 h-3.5" />
-                Select Your Platform
+                {content.platformModal.tag}
               </div>
               <h3 id="modal-headline" className="font-display text-2xl font-bold text-secondary-dark">
-                Get Started With Shake
+                {content.platformModal.headline}
               </h3>
               <p className="mt-1 text-xs sm:text-sm text-secondary font-body">
-                Choose how you'd like to open or install Shake:
+                {content.platformModal.subtitle}
               </p>
             </div>
 
@@ -862,7 +860,7 @@ const SecurePayments: React.FC = () => {
                 onClick={handleCloseModal}
                 className="text-xs text-secondary hover:text-secondary-dark font-medium"
               >
-                Cancel
+                {content.platformModal.cancel}
               </button>
             </div>
           </div>
