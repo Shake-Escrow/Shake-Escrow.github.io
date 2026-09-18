@@ -229,7 +229,7 @@
             },
             {
                 "headline": "Ishingiz uchun\nkoʻproq imkoniyatlar",
-                "description": "Shake mahalliy doʻkonlar, frilanserlar va hatto bank hisobiga ega boʻlmaganlar uchun ham ochiq – bu koʻproq odamga biznesini rivojlantirishga yordam beradi. Dollar yoki kriptoda toʻlovlarni qabul qiling. Odatiy byurokratiyasiz katta toʻlovlarni yuboring va qabul qiling."
+                "description": "Shake mahalliy doʻkonlar, frilanserlar va hatto bank hisobiga ega boʻlmaganlar uchun ham ochiq – bu koʻproq odamga biznesini rivojlantirishga yordam beradi. Raqamli dollar (USDC) yoki boshqa qoʻllab-quvvatlanadigan kriptovalyutalarda toʻlovlarni qabul qiling hamda Coinbase orqali bank hisobingizga naqd qilish imkoniyatiga ega boʻling. Odatiy byurokratiyasiz katta toʻlovlarni yuboring va qabul qiling."
             }
         ],
         "cta": {
@@ -410,8 +410,8 @@
                 "answer": "Yoʻq. Sotuvchilar 0 dan 180 kungacha istalgan eskrou muddatini tanlashi mumkin va uni kutishsiz va pulni qaytarish oynasisiz tezkor oʻtkazma uchun 0 ga oʻrnatish mumkin. Baribir siz Shake’ning boshqa barcha himoyalariga ega boʻlasiz: shaxsni tasdiqlash, rasmlar bilan imzolangan kelishuv, batafsil tranzaksiya hujjatlari va xaridor reytinglari. Xaridorlarga xavfsizlik tarmogʻini taʼminlamoqchi boʻlsangiz eskrou muddati toʻgʻri tanlov, savdo oddiy boʻlib ikkala tomon ham tayyor boʻlganda esa tezkor oʻtkazma toʻgʻri tanlovdir."
             },
             {
-                "question": "Shake’dan foydalanish uchun kripto haqida bilishim / kriptoga investitsiya qilishim kerakmi?",
-                "answer": "Yoʻq, Shake’dan foydalanish uchun kripto haqida bilishingiz yoki unga investitsiya qilishingiz shart emas. Uning sehri ham shunda."
+                "question": "Shake’dan foydalanish uchun kripto boʻyicha oldingi tajriba yoki sarmoya kiritish talab qilinadimi?",
+                "answer": "Oldindan kriptovalyuta tajribasi talab qilinmaydi. Shake kripto toʻlovlarini kundalik toʻlov ilovalari kabi oddiy va qulay qiladi. Oʻzgaruvchan kripto bozorlarida chayqovchilik qilish yoki murakkab maxfiy iboralarni (seed phrase) boshqarish shart emas — mobil ilovada Coinbase Onramp orqali debet karta yoki bank hisobi yordamida hamyoningizni oson toʻldirishingiz va USDC (AQSh dollariga 1:1 bogʻlangan) kabi narxi barqaror aktivlardan foydalanishingiz mumkin. Toʻlov qabul qilganingizda esa, Coinbase Offramp orqali mablagʻni bank hisobingizga qayta naqd qilishingiz mumkin. Shake fiat pullarini toʻgʻridan-toʻgʻri saqlamaydi va qayta ishlamaydi; barcha eskrou operatsiyalari blokcheynda xavfsiz amalga oshiriladi."
             },
             {
                 "question": "Shake ilovasidan kim foydalanishi mumkin?",

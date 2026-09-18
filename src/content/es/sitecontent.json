@@ -229,7 +229,7 @@
       },
       {
         "headline": "Más Opciones para\nLo que Haces",
-        "description": "Shake es accesible para tiendas locales, freelancers e incluso quienes no tienen cuenta bancaria, ayudando a más personas a construir su negocio. Acepta pagos en dólares o cripto. Envía y recibe pagos grandes sin la burocracia habitual."
+        "description": "Shake es accesible para tiendas locales, freelancers e incluso quienes no tienen cuenta bancaria, ayudando a más personas a construir su negocio. Acepta pagos en dólares digitales (USDC) u otras criptomonedas compatibles, con la flexibilidad de transferir a tu cuenta bancaria a través de Coinbase. Envía y recibe pagos grandes sin la burocracia habitual."
       }
     ],
     "cta": {
@@ -410,8 +410,8 @@
         "answer": "No. Los comerciantes pueden elegir cualquier duración de escrow de 0 a 180 días, y puede configurarse en 0 para una transferencia instantánea sin espera ni ventana de reembolso. Aun así obtienes todas las demás protecciones de Shake: verificación de identidad, un acuerdo firmado con fotos, documentación detallada de la transacción y calificaciones del comprador. El período de escrow es la opción correcta cuando quieres dar a los compradores una red de seguridad; la transferencia instantánea es la opción correcta cuando la venta es sencilla y ambas partes están listas."
       },
       {
-        "question": "¿Necesito saber sobre cripto o invertir en cripto para usar Shake?",
-        "answer": "No, no necesitas saber sobre cripto ni invertir en ella para usar Shake. Esa es su magia."
+        "question": "¿Necesito experiencia previa en cripto o conocimientos de inversión para usar Shake?",
+        "answer": "No se requiere experiencia previa en criptomonedas. Shake hace que los pagos con cripto sean tan sencillos como las aplicaciones de pago cotidianas. No necesitas especular en mercados de criptomonedas volátiles ni gestionar frases semilla complejas: en dispositivos móviles, puedes recargar fácilmente tu billetera con una tarjeta de débito o cuenta bancaria mediante Coinbase Onramp y realizar transacciones con activos de precio estable como USDC (vinculado 1:1 al dólar estadounidense). Cuando recibes fondos, puedes transferirlos de vuelta a tu cuenta bancaria con Coinbase Offramp. Shake nunca almacena ni procesa dinero fiduciario directamente; todas las transacciones de escrow se liquidan de forma segura en la cadena de bloques."
       },
       {
         "question": "¿Quién puede usar la app de Shake?",

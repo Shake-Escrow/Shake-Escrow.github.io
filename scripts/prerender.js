@@ -22,7 +22,9 @@ const ROUTES = [
   '/end-user-license-agreement',
   '/delete-account',
   '/provision',
-  '/api-docs'
+  '/api-docs',
+  '/marketplace',
+  '/secure-payments'
 ];
 
 async function prerender() {

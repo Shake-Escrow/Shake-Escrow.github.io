@@ -229,7 +229,7 @@
       },
       {
         "headline": "More Options for\nWhat You Do",
-        "description": "Shake is accessible to local shops, freelancers and even those without a bank account – helping more people build their business. Accept payments in dollars or crypto. Send and receive large payments without the usual red tape."
+        "description": "Shake is accessible to local shops, freelancers and even those without a bank account – helping more people build their business. Accept payments in digital dollars (USDC) or other supported cryptocurrencies, with the flexibility to cash out to your bank account via Coinbase. Send and receive large payments without the usual red tape."
       }
     ],
     "cta": {
@@ -410,8 +410,8 @@
         "answer": "No. Merchants can choose any escrow duration from 0 to 180 days, and it can be set to 0 for an instant transfer with no waiting and no refund window. You still get all of Shake's other protections: identity verification, a signed agreement with photos, thorough transaction documentation, and buyer ratings. The escrow period is the right choice when you want to give buyers a safety net — instant transfer is the right choice when the sale is straightforward and both parties are ready."
       },
       {
-        "question": "Do I need to know about crypto / invest in crypto to use Shake?",
-        "answer": "No, you do not need to know about or invest in crypto to use Shake. That's the magic of it."
+        "question": "Do I need prior crypto experience or investment knowledge to use Shake?",
+        "answer": "No prior cryptocurrency experience is required. Shake makes crypto payments as straightforward as everyday payment apps. You don't have to speculate on volatile crypto markets or manage complicated seed phrases — on mobile, you can easily fund your wallet with a debit card or bank account via Coinbase Onramp and transact using price-stable assets like USDC (pegged 1:1 to the US dollar). When you receive funds, you can cash out back to your bank account with Coinbase Offramp. Shake never stores or processes fiat money directly; all escrow transactions settle securely on the blockchain."
       },
       {
         "question": "Who can use the Shake app?",
