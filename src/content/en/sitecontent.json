@@ -596,7 +596,7 @@
         "agreementTermsTitle": "Agreement Terms",
         "agreementTermsValue": "Mutual Signed Terms",
         "agreementTermsStatus": "Both sides approved ✓",
-        "escrowProtectionTitle": "Escrow Protection",
+        "escrowProtectionTitle": "Smart-Contract Escrow",
         "escrowProtectionValue": "Non-Custodial",
         "escrowProtectionStatus": "Base Smart Contract",
         "standardFeeTitle": "Standard Fee",
@@ -685,7 +685,7 @@
       "pillars": {
         "accountability": {
           "title": "Accountability",
-          "description": "Identity-verified participants"
+          "description": "Identity Verification"
         },
         "signedRecords": {
           "title": "Signed Records",

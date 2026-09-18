@@ -596,7 +596,7 @@
         "agreementTermsTitle": "Términos del Acuerdo",
         "agreementTermsValue": "Términos Firmados Mutuamente",
         "agreementTermsStatus": "Ambas partes aprobaron ✓",
-        "escrowProtectionTitle": "Protección de Escrow",
+        "escrowProtectionTitle": "Escrow de Contrato Inteligente",
         "escrowProtectionValue": "No Custodial",
         "escrowProtectionStatus": "Contrato Inteligente en Base",
         "standardFeeTitle": "Comisión Estándar",
@@ -685,7 +685,7 @@
       "pillars": {
         "accountability": {
           "title": "Responsabilidad",
-          "description": "Participantes con identidad verificada"
+          "description": "Verificación de identidad"
         },
         "signedRecords": {
           "title": "Registros Firmados",

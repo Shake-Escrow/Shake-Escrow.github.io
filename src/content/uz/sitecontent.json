@@ -596,7 +596,7 @@
         "agreementTermsTitle": "Kelishuv shartlari",
         "agreementTermsValue": "Ikki tomonlama imzolangan shartlar",
         "agreementTermsStatus": "Ikkala tomon ham tasdiqladi ✓",
-        "escrowProtectionTitle": "Eskrou himoyasi",
+        "escrowProtectionTitle": "Smart-kontrakt eskrou",
         "escrowProtectionValue": "Nokastodial",
         "escrowProtectionStatus": "Base smart-kontrakti",
         "standardFeeTitle": "Standart toʻlov",
@@ -685,7 +685,7 @@
       "pillars": {
         "accountability": {
           "title": "Javobgarlik",
-          "description": "Shaxsi tasdiqlangan ishtirokchilar"
+          "description": "Shaxsni tasdiqlash"
         },
         "signedRecords": {
           "title": "Imzolangan yozuvlar",
