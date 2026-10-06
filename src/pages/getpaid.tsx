@@ -5,13 +5,13 @@ import Button from '../components/common/button';
 import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
 
-const renderWithOdosLink = (text: string) => {
-  const parts = text.split('Odos');
+const renderWithRubicLink = (text: string) => {
+  const parts = text.split('Rubic');
   if (parts.length === 1) return <>{text}</>;
   return (
     <>
       {parts[0]}
-      <a href="https://odos.xyz" target="_blank" rel="noopener noreferrer" className="underline decoration-[#2d3440]/40 underline-offset-4 transition-opacity hover:opacity-75">Odos</a>
+      <a href="https://rubic.exchange" target="_blank" rel="noopener noreferrer" className="underline decoration-[#2d3440]/40 underline-offset-4 transition-opacity hover:opacity-75">Rubic</a>
       {parts[1]}
     </>
   );
@@ -55,7 +55,7 @@ const GetPaid: React.FC = () => {
                 </div>
                 <div className="md:w-1/2 w-full text-left">
                   <h3 className="font-display font-bold text-2xl md:text-3xl text-secondary-dark mb-4" style={{letterSpacing: '-0.03em'}}>{section.headline.split('\n').map((line, idx) => (<React.Fragment key={idx}>{line}{idx < section.headline.split('\n').length - 1 && <br />}</React.Fragment>))}</h3>
-                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{renderWithOdosLink(section.description)}</p>
+                  <p className="text-description mb-6 text-[#2d3440] opacity-90" >{renderWithRubicLink(section.description)}</p>
                 </div>
               </div>
             );

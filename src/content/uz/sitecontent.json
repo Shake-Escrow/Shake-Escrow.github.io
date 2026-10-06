@@ -255,7 +255,7 @@
       },
       {
         "headline": "Har kimdan\nkripto qabul qiling",
-        "description": "Oʻzingiz xohlagan toʻlov valyutasini — masalan, USDC, ETH, TON yoki USDT’ni — belgilang va mijozlar oʻzlarida mavjud mablagʻ bilan toʻlasin. Odos tomonidan taʼminlangan integratsiyalashgan valyuta almashtirish orqali xaridorlar Bitcoin, Tether (USDT) yoki Staked ETH’ni bir necha bosishda osonlikcha sizning valyutangizga aylantirishlari mumkin."
+        "description": "Oʻzingiz xohlagan toʻlov valyutasini — masalan, USDC, ETH, TON yoki USDT’ni — belgilang va mijozlar oʻzlarida mavjud mablagʻ bilan toʻlasin. Rubic tomonidan taʼminlangan integratsiyalashgan valyuta almashtirish orqali xaridorlar Bitcoin, Tether (USDT) yoki Staked ETH’ni bir necha bosishda osonlikcha sizning valyutangizga aylantirishlari mumkin."
       },
       {
         "headline": "Imkoniyat beruvchi\nqulaylik",
@@ -293,7 +293,7 @@
       },
       {
         "headline": "Sizda allaqachon mavjud boʻlgan kripto bilan toʻlang",
-        "description": "Toʻlov cheklovlari sizni ushlab turmasin. USDC, ETH, TON, USDT, Bitcoin yoki Staked ETH bilan toʻlang. Mobil ilovada kerakli valyutaga tezda aylantirish uchun oʻrnatilgan Odos svop funksiyasiga ega Coinbase hamyoningizdan foydalaning. Telegram'da Telegram hamyoningiz yoki Tonkeeper’ni ulang, Farcaster'da esa toʻgʻridan-toʻgʻri oʻrnatilgan ETH hamyoningiz orqali tranzaksiyalarni bajaring."
+        "description": "Toʻlov cheklovlari sizni ushlab turmasin. USDC, ETH, TON, USDT, Bitcoin yoki Staked ETH bilan toʻlang. Mobil ilovada kerakli valyutaga tezda aylantirish uchun oʻrnatilgan Rubic svop funksiyasiga ega Coinbase hamyoningizdan foydalaning. Telegram'da Telegram hamyoningiz yoki Tonkeeper’ni ulang, Farcaster'da esa toʻgʻridan-toʻgʻri oʻrnatilgan ETH hamyoningiz orqali tranzaksiyalarni bajaring."
       },
       {
         "headline": "Kerak boʻlgan joyda\njavobgar",
@@ -409,7 +409,7 @@
       },
       {
         "question": "Shake DeFi qaysi platformalar va hamyonlarni qoʻllab-quvvatlaydi?",
-        "answer": "Shake DeFi iOS, Android, Telegram va Farcaster platformalarida mavjud boʻlib, quyidagilarni qoʻllab-quvvatlaydi:\n- **Coinbase oʻrnatilgan hamyoni** (iOS va Android): Toʻliq funksiyalardan foydalanish, jumladan fiat onramp/offramp va Odos valyuta almashtirish.\n- **Telegram hamyoni va Tonkeeper** (Telegram): TON va USDT bilan operatsiyalarni amalga oshirish, P2P Bozor kanalini koʻrish yoki [@ShakeDefiBot](https://t.me/ShakeDefiBot) bilan suhbatlashish.\n- **Oʻrnatilgan ETH hamyoni** (Farcaster): Farcaster mijozingiz orqali toʻgʻridan-toʻgʻri Ethereum Base tarmogʻida tranzaksiyalarni bajarish."
+        "answer": "Shake DeFi iOS, Android, Telegram va Farcaster platformalarida mavjud boʻlib, quyidagilarni qoʻllab-quvvatlaydi:\n- **Coinbase oʻrnatilgan hamyoni** (iOS va Android): Toʻliq funksiyalardan foydalanish, jumladan fiat onramp/offramp va Rubic valyuta almashtirish.\n- **Telegram hamyoni va Tonkeeper** (Telegram): TON va USDT bilan operatsiyalarni amalga oshirish, P2P Bozor kanalini koʻrish yoki [@ShakeDefiBot](https://t.me/ShakeDefiBot) bilan suhbatlashish.\n- **Oʻrnatilgan ETH hamyoni** (Farcaster): Farcaster mijozingiz orqali toʻgʻridan-toʻgʻri Ethereum Base tarmogʻida tranzaksiyalarni bajarish."
       },
       {
         "question": "Post to Marketplace nima?",
@@ -453,7 +453,7 @@
       },
       {
         "question": "Menda mavjud boʻlgan istalgan kriptovalyuta bilan toʻlashim mumkinmi?",
-        "answer": "Ha! Shake qoʻllab-quvvatlanadigan kriptovalyutalar boʻyicha moslashuvchan toʻlov imkoniyatlarini taqdim etadi: USDC, ETH, TON va USDT, shuningdek svop orqali Bitcoin va Staked ETH. Mobil ilovada kriptovalyutangizni ilovadagi Coinbase hamyoningizga oʻtkazishingiz va oʻrnatilgan Odos svop funksiyasidan foydalanib uni almashtirishingiz mumkin. Telegram'da Telegram hamyoningiz yoki Tonkeeper orqali TON yoki USDT bilan toʻlashingiz mumkin. Farcaster'da esa toʻgʻridan-toʻgʻri oʻrnatilgan Base ETH hamyoningiz bilan operatsiyalarni bajarasiz.\n\nEslatma: Coinbase va Odos svop xizmatlari barcha mamlakatlarda mavjud emas."
+        "answer": "Ha! Shake qoʻllab-quvvatlanadigan kriptovalyutalar boʻyicha moslashuvchan toʻlov imkoniyatlarini taqdim etadi: USDC, ETH, TON va USDT, shuningdek svop orqali Bitcoin va Staked ETH. Mobil ilovada kriptovalyutangizni ilovadagi Coinbase hamyoningizga oʻtkazishingiz va oʻrnatilgan Rubic svop funksiyasidan foydalanib uni almashtirishingiz mumkin. Telegram'da Telegram hamyoningiz yoki Tonkeeper orqali TON yoki USDT bilan toʻlashingiz mumkin. Farcaster'da esa toʻgʻridan-toʻgʻri oʻrnatilgan Base ETH hamyoningiz bilan operatsiyalarni bajarasiz.\n\nEslatma: Coinbase va Rubic svop xizmatlari barcha mamlakatlarda mavjud emas."
       },
       {
         "question": "Toʻlov sifatida istalgan \"ixtiyoriy\" kriptovalyutani qabul qilishim shartmi?",

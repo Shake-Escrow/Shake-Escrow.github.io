@@ -61,7 +61,7 @@ Only translate the **values** in each JSON file. Never change:
 - Key names (`"headline"`, `"title"`, `"content"`, etc.)
 - HTML tags inside strings (`<strong>`, `<ul>`, `<li>`, etc.)
 - Inline markdown links (`[link text](url)`)
-- Proper names: `Shake Defi, Inc.`, `Coinbase`, `Persona`, `Odos`, `Azure KeyVault`, `Microsoft Entra ID`
+- Proper names: `Shake Defi, Inc.`, `Coinbase`, `Persona`, `Rubic`, `Azure KeyVault`, `Microsoft Entra ID`
 - Technical terms: `blockchain`, `smart contract`, `USDC`, `ETH`, `Bitcoin`, `KYC`, `AML`, `API`, `DEX`
 - URLs, email addresses, physical addresses
 - Smart contract addresses

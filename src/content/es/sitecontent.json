@@ -255,7 +255,7 @@
       },
       {
         "headline": "Acepta Cripto\nde Cualquiera",
-        "description": "Establece tu moneda de pago preferida —como USDC, ETH, TON o USDT— y deja que los clientes paguen con lo que tienen. A través del intercambio de monedas integrado impulsado por Odos, los compradores pueden convertir fácilmente Bitcoin, Tether (USDT) o ETH en staking a tu moneda preferida en pocos clics."
+        "description": "Establece tu moneda de pago preferida —como USDC, ETH, TON o USDT— y deja que los clientes paguen con lo que tienen. A través del intercambio de monedas integrado impulsado por Rubic, los compradores pueden convertir fácilmente Bitcoin, Tether (USDT) o ETH en staking a tu moneda preferida en pocos clics."
       },
       {
         "headline": "Conveniencia\nque Empodera",
@@ -293,7 +293,7 @@
       },
       {
         "headline": "Paga con la cripto que ya tienes",
-        "description": "No dejes que las limitaciones de pago te frenen. Paga con USDC, ETH, TON, USDT, Bitcoin o ETH en staking. En dispositivos móviles, usa tu billetera Coinbase con la función integrada de Odos para convertir al instante a la moneda requerida. En Telegram, conecta tu billetera de Telegram o Tonkeeper, y en Farcaster, opera directamente utilizando tu billetera nativa de ETH."
+        "description": "No dejes que las limitaciones de pago te frenen. Paga con USDC, ETH, TON, USDT, Bitcoin o ETH en staking. En dispositivos móviles, usa tu billetera Coinbase con la función integrada de Rubic para convertir al instante a la moneda requerida. En Telegram, conecta tu billetera de Telegram o Tonkeeper, y en Farcaster, opera directamente utilizando tu billetera nativa de ETH."
       },
       {
         "headline": "Responsabilidad\nDonde Importa",
@@ -409,7 +409,7 @@
       },
       {
         "question": "¿Qué plataformas y billeteras admite Shake DeFi?",
-        "answer": "Shake DeFi está disponible en iOS, Android, Telegram y Farcaster, admitiendo:\n- **Billetera integrada de Coinbase** (iOS y Android): Acceso completo a funciones, incluyendo entrada/salida de dinero fiat e intercambio de monedas con Odos.\n- **Billetera de Telegram y Tonkeeper** (Telegram): Opera con TON y USDT, explora el canal del Mercado P2P o chatea con [@ShakeDefiBot](https://t.me/ShakeDefiBot).\n- **Billetera nativa de ETH** (Farcaster): Opera en la red Ethereum Base directamente desde tu cliente de Farcaster."
+        "answer": "Shake DeFi está disponible en iOS, Android, Telegram y Farcaster, admitiendo:\n- **Billetera integrada de Coinbase** (iOS y Android): Acceso completo a funciones, incluyendo entrada/salida de dinero fiat e intercambio de monedas con Rubic.\n- **Billetera de Telegram y Tonkeeper** (Telegram): Opera con TON y USDT, explora el canal del Mercado P2P o chatea con [@ShakeDefiBot](https://t.me/ShakeDefiBot).\n- **Billetera nativa de ETH** (Farcaster): Opera en la red Ethereum Base directamente desde tu cliente de Farcaster."
       },
       {
         "question": "¿Qué es Publicar en el Mercado?",
@@ -453,7 +453,7 @@
       },
       {
         "question": "¿Puedo pagar con cualquier criptomoneda que tenga?",
-        "answer": "¡Sí! Shake admite opciones de pago flexibles a través de las criptomonedas compatibles: USDC, ETH, TON y USDT, además de Bitcoin y ETH en staking mediante intercambio. En dispositivos móviles, puedes transferir tu criptomoneda a tu billetera Coinbase en la app y convertirla mediante la función de intercambio integrada de Odos. En Telegram, puedes pagar con TON o USDT a través de tu billetera de Telegram o Tonkeeper. En Farcaster, puedes operar directamente usando tu billetera nativa de ETH en Base.\n\nNota: Los servicios de intercambio de Coinbase y Odos no están disponibles en todos los países."
+        "answer": "¡Sí! Shake admite opciones de pago flexibles a través de las criptomonedas compatibles: USDC, ETH, TON y USDT, además de Bitcoin y ETH en staking mediante intercambio. En dispositivos móviles, puedes transferir tu criptomoneda a tu billetera Coinbase en la app y convertirla mediante la función de intercambio integrada de Rubic. En Telegram, puedes pagar con TON o USDT a través de tu billetera de Telegram o Tonkeeper. En Farcaster, puedes operar directamente usando tu billetera nativa de ETH en Base.\n\nNota: Los servicios de intercambio de Coinbase y Rubic no están disponibles en todos los países."
       },
       {
         "question": "¿Debo aceptar cualquier criptomoneda 'arbitraria' como pago?",
