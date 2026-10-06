@@ -26,6 +26,7 @@ import SEO from '../components/common/seo';
 import { useLocale } from '../context/LocaleContext';
 import { useContent } from '../hooks/useContent';
 import enSite from '../content/en/sitecontent.json';
+import EscrowOptions from '../components/common/escrow-options';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
@@ -679,6 +680,8 @@ const SecurePayments: React.FC = () => {
           </div>
         </div>
       </Section>
+
+      <EscrowOptions />
 
       {/* Section: Payment Service, Not an Investment Product */}
       <Section bgColor="bg-white" className="py-10 md:py-16 border-t border-gray-100">

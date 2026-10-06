@@ -35,7 +35,7 @@
     
     <div class="header-info">
       <p>Shake Defi, Inc.</p>
-      <small><strong>Last Updated:</strong> August 28, 2026</small>
+      <small><strong>Last Updated:</strong> October 5, 2026</small>
     </div>
     <hr>
     <div>End User License Agreement — Web Platform
@@ -119,16 +119,7 @@ By creating an account, Users represent and warrant that all information provide
 </ul></div></div><div class="section">
       <h2>4. Service Description and Third-Party Integrations</h2>
         <h3>4.1 Service Facilitation</h3>
-        <div>The Company facilitates interactions between Users and Coinbase (as defined herein) through the use of Coinbase's APIs, which allow the Web App to access Coinbase's wallet and payment infrastructure services. The Company does not:
-
-<ul>
-<li>Manage or execute transfers of funds</li>
-<li>Provide services to purchase cryptocurrency</li>
-<li>Manage or hold private keys for cryptocurrency wallets</li>
-<li>Have custody of cryptocurrency during any holding period</li>
-</ul>
-
-The Company provides an interface for Users to transfer funds via Coinbase's financial infrastructure and through independent smart contracts deployed on the blockchain. All wallet functionality and cryptocurrency management are provided by Coinbase, and the smart contracts described in Section 4.3 operate autonomously and outside Coinbase's custody. The Company solely provides an interface for interaction between Users, Coinbase APIs, and these smart contracts. Except as described in Section 7 (Holding Period and Dispute Resolution), where the Company may submit predefined on-chain instructions to signal a refund decision pursuant to the smart contract's immutable logic, the Company has no discretionary control over cryptocurrency transfers or funds.
+        <div>The Company provides a software interface for supported wallets, payment services, and blockchain smart contracts, including Coinbase integrations where available. Wallet availability depends on the platform and network. The Company does not hold User wallet private keys or take custody of the agreed escrow principal. Users authorize wallet transactions; the Services may relay valid settlement instructions to the blockchain. Authority to release or refund funds depends on the selected protocol as described in Section 7. For 2-of-3 escrow, neither the Company nor an Arbiter acting alone can settle the agreed escrow principal.
 
 <strong>Token Swap Facilitation:</strong> In addition to payment services, the Web App may provide interfaces for Users to swap digital assets using third-party decentralized exchange protocols and aggregators. The Company acts solely as a software interface provider for these interactions and does not execute, intermediate, or control swap transactions. All swaps occur directly between the User's wallet and on-chain smart contracts operated by independent third parties.</div>
         <h3>4.2 External Services and Third-Party Materials</h3>
@@ -148,11 +139,9 @@ You agree not to modify, rent, lease, loan, sell, distribute, or create derivati
 
 The Company reserves the right to change, suspend, remove, or disable access to any External Services at any time without notice. In no event will the Company be liable for the removal of or disabling of access to any such External Services. The Company may also impose limits on the use of or access to certain External Services, in any case and without notice or liability.</div>
         <h3>4.3 Smart Contract Infrastructure</h3>
-        <div>For transactions involving a cryptocurrency holding period, User funds are held in self-executing smart contracts deployed on the Ethereum Base network. These smart contracts are autonomous and non-custodial—they are not owned or operated by the Company.
+        <div>Timed escrow (refund_protocol) remains available alongside 2-of-3 escrow (escrow_2of3). Timed escrow uses its holding-period and dispute rules. A 2-of-3 deal uses a dedicated contract on Base or TON holding that deal’s agreed deposit. The contract requires two matching authorizations from distinct designated participants to release the principal to the Merchant or refund it to the Client. It has no automatic release date or administrator override of that rule. Token and network availability is shown in the App.
 
-The Company does not at any time hold, store, or have access to User private keys or cryptocurrency funds. The Company cannot confiscate, freeze, or otherwise obtain any User's funds. Any actions by the Company under Section 7 (Holding Period and Dispute Resolution) consist solely of submitting predefined, on-chain instructions to the smart contract pursuant to its immutable logic. The Company's submission of a refund decision constitutes an on-chain signal within the smart contract's parameters and does not involve direct custody or manual transfer of cryptocurrency assets.
-
-Current contract addresses (subject to update upon redeployment):
+The following addresses identify existing Base timed escrow contracts, not the individual 2-of-3 deal contracts:
 
 <ul>
 <li>Ethereum Contract: 0x43F093b25E622403D596797B7F54454dAef85E15</li>
@@ -200,19 +189,12 @@ The Company provides the smart contract interface as a technical utility only an
 </ul></div></div><div class="section">
       <h2>5. Fees and Payment Terms</h2>
         <h3>5.1 Transaction Fees</h3>
-        <div>The Company charges a fee of 0.1% of the transaction amount for all transactions facilitated through the Web App. Any fees exceeding this amount are exclusively for early withdrawals and will be clearly disclosed to the User at the time of withdrawal.</div>
+        <div>For escrow_2of3, a total fee of 1% of the agreed deposit is deducted at settlement on either release or refund: 0.5% to the designated Arbiter and 0.5% to the protocol. It is not a deposit fee, and timed early-withdrawal tiers do not apply. For refund_protocol, the existing 0.1% baseline fee and disclosed early-withdrawal fees remain applicable. Network fees and third-party service fees may also apply.</div>
         <h3>5.2 User Responsibility</h3>
         <div>Users are responsible for paying all applicable fees associated with their use of the Services, including transaction fees, early withdrawal fees, and any third-party fees imposed by Coinbase or other service providers. When using the Web App's token swap feature with non-native ERC20 tokens, Users may incur gas fees for both a token approval transaction and a separate swap transaction, and these fees are non-refundable regardless of whether the swap ultimately succeeds.</div></div><div class="section">
       <h2>6. User Roles and Transaction Process</h2>
         <h3>6.1 Merchant Services</h3>
-        <div>Users acting as merchants ("Merchant") acknowledge that:
-
-<ul>
-<li>They have the legal capacity to create and consent to payment agreements</li>
-<li>They are responsible for creating agreements that stipulate cryptocurrency type (ETH or USDC), payment amount, and holding period terms</li>
-<li>The decision to include a holding period is at their sole discretion</li>
-<li>They are ultimately responsible for the content of all agreements, regardless of any AI-generated suggestions</li>
-</ul></div>
+        <div>Merchants are responsible for the agreed asset, amount, selected escrow type, and transaction terms, including any applicable holding period and designated arbiter. For buyer-created invitations, the Merchant may choose 2-of-3 escrow with their own arbiter, the existing 14-day holding period, or a zero-day payment without escrow. Both parties must review and sign the agreement before 2-of-3 payment. Merchants remain responsible for agreement content, including AI-generated suggestions, and must have legal capacity to consent.</div>
         <h3>6.2 Client Services</h3>
         <div>Users submitting payments ("Client") acknowledge that:
 
@@ -224,7 +206,9 @@ The Company provides the smart contract interface as a technical utility only an
 </ul></div></div><div class="section">
       <h2>7. Holding Period and Dispute Resolution</h2>
         <h3>7.1 Cryptocurrency Holding Period</h3>
-        <div>When a Merchant elects to include a cryptocurrency holding period greater than zero (0) days in a transaction:
+        <div>This subsection applies to refund_protocol transactions only. A 2-of-3 transaction is governed by Section 7.4; absence of a timed holding period does not make it a zero-day payment.
+
+When a Merchant elects to include a cryptocurrency holding period greater than zero (0) days in a transaction:
 
 <ul>
 <li>The Company will automatically add an additional 72 hours to the specified holding period as an Arbitration Period</li>
@@ -237,7 +221,9 @@ When a Merchant elects a holding period of zero (0) days, no Arbitration Period 
 
 <strong>Adjustment of Arbitration Period.</strong> If a Client initiates a dispute during the holding period, the Company may, at its option, adjust the Arbitration Period by extending it by up to an additional thirty (30) days beyond the 72 hours described above (whether to allow the Merchant and Client additional time to resolve the matter between themselves or to allow the Company additional time to complete its determination) or by reducing/advancing the release timestamp (for example, where a dispute is resolved early). Any negative adjustment cannot decrease the lockup period below the original creation-time schedule. The Company is not obligated to extend or adjust the Arbitration Period and may make its determination, or decline to adjust, at its sole discretion.</div>
         <h3>7.2 Dispute Resolution Process</h3>
-        <div>The dispute resolution process described below applies only to transactions where the Merchant has elected a cryptocurrency holding period greater than zero (0) days.
+        <div>This subsection applies to refund_protocol transactions only. A 2-of-3 transaction is governed by Section 7.4; absence of a timed holding period does not make it a zero-day payment.
+
+The dispute resolution process described below applies only to transactions where the Merchant has elected a cryptocurrency holding period greater than zero (0) days.
 
 In the event of a dispute between a Merchant and Client during the holding period:
 
@@ -249,9 +235,23 @@ In the event of a dispute between a Merchant and Client during the holding perio
 <li>Once diverted, the Merchant will have no ability to collect the refunded funds</li>
 </ol></div>
         <h3>7.3 Transactions Without Holding Period</h3>
-        <div>For transactions with no holding period (0 days), the Client is not entitled to the dispute resolution process described above. Funds will be immediately available to the Merchant upon transaction completion.
+        <div>This subsection applies to refund_protocol transactions only. A 2-of-3 transaction is governed by Section 7.4; absence of a timed holding period does not make it a zero-day payment.
 
-By using the Web App, all Users consent to this dispute resolution process, whether acting as Merchant or Client.</div></div><div class="section">
+For transactions with no holding period (0 days), the Client is not entitled to the dispute resolution process described above. Funds will be immediately available to the Merchant upon transaction completion.
+
+By using the Web App, all Users consent to this dispute resolution process, whether acting as Merchant or Client.</div>
+        <h3>7.4 2-of-3 Escrow</h3>
+        <div>For 2-of-3 escrow, the assigned arbiter approves both participants before agreement approval, payment, or settlement signing. Each provides their name, phone number, and address, or completes Persona ID verification. At $10,000 USD equivalent or more, Persona verification is required for both.
+
+For 2-of-3 escrow, buyer and seller both sign the PDF agreement before payment. Signing captures a front-camera photo; the agreement, signatures, and photos are available to the assigned arbiter during a dispute. Agreement signatures are separate from later wallet authorizations to release or refund funds.
+
+In 2-of-3 escrow, any two of the buyer, seller, and assigned arbiter must authorize the same outcome: payment to the seller or refund to the buyer. Buyer and seller can settle together without the arbiter. Settlement is complete only after blockchain confirmation.
+
+2-of-3 escrow has no automatic release date or timed dispute deadline. Funds can remain locked indefinitely without two matching authorizations. No single participant can settle alone.
+
+With timed escrow, the buyer must open a dispute within the agreed holding period; Shake reviews evidence under the timed escrow rules. With 2-of-3 escrow, the assigned arbiter reviews the evidence and can authorize an outcome together with either participant. The arbiter cannot move funds alone.
+
+After a funded 2-of-3 deal settles, the arbiter rates both participants and each participant rates the arbiter. Buyer and seller may also rate each other under the Terms; if the arbiter authorized a refund, the seller cannot rate the buyer. Ratings never hold up release or refund.</div></div><div class="section">
       <h2>8. Artificial Intelligence and Data Usage</h2>
         <h3>8.1 AI-Generated Content</h3>
         <div>The Web App may utilize artificial intelligence ("AI") or large language models to provide suggested text, clauses, or other content for potential agreements between Merchants and Clients ("AI-Generated Content"). Users acknowledge and agree that:

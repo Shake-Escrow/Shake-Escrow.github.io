@@ -6,7 +6,7 @@
         "path": "/"
       },
       {
-        "title": "Qanday ishlaydi",
+        "title": "Eskrou variantlari",
         "path": "/how-it-works"
       },
       {
@@ -20,6 +20,10 @@
       {
         "title": "Toʻlovlar",
         "sublinks": [
+          {
+            "title": "Xavfsiz to‘lovlar",
+            "path": "/secure-payments"
+          },
           {
             "title": "Toʻlov oling",
             "path": "/get-paid"
@@ -39,7 +43,7 @@
   "home": {
     "hero": {
       "headline": "Qo'l siqdik!",
-      "subhead": "Har bir kripto operatsiyada xaridor va sotuvchini himoya qiluvchi smart-kontrakt eskrou — banklarsiz, vositachilarsiz, kutishlarsiz.",
+      "subhead": "Xaridor va sotuvchilar uchun muddatli yoki 3 tadan 2 tasdiqli smart-kontrakt eskrou bilan kripto to‘lovlar.",
       "button": "Hozir mavjud",
       "availableNowHeading": "Hozir mavjud",
       "ctaLabel": "Bepul yuklab olish",
@@ -50,11 +54,11 @@
       "partnerLinkText": "kripto onramp/offramp hamkori"
     },
     "features": {
-      "headline": "Toʻlovingizni qaytariladigan eskrou bilan kuchaytiring",
+      "headline": "To‘lovingizni himoyalashning\nikki usuli",
       "items": [
         {
-          "title": "Qaytariladigan\neskrou",
-          "description": "Shake — neytral raqamli seyf kabi ishlaydigan smart-kontrakt eskroudan foydalanadi, u mablagʻlarni Ethereum Base tarmogʻidagi shaffof qoidalarga muvofiq bloklab qoʻyadi. Shake hech qachon sizning pulingizni saqlamaydi va hech kim mablagʻlarni kelishilgan shartlardan tashqarida koʻchira olmaydi."
+          "title": "Eskrou\ntanlovi",
+          "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
         },
         {
           "title": "Sizda mavjud boʻlgan istalgan kripto bilan toʻlang",
@@ -76,7 +80,7 @@
       "steps": [
         {
           "title": "Hisob yarating",
-          "description": "ID, telefon raqami va bir nechta selfi yordamida bir necha daqiqada bepul hisob oching."
+          "description": "Hisob yarating va bitimingiz uchun kerakli shaxsni tasdiqlash tekshiruvlaridan o‘ting."
         },
         {
           "title": "Toʻlov usulini qoʻshing",
@@ -84,7 +88,7 @@
         },
         {
           "title": "Tranzaksiyalarni boshlang",
-          "description": "Shake mablagʻlarni saqlamagani uchun toʻliq ishonch bilan yuborish va qabul qilishni boshlang. Pulni yechib olishga tayyor boʻlganingizda, Coinbase Offramp kriptoni qaytadan fiat valyutaga aylantirish imkonini beradi. Bu jarayon davomida Shake hech qachon mablagʻlaringizga tegmaydi."
+          "description": "To‘lov shartlarini kelishing, eskrou variantini tekshiring va mablag‘ kiritishdan oldin imzolang. Yetkazish va hisob-kitobni ilovada kuzating."
         }
       ]
     },
@@ -92,13 +96,13 @@
       "business": {
         "label": "Sotuvchi",
         "headline": "Xavfsiz\ntoʻlov oling",
-        "description": "Eskrou muddatini belgilang (0–180 kun), uni xaridoringiz bilan baham koʻring va eskrou muddati tugagach mablagʻlarni oling. Muddatni 0 ga oʻrnatib, tezkor oʻtkazma qiling — baribir shaxsni tasdiqlash, imzolangan kelishuv va xaridor reytinglariga ega boʻlasiz.",
+        "description": "Kelishilgan muddatli eskrou yoki tayinlangan hakam va ikkita mos ruxsat bilan 3 tadan 2 tasdiqli eskrouni taklif qiling. Eskrousiz, nol kunlik to‘lov ham mavjud.",
         "button": "Batafsil"
       },
       "customer": {
         "label": "Xaridor",
         "headline": "Xavfsizlik tarmogʻi\nbilan toʻlang",
-        "description": "Ilova orqali mablagʻlarni eskrouga joylashtiring. Pulingiz kelishilgan muddat davomida xavfsiz saqlanadi. Agar biror narsa notoʻgʻri ketsa, muddat tugashidan oldin pulni qaytarishni soʻrashingiz mumkin.",
+        "description": "To‘lashdan oldin eskrou turini tekshiring. Muddatli eskrouda nizo muddati bor; 3 tadan 2 tasdiqli eskrou mablag‘ni ikkita ishtirokchi bir xil to‘lov yoki qaytarishga ruxsat berguncha saqlaydi.",
         "button": "Batafsil"
       }
     },
@@ -168,7 +172,7 @@
       },
       {
         "title": "Himoya bilan tranzaksiya qiling",
-        "description": "Har ikki tomon shartlarga rozi boʻladi va yetkazib berish tugaguncha mablagʻlar Ethereum Base tarmogʻidagi smart-kontraktda xavfsiz saqlanadi."
+        "description": "To‘lovdan oldin eskrou variantini kelishing va bitim shartlarini imzolang. Hisob-kitob faqat yetkazishga emas, tanlangan protokol qoidalariga bog‘liq."
       }
     ],
     "trust": {
@@ -179,11 +183,11 @@
   },
   "howItWorks": {
     "hero": {
-      "headline": "Shake toʻlov tizimi sizni qanday qilib, aynan, xavfsiz saqlaydi"
+      "headline": "Bitimingizga mos eskrouni tanlang"
     },
     "section1": {
       "headline": "Eskrou jarayoni",
-      "description": "Shake eskrousi Ethereum Base tarmogʻidagi smart-kontrakt orqali ishlaydi. Toʻlov amalga oshirilgach, mablagʻlar kod tomonidan bloklanadi — Shake, bank yoki uchinchi tomon tomonidan emas. \n\nShake foydalanuvchi mablagʻlarini hech qachon oʻz ixtiyoriga olmaydi. Toʻlovlar smart-kontraktning oʻzida saqlanadi, foydalanuvchilar esa oʻzlari ma'qul koʻrgan hamyon — jumladan mobil ilovada Coinbase’ning oʻrnatilgan hamyoni, Telegram'da Telegram hamyoni va Tonkeeper yoki Farcaster'da oʻrnatilgan ETH hamyonlari orqali operatsiyalarni amalga oshiradilar. Fiat onramp va offramp xizmatlari mobil qurilmalarda Coinbase tomonidan taʼminlanadi. Bu tuzilma yagona nosozlik nuqtasi xavfini bartaraf etadi va mablagʻlar faqat kelishilgan qoidalarga muvofiq harakat qilishini taʼminlaydi."
+      "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.\n\n3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq."
     },
     "section2": {
       "headline": "Qanday ishlaydi",
@@ -194,15 +198,38 @@
       "subhead": "Bugun hisobingizni yarating va kundalik kripto harakatiga qoʻshiling.",
       "button": "Hozir mavjud"
     },
-    "escrowIntro": "Shake, biznes mahsulot yoki xizmatni yetkazib berayotgan vaqtda mijozning pulini xavfsiz saqlaydigan seyf kabi eskroudan foydalanadi.",
-    "agreementNote": "Har qanday eskrou pul almashinuvidan oldin xaridor va sotuvchi imzolashi kerak boʻlgan kelishuvga ega boʻlishi kerak. Ilovadagi sunʼiy intellekt kelishuvni taklif qiladi va siz olgan rasmlar unga qoʻshiladi. Shunchaki barmogʻingiz bilan imzolang.",
+    "escrowIntro": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
+    "agreementNote": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
     "aiCaption": "Sun'iy intellekt tovarlar YOKI xizmatlarni qoʻllab-quvvatlaydi",
-    "smartContractNote": "Aslida, bu Ethereum Base tarmogʻidagi smart-kontrakt: bloklash qoidalari toʻlov amalga oshirilgan lahzada blokcheynga yoziladi va uni Shake ham boʻlsa hech kim oʻzgartira olmaydi. Mablagʻlar faqat sotuvchiga (bloklash taymeri tugagach yoki nizo muddati nizosiz yopilgandan soʻng imzolangan erta yechib olish orqali) chiqarilishi yoki hakam tomonidan qaytarish tasdiqlanganda xaridorga qaytarilishi mumkin. Kodda boshqa yoʻl mavjud emas.",
+    "smartContractNote": "3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq.",
     "process": {
-      "header": "Eskrou jarayoni",
+      "header": "Muddatli eskrou qanday ishlaydi",
       "step1": "Tranzaksiyani amalga oshirgandan soʻng, pulingiz toʻgʻridan-toʻgʻri sotuvchiga borish oʻrniga, kelishilgan muddatga (0–180 kun) neytral seyf kabi boʻlgan eskrouga joylashtiriladi.",
       "step2": "Ushbu kutish davrida, agar siz sotib olgan narsangizni olmagan boʻlsangiz, sotuvchi bilan toʻgʻridan-toʻgʻri muhokama qilishingiz yoki pulni qaytarishni soʻrashingiz mumkin, buni inson-tekshiruvchi baholaydi.",
       "step3": "Agar kelishilgan eskrou davrida nizo bildirilmasa, sotuvchi mablagʻlarni darhol yechib olishi yoki standart arbitraj buferi yakunlangach, ularni bazaviy toʻlov bilan avtomatik qabul qilishi mumkin."
+    },
+    "options": {
+      "title": "Ikki eskrou varianti, turli qoidalar",
+      "timedTitle": "Muddatli eskrou",
+      "timedBody": "Muddatni kelishing, shu davrda nizo oching va vaqtga bog‘liq qoidalar bo‘yicha to‘lovni chiqaring. Odatiy chiqarish 0.1%; erta yechishda jami 1% gacha. Nol kunlik to‘lovlarda eskrou nizo davri yo‘q.",
+      "quorumTitle": "3 tadan 2 tasdiqli eskrou",
+      "quorumBody": "3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi.",
+      "lock": "3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi.",
+      "fee": "To‘lov yoki qaytarishda 1% ushlanadi: 0.5% hakamga va 0.5% protokolga. Tarmoq haqlari ham qo‘llanishi mumkin.",
+      "identity": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
+      "ratings": "Mablag‘ kiritilgan 3 tadan 2 tasdiqli bitim yakunlangach, hakam ikkala ishtirokchini, ular esa hakamni baholaydi. Xaridor va sotuvchi Shartlarga muvofiq bir-birini ham baholashi mumkin; qaytarishga hakam ruxsat bergan bo‘lsa, sotuvchi xaridorni baholay olmaydi. Baholar to‘lov yoki qaytarishni kechiktirmaydi.",
+      "diagram": {
+        "timedLabel": "Muddatli eskrou jarayoni",
+        "deposit": "Depozit",
+        "holding": "Saqlash davri + nizo qoidalari",
+        "outcome": "To‘lov yoki qaytarish",
+        "quorumLabel": "Ushbu juftliklardan istalgani bir xil natijaga ruxsat bera oladi",
+        "buyer": "Xaridor",
+        "seller": "Sotuvchi",
+        "arbiter": "Hakam",
+        "or": "yoki",
+        "confirmed": "Blokcheyn tasdig‘idan so‘ng yakunlanadi"
+      }
     }
   },
   "getPaid": {
@@ -213,7 +240,7 @@
     "sections": [
       {
         "headline": "Ishlab topganingizning\nkoʻprogʻini saqlang",
-        "description": "Kredit karta protsessorlari odatda har bir tranzaksiya uchun 2,5–3% oladi, anʼanaviy eskrou xizmatlari esa undan ham koʻproq oladi. Shake esa tranzaksiya uchun atigi 0,1% – 1% oladi: standart chiqarish va 0 kunlik tezkor oʻtkazmalar uchun 0,1%, eskrou tekshiruv oynasi tugashi bilanoq darhol erta yechib olish uchun esa 1% gacha. Terminal sotib olish shart emas, orada bank yoʻq, xalqaro qoʻshimcha toʻlovlar yoʻq. Har bir sotuvdan koʻproq mablagʻ sizda qoladi."
+        "description": "3 tadan 2 tasdiqli eskrouda to‘lov yoki qaytarish yakunida 1% ushlanadi: 0.5% hakamga, 0.5% protokolga. Muddatli eskrou o‘z tariflarini saqlaydi: odatiy chiqarish uchun 0.1%, erta yechishda jami 1% gacha. Tarmoq va uchinchi tomon haqlari ham qo‘llanishi mumkin."
       },
       {
         "headline": "Sizga\nmoslashadi",
@@ -251,7 +278,7 @@
     "sections": [
       {
         "headline": "Ahamiyatli\ntranzaksiyalar",
-        "description": "Toʻlovlarni maxfiy, hujjatlashtirilgan va oson hal qilinadigan holda saqlaydigan ilova bilan toʻlang. Toʻlovingiz xaridor va sotuvchi kelishgan belgilangan muddatga Ethereum Base tarmogʻidagi smart-kontrakt eskrousida bloklanadi. Bu vaqt davomida mablagʻlarga shartnoma qoidalaridan tashqarida kirish mumkin emas va kelishilgan shartlar bajarilmasa, nizo koʻtarilishi mumkin. Shake va Persona har bir biznesning shaxsini, obroʻsini va fikr-mulohazalarini tekshiradi. Har bir tranzaksiya imzolangan kelishuv va tekshiriladigan on-chain toʻlov isboti bilan birga keladi – shunday qilib siz xaridlaringizga ishonishingiz va nizolardan qochishingiz mumkin."
+        "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
       },
       {
         "headline": "Oqilona xarajat qiluvchi sifatida rivojlaning",
@@ -267,7 +294,7 @@
       },
       {
         "headline": "Kuch xalqqa\nqaytadi",
-        "description": "Shake mahalliy doʻkonlar, frilanserlar va hatto bank hisobiga ega boʻlmaganlar uchun ham ochiq – shunday qilib toʻlovlaringiz katta moliyaviy institutlar emas, balki siz tanlagan odamlarni qoʻllab-quvvatlaydi. Agar pulni qaytarishni istasangiz, Shake jamoasidagi haqiqiy inson dalillarni koʻrib chiqadi va adolatli, neytral hakam sifatida ish yuritadi."
+        "description": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
       }
     ],
     "cta": {
@@ -367,7 +394,7 @@
     "questions": [
       {
         "question": "Ilova qanday ishlaydi?",
-        "answer": "Shake, biznes mahsulot yoki xizmatni yetkazib berayotgan vaqtda mijozning pulini xavfsiz saqlaydigan, Ethereum Base tarmogʻidagi smart-kontrakt eskroudan foydalanadi. Batafsil maʼlumot uchun \"Qanday ishlaydi\" sahifasiga qarang."
+        "answer": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
       },
       {
         "question": "Qanday boshlasam boʻladi?",
@@ -403,11 +430,11 @@
       },
       {
         "question": "Eskrou nima?",
-        "answer": "Eskrou — pulni xavfsiz saqlaydigan va almashinuv amalga oshirilishidan oldin mijoz va biznesning ikkalasi ham oʻz majburiyatlarini bajarayotganini taʼminlaydigan seyf kabidir. \n\nMasalan, siz onlaynda topgan kimdandir ishlatilgan telefon sotib olyapsiz deylik. Odatda siz uchrashasiz, joyida toʻlaysiz va telefon ishlashiga umid qilasiz. Lekin agar u buzuq boʻlsa yoki vaʼda qilingandek boʻlmasa, allaqachon kech boʻladi — pul ketgan boʻladi. \n\nEskrou bilan esa, ularga toʻgʻridan-toʻgʻri toʻlash oʻrniga, pulingiz belgilangan muddatga xavfsiz saqlash hisobiga tushadi. Sotuvchi pul mavjudligini koʻradi va telefonni topshiradi. \n\nKutish davrida siz telefon sifatini tekshirasiz. Agar u buzuq ekanligini aniqlasangiz, tranzaksiyaga eʼtiroz bildirib, pulni qaytarishni soʻraysiz. Agar telefon ishlasa, kutish davri tugagach pul sotuvchiga beriladi. \n\nAslida, eskrou:    \n1) Kutish davri tugagach mijozning toʻlovi tayyor va oʻtkazish uchun mavjud ekanligini taʼminlash orqali bizneslarni himoya qiladi    \n2) Mablagʻlarning xavfsiz saqlanishini va faqat kelishilgan eskrou shartlariga muvofiq, jumladan nizo natijasi taqozo etganda pulni qaytarish orqali, chiqarilishini taʼminlash orqali ikkala tomonga ham himoya taqdim etadi. \n\nBatafsil maʼlumot uchun \"Qanday ishlaydi\" sahifasiga qarang."
+        "answer": "Eskrou bitim bajarilayotganda to‘lovni smart-kontraktda saqlaydi. Muddatli variantda kelishilgan saqlash va nizo davri bor. 3 tadan 2 tasdiqli variantda xaridor, sotuvchi va hakamdan ikkitasi bir xil to‘lov yoki qaytarishga ruxsat berishi kerak; yetkazishning o‘zi to‘lovni chiqarmaydi."
       },
       {
         "question": "Eskrou muddatidan foydalanishim shartmi?",
-        "answer": "Yoʻq. Sotuvchilar 0 dan 180 kungacha istalgan eskrou muddatini tanlashi mumkin va uni kutishsiz va pulni qaytarish oynasisiz tezkor oʻtkazma uchun 0 ga oʻrnatish mumkin. Baribir siz Shake’ning boshqa barcha himoyalariga ega boʻlasiz: shaxsni tasdiqlash, rasmlar bilan imzolangan kelishuv, batafsil tranzaksiya hujjatlari va xaridor reytinglari. Xaridorlarga xavfsizlik tarmogʻini taʼminlamoqchi boʻlsangiz eskrou muddati toʻgʻri tanlov, savdo oddiy boʻlib ikkala tomon ham tayyor boʻlganda esa tezkor oʻtkazma toʻgʻri tanlovdir."
+        "answer": "Yo‘q. Muddatli eskrou, 3 tadan 2 tasdiqli eskrou va eskrousiz nol kunlik to‘lov alohida variantlardir. Xaridor yaratgan takliflarda sotuvchi o‘z hakami bilan 3 tadan 2 tasdiqli eskrouni, mavjud 14 kunlik muddatni yoki eskrousiz nol kunni tanlaydi. Imzolashdan oldin tekshiring: 3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yo‘q."
       },
       {
         "question": "Shake’dan foydalanish uchun kripto boʻyicha oldingi tajriba yoki sarmoya kiritish talab qilinadimi?",
@@ -415,7 +442,7 @@
       },
       {
         "question": "Shake ilovasidan kim foydalanishi mumkin?",
-        "answer": "Shake 18 yoshdan oshgan shaxslar uchun mavjud. Shake hisobini yaratish uchun Persona xizmati (withpersona.com) orqali shaxsni tasdiqlash talab qilinadi."
+        "answer": "Shake 18 yosh va undan kattalar uchun. Shaxsni tasdiqlash talablari bitimga bog‘liq. 3 tadan 2 tasdiqli eskrou uchun quyidagi ishtirokchilarni ma’qullash talablarini ko‘ring."
       },
       {
         "question": "Menda mavjud boʻlgan istalgan kriptovalyuta bilan toʻlashim mumkinmi?",
@@ -427,11 +454,11 @@
       },
       {
         "question": "Toʻlov yuborish yoki qabul qilish qancha vaqt oladi? Tezkor oʻtkazma uchun toʻlov bormi?",
-        "answer": "Toʻlovlar odatda bir necha soniyada on-chain tasdiqlanadi. Shake’da koʻradigan \"kutish\" oʻtkazma vaqti emas — bu eskrou himoyasi. Siz 0 dan 180 kungacha boʻlgan eskrou muddatini tanlaysiz (masalan, 3 kun yoki tezkor hisob-kitob uchun 0). Ushbu kelishilgan vaqt davomida xaridor xaridni tekshirishi va kerak boʻlsa nizo ochishi mumkin. Nizo bildirilmasdan bu muddat yopilgach, bazaviy 0,1% toʻlov bilan avtomatik chiqarishgacha standart 3 kunlik arbitraj buferi boʻladi. Agar sotuvchi xaridorning eskrou muddati tugashi bilanoq darhol toʻlov olishni istasa, u qoʻshimcha toʻlov evaziga (qoʻshimcha 0,9% gacha, jami 1,0% toʻlov) erta yechib olishdan foydalanishi mumkin: bufer davrida ertaroq yechib olish 0,4% (1 kun erta), 0,7% (2 kun erta) yoki 1,0% (3 kun erta) toʻlovni tashkil qiladi. Shake alohida tezkor oʻtkazma toʻlovini olmaydi; oddiy tarmoq toʻlovlari qoʻllanilishi mumkin."
+        "answer": "Muddatli eskrou: Toʻlovlar odatda bir necha soniyada on-chain tasdiqlanadi. Shake’da koʻradigan \"kutish\" oʻtkazma vaqti emas — bu eskrou himoyasi. Siz 0 dan 180 kungacha boʻlgan eskrou muddatini tanlaysiz (masalan, 3 kun yoki tezkor hisob-kitob uchun 0). Ushbu kelishilgan vaqt davomida xaridor xaridni tekshirishi va kerak boʻlsa nizo ochishi mumkin. Nizo bildirilmasdan bu muddat yopilgach, bazaviy 0,1% toʻlov bilan avtomatik chiqarishgacha standart 3 kunlik arbitraj buferi boʻladi. Agar sotuvchi xaridorning eskrou muddati tugashi bilanoq darhol toʻlov olishni istasa, u qoʻshimcha toʻlov evaziga (qoʻshimcha 0,9% gacha, jami 1,0% toʻlov) erta yechib olishdan foydalanishi mumkin: bufer davrida ertaroq yechib olish 0,4% (1 kun erta), 0,7% (2 kun erta) yoki 1,0% (3 kun erta) toʻlovni tashkil qiladi. Shake alohida tezkor oʻtkazma toʻlovini olmaydi; oddiy tarmoq toʻlovlari qoʻllanilishi mumkin.\n\n3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi. 3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi."
       },
       {
         "question": "Shake’dan foydalanish uchun toʻlovlar bormi?",
-        "answer": "Shake eskrou orqali amalga oshiriladigan tranzaksiyalar uchun atigi 0,1% – 1% miqdorida shaffof xizmat toʻlovini oladi. Bazaviy toʻlov tranzaksiya summasining 0,1% ni tashkil qiladi (0 kunlik tezkor oʻtkazmalar va arbitraj buferidan keyingi standart chiqarish uchun). \n\nAgar sotuvchi xaridorning nizo ochish oynasi yopilgandan soʻng mablagʻlarni erta yechib olishni tanlasa, bosqichma-bosqich erta yechib olish toʻlovi qoʻllaniladi (yechib olish necha kun erta amalga oshirilishiga qarab qoʻshimcha 0,3% dan 0,9% gacha, jami 0,4% dan 1,0% gacha, 3 kungacha erta). \n\nBlokcheyn tarmoq toʻlovlari ham qoʻllanilishi mumkin va ular toʻgʻridan-toʻgʻri tarmoqqa toʻlanadi. Valyuta konvertatsiyasi (fiat ↔ kripto) Coinbase Onramp va Offramp orqali amalga oshiriladi, ular ishlatilayotgan aktivga qarab oʻz toʻlovlarini qoʻllashi mumkin. Kriptovalyutalar oʻrtasidagi valyuta almashtirish Odos protokolidan foydalanadi va standart svop toʻlovlarini oʻz ichiga oladi.\n\nShake yashirin toʻlovlar qoʻshmaydi, mablagʻlarni oʻz ixtiyoriga olmaydi va oddiy foydalanish uchun takrorlanuvchi obuna toʻlovlarini olmaydi."
+        "answer": "3 tadan 2 tasdiqli eskrouda to‘lov yoki qaytarish yakunida 1% ushlanadi: 0.5% hakamga, 0.5% protokolga. Muddatli eskrou o‘z tariflarini saqlaydi: odatiy chiqarish uchun 0.1%, erta yechishda jami 1% gacha. Tarmoq va uchinchi tomon haqlari ham qo‘llanishi mumkin."
       },
       {
         "question": "Shake tranzaksiyalarimni soliqlarimda koʻrsatishim kerakmi?",
@@ -455,23 +482,23 @@
       },
       {
         "question": "Agar nizo yuzaga kelsa, nima boʻladi?",
-        "answer": "Shake jarayoni metama'lumotlarni qayd etadi va inson-tekshiruvchi nizolarni adolatli hal qilishi uchun tranzaksiya maʼlumotlarini taqdim etadi. Odatda, Shake jamoasi aʼzosi dalillarni koʻrib chiqadi va natijani hal qiladi — bu qarorni algoritm yoki smart-kontrakt qabul qilmaydi. Hakamlar zarur boʻlganda pulni qaytaradi."
+        "answer": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
       },
       {
         "question": "Shake firibgarlik va ruxsatsiz tranzaksiyalardan qanday himoya qiladi?",
         "answer": "Shake tasdiqlangan shaxslar, har bir tranzaksiya uchun imzolangan kelishuvlar va tekshiriladigan on-chain toʻlov isboti orqali, nizolarni hal qilish uchun batafsil yozuvlar bilan qoʻllab-quvvatlangan holda, firibgarlik va ruxsatsiz tranzaksiyalardan himoya qiladi."
       },
       {
-        "question": "Nega Shake yoki xaker mening pulimni olib qochib keta olmaydi?",
-        "answer": "Shake nokastodial boʻlib, hech qachon foydalanuvchi mablagʻlarini yoki shaxsiy kalitlarini oʻz ixtiyoriga olmaydi. Toʻlovlar Ethereum Base tarmogʻidagi on-chain smart-kontrakt tomonidan saqlanadi, u faqat eskrou muddati tugagach sotuvchiga yoki pul qaytarilganda xaridorga mablagʻlarni chiqarishi mumkin. \n\nShake hech qaysi platformada sizning hamyon shaxsiy kalitlaringizni saqlamaydi. Mobil ilovada Coinbase xavfsiz oʻrnatilgan hamyon infratuzilmasini taʼminlaydi. Telegram'da kalitlar Telegram hamyoningiz yoki Tonkeeper’da xavfsiz qoladi. Farcaster'da tranzaksiyalar toʻgʻridan-toʻgʻri oʻrnatilgan ETH hamyoningiz orqali imzolanadi. Shake eskroudagi mablagʻlarga kira olmaydi, ularni koʻchira yoki boshqa yoʻnaltira olmaydi. Eskrou mantigʻi inson xohishi bilan emas, balki blokcheyn kodi orqali amalga oshiriladi — yagona inson aralashuvi hakamning nizo boʻyicha qarori boʻlib, shartnoma keyin uni avtomatik ravishda bajaradi."
+        "question": "Eskrou hisob-kitobiga kim ruxsat bera oladi?",
+        "answer": "3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi."
       },
       {
         "question": "Tranzaksiya amalga oshirganimda nima hujjatlashtiriladi?",
-        "answer": "Shake barcha maʼlumotlarni shifrlaydi va har bir tafsilotni qayd etadi: vaqt, joylashuv, imzolar va siz taqdim etgan rasmlar. Har bir tomon qurilmasi imzolayotgan shaxsning imzolash vaqtidagi old kamera rasmini ham oladi. Yetkazib berish tasdigʻini yuklash mumkin va tizim tranzaksiya amalga oshirilishidan oldin pul mavjudligini tasdiqlaydi."
+        "answer": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida."
       },
       {
         "question": "Shake javobgarlikni qanday shakllantiradi?",
-        "answer": "Har bir Shake foydalanuvchisi tasdiqlangan shaxsga va fikr-mulohaza balliga ega. Persona har bir aʼzoning shaxsini tekshiradi, shuning uchun hech kim javobgarlikdan qochish uchun cheksiz hamyon yarata olmaydi."
+        "answer": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi."
       },
       {
         "question": "Qanday maʼlumot ommaviy?",
@@ -579,28 +606,28 @@
   "securePayments": {
     "seo": {
       "title": "Smart-kontrakt eskrou bilan xavfsiz toʻlovlar",
-      "description": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting. Base tarmogʻida tijorat savdosi, ulgurji tovarlar, transport vositalari, xizmatlar va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial smart-kontrakt eskrou."
+      "description": "Transport, tovar, xizmat va savdo uchun muddatli hamda 3 tadan 2 tasdiqli eskrouni solishtiring. To‘lov, qaytarish va haq qoidalari aniq."
     },
     "hero": {
-      "chip": "Base tarmogʻida smart-kontrakt eskrou",
+      "chip": "Smart-kontrakt eskrouning ikki varianti",
       "headline": "Smart-kontrakt eskrou bilan xavfsiz toʻlovlar",
       "subheadline": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting.",
-      "description": "Shake DeFi tijorat va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial toʻlov eskrousini taqdim etadi. Tranzaksiya boʻyicha kelishing, toʻlovni Base tarmogʻidagi smart-kontraktda bloklang va mablagʻlarni kelishilgan eskrou shartlariga muvofiq chiqaring.",
+      "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
       "cta": "Boshlash",
       "availableOn": "Quyidagilarda mavjud:",
       "availablePlatforms": "Telegram • Brauzer • iOS • Android • Farcaster",
       "preview": {
         "activeSmartContract": "Faol smart-kontrakt",
         "escrowSafe": "Shake eskrou seyfi",
-        "fundsLocked": "Mablagʻlar Base tarmogʻida bloklangan",
+        "fundsLocked": "Mablag‘ eskrouda saqlanadi",
         "agreementTermsTitle": "Kelishuv shartlari",
         "agreementTermsValue": "Ikki tomonlama imzolangan shartlar",
         "agreementTermsStatus": "Ikkala tomon ham tasdiqladi ✓",
         "escrowProtectionTitle": "Smart-kontrakt eskrou",
         "escrowProtectionValue": "Nokastodial",
-        "escrowProtectionStatus": "Base smart-kontrakti",
-        "standardFeeTitle": "Standart toʻlov",
-        "standardFeeValue": "0,1% xizmat toʻlovi",
+        "escrowProtectionStatus": "Qoidalar eskrou tanloviga bog‘liq",
+        "standardFeeTitle": "Eskrou haqlari",
+        "standardFeeValue": "Muddatli: 0.1%–1% · 3 tadan 2: 1%",
         "standardFeeStatus": "Oylik obuna toʻlovlarisiz"
       }
     },
@@ -608,7 +635,7 @@
       "headline": "Real hayotdagi tranzaksiyalar uchun toʻlov eskrousi",
       "subheadline": "Transport vositasi sotib olyapsizmi, ulgurji tovar qidiryapsizmi, uskuna xarid qilyapsizmi, pudratchi yollayapsizmi yoki tovar sotyapsizmi?",
       "description": "Shake xaridor va sotuvchilarga toʻlovni toʻgʻridan-toʻgʻri boshqa tomonga yubormasdan tranzaksiya qilishning tizimli usulini taqdim etadi.",
-      "callout": "Siz eskrou muddatini tanlaysiz, tranzaksiya shartlariga kelishasiz va smart-kontraktga mablagʻ joylashtirasiz. Tranzaksiya yakunlanguncha toʻlov bloklangan holda qoladi.",
+      "callout": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
       "billImageCaption": "Aniq tranzaksiya shartlari va eskrou depoziti",
       "signatureImageCaption": "Buyum suratlari va shartlar bilan imzolangan kelishuv"
     },
@@ -619,13 +646,13 @@
         {
           "step": "1",
           "title": "Tranzaksiya boʻyicha kelishing",
-          "description": "Xaridor va sotuvchi buyum yoki xizmat, narx, eskrou muddati va boshqa tranzaksiya shartlari boʻyicha kelishadi."
+          "description": "Eskrou variantini tanlang, tovar yoki xizmat, narx va shartlarni kelishing. 3 tadan 2 tasdiqli eskrouda hakam ikkala ishtirokchini ma’qullaydi va ular to‘lovdan oldin imzolaydi."
         },
         {
           "step": "2",
           "title": "Eskrouni mablagʻ bilan taʼminlang",
           "description1": "Xaridor kelishilgan toʻlovni Shake smart-kontraktiga yuboradi.",
-          "description2": "Shake USDC va USDT'ni, shuningdek ETH va TON kabi boshqa qoʻllab-quvvatlanadigan kriptovalyutalarni qabul qiladi. Qoʻllab-quvvatlanadigan valyuta almashtirish funksiyalari orqali qoʻshimcha aktivlar ham mavjud boʻlishi mumkin.",
+          "description2": "3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq.",
           "swappingBadge": "+ Almashtirish funksiyalari"
         },
         {
@@ -636,20 +663,20 @@
         {
           "step": "4",
           "title": "Toʻlovni chiqaring",
-          "description": "Tegishli eskrou muddati va chiqarish shartlari bajarilganda, toʻlov smart-kontrakt qoidalariga muvofiq sotuvchiga chiqariladi."
+          "description": "Muddatli eskrou saqlash va nizo qoidalari bo‘yicha mablag‘ chiqaradi. 3 tadan 2 tasdiqli eskrouda ikkita ishtirokchi bir xil to‘lov yoki qaytarishga ruxsat beradi; yakunlash uchun blokcheyn tasdig‘i kerak."
         },
         {
           "step": "5",
           "title": "Zarur boʻlsa, nizoni koʻtaring",
-          "description": "Agar tranzaksiya kelishilganidek yakunlanmasa, xaridor tegishli nizo muddati davomida pulni qaytarishni soʻrashi mumkin. Shake'ning inson tomonidan koʻrib chiqish jarayoni mavjud tranzaksiya dalillarini baholaydi va natijani eskrou qoidalariga muvofiq amalga oshiradi."
+          "description": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
         }
       ]
     },
     "nonCustodial": {
       "title": "Tabiatan nokastodial",
-      "badge": "Base tarmogʻi smart-kontrakti",
+      "badge": "Smart-kontrakt to‘lov qoidalari",
       "lead": "Shake mijozlarning eskroudagi mablagʻlarini oʻz ixtiyoriga olmaydi.",
-      "body1": "Toʻlovingiz Shake nazorat qiladigan hisobda emas, balki Base tarmogʻidagi smart-kontraktda saqlanadi. Smart-kontrakt mablagʻlarning qanday shartlarda chiqarilishi yoki qaytarilishi mumkinligini belgilaydi.",
+      "body1": "3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq.",
       "body2": "Tranzaksiyalarni tasdiqlash uchun oʻzingizning ulangan hamyoningizdan foydalanasiz."
     },
     "cryptocurrency": {
@@ -669,19 +696,19 @@
     },
     "fees": {
       "headline": "Shaffof toʻlovlar",
-      "standardFeeLabel": "Standart eskrou toʻlovi",
-      "standardFeeValue": "0,1%",
-      "standardFeeSub": "Chiqarish variantiga qarab 0,1%–1,0%",
-      "body1": "Shake tanlangan chiqarish variantiga qarab eskrou tranzaksiyalari uchun 0,1%–1,0% oladi.",
-      "body2": "Standart xizmat toʻlovi 0,1% ni tashkil qiladi. Sotuvchi erta yechib olish variantini tanlaganda qoʻshimcha toʻlovlar qoʻllanilishi mumkin.",
+      "standardFeeLabel": "Eskrou turiga ko‘ra haq",
+      "standardFeeValue": "0.1%–1% / 1%",
+      "standardFeeSub": "Muddatli eskrou / 3 tadan 2 tasdiqli eskrou",
+      "body1": "3 tadan 2 tasdiqli eskrouda to‘lov yoki qaytarish yakunida 1% ushlanadi: 0.5% hakamga, 0.5% protokolga. Muddatli eskrou o‘z tariflarini saqlaydi: odatiy chiqarish uchun 0.1%, erta yechishda jami 1% gacha. Tarmoq va uchinchi tomon haqlari ham qo‘llanishi mumkin.",
+      "body2": "3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi.",
       "body3": "Blokcheyn tarmoq toʻlovlari ham qoʻllanilishi mumkin. Kriptovalyuta konvertatsiyasi va almashtirish kabi uchinchi tomon xizmatlarining oʻz toʻlovlari boʻlishi mumkin.",
       "noSubscriptions": "✓ Shake'dan oddiy foydalanish uchun takrorlanuvchi obuna toʻlovlari yoʻq."
     },
     "identityRecords": {
       "headline": "Shaxs va tranzaksiya yozuvlari",
-      "lead": "Shake tranzaksiya ishtirokchilari oʻrtasida javobgarlikni belgilash uchun shaxsni tasdiqlashdan foydalanadi.",
-      "body1": "Har bir tranzaksiya imzolangan kelishuv, tranzaksiya tafsilotlari, tasdiqlovchi hujjatlar va on-chain toʻlov yozuvlarini oʻz ichiga olishi mumkin.",
-      "body2": "Nizoli tranzaksiyalar uchun jonli xodim mavjud dalillarni baholaydi.",
+      "lead": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
+      "body1": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
+      "body2": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi.",
       "pillars": {
         "accountability": {
           "title": "Javobgarlik",

@@ -4,6 +4,7 @@ import Section from '../components/common/section';
 import Button from '../components/common/button';
 import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
+import EscrowOptions from '../components/common/escrow-options';
 
 const HowItWorks: React.FC = () => {
   const siteContent = useContent('sitecontent');
@@ -26,7 +27,9 @@ const HowItWorks: React.FC = () => {
             {siteContent.howItWorks.smartContractNote}
           </p>
 
-          {/* Image and Process Steps Side by Side */}
+          <EscrowOptions />
+
+          {/* Existing timed escrow process */}
           <div className="flex flex-col lg:flex-row items-start gap-8 mb-8 max-w-5xl mx-auto">
             <div className="flex-shrink-0 lg:w-[65%]">
               <img

@@ -6,7 +6,7 @@
         "path": "/"
       },
       {
-        "title": "Cómo Funciona",
+        "title": "Opciones de escrow",
         "path": "/how-it-works"
       },
       {
@@ -20,6 +20,10 @@
       {
         "title": "Pagos",
         "sublinks": [
+          {
+            "title": "Pagos seguros",
+            "path": "/secure-payments"
+          },
           {
             "title": "Cobrar",
             "path": "/get-paid"
@@ -39,7 +43,7 @@
   "home": {
     "hero": {
       "headline": "Trato hecho.",
-      "subhead": "Custodia con contrato inteligente que protege a compradores y vendedores en cada transacción con criptomonedas — sin bancos, sin intermediarios, sin esperas.",
+      "subhead": "Pagos en cripto con escrow con plazo o 2 de 3 para compradores y vendedores.",
       "button": "Disponible Ahora",
       "availableNowHeading": "Disponible Ahora",
       "ctaLabel": "Descarga Gratuita",
@@ -50,11 +54,11 @@
       "partnerLinkText": "socio de entrada/salida de criptomonedas"
     },
     "features": {
-      "headline": "Potencia Tu Pago\ncon Escrow Reembolsable",
+      "headline": "Dos formas de proteger\ntu pago",
       "items": [
         {
-          "title": "Escrow\nreembolsable",
-          "description": "Shake utiliza un escrow de contrato inteligente — como una caja fuerte digital neutral — que bloquea los fondos según reglas transparentes en la red Ethereum Base. Shake nunca retiene tu dinero, y nadie puede mover fondos fuera de los términos acordados."
+          "title": "Tu elección\nde escrow",
+          "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
         },
         {
           "title": "Paga con cualquier cripto que tengas",
@@ -76,7 +80,7 @@
       "steps": [
         {
           "title": "Crea una cuenta",
-          "description": "Regístrate gratis en pocos minutos con un ID, número de teléfono y algunas selfies."
+          "description": "Crea tu cuenta y completa las verificaciones de identidad que requiera tu operación."
         },
         {
           "title": "Agrega un método de pago",
@@ -84,7 +88,7 @@
         },
         {
           "title": "Comienza a transaccionar",
-          "description": "Empieza a enviar y recibir con total confianza porque Shake es no custodial. Cuando quieras retirar, Coinbase Offramp te permite convertir cripto a moneda fiat. Shake nunca toca tus fondos durante este proceso."
+          "description": "Acuerda las condiciones, revisa la opción de escrow y firma antes de pagar. Sigue la entrega y liquidación en la app."
         }
       ]
     },
@@ -92,13 +96,13 @@
       "business": {
         "label": "Comerciante",
         "headline": "Cobra con\nseguridad",
-        "description": "Establece la duración de tu escrow (de 0 a 180 días), compártelo con tu comprador y recibe los fondos después de que finalice el período de escrow. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
+        "description": "Ofrece escrow con plazo acordado o escrow 2 de 3 con árbitro asignado y dos autorizaciones coincidentes. También hay pagos sin escrow con plazo de cero días.",
         "button": "Saber más"
       },
       "customer": {
         "label": "Comprador",
         "headline": "Paga con\nuna red de seguridad",
-        "description": "Deposita fondos en escrow a través de la app. Tu dinero se retiene de forma segura durante el período acordado. Si algo sale mal, puedes solicitar un reembolso antes de que se cierre la ventana.",
+        "description": "Revisa el tipo de escrow antes de pagar. El escrow con plazo tiene un período de disputa; el 2 de 3 retiene fondos hasta que dos participantes autoricen el mismo pago o reembolso.",
         "button": "Saber más"
       }
     },
@@ -168,7 +172,7 @@
       },
       {
         "title": "Transacciona con protección",
-        "description": "Ambas partes acuerdan los términos y los fondos quedan bloqueados de forma segura en un contrato inteligente en la red Ethereum Base hasta que se complete la entrega."
+        "description": "Acuerda la opción de escrow y firma antes del pago. Los fondos se liquidan según el protocolo elegido, no solo por la entrega."
       }
     ],
     "trust": {
@@ -179,11 +183,11 @@
   },
   "howItWorks": {
     "hero": {
-      "headline": "Cómo el Sistema de Pago de Shake Te Mantiene Seguro, Literalmente"
+      "headline": "Elige el escrow adecuado para tu operación"
     },
     "section1": {
       "headline": "El Proceso de Escrow",
-      "description": "El escrow de Shake está impulsado por un contrato inteligente en la red Ethereum Base. Una vez realizado un pago, los fondos son bloqueados por código — no por Shake, no por un banco, ni por un tercero. \n\nShake nunca tiene custodia de los fondos de los usuarios. Los pagos son retenidos por el propio contrato inteligente, mientras que los usuarios operan utilizando su billetera preferida — incluyendo la billetera integrada de Coinbase en dispositivos móviles, la billetera de Telegram y Tonkeeper en Telegram, o billeteras nativas de ETH en Farcaster. Los servicios de entrada y salida fiat están impulsados por Coinbase en dispositivos móviles. Este diseño elimina el riesgo de punto único de fallo y garantiza que los fondos solo se muevan según las reglas acordadas."
+      "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.\n\nEl escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación."
     },
     "section2": {
       "headline": "Cómo Funciona",
@@ -194,15 +198,38 @@
       "subhead": "Crea tu cuenta hoy y únete al movimiento hacia el cripto de todos los días.",
       "button": "Disponible Ahora"
     },
-    "escrowIntro": "Shake usa un escrow que es como una caja fuerte que mantiene el dinero del cliente seguro mientras un negocio entrega un producto o servicio.",
-    "agreementNote": "Todo escrow debe tener un acuerdo que el comprador y el vendedor firmen antes de intercambiar dinero. La IA en la app sugiere un acuerdo, y se incluyen las fotos que tomes. Solo firma con tu dedo.",
+    "escrowIntro": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
+    "agreementNote": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
     "aiCaption": "La IA admite bienes O servicios",
-    "smartContractNote": "Internamente, es un contrato inteligente en la red Ethereum Base: las reglas de bloqueo se escriben en la blockchain en el momento del pago y nadie puede alterarlas, ni siquiera Shake. Los fondos solo pueden liberarse al comerciante (ya sea al vencer el temporizador de bloqueo o mediante retiro anticipado firmado tras cerrarse la ventana de disputa sin reclamos) o devolverse al comprador si un árbitro aprueba un reembolso. No existe ninguna otra ruta en el código.",
+    "smartContractNote": "El escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación.",
     "process": {
-      "header": "El Proceso de Escrow",
+      "header": "Escrow con plazo: cómo funciona",
       "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante la duración acordada (de 0 a 180 días), que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
       "step2": "Durante este período de espera, si no recibes lo que compraste, puedes hablarlo directamente con el comerciante o solicitar un reembolso, que será evaluado por un revisor humano.",
       "step3": "Si no se solicita una disputa durante el período de escrow acordado, el comerciante puede retirar los fondos de inmediato, o recibirlos automáticamente una vez que concluya el período estándar de arbitraje con la comisión básica."
+    },
+    "options": {
+      "title": "Dos opciones de escrow, reglas distintas",
+      "timedTitle": "Escrow con plazo",
+      "timedBody": "Acuerda un plazo, presenta disputas dentro de él y libera el pago según sus reglas temporales. La liberación estándar cuesta 0.1%; el retiro anticipado puede llegar al 1% total. Los pagos de cero días no tienen período de disputa de escrow.",
+      "quorumTitle": "Escrow 2 de 3",
+      "quorumBody": "En el escrow 2 de 3, dos de los tres participantes —comprador, vendedor y árbitro asignado— deben autorizar el mismo resultado: pago al vendedor o reembolso al comprador. Comprador y vendedor pueden resolverlo sin el árbitro. La liquidación solo se completa tras la confirmación en la blockchain.",
+      "lock": "El escrow 2 de 3 no tiene fecha de liberación automática ni plazo fijo para disputas. Sin dos autorizaciones coincidentes, los fondos pueden quedar bloqueados indefinidamente. Ningún participante puede liquidar por sí solo.",
+      "fee": "Se descuenta un 1% al pagar o reembolsar: 0.5% para el árbitro y 0.5% para el protocolo. Pueden aplicarse comisiones de red.",
+      "identity": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
+      "ratings": "Tras liquidar una operación 2 de 3 financiada, el árbitro califica a ambos participantes y cada uno califica al árbitro. Comprador y vendedor también pueden calificarse según los Términos; si el árbitro autorizó el reembolso, el vendedor no puede calificar al comprador. Las calificaciones nunca retrasan pagos ni reembolsos.",
+      "diagram": {
+        "timedLabel": "Flujo del escrow con plazo",
+        "deposit": "Depósito",
+        "holding": "Plazo + reglas de disputa",
+        "outcome": "Pago o reembolso",
+        "quorumLabel": "Cualquiera de estas parejas puede autorizar el mismo resultado",
+        "buyer": "Comprador",
+        "seller": "Vendedor",
+        "arbiter": "Árbitro",
+        "or": "o",
+        "confirmed": "Se completa tras la confirmación en la blockchain"
+      }
     }
   },
   "getPaid": {
@@ -213,7 +240,7 @@
     "sections": [
       {
         "headline": "Quédate con Más\nde lo que Ganas",
-        "description": "Los procesadores de tarjetas de crédito suelen cobrar entre 2,5 y 3% por transacción, y los servicios de escrow tradicionales cobran aún más. Shake cuesta solo entre 0,1% y 1% por transacción: 0,1% para liberación estándar y transferencias instantáneas de 0 días, y hasta 1% para retiro anticipado inmediato justo cuando finaliza la ventana de escrow. Sin terminales que comprar, sin banco intermediario, sin recargos internacionales. Más de cada venta se queda contigo."
+        "description": "El escrow 2 de 3 descuenta un 1% al liquidar, tanto en pagos como en reembolsos: 0.5% para el árbitro y 0.5% para el protocolo. El escrow con plazo conserva sus comisiones: 0.1% en liberación estándar, con retiro anticipado de hasta un 1% total. Pueden aplicarse comisiones de red y de terceros."
       },
       {
         "headline": "Se Adapta\na Ti",
@@ -251,7 +278,7 @@
     "sections": [
       {
         "headline": "Transacciones\nQue Importan",
-        "description": "Paga con una app que mantiene los pagos privados, documentados y fáciles de resolver. Tu pago queda bloqueado en un escrow de contrato inteligente en la red Ethereum Base por un período fijo acordado por el comprador y el comerciante. Durante este tiempo, los fondos no pueden ser accedidos fuera de las reglas del contrato, y se pueden presentar disputas si no se cumplen los términos acordados. Shake y Persona verifican la identidad, reputación y calificaciones de cada negocio. Cada transacción incluye un acuerdo firmado y prueba de pago verificable en la cadena, para que puedas confiar en tus compras y evitar disputas."
+        "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
       },
       {
         "headline": "Sé un Consumidor\nInteligente",
@@ -267,7 +294,7 @@
       },
       {
         "headline": "El Poder de\nVuelta al Pueblo",
-        "description": "Shake es accesible para tiendas locales, freelancers e incluso quienes no tienen cuenta bancaria, para que tus pagos apoyen a las personas que eliges, no a las grandes instituciones financieras. Si quieres un reembolso, una persona real del equipo de Shake revisa la evidencia y actúa como árbitro justo y neutral."
+        "description": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
       }
     ],
     "cta": {
@@ -367,7 +394,7 @@
     "questions": [
       {
         "question": "¿Cómo funciona la app?",
-        "answer": "Shake utiliza un depósito en garantía (escrow) mediante contratos inteligentes en la red Ethereum Base, que es como una caja fuerte que mantiene seguro el dinero del cliente mientras un negocio entrega un producto o servicio. Para saber más, visita la página \"Cómo Funciona\"."
+        "answer": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
       },
       {
         "question": "¿Cómo comienzo?",
@@ -403,11 +430,11 @@
       },
       {
         "question": "¿Qué es un escrow?",
-        "answer": "Un escrow es como una caja fuerte que mantiene el dinero seguro y garantiza que tanto el cliente como el negocio cumplan sus obligaciones antes de realizar el intercambio. \n\nPor ejemplo, imagina que estás comprando un teléfono usado a alguien que encontraste en línea. Normalmente, te reunirías, le pagarías en el acto y esperarías que el teléfono funcione. Pero si está roto o no es lo que prometió, ya es demasiado tarde: el dinero ya se fue. \n\nCon escrow, en lugar de pagarle directamente, tu dinero va a una cuenta segura de retención por un tiempo fijo. El vendedor ve que el dinero está ahí y te entrega el teléfono. \n\nDurante el período de espera, verificas la calidad del teléfono. Si descubres que está roto, disputarías la transacción y solicitarías un reembolso. Si el teléfono funciona, el dinero se libera al vendedor una vez que termina el período de espera. \n\nEn esencia, el escrow:    \n1) Protege a los negocios garantizando que el pago del cliente esté listo y disponible para transferirse cuando termine el período de espera    \n2) Brinda protección a ambas partes asegurando que los fondos se retengan de forma segura y solo puedan liberarse según los términos de escrow acordados, incluidos los reembolsos cuando lo justifique el resultado de una disputa. \n\nPara saber más, visita la página \"Cómo Funciona\"."
+        "answer": "El escrow retiene un pago en un contrato inteligente mientras se completa la operación. Con plazo, tiene un período de retención y disputa acordado. En el 2 de 3, dos de comprador, vendedor y árbitro deben autorizar el mismo pago o reembolso; la entrega por sí sola no libera el pago."
       },
       {
         "question": "¿Debo usar un período de escrow?",
-        "answer": "No. Los comerciantes pueden elegir cualquier duración de escrow de 0 a 180 días, y puede configurarse en 0 para una transferencia instantánea sin espera ni ventana de reembolso. Aun así obtienes todas las demás protecciones de Shake: verificación de identidad, un acuerdo firmado con fotos, documentación detallada de la transacción y calificaciones del comprador. El período de escrow es la opción correcta cuando quieres dar a los compradores una red de seguridad; la transferencia instantánea es la opción correcta cuando la venta es sencilla y ambas partes están listas."
+        "answer": "No. El escrow con plazo, el 2 de 3 y los pagos de cero días sin escrow son opciones distintas. En invitaciones del comprador, el vendedor elige 2 de 3 con su árbitro, el período existente de 14 días o cero días sin escrow. Revisa la elección antes de firmar: el 2 de 3 no tiene liberación automática."
       },
       {
         "question": "¿Necesito experiencia previa en cripto o conocimientos de inversión para usar Shake?",
@@ -415,7 +442,7 @@
       },
       {
         "question": "¿Quién puede usar la app de Shake?",
-        "answer": "Shake está disponible para mayores de 18 años. Crear una cuenta de Shake requiere verificación de identidad a través del servicio Persona (withpersona.com)."
+        "answer": "Shake es para mayores de 18 años. Los requisitos de identidad dependen de la operación. Para el escrow 2 de 3, consulta los requisitos de aprobación de participantes más abajo."
       },
       {
         "question": "¿Puedo pagar con cualquier criptomoneda que tenga?",
@@ -427,11 +454,11 @@
       },
       {
         "question": "¿Cuánto tiempo tarda enviar o aceptar un pago? ¿Hay una comisión por transferencia instantánea?",
-        "answer": "Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges una duración de escrow entre 0 y 180 días (por ejemplo, 3 días o 0 para una liquidación instantánea). Durante esta ventana acordada, el comprador puede inspeccionar la compra y presentar una disputa si es necesario. Una vez que esa ventana se cierra sin disputa, hay un período estándar de arbitraje de 3 días antes de la liberación automática con la comisión básica del 0,1%. Si un comerciante desea cobrar de inmediato justo cuando termina el período de escrow del comprador, puede usar el retiro anticipado por una comisión adicional (hasta 0,9% adicional, para una comisión total del 1,0%): retirar antes durante el período de amortiguación incurre en 0,4% (1 día antes), 0,7% (2 días antes) o 1,0% (3 días antes). Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar."
+        "answer": "Escrow con plazo: Los pagos generalmente se confirman en la cadena en segundos. La \"espera\" que ves en Shake no es tiempo de transferencia, sino protección de escrow. Eliges una duración de escrow entre 0 y 180 días (por ejemplo, 3 días o 0 para una liquidación instantánea). Durante esta ventana acordada, el comprador puede inspeccionar la compra y presentar una disputa si es necesario. Una vez que esa ventana se cierra sin disputa, hay un período estándar de arbitraje de 3 días antes de la liberación automática con la comisión básica del 0,1%. Si un comerciante desea cobrar de inmediato justo cuando termina el período de escrow del comprador, puede usar el retiro anticipado por una comisión adicional (hasta 0,9% adicional, para una comisión total del 1,0%): retirar antes durante el período de amortiguación incurre en 0,4% (1 día antes), 0,7% (2 días antes) o 1,0% (3 días antes). Shake no cobra una comisión de transferencia instantánea separada; pueden aplicarse comisiones de red estándar.\n\nEn el escrow 2 de 3, dos de los tres participantes —comprador, vendedor y árbitro asignado— deben autorizar el mismo resultado: pago al vendedor o reembolso al comprador. Comprador y vendedor pueden resolverlo sin el árbitro. La liquidación solo se completa tras la confirmación en la blockchain. El escrow 2 de 3 no tiene fecha de liberación automática ni plazo fijo para disputas. Sin dos autorizaciones coincidentes, los fondos pueden quedar bloqueados indefinidamente. Ningún participante puede liquidar por sí solo."
       },
       {
         "question": "¿Hay comisiones para usar Shake?",
-        "answer": "Shake cobra una comisión de servicio transparente de solo 0,1% a 1% por transacciones con escrow. La comisión básica es del 0,1% del monto de la transacción (para transferencias instantáneas de 0 días y liberación estándar tras el período de arbitraje). \n\nSi un comerciante elige retirar fondos antes de tiempo una vez finalizada la ventana de disputa del comprador, se aplica una comisión escalonada de retiro anticipado (un 0,3% a 0,9% adicional, totalizando entre 0,4% y 1,0% según cuántos días antes ocurra el retiro, hasta 3 días antes). \n\nTambién pueden aplicarse comisiones de red de la blockchain, que se pagan directamente a la red. La conversión de moneda (fiat ↔ cripto) es gestionada por Coinbase Onramp y Offramp, que pueden aplicar sus propias comisiones según el activo utilizado. El intercambio de criptomonedas usa el protocolo Odos e incluye comisiones estándar de intercambio.\n\nShake no agrega comisiones ocultas, no tiene custodia de fondos y no cobra comisiones de suscripción recurrentes para el uso básico."
+        "answer": "El escrow 2 de 3 descuenta un 1% al liquidar, tanto en pagos como en reembolsos: 0.5% para el árbitro y 0.5% para el protocolo. El escrow con plazo conserva sus comisiones: 0.1% en liberación estándar, con retiro anticipado de hasta un 1% total. Pueden aplicarse comisiones de red y de terceros."
       },
       {
         "question": "¿Necesito reportar mis transacciones de Shake en mis impuestos?",
@@ -455,23 +482,23 @@
       },
       {
         "question": "¿Qué pasa si hay una disputa?",
-        "answer": "El proceso de Shake registra metadatos y proporciona información de la transacción para que un revisor humano pueda resolver las disputas de manera justa. Por defecto, un miembro del equipo de Shake revisa la evidencia y decide el resultado — ningún algoritmo ni contrato inteligente toma esa decisión. Los árbitros emiten reembolsos cuando está justificado."
+        "answer": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
       },
       {
         "question": "¿Cómo protege Shake contra el fraude y las transacciones no autorizadas?",
         "answer": "Shake protege contra el fraude y las transacciones no autorizadas con identidades verificadas, acuerdos firmados para cada transacción y prueba de pago verificable en la cadena, respaldada por registros detallados para la resolución de disputas."
       },
       {
-        "question": "¿Por qué no puede Shake ni un hacker llevarse mi dinero?",
-        "answer": "Shake es no custodial y nunca tiene la custodia de los fondos de los usuarios ni de sus claves privadas. Los pagos son retenidos por un contrato inteligente en la red Ethereum Base que solo puede liberar fondos al comerciante después del período de custodia, o de vuelta al comprador en caso de reembolso. \n\nShake no almacena tus claves privadas de billetera en ninguna plataforma. En dispositivos móviles, Coinbase proporciona infraestructura segura de billetera integrada. En Telegram, las claves permanecen seguras en tu billetera de Telegram o Tonkeeper. En Farcaster, las transacciones se firman directamente con tu billetera nativa de ETH. Shake no puede acceder, mover ni redirigir los fondos en custodia. La lógica de custodia es ejecutada por el código de la blockchain, no por el criterio humano — la única intervención humana es la decisión del árbitro en una disputa, que el contrato ejecuta automáticamente."
+        "question": "¿Quién puede autorizar la liquidación del escrow?",
+        "answer": "En el escrow 2 de 3, dos de los tres participantes —comprador, vendedor y árbitro asignado— deben autorizar el mismo resultado: pago al vendedor o reembolso al comprador. Comprador y vendedor pueden resolverlo sin el árbitro. La liquidación solo se completa tras la confirmación en la blockchain."
       },
       {
         "question": "¿Qué se documenta cuando realizo una transacción?",
-        "answer": "Shake cifra todos los datos y registra cada detalle: hora, ubicación, firmas y fotos que proporciones. El dispositivo de cada parte también toma una foto frontal del firmante mientras firma. Se puede subir confirmación de entrega, y el sistema confirma que el dinero está disponible antes de que ocurra una transacción."
+        "answer": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar."
       },
       {
         "question": "¿Cómo crea responsabilidad Shake?",
-        "answer": "Cada usuario de Shake tiene una identidad verificada y una puntuación de retroalimentación. Persona verifica el ID de cada miembro, por lo que nadie puede crear billeteras ilimitadas para esconderse de la responsabilidad."
+        "answer": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos."
       },
       {
         "question": "¿Qué información es pública?",
@@ -579,28 +606,28 @@
   "securePayments": {
     "seo": {
       "title": "Pagos Seguros con Escrow de Contrato Inteligente",
-      "description": "Compra y vende con términos de pago que ambas partes acuerdan. Escrow de contrato inteligente no custodial en Base para comercio, materias primas al por mayor, vehículos, servicios y transacciones directas."
+      "description": "Compara escrow con plazo y 2 de 3 para vehículos, bienes, servicios y comercio. Reglas claras de pago, reembolso y comisiones."
     },
     "hero": {
-      "chip": "Escrow de Contrato Inteligente en Base",
+      "chip": "Dos opciones de escrow",
       "headline": "Pagos Seguros con Escrow de Contrato Inteligente",
       "subheadline": "Compra y vende con términos de pago que ambas partes acuerdan.",
-      "description": "Shake DeFi ofrece escrow de pagos no custodial para transacciones comerciales y directas. Acuerda la transacción, bloquea el pago en un contrato inteligente en Base y libera los fondos según los términos de escrow acordados.",
+      "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
       "cta": "Empezar",
       "availableOn": "Disponible en:",
       "availablePlatforms": "Telegram • Navegador • iOS • Android • Farcaster",
       "preview": {
         "activeSmartContract": "Contrato Inteligente Activo",
         "escrowSafe": "Caja Fuerte de Escrow de Shake",
-        "fundsLocked": "Fondos Bloqueados en Base",
+        "fundsLocked": "Fondos retenidos en escrow",
         "agreementTermsTitle": "Términos del Acuerdo",
         "agreementTermsValue": "Términos Firmados Mutuamente",
         "agreementTermsStatus": "Ambas partes aprobaron ✓",
         "escrowProtectionTitle": "Escrow de Contrato Inteligente",
         "escrowProtectionValue": "No Custodial",
-        "escrowProtectionStatus": "Contrato Inteligente en Base",
-        "standardFeeTitle": "Comisión Estándar",
-        "standardFeeValue": "0.1% de Comisión por Servicio",
+        "escrowProtectionStatus": "Reglas según el escrow elegido",
+        "standardFeeTitle": "Comisiones de escrow",
+        "standardFeeValue": "Con plazo: 0.1%–1% · 2 de 3: 1%",
         "standardFeeStatus": "Sin suscripciones mensuales"
       }
     },
@@ -608,7 +635,7 @@
       "headline": "Escrow de Pagos para Transacciones del Mundo Real",
       "subheadline": "¿Comprando un vehículo, obteniendo materias primas al por mayor, adquiriendo equipo, contratando a un contratista o vendiendo bienes?",
       "description": "Shake ofrece a compradores y vendedores una forma estructurada de transaccionar sin enviar el pago directamente a la otra parte.",
-      "callout": "Eliges la duración del escrow, acuerdas los términos de la transacción y financias el contrato inteligente. El pago permanece bloqueado mientras se completa la transacción.",
+      "callout": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
       "billImageCaption": "Términos claros de la transacción y depósito de escrow",
       "signatureImageCaption": "Acuerdo firmado con fotos del artículo y términos"
     },
@@ -619,13 +646,13 @@
         {
           "step": "1",
           "title": "Acuerden la transacción",
-          "description": "El comprador y el vendedor acuerdan el artículo o servicio, el precio, la duración del escrow y otros términos de la transacción."
+          "description": "Elige el escrow y acuerda el producto o servicio, precio y condiciones. En el 2 de 3, el árbitro aprueba a ambos participantes y los dos firman antes de pagar."
         },
         {
           "step": "2",
           "title": "Financien el escrow",
           "description1": "El comprador envía el pago acordado al contrato inteligente de Shake.",
-          "description2": "Shake admite USDC y USDT, además de otras criptomonedas compatibles como ETH y TON. Es posible que haya otros activos disponibles a través de las funciones de intercambio de monedas compatibles.",
+          "description2": "El escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación.",
           "swappingBadge": "+ Funciones de Intercambio"
         },
         {
@@ -636,20 +663,20 @@
         {
           "step": "4",
           "title": "Liberen el pago",
-          "description": "Cuando se cumplen el período de escrow aplicable y las condiciones de liberación, el pago se libera al vendedor según las reglas del contrato inteligente."
+          "description": "El escrow con plazo libera según sus reglas de retención y disputas. En el 2 de 3, dos participantes deben autorizar el mismo pago o reembolso; se completa al confirmarse en la blockchain."
         },
         {
           "step": "5",
           "title": "Disputen cuando sea necesario",
-          "description": "Si la transacción no se desarrolla según lo acordado, el comprador puede solicitar un reembolso durante el período de disputa aplicable. El proceso de revisión humana de Shake evalúa la evidencia disponible de la transacción y procesa el resultado según las reglas del escrow."
+          "description": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
         }
       ]
     },
     "nonCustodial": {
       "title": "No Custodial por Diseño",
-      "badge": "Contrato Inteligente de la Red Base",
+      "badge": "Reglas de pago del contrato inteligente",
       "lead": "Shake no toma custodia de los fondos de los clientes en escrow.",
-      "body1": "Tu pago es retenido por un contrato inteligente en la red Base, en lugar de en una cuenta controlada por Shake. El contrato inteligente define las condiciones bajo las cuales los fondos pueden liberarse o devolverse.",
+      "body1": "El escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación.",
       "body2": "Usas tu billetera conectada para autorizar transacciones."
     },
     "cryptocurrency": {
@@ -669,19 +696,19 @@
     },
     "fees": {
       "headline": "Comisiones Transparentes",
-      "standardFeeLabel": "Comisión Estándar de Escrow",
-      "standardFeeValue": "0.1%",
-      "standardFeeSub": "0.1%–1.0% según la opción de liberación",
-      "body1": "Shake cobra entre 0.1% y 1.0% por las transacciones de escrow, según la opción de liberación seleccionada.",
-      "body2": "La comisión estándar por servicio es del 0.1%. Pueden aplicarse comisiones adicionales cuando un comerciante elige una opción de retiro anticipado.",
+      "standardFeeLabel": "Comisiones por opción de escrow",
+      "standardFeeValue": "0.1%–1% / 1%",
+      "standardFeeSub": "Escrow con plazo / escrow 2 de 3",
+      "body1": "El escrow 2 de 3 descuenta un 1% al liquidar, tanto en pagos como en reembolsos: 0.5% para el árbitro y 0.5% para el protocolo. El escrow con plazo conserva sus comisiones: 0.1% en liberación estándar, con retiro anticipado de hasta un 1% total. Pueden aplicarse comisiones de red y de terceros.",
+      "body2": "El escrow 2 de 3 no tiene fecha de liberación automática ni plazo fijo para disputas. Sin dos autorizaciones coincidentes, los fondos pueden quedar bloqueados indefinidamente. Ningún participante puede liquidar por sí solo.",
       "body3": "También pueden aplicarse comisiones de red de la cadena de bloques. Los servicios de terceros, como la conversión y el intercambio de criptomonedas, pueden tener sus propias comisiones.",
       "noSubscriptions": "✓ No hay comisiones de suscripción recurrentes para el uso básico de Shake."
     },
     "identityRecords": {
       "headline": "Identidad y Registros de Transacciones",
-      "lead": "Shake usa verificación de identidad para establecer responsabilidad entre los participantes de la transacción.",
-      "body1": "Cada transacción puede incluir un acuerdo firmado, detalles de la transacción, documentación de respaldo y registros de pago en la cadena de bloques.",
-      "body2": "Para transacciones en disputa, un revisor humano evalúa la evidencia disponible.",
+      "lead": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
+      "body1": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
+      "body2": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo.",
       "pillars": {
         "accountability": {
           "title": "Responsabilidad",

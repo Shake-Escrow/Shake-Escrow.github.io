@@ -69,9 +69,9 @@ const Navbar: React.FC = () => {
                   className="font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center hover:border-accent font-body flex items-center gap-1"
                 >
                   {item.title}
-                  <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180" />
+                  <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
                 </button>
-                <div className="absolute left-1/2 -translate-x-1/2 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="absolute left-1/2 -translate-x-1/2 pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
                   <div className="rounded-3xl border border-gray-200 bg-white shadow-xl ring-1 ring-black/5 overflow-hidden py-2 mt-1">
                     {item.sublinks.map((subItem) => (
                       <Link
