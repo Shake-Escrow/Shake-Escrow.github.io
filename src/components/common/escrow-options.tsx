@@ -18,6 +18,10 @@ export default function EscrowOptions() {
       <div className="grid md:grid-cols-2 gap-6 font-body text-secondary leading-relaxed">
         <article className="rounded-2xl border border-gray-200 bg-white p-6">
           <h3 className="font-display text-xl text-secondary-dark mb-3">{options.timedTitle}</h3>
+          <p className="flex items-center gap-2 font-semibold text-secondary-dark">
+            <Scale size={20} className="shrink-0" aria-hidden="true" />
+            {options.timedArbiter}
+          </p>
           <div role="group" aria-label={diagram.timedLabel} className="my-5 flex flex-col items-center gap-2 rounded-xl bg-gray-50 p-4 text-center text-sm">
             <div className="flex items-center gap-2"><LockKeyhole size={18} aria-hidden="true" />{diagram.deposit}</div>
             <ArrowDown size={18} aria-hidden="true" />
@@ -29,6 +33,10 @@ export default function EscrowOptions() {
         </article>
         <article className="rounded-2xl border border-gray-200 bg-white p-6 space-y-3">
           <h3 className="font-display text-xl text-secondary-dark">{options.quorumTitle}</h3>
+          <p className="flex items-center gap-2 font-semibold text-secondary-dark">
+            <UserRound size={20} className="shrink-0" aria-hidden="true" />
+            {options.chosenArbiter}
+          </p>
           <div role="group" aria-label={diagram.quorumLabel} className="rounded-xl bg-gray-50 p-4 text-center text-sm">
             <p className="mb-3">{diagram.quorumLabel}</p>
             {pairs.map((pair, index) => (
@@ -59,6 +67,14 @@ export default function EscrowOptions() {
           <p className="font-semibold text-secondary-dark">{options.lock}</p>
         </article>
       </div>
+      <aside className="mt-6 rounded-2xl border border-accent bg-accent/10 p-6 font-body text-secondary leading-relaxed">
+        <h3 className="mb-3 flex items-start gap-3 font-display text-xl text-secondary-dark">
+          <Scale size={24} className="mt-1 shrink-0" aria-hidden="true" />
+          {options.earning.title}
+        </h3>
+        <p>{options.earning.body}</p>
+        <p className="mt-3">{options.earning.payment}</p>
+      </aside>
       <div className="mt-6 space-y-3 font-body text-secondary leading-relaxed">
         <p>{options.identity}</p>
         <p>{options.ratings}</p>

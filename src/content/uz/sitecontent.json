@@ -58,7 +58,7 @@
       "items": [
         {
           "title": "Eskrou\ntanlovi",
-          "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
+          "description": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
         },
         {
           "title": "Sizda mavjud boʻlgan istalgan kripto bilan toʻlang",
@@ -96,7 +96,7 @@
       "business": {
         "label": "Sotuvchi",
         "headline": "Xavfsiz\ntoʻlov oling",
-        "description": "Kelishilgan muddatli eskrou yoki tayinlangan hakam va ikkita mos ruxsat bilan 3 tadan 2 tasdiqli eskrouni taklif qiling. Eskrousiz, nol kunlik to‘lov ham mavjud.",
+        "description": "Shake DeFi hakam bo‘lgan muddatli eskrouni taklif qiling yoki 3 tadan 2 tasdiqli eskrou uchun xaridor bilan birga o‘z hakamingizni tanlang. Ikkita mos ruxsat 3 tadan 2 tasdiqli bitimni yakunlaydi. Eskrousiz nol kunlik to‘lov ham mavjud.",
         "button": "Batafsil"
       },
       "customer": {
@@ -187,7 +187,7 @@
     },
     "section1": {
       "headline": "Eskrou jarayoni",
-      "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.\n\n3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq."
+      "description": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.\n\n3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq."
     },
     "section2": {
       "headline": "Qanday ishlaydi",
@@ -198,25 +198,25 @@
       "subhead": "Bugun hisobingizni yarating va kundalik kripto harakatiga qoʻshiling.",
       "button": "Hozir mavjud"
     },
-    "escrowIntro": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
-    "agreementNote": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
+    "escrowIntro": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
+    "agreementNote": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida xaridor va sotuvchi tanlagan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
     "aiCaption": "Sun'iy intellekt tovarlar YOKI xizmatlarni qoʻllab-quvvatlaydi",
     "smartContractNote": "3 tadan 2 tasdiqli eskrou Base yoki TON tarmog‘ida har bir bitim uchun alohida smart-kontraktdan foydalanadi. Ilovada bitimingiz uchun taklif etilgan aktiv va tarmoqni ishlating. Hamyon, token va almashtirish imkoniyatlari platforma hamda hududga bog‘liq.",
     "process": {
       "header": "Muddatli eskrou qanday ishlaydi",
       "step1": "Tranzaksiyani amalga oshirgandan soʻng, pulingiz toʻgʻridan-toʻgʻri sotuvchiga borish oʻrniga, kelishilgan muddatga (0–180 kun) neytral seyf kabi boʻlgan eskrouga joylashtiriladi.",
-      "step2": "Ushbu kutish davrida, agar siz sotib olgan narsangizni olmagan boʻlsangiz, sotuvchi bilan toʻgʻridan-toʻgʻri muhokama qilishingiz yoki pulni qaytarishni soʻrashingiz mumkin, buni inson-tekshiruvchi baholaydi.",
+      "step2": "Saqlash davrida xarid qilgan narsangizni olmasangiz, sotuvchi bilan gaplashing yoki pulni qaytarishni so‘rang. Shake DeFi hakam sifatida dalillarni ko‘rib chiqadi.",
       "step3": "Agar kelishilgan eskrou davrida nizo bildirilmasa, sotuvchi mablagʻlarni darhol yechib olishi yoki standart arbitraj buferi yakunlangach, ularni bazaviy toʻlov bilan avtomatik qabul qilishi mumkin."
     },
     "options": {
       "title": "Ikki eskrou varianti, turli qoidalar",
       "timedTitle": "Muddatli eskrou",
-      "timedBody": "Muddatni kelishing, shu davrda nizo oching va vaqtga bog‘liq qoidalar bo‘yicha to‘lovni chiqaring. Odatiy chiqarish 0.1%; erta yechishda jami 1% gacha. Nol kunlik to‘lovlarda eskrou nizo davri yo‘q.",
+      "timedBody": "Muddatli eskrouda Shake DeFi hakam bo‘lib, nizolarni ko‘rib chiqadi. Muddatni kelishing, shu davrda nizo oching va vaqtga bog‘liq qoidalar bo‘yicha to‘lovni chiqaring. Odatiy chiqarish 0.1%; erta yechishda jami 1% gacha. Nol kunlik to‘lovlarda eskrou nizo davri yo‘q.",
       "quorumTitle": "3 tadan 2 tasdiqli eskrou",
-      "quorumBody": "3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi.",
+      "quorumBody": "Xaridor va sotuvchi bitim uchun o‘z hakamini tanlaydi. 3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va xaridor va sotuvchi tanlagan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi.",
       "lock": "3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi.",
       "fee": "To‘lov yoki qaytarishda 1% ushlanadi: 0.5% hakamga va 0.5% protokolga. Tarmoq haqlari ham qo‘llanishi mumkin.",
-      "identity": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
+      "identity": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi tanlagan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
       "ratings": "Mablag‘ kiritilgan 3 tadan 2 tasdiqli bitim yakunlangach, hakam ikkala ishtirokchini, ular esa hakamni baholaydi. Xaridor va sotuvchi Shartlarga muvofiq bir-birini ham baholashi mumkin; qaytarishga hakam ruxsat bergan bo‘lsa, sotuvchi xaridorni baholay olmaydi. Baholar to‘lov yoki qaytarishni kechiktirmaydi.",
       "diagram": {
         "timedLabel": "Muddatli eskrou jarayoni",
@@ -226,9 +226,16 @@
         "quorumLabel": "Ushbu juftliklardan istalgani bir xil natijaga ruxsat bera oladi",
         "buyer": "Xaridor",
         "seller": "Sotuvchi",
-        "arbiter": "Hakam",
+        "arbiter": "Sizning hakamingiz",
         "or": "yoki",
         "confirmed": "Blokcheyn tasdig‘idan so‘ng yakunlanadi"
+      },
+      "timedArbiter": "Hakam — Shake DeFi",
+      "chosenArbiter": "O‘z hakamingizni tanlang",
+      "earning": {
+        "title": "Bitimlarda hakamlik qiling va hisob-kitob haqining yarmini oling",
+        "body": "3 tadan 2 tasdiqli eskrou Shake foydalanuvchilari uchun yangi imkoniyat ochadi: xaridor va sotuvchi tanlagan hakam sifatida qatnashish. To‘lovdan oldin ikkala ishtirokchini tekshiring va dalillarni ko‘rib, kelishmovchiliklarni hal qilishga yordam bering. Tanlangan hakam bitim summasining 0.5% ini — 1% hisob-kitob haqining yarmini oladi. Qolgan 0.5% protokolga beriladi.",
+        "payment": "Haq mablag‘ kiritilgan bitim blokcheynda yakunlanganda, mablag‘ sotuvchiga to‘lanishidan yoki xaridorga qaytarilishidan qat’i nazar to‘lanadi. Xaridor va sotuvchi hakam imzosisiz birga hisob-kitob qilganda ham bu haq qo‘llanadi."
       }
     }
   },
@@ -294,7 +301,7 @@
       },
       {
         "headline": "Kuch xalqqa\nqaytadi",
-        "description": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
+        "description": "Muddatli eskrouda Shake DeFi hakamdir. Xaridor kelishilgan saqlash davrida nizo ochishi kerak, Shake DeFi esa dalillarni shu qoidalar bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi o‘z hakamini tanlaydi. U dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Tanlangan hakam yolg‘iz mablag‘ni chiqara olmaydi."
       }
     ],
     "cta": {
@@ -394,7 +401,7 @@
     "questions": [
       {
         "question": "Ilova qanday ishlaydi?",
-        "answer": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
+        "answer": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring."
       },
       {
         "question": "Qanday boshlasam boʻladi?",
@@ -454,7 +461,7 @@
       },
       {
         "question": "Toʻlov yuborish yoki qabul qilish qancha vaqt oladi? Tezkor oʻtkazma uchun toʻlov bormi?",
-        "answer": "Muddatli eskrou: Toʻlovlar odatda bir necha soniyada on-chain tasdiqlanadi. Shake’da koʻradigan \"kutish\" oʻtkazma vaqti emas — bu eskrou himoyasi. Siz 0 dan 180 kungacha boʻlgan eskrou muddatini tanlaysiz (masalan, 3 kun yoki tezkor hisob-kitob uchun 0). Ushbu kelishilgan vaqt davomida xaridor xaridni tekshirishi va kerak boʻlsa nizo ochishi mumkin. Nizo bildirilmasdan bu muddat yopilgach, bazaviy 0,1% toʻlov bilan avtomatik chiqarishgacha standart 3 kunlik arbitraj buferi boʻladi. Agar sotuvchi xaridorning eskrou muddati tugashi bilanoq darhol toʻlov olishni istasa, u qoʻshimcha toʻlov evaziga (qoʻshimcha 0,9% gacha, jami 1,0% toʻlov) erta yechib olishdan foydalanishi mumkin: bufer davrida ertaroq yechib olish 0,4% (1 kun erta), 0,7% (2 kun erta) yoki 1,0% (3 kun erta) toʻlovni tashkil qiladi. Shake alohida tezkor oʻtkazma toʻlovini olmaydi; oddiy tarmoq toʻlovlari qoʻllanilishi mumkin.\n\n3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi. 3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi."
+        "answer": "Muddatli eskrou: Toʻlovlar odatda bir necha soniyada on-chain tasdiqlanadi. Shake’da koʻradigan \"kutish\" oʻtkazma vaqti emas — bu eskrou himoyasi. Siz 0 dan 180 kungacha boʻlgan eskrou muddatini tanlaysiz (masalan, 3 kun yoki tezkor hisob-kitob uchun 0). Ushbu kelishilgan vaqt davomida xaridor xaridni tekshirishi va kerak boʻlsa nizo ochishi mumkin. Nizo bildirilmasdan bu muddat yopilgach, bazaviy 0,1% toʻlov bilan avtomatik chiqarishgacha standart 3 kunlik arbitraj buferi boʻladi. Agar sotuvchi xaridorning eskrou muddati tugashi bilanoq darhol toʻlov olishni istasa, u qoʻshimcha toʻlov evaziga (qoʻshimcha 0,9% gacha, jami 1,0% toʻlov) erta yechib olishdan foydalanishi mumkin: bufer davrida ertaroq yechib olish 0,4% (1 kun erta), 0,7% (2 kun erta) yoki 1,0% (3 kun erta) toʻlovni tashkil qiladi. Shake alohida tezkor oʻtkazma toʻlovini olmaydi; oddiy tarmoq toʻlovlari qoʻllanilishi mumkin.\n\n3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va xaridor va sotuvchi tanlagan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi. 3 tadan 2 tasdiqli eskrouda avtomatik chiqarish sanasi yoki nizolar uchun belgilangan muddat yo‘q. Bir xil natijaga ikkita ruxsat bo‘lmasa, mablag‘ cheklanmagan muddatga qulflanib qolishi mumkin. Hech bir ishtirokchi yolg‘iz hisob-kitob qila olmaydi."
       },
       {
         "question": "Shake’dan foydalanish uchun toʻlovlar bormi?",
@@ -482,7 +489,7 @@
       },
       {
         "question": "Agar nizo yuzaga kelsa, nima boʻladi?",
-        "answer": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
+        "answer": "Muddatli eskrouda Shake DeFi hakamdir. Xaridor kelishilgan saqlash davrida nizo ochishi kerak, Shake DeFi esa dalillarni shu qoidalar bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi o‘z hakamini tanlaydi. U dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Tanlangan hakam yolg‘iz mablag‘ni chiqara olmaydi."
       },
       {
         "question": "Shake firibgarlik va ruxsatsiz tranzaksiyalardan qanday himoya qiladi?",
@@ -490,15 +497,15 @@
       },
       {
         "question": "Eskrou hisob-kitobiga kim ruxsat bera oladi?",
-        "answer": "3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va tayinlangan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi."
+        "answer": "3 tadan 2 tasdiqli eskrouda xaridor, sotuvchi va xaridor va sotuvchi tanlagan hakamdan istalgan ikkitasi bir xil natijaga ruxsat berishi kerak: sotuvchiga to‘lash yoki xaridorga qaytarish. Xaridor va sotuvchi hakamsiz ham kelisha oladi. Hisob-kitob faqat blokcheynda tasdiqlangach yakunlanadi."
       },
       {
         "question": "Tranzaksiya amalga oshirganimda nima hujjatlashtiriladi?",
-        "answer": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida."
+        "answer": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida xaridor va sotuvchi tanlagan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida."
       },
       {
         "question": "Shake javobgarlikni qanday shakllantiradi?",
-        "answer": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi."
+        "answer": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi tanlagan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi."
       },
       {
         "question": "Qanday maʼlumot ommaviy?",
@@ -511,6 +518,10 @@
       {
         "question": "Shake Defi qayerda roʻyxatdan oʻtgan?",
         "answer": "Shake Defi, Inc. AQSh, Viskonsin shtati, Brukfild shahrida roʻyxatdan oʻtgan."
+      },
+      {
+        "question": "Hakam sifatida daromad olishim mumkinmi?",
+        "answer": "3 tadan 2 tasdiqli eskrou Shake foydalanuvchilari uchun yangi imkoniyat ochadi: xaridor va sotuvchi tanlagan hakam sifatida qatnashish. To‘lovdan oldin ikkala ishtirokchini tekshiring va dalillarni ko‘rib, kelishmovchiliklarni hal qilishga yordam bering. Tanlangan hakam bitim summasining 0.5% ini — 1% hisob-kitob haqining yarmini oladi. Qolgan 0.5% protokolga beriladi.\n\nHaq mablag‘ kiritilgan bitim blokcheynda yakunlanganda, mablag‘ sotuvchiga to‘lanishidan yoki xaridorga qaytarilishidan qat’i nazar to‘lanadi. Xaridor va sotuvchi hakam imzosisiz birga hisob-kitob qilganda ham bu haq qo‘llanadi."
       }
     ],
     "cta": {
@@ -612,7 +623,7 @@
       "chip": "Smart-kontrakt eskrouning ikki varianti",
       "headline": "Smart-kontrakt eskrou bilan xavfsiz toʻlovlar",
       "subheadline": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting.",
-      "description": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
+      "description": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
       "cta": "Boshlash",
       "availableOn": "Quyidagilarda mavjud:",
       "availablePlatforms": "Telegram • Brauzer • iOS • Android • Farcaster",
@@ -635,7 +646,7 @@
       "headline": "Real hayotdagi tranzaksiyalar uchun toʻlov eskrousi",
       "subheadline": "Transport vositasi sotib olyapsizmi, ulgurji tovar qidiryapsizmi, uskuna xarid qilyapsizmi, pudratchi yollayapsizmi yoki tovar sotyapsizmi?",
       "description": "Shake xaridor va sotuvchilarga toʻlovni toʻgʻridan-toʻgʻri boshqa tomonga yubormasdan tranzaksiya qilishning tizimli usulini taqdim etadi.",
-      "callout": "Muddatli eskrou yoki 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizolar qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
+      "callout": "Hakam sifatida Shake DeFi qatnashadigan muddatli eskrouni yoki xaridor va sotuvchi o‘z hakamini tanlaydigan 3 tadan 2 tasdiqli eskrouni tanlang. Ikkalasi ham to‘lovni smart-kontraktda saqlaydi, ammo mablag‘ni chiqarish va nizo qoidalari farq qiladi. Imzolashdan oldin tanlangan variantni tekshiring.",
       "billImageCaption": "Aniq tranzaksiya shartlari va eskrou depoziti",
       "signatureImageCaption": "Buyum suratlari va shartlar bilan imzolangan kelishuv"
     },
@@ -646,7 +657,7 @@
         {
           "step": "1",
           "title": "Tranzaksiya boʻyicha kelishing",
-          "description": "Eskrou variantini tanlang, tovar yoki xizmat, narx va shartlarni kelishing. 3 tadan 2 tasdiqli eskrouda hakam ikkala ishtirokchini ma’qullaydi va ular to‘lovdan oldin imzolaydi."
+          "description": "Eskrou variantini tanlang, tovar yoki xizmat, narx va shartlarni kelishing. 3 tadan 2 tasdiqli eskrou uchun xaridor va sotuvchi o‘z hakamini tanlaydi. Hakam ikkala ishtirokchini ma’qullaydi va ikkala tomon to‘lovdan oldin imzolaydi."
         },
         {
           "step": "2",
@@ -668,7 +679,7 @@
         {
           "step": "5",
           "title": "Zarur boʻlsa, nizoni koʻtaring",
-          "description": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi."
+          "description": "Muddatli eskrouda Shake DeFi hakamdir. Xaridor kelishilgan saqlash davrida nizo ochishi kerak, Shake DeFi esa dalillarni shu qoidalar bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi o‘z hakamini tanlaydi. U dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Tanlangan hakam yolg‘iz mablag‘ni chiqara olmaydi."
         }
       ]
     },
@@ -706,9 +717,9 @@
     },
     "identityRecords": {
       "headline": "Shaxs va tranzaksiya yozuvlari",
-      "lead": "3 tadan 2 tasdiqli eskrouda tayinlangan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
-      "body1": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida tayinlangan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
-      "body2": "Muddatli eskrouda xaridor kelishilgan saqlash davrida nizo ochishi kerak; Shake dalillarni shu variant qoidalari bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda tayinlangan hakam dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Hakam yolg‘iz mablag‘ni chiqara olmaydi.",
+      "lead": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi tanlagan hakam kelishuvni tasdiqlash, to‘lov yoki hisob-kitobga imzo qo‘yishdan oldin ikkala ishtirokchini ma’qullaydi. Har biri ism, telefon va manzilini beradi yoki Persona orqali shaxsini tasdiqlaydi. Qiymat 10,000 AQSH dollari yoki undan ko‘p bo‘lsa, ikkalasi uchun Persona talab qilinadi.",
+      "body1": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi to‘lovdan oldin PDF kelishuvni imzolaydi. Imzolashda old kamera suratga oladi; nizo paytida xaridor va sotuvchi tanlagan hakam kelishuv, imzolar va suratlarni ko‘ra oladi. Kelishuv imzolari keyingi to‘lov yoki qaytarish uchun hamyon ruxsatlaridan alohida.",
+      "body2": "Muddatli eskrouda Shake DeFi hakamdir. Xaridor kelishilgan saqlash davrida nizo ochishi kerak, Shake DeFi esa dalillarni shu qoidalar bo‘yicha ko‘rib chiqadi. 3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi o‘z hakamini tanlaydi. U dalillarni ko‘rib, tomonlardan biri bilan birga natijaga ruxsat bera oladi. Tanlangan hakam yolg‘iz mablag‘ni chiqara olmaydi.",
       "pillars": {
         "accountability": {
           "title": "Javobgarlik",

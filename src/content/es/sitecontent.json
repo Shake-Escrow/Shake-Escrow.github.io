@@ -58,7 +58,7 @@
       "items": [
         {
           "title": "Tu elección\nde escrow",
-          "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
+          "description": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
         },
         {
           "title": "Paga con cualquier cripto que tengas",
@@ -96,7 +96,7 @@
       "business": {
         "label": "Comerciante",
         "headline": "Cobra con\nseguridad",
-        "description": "Ofrece escrow con plazo acordado o escrow 2 de 3 con árbitro asignado y dos autorizaciones coincidentes. También hay pagos sin escrow con plazo de cero días.",
+        "description": "Ofrece escrow con plazo con Shake DeFi como árbitro, o elige tu propio árbitro junto con el comprador para el escrow 2 de 3. Dos autorizaciones coincidentes liquidan una operación 2 de 3. También hay pagos de cero días sin escrow.",
         "button": "Saber más"
       },
       "customer": {
@@ -187,7 +187,7 @@
     },
     "section1": {
       "headline": "El Proceso de Escrow",
-      "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.\n\nEl escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación."
+      "description": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.\n\nEl escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación."
     },
     "section2": {
       "headline": "Cómo Funciona",
@@ -198,25 +198,25 @@
       "subhead": "Crea tu cuenta hoy y únete al movimiento hacia el cripto de todos los días.",
       "button": "Disponible Ahora"
     },
-    "escrowIntro": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
-    "agreementNote": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
+    "escrowIntro": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
+    "agreementNote": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro elegido por comprador y vendedor puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
     "aiCaption": "La IA admite bienes O servicios",
     "smartContractNote": "El escrow 2 de 3 usa un contrato inteligente independiente por operación en Base o TON. Usa el activo y la red que la app ofrezca para tu operación. Las billeteras, tokens e intercambios disponibles varían según la plataforma y ubicación.",
     "process": {
       "header": "Escrow con plazo: cómo funciona",
       "step1": "Después de realizar una transacción, tu dinero se coloca en un escrow durante la duración acordada (de 0 a 180 días), que es como una caja fuerte neutral, en lugar de ir directamente al comerciante.",
-      "step2": "Durante este período de espera, si no recibes lo que compraste, puedes hablarlo directamente con el comerciante o solicitar un reembolso, que será evaluado por un revisor humano.",
+      "step2": "Durante el plazo de retención, si no recibes lo comprado, habla con el vendedor o solicita un reembolso. Shake DeFi actúa como árbitro y revisa las pruebas.",
       "step3": "Si no se solicita una disputa durante el período de escrow acordado, el comerciante puede retirar los fondos de inmediato, o recibirlos automáticamente una vez que concluya el período estándar de arbitraje con la comisión básica."
     },
     "options": {
       "title": "Dos opciones de escrow, reglas distintas",
       "timedTitle": "Escrow con plazo",
-      "timedBody": "Acuerda un plazo, presenta disputas dentro de él y libera el pago según sus reglas temporales. La liberación estándar cuesta 0.1%; el retiro anticipado puede llegar al 1% total. Los pagos de cero días no tienen período de disputa de escrow.",
+      "timedBody": "Shake DeFi es el árbitro del escrow con plazo y revisa las disputas. Acuerda un plazo, presenta disputas dentro de él y libera el pago según sus reglas temporales. La liberación estándar cuesta 0.1%; el retiro anticipado puede llegar al 1% total. Los pagos de cero días no tienen período de disputa de escrow.",
       "quorumTitle": "Escrow 2 de 3",
-      "quorumBody": "En el escrow 2 de 3, dos de los tres participantes —comprador, vendedor y árbitro asignado— deben autorizar el mismo resultado: pago al vendedor o reembolso al comprador. Comprador y vendedor pueden resolverlo sin el árbitro. La liquidación solo se completa tras la confirmación en la blockchain.",
+      "quorumBody": "Comprador y vendedor eligen su propio árbitro para la operación. En el escrow 2 de 3, dos de los tres participantes —comprador, vendedor y árbitro asignado— deben autorizar el mismo resultado: pago al vendedor o reembolso al comprador. Comprador y vendedor pueden resolverlo sin el árbitro. La liquidación solo se completa tras la confirmación en la blockchain.",
       "lock": "El escrow 2 de 3 no tiene fecha de liberación automática ni plazo fijo para disputas. Sin dos autorizaciones coincidentes, los fondos pueden quedar bloqueados indefinidamente. Ningún participante puede liquidar por sí solo.",
       "fee": "Se descuenta un 1% al pagar o reembolsar: 0.5% para el árbitro y 0.5% para el protocolo. Pueden aplicarse comisiones de red.",
-      "identity": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
+      "identity": "En el escrow 2 de 3, el árbitro elegido por comprador y vendedor aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
       "ratings": "Tras liquidar una operación 2 de 3 financiada, el árbitro califica a ambos participantes y cada uno califica al árbitro. Comprador y vendedor también pueden calificarse según los Términos; si el árbitro autorizó el reembolso, el vendedor no puede calificar al comprador. Las calificaciones nunca retrasan pagos ni reembolsos.",
       "diagram": {
         "timedLabel": "Flujo del escrow con plazo",
@@ -226,9 +226,16 @@
         "quorumLabel": "Cualquiera de estas parejas puede autorizar el mismo resultado",
         "buyer": "Comprador",
         "seller": "Vendedor",
-        "arbiter": "Árbitro",
+        "arbiter": "Tu árbitro",
         "or": "o",
         "confirmed": "Se completa tras la confirmación en la blockchain"
+      },
+      "timedArbiter": "Arbitraje a cargo de Shake DeFi",
+      "chosenArbiter": "Elige tu propio árbitro",
+      "earning": {
+        "title": "Media en operaciones y gana la mitad de la comisión de liquidación",
+        "body": "El escrow 2 de 3 abre una nueva función para los usuarios de Shake: actuar como árbitro elegido por comprador y vendedor. Revisa a ambos participantes antes del pago y ayuda a resolver desacuerdos examinando las pruebas. El árbitro elegido recibe el 0.5% del importe de la operación: la mitad de la comisión de liquidación del 1%. El otro 0.5% corresponde al protocolo.",
+        "payment": "La comisión se paga cuando una operación financiada se liquida en la blockchain, tanto si se paga al vendedor como si se reembolsa al comprador. También se aplica cuando comprador y vendedor liquidan juntos sin la firma del árbitro."
       }
     }
   },
@@ -294,7 +301,7 @@
       },
       {
         "headline": "El Poder de\nVuelta al Pueblo",
-        "description": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
+        "description": "En el escrow con plazo, Shake DeFi es el árbitro. El comprador debe abrir la disputa durante el período acordado y Shake DeFi revisa las pruebas según esas reglas. En el escrow 2 de 3, comprador y vendedor eligen su propio árbitro, que revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. El árbitro elegido no puede mover fondos por sí solo."
       }
     ],
     "cta": {
@@ -394,7 +401,7 @@
     "questions": [
       {
         "question": "¿Cómo funciona la app?",
-        "answer": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
+        "answer": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar."
       },
       {
         "question": "¿Cómo comienzo?",
@@ -482,7 +489,7 @@
       },
       {
         "question": "¿Qué pasa si hay una disputa?",
-        "answer": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
+        "answer": "En el escrow con plazo, Shake DeFi es el árbitro. El comprador debe abrir la disputa durante el período acordado y Shake DeFi revisa las pruebas según esas reglas. En el escrow 2 de 3, comprador y vendedor eligen su propio árbitro, que revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. El árbitro elegido no puede mover fondos por sí solo."
       },
       {
         "question": "¿Cómo protege Shake contra el fraude y las transacciones no autorizadas?",
@@ -494,11 +501,11 @@
       },
       {
         "question": "¿Qué se documenta cuando realizo una transacción?",
-        "answer": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar."
+        "answer": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro elegido por comprador y vendedor puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar."
       },
       {
         "question": "¿Cómo crea responsabilidad Shake?",
-        "answer": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos."
+        "answer": "En el escrow 2 de 3, el árbitro elegido por comprador y vendedor aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos."
       },
       {
         "question": "¿Qué información es pública?",
@@ -511,6 +518,10 @@
       {
         "question": "¿Dónde está incorporado Shake Defi?",
         "answer": "Shake Defi, Inc. está incorporado en Brookfield, Wisconsin, Estados Unidos."
+      },
+      {
+        "question": "¿Puedo ganar dinero como árbitro?",
+        "answer": "El escrow 2 de 3 abre una nueva función para los usuarios de Shake: actuar como árbitro elegido por comprador y vendedor. Revisa a ambos participantes antes del pago y ayuda a resolver desacuerdos examinando las pruebas. El árbitro elegido recibe el 0.5% del importe de la operación: la mitad de la comisión de liquidación del 1%. El otro 0.5% corresponde al protocolo.\n\nLa comisión se paga cuando una operación financiada se liquida en la blockchain, tanto si se paga al vendedor como si se reembolsa al comprador. También se aplica cuando comprador y vendedor liquidan juntos sin la firma del árbitro."
       }
     ],
     "cta": {
@@ -612,7 +623,7 @@
       "chip": "Dos opciones de escrow",
       "headline": "Pagos Seguros con Escrow de Contrato Inteligente",
       "subheadline": "Compra y vende con términos de pago que ambas partes acuerdan.",
-      "description": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
+      "description": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
       "cta": "Empezar",
       "availableOn": "Disponible en:",
       "availablePlatforms": "Telegram • Navegador • iOS • Android • Farcaster",
@@ -635,7 +646,7 @@
       "headline": "Escrow de Pagos para Transacciones del Mundo Real",
       "subheadline": "¿Comprando un vehículo, obteniendo materias primas al por mayor, adquiriendo equipo, contratando a un contratista o vendiendo bienes?",
       "description": "Shake ofrece a compradores y vendedores una forma estructurada de transaccionar sin enviar el pago directamente a la otra parte.",
-      "callout": "Elige escrow con plazo o escrow 2 de 3. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
+      "callout": "Elige escrow con plazo, con Shake DeFi como árbitro, o escrow 2 de 3, con un árbitro elegido por comprador y vendedor. Ambos retienen el pago en un contrato inteligente, con reglas distintas de liberación y disputas. Revisa la opción elegida antes de firmar.",
       "billImageCaption": "Términos claros de la transacción y depósito de escrow",
       "signatureImageCaption": "Acuerdo firmado con fotos del artículo y términos"
     },
@@ -646,7 +657,7 @@
         {
           "step": "1",
           "title": "Acuerden la transacción",
-          "description": "Elige el escrow y acuerda el producto o servicio, precio y condiciones. En el 2 de 3, el árbitro aprueba a ambos participantes y los dos firman antes de pagar."
+          "description": "Elige el escrow y acuerda el producto o servicio, precio y condiciones. Para el escrow 2 de 3, comprador y vendedor eligen su propio árbitro. Este aprueba a ambos participantes y las dos partes firman antes de pagar."
         },
         {
           "step": "2",
@@ -668,7 +679,7 @@
         {
           "step": "5",
           "title": "Disputen cuando sea necesario",
-          "description": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo."
+          "description": "En el escrow con plazo, Shake DeFi es el árbitro. El comprador debe abrir la disputa durante el período acordado y Shake DeFi revisa las pruebas según esas reglas. En el escrow 2 de 3, comprador y vendedor eligen su propio árbitro, que revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. El árbitro elegido no puede mover fondos por sí solo."
         }
       ]
     },
@@ -706,9 +717,9 @@
     },
     "identityRecords": {
       "headline": "Identidad y Registros de Transacciones",
-      "lead": "En el escrow 2 de 3, el árbitro asignado aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
-      "body1": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro asignado puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
-      "body2": "En el escrow con plazo, el comprador debe abrir la disputa durante el período acordado; Shake revisa las pruebas según sus reglas. En el escrow 2 de 3, el árbitro asignado revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. No puede mover fondos por sí solo.",
+      "lead": "En el escrow 2 de 3, el árbitro elegido por comprador y vendedor aprueba a ambos participantes antes de aprobar el acuerdo, pagar o firmar la liquidación. Cada uno proporciona nombre, teléfono y dirección, o verifica su identidad con Persona. A partir del equivalente a 10,000 USD, Persona es obligatorio para ambos.",
+      "body1": "En el escrow 2 de 3, comprador y vendedor firman el acuerdo PDF antes del pago. Al firmar se toma una foto con la cámara frontal; el árbitro elegido por comprador y vendedor puede consultar el acuerdo, las firmas y las fotos en una disputa. Estas firmas son distintas de las autorizaciones posteriores de la billetera para pagar o reembolsar.",
+      "body2": "En el escrow con plazo, Shake DeFi es el árbitro. El comprador debe abrir la disputa durante el período acordado y Shake DeFi revisa las pruebas según esas reglas. En el escrow 2 de 3, comprador y vendedor eligen su propio árbitro, que revisa las pruebas y puede autorizar un resultado junto con cualquiera de las partes. El árbitro elegido no puede mover fondos por sí solo.",
       "pillars": {
         "accountability": {
           "title": "Responsabilidad",
