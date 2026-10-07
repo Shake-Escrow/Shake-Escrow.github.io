@@ -6,7 +6,7 @@
         "path": "/"
       },
       {
-        "title": "Escrow Options",
+        "title": "How it Works",
         "path": "/how-it-works"
       },
       {
@@ -43,7 +43,7 @@
   "home": {
     "hero": {
       "headline": "Shake on It.",
-      "subhead": "Crypto payments with a choice of timed or 2-of-3 smart-contract escrow for buyers and sellers.",
+      "subhead": "Smart-contract escrow that protects buyers and sellers on every crypto transaction — no banks, no middlemen, no waiting.",
       "button": "Available Now",
       "availableNowHeading": "Available Now",
       "ctaLabel": "Free Download",
@@ -54,11 +54,11 @@
       "partnerLinkText": "crypto onramp/offramp partner"
     },
     "features": {
-      "headline": "Two Ways to Protect\nYour Payment",
+      "headline": "Supercharge Your Payment\nwith Refundable Escrow",
       "items": [
         {
-          "title": "Your choice\nof escrow",
-          "description": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing."
+          "title": "Refundable\nescrow",
+          "description": "Shake uses a smart-contract escrow — like a neutral digital safe — that locks funds according to transparent rules on the Ethereum Base network. Shake never holds your money, and no one can move funds outside the agreed terms."
         },
         {
           "title": "Pay with any crypto you own",
@@ -88,7 +88,7 @@
         },
         {
           "title": "Start transacting",
-          "description": "Agree on payment terms, review the escrow option, and sign before funding. Track delivery and settlement in the app."
+          "description": "Begin sending and receiving with complete confidence because Shake is non-custodial. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
         }
       ]
     },
@@ -96,13 +96,13 @@
       "business": {
         "label": "Merchant",
         "headline": "Get paid\nsecurely",
-        "description": "Offer timed escrow with Shake DeFi as arbiter, or choose your own arbiter with the buyer for 2-of-3 escrow. Two matching authorizations settle a 2-of-3 deal. A zero-day payment without escrow is also available.",
+        "description": "Timed escrow: Set your escrow duration (0–180 days), share it with your buyer, and receive funds after the escrow period ends. Set the period to 0 for an instant transfer — you'll still get identity verification, a signed agreement, and buyer ratings.",
         "button": "Learn more"
       },
       "customer": {
         "label": "Buyer",
         "headline": "Pay with\na safety net",
-        "description": "Check the escrow type before paying. Timed escrow has a dispute window; 2-of-3 escrow holds funds until two participants authorize the same payment or refund.",
+        "description": "Timed escrow: Deposit funds into escrow through the app. Your money is held securely for the agreed period. If something goes wrong, you can request a refund before the window closes.",
         "button": "Learn more"
       }
     },
@@ -172,7 +172,7 @@
       },
       {
         "title": "Transact with Protection",
-        "description": "Agree on the escrow option and sign the transaction terms before payment. Funds settle according to the selected protocol, not delivery alone."
+        "description": "Both parties agree to terms, and funds are locked securely in a smart contract on the Ethereum Base network until delivery is complete."
       }
     ],
     "trust": {
@@ -183,11 +183,11 @@
   },
   "howItWorks": {
     "hero": {
-      "headline": "Choose the Escrow That Fits Your Deal"
+      "headline": "How Shake's Payment System Keeps You Safe, Literally"
     },
     "section1": {
       "headline": "The Escrow Process",
-      "description": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing.\n\n2-of-3 escrow uses a separate smart contract for each deal on Base or TON. Use the asset and network offered for your transaction in the app. Wallet, token, and swap availability varies by platform and location."
+      "description": "The Shake escrow is powered by a smart contract on the Ethereum Base network. Once a payment is made, funds are locked by code — not by Shake, not by a bank, and not by a third party. \n\nShake never takes custody of user funds. Payments are held by the smart contract itself, while users transact using their preferred wallet — including Coinbase Embedded Wallet on mobile, Telegram wallet and Tonkeeper on Telegram, or native ETH wallets on Farcaster. Fiat onramp and offramp services are powered by Coinbase on mobile. This design removes single-point-of-failure risk and ensures funds can only move according to the agreed rules."
     },
     "section2": {
       "headline": "How it Works",
@@ -198,10 +198,10 @@
       "subhead": "Create your account today and join the movement to everyday crypto.",
       "button": "Available Now"
     },
-    "escrowIntro": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing.",
-    "agreementNote": "For 2-of-3 escrow, buyer and seller both sign the PDF agreement before payment. Signing captures a front-camera photo; the agreement, signatures, and photos are available to the arbiter chosen by buyer and seller during a dispute. Agreement signatures are separate from later wallet authorizations to release or refund funds.",
+    "escrowIntro": "Shake uses an escrow which is like a safe that keeps the customer's money secure while a business delivers a product or service.",
+    "agreementNote": "Any escrow should have an agreement that the buyer and seller both sign before money is exchanged. AI in the app suggests an agreement, and pictures you take are included. Just sign with your finger.",
     "aiCaption": "AI supports goods OR services",
-    "smartContractNote": "2-of-3 escrow uses a separate smart contract for each deal on Base or TON. Use the asset and network offered for your transaction in the app. Wallet, token, and swap availability varies by platform and location.",
+    "smartContractNote": "Your payment is held in a smart contract and released according to the agreed escrow terms. Shake DeFi never takes custody of your funds.",
     "process": {
       "header": "Timed escrow: how it works",
       "step1": "After making a transaction, your money is placed into an escrow for the agreed duration (0–180 days), which is like a neutral safe, rather than going directly to the merchant.",
@@ -209,34 +209,11 @@
       "step3": "If no dispute is requested during the agreed escrow period, the merchant can withdraw funds immediately, or receive them automatically once the standard arbitration buffer concludes at the baseline fee."
     },
     "options": {
-      "title": "Two escrow options, different rules",
+      "title": "Choose your escrow",
       "timedTitle": "Timed escrow",
-      "timedBody": "Shake DeFi is the arbiter for timed escrow and reviews disputes. Agree on a holding period, raise disputes during that period, and release payment under its time-based rules. Standard release costs 0.1%; early withdrawal can bring the total to 1%. Zero-day payments have no escrow dispute window.",
+      "timedBody": "Agree on a holding period. Shake DeFi is the arbiter if a dispute arises.",
       "quorumTitle": "2-of-3 escrow",
-      "quorumBody": "Buyer and seller choose their own arbiter for the deal. In 2-of-3 escrow, any two of the buyer, seller, and their chosen arbiter must authorize the same outcome: payment to the seller or refund to the buyer. Buyer and seller can settle together without the arbiter. Settlement is complete only after blockchain confirmation.",
-      "lock": "2-of-3 escrow has no automatic release date or timed dispute deadline. Funds can remain locked indefinitely without two matching authorizations. No single participant can settle alone.",
-      "fee": "1% deducted on release or refund: 0.5% to the arbiter and 0.5% to the protocol. Network fees may also apply.",
-      "identity": "For 2-of-3 escrow, the arbiter chosen by buyer and seller approves both participants before agreement approval, payment, or settlement signing. Each provides their name, phone number, and address, or completes Persona ID verification. At $10,000 USD equivalent or more, Persona verification is required for both.",
-      "ratings": "After a funded 2-of-3 deal settles, the arbiter rates both participants and each participant rates the arbiter. Buyer and seller may also rate each other under the Terms; if the arbiter authorized a refund, the seller cannot rate the buyer. Ratings never hold up release or refund.",
-      "diagram": {
-        "timedLabel": "Timed escrow flow",
-        "deposit": "Deposit",
-        "holding": "Holding period + dispute rules",
-        "outcome": "Payment or refund",
-        "quorumLabel": "Any one of these pairs can authorize the same outcome",
-        "buyer": "Buyer",
-        "seller": "Seller",
-        "arbiter": "Your arbiter",
-        "or": "or",
-        "confirmed": "Complete after blockchain confirmation"
-      },
-      "timedArbiter": "Arbitration by Shake DeFi",
-      "chosenArbiter": "Choose your own arbiter",
-      "earning": {
-        "title": "Mediate transactions and earn half the settlement fee",
-        "body": "2-of-3 escrow opens a new role for Shake users: serve as the arbiter chosen by the buyer and seller. Review both participants before payment and help resolve disagreements by reviewing the evidence. The chosen arbiter receives 0.5% of the transaction amount—half of the 1% settlement fee. The other 0.5% goes to the protocol.",
-        "payment": "The fee is paid when a funded deal settles on-chain, whether funds go to the seller or are refunded to the buyer. It also applies when buyer and seller settle together without the arbiter’s signature."
-      }
+      "quorumBody": "Choose your own arbiter. The arbiter breaks ties in disputes between buyer and merchant and earns a 0.5% commission on the transaction amount."
     }
   },
   "getPaid": {
@@ -247,7 +224,7 @@
     "sections": [
       {
         "headline": "Keep More of\nWhat You Earn",
-        "description": "2-of-3 escrow deducts 1% at settlement, on either payment or refund: 0.5% to the arbiter and 0.5% to the protocol. Timed escrow keeps its own fee schedule: 0.1% for standard release, with early withdrawal fees up to 1% total. Network and third-party fees may also apply."
+        "description": "Credit card processors typically charge 2.5–3% per transaction, and traditional escrow services charge even more. Fees range from 0.1% to 1%. Timed escrow starts at 0.1%; 2-of-3 escrow costs 1%. No terminals to buy, no bank in the middle, no international surcharges. More of every sale stays with you."
       },
       {
         "headline": "Adapts\nto You",
@@ -285,7 +262,7 @@
     "sections": [
       {
         "headline": "Transactions\nThat Matter",
-        "description": "Choose timed escrow or 2-of-3 escrow. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing."
+        "description": "Timed escrow: Pay with an app that keeps payments private, documented, and easy to resolve. Your payment is locked in a smart-contract escrow on the Ethereum Base network for a fixed period agreed to by both buyer and merchant. During this time, funds cannot be accessed outside the contract's rules, and disputes can be raised if the agreed terms are not met. Shake and Persona verify every business's identity, reputation, and feedback. Each transaction comes with a signed agreement and verifiable on-chain proof of payment – so you can trust your purchases and avoid disputes."
       },
       {
         "headline": "Level Up as a Sensible Spender",
@@ -301,7 +278,7 @@
       },
       {
         "headline": "Power Back\nto the People",
-        "description": "With timed escrow, Shake DeFi is the arbiter. The buyer must open a dispute within the agreed holding period, and Shake DeFi reviews the evidence under the timed escrow rules. With 2-of-3 escrow, buyer and seller choose their own arbiter, who reviews evidence and can authorize an outcome together with either participant. The chosen arbiter cannot move funds alone."
+        "description": "Shake DeFi is the arbiter for timed escrow. With 2-of-3 escrow, buyer and merchant choose their own arbiter. The arbiter acts as a tie-breaker in disputes and earns a 0.5% commission on the transaction amount."
       }
     ],
     "cta": {
@@ -401,7 +378,7 @@
     "questions": [
       {
         "question": "How does the app work?",
-        "answer": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing."
+        "answer": "Shake uses smart-contract escrow on the Ethereum Base network, which acts like a safe that keeps the customer's money secure while a business delivers a product or service. To learn more, see the \"How it Works\" page."
       },
       {
         "question": "How do I get started?",
@@ -437,11 +414,11 @@
       },
       {
         "question": "What is an escrow?",
-        "answer": "Escrow holds a payment in a smart contract while the parties complete a deal. Timed escrow uses an agreed holding period and dispute window. In 2-of-3 escrow, any two of buyer, seller, and arbiter must authorize the same release or refund; delivery alone does not release payment."
+        "answer": "An escrow is like a safe that keeps the money secure and ensures both the customer and business are fulfilling their obligations before the exchange is made. \n\nFor example, let's say you're buying a used phone from someone you found online. Normally, you'd meet up, pay them on the spot, and hope the phone works. But if it's broken or not what they promised, it's already too late — the money's gone. \n\nWith escrow, instead of paying them directly, your money goes into a secure holding account for a fixed amount of time. The seller sees the money is there, and hands over the phone. \n\nDuring the waiting period, you check the quality of the phone. If you discover it's broken, you would dispute the transaction and request a refund. If the phone works, the money is released to the seller once the waiting period is over. \n\nIn essence, the escrow:    \n1) Protects businesses by ensuring that the customer's payment is ready and available for transfer once the waiting period is over    \n2) Provides protection for both parties by ensuring funds are held securely and can only be released according to the agreed escrow terms, including refunds when warranted by a dispute outcome. \n\nTo learn more, see the \"How it Works\" page."
       },
       {
         "question": "Do I have to use an escrow period?",
-        "answer": "No. Timed escrow, 2-of-3 escrow, and zero-day payments without escrow are separate choices. For buyer-created invitations, the seller chooses 2-of-3 with their own arbiter, the existing 14-day holding period, or zero days without escrow. Review the choice before signing: 2-of-3 has no automatic release date."
+        "answer": "Timed escrow: No. Merchants can choose any escrow duration from 0 to 180 days, and it can be set to 0 for an instant transfer with no waiting and no refund window. You still get all of Shake's other protections: identity verification, a signed agreement with photos, thorough transaction documentation, and buyer ratings. The escrow period is the right choice when you want to give buyers a safety net — instant transfer is the right choice when the sale is straightforward and both parties are ready."
       },
       {
         "question": "Do I need prior crypto experience or investment knowledge to use Shake?",
@@ -449,7 +426,7 @@
       },
       {
         "question": "Who can use the Shake app?",
-        "answer": "Shake is for adults aged 18 and over. Identity requirements depend on the transaction. For 2-of-3 escrow, see the participant approval requirements below."
+        "answer": "Shake is available for those over the age of 18. Creating a Shake account requires identity verification from the Persona service (withpersona.com)."
       },
       {
         "question": "Can I pay with any cryptocurrency I own?",
@@ -461,11 +438,11 @@
       },
       {
         "question": "How long does it take to send or accept a payment? Is there an instant transfer fee?",
-        "answer": "Timed escrow: Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow duration between 0 and 180 days (for example, 3 days, or 0 for instant settlement). During this agreed window, the buyer can inspect the purchase and file a dispute if needed. After that window closes without a dispute, there is a standard 3-day arbitration buffer before automatic release at the baseline 0.1% fee. If a merchant wants to get paid immediately right when the buyer's escrow period ends, they can use early withdrawal for an additional fee (up to 0.9% additional, for a total fee of 1.0%): withdrawing earlier during the buffer incurs 0.4% (1 day early), 0.7% (2 days early), or 1.0% (3 days early). Shake does not charge a separate instant transfer fee; normal network fees may apply.\n\nIn 2-of-3 escrow, any two of the buyer, seller, and their chosen arbiter must authorize the same outcome: payment to the seller or refund to the buyer. Buyer and seller can settle together without the arbiter. Settlement is complete only after blockchain confirmation. 2-of-3 escrow has no automatic release date or timed dispute deadline. Funds can remain locked indefinitely without two matching authorizations. No single participant can settle alone."
+        "answer": "Timed escrow: Payments typically confirm on-chain in seconds. The \"waiting\" you see in Shake isn't transfer time—it's escrow protection. You choose an escrow duration between 0 and 180 days (for example, 3 days, or 0 for instant settlement). During this agreed window, the buyer can inspect the purchase and file a dispute if needed. After that window closes without a dispute, there is a standard 3-day arbitration buffer before automatic release at the baseline 0.1% fee. If a merchant wants to get paid immediately right when the buyer's escrow period ends, they can use early withdrawal for an additional fee (up to 0.9% additional, for a total fee of 1.0%): withdrawing earlier during the buffer incurs 0.4% (1 day early), 0.7% (2 days early), or 1.0% (3 days early). Shake does not charge a separate instant transfer fee; normal network fees may apply."
       },
       {
         "question": "Are there fees to use Shake?",
-        "answer": "2-of-3 escrow deducts 1% at settlement, on either payment or refund: 0.5% to the arbiter and 0.5% to the protocol. Timed escrow keeps its own fee schedule: 0.1% for standard release, with early withdrawal fees up to 1% total. Network and third-party fees may also apply."
+        "answer": "Fees range from 0.1% to 1%. Timed escrow starts at 0.1%; 2-of-3 escrow costs 1%.\n\nBlockchain network fees may also apply, and are paid directly to the network. Currency conversion (fiat ↔ crypto) is handled by Coinbase Onramp and Offramp, which may apply their own fees depending on the asset used. Currency swapping between cryptocurrencies uses the Rubic protocol and includes standard swap fees.\n\nShake does not add hidden fees, does not take custody of funds, and does not charge recurring subscription fees for basic use."
       },
       {
         "question": "Do I need to report my Shake transactions on my taxes?",
@@ -489,23 +466,23 @@
       },
       {
         "question": "What happens if there is a dispute?",
-        "answer": "With timed escrow, Shake DeFi is the arbiter. The buyer must open a dispute within the agreed holding period, and Shake DeFi reviews the evidence under the timed escrow rules. With 2-of-3 escrow, buyer and seller choose their own arbiter, who reviews evidence and can authorize an outcome together with either participant. The chosen arbiter cannot move funds alone."
+        "answer": "Shake DeFi is the arbiter for timed escrow. With 2-of-3 escrow, buyer and merchant choose their own arbiter. The arbiter acts as a tie-breaker in disputes and earns a 0.5% commission on the transaction amount."
       },
       {
         "question": "How does Shake protect against fraud and unauthorized transactions?",
         "answer": "Shake protects against fraud and unauthorized transactions with verified identities, signed agreements for each transaction, and verifiable on-chain proof of payment, backed by detailed records for dispute resolution."
       },
       {
-        "question": "Who can authorize escrow settlement?",
-        "answer": "In 2-of-3 escrow, any two of the buyer, seller, and their chosen arbiter must authorize the same outcome: payment to the seller or refund to the buyer. Buyer and seller can settle together without the arbiter. Settlement is complete only after blockchain confirmation."
+        "question": "How are my funds held?",
+        "answer": "Your payment is held in a smart contract and released according to the agreed escrow terms. Shake DeFi never takes custody of your funds."
       },
       {
         "question": "What is documented when I make a transaction?",
-        "answer": "For 2-of-3 escrow, buyer and seller both sign the PDF agreement before payment. Signing captures a front-camera photo; the agreement, signatures, and photos are available to the arbiter chosen by buyer and seller during a dispute. Agreement signatures are separate from later wallet authorizations to release or refund funds."
+        "answer": "Shake encrypts all data and logs every detail: Time, location, signatures, and photos that you provide. Each party's device also takes a front-facing photo of the signer as they are signing. Delivery confirmation can be uploaded, and the system confirms the money is available before a transaction happens."
       },
       {
         "question": "How does Shake create accountability?",
-        "answer": "For 2-of-3 escrow, the arbiter chosen by buyer and seller approves both participants before agreement approval, payment, or settlement signing. Each provides their name, phone number, and address, or completes Persona ID verification. At $10,000 USD equivalent or more, Persona verification is required for both."
+        "answer": "Identity checks, signed agreements, and user ratings help participants make informed decisions and establish accountability."
       },
       {
         "question": "What information is public?",
@@ -521,7 +498,7 @@
       },
       {
         "question": "Can I earn money as an arbiter?",
-        "answer": "2-of-3 escrow opens a new role for Shake users: serve as the arbiter chosen by the buyer and seller. Review both participants before payment and help resolve disagreements by reviewing the evidence. The chosen arbiter receives 0.5% of the transaction amount—half of the 1% settlement fee. The other 0.5% goes to the protocol.\n\nThe fee is paid when a funded deal settles on-chain, whether funds go to the seller or are refunded to the buyer. It also applies when buyer and seller settle together without the arbiter’s signature."
+        "answer": "With 2-of-3 escrow, buyer and merchant choose their own arbiter. The arbiter acts as a tie-breaker in disputes and earns a 0.5% commission on the transaction amount."
       }
     ],
     "cta": {
@@ -617,13 +594,13 @@
   "securePayments": {
     "seo": {
       "title": "Secure Payments With Smart-Contract Escrow",
-      "description": "Compare timed and 2-of-3 smart-contract escrow for vehicles, goods, services, and commercial trade. Clear payment, refund, and fee rules."
+      "description": "Buy and sell with payment terms both sides agree to. Non-custodial smart-contract escrow on Base for commercial trade, wholesale commodities, vehicles, services, and direct transactions."
     },
     "hero": {
-      "chip": "Two Smart-Contract Escrow Options",
+      "chip": "Smart-Contract Escrow",
       "headline": "Secure Payments With Smart-Contract Escrow",
       "subheadline": "Buy and sell with payment terms both sides agree to.",
-      "description": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing.",
+      "description": "Shake DeFi provides non-custodial payment escrow for commercial and direct transactions. Agree on the transaction, lock the payment in a smart contract on Base, and release the funds according to the agreed escrow terms.",
       "cta": "Get Started",
       "availableOn": "Available on:",
       "availablePlatforms": "Telegram • Browser • iOS • Android • Farcaster",
@@ -636,9 +613,9 @@
         "agreementTermsStatus": "Both sides approved ✓",
         "escrowProtectionTitle": "Smart-Contract Escrow",
         "escrowProtectionValue": "Non-Custodial",
-        "escrowProtectionStatus": "Rules depend on your escrow choice",
+        "escrowProtectionStatus": "Smart-Contract Escrow",
         "standardFeeTitle": "Escrow Fees",
-        "standardFeeValue": "Timed: 0.1%–1% · 2-of-3: 1%",
+        "standardFeeValue": "0.1%–1%",
         "standardFeeStatus": "No monthly subscriptions"
       }
     },
@@ -646,7 +623,7 @@
       "headline": "Payment Escrow for Real-World Transactions",
       "subheadline": "Buying a vehicle, sourcing bulk commodities, purchasing equipment, hiring a contractor, or selling goods?",
       "description": "Shake gives buyers and sellers a structured way to transact without sending payment directly to the other party.",
-      "callout": "Choose timed escrow with Shake DeFi as arbiter, or 2-of-3 escrow with an arbiter chosen by the buyer and seller. Both hold payment in a smart contract, with different release and dispute rules. Review the selected option before signing.",
+      "callout": "Agree on the transaction terms and fund the smart contract. Your payment is held in escrow according to those terms.",
       "billImageCaption": "Clear transaction terms & escrow deposit",
       "signatureImageCaption": "Signed agreement with item photos & terms"
     },
@@ -657,13 +634,13 @@
         {
           "step": "1",
           "title": "Agree on the transaction",
-          "description": "Choose the escrow option and agree on the item or service, price, and terms. For 2-of-3 escrow, buyer and seller choose their own arbiter. That arbiter approves both participants, and both parties sign the agreement before payment."
+          "description": "The buyer and seller agree on the item or service, price, and escrow terms, then sign the agreement."
         },
         {
           "step": "2",
           "title": "Fund the escrow",
           "description1": "The buyer sends the agreed payment to the Shake smart contract.",
-          "description2": "2-of-3 escrow uses a separate smart contract for each deal on Base or TON. Use the asset and network offered for your transaction in the app. Wallet, token, and swap availability varies by platform and location.",
+          "description2": "Shake supports USDC and USDT, as well as other supported cryptocurrencies including ETH and TON. Additional assets may be available through supported currency-swapping features.",
           "swappingBadge": "+ Swapping Features"
         },
         {
@@ -674,20 +651,20 @@
         {
           "step": "4",
           "title": "Release the payment",
-          "description": "Timed escrow releases under its holding-period and dispute rules. With 2-of-3 escrow, two participants must authorize the same release or refund; completion requires blockchain confirmation."
+          "description": "When the applicable escrow period and release conditions are satisfied, the payment is released to the seller according to the smart contract rules."
         },
         {
           "step": "5",
           "title": "Dispute when necessary",
-          "description": "With timed escrow, Shake DeFi is the arbiter. The buyer must open a dispute within the agreed holding period, and Shake DeFi reviews the evidence under the timed escrow rules. With 2-of-3 escrow, buyer and seller choose their own arbiter, who reviews evidence and can authorize an outcome together with either participant. The chosen arbiter cannot move funds alone."
+          "description": "If a transaction does not go as agreed, the arbiter reviews the evidence to help resolve the dispute."
         }
       ]
     },
     "nonCustodial": {
       "title": "Non-Custodial by Design",
-      "badge": "Smart-Contract Payment Rules",
+      "badge": "Smart-Contract Escrow",
       "lead": "Shake does not take custody of escrowed customer funds.",
-      "body1": "2-of-3 escrow uses a separate smart contract for each deal on Base or TON. Use the asset and network offered for your transaction in the app. Wallet, token, and swap availability varies by platform and location.",
+      "body1": "Your payment is held in a smart contract and released according to the agreed escrow terms. Shake DeFi never takes custody of your funds.",
       "body2": "You use your connected wallet to authorize transactions."
     },
     "cryptocurrency": {
@@ -707,19 +684,19 @@
     },
     "fees": {
       "headline": "Transparent Fees",
-      "standardFeeLabel": "Fees by Escrow Option",
-      "standardFeeValue": "0.1%–1% / 1%",
-      "standardFeeSub": "Timed escrow / 2-of-3 escrow",
-      "body1": "2-of-3 escrow deducts 1% at settlement, on either payment or refund: 0.5% to the arbiter and 0.5% to the protocol. Timed escrow keeps its own fee schedule: 0.1% for standard release, with early withdrawal fees up to 1% total. Network and third-party fees may also apply.",
-      "body2": "2-of-3 escrow has no automatic release date or timed dispute deadline. Funds can remain locked indefinitely without two matching authorizations. No single participant can settle alone.",
+      "standardFeeLabel": "Standard Escrow Fee",
+      "standardFeeValue": "0.1%–1%",
+      "standardFeeSub": "Depending on the escrow and release option",
+      "body1": "Fees range from 0.1% to 1%. Timed escrow starts at 0.1%; 2-of-3 escrow costs 1%.",
+      "body2": "Timed escrow: The standard service fee is 0.1%. Additional fees may apply when a merchant chooses an early withdrawal option.",
       "body3": "Blockchain network fees may also apply. Third-party services such as cryptocurrency conversion and swapping may have their own fees.",
       "noSubscriptions": "✓ There are no recurring subscription fees for basic Shake use."
     },
     "identityRecords": {
       "headline": "Identity and Transaction Records",
-      "lead": "For 2-of-3 escrow, the arbiter chosen by buyer and seller approves both participants before agreement approval, payment, or settlement signing. Each provides their name, phone number, and address, or completes Persona ID verification. At $10,000 USD equivalent or more, Persona verification is required for both.",
-      "body1": "For 2-of-3 escrow, buyer and seller both sign the PDF agreement before payment. Signing captures a front-camera photo; the agreement, signatures, and photos are available to the arbiter chosen by buyer and seller during a dispute. Agreement signatures are separate from later wallet authorizations to release or refund funds.",
-      "body2": "With timed escrow, Shake DeFi is the arbiter. The buyer must open a dispute within the agreed holding period, and Shake DeFi reviews the evidence under the timed escrow rules. With 2-of-3 escrow, buyer and seller choose their own arbiter, who reviews evidence and can authorize an outcome together with either participant. The chosen arbiter cannot move funds alone.",
+      "lead": "Shake uses identity verification to establish accountability between transaction participants.",
+      "body1": "Each transaction can include a signed agreement, transaction details, supporting documentation, and on-chain payment records.",
+      "body2": "For disputed transactions, a human reviewer evaluates the available evidence.",
       "pillars": {
         "accountability": {
           "title": "Accountability",
