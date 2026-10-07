@@ -594,13 +594,13 @@
   "securePayments": {
     "seo": {
       "title": "Secure Payments With Smart-Contract Escrow",
-      "description": "Buy and sell with payment terms both sides agree to. Non-custodial smart-contract escrow on Base for commercial trade, wholesale commodities, vehicles, services, and direct transactions."
+      "description": "Buy and sell with payment terms both sides agree to. Non-custodial smart-contract escrow for commercial trade, wholesale commodities, vehicles, services, and direct transactions."
     },
     "hero": {
       "chip": "Smart-Contract Escrow",
       "headline": "Secure Payments With Smart-Contract Escrow",
       "subheadline": "Buy and sell with payment terms both sides agree to.",
-      "description": "Shake DeFi provides non-custodial payment escrow for commercial and direct transactions. Agree on the transaction, lock the payment in a smart contract on Base, and release the funds according to the agreed escrow terms.",
+      "description": "Shake DeFi provides non-custodial payment escrow for commercial and direct transactions. Agree on the transaction, lock the payment in a smart contract, and release the funds according to the agreed escrow terms.",
       "cta": "Get Started",
       "availableOn": "Available on:",
       "availablePlatforms": "Telegram • Browser • iOS • Android • Farcaster",

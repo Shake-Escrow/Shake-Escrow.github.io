@@ -594,13 +594,13 @@
   "securePayments": {
     "seo": {
       "title": "Pagos Seguros con Escrow de Contrato Inteligente",
-      "description": "Compra y vende con términos de pago que ambas partes acuerdan. Escrow de contrato inteligente no custodial en Base para comercio, materias primas al por mayor, vehículos, servicios y transacciones directas."
+      "description": "Compra y vende con términos de pago que ambas partes acuerdan. Escrow de contrato inteligente no custodial para comercio, materias primas al por mayor, vehículos, servicios y transacciones directas."
     },
     "hero": {
       "chip": "Escrow con contrato inteligente",
       "headline": "Pagos Seguros con Escrow de Contrato Inteligente",
       "subheadline": "Compra y vende con términos de pago que ambas partes acuerdan.",
-      "description": "Shake DeFi ofrece escrow de pagos no custodial para transacciones comerciales y directas. Acuerda la transacción, bloquea el pago en un contrato inteligente en Base y libera los fondos según los términos de escrow acordados.",
+      "description": "Shake DeFi ofrece escrow de pagos no custodial para transacciones comerciales y directas. Acuerda la transacción, bloquea el pago en un contrato inteligente y libera los fondos según los términos de escrow acordados.",
       "cta": "Empezar",
       "availableOn": "Disponible en:",
       "availablePlatforms": "Telegram • Navegador • iOS • Android • Farcaster",

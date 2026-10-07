@@ -266,6 +266,10 @@ const SecurePayments: React.FC = () => {
         </div>
       </Section>
 
+      <div className="container mx-auto px-4 sm:px-6">
+        <EscrowOptions />
+      </div>
+
       {/* Section: How It Works */}
       <Section bgColor="bg-[#f8fafc]" className="py-12 md:py-20 border-t border-gray-200/60">
         <div className="max-w-4xl mx-auto">
@@ -680,8 +684,6 @@ const SecurePayments: React.FC = () => {
           </div>
         </div>
       </Section>
-
-      <EscrowOptions />
 
       {/* Section: Payment Service, Not an Investment Product */}
       <Section bgColor="bg-white" className="py-10 md:py-16 border-t border-gray-100">

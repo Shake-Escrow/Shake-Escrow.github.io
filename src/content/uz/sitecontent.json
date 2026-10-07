@@ -594,13 +594,13 @@
   "securePayments": {
     "seo": {
       "title": "Smart-kontrakt eskrou bilan xavfsiz toʻlovlar",
-      "description": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting. Base tarmogʻida tijorat savdosi, ulgurji tovarlar, transport vositalari, xizmatlar va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial smart-kontrakt eskrou."
+      "description": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting. Tijorat savdosi, ulgurji tovarlar, transport vositalari, xizmatlar va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial smart-kontrakt eskrou."
     },
     "hero": {
       "chip": "Smart-kontrakt eskrousi",
       "headline": "Smart-kontrakt eskrou bilan xavfsiz toʻlovlar",
       "subheadline": "Ikkala tomon ham kelishgan toʻlov shartlari asosida sotib oling va soting.",
-      "description": "Shake DeFi tijorat va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial toʻlov eskrousini taqdim etadi. Tranzaksiya boʻyicha kelishing, toʻlovni Base tarmogʻidagi smart-kontraktda bloklang va mablagʻlarni kelishilgan eskrou shartlariga muvofiq chiqaring.",
+      "description": "Shake DeFi tijorat va toʻgʻridan-toʻgʻri tranzaksiyalar uchun nokastodial toʻlov eskrousini taqdim etadi. Tranzaksiya boʻyicha kelishing, toʻlovni smart-kontraktda bloklang va mablagʻlarni kelishilgan eskrou shartlariga muvofiq chiqaring.",
       "cta": "Boshlash",
       "availableOn": "Quyidagilarda mavjud:",
       "availablePlatforms": "Telegram • Brauzer • iOS • Android • Farcaster",
