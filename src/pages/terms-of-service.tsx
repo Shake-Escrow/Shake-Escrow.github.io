@@ -11,8 +11,7 @@ interface Definition {
 }
 
 interface Subsection {
-  id: string;
-  title: string;
+  subtitle: string;
   content?: string;
   list?: string[];
   definitions?: Definition[];
@@ -25,7 +24,6 @@ interface Contact {
 }
 
 interface TOSSection {
-  id: string;
   title: string;
   content?: string;
   subsections?: Subsection[];
@@ -33,12 +31,13 @@ interface TOSSection {
 }
 
 interface TOSData {
-  title: string;
-  company: string;
+  companyName: string;
+  publicationStatus?: string;
+  publicationNotice?: string;
   lastUpdated: string;
   introduction: string;
   sections: TOSSection[];
-  acknowledgment: string;
+  acknowledgment?: string;
 }
 
 const TermsOfService: React.FC = () => {
@@ -82,16 +81,21 @@ const TOSContent: React.FC = () => {
   const tosContent = useContent('tos');
   const siteContent = useContent('sitecontent');
   const data = tosContent as TOSData;
-  const { company, lastUpdated, introduction, sections, acknowledgment } = data;
+  const { companyName, lastUpdated, introduction, sections, acknowledgment } = data;
   
   return (
     <>
       <div className="mb-8">
-        <p className="text-lg font-semibold text-gray-900">{company}</p>
+        <p className="text-lg font-semibold text-gray-900">{companyName}</p>
         <p className="text-sm text-gray-600 mb-4">
           <strong>{siteContent.termsOfService.lastUpdatedLabel}</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
+        {data.publicationStatus === 'not_published' && data.publicationNotice && (
+          <p className="rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-gray-900">
+            {data.publicationNotice}
+          </p>
+        )}
       </div>
       
       {/* Introduction */}
@@ -103,7 +107,7 @@ const TOSContent: React.FC = () => {
       
       {/* Sections */}
       {sections.map((section: TOSSection) => (
-        <div key={section.id} className="mb-10">
+        <div key={section.title} className="mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-black text-secondary-dark mb-4">
             {section.title}
           </h2>
@@ -116,9 +120,9 @@ const TOSContent: React.FC = () => {
           )}
           
           {section.subsections && section.subsections.map((subsection: Subsection) => (
-            <div key={subsection.id} className="mb-6 ml-4">
+            <div key={subsection.subtitle} className="mb-6 ml-4">
               <h3 className="text-xl font-display font-bold text-secondary-dark mb-3">
-                {subsection.title}
+                {subsection.subtitle}
               </h3>
               
               {subsection.content && (
@@ -168,11 +172,11 @@ const TOSContent: React.FC = () => {
       ))}
       
       {/* Acknowledgment */}
-      <div className="mt-12 p-6 bg-secondary-dark text-white rounded-lg">
+      {acknowledgment && <div className="mt-12 p-6 bg-secondary-dark text-white rounded-lg">
         <p className="text-sm font-semibold leading-relaxed">
           {acknowledgment}
         </p>
-      </div>
+      </div>}
 
       <div className="mt-8 text-base text-gray-700">
         {siteContent.termsOfService.eulaPromo}{' '}

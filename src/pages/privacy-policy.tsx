@@ -21,6 +21,8 @@ interface PrivacyPolicyData {
   effectiveDate: string;
   companyName: string;
   sections: PolicySection[];
+  publicationStatus?: string;
+  publicationNotice?: string;
 }
 
 const PrivacyPolicy: React.FC = () => {
@@ -62,13 +64,18 @@ const PrivacyPolicyContent: React.FC = () => {
     <>
       <div className="mb-8">
         <p className="text-lg font-semibold text-gray-900">{companyName}</p>
-        <p className="text-sm text-gray-600">
+        {effectiveDate && <p className="text-sm text-gray-600">
           <strong>{siteContent.privacyPolicy.effectiveDateLabel}</strong> {effectiveDate}
-        </p>
+        </p>}
         <p className="text-sm text-gray-600 mb-4">
           <strong>{siteContent.privacyPolicy.lastUpdatedLabel}</strong> {lastUpdated}
         </p>
         <hr className="my-6 border-gray-300" />
+        {data.publicationStatus === 'not_published' && data.publicationNotice && (
+          <p className="rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm text-gray-900">
+            {data.publicationNotice}
+          </p>
+        )}
       </div>
       
       {sections.map((section: PolicySection, index: number) => (
@@ -86,7 +93,7 @@ const PrivacyPolicyContent: React.FC = () => {
                 </h3>
                 <div 
                   className="text-base text-gray-700 leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: subsection.content }}
+                  dangerouslySetInnerHTML={{ __html: subsection.content.replace(/\n\n/g, '<br><br>') }}
                 />
               </div>
             ))

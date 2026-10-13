@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-yil 28-avgust",
-  "effectiveDate": "2026-yil 28-avgust",
+  "lastUpdated": "2026-yil 13-oktabr",
+  "effectiveDate": "2026-yil 13-oktabr",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Maxfiylik Siyosati\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -21,7 +21,7 @@
         },
         {
           "subtitle": "2.3 Tranzaksiya ma'lumotlari",
-          "content": "Biz sizning tranzaksiyalaringiz bilan bog'liq quyidagi ma'lumotlarni to'playmiz:\n\n<ul>\n<li>Tranzaksiya miqdori</li>\n<li>Tranzaksiya sanasi</li>\n<li>Tranzaksiya tavsifi</li>\n<li>Har bir tranzaksiya uchun joylashuv ma'lumotlari (ikkala tomon uchun)</li>\n<li>Ommaviy ravishda mavjud bo'lgan blokcheyn tranzaksiya xeshi (hash)</li>\n</ul>"
+          "content": "Biz sizning tranzaksiyalaringiz bilan bog'liq quyidagi ma'lumotlarni to'playmiz:\n\n<ul>\n<li>Tranzaksiya miqdori</li>\n<li>Tranzaksiya sanasi</li>\n<li>Tranzaksiya tavsifi</li>\n<li>Har bir tranzaksiya uchun joylashuv ma'lumotlari (ikkala tomon uchun)</li>\n<li>Ommaviy ravishda mavjud bo'lgan blokcheyn tranzaksiya xeshi (hash)</li>\n</ul>\n\nNFTni ro'yxatdan o'tkazish va tranzaksiyalar uchun biz autentifikatsiyadan o'tgan ishtirokchi va hisobni, tegishli ism va vakillik maqomi ma'lumotlarining nusxasini, bog'langan hamyonni, buyum, NFT va tranzaksiya identifikatorlarini, rolni, ko'rsatilgan aniq matn, versiya, til va xeshlarni, rozilik bildirish harakatini va server qayd etgan vaqtni yozib boramiz. Bu yozuvlardan nima kelishilganini aniqlash, belgilangan harakatga ruxsat berish, tranzaksiya majburiyatlarini bajarishga ko'maklashish va nizolarni hal qilish uchun foydalanamiz. Mulkchilik shartlari modal oynasi kamera tasvirlarini olmaydi va chizilgan imzoni talab qilmaydi. Rozilik dalili sifatida sessiya tokenlari yoki maxfiy kalitlarni saqlamaymiz."
         },
         {
           "subtitle": "2.4 Biz to'plamaydigan ma'lumotlar",
@@ -35,11 +35,11 @@
       "subsections": [
         {
           "subtitle": "3.1 Tranzaksiyalarni amalga oshirish va xavfsizlik",
-          "content": "<ul>\n<li>Foydalanuvchilar o'rtasida tranzaksiyalarni amalga oshirish va qayta ishlash</li>\n<li>Tranzaksiyadagi tomonlarning shaxsini tasdiqlash</li>\n<li>Firibgarlik va ruxsatsiz tranzaksiyalarning oldini olish</li>\n<li>Tranzaksiya yozuvlarini yuritish</li>\n</ul>"
+          "content": "<ul>\n<li>Foydalanuvchilar o'rtasida tranzaksiyalarni amalga oshirish va qayta ishlash</li>\n<li>Tranzaksiyadagi tomonlarning shaxsini tasdiqlash</li>\n<li>Firibgarlik va ruxsatsiz tranzaksiyalarning oldini olish</li>\n<li>Tranzaksiya yozuvlarini yuritish</li>\n</ul>\n\n2.3-bo'limda ko'rsatilgan NFT rozilik yozuvlaridan nima kelishilganini aniqlash, belgilangan harakatga ruxsat berish, tranzaksiya majburiyatlarini bajarishga ko'maklashish va nizolarni hal qilish uchun foydalaniladi. Mulkchilik shartlarini modal oynada qabul qilish imzolash fotosuratlariga oid ruxsatlardan alohidadir."
         },
         {
           "subtitle": "3.2 Nizolarni hal qilish",
-          "content": "Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va tranzaksiya ma'lumotlari faqat nizolarni hal qilish maqsadlarida ishlatiladi. Agar tranzaksiya bo'yicha nizo yuzaga kelsa:\n\n<ul>\n<li>Tranzaksiya paytida olingan yuz tasviri va boshqa dalillar <strong>faqat</strong> muayyan nizoda bevosita ishtirok etgan tomonlar bilan bo'lishilishi mumkin</li>\n<li>Dalillar imzolagan tomonning shaxsini tasdiqlash va nizoni hal qilishni qo'llab-quvvatlash uchun ishlatiladi</li>\n<li>Nizoni hal qilish uchun zarur bo'lganidan tashqari hech qanday boshqa shaxsiy ma'lumotlar ulashilmaydi</li>\n</ul>"
+          "content": "Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va tranzaksiya ma'lumotlari faqat nizolarni hal qilish maqsadlarida ishlatiladi. Agar tranzaksiya bo'yicha nizo yuzaga kelsa:\n\n<ul>\n<li>Tranzaksiya paytida olingan yuz tasviri va boshqa dalillar <strong>faqat</strong> muayyan nizoda bevosita ishtirok etgan tomonlar bilan bo'lishilishi mumkin</li>\n<li>Dalillar imzolagan tomonning shaxsini tasdiqlash va nizoni hal qilishni qo'llab-quvvatlash uchun ishlatiladi</li>\n<li>Nizoni hal qilish uchun zarur bo'lganidan tashqari hech qanday boshqa shaxsiy ma'lumotlar ulashilmaydi</li>\n</ul>\n\nNFT mulkchilik hujjatini imzolash dalillari uchun 4.6-bo'limda tavsiflangan, alohida qabul qilinadigan saqlash va ixtiyoriy xaridor tekshiruvi maqsadlari ham qo'llaniladi."
         },
         {
           "subtitle": "3.3 Mijozlarni qo'llab-quvvatlash va xizmatni yaxshilash",
@@ -64,15 +64,19 @@
         },
         {
           "subtitle": "4.2 Maqsadni cheklash",
-          "content": "Yuz tasvirlari <strong>faqat</strong> tranzaksiya nizolari yuzaga kelganda shaxsni tasdiqlash uchun to'planadi. Biz hech qachon:\n\n<ul>\n<li>Yuz tasvirlaridan yuzni aniqlash texnologiyasi yoki biometrik tahlil uchun foydalanmaymiz</li>\n<li>Marketing maqsadlarida yuz tasvirlarini uchinchi tomonlar bilan bo'lishmaymiz</li>\n<li>Yuz tasvirlarini hech kimga sotmaymiz</li>\n<li>Yuz tasvirlaridan nizolarni hal qilishdan boshqa har qanday maqsadda foydalanmaymiz</li>\n</ul>"
+          "content": "Yuz tasvirlari <strong>faqat</strong> tranzaksiya nizolari yuzaga kelganda shaxsni tasdiqlash uchun to'planadi. Biz hech qachon:\n\n<ul>\n<li>Yuz tasvirlaridan yuzni aniqlash texnologiyasi yoki biometrik tahlil uchun foydalanmaymiz</li>\n<li>Marketing maqsadlarida yuz tasvirlarini uchinchi tomonlar bilan bo'lishmaymiz</li>\n<li>Yuz tasvirlarini hech kimga sotmaymiz</li>\n<li>Yuz tasvirlaridan nizolarni hal qilishdan boshqa har qanday maqsadda foydalanmaymiz</li>\n</ul>\n\nNFT mulkchilik hujjatini imzolash dalillari 4.6-bo'limdagi alohida maqsadlar va tanlovlarga muvofiq boshqariladi."
         },
         {
           "subtitle": "4.3 Ma'lumotlarni saqlash muddati",
-          "content": "<strong>Eskrow davrida:</strong> Yuz tasvirlari boshqa tranzaksiya tomoni bilan tuzilgan yozma shartnomangizda ko'rsatilgan \"Eskrow davri\" davomida saqlanadi.\n\n<strong>Eskrow davridan keyin (nizo bo'lmaganda):</strong> Agar hech qanday nizo yuzaga kelmasa, biz Eskrow davri tugaganidan keyin <strong>24 soat</strong> ichida yuz tasviringizni butunlay o'chirib tashlaymiz.\n\n<strong>Nizo yuzaga kelgan taqdirda:</strong> Agar nizo boshlansa, yuz tasvirlari nizo to'liq hal qilinguncha va har qanday amaldagi apellyatsiya muddatlari tugaguncha saqlanadi, shundan so'ng ular 30 kun ichida butunlay o'chirib tashlanadi."
+          "content": "Quyidagi eskrow saqlash jadvali oddiy tranzaksiya shartnomalarini imzolash dalillariga qo'llaniladi. NFT mulkchilik hujjati dalillariga 4.6-bo'lim qo'llaniladi.\n\n<strong>Eskrow davrida:</strong> Yuz tasvirlari boshqa tranzaksiya tomoni bilan tuzilgan yozma shartnomangizda ko'rsatilgan \"Eskrow davri\" davomida saqlanadi.\n\n<strong>Eskrow davridan keyin (nizo bo'lmaganda):</strong> Agar hech qanday nizo yuzaga kelmasa, biz Eskrow davri tugaganidan keyin <strong>24 soat</strong> ichida yuz tasviringizni butunlay o'chirib tashlaymiz.\n\n<strong>Nizo yuzaga kelgan taqdirda:</strong> Agar nizo boshlansa, yuz tasvirlari nizo to'liq hal qilinguncha va har qanday amaldagi apellyatsiya muddatlari tugaguncha saqlanadi, shundan so'ng ular 30 kun ichida butunlay o'chirib tashlanadi."
         },
         {
           "subtitle": "4.4 Saqlash xavfsizligi",
           "content": "Yuz tasvirlari bizning xavfsiz ma'lumotlar bazamizda quyidagi himoya choralari bilan saqlanadi:\n\n<ul>\n<li>Ma'lumotlar bazasiga kirish faqat oq ro'yxatga kiritilgan IP manzillar bilan cheklangan</li>\n<li>Ma'lumotlar bazasini shifrlash kalitlari xavfsiz kalitlarni boshqarish xizmati bo'lgan Azure KeyVault-da saqlanadi</li>\n<li>Kirish huquqi faqat zaruriy ehtiyojga ega vakolatli xodimlar bilan cheklangan</li>\n<li>Muntazam ravishda xavfsizlik tekshiruvlari o'tkaziladi</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.6 NFT Mulkchilik Hujjatini Imzolash Dalillari",
+          "content": "NFT mulkchilik hujjatini imzolashdan oldin sizga NFT imzolash ruxsatlari ko'rsatiladi va old kameradan surat olish, imzolash fotosuratlarini uzoq muddat maxfiy saqlash hamda ixtiyoriy xaridor tekshiruvlari bo'yicha alohida tanlov qilasiz. Amaldagi matn va rozilik versiyasi nft-signing-permissions.json faylida saqlanadi.\n\nNFTni imzolash paytida kamera bilan olingan fotosuratlar va boshqa maxfiy imzolash dalillari ommaviy imzolangan mulkchilik PDF hujjati va buyum fotosuratlaridan alohida saqlanadi. Saqlashga roziligingiz bo'lsa, bu maxfiy dalillar mulkchilikni tekshirish va nizolarni hal qilish uchun alohida tranzaksiya yoki eskrow davridan keyin ham saqlanadi.\n\nXaridor tekshiruvlariga ruxsat bersangiz, hozirgi va kelajakdagi tasdiqlangan egalar aniq nomi ko'rsatilgan xaridorga belgilangan imzolash dalillariga vaqtincha kirish huquqini berishi mumkin. Bu ruxsat dalillarni ommaga e'lon qilmaydi yoki ularni avtomatik ravishda egalarga oshkor qilmaydi. Xaridor tekshiruvlarini rad etish NFTni ro'yxatdan o'tkazishga to'sqinlik qilmaydi.\n\nRozilikni qaytarib olish yoki ma'lumotlarni o'chirishni so'rash uchun contact@shakedefi.com manziliga murojaat qilishingiz mumkin; tegishli qonuniy yoki nizo bilan bog'liq saqlash talablari bundan mustasno. Har qanday oshkor qilish imzolovchi ruxsat bergan maqsadlar va tegishli kirish ruxsati doirasida qolishi kerak. Ushbu NFT qoidalari oddiy tranzaksiyalarni imzolash dalillari uchun saqlash jadvalini uzaytirmaydi."
         }
       ]
     },
@@ -81,11 +85,11 @@
       "subsections": [
         {
           "subtitle": "5.1 Maxfiylik bo'yicha majburiyatimiz",
-          "content": "Biz sizning maxfiyligingizga jiddiy qaraymiz. Biz sizning shaxsiy ma'lumotlaringizni, jumladan:\n\n<ul>\n<li>Uy yoki ish manzillari</li>\n<li>Elektron pochta manzillari</li>\n<li>Yuz tasvirlari</li>\n<li>Telefon raqamlari</li>\n<li>Tranzaksiya tafsilotlari</li>\n</ul>\n\n...ushbu Maxfiylik Siyosatida alohida ko'rsatilgan hollar (masalan, 5.6-bandda tavsiflangan ommaviy Bozor Kanaliga foydalanuvchi tomonidan tanlangan tarqatishlar yoki 5.2-bandda tavsiflangan nizolarni hal qilish bo'yicha dalillar bilan bo'lishish) <strong>bundan mustasno</strong>, uchinchi tomonlar bilan <strong>hech qachon</strong> bo'lishmaymiz."
+          "content": "Biz sizning maxfiyligingizga jiddiy qaraymiz. Biz sizning shaxsiy ma'lumotlaringizni, jumladan:\n\n<ul>\n<li>Uy yoki ish manzillari</li>\n<li>Elektron pochta manzillari</li>\n<li>Yuz tasvirlari</li>\n<li>Telefon raqamlari</li>\n<li>Tranzaksiya tafsilotlari</li>\n</ul>\n\n...ushbu Maxfiylik Siyosatida alohida ko'rsatilgan hollar (masalan, 5.6-bandda tavsiflangan ommaviy Bozor Kanaliga foydalanuvchi tomonidan tanlangan tarqatishlar yoki 5.2-bandda tavsiflangan nizolarni hal qilish bo'yicha dalillar bilan bo'lishish) <strong>bundan mustasno</strong>, uchinchi tomonlar bilan <strong>hech qachon</strong> bo'lishmaymiz.\n\nTranzaksiyaning aniqlangan tomonlari NFT shartnomasi va rozilik dalillariga vakolatli kirishi 5.7-bo'limda ko'rsatilgan. Bu batafsil rozilik yozuvlarini e'lon qilishga ruxsat bermaydi va 4.6-bo'lim hamda aniq berilgan ruxsatlardan tashqari maxfiy imzolash dalillariga kirish huquqini yaratmaydi."
         },
         {
           "subtitle": "5.2 Tranzaksiya nizolari",
-          "content": "<strong>Cheklangan oshkor qilish:</strong> Tranzaksiya bo'yicha nizo yuzaga kelganda, biz nizoni hal qilishga ko'maklashish uchun tegishli ma'lumotlarni jalb qilingan tomonlar bilan bo'lishishimiz mumkin. Bunga dalil sifatida taqdim etilgan yuz tasvirlari, fotosuratlar, matnli tavsiflar va Foydalanuvchi bayonotlarini <strong>faqat</strong> quyidagilar bilan bo'lishish kirishi mumkin:\n\n<ul>\n<li>Nizoli tranzaksiyada bevosita ishtirok etuvchi boshqa tomon yoki tomonlar</li>\n<li>Tomonlarning qonuniy vakillari (agar mavjud bo'lsa)</li>\n<li>Nizoni hal qilishga jalb qilingan hakamlar yoki mediatorlar</li>\n</ul>\n\n<strong>Boshqa bo'lishishlarning yo'qligi:</strong> Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va shaxsiy ma'lumotlar nizolarni hal qilish maqsadida boshqa hech qanday uchinchi tomonlar bilan bo'lishilmaydi."
+          "content": "<strong>Cheklangan oshkor qilish:</strong> Tranzaksiya bo'yicha nizo yuzaga kelganda, biz nizoni hal qilishga ko'maklashish uchun tegishli ma'lumotlarni jalb qilingan tomonlar bilan bo'lishishimiz mumkin. Bunga dalil sifatida taqdim etilgan yuz tasvirlari, fotosuratlar, matnli tavsiflar va Foydalanuvchi bayonotlarini <strong>faqat</strong> quyidagilar bilan bo'lishish kirishi mumkin:\n\n<ul>\n<li>Nizoli tranzaksiyada bevosita ishtirok etuvchi boshqa tomon yoki tomonlar</li>\n<li>Tomonlarning qonuniy vakillari (agar mavjud bo'lsa)</li>\n<li>Nizoni hal qilishga jalb qilingan hakamlar yoki mediatorlar</li>\n</ul>\n\n<strong>Boshqa bo'lishishlarning yo'qligi:</strong> Yuz tasvirlari, fotosuratlar, matnli tavsiflar, Foydalanuvchi bayonotlari va shaxsiy ma'lumotlar nizolarni hal qilish maqsadida boshqa hech qanday uchinchi tomonlar bilan bo'lishilmaydi.\n\nTegishli NFT shartnomasi va rozilik dalillariga kirish 5.7-bo'limda ko'rsatilgan va vakolatli kirish nazoratlariga bo'ysunadi. Maxfiy imzolash dalillari 4.6-bo'lim va tegishli berilgan ruxsatlarga muvofiq boshqarilishda davom etadi."
         },
         {
           "subtitle": "5.3 Uchinchi tomon xizmat ko'rsatuvchilari",
@@ -102,6 +106,10 @@
         {
           "subtitle": "5.6 Ommaviy Bozor Kanalida tarqatishlar",
           "content": "Foydalanuvchi (masalan, Savdogar) ixtiyoriy \"Bozorga joylashtirish\" funksiyasidan foydalanishni tanlaganda, quyidagi maxfiylik amaliyotlari qo'llaniladi:\n\n<ul>\n<li><strong>Ixtiyoriy va Foydalanuvchi tomonidan boshlangan:</strong> E'lonni Bozor Kanaliga tarqatish butunlay ixtiyoriy bo'lib, faqat Foydalanuvchi tomonidan tasdiqlab boshlangandagina amalga oshiriladi.</li>\n<li><strong>Ommaviy tarqatiladigan ma'lumotlar:</strong> Ommaviy Telegram kanaliga uzatiladigan ma'lumotlarga mahsulot fotosuratlari, mahsulot tavsiflari, narx, valyuta, eskrow shartlari, sotuvchining umumiy joylashuvi (shahar, viloyat/shtat va mamlakat), shaxsiy tranzaksiya afzalliklari hamda tranzaksiya identifikatori kalit so'zlari yoki Mini Ilova chuqur havolalari kiradi.</li>\n<li><strong>Himoyalangan ma'lumotlar (tarqatishlardan chiqarib tashlangan):</strong> Biz ommaviy tarqatishlardan to'g'ridan-to'g'ri shaxsiy identifikatorlarni qat'iy ravishda chiqarib tashlaymiz. Sotuvchining to'liq qonuniy ism-sharifi, telefon raqami, elektron pochta manzili, aniq jismoniy ko'cha manzili va yuz imzosini tasdiqlovchi tasvirlar hech qachon Bozor Kanali tarqatishlariga kiritilmaydi.</li>\n<li><strong>Ommaviy muhit va uchinchi tomon saqlanishi:</strong> Ommaviy Telegram kanallariga joylashtirilgan mazmun barcha kanal a'zolari va ko'ruvchilar uchun ochiq bo'ladi. Garchi Ilova e'lon tafsilotlarini yangilash, holat o'zgarishlarini ko'rsatish (masalan, \"Kutilmoqda\" yoki \"Sotilgan\") yoki e'lonlarni o'chirish vositalarini taqdim etsa-da, Kompaniya uchinchi tomon foydalanuvchilari yoki tashqi platforma arxivlari tomonidan saqlangan nusxalar, xabar forvardlari, skrinshotlar yoki mahalliy qurilma keshlarini nazorat qila olmaydi yoki o'chira olmaydi.</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.7 NFT Rozilik Yozuvlari va O'qish Mumkin Bo'lgan Nusxalar",
+          "content": "Qabul qilgan shartlaringiz va rozilik qaydingizning o'qish mumkin bo'lgan nusxasini olishingiz mumkin. Tranzaksiyaning aniqlangan tomonlari vakolatli kirish nazoratlari orqali o'z tranzaksiyasiga tegishli shartnoma va rozilik dalillaridan foydalanishi mumkin. Buyumlarning ommaviy sahifalari ularning kelib chiqishiga oid cheklangan ma'lumotlarni yoki rozilik qayd etilgan-etilmaganini ko'rsatadi; batafsil maxfiy rozilik yozuvlarini e'lon qilmaydi. Mulkchilik shartlarini qabul qilish boshqa imzolovchining maxfiy dalillariga kirish huquqini bermaydi; bunday dalillar 4.6-bo'lim va aniq berilgan ruxsatlarga muvofiq boshqariladi."
         }
       ]
     },
@@ -128,11 +136,11 @@
       "subsections": [
         {
           "subtitle": "8.1 Kirish va tuzatish",
-          "content": "Siz quyidagi huquqlarga egasiz:\n\n<ul>\n<li>Biz siz haqingizda saqlaydigan shaxsiy ma'lumotlarga kirish</li>\n<li>Noto'g'ri yoki to'liq bo'lmagan ma'lumotlarni tuzatishni talab qilish</li>\n<li>Shaxsiy ma'lumotlaringizning nusxasini qulay ko'chiriladigan formatda olish</li>\n</ul>\n\nUshbu huquqlardan foydalanish uchun biz bilan contact@shakedefi.com manzili orqali bog'laning."
+          "content": "Siz quyidagi huquqlarga egasiz:\n\n<ul>\n<li>Biz siz haqingizda saqlaydigan shaxsiy ma'lumotlarga kirish</li>\n<li>Noto'g'ri yoki to'liq bo'lmagan ma'lumotlarni tuzatishni talab qilish</li>\n<li>Shaxsiy ma'lumotlaringizning nusxasini qulay ko'chiriladigan formatda olish</li>\n</ul>\n\nUshbu huquqlardan foydalanish uchun biz bilan contact@shakedefi.com manzili orqali bog'laning.\n\nQabul qilingan NFT shartlari va rozilik qaydlarining o'qish mumkin bo'lgan nusxalari 5.7-bo'limda ko'rsatilgan."
         },
         {
           "subtitle": "8.2 Hisob va ma'lumotlarni o'chirish",
-          "content": "Siz istalgan vaqtda Ilova sozlamalari orqali yoki biz bilan bevosita bog'lanib, o'z hisobingizni va tegishli ma'lumotlarni o'chirish huquqiga egasiz.\n\n<strong>Hisob o'chirilganda:</strong>\n<ul>\n<li>Hisobingiz butunlay yopiladi</li>\n<li>Shaxsiy ma'lumotlaringiz, jumladan yuz tasvirlari 30 kun ichida butunlay o'chirib tashlanadi</li>\n<li>Ba'zi ma'lumotlar qonun talabiga ko'ra yoki qonuniy biznes maqsadlarida (masalan, soliq hisoboti uchun tranzaksiya yozuvlari) saqlanishi mumkin</li>\n</ul>"
+          "content": "Siz istalgan vaqtda Ilova sozlamalari orqali yoki biz bilan bevosita bog'lanib, o'z hisobingizni va tegishli ma'lumotlarni o'chirish huquqiga egasiz.\n\n<strong>Hisob o'chirilganda:</strong>\n<ul>\n<li>Hisobingiz butunlay yopiladi</li>\n<li>Shaxsiy ma'lumotlaringiz, jumladan yuz tasvirlari 30 kun ichida butunlay o'chirib tashlanadi</li>\n<li>Ba'zi ma'lumotlar qonun talabiga ko'ra yoki qonuniy biznes maqsadlarida (masalan, soliq hisoboti uchun tranzaksiya yozuvlari) saqlanishi mumkin</li>\n</ul>\n\nNFT mulkchilikka rozilik yozuvlari 8.5-bo'limda alohida ko'rib chiqiladi. Bu imzolash fotosuratlarini saqlash muddatini ularga tegishli qoidalardan tashqari uzaytirmaydi."
         },
         {
           "subtitle": "8.3 Rozilikni qaytarib olish",
@@ -141,6 +149,10 @@
         {
           "subtitle": "8.4 Marketing xabarlari",
           "content": "Biz hozirda marketing xabarlarini yubormaymiz. Agar bu kelajakda o'zgarsa, siz xizmatga oid xabarlarni olishni davom ettirgan holda marketing elektron xatlaridan voz kechish huquqiga ega bo'lasiz."
+        },
+        {
+          "subtitle": "8.5 NFT Mulkchilikka Rozilik Yozuvlarini Saqlash",
+          "content": "Mulkchilikka rozilik yozuvlari imzolash paytida kamera bilan olingan tasvirlardan alohida bo'lib, tranzaksiya majburiyatlarini bajarish, nizolar va tegishli qonuniy hisob yuritish uchun saqlanishi mumkin. Imzolash fotosuratlarini o'chirishning o'zi avval bildirilgan kelishuv bayonotlarini yo'q qilmaydi. Shaxsni aniqlashga imkon beruvchi rozilik dalillarini saqlash va o'chirish tasdiqlangan rozilik yozuvlarini saqlash jadvaliga va amaldagi qonunga muvofiq amalga oshiriladi; xaridor tekshiruvlariga berilgan ixtiyoriy rozilikni qaytarib olish kelajakdagi kirish huquqini bermaydi va allaqachon amalga oshirilgan xaridni bekor qilmaydi.\n\nShaxsni aniqlashga imkon beruvchi NFT mulkchilikka rozilik yozuvlarini shaxs tan olingan egasi bo'lib turgan davrda, keyin esa uning qayd etilgan egaligi tugab, tegishli majburiyatlari bajarilganidan so'ng to'rt yil davomida saqlaymiz. Hisobni o'chirishning o'zi bu muddatni qisqartirmaydi. Zarur yozuvlarni uzoqroq faqat hal qilinmagan nizo yoki tegishli qonuniy talab shuni talab qilganda saqlaymiz. Shaxsni aniqlashga imkon beruvchi yozuvlar endi kerak bo'lmasa, ularni o'chiramiz yoki shaxsni aniqlovchi ma'lumotlarni eng kam zarur miqdorgacha kamaytiramiz. Bu jadval imzolash paytida kamera bilan olingan fotosuratlar yoki ixtiyoriy xaridor tekshiruvi dalillarining alohida saqlash qoidalarini uzaytirmaydi."
         }
       ]
     },
@@ -185,5 +197,23 @@
       "title": "16. Rozilik va tasdiqlash",
       "content": "Shake Defi Ilovasidan foydalanish orqali siz quyidagilarni tasdiqlaysiz:\n\n<ol>\n<li>Siz ushbu Maxfiylik Siyosatini o'qib chiqdingiz va tushundingiz</li>\n<li>Ma'lumotlaringiz tavsiflanganidek to'planishi, foydalanilishi va saqlanishiga rozilik bildirasiz</li>\n<li>Tranzaksiyani imzolash paytida yuz tasvirlari olinishini tushunasiz</li>\n<li>Tasvir olinishidan oldin bekor qilish huquqingiz haqida xabardor qilingansiz</li>\n<li>Ma'lumotlarning xalqaro uzatilishiga tavsiflanganidek rozilik bildirasiz</li>\n<li>Ma'lumot almashish bo'yicha nizolarni hal qilish qoidalariga rozilik bildirasiz</li>\n<li>Bozor Kanalini tanlash sizning e'lon tafsilotlaringiz va umumiy joylashuvingizni uchinchi tomonning ommaviy kanalida tarqatishini tushunasiz</li>\n</ol>\n\nAgar siz ushbu Maxfiylik Siyosatiga rozi bo'lmasangiz, Ilovadan foydalanmasligingiz kerak.\n\n<strong>Tranzaksiyalaringizda Shake Defi-ga ishonganingiz uchun tashakkur.</strong>"
     }
-  ]
+  ],
+  "previousPublishedEffectiveDate": "2026-yil 28-avgust",
+  "documentId": "shake-privacy",
+  "version": "shake-privacy-nft-integration-v1-source.1",
+  "language": "uz",
+  "status": "approved_source_revision",
+  "publicationStatus": "approved_for_publication",
+  "publicationNotice": "",
+  "acceptanceRetentionSchedule": {
+    "scheduleId": "shake-nft-acceptance-retention-v1",
+    "approvedDate": "October 13, 2026",
+    "duringOwnership": true,
+    "afterOwnershipAndObligationsYears": 4,
+    "afterAccountDeletion": "same_schedule",
+    "extensions": "unresolved_dispute_or_applicable_legal_requirement",
+    "expiryAction": "delete_or_minimize_identifying_information",
+    "signingEvidence": "separate_existing_rules",
+    "implementationStatus": "planned_not_implemented"
+  }
 }

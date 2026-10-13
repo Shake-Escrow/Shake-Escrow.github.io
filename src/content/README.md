@@ -132,3 +132,13 @@ This check also runs automatically in CI before every deploy to `main` — a mis
 When a key is **added or removed** from any `en/` file, the same change must be made to all locale files before merging to `main`. The CI check (`npm run check-translations`) will catch any drift.
 
 When a key's **value** changes in English (e.g. updated legal text), update the corresponding value in each locale file manually. The checker only validates structure, not whether the content is up to date.
+
+## Legal source synchronization and publication
+
+The ToS and privacy policy sources are `legal/json_en`, `legal/json_es`, and `legal/json_uz` in the parent Shake workspace. Mirror each language into this repository's `src/content/<language>/tos.json` and `privacy.json`. Preserve the same section numbers, versions and approved retention schedule across languages. The app mirrors these sources into `Shake-MobileApp/assets/legaldocs/<language>`; from that app repository, run `node scripts/sync-nft-signing-legal.cjs` to refresh all three languages.
+
+Source revisions marked `publicationStatus: not_published` display a localized pending-publication notice. The user selected October 13, 2026 as the effective date for these ToS/privacy revisions. The user authorized publication of these supporting ToS/privacy revisions; their sources are marked approved for publication and their effective dates match across legal, website and mobile copies. Verify the Pages deployment separately from source approval. The full NFT ownership declaration/public archive and runtime acceptance enforcement remain separate work. The October 13 NFT acceptance retention schedule is approved: ongoing recognized ownership, then four years after recorded ownership ends and related obligations finish, longer only for unresolved disputes or applicable legal requirements, followed by deletion or minimization. Its backend enforcement is separately planned. Signing-photo rules remain separate.
+
+Before publishing, run `npm run check-translations`, `npx tsc -p tsconfig.app.json --noEmit`, and `npm run build:full`. The build regenerates `public/privacy-policy.html` and prerenders the legal routes. Verify `/terms-of-service?lang=en`, `?lang=es`, `?lang=uz` and the corresponding privacy routes, plus the static privacy HTML. The ToS renderer uses the canonical `companyName` and subsection `subtitle` fields.
+
+The GitHub Pages workflow publishes `dist` on a push to `main` or an explicit workflow dispatch. A local build does not publish. Record the actual authorized release, effective dates and live URL verification in the NFT planning files. These policy updates do not yet create the immutable public NFT ownership-terms page/download archive; that remains a separate child-plan requirement.

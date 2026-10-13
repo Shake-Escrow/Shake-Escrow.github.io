@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "28 de agosto de 2026",
-  "effectiveDate": "28 de agosto de 2026",
+  "lastUpdated": "13 de octubre de 2026",
+  "effectiveDate": "13 de octubre de 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Política de Privacidad\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -21,7 +21,7 @@
         },
         {
           "subtitle": "2.3 Información de Transacciones",
-          "content": "Recopilamos la siguiente información relacionada con sus transacciones:\n\n<ul>\n<li>Monto de la transacción</li>\n<li>Fecha de la transacción</li>\n<li>Descripción de la transacción</li>\n<li>Datos de ubicación de cada transacción (para ambas partes)</li>\n<li>Hash de transacción de blockchain disponible públicamente</li>\n</ul>"
+          "content": "Recopilamos la siguiente información relacionada con sus transacciones:\n\n<ul>\n<li>Monto de la transacción</li>\n<li>Fecha de la transacción</li>\n<li>Descripción de la transacción</li>\n<li>Datos de ubicación de cada transacción (para ambas partes)</li>\n<li>Hash de transacción de blockchain disponible públicamente</li>\n</ul>\n\nPara el registro de NFT y las transacciones, registramos al participante y la cuenta autenticados, una copia de los datos pertinentes de nombre y capacidad de representación, la billetera vinculada, los identificadores del artículo, del NFT y de la transacción, el rol, el texto, la versión, el idioma y los hashes exactos presentados, la acción expresa de aceptación y la hora registrada por el servidor. Utilizamos estos registros para establecer qué se acordó, autorizar la acción identificada, respaldar el cumplimiento de la transacción y resolver disputas. La ventana modal de términos de propiedad no captura imágenes de cámara ni exige una firma dibujada. No almacenamos tokens de sesión ni claves privadas como prueba de aceptación."
         },
         {
           "subtitle": "2.4 Información que NO Recopilamos",
@@ -35,11 +35,11 @@
       "subsections": [
         {
           "subtitle": "3.1 Facilitación y Seguridad de Transacciones",
-          "content": "<ul>\n<li>Para facilitar y procesar transacciones entre usuarios</li>\n<li>Para verificar la identidad de las partes en una transacción</li>\n<li>Para prevenir fraudes y transacciones no autorizadas</li>\n<li>Para mantener registros de transacciones</li>\n</ul>"
+          "content": "<ul>\n<li>Para facilitar y procesar transacciones entre usuarios</li>\n<li>Para verificar la identidad de las partes en una transacción</li>\n<li>Para prevenir fraudes y transacciones no autorizadas</li>\n<li>Para mantener registros de transacciones</li>\n</ul>\n\nLos registros de aceptación de NFT descritos en la Sección 2.3 se utilizan para establecer qué se acordó, autorizar la acción identificada, respaldar el cumplimiento de la transacción y resolver disputas. La aceptación de términos de propiedad mediante una ventana modal es independiente de los permisos relativos a las fotografías de firma."
         },
         {
           "subtitle": "3.2 Resolución de Disputas",
-          "content": "Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información de transacciones se usan exclusivamente para fines de resolución de disputas. Si surge una disputa con respecto a una transacción:\n\n<ul>\n<li>La imagen facial y otras evidencias capturadas durante la transacción pueden compartirse <strong>únicamente</strong> con las partes directamente involucradas en la disputa específica</li>\n<li>La evidencia se usará para verificar la identidad de la parte firmante y apoyar la resolución de la disputa</li>\n<li>No se compartirá ninguna otra información personal excepto la necesaria para resolver la disputa</li>\n</ul>"
+          "content": "Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información de transacciones se usan exclusivamente para fines de resolución de disputas. Si surge una disputa con respecto a una transacción:\n\n<ul>\n<li>La imagen facial y otras evidencias capturadas durante la transacción pueden compartirse <strong>únicamente</strong> con las partes directamente involucradas en la disputa específica</li>\n<li>La evidencia se usará para verificar la identidad de la parte firmante y apoyar la resolución de la disputa</li>\n<li>No se compartirá ninguna otra información personal excepto la necesaria para resolver la disputa</li>\n</ul>\n\nLas pruebas de firma de documentos de propiedad de NFT tienen los fines adicionales de conservación y de auditoría opcional de compradores, aceptados por separado, que se describen en la Sección 4.6."
         },
         {
           "subtitle": "3.3 Atención al Cliente y Mejora del Servicio",
@@ -64,15 +64,19 @@
         },
         {
           "subtitle": "4.2 Limitación de Propósito",
-          "content": "Las imágenes faciales se recopilan <strong>únicamente</strong> para la verificación de identidad en caso de disputas de transacciones. Nunca:\n\n<ul>\n<li>Usaremos imágenes faciales para tecnología de reconocimiento facial o análisis biométrico</li>\n<li>Compartiremos imágenes faciales con terceros con fines de marketing</li>\n<li>Venderemos imágenes faciales a ninguna parte</li>\n<li>Usaremos imágenes faciales para ningún propósito que no sea la resolución de disputas</li>\n</ul>"
+          "content": "Las imágenes faciales se recopilan <strong>únicamente</strong> para la verificación de identidad en caso de disputas de transacciones. Nunca:\n\n<ul>\n<li>Usaremos imágenes faciales para tecnología de reconocimiento facial o análisis biométrico</li>\n<li>Compartiremos imágenes faciales con terceros con fines de marketing</li>\n<li>Venderemos imágenes faciales a ninguna parte</li>\n<li>Usaremos imágenes faciales para ningún propósito que no sea la resolución de disputas</li>\n</ul>\n\nLas pruebas de firma de documentos de propiedad de NFT se rigen por los fines y las opciones separados de la Sección 4.6."
         },
         {
           "subtitle": "4.3 Retención de Datos",
-          "content": "<strong>Durante el Período de Escrow:</strong> Las imágenes faciales se retienen durante todo el \"Período de Escrow\" según se define en su acuerdo escrito con la otra parte de la transacción.\n\n<strong>Después del Período de Escrow (Sin Disputa):</strong> Si no surge ninguna disputa, eliminaremos permanentemente su imagen facial dentro de las <strong>24 horas</strong> posteriores al final del Período de Escrow.\n\n<strong>En Caso de Disputa:</strong> Si se inicia una disputa, las imágenes faciales se retendrán hasta que la disputa esté completamente resuelta y hayan expirado todos los períodos de apelación aplicables, tras lo cual se eliminarán permanentemente dentro de los 30 días."
+          "content": "El siguiente calendario de conservación durante escrow se aplica a las pruebas de firma de acuerdos de transacciones ordinarias. Las pruebas de documentos de propiedad de NFT siguen la Sección 4.6.\n\n<strong>Durante el Período de Escrow:</strong> Las imágenes faciales se retienen durante todo el \"Período de Escrow\" según se define en su acuerdo escrito con la otra parte de la transacción.\n\n<strong>Después del Período de Escrow (Sin Disputa):</strong> Si no surge ninguna disputa, eliminaremos permanentemente su imagen facial dentro de las <strong>24 horas</strong> posteriores al final del Período de Escrow.\n\n<strong>En Caso de Disputa:</strong> Si se inicia una disputa, las imágenes faciales se retendrán hasta que la disputa esté completamente resuelta y hayan expirado todos los períodos de apelación aplicables, tras lo cual se eliminarán permanentemente dentro de los 30 días."
         },
         {
           "subtitle": "4.4 Seguridad del Almacenamiento",
           "content": "Las imágenes faciales se almacenan en nuestra base de datos segura con las siguientes protecciones:\n\n<ul>\n<li>El acceso a la base de datos está restringido solo a direcciones IP en lista blanca</li>\n<li>Las claves de cifrado de la base de datos se almacenan en Azure KeyVault, un servicio seguro de gestión de claves</li>\n<li>El acceso está limitado al personal autorizado según la necesidad de conocimiento</li>\n<li>Se realizan auditorías de seguridad periódicas</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.6 Pruebas de Firma de Documentos de Propiedad de NFT",
+          "content": "Antes de firmar un documento de propiedad de NFT, se le muestran los permisos de firma de NFT y usted elige por separado sobre la captura con la cámara frontal, la conservación privada a largo plazo de fotografías de firma y las auditorías opcionales de compradores. El texto vigente y la versión del consentimiento se mantienen en nft-signing-permissions.json.\n\nLas fotografías de cámara tomadas durante la firma de NFT y otras pruebas privadas de firma se mantienen separadas del PDF público de propiedad firmado y de las fotografías del artículo. Con su permiso de conservación, estas pruebas privadas se conservan más allá de una transacción individual o un período de escrow para respaldar la verificación de propiedad y las disputas.\n\nSi permite auditorías de compradores, los propietarios actuales y futuros verificados podrán conceder a un comprador identificado acceso temporal a pruebas de firma específicas. Este permiso no publica las pruebas ni las revela automáticamente a los propietarios. Rechazar las auditorías de compradores no impide el registro del NFT.\n\nPuede solicitar el retiro del permiso o la eliminación contactando a contact@shakedefi.com, sujeto a la conservación aplicable por motivos legales o de disputa. Toda divulgación debe permanecer dentro de los fines permitidos por la persona firmante y del permiso de acceso aplicable. Estas disposiciones sobre NFT no amplían el calendario de conservación de pruebas de firma de transacciones ordinarias."
         }
       ]
     },
@@ -81,11 +85,11 @@
       "subsections": [
         {
           "subtitle": "5.1 Nuestro Compromiso con la Privacidad",
-          "content": "Tomamos en serio su privacidad. <strong>Nunca</strong> compartiremos su información personal, incluidas:\n\n<ul>\n<li>Direcciones de hogar o negocio</li>\n<li>Direcciones de correo electrónico</li>\n<li>Imágenes faciales</li>\n<li>Números de teléfono</li>\n<li>Detalles de transacciones</li>\n</ul>\n\n...con terceros <strong>excepto</strong> como se describe específicamente en esta Política de Privacidad (como las difusiones elegidas por el usuario al Canal público del Marketplace descritas en la Sección 5.6 o el intercambio de evidencia para la resolución de disputas descrito en la Sección 5.2)."
+          "content": "Tomamos en serio su privacidad. <strong>Nunca</strong> compartiremos su información personal, incluidas:\n\n<ul>\n<li>Direcciones de hogar o negocio</li>\n<li>Direcciones de correo electrónico</li>\n<li>Imágenes faciales</li>\n<li>Números de teléfono</li>\n<li>Detalles de transacciones</li>\n</ul>\n\n...con terceros <strong>excepto</strong> como se describe específicamente en esta Política de Privacidad (como las difusiones elegidas por el usuario al Canal público del Marketplace descritas en la Sección 5.6 o el intercambio de evidencia para la resolución de disputas descrito en la Sección 5.2).\n\nEl acceso autorizado de las partes identificadas de una transacción a su acuerdo y pruebas de aceptación de NFT se describe en la Sección 5.7. Esto no autoriza la publicación de registros detallados de aceptación ni proporciona acceso a pruebas privadas de firma más allá de la Sección 4.6 y los permisos específicos concedidos."
         },
         {
           "subtitle": "5.2 Disputas de Transacciones",
-          "content": "<strong>Divulgación Limitada:</strong> En caso de una disputa de transacción, podemos compartir información relevante con las partes involucradas para facilitar la resolución. Esto puede incluir imágenes faciales, fotografías, descripciones de texto y declaraciones de los Usuarios proporcionadas como evidencia <strong>únicamente</strong> con:\n\n<ul>\n<li>La otra parte o partes directamente involucradas en la transacción en disputa</li>\n<li>Representantes legales de las partes, si corresponde</li>\n<li>Árbitros o mediadores involucrados en la resolución de la disputa</li>\n</ul>\n\n<strong>Sin Otro Intercambio:</strong> Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información personal no se compartirán con ningún otro tercero para fines de resolución de disputas."
+          "content": "<strong>Divulgación Limitada:</strong> En caso de una disputa de transacción, podemos compartir información relevante con las partes involucradas para facilitar la resolución. Esto puede incluir imágenes faciales, fotografías, descripciones de texto y declaraciones de los Usuarios proporcionadas como evidencia <strong>únicamente</strong> con:\n\n<ul>\n<li>La otra parte o partes directamente involucradas en la transacción en disputa</li>\n<li>Representantes legales de las partes, si corresponde</li>\n<li>Árbitros o mediadores involucrados en la resolución de la disputa</li>\n</ul>\n\n<strong>Sin Otro Intercambio:</strong> Las imágenes faciales, fotografías, descripciones de texto, declaraciones de los Usuarios e información personal no se compartirán con ningún otro tercero para fines de resolución de disputas.\n\nEl acceso al acuerdo y a las pruebas de aceptación de NFT pertinentes se describe en la Sección 5.7 y sigue sujeto a controles de acceso autorizados. Las pruebas privadas de firma siguen rigiéndose por la Sección 4.6 y los permisos aplicables concedidos."
         },
         {
           "subtitle": "5.3 Proveedores de Servicios de Terceros",
@@ -102,6 +106,10 @@
         {
           "subtitle": "5.6 Difusiones Públicas en Canales del Marketplace",
           "content": "Cuando un Usuario (como un Comerciante) elige utilizar la función opcional \"Publicar en Marketplace\", se aplican las siguientes prácticas de privacidad:\n\n<ul>\n<li><strong>Voluntario e Iniciado por el Usuario:</strong> La difusión de una publicación en el Canal del Marketplace es totalmente opcional y ocurre únicamente cuando el Usuario lo inicia afirmativamente.</li>\n<li><strong>Datos Difundidos Públicamente:</strong> La información transmitida al canal público de Telegram incluye fotografías del artículo, descripciones del artículo, precio, moneda, términos de escrow, la ubicación general del vendedor (ciudad, estado/provincia y país), preferencias de transacciones en persona y palabras clave de ID de transacción o enlaces profundos (deep links) de la Mini App.</li>\n<li><strong>Datos Protegidos (Omitidos de las Difusiones):</strong> Excluimos estrictamente los identificadores personales directos de las transmisiones públicas. El nombre legal completo del vendedor, el número de teléfono, la dirección de correo electrónico, la dirección física exacta de la calle y las imágenes de verificación de firma facial nunca se incluyen en las difusiones del Canal del Marketplace.</li>\n<li><strong>Entorno Público y Persistencia de Terceros:</strong> El contenido publicado en los canales públicos de Telegram es visible para todos los miembros y espectadores del canal. Si bien la App proporciona herramientas para actualizar los detalles de la publicación, reflejar cambios de estado (por ejemplo, \"Pendiente\" o \"Vendido\") o eliminar publicaciones, la Empresa no puede controlar ni borrar copias, reenvíos de mensajes, capturas de pantalla o memorias caché de dispositivos locales retenidas por usuarios terceros o archivos de plataformas externas.</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.7 Registros de Aceptación de NFT y Copias Legibles",
+          "content": "Puede obtener una copia legible de los términos que aceptó y de su constancia de aceptación. Las partes identificadas de una transacción pueden acceder al acuerdo y a las pruebas de aceptación pertinentes de su transacción mediante controles de acceso autorizados. Las páginas públicas de artículos muestran información limitada sobre su procedencia o sobre si se ha registrado la aceptación; no publican registros privados detallados de aceptación. Aceptar los términos de propiedad no proporciona acceso a las pruebas privadas de otra persona firmante, que siguen rigiéndose por la Sección 4.6 y los permisos específicos concedidos."
         }
       ]
     },
@@ -128,11 +136,11 @@
       "subsections": [
         {
           "subtitle": "8.1 Acceso y Corrección",
-          "content": "Usted tiene el derecho de:\n\n<ul>\n<li>Acceder a la información personal que tenemos sobre usted</li>\n<li>Solicitar la corrección de información inexacta o incompleta</li>\n<li>Recibir una copia de su información personal en un formato portátil</li>\n</ul>\n\nPara ejercer estos derechos, contáctenos en contact@shakedefi.com."
+          "content": "Usted tiene el derecho de:\n\n<ul>\n<li>Acceder a la información personal que tenemos sobre usted</li>\n<li>Solicitar la corrección de información inexacta o incompleta</li>\n<li>Recibir una copia de su información personal en un formato portátil</li>\n</ul>\n\nPara ejercer estos derechos, contáctenos en contact@shakedefi.com.\n\nLas copias legibles de los términos de NFT aceptados y las constancias de aceptación se abordan en la Sección 5.7."
         },
         {
           "subtitle": "8.2 Eliminación de Cuenta y Datos",
-          "content": "Tiene derecho a eliminar su cuenta y los datos asociados en cualquier momento a través de la configuración de la App o contactándonos directamente.\n\n<strong>Al Eliminar la Cuenta:</strong>\n<ul>\n<li>Su cuenta se cerrará permanentemente</li>\n<li>Su información personal, incluidas las imágenes faciales, se eliminará permanentemente dentro de los 30 días</li>\n<li>Es posible que se retenga alguna información según lo requiera la ley o para fines legítimos de negocio (por ejemplo, registros de transacciones para cumplimiento fiscal)</li>\n</ul>"
+          "content": "Tiene derecho a eliminar su cuenta y los datos asociados en cualquier momento a través de la configuración de la App o contactándonos directamente.\n\n<strong>Al Eliminar la Cuenta:</strong>\n<ul>\n<li>Su cuenta se cerrará permanentemente</li>\n<li>Su información personal, incluidas las imágenes faciales, se eliminará permanentemente dentro de los 30 días</li>\n<li>Es posible que se retenga alguna información según lo requiera la ley o para fines legítimos de negocio (por ejemplo, registros de transacciones para cumplimiento fiscal)</li>\n</ul>\n\nLos registros de aceptación de propiedad de NFT se abordan por separado en la Sección 8.5. Esto no amplía la conservación de fotografías de firma más allá de sus reglas aplicables."
         },
         {
           "subtitle": "8.3 Retiro del Consentimiento",
@@ -141,6 +149,10 @@
         {
           "subtitle": "8.4 Comunicaciones de Marketing",
           "content": "Actualmente no enviamos comunicaciones de marketing. Si esto cambia en el futuro, tendrá derecho a optar por no recibir correos electrónicos de marketing mientras continúa recibiendo comunicaciones relacionadas con el servicio."
+        },
+        {
+          "subtitle": "8.5 Conservación de Registros de Aceptación de Propiedad de NFT",
+          "content": "Los registros de aceptación de propiedad son distintos de las imágenes de cámara tomadas durante la firma y pueden conservarse para el cumplimiento de la transacción, las disputas y el mantenimiento de registros exigido por la ley aplicable. Eliminar las fotografías de firma no elimina, por sí solo, las declaraciones de acuerdo realizadas anteriormente. La conservación y eliminación de las pruebas de aceptación que permiten identificar a una persona siguen el calendario aprobado de conservación de registros de aceptación y la ley aplicable; retirar el consentimiento opcional para auditorías de compradores no concede acceso futuro ni cancela una compra ya realizada.\n\nConservamos los registros de aceptación de propiedad de NFT que permiten identificar a una persona mientras esta siga siendo el propietario reconocido y, después, durante cuatro años a partir de que haya terminado su propiedad registrada y se hayan cumplido sus obligaciones relacionadas. La eliminación de la cuenta no acorta por sí sola este período. Conservamos los registros necesarios durante más tiempo únicamente cuando una disputa no resuelta o un requisito legal aplicable lo exija. Cuando los registros identificables dejan de ser necesarios, los eliminamos o reducimos al mínimo la información identificativa. Este calendario no amplía las reglas separadas de conservación de fotografías de cámara tomadas durante la firma ni de pruebas para auditorías opcionales de compradores."
         }
       ]
     },
@@ -185,5 +197,23 @@
       "title": "16. Consentimiento y Reconocimiento",
       "content": "Al usar la App de Shake Defi, usted reconoce que:\n\n<ol>\n<li>Ha leído y comprendido esta Política de Privacidad</li>\n<li>Consiente la recopilación, el uso y el almacenamiento de su información según se describe</li>\n<li>Comprende que se capturarán imágenes faciales durante la firma de transacciones</li>\n<li>Ha sido notificado de su derecho a cancelar antes de la captura de imágenes</li>\n<li>Consiente las transferencias internacionales de datos según se describe</li>\n<li>Acepta las disposiciones de resolución de disputas relativas al intercambio de información</li>\n</ol>\n\nSi no está de acuerdo con esta Política de Privacidad, no debe usar la App.\n\n<strong>Gracias por confiar a Shake Defi sus transacciones.</strong>"
     }
-  ]
+  ],
+  "previousPublishedEffectiveDate": "28 de agosto de 2026",
+  "documentId": "shake-privacy",
+  "version": "shake-privacy-nft-integration-v1-source.1",
+  "language": "es",
+  "status": "approved_source_revision",
+  "publicationStatus": "approved_for_publication",
+  "publicationNotice": "",
+  "acceptanceRetentionSchedule": {
+    "scheduleId": "shake-nft-acceptance-retention-v1",
+    "approvedDate": "October 13, 2026",
+    "duringOwnership": true,
+    "afterOwnershipAndObligationsYears": 4,
+    "afterAccountDeletion": "same_schedule",
+    "extensions": "unresolved_dispute_or_applicable_legal_requirement",
+    "expiryAction": "delete_or_minimize_identifying_information",
+    "signingEvidence": "separate_existing_rules",
+    "implementationStatus": "planned_not_implemented"
+  }
 }

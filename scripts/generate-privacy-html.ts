@@ -18,6 +18,8 @@ interface PrivacyPolicyData {
   effectiveDate: string;
   companyName: string;
   sections: PolicySection[];
+  publicationStatus?: string;
+  publicationNotice?: string;
 }
 
 // Import your JSON (same path as in the component)
@@ -68,10 +70,11 @@ const generatePrivacyHtml = async () => {
     
     <div class="header-info">
       <p>${companyName}</p>
-      <small><strong>Effective Date:</strong> ${effectiveDate}</small><br>
+${effectiveDate ? `<small><strong>Effective Date:</strong> ${effectiveDate}</small><br>` : ''}
       <small><strong>Last Updated:</strong> ${lastUpdated}</small>
     </div>
     <hr>
+${data.publicationStatus === 'not_published' && data.publicationNotice ? `<p>${data.publicationNotice}</p>` : ''}
   `;
 
   // Dynamically render sections/subsections without adding duplicate numbers
@@ -83,7 +86,7 @@ const generatePrivacyHtml = async () => {
       section.subsections.forEach((subsection) => {
         htmlContent += `
         <h3>${subsection.subtitle}</h3>
-        <div>${subsection.content}</div>`;
+        <div>${subsection.content.replace(/\n\n/g, '<br><br>')}</div>`;
       });
     } else if (section.content) {
       htmlContent += `<div>${section.content}</div>`;

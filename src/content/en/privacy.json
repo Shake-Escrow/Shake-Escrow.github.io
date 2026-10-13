@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "August 28, 2026",
-  "effectiveDate": "August 28, 2026",
+  "lastUpdated": "October 13, 2026",
+  "effectiveDate": "October 13, 2026",
   "companyName": "Shake Defi, Inc.",
   "introduction": "# Privacy Policy\n<strong>Shake Defi, Inc.</strong>",
   "sections": [
@@ -21,7 +21,7 @@
         },
         {
           "subtitle": "2.3 Transaction Information",
-          "content": "We collect the following information related to your transactions:\n\n<ul>\n<li>Transaction amount</li>\n<li>Transaction date</li>\n<li>Transaction description</li>\n<li>Location data for each transaction (for both parties)</li>\n<li>Publicly available blockchain transaction hash</li>\n</ul>"
+          "content": "We collect the following information related to your transactions:\n\n<ul>\n<li>Transaction amount</li>\n<li>Transaction date</li>\n<li>Transaction description</li>\n<li>Location data for each transaction (for both parties)</li>\n<li>Publicly available blockchain transaction hash</li>\n</ul>\n\nFor NFT registration and transactions, we record the authenticated participant/account, relevant name and representative-capacity snapshot, linked wallet, item/NFT and transaction identifiers, role, exact text/version/language and hashes presented, intentional acceptance action and server-recorded time. We use these records to establish what was agreed, authorize the identified action, support transaction performance and resolve disputes. The ownership-term modal does not capture camera images or require a drawn signature. We do not store session tokens or private keys as acceptance evidence."
         },
         {
           "subtitle": "2.4 Information We Do NOT Collect",
@@ -35,11 +35,11 @@
       "subsections": [
         {
           "subtitle": "3.1 Transaction Facilitation and Security",
-          "content": "<ul>\n<li>To facilitate and process transactions between users</li>\n<li>To verify the identity of parties in a transaction</li>\n<li>To prevent fraud and unauthorized transactions</li>\n<li>To maintain transaction records</li>\n</ul>"
+          "content": "<ul>\n<li>To facilitate and process transactions between users</li>\n<li>To verify the identity of parties in a transaction</li>\n<li>To prevent fraud and unauthorized transactions</li>\n<li>To maintain transaction records</li>\n</ul>\n\nNFT acceptance records described in Section 2.3 are used to establish what was agreed, authorize the identified action, support transaction performance and resolve disputes. Ownership-term modal acceptance is separate from signing-photo permissions."
         },
         {
           "subtitle": "3.2 Dispute Resolution",
-          "content": "Facial images, photographs, text descriptions, User statements, and transaction information are used exclusively for dispute resolution purposes. If a dispute arises regarding a transaction:\n\n<ul>\n<li>The facial image and other evidence captured during the transaction may be shared <strong>only</strong> with the parties directly involved in the specific dispute</li>\n<li>The evidence will be used to verify the identity of the signing party and support dispute resolution</li>\n<li>No other personal information will be shared except as necessary to resolve the dispute</li>\n</ul>"
+          "content": "For ordinary transaction agreements, facial images, photographs, text descriptions, User statements, and transaction information are used exclusively for dispute resolution purposes. If a dispute arises regarding a transaction:\n\n<ul>\n<li>The facial image and other evidence captured during the transaction may be shared <strong>only</strong> with the parties directly involved in the specific dispute</li>\n<li>The evidence will be used to verify the identity of the signing party and support dispute resolution</li>\n<li>No other personal information will be shared except as necessary to resolve the dispute</li>\n</ul>\n\nNFT ownership-document signing evidence has the additional, separately accepted retention and optional buyer-audit purposes described in Section 4.6."
         },
         {
           "subtitle": "3.3 Customer Support and Service Improvement",
@@ -64,15 +64,19 @@
         },
         {
           "subtitle": "4.2 Purpose Limitation",
-          "content": "Facial images are collected <strong>solely</strong> for identity verification in the event of transaction disputes. We will never:\n\n<ul>\n<li>Use facial images for facial recognition technology or biometric analysis</li>\n<li>Share facial images with third parties for marketing purposes</li>\n<li>Sell facial images to any party</li>\n<li>Use facial images for any purpose other than dispute resolution</li>\n</ul>"
+          "content": "For ordinary transaction agreements, facial images are collected <strong>solely</strong> for identity verification in the event of transaction disputes. We will never:\n\n<ul>\n<li>Use facial images for facial recognition technology or biometric analysis</li>\n<li>Share facial images with third parties for marketing purposes</li>\n<li>Sell facial images to any party</li>\n<li>Use facial images for any purpose other than dispute resolution</li>\n</ul>\n\nNFT ownership-document signing evidence is governed by the separate purposes and choices in Section 4.6."
         },
         {
           "subtitle": "4.3 Data Retention",
-          "content": "<strong>During Escrow Period:</strong> Facial images are retained throughout the \"Escrow Period\" as defined in your written agreement with the other transaction party.\n\n<strong>After Escrow Period (No Dispute):</strong> If no dispute arises, we will permanently delete your facial image within <strong>24 hours</strong> of the end of the Escrow Period.\n\n<strong>In Case of Dispute:</strong> If a dispute is initiated, facial images will be retained until the dispute is fully resolved and any applicable appeal periods have expired, after which they will be permanently deleted within 30 days."
+          "content": "The following escrow retention schedule applies to ordinary transaction-agreement signing evidence. NFT ownership-document evidence follows Section 4.6.\n\n<strong>During Escrow Period:</strong> Facial images are retained throughout the \"Escrow Period\" as defined in your written agreement with the other transaction party.\n\n<strong>After Escrow Period (No Dispute):</strong> If no dispute arises, we will permanently delete your facial image within <strong>24 hours</strong> of the end of the Escrow Period.\n\n<strong>In Case of Dispute:</strong> If a dispute is initiated, facial images will be retained until the dispute is fully resolved and any applicable appeal periods have expired, after which they will be permanently deleted within 30 days."
         },
         {
           "subtitle": "4.4 Storage Security",
           "content": "Facial images are stored in our secure database with the following protections:\n\n<ul>\n<li>Database access is restricted to whitelisted IP addresses only</li>\n<li>Database encryption keys are stored in Azure KeyVault, a secure key management service</li>\n<li>Access is limited to authorized personnel on a need-to-know basis</li>\n<li>Regular security audits are conducted</li>\n</ul>"
+        },
+        {
+          "subtitle": "4.6 NFT Ownership-Document Signing Evidence",
+          "content": "Before signing an NFT ownership document, you are shown the NFT signing permissions and make separate choices for front-facing camera capture, private long-term signing-photo retention, and optional buyer audits. The current wording and consent version are maintained in nft-signing-permissions.json.\n\nNFT signing-camera photos and other private signing evidence remain separate from the public signed ownership PDF and item photos. With your retention permission, this private evidence is retained beyond an individual transaction or escrow period to support ownership verification and disputes.\n\nIf you permit buyer audits, current and future verified owners may grant a named buyer temporary access to specified signing evidence. This permission does not publish the evidence or automatically disclose it to owners. Declining buyer audits does not prevent NFT registration.\n\nYou may request withdrawal or deletion by contacting contact@shakedefi.com, subject to applicable legal or dispute retention. Any disclosure must remain within the signer's permitted purposes and the applicable access grant. These NFT provisions do not extend the retention schedule for ordinary transaction signing evidence."
         }
       ]
     },
@@ -81,11 +85,11 @@
       "subsections": [
         {
           "subtitle": "5.1 Our Commitment to Privacy",
-          "content": "We take your privacy seriously. We will <strong>never</strong> share your personal information, including:\n\n<ul>\n<li>Home or business addresses</li>\n<li>Email addresses</li>\n<li>Facial images</li>\n<li>Phone numbers</li>\n<li>Transaction details</li>\n</ul>\n\n...with third parties <strong>except</strong> as specifically described in this Privacy Policy (such as user-elected broadcasts to the public Marketplace Channel described in Section 5.6 or dispute resolution evidence sharing described in Section 5.2)."
+          "content": "We take your privacy seriously. We will <strong>never</strong> share your personal information, including:\n\n<ul>\n<li>Home or business addresses</li>\n<li>Email addresses</li>\n<li>Facial images</li>\n<li>Phone numbers</li>\n<li>Transaction details</li>\n</ul>\n\n...with third parties <strong>except</strong> as specifically described in this Privacy Policy (such as user-elected broadcasts to the public Marketplace Channel described in Section 5.6 or dispute resolution evidence sharing described in Section 5.2).\n\nAuthorized access to NFT agreement and acceptance evidence by identified transaction parties is described in Section 5.7. This does not authorize publication of detailed acceptance records or provide access to private signing evidence beyond Section 4.6 and specific permitted grants."
         },
         {
           "subtitle": "5.2 Transaction Disputes",
-          "content": "<strong>Limited Disclosure:</strong> In the event of a transaction dispute, we may share relevant information with involved parties to facilitate resolution. This may include facial images, photographs, text descriptions, and User statements provided as evidence <strong>only</strong> with:\n\n<ul>\n<li>The other party or parties directly involved in the disputed transaction</li>\n<li>Legal representatives of the parties, if applicable</li>\n<li>Arbitrators or mediators involved in resolving the dispute</li>\n</ul>\n\n<strong>No Other Sharing:</strong> Facial images, photographs, text descriptions, User statements, and personal information will not be shared with any other third parties for dispute resolution purposes."
+          "content": "<strong>Limited Disclosure:</strong> In the event of a transaction dispute, we may share relevant information with involved parties to facilitate resolution. This may include facial images, photographs, text descriptions, and User statements provided as evidence <strong>only</strong> with:\n\n<ul>\n<li>The other party or parties directly involved in the disputed transaction</li>\n<li>Legal representatives of the parties, if applicable</li>\n<li>Arbitrators or mediators involved in resolving the dispute</li>\n</ul>\n\n<strong>No Other Sharing:</strong> Facial images, photographs, text descriptions, User statements, and personal information will not be shared with any other third parties for dispute resolution purposes.\n\nAccess to relevant NFT agreement and acceptance evidence is described in Section 5.7 and remains subject to authorized access controls. Private signing evidence continues to follow Section 4.6 and applicable permitted grants."
         },
         {
           "subtitle": "5.3 Third-Party Service Providers",
@@ -102,6 +106,10 @@
         {
           "subtitle": "5.6 Public Marketplace Channel Broadcasts",
           "content": "When a User (such as a Merchant) chooses to use the optional \"Post to Marketplace\" feature, the following privacy practices apply:\n\n<ul>\n<li><strong>Voluntary and User-Initiated:</strong> Broadcasting a listing to the Marketplace Channel is entirely optional and occurs only when affirmatively initiated by the User.</li>\n<li><strong>Publicly Broadcast Data:</strong> Information transmitted to the public Telegram channel includes item photographs, item descriptions, price, currency, escrow terms, the seller's general location (City, State/Province, and Country), in-person transaction preferences, and transaction ID keywords or Mini App deep links.</li>\n<li><strong>Protected Data (Omitted from Broadcasts):</strong> We strictly exclude direct personal identifiers from public broadcasts. The seller's full legal name, phone number, email address, exact physical street address, and facial signature verification images are never included in Marketplace Channel broadcasts.</li>\n<li><strong>Public Environment & Third-Party Persistence:</strong> Content posted to public Telegram channels is visible to all channel members and viewers. While the App provides tools to update listing details, reflect status changes (e.g., \"Pending\" or \"Sold\"), or delete listings, the Company cannot control or erase copies, message forwards, screenshots, or local device caches retained by third-party users or external platform archives.</li>\n</ul>"
+        },
+        {
+          "subtitle": "5.7 NFT Acceptance Records and Readable Copies",
+          "content": "You may obtain a readable copy of your accepted terms and acceptance receipt. Identified transaction parties may access the relevant agreement and acceptance evidence for their transaction under authorized access controls. Public item views show limited provenance or whether acceptance has been recorded; they do not publish detailed private acceptance records. Ownership-term acceptance does not provide access to another signer's private evidence, which remains governed by Section 4.6 and specific permitted grants."
         }
       ]
     },
@@ -128,11 +136,11 @@
       "subsections": [
         {
           "subtitle": "8.1 Access and Correction",
-          "content": "You have the right to:\n\n<ul>\n<li>Access the personal information we hold about you</li>\n<li>Request correction of inaccurate or incomplete information</li>\n<li>Receive a copy of your personal information in a portable format</li>\n</ul>\n\nTo exercise these rights, contact us at contact@shakedefi.com."
+          "content": "You have the right to:\n\n<ul>\n<li>Access the personal information we hold about you</li>\n<li>Request correction of inaccurate or incomplete information</li>\n<li>Receive a copy of your personal information in a portable format</li>\n</ul>\n\nTo exercise these rights, contact us at contact@shakedefi.com.\n\nReadable copies of accepted NFT terms and acceptance receipts are addressed in Section 5.7."
         },
         {
           "subtitle": "8.2 Account and Data Deletion",
-          "content": "You have the right to delete your account and associated data at any time through the App settings or by contacting us directly.\n\n<strong>Upon Account Deletion:</strong>\n<ul>\n<li>Your account will be permanently closed</li>\n<li>Your personal information, including facial images, will be permanently deleted within 30 days</li>\n<li>Some information may be retained as required by law or for legitimate business purposes (e.g., transaction records for tax compliance)</li>\n</ul>"
+          "content": "You have the right to delete your account and associated data at any time through the App settings or by contacting us directly.\n\n<strong>Upon Account Deletion:</strong>\n<ul>\n<li>Your account will be permanently closed</li>\n<li>Your personal information, including facial images, will be permanently deleted within 30 days</li>\n<li>Some information may be retained as required by law or for legitimate business purposes (e.g., transaction records for tax compliance)</li>\n</ul>\n\nNFT ownership acceptance records are addressed separately in Section 8.5. This does not extend signing-photo retention beyond its applicable rules."
         },
         {
           "subtitle": "8.3 Withdrawal of Consent",
@@ -141,6 +149,10 @@
         {
           "subtitle": "8.4 Marketing Communications",
           "content": "We do not currently send marketing communications. If this changes in the future, you will have the right to opt out of marketing emails while continuing to receive service-related communications."
+        },
+        {
+          "subtitle": "8.5 NFT Ownership Acceptance Record Retention",
+          "content": "Ownership acceptance records are distinct from signing-camera images and may be retained for transaction performance, disputes and applicable legal recordkeeping. Deletion of signing photos does not by itself erase previously made agreement statements. Retention and deletion of personally identifying acceptance evidence follow the approved acceptance-record schedule and applicable law; withdrawal of optional buyer-audit consent does not grant future access or cancel an already performed purchase.\n\nWe retain identifiable NFT ownership acceptance records while the person remains the recognized owner, and then for four years after their recorded ownership has ended and their related obligations have been completed. Account deletion does not by itself shorten this period. We retain the necessary records longer only where an unresolved dispute or an applicable legal requirement requires it. When identifiable records are no longer needed, we delete them or minimize the identifying information. This schedule does not extend the separate retention rules for signing-camera photos or optional buyer-audit evidence."
         }
       ]
     },
@@ -185,5 +197,23 @@
       "title": "16. Consent and Acknowledgment",
       "content": "By using the Shake Defi App, you acknowledge that:\n\n<ol>\n<li>You have read and understood this Privacy Policy</li>\n<li>You consent to the collection, use, and storage of your information as described</li>\n<li>You understand that facial images will be captured during transaction signing</li>\n<li>You have been notified of your right to cancel before image capture</li>\n<li>You consent to international data transfers as described</li>\n<li>You agree to the dispute resolution provisions regarding information sharing</li>\n<li>You understand that opting into the Marketplace Channel broadcasts your listing details and general location to a public third-party channel</li>\n</ol>\n\nIf you do not agree with this Privacy Policy, you must not use the App.\n\n<strong>Thank you for trusting Shake Defi with your transactions.</strong>"
     }
-  ]
+  ],
+  "previousPublishedEffectiveDate": "August 28, 2026",
+  "documentId": "shake-privacy",
+  "version": "shake-privacy-nft-integration-v1-source.1",
+  "status": "approved_source_revision",
+  "publicationStatus": "approved_for_publication",
+  "language": "en",
+  "publicationNotice": "",
+  "acceptanceRetentionSchedule": {
+    "scheduleId": "shake-nft-acceptance-retention-v1",
+    "approvedDate": "October 13, 2026",
+    "duringOwnership": true,
+    "afterOwnershipAndObligationsYears": 4,
+    "afterAccountDeletion": "same_schedule",
+    "extensions": "unresolved_dispute_or_applicable_legal_requirement",
+    "expiryAction": "delete_or_minimize_identifying_information",
+    "signingEvidence": "separate_existing_rules",
+    "implementationStatus": "planned_not_implemented"
+  }
 }
