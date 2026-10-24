@@ -62,11 +62,14 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => (
-            item.sublinks ? (
+          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => {
+            const isChildActive = item.sublinks?.some((sub) => location.pathname === sub.path);
+            return item.sublinks ? (
               <div key={item.title} className="relative group">
                 <button
-                  className="font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center hover:border-accent font-body flex items-center gap-1"
+                  className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center font-body flex items-center gap-1 ${
+                    isChildActive ? 'bg-[#e6e9ed] shadow-sm text-secondary-dark' : 'hover:border-accent'
+                  }`}
                 >
                   {item.title}
                   <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
@@ -98,8 +101,8 @@ const Navbar: React.FC = () => {
               >
                 {item.title}
               </Link>
-            )
-          ))}
+            );
+          })}
           <div className="relative" ref={languageRef}>
             <button
               type="button"
@@ -181,18 +184,18 @@ const Navbar: React.FC = () => {
         >
           <X size={32} />
         </button>
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        <div className="flex flex-col items-center justify-start h-full overflow-y-auto px-4 py-16 space-y-6">
           {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => (
             item.sublinks ? (
-              <div key={item.title} className="flex flex-col items-center space-y-4">
-                <div className="font-medium text-xl px-4 py-2 rounded-full font-body text-gray-300">
+              <div key={item.title} className="flex flex-col items-center space-y-2">
+                <div className="font-semibold text-xs uppercase tracking-wider px-4 py-1 font-body text-gray-400">
                   {item.title}
                 </div>
                 {item.sublinks.map((subItem) => (
                   <Link
                     key={subItem.path}
                     to={subItem.path}
-                    className={`font-medium text-lg px-4 py-1 rounded-full transition-colors duration-200 font-body ${location.pathname === subItem.path ? 'text-accent' : 'text-gray-400'}`}
+                    className={`font-medium text-lg px-4 py-1 rounded-full transition-colors duration-200 font-body ${location.pathname === subItem.path ? 'text-accent font-semibold' : 'text-gray-300 hover:text-white'}`}
                     onClick={closeMenu}
                   >
                     {subItem.title}
@@ -203,7 +206,7 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path!}
-                className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent' : 'text-gray-300'}`}
+                className={`font-medium text-xl px-4 py-2 rounded-full transition-colors duration-200 font-body ${location.pathname === item.path ? 'text-accent font-semibold' : 'text-gray-300 hover:text-white'}`}
                 onClick={closeMenu}
               >
                 {item.title}

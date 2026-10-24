@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import Section from '../components/common/section';
 import Button from '../components/common/button';
 import SEO from '../components/common/seo';
 import { useContent } from '../hooks/useContent';
-import { ChevronDown, ChevronUp, Search } from 'lucide-react';
+import { ChevronDown, ChevronUp, Search, X } from 'lucide-react';
 
 interface FAQItemProps {
   question: string;
@@ -39,9 +40,9 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen 
       >
         <span className="font-body text-xl font-bold text-secondary-dark" style={{letterSpacing: '-0.02em'}}>{question}</span>
         {isOpen ? (
-          <ChevronUp size={20} className="text-accent" />
+          <ChevronUp size={20} className="text-accent shrink-0 ml-2" />
         ) : (
-          <ChevronDown size={20} className="text-secondary" />
+          <ChevronDown size={20} className="text-secondary shrink-0 ml-2" />
         )}
       </button>
       
@@ -67,9 +68,19 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, toggleOpen 
 };
 
 const FAQ: React.FC = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const siteContent = useContent('sitecontent');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const [searchTerm, setSearchTerm] = useState('');
+  const initialQuery = searchParams.get('q') || searchParams.get('search') || '';
+  const [searchTerm, setSearchTerm] = useState(initialQuery);
+
+  useEffect(() => {
+    const q = searchParams.get('q') || searchParams.get('search');
+    if (q !== null && q !== searchTerm) {
+      setSearchTerm(q);
+      setOpenIndex(0);
+    }
+  }, [searchParams]);
   
   const faqItems = siteContent.faq.questions;
   
@@ -81,12 +92,30 @@ const FAQ: React.FC = () => {
     item.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.answer.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const quickFilters = [
+    { label: 'All', query: '' },
+    { label: 'NFTs & RWAs', query: 'NFT' },
+    { label: 'Escrow & Protection', query: 'escrow' },
+    { label: 'Marketplace', query: 'Marketplace' },
+    { label: 'Fees & Swapping', query: 'fee' },
+  ];
+
+  const handleFilterClick = (query: string) => {
+    setSearchTerm(query);
+    setOpenIndex(0);
+    if (query) {
+      setSearchParams({ q: query });
+    } else {
+      setSearchParams({});
+    }
+  };
   
   return (
     <div className="pt-24">
       <SEO
         title="Frequently Asked Questions - Shake Defi Escrow"
-        description="Find answers to common questions about smart contract escrow, payment protection, fees, and dispute resolution."
+        description="Find answers to common questions about smart contract escrow, NFTs, payment protection, fees, and dispute resolution."
         canonical="/faq"
       />
       <Section className="pb-0" bgColor="bg-white">
@@ -94,17 +123,55 @@ const FAQ: React.FC = () => {
           <h1 className="font-display text-hero text-4xl md:text-5xl text-secondary-dark mb-6">{siteContent.faq.headline}</h1>
           <p className="font-body text-lg md:text-xl text-secondary max-w-2xl mb-8 text-center mx-auto">{siteContent.faq.subhead}</p>
           
-
-          
-          <div className="relative max-w-xl mx-auto mb-12">
+          <div className="relative max-w-xl mx-auto mb-6">
             <input
               type="text"
               placeholder={siteContent.faq.searchPlaceholder}
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-accent"
+              onChange={(e) => {
+                const val = e.target.value;
+                setSearchTerm(val);
+                if (val) {
+                  setSearchParams({ q: val });
+                } else {
+                  setSearchParams({});
+                }
+              }}
+              className="w-full px-4 py-3 pr-10 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-accent font-body"
             />
-            <Search size={20} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-secondary" />
+            {searchTerm ? (
+              <button
+                type="button"
+                onClick={() => handleFilterClick('')}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-secondary hover:text-secondary-dark"
+                aria-label="Clear search"
+              >
+                <X size={18} />
+              </button>
+            ) : (
+              <Search size={20} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-secondary" />
+            )}
+          </div>
+
+          {/* Quick Filter Chips */}
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
+            {quickFilters.map((f) => {
+              const isActive = (f.query === '' && searchTerm === '') || (f.query !== '' && searchTerm.toLowerCase() === f.query.toLowerCase());
+              return (
+                <button
+                  key={f.label}
+                  type="button"
+                  onClick={() => handleFilterClick(f.query)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all ${
+                    isActive
+                      ? 'bg-secondary-dark text-accent shadow-xs'
+                      : 'bg-primary-light text-secondary-dark hover:bg-gray-200'
+                  }`}
+                >
+                  {f.label}
+                </button>
+              );
+            })}
           </div>
         </div>
         

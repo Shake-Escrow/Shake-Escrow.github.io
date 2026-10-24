@@ -24,6 +24,7 @@ import Provision from './pages/provision';
 import ApiDocs from './pages/api-docs';
 import Marketplace from './pages/marketplace';
 import SecurePayments from './pages/secure-payments';
+import Nft from './pages/nft';
 
 // Declare gtag on window
 declare global {
@@ -85,6 +86,7 @@ function App() {
             <Route path="/delete-account" element={<DeleteAccount />} />
             <Route path="/e-commerce" element={<Ecommerce />} />
             <Route path="/marketplace" element={<Marketplace />} />
+            <Route path="/nft" element={<Nft />} />
             <Route path="/secure-payments" element={<SecurePayments />} />
             <Route path="/provision" element={<Provision />} />
             <Route path="/api-docs" element={<ApiDocs />} />

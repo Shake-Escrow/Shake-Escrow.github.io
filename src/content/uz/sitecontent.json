@@ -6,8 +6,8 @@
         "path": "/"
       },
       {
-        "title": "Qanday ishlaydi",
-        "path": "/how-it-works"
+        "title": "NFT",
+        "path": "/nft"
       },
       {
         "title": "Bozor",
@@ -35,8 +35,17 @@
         ]
       },
       {
-        "title": "Savol-javoblar",
-        "path": "/faq"
+        "title": "Savollar?",
+        "sublinks": [
+          {
+            "title": "Qanday ishlaydi",
+            "path": "/how-it-works"
+          },
+          {
+            "title": "Savol-javoblar",
+            "path": "/faq"
+          }
+        ]
       }
     ]
   },
@@ -305,6 +314,10 @@
         "url": "/"
       },
       {
+        "label": "NFT",
+        "url": "/nft"
+      },
+      {
         "label": "Qanday ishlaydi",
         "url": "/how-it-works"
       },
@@ -499,6 +512,38 @@
       {
         "question": "Hakam sifatida pul ishlashim mumkinmi?",
         "answer": "3 tadan 2 tasdiqli eskrouda xaridor va sotuvchi oʻz hakamini tanlaydi. Hakam nizo paytida hal qiluvchi qarorni beradi va tranzaksiya summasining 0.5% miqdorida komissiya oladi."
+      },
+      {
+        "question": "Shake-da jismoniy aktivlar NFT-lari qanday ishlaydi?",
+        "answer": "Shake sizga o'zingizga tegishli bo'lgan haqiqiy jismoniy aktiv (avtomobil, soat, uskunalar yoki kolleksiya buyumlari kabi) uchun Ethereum Base tarmog'ida (ERC-721) yoki TON-da NFT yaratish imkonini beradi. Buyumni fotosuratlar va tavsiflar bilan hujjatlashtirasiz yoki mavjud egalik huquqi to'g'risidagi PDF hujjatini biriktirasiz. Ikkala tomon ham o'z qurilmalarida qonuniy majburiy egalik shartnomasini ko'rib chiqadi va imzolaydi, va siz ulangan hamyoningiz bilan zarb qilishni tasdiqlaysiz. Aqlli shartnoma aktiv havolasini, imzolangan hujjat heshini va metama'lumotlarni blokcheynga doimiy ravishda bog'laydi."
+      },
+      {
+        "question": "NFT sotuvlarida aqlli shartnoma eskrousi ishlatiladimi?",
+        "answer": "Yo'q. Shake-da NFT sotuvlari eskrou o'rniga to'g'ridan-to'g'ri sotuvlardan foydalanadi. Siz o'zingizga tegishli NFT-ni tanlaysiz, narxni va kelishilgan yetkazib berish yoki qaytarish shartlarini belgilaysiz va xaridorni taklif qilasiz. Ikkala tomon ham hamyon tasdiqlashidan oldin shartlarni ko'rib chiqadilar. To'lov va NFT yetkazib berilishi blokcheyn tasdig'i orqali amalga oshadi. To'g'ridan-to'g'ri NFT sotuvlari narxga kiritilgan 0.1% to'lovga ega; tarmoq to'lovlari alohida. NFT o'tkazmasi blokcheyndagi saqlashni tasdiqlaydi, jismoniy yetkazib berishni emas.\n\nAqlli shartnoma eskrousi (vaqtinchalik eskrou va 2-of-3 eskrou) bozor tovarlari, transport vositalari, ulgurji mahsulotlar va xizmatlar kabi oddiy tranzaksiyalar uchun mavjud bo'lib, NFT sotuvlari eskrousiz to'g'ridan-to'g'ri sotuv shartlaridan foydalanadi."
+      },
+      {
+        "question": "Shake NFT-lari uchun qaysi blokcheynlar va hamyon standartlari qo'llab-quvvatlanadi?",
+        "answer": "Shake **Ethereum Base tarmog'ini** (ShakeAssetNFT shartnomasi orqali standart ERC-721 tokenlari sifatida) va **TON (The Open Network)** (mahalliy NFT elementlari sifatida) qo'llab-quvvatlaydi. Shake NFT-lari to'liq nodavlat (non-custodial) hisoblanadi: zarb qilingandan so'ng, siz ularni saqlashingiz, blokcheyndagi majburiyatlarni ko'rishingiz yoki Shake ruxsatisiz standart hamyon o'tkazmalari orqali istalgan tashqi hamyonga o'tkazishingiz mumkin."
+      },
+      {
+        "question": "Shake NFT-lar uchun shaxsiy tekshiruv dalillarini qanday himoya qiladi?",
+        "answer": "Shake ikki darajali maxfiylik modelidan foydalanadi:\n- **Ommaviy ma'lumotlar**: Egalik huquqi to'g'risidagi PDF shartnomasi, NFT metama'lumotlari, tavsifi va buyum fotosuratlari ommaviy bo'lib, blokcheynda qayd etilgan hujjat heshiga nisbatan tekshirilishi mumkin.\n- **Shaxsiy dalillar**: Shartnomani imzolash paytida olingan old kameradagi fotosuratlar va imzo qo'yuvchini tekshirish shaxsiy va shifrlangan holda qoladi. Faqat vakolatli xaridor yoki belgilangan kirish huquqiga ega auditor sotish yoki nizo paytida ushbu dalilni tekshirishi mumkin."
+      },
+      {
+        "question": "Raqamli tasvir NFT-sini yaratishda qanday huquqlar kiritilgan?",
+        "answer": "Shake-da raqamli tasvir NFT-sini yaratganingizda, imzolangan kriptografik litsenziya shartnomasi bo'yicha xaridorga shaxsiy va tijorat maqsadlarida foydalanish huquqini berasiz. Asosiy mualliflik huquqi uning asl huquq egasida qoladi va ijodkor hamda kollektor uchun aniq qonuniy himoyani ta'minlaydi."
+      },
+      {
+        "question": "Shake NFT-larimni Shake-dan tashqariga o'tkazishim yoki sotishim mumkinmi?",
+        "answer": "Ha. Shake NFT-lari Base-da standart ERC-721 tokenlari va TON-da standart NFT elementlaridir. Mavjud NFT-lar oddiy, cheklovlarsiz o'tkazmalarga ega. Siz ularni istalgan mos Web3 hamyoniga yoki ikkilamchi bozorga yuborishingiz mumkin. Shake zarb qilish xizmatlarini to'xtatib turish mavjud NFT o'tkazmalarini cheklamaydi."
+      },
+      {
+        "question": "NFT-larni yaratish va savdo qilish uchun qanday to'lovlar mavjud?",
+        "answer": "To'g'ridan-to'g'ri NFT sotuvlari narxga kiritilgan 0.1% qat'iy to'lovga ega; blokcheyn tarmog'i gaz to'lovlari tarmoqqa alohida to'lanadi. Aqlli shartnoma eskrou to'lovlari (0.1% dan 1% gacha) faqat NFT bo'lmagan oddiy tranzaksiyalar uchun qo'llaniladi. Shake NFT-laringizni saqlash yoki o'tkazish uchun hech qachon obuna to'lovlarini olmaydi."
+      },
+      {
+        "question": "3 ta kalit so'zli aktiv havolasi kodi nima?",
+        "answer": "Shake-da zarb qilingan har bir jismoniy aktivga blokcheynda doimiy raqamli aktiv havolasi beriladi. Shake backend-i har bir doimiy havolani eslab qolish oson bo'lgan uchta kalit so'zga aylantiradi (masalan: *falcon • summit • ember*). Bu xaridorlar, sotuvchilar va hakamlar uchun ma'lum bir buyumni va unga tegishli aqlli shartnoma hujjatini tekshirish va qidirishni osonlashtiradi."
       }
     ],
     "cta": {
@@ -735,6 +780,10 @@
         "other": {
           "title": "Boshqa tranzaksiyalar",
           "description": "Ikkala tomon ham toʻlov kelishilgan shartlar asosida saqlanishini xohlagan har qanday holatda eskrou tranzaksiyasi yarating."
+        },
+        "nfts": {
+          "title": "Jismoniy aktivlar va raqamli NFTlar",
+          "description": "0.1% to'g'ridan-to'g'ri sotuv to'lovi va imzolangan egalik shartlari bilan jismoniy buyumlar yoki raqamli san'at uchun egalik NFTlarini yarating va soting."
         }
       }
     },
@@ -792,6 +841,221 @@
           "description": "Markazlashtirilmagan ijtimoiy tasmada muammosiz muloqot qiling"
         }
       }
+    },
+    "nftHighlight": {
+      "tag": "NFTlar va Real aktivlar",
+      "headline": "Imzolangan qonuniy shartlar bilan to'g'ridan-to'g'ri NFT sotuvlari",
+      "lead": "Shake real dunyo mulki va raqamli mediani Base va TON blokcheynlaridagi tokenlar bilan bog'laydi.",
+      "body": "Avtomobil, uskunalar yoki kolleksiya buyumlari uchun imzolangan egalik hujjati bilan tasdiqlangan NFT yaratasizmi yoki tijorat litsenziyali raqamli san'at bilan savdo qilasizmi, Shake 0.1% qat'iy to'lov bilan to'g'ridan-to'g'ri hamyonlararo hisob-kitobni ta'minlaydi. (Eslatma: Aqlli shartnoma eskrousi oddiy tovarlar va xizmatlarni himoya qiladi, NFT sotuvlari esa eskrousiz kelishilgan to'g'ridan-to'g'ri sotuv shartlaridan foydalanadi).",
+      "cta": "NFT imkoniyatlarini ko'rish",
+      "bullet1": "Doimiy 3 so'zli havola kodi va blokcheynda tekshiriladigan hujjat heshi",
+      "bullet2": "Hamyon tasdiqlagan 0.1% to'g'ridan-to'g'ri sotuv to'lovi",
+      "bullet3": "ERC-721 va TON standartlarida cheklovlarsiz shaxsiy hamyon o'tkazmalari"
+    }
+  },
+  "nft": {
+    "seo": {
+      "title": "Jismoniy aktivlar va raqamli NFTlar | Shake DeFi",
+      "description": "Base va TON-da 0.1% to'g'ridan-to'g'ri hamyon tasdiqlagan sotuvlar bilan haqiqiy jismoniy aktivlar yoki raqamli tasvirlar uchun NFTlarni yarating, tekshiring va soting."
+    },
+    "hero": {
+      "chip": "Base (ERC-721) va TON tarmoqlari",
+      "headline": "Real dunyo egaligi.\nBlokcheynda zarb qilingan.",
+      "subheadline": "Imzolangan qonuniy egalik hujjatlari va kriptografik dalillar bilan jismoniy aktivlar yoki raqamli tasvirlar uchun NFTlar yarating.",
+      "description": "Shake DeFi real dunyo mulkini aqlli shartnomalar bilan bog'laydi. Egalik PDF hujjatlarini ko'rib chiqing va imzolang, Base yoki TON-da zarb qiling va kelishilgan shartlar bilan 0.1% to'g'ridan-to'g'ri sotuvlar bilan savdo qiling.",
+      "primaryCta": "Boshlash",
+      "secondaryCta": "Bozorni ko'rish",
+      "tertiaryCta": "@ShakeDefiBot bilan yozishish",
+      "availableOn": "Mavjud platformalar:",
+      "platforms": "Telegram • Brauzer • iOS • Android • Farcaster"
+    },
+    "interactivePreview": {
+      "badge": "Interaktiv aktivlar inspektori",
+      "title": "Ikki darajali tekshiruv: Ommaviy hujjatlar va Shaxsiy audit dalillari",
+      "description": "Har bir Shake NFT-si blokcheyndagi token egaligini doimiy qonuniy majburiyatlar bilan bog'laydi. Haqiqiy jismoniy aktiv raqamli litsenziyadan qanday farq qilishini bilib oling.",
+      "tabs": {
+        "physical": "Jismoniy aktiv NFT (RWA)",
+        "digital": "Raqamli tasvir NFT"
+      },
+      "physical": {
+        "badge": "Real dunyo aktivi namunasi (ERC-721)",
+        "assetName": "1968 Vintage Xronograf Soati",
+        "refCode": "falcon • summit • ember",
+        "network": "Ethereum Base (ERC-721)",
+        "tokenId": "#08412",
+        "status": "Blokcheynda tasdiqlangan",
+        "docHash": "0x4f92...c8a1 (Imzolangan PDF Hujjat)",
+        "evidenceHash": "0x9e17...4b3d (Kamera dalili)",
+        "description": "Kriptografik qonuniy deklaratsiya, yuqori aniqlikdagi holat fotosuratlari va imzo qo'yuvchining old kamerasi orqali olingan tekshiruv bilan tasdiqlangan jismoniy aktiv.",
+        "publicDataLabel": "Blokcheyn va IPFS-da ommaviy",
+        "publicDataItems": [
+          "Egalik huquqi to'g'risidagi PDF hujjati va shartlari",
+          "Aktiv fotosuratlari va holat qaydlari",
+          "Doimiy 3 so'zli havola kodi",
+          "Blokcheyndagi o'zgarmas token ID"
+        ],
+        "privateDataLabel": "Shaxsiy va shifrlangan",
+        "privateDataItems": [
+          "Imzo qo'yuvchining kamera tekshiruvi dalili",
+          "Vaqt belgilangan GPS qurilma telemetriyasi",
+          "Faqat xaridor auditi uchun cheklangan kirish"
+        ]
+      },
+      "digital": {
+        "badge": "Raqamli tasvir va Litsenziya namunasi",
+        "assetName": "Kibernetik Genezis #042",
+        "refCode": "neon • orbit • prism",
+        "network": "TON Tarmog'i (The Open Network)",
+        "tokenId": "#01829",
+        "status": "Faol Litsenziya",
+        "docHash": "0x3a71...f2e0 (Imzolangan tijorat litsenziyasi)",
+        "evidenceHash": "0x1b44...7c92 (Litsenziat tekshiruvi)",
+        "description": "Imzolangan litsenziya shartnomasi bo'yicha shaxsiy va tijorat maqsadlarida foydalanish huquqi bilan chiqarilgan raqamli san'at asari. Mualliflik huquqi ijodkorda qoladi.",
+        "publicDataLabel": "Ommaviy huquqlar va aktiv",
+        "publicDataItems": [
+          "Yuqori aniqlikdagi raqamli san'at asari",
+          "Imzolangan tijorat litsenziyasi shartlari",
+          "Ijodkorning kriptografik imzosi",
+          "To'g'ridan-to'g'ri qayta sotish ruxsati"
+        ],
+        "privateDataLabel": "Himoyalangan litsenziya shartlari",
+        "privateDataItems": [
+          "Tijorat sublitsenziyalari reyestri",
+          "Asl yuqori sifatli master fayli",
+          "Tasdiqlangan hamyon verifikatsiyasi"
+        ]
+      }
+    },
+    "assetTypes": {
+      "tag": "Aktivlar turlari",
+      "headline": "Yaratishning ikki usuli: Jismoniy va Raqamli",
+      "subheadline": "Haqiqiy jismoniy mulkni bog'laysizmi yoki tijorat imkoniyatlariga ega raqamli san'at yaratasizmi, Shake qonuniy tuzilgan blokcheyn chiqarilishini ta'minlaydi.",
+      "physical": {
+        "tag": "Moddiy real aktivlar",
+        "title": "Jismoniy aktivlar NFT-lari (RWA)",
+        "description": "Avtomobillar, mashinalar, elektronika, hashamatli soatlar va ko'chmas mulkni blokcheynda tekshiriladigan va o'tkaziladigan tokenlarga aylantiring.",
+        "points": [
+          "Base (ERC-721) yoki TON-da fotosuratlar va holat hisobotlari yordamida yarating yoki mavjud PDF hujjatini yuklang.",
+          "Ikkala tomon ham to'g'ridan-to'g'ri o'z qurilmalarida qonuniy kuchga ega egalik shartnomasini imzolaydilar.",
+          "Oson qidirish uchun 3 ta esda qolarli kalit so'zga biriktirilgan doimiy raqamli havola.",
+          "Imzolash kamerasi dalillariga shaxsiy kirish huquqiga ega ommaviy egalik hujjati."
+        ]
+      },
+      "digital": {
+        "tag": "Ijodiy va tijorat media",
+        "title": "Raqamli tasvir NFT-lari",
+        "description": "Imzolangan litsenziya bilan himoyalangan shaxsiy va tijorat foydalanish huquqlariga ega raqamli tasvir san'atini yarating.",
+        "points": [
+          "Mualliflik huquqingizni saqlab qolgan holda, xaridorlarga shaxsiy va tijorat foydalanish huquqlarini bering.",
+          "Hamyoningiz bilan kriptografik tarzda imzolangan standartlashtirilgan raqamli litsenziya shartlari.",
+          "Base va TON ikkilamchi bozorlarida erkin savdo qiling.",
+          "Tezkor hamyon o'tkazmasi bilan 0.1% to'g'ridan-to'g'ri sotuv to'lovi kiritilgan."
+        ]
+      }
+    },
+    "mintingProcess": {
+      "tag": "Yaratish jarayoni",
+      "headline": "Real mulkdan blokcheyn aktivigacha 4 bosqichda",
+      "subheadline": "NFT yaratish sizdan xaridor, to'lov yoki oldindan eskrou talab qilmasdan egalik tokenini taqdim etadi.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Aktivingizni hujjatlashtiring",
+          "description": "Yuqori aniqlikdagi fotosuratlar va tavsiflarni yuklang yoki mavjud egalik PDF hujjati, avtomobil hujjati yoki haqiqiylik sertifikatini biriktiring."
+        },
+        {
+          "step": "2",
+          "title": "Egalik shartnomasini imzolang",
+          "description": "Yaratilgan egalik deklaratsiyasini ko'rib chiqing. Kriptografik javobgarlikni o'rnatish uchun qurilmangiz old kamerasida tekshiruv o'tkazayotganda ekranda imzolang."
+        },
+        {
+          "step": "3",
+          "title": "Hamyoningiz bilan yaratishni tasdiqlang",
+          "description": "Base yoki TON-da ulangan hamyoningiz (Coinbase Embedded, Tonkeeper, Telegram, Farcaster yoki MetaMask) bilan tranzaksiyani tasdiqlang."
+        },
+        {
+          "step": "4",
+          "title": "Saqlang, o'tkazing yoki soting",
+          "description": "Sizning NFT endi hamyoningizda. Uni standart ERC-721/TON o'tkazmalari bilan erkin o'tkazing, PDF heshini tekshiring yoki sotuvga qo'ying."
+        }
+      ]
+    },
+    "tradingOptions": {
+      "tag": "To'g'ridan-to'g'ri hisob-kitob",
+      "headline": "Kelishilgan shartlar bilan to'g'ridan-to'g'ri NFT sotuvlari",
+      "subheadline": "Shake-da NFT sotuvlari 0.1% qat'iy to'lov bilan xaridor va sotuvchi o'rtasida hamyon tasdig'i orqali to'g'ridan-to'g'ri amalga oshiriladi.",
+      "directSale": {
+        "title": "0.1% to'g'ridan-to'g'ri NFT sotuvi",
+        "fee": "0.1% to'lov kiritilgan",
+        "badge": "Tezkor egalik",
+        "description": "O'zingizga tegishli NFT-ni tanlang, narxni va kelishilgan yetkazib berish yoki qaytarish shartlarini belgilang va xaridorni taklif qiling.",
+        "features": [
+          "Narxni va kelishilgan yetkazib berish yoki qaytarish shartlarini belgilang",
+          "Ikkala tomon ham ulangan hamyonlar bilan ko'rib chiqadi va tasdiqlaydi",
+          "Mablag'lar va NFT egaligining blokcheynda to'g'ridan-to'g'ri atomik o'tkazmasi",
+          "Narxga kiritilgan 0.1% qat'iy to'lov (tarmoq to'lovlari alohida)",
+          "NFT o'tkazmasi blokcheyndagi saqlashni tasdiqlaydi, jismoniy yetkazib berishni emas"
+        ],
+        "bestFor": "Ideal: Real dunyo jismoniy aktivlari NFT-lari va litsenziyalangan raqamli media."
+      },
+      "escrowSale": {
+        "title": "NFT bo'lmagan tovarlar uchun Eskrou",
+        "fee": "0.1% – 1% to'lov",
+        "badge": "Oddiy tranzaksiyalar",
+        "description": "Shake oddiy bozor savdosini to'g'ridan-to'g'ri NFT egalik o'tkazmalaridan ajratadi.",
+        "features": [
+          "NFT tranzaksiyalari: eskrousiz kelishilgan shartlar bo'yicha to'g'ridan-to'g'ri amalga oshadi",
+          "To'g'ridan-to'g'ri NFT sotuvlari narxga kiritilgan 0.1% to'lovga ega",
+          "Oddiy tranzaksiyalar: aqlli shartnoma eskrouidan foydalanadi (0 dan 180 kungacha)",
+          "Betaraf inson hakami bilan nizolardan himoya (Vaqtinchalik yoki 2-of-3)",
+          "Bozor e'lonlari: oddiy e'lonlar eskrouni saqlaydi; NFT e'lonlari to'g'ridan-to'g'ri sotuv shartlaridan foydalanadi"
+        ],
+        "bestFor": "Oddiy tranzaksiyalar eskroudan foydalanadi; NFT sotuvlari to'g'ridan-to'g'ri sotuv shartlaridan foydalanadi."
+      }
+    },
+    "marketplaceIntegration": {
+      "tag": "Ko'proq xaridorlarga yetib boring",
+      "headline": "E'lonlarni Telegram bozor postlariga aylantiring",
+      "description": "NFTingiz uchun maksimal ko'rinishni xohlaysizmi? Bir tegish bilan e'lon kartangizni—fotosuratlar, 3 so'zli kod, narx va shartlar bilan—to'g'ridan-to'g'ri Shake P2P Marketplace Telegram kanaliga yuboring.",
+      "bullet1": "To'g'ridan-to'g'ri NFT sotuvlari @ShakeDefiBot yoki Shake mini-ilovasi orqali darhol amalga oshiriladi",
+      "bullet2": "Eskrou tranzaksiyalari to'liq muddat va nizo shartlarini saqlab qoladi",
+      "bullet3": "Dunyo bo'ylab istalgan Telegram ilovasidan e'lonlarni ko'ring va kashf eting",
+      "cta": "Telegram bozorini ko'rish"
+    },
+    "security": {
+      "tag": "Xavfsizlik va arxitektura",
+      "headline": "Korxona darajasidagi kriptografik dalillar",
+      "cards": [
+        {
+          "title": "Non-Custodial ERC-721 va TON",
+          "description": "Siz 100% shaxsiy nazoratni saqlab qolasiz. Shake hech qachon shaxsiy kalitlaringizni saqlamaydi va mavjud NFT-lar cheklovlarsiz istalgan tashqi hamyonga o'tkazilishi mumkin."
+        },
+        {
+          "title": "Doimiy 3 so'zli havolalar",
+          "description": "Har bir aktiv havolasi token va hujjat majburiyatlari bilan blokcheynda doimiy bog'langan uchta esda qolarli kalit so'zga aylanadi."
+        },
+        {
+          "title": "O'zgartirib bo'lmaydigan hujjat heshlari",
+          "description": "Imzolangan egalik PDF hujjati va metama'lumotlaringizning aniq SHA-256 heshi tekshirilishi mumkin bo'lgan audit uchun aqlli shartnomaga muhrlanadi."
+        },
+        {
+          "title": "Cheklangan maxfiylik nazorati",
+          "description": "Egalik PDF-lari va NFT tasvirlari bozorda topish uchun ommaviydir; imzolash kamerasi dalillari xaridor auditi uchun cheklangan kirish bilan shaxsiy qoladi."
+        }
+      ]
+    },
+    "faq": {
+      "tag": "Savollaringiz bormi?",
+      "headline": "NFT bo'yicha tez-tez beriladigan savollar",
+      "subheadline": "Shake-da jismoniy aktivlarni zarb qilish, raqamli litsenziyalar va savdo haqida bilishingiz kerak bo'lgan barcha ma'lumotlar.",
+      "ctaText": "Yana savollaringiz bormi? To'liq FAQ sahifamizni ko'ring",
+      "ctaLink": "/faq"
+    },
+    "finalCta": {
+      "headline": "Birinchi NFTingizni yaratishga yoki sotishga tayyormisiz?",
+      "description": "Hamyoningizni ulang, egalik hujjatingizni imzolang va bir necha daqiqada Base yoki TON-da aktiv yoki raqamli tasviringizni chiqaring.",
+      "cta": "Boshlash",
+      "subtext": "iOS, Android, Telegram, Farcaster va Veb-brauzerda mavjud • Non-custodial"
     }
   }
 }

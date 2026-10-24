@@ -16,7 +16,8 @@ import {
   ArrowLeftRight,
   UserCheck,
   Boxes,
-  Sparkles
+  Sparkles,
+  Gem
 } from 'lucide-react';
 import { FaApple, FaGooglePlay, FaTelegramPlane } from 'react-icons/fa';
 import { GoBrowser } from 'react-icons/go';
@@ -669,21 +670,115 @@ const SecurePayments: React.FC = () => {
               </p>
             </div>
 
-            {/* Other Transactions */}
-            <div className="sm:col-span-2 lg:col-span-2 bg-white rounded-2xl p-6 border border-gray-200/80 shadow-xs hover:border-accent hover:shadow-sm transition-all">
-              <div className="w-12 h-12 rounded-xl bg-accent/30 text-secondary-dark flex items-center justify-center mb-4">
-                <Layers className="w-6 h-6" />
+            {/* NFTs & Real-World Assets */}
+            {content.useCases.items.nfts && (
+              <div className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-xs hover:border-accent hover:shadow-sm transition-all flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-accent/30 text-secondary-dark flex items-center justify-center mb-4">
+                    <Gem className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-secondary-dark">
+                    {content.useCases.items.nfts.title}
+                  </h3>
+                  <p className="mt-2 font-body text-base text-secondary leading-relaxed">
+                    {content.useCases.items.nfts.description}
+                  </p>
+                </div>
+                <div className="mt-4 pt-2">
+                  <Link
+                    to="/nft"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-secondary-dark hover:text-emerald-700 underline underline-offset-2"
+                  >
+                    <span>View NFT features</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
-              <h3 className="font-display text-xl font-bold text-secondary-dark">
-                {content.useCases.items.other.title}
-              </h3>
-              <p className="mt-2 font-body text-base text-secondary leading-relaxed">
-                {content.useCases.items.other.description}
-              </p>
+            )}
+
+            {/* Other Transactions */}
+            <div className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-xs hover:border-accent hover:shadow-sm transition-all flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-accent/30 text-secondary-dark flex items-center justify-center mb-4">
+                  <Layers className="w-6 h-6" />
+                </div>
+                <h3 className="font-display text-xl font-bold text-secondary-dark">
+                  {content.useCases.items.other.title}
+                </h3>
+                <p className="mt-2 font-body text-base text-secondary leading-relaxed">
+                  {content.useCases.items.other.description}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </Section>
+
+      {/* Section: NFT-Backed Physical & Digital Asset Sales */}
+      {content.nftHighlight && (
+        <Section bgColor="bg-white" className="py-12 md:py-20 border-t border-gray-100">
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-3xl bg-gradient-to-br from-secondary-dark via-[#1e232b] to-secondary-dark text-white p-6 sm:p-10 border border-gray-700/60 shadow-lg relative overflow-hidden">
+              {/* Subtle accent glow */}
+              <div className="absolute -right-20 -top-20 w-72 h-72 rounded-full bg-accent/15 blur-3xl pointer-events-none" />
+              <div className="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-sky-500/10 blur-3xl pointer-events-none" />
+
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-3.5 py-1 text-xs sm:text-sm font-semibold text-accent border border-accent/30 mb-4">
+                  <Gem className="w-4 h-4 text-accent" />
+                  <span>{content.nftHighlight.tag}</span>
+                </div>
+
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug">
+                  {content.nftHighlight.headline}
+                </h2>
+
+                <p className="mt-4 font-body text-base sm:text-lg text-emerald-300 font-medium">
+                  {content.nftHighlight.lead}
+                </p>
+
+                <p className="mt-3 font-body text-sm sm:text-base text-gray-300 leading-relaxed">
+                  {content.nftHighlight.body}
+                </p>
+
+                <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="bg-white/10 rounded-xl p-3.5 border border-white/10 backdrop-blur-xs">
+                    <div className="flex items-start gap-2.5 text-accent font-display text-xs sm:text-sm font-bold">
+                      <FileCheck2 className="w-4 h-4 shrink-0 mt-0.5" />
+                      <span>{content.nftHighlight.bullet1}</span>
+                    </div>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-3.5 border border-white/10 backdrop-blur-xs">
+                    <div className="flex items-start gap-2.5 text-accent font-display text-xs sm:text-sm font-bold">
+                      <Scale className="w-4 h-4 shrink-0 mt-0.5" />
+                      <span>{content.nftHighlight.bullet2}</span>
+                    </div>
+                  </div>
+                  <div className="bg-white/10 rounded-xl p-3.5 border border-white/10 backdrop-blur-xs">
+                    <div className="flex items-start gap-2.5 text-accent font-display text-xs sm:text-sm font-bold">
+                      <Lock className="w-4 h-4 shrink-0 mt-0.5" />
+                      <span>{content.nftHighlight.bullet3}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                  <Link
+                    to="/nft"
+                    className="inline-flex items-center gap-2 bg-accent text-secondary-dark px-6 py-3 rounded-full font-display text-sm font-bold hover:bg-accent/90 transition-all shadow-md active:scale-95"
+                  >
+                    <span>{content.nftHighlight.cta}</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <span className="text-xs text-gray-400">
+                    Supports Base (ERC-721) & TON Networks • 0.1% direct sales
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
+      )}
 
       {/* Section: Payment Service, Not an Investment Product */}
       <Section bgColor="bg-white" className="py-10 md:py-16 border-t border-gray-100">

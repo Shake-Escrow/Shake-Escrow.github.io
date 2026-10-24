@@ -6,8 +6,8 @@
         "path": "/"
       },
       {
-        "title": "Cómo Funciona",
-        "path": "/how-it-works"
+        "title": "NFT",
+        "path": "/nft"
       },
       {
         "title": "Mercado",
@@ -35,8 +35,17 @@
         ]
       },
       {
-        "title": "Preguntas",
-        "path": "/faq"
+        "title": "¿Preguntas?",
+        "sublinks": [
+          {
+            "title": "Cómo Funciona",
+            "path": "/how-it-works"
+          },
+          {
+            "title": "Preguntas Frecuentes",
+            "path": "/faq"
+          }
+        ]
       }
     ]
   },
@@ -305,6 +314,10 @@
         "url": "/"
       },
       {
+        "label": "NFT",
+        "url": "/nft"
+      },
+      {
         "label": "Cómo Funciona",
         "url": "/how-it-works"
       },
@@ -499,6 +512,38 @@
       {
         "question": "¿Puedo ganar dinero como árbitro?",
         "answer": "Con el escrow 2 de 3, el comprador y el comerciante eligen a su propio árbitro. El árbitro desempata en caso de disputa y gana una comisión del 0.5% del importe de la transacción."
+      },
+      {
+        "question": "¿Cómo funcionan los NFTs de Activos Físicos en Shake?",
+        "answer": "Shake te permite acuñar un NFT que representa un activo físico real de tu propiedad (como un vehículo, reloj, maquinaria o coleccionable) en la red Ethereum Base (ERC-721) o TON. Documentas el artículo con fotos y descripciones o adjuntas un documento PDF de propiedad existente. Ambas partes revisan y firman un acuerdo de propiedad legalmente vinculante en sus dispositivos, y autorizas la acuñación con tu billetera conectada. El contrato inteligente vincula permanentemente la referencia del activo, el hash del documento firmado y los metadatos en la cadena."
+      },
+      {
+        "question": "¿Las ventas de NFT utilizan custodia (escrow) en contratos inteligentes?",
+        "answer": "No. Las ventas de NFT en Shake utilizan ventas directas en lugar de escrow. Seleccionas un NFT de tu propiedad, estableces el precio y los términos acordados de entrega o devolución, e invitas a un comprador. Ambas partes revisan los términos antes de la autorización con sus billeteras. La confirmación del pago y la entrega del NFT se realiza en la cadena. Las ventas directas conllevan una tarifa del 0.1% incluida en el precio; las tarifas de red son independientes. La transferencia del NFT confirma la custodia en cadena, no la entrega física.\n\nLa custodia en contratos inteligentes (escrow temporizado y 2-de-3) está disponible para transacciones ordinarias como bienes del marketplace, vehículos, productos al por mayor y servicios, mientras que las ventas de NFT utilizan términos acordados de venta directa sin escrow."
+      },
+      {
+        "question": "¿Qué cadenas de bloques y estándares de billetera son compatibles con los NFTs de Shake?",
+        "answer": "Shake es compatible con la **red Ethereum Base** (como tokens ERC-721 estándar a través del contrato ShakeAssetNFT) y **TON (The Open Network)** (como elementos NFT nativos). Los NFTs de Shake son totalmente no custodiales: una vez acuñados, puedes conservarlos, verificar sus compromisos en la cadena o transferirlos a cualquier billetera externa mediante transferencias estándar sin necesidad de autorización de Shake."
+      },
+      {
+        "question": "¿Cómo protege Shake las pruebas de verificación privadas para los NFTs?",
+        "answer": "Shake utiliza un modelo de privacidad de doble capa:\n- **Datos públicos**: El acuerdo de propiedad en PDF, los metadatos del NFT, la descripción y las fotos del artículo son públicos y verificables contra el hash del documento registrado en la cadena.\n- **Pruebas privadas**: Las fotos de la cámara frontal y la verificación del firmante capturadas durante la firma del acuerdo permanecen privadas y encriptadas. Solo un comprador o auditor autorizado con acceso delimitado puede inspeccionar esta prueba durante una venta o disputa."
+      },
+      {
+        "question": "¿Qué derechos se incluyen al acuñar un NFT de Imagen Digital?",
+        "answer": "Al acuñar un NFT de imagen digital en Shake, otorgas al comprador derechos de uso personal y comercial bajo un acuerdo de licencia firmado criptográficamente. Los derechos de autor subyacentes permanecen con su titular original, proporcionando protección legal clara tanto para el creador como para el coleccionista."
+      },
+      {
+        "question": "¿Puedo transferir o vender mis NFTs de Shake fuera de Shake?",
+        "answer": "Sí. Los NFTs de Shake son tokens ERC-721 estándar en Base y elementos NFT estándar en TON. Los NFTs existentes tienen transferencias ordinarias y sin restricciones. Puedes enviarlos a cualquier billetera Web3 compatible o mercado secundario. Pausar los servicios de acuñación de Shake no restringe las transferencias de NFTs existentes."
+      },
+      {
+        "question": "¿Cuáles son las tarifas por acuñar y comerciar NFTs?",
+        "answer": "Las ventas directas de NFT conllevan una tarifa fija del 0.1% incluida en el precio; las tarifas de gas de la red blockchain se pagan por separado a la red. Las tarifas de custodia en contratos inteligentes (0.1% al 1%) se aplican a transacciones ordinarias sin NFT. Shake nunca cobra tarifas de suscripción por poseer o transferir tus NFTs."
+      },
+      {
+        "question": "¿Qué es el código de referencia de activos de 3 palabras clave?",
+        "answer": "A cada activo físico acuñado en Shake se le asigna una referencia de activo numérica permanente en la cadena. El sistema de Shake traduce cada referencia permanente en tres palabras clave fáciles de recordar (por ejemplo: *falcon • summit • ember*). Esto facilita que compradores, vendedores y árbitros verifiquen y busquen el artículo específico y su contrato inteligente asociado."
       }
     ],
     "cta": {
@@ -735,6 +780,10 @@
         "other": {
           "title": "Otras Transacciones",
           "description": "Crea una transacción de escrow siempre que ambas partes quieran que el pago se retenga según términos acordados."
+        },
+        "nfts": {
+          "title": "NFTs de Activos Físicos y Digitales",
+          "description": "Acuña y comercializa NFTs de propiedad para artículos físicos o arte digital con una tarifa fija del 0.1% de venta directa y términos de propiedad firmados."
         }
       }
     },
@@ -792,6 +841,221 @@
           "description": "Interactúa sin problemas dentro del feed social descentralizado"
         }
       }
+    },
+    "nftHighlight": {
+      "tag": "NFTs y Activos del Mundo Real",
+      "headline": "Ventas Directas de NFT con Términos Legales Firmados",
+      "lead": "Shake conecta la propiedad del mundo real y medios digitales con tokens en Base y TON.",
+      "body": "Ya sea acuñando un NFT respaldado por un documento de propiedad firmado para un vehículo, maquinaria o artículo de colección, o comercializando arte digital con derechos de uso comercial, Shake ofrece liquidación directa billetera a billetera con una tarifa fija del 0.1%. (Nota: El escrow en contrato inteligente protege bienes y servicios ordinarios, mientras que las ventas de NFT utilizan términos de venta directa acordados sin escrow).",
+      "cta": "Explorar Funciones NFT",
+      "bullet1": "Código de referencia permanente de 3 palabras y hash de documento verificable en cadena",
+      "bullet2": "Tarifa del 0.1% con liquidación autorizada por billetera",
+      "bullet3": "Transferencias no custodiales sin restricciones en ERC-721 y TON"
+    }
+  },
+  "nft": {
+    "seo": {
+      "title": "NFTs de Activos Físicos y Digitales | Shake DeFi",
+      "description": "Acuña, verifica y comercializa NFTs que representan activos físicos reales o imágenes digitales en Base y TON con ventas directas autorizadas por billetera al 0.1%."
+    },
+    "hero": {
+      "chip": "Redes Base (ERC-721) y TON",
+      "headline": "Propiedad del Mundo Real.\nAcuñada en Blockchain.",
+      "subheadline": "Acuña NFTs para activos físicos reales o imágenes digitales con documentos de propiedad legales firmados y prueba criptográfica.",
+      "description": "Shake DeFi conecta la propiedad del mundo real con contratos inteligentes. Revisa y firma documentos de propiedad en PDF, acuña con autorización en Base o TON, y comercializa con ventas directas al 0.1% con términos acordados.",
+      "primaryCta": "Empezar",
+      "secondaryCta": "Explorar Marketplace",
+      "tertiaryCta": "Chatear con @ShakeDefiBot",
+      "availableOn": "Disponible en:",
+      "platforms": "Telegram • Navegador • iOS • Android • Farcaster"
+    },
+    "interactivePreview": {
+      "badge": "Inspector Interactivo de Activos",
+      "title": "Verificación de Doble Capa: Títulos Públicos y Pruebas de Auditoría Privadas",
+      "description": "Cada NFT de Shake vincula la custodia del token en la cadena con compromisos legales permanentes. Descubre en qué se diferencia un activo físico real de una licencia digital.",
+      "tabs": {
+        "physical": "NFT de Activo Físico (RWA)",
+        "digital": "NFT de Imagen Digital"
+      },
+      "physical": {
+        "badge": "Ejemplo de Activo del Mundo Real (ERC-721)",
+        "assetName": "Reloj Cronógrafo Vintage de 1968",
+        "refCode": "falcon • summit • ember",
+        "network": "Ethereum Base (ERC-721)",
+        "tokenId": "#08412",
+        "status": "Verificado en Cadena",
+        "docHash": "0x4f92...c8a1 (PDF de Título Firmado)",
+        "evidenceHash": "0x9e17...4b3d (Prueba de Cámara)",
+        "description": "Activo físico respaldado por declaración legal criptográfica, fotos de alta resolución del estado y captura verificable de cámara frontal del firmante.",
+        "publicDataLabel": "Público en Blockchain e IPFS",
+        "publicDataItems": [
+          "Título y términos de propiedad en PDF",
+          "Fotografías del activo y notas de estado",
+          "Código de referencia permanente de 3 palabras",
+          "ID de token inmutable en cadena"
+        ],
+        "privateDataLabel": "Privado y Encriptado",
+        "privateDataItems": [
+          "Prueba de verificación de cámara del firmante",
+          "Telemetría GPS con marca de tiempo del dispositivo",
+          "Acceso exclusivo delimitado para auditoría del comprador"
+        ]
+      },
+      "digital": {
+        "badge": "Ejemplo de Imagen Digital y Licencia",
+        "assetName": "Génesis Cibernética #042",
+        "refCode": "neon • orbit • prism",
+        "network": "Red TON (The Open Network)",
+        "tokenId": "#01829",
+        "status": "Licencia Activa",
+        "docHash": "0x3a71...f2e0 (Licencia Comercial Firmada)",
+        "evidenceHash": "0x1b44...7c92 (Verificación del Licenciatario)",
+        "description": "Obra digital acuñada con derechos explícitos de uso personal y comercial otorgados bajo un acuerdo de licencia firmado. Los derechos de autor permanecen con el creador.",
+        "publicDataLabel": "Derechos Públicos y Activo",
+        "publicDataItems": [
+          "Obra de arte digital en alta resolución",
+          "Términos de licencia comercial firmados",
+          "Firma criptográfica del creador",
+          "Autorización de reventa directa"
+        ],
+        "privateDataLabel": "Términos de Licencia Protegidos",
+        "privateDataItems": [
+          "Registro de sublicencias comerciales",
+          "Archivo maestro original de alta tasa de bits",
+          "Verificación de billetera autorizada"
+        ]
+      }
+    },
+    "assetTypes": {
+      "tag": "Clases de Activos",
+      "headline": "Dos Formas de Acuñar: Físico y Digital",
+      "subheadline": "Ya sea conectando bienes físicos tangibles o creando arte digital con utilidad comercial, Shake ofrece emisión en cadena estructurada legalmente.",
+      "physical": {
+        "tag": "Activos Tangibles del Mundo Real",
+        "title": "NFTs de Activos Físicos (RWA)",
+        "description": "Transforma vehículos, maquinaria, electrónicos, relojes de lujo y bienes raíces en tokens verificables y transferibles en blockchain.",
+        "points": [
+          "Acuña en Base (ERC-721) o TON usando fotos e informes de estado, o sube un PDF de título existente.",
+          "Ambas partes firman un acuerdo de propiedad legalmente vinculante directamente en sus dispositivos.",
+          "Referencia de activo numérica permanente mapeada a 3 palabras clave fáciles de recordar.",
+          "Título de propiedad público con acceso privado a pruebas de cámara de la firma."
+        ]
+      },
+      "digital": {
+        "tag": "Medios Creativos y Comerciales",
+        "title": "NFTs de Imagen Digital",
+        "description": "Acuña obras de arte de imágenes digitales con derechos de uso personal y comercial incorporados y protegidos por una licencia firmada.",
+        "points": [
+          "Conserva tus derechos de autor mientras otorgas derechos verificables de uso personal y comercial a los compradores.",
+          "Términos de licencia digital estandarizados firmados criptográficamente con tu billetera.",
+          "Comercializa libremente en mercados secundarios de Base y TON sin bloqueos.",
+          "Tarifa de venta directa del 0.1% incluida con transferencia instantánea de billetera."
+        ]
+      }
+    },
+    "mintingProcess": {
+      "tag": "Cómo Funciona la Acuñación",
+      "headline": "De Propiedad Real a Activo en Cadena en 4 Pasos",
+      "subheadline": "La acuñación crea un NFT de propiedad para ti sin requerir un comprador, pago o transacción de custodia por adelantado.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Documenta Tu Activo",
+          "description": "Sube fotos de alta resolución y descripción, o adjunta un PDF de propiedad existente, título de vehículo o certificado de autenticidad."
+        },
+        {
+          "step": "2",
+          "title": "Firma el Acuerdo de Propiedad",
+          "description": "Revisa la declaración de propiedad generada. Firma en pantalla mientras tu dispositivo captura la verificación de la cámara frontal para establecer responsabilidad criptográfica."
+        },
+        {
+          "step": "3",
+          "title": "Autoriza la Acuñación con Tu Billetera",
+          "description": "Autoriza la transacción de acuñación con tu billetera conectada (Coinbase Embedded, Tonkeeper, Telegram, Farcaster o MetaMask) en Base o TON."
+        },
+        {
+          "step": "4",
+          "title": "Conserva, Transfiere o Vende",
+          "description": "Tu NFT ya está acuñado en tu billetera. Transfiérelo libremente con transferencias estándar ERC-721/TON, verifica su hash PDF en cualquier momento o ponlo a la venta."
+        }
+      ]
+    },
+    "tradingOptions": {
+      "tag": "Liquidación Directa",
+      "headline": "Ventas Directas de NFT con Términos Acordados",
+      "subheadline": "Las ventas de NFT en Shake se liquidan directamente entre comprador y vendedor mediante autorización mutua de billetera con una tarifa fija del 0.1%.",
+      "directSale": {
+        "title": "Venta Directa de NFT al 0.1%",
+        "fee": "Tarifa del 0.1% Incluida",
+        "badge": "Custodia Instantánea",
+        "description": "Selecciona un NFT de tu propiedad, establece el precio y los términos de entrega o devolución acordados, e invita a un comprador.",
+        "features": [
+          "Establece el precio y los términos acordados de entrega o devolución",
+          "Ambas partes revisan y autorizan con billeteras conectadas",
+          "Transferencia atómica directa de fondos y custodia del NFT en la cadena",
+          "Tarifa plana del 0.1% incluida en el precio (tarifas de red independientes)",
+          "La transferencia del NFT confirma la custodia en cadena, no la entrega física"
+        ],
+        "bestFor": "Ideal para: NFTs de activos físicos del mundo real e imágenes digitales con licencia."
+      },
+      "escrowSale": {
+        "title": "Escrow para Bienes No-NFT",
+        "fee": "Tarifa del 0.1% al 1%",
+        "badge": "Transacciones Ordinarias",
+        "description": "Shake separa el comercio ordinario del marketplace de las transferencias directas de propiedad de NFT.",
+        "features": [
+          "Transacciones de NFT: se liquidan directamente con términos acordados sin escrow",
+          "Las ventas directas de NFT tienen una tarifa del 0.1% incluida en el precio",
+          "Transacciones ordinarias: utilizan custodia en contrato inteligente (0 a 180 días)",
+          "Protección contra disputas con árbitro neutral (Temporizado o 2-de-3)",
+          "Publicaciones en Marketplace: listados ordinarios conservan escrow; listados NFT usan términos directos"
+        ],
+        "bestFor": "Las transacciones ordinarias usan escrow; las ventas de NFT usan términos de venta directa."
+      }
+    },
+    "marketplaceIntegration": {
+      "tag": "Llega a Más Compradores",
+      "headline": "Convierte Listados en Publicaciones del Marketplace de Telegram",
+      "description": "¿Quieres la máxima visibilidad para tu NFT? Con un solo toque, publica tu tarjeta de listado—con fotos, código de referencia de 3 palabras, precio y términos—directamente en el canal de Telegram Shake P2P Marketplace.",
+      "bullet1": "Las ventas directas de NFT se ejecutan de inmediato mediante @ShakeDefiBot o la mini app de Shake",
+      "bullet2": "Las transacciones con custodia conservan su duración completa y condiciones de disputa",
+      "bullet3": "Explora y descubre listados desde cualquier app de Telegram en todo el mundo",
+      "cta": "Explorar Marketplace en Telegram"
+    },
+    "security": {
+      "tag": "Seguridad y Arquitectura",
+      "headline": "Pruebas Criptográficas de Grado Empresarial",
+      "cards": [
+        {
+          "title": "ERC-721 y TON No Custodiales",
+          "description": "Mantienes el 100% de la autocustodia. Shake nunca posee tus claves privadas, y los NFTs existentes pueden transferirse a cualquier billetera externa sin restricciones."
+        },
+        {
+          "title": "Referencias Permanentes de 3 Palabras",
+          "description": "Cada referencia de activo se resuelve en tres palabras clave memorables, vinculadas permanentemente en la cadena con el token y el documento."
+        },
+        {
+          "title": "Hashes de Documentos Inviolables",
+          "description": "El hash SHA-256 exacto de tu PDF de propiedad firmado y metadatos queda grabado permanentemente en el contrato inteligente para auditoría verificable."
+        },
+        {
+          "title": "Controles de Privacidad Delimitados",
+          "description": "Los PDFs de propiedad y las imágenes son públicos para la visibilidad en el mercado; las pruebas de cámara permanecen privadas con acceso delimitado para auditoría del comprador."
+        }
+      ]
+    },
+    "faq": {
+      "tag": "¿Tienes Preguntas?",
+      "headline": "Preguntas Frecuentes sobre NFTs",
+      "subheadline": "Todo lo que necesitas saber sobre acuñación de activos físicos, licencias digitales y comercio en Shake.",
+      "ctaText": "¿Tienes más preguntas? Consulta nuestra página completa de preguntas frecuentes",
+      "ctaLink": "/faq"
+    },
+    "finalCta": {
+      "headline": "¿Listo para Acuñar o Comerciar Tu Primer NFT?",
+      "description": "Conecta tu billetera, firma tu título de propiedad y emite tu activo real o imagen digital en Base o TON en minutos.",
+      "cta": "Empezar",
+      "subtext": "Disponible en iOS, Android, Telegram, Farcaster y Navegador Web • No custodial"
     }
   }
 }

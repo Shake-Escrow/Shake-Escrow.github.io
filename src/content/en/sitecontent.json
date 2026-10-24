@@ -6,8 +6,8 @@
         "path": "/"
       },
       {
-        "title": "How it Works",
-        "path": "/how-it-works"
+        "title": "NFT",
+        "path": "/nft"
       },
       {
         "title": "Marketplace",
@@ -35,8 +35,17 @@
         ]
       },
       {
-        "title": "FAQ",
-        "path": "/faq"
+        "title": "Questions?",
+        "sublinks": [
+          {
+            "title": "How it Works",
+            "path": "/how-it-works"
+          },
+          {
+            "title": "FAQ",
+            "path": "/faq"
+          }
+        ]
       }
     ]
   },
@@ -305,6 +314,10 @@
         "url": "/"
       },
       {
+        "label": "NFT",
+        "url": "/nft"
+      },
+      {
         "label": "How it Works",
         "url": "/how-it-works"
       },
@@ -499,6 +512,38 @@
       {
         "question": "Can I earn money as an arbiter?",
         "answer": "With 2-of-3 escrow, buyer and merchant choose their own arbiter. The arbiter acts as a tie-breaker in disputes and earns a 0.5% commission on the transaction amount."
+      },
+      {
+        "question": "How do Physical Asset NFTs work on Shake?",
+        "answer": "Shake lets you mint an NFT representing a real-world physical asset you own (such as a vehicle, watch, equipment, or collectible) on the Ethereum Base network (ERC-721) or TON. You document the item with photos and descriptions or attach an existing ownership PDF deed. Both parties review and sign a legally binding ownership agreement on their devices, and you authorize minting with your connected wallet. The smart contract permanently binds the asset reference, signed document hash, and metadata on-chain."
+      },
+      {
+        "question": "Do NFT sales use smart-contract escrow?",
+        "answer": "No. NFT sales on Shake use direct sales rather than escrow. You select an owned NFT, set the price and delivery or return terms, and invite a buyer. Both parties review the terms before wallet authorization. Follow payment and NFT delivery through blockchain confirmation. Direct NFT sales carry a 0.1% fee included in the price; network fees are separate. NFT transfer confirms on-chain custody, not physical delivery.\n\nSmart-contract escrow (timed escrow and 2-of-3 escrow) is available for ordinary transactions such as marketplace goods, vehicles, wholesale commodities, and services, whereas NFT sales use agreed direct sale terms without escrow."
+      },
+      {
+        "question": "Which blockchains and wallet standards are supported for Shake NFTs?",
+        "answer": "Shake supports the **Ethereum Base network** (as standard ERC-721 tokens via the ShakeAssetNFT contract) and **TON (The Open Network)** (as native NFT items). Shake NFTs are fully non-custodial: once minted, you can hold them, view their on-chain commitments, or transfer them to any external wallet using standard wallet transfers without needing Shake permission."
+      },
+      {
+        "question": "How does Shake protect private verification evidence for NFTs?",
+        "answer": "Shake uses a dual-layer privacy model:\n- **Public data**: The ownership PDF agreement, NFT metadata, description, and item photos are public and verifiable against the recorded on-chain document hash.\n- **Private evidence**: Front-facing camera photos and signer verification captured during agreement signing remain private and encrypted. Only an authorized buyer or auditor with scoped access can inspect this evidence during a sale or dispute."
+      },
+      {
+        "question": "What rights are included when minting a Digital Image NFT?",
+        "answer": "When you mint a digital-image NFT on Shake, you grant the buyer personal and commercial use rights under a signed cryptographic license agreement. The underlying copyright stays with its original rights holder, providing clear legal protection for both creator and collector."
+      },
+      {
+        "question": "Can I transfer or sell my Shake NFTs outside of Shake?",
+        "answer": "Yes. Shake NFTs are standard ERC-721 tokens on Base and standard NFT items on TON. Existing NFTs have ordinary, unrestricted transfers. You can send them to any compatible Web3 wallet or secondary marketplace. Pausing Shake minting services does not restrict existing NFT transfers."
+      },
+      {
+        "question": "What are the fees for minting and trading NFTs?",
+        "answer": "Direct NFT sales carry a flat 0.1% fee included in the price; blockchain network gas fees are paid separately to the network. Smart-contract escrow fees (0.1% to 1%) apply to ordinary non-NFT transactions. Shake never charges subscription fees for holding or transferring your NFTs."
+      },
+      {
+        "question": "What is the 3-keyword asset reference code?",
+        "answer": "Every physical asset minted on Shake is assigned a permanent numeric asset reference on-chain. Shake's backend resolves each permanent reference to three memorable keywords (for example: *falcon • summit • ember*). This makes it intuitive for buyers, sellers, and arbiters to verify and look up the specific item and its associated smart contract deed."
       }
     ],
     "cta": {
@@ -735,6 +780,10 @@
         "other": {
           "title": "Other Transactions",
           "description": "Create an escrow transaction whenever both parties want payment held according to agreed terms."
+        },
+        "nfts": {
+          "title": "Physical Asset & Digital NFTs",
+          "description": "Mint and trade ownership NFTs for physical items or digital art with a flat 0.1% direct sale fee and signed ownership terms."
         }
       }
     },
@@ -792,6 +841,221 @@
           "description": "Interact seamlessly within the decentralized social feed"
         }
       }
+    },
+    "nftHighlight": {
+      "tag": "NFTs & Real-World Assets",
+      "headline": "Direct NFT Sales with Signed Legal Terms",
+      "lead": "Shake bridges real-world property and digital media with blockchain tokens on Base and TON.",
+      "body": "Whether minting an NFT backed by a signed ownership deed for a vehicle, equipment, or collector item, or trading digital artwork with commercial use rights, Shake provides direct wallet-to-wallet settlement with a flat 0.1% fee. (Note: Smart-contract escrow protects ordinary goods and services, while NFT sales use agreed direct sale terms without escrow.)",
+      "cta": "Explore NFT Features",
+      "bullet1": "Permanent 3-word reference code and verifiable on-chain document hash",
+      "bullet2": "0.1% direct sale fee with mutual wallet-authorized settlement",
+      "bullet3": "Unrestricted ERC-721 and TON non-custodial wallet transfers"
+    }
+  },
+  "nft": {
+    "seo": {
+      "title": "Physical Asset & Digital NFTs | Shake DeFi",
+      "description": "Mint, verify, and trade NFTs representing real-world physical assets or digital images on Base and TON with 0.1% direct wallet-authorized sales."
+    },
+    "hero": {
+      "chip": "Base (ERC-721) & TON Networks",
+      "headline": "Real-World Ownership.\nMinted on Blockchain.",
+      "subheadline": "Mint NFTs for physical real-world assets or digital images with signed legal ownership deeds and cryptographic proof.",
+      "description": "Shake DeFi connects real-world property to smart contracts. Review and sign ownership PDFs, authoritatively mint on Base or TON, and trade with instant 0.1% direct sales with agreed terms.",
+      "primaryCta": "Get Started",
+      "secondaryCta": "Browse Marketplace",
+      "tertiaryCta": "Chat with @ShakeDefiBot",
+      "availableOn": "Available on:",
+      "platforms": "Telegram • Browser • iOS • Android • Farcaster"
+    },
+    "interactivePreview": {
+      "badge": "Interactive Asset Inspector",
+      "title": "Dual-Layer Verification: Public Deeds & Private Audit Evidence",
+      "description": "Every Shake NFT binds on-chain token custody with permanent legal commitments. Explore how a real-world physical asset differs from a digital license.",
+      "tabs": {
+        "physical": "Physical Asset NFT (RWA)",
+        "digital": "Digital Image NFT"
+      },
+      "physical": {
+        "badge": "Example Real-World Asset (ERC-721)",
+        "assetName": "1968 Vintage Chronograph Watch",
+        "refCode": "falcon • summit • ember",
+        "network": "Ethereum Base (ERC-721)",
+        "tokenId": "#08412",
+        "status": "Verified On-Chain",
+        "docHash": "0x4f92...c8a1 (Signed Deed PDF)",
+        "evidenceHash": "0x9e17...4b3d (Camera Evidence)",
+        "description": "Physical asset backed by cryptographic legal declaration, high-resolution condition photos, and verifiable front-facing signing camera capture.",
+        "publicDataLabel": "Public on Blockchain & IPFS",
+        "publicDataItems": [
+          "Ownership PDF Deed & terms",
+          "Asset photographs & condition notes",
+          "Permanent 3-word reference code",
+          "Immutable on-chain token ID"
+        ],
+        "privateDataLabel": "Private & Encrypted",
+        "privateDataItems": [
+          "Signer camera verification evidence",
+          "Timestamped GPS device telemetry",
+          "Scoped buyer-audit access only"
+        ]
+      },
+      "digital": {
+        "badge": "Example Digital Image & License",
+        "assetName": "Cybernetic Genesis #042",
+        "refCode": "neon • orbit • prism",
+        "network": "TON Network (The Open Network)",
+        "tokenId": "#01829",
+        "status": "Active License",
+        "docHash": "0x3a71...f2e0 (Signed Commercial License)",
+        "evidenceHash": "0x1b44...7c92 (Licensee Verification)",
+        "description": "Digital artwork minted with explicit personal and commercial usage rights granted under a signed license agreement. Copyright remains with the creator.",
+        "publicDataLabel": "Public Rights & Asset",
+        "publicDataItems": [
+          "High-resolution digital artwork",
+          "Signed commercial license terms",
+          "Creator cryptographic signature",
+          "Direct resale authorization"
+        ],
+        "privateDataLabel": "Protected License Terms",
+        "privateDataItems": [
+          "Commercial sublicense registry",
+          "Original high-bitrate master file",
+          "Authorized wallet verification"
+        ]
+      }
+    },
+    "assetTypes": {
+      "tag": "Asset Classes",
+      "headline": "Two Ways to Mint: Physical & Digital",
+      "subheadline": "Whether bridging tangible physical property or creating digital art with commercial utility, Shake provides legally structured on-chain issuance.",
+      "physical": {
+        "tag": "Tangible Real-World Assets",
+        "title": "Physical Asset NFTs (RWA)",
+        "description": "Transform vehicles, machinery, electronics, luxury watches, and real property into verifiable, transferable blockchain tokens.",
+        "points": [
+          "Mint on Base (ERC-721) or TON using photos and condition reports, or upload an existing PDF title/deed.",
+          "Both parties sign a legally binding ownership agreement directly on their devices.",
+          "Permanent numeric asset reference mapped to 3 memorable keywords for easy lookup.",
+          "Public ownership deed with private signing-camera evidence access."
+        ]
+      },
+      "digital": {
+        "tag": "Creative & Commercial Media",
+        "title": "Digital Image NFTs",
+        "description": "Mint digital image artwork with built-in personal and commercial usage rights protected by a signed license.",
+        "points": [
+          "Retain your copyright while granting verifiable personal and commercial use rights to buyers.",
+          "Standardized digital license terms signed cryptographically with your wallet.",
+          "Trade freely across Base and TON secondary marketplaces without lock-in.",
+          "Included 0.1% direct sale fee with instantaneous wallet transfer."
+        ]
+      }
+    },
+    "mintingProcess": {
+      "tag": "How Minting Works",
+      "headline": "From Real-World Property to On-Chain Asset in 4 Steps",
+      "subheadline": "Minting creates an ownership NFT for you without requiring a buyer, payment, or escrow transaction up front.",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Document Your Asset",
+          "description": "Upload high-resolution photos and description, or attach an existing ownership PDF deed, vehicle title, or certificate of authenticity."
+        },
+        {
+          "step": "2",
+          "title": "Sign the Ownership Agreement",
+          "description": "Review the generated ownership declaration. Sign on-screen while your device captures front-facing camera verification to establish cryptographic accountability."
+        },
+        {
+          "step": "3",
+          "title": "Authorize Minting With Your Wallet",
+          "description": "Authorize the minting transaction with your connected wallet (Coinbase Embedded, Tonkeeper, Telegram, Farcaster, or MetaMask) on Base or TON."
+        },
+        {
+          "step": "4",
+          "title": "Hold, Transfer, or Sell",
+          "description": "Your NFT is now minted in your wallet. Freely transfer it with standard ERC-721/TON transfers, verify its PDF hash anytime, or list it for sale."
+        }
+      ]
+    },
+    "tradingOptions": {
+      "tag": "Direct Settlement",
+      "headline": "Direct NFT Sales with Agreed Terms",
+      "subheadline": "NFT sales on Shake settle directly between buyer and seller upon mutual wallet authorization with a flat 0.1% fee.",
+      "directSale": {
+        "title": "0.1% Direct NFT Sale",
+        "fee": "0.1% Fee Included",
+        "badge": "Instant Custody",
+        "description": "Select an owned NFT, set the price and delivery or return terms, and invite a buyer.",
+        "features": [
+          "Set price and agreed delivery or return terms",
+          "Both parties review and authorize with connected wallets",
+          "Direct atomic transfer of funds and NFT custody on-chain",
+          "Flat 0.1% fee included in the price (network fees separate)",
+          "NFT transfer confirms on-chain custody, not physical delivery"
+        ],
+        "bestFor": "Ideal for: Real-world physical asset NFTs and licensed digital images."
+      },
+      "escrowSale": {
+        "title": "Escrow for Non-NFT Goods",
+        "fee": "0.1% – 1% Fee",
+        "badge": "Ordinary Transactions",
+        "description": "Shake separates ordinary marketplace commerce from direct NFT ownership transfers.",
+        "features": [
+          "NFT transactions: settle directly using agreed terms without escrow",
+          "Direct NFT sales carry a 0.1% fee included in the price",
+          "Ordinary transactions: use smart-contract escrow (0–180 days)",
+          "Escrow dispute protection with neutral human arbiter (Timed or 2-of-3)",
+          "Marketplace posts: ordinary listings retain escrow; NFT listings use direct sale terms"
+        ],
+        "bestFor": "Ordinary transactions use escrow; NFT sales use agreed direct sale terms."
+      }
+    },
+    "marketplaceIntegration": {
+      "tag": "Reach More Buyers",
+      "headline": "Turn Listings Into Telegram Marketplace Posts",
+      "description": "Want maximum visibility for your NFT? With a single tap, broadcast your listing card—including photos, 3-word reference code, price, and terms—directly to the Shake P2P Marketplace Telegram channel.",
+      "bullet1": "Direct NFT sales execute immediately via @ShakeDefiBot or the Shake mini-app",
+      "bullet2": "Escrow transactions retain their full escrow duration and dispute terms",
+      "bullet3": "Browse and discover listings from any Telegram app worldwide",
+      "cta": "Explore Telegram Marketplace"
+    },
+    "security": {
+      "tag": "Security & Architecture",
+      "headline": "Enterprise-Grade Cryptographic Proofs",
+      "cards": [
+        {
+          "title": "Non-Custodial ERC-721 & TON",
+          "description": "You maintain 100% self-custody. Shake never holds your private keys, and existing NFTs can be transferred to any external wallet without restrictions."
+        },
+        {
+          "title": "Permanent 3-Word References",
+          "description": "Each asset reference resolves to three memorable keywords, permanently bound on-chain to the token and document commitments."
+        },
+        {
+          "title": "Tamper-Proof Document Hashes",
+          "description": "The exact SHA-256 hash of your signed ownership PDF and metadata is permanently engraved into the smart contract for verifiable auditability."
+        },
+        {
+          "title": "Scoped Privacy Controls",
+          "description": "Ownership PDFs and NFT images are public for marketplace discovery; signing-camera evidence stays private with optional, scoped buyer-audit access."
+        }
+      ]
+    },
+    "faq": {
+      "tag": "Got Questions?",
+      "headline": "NFT Frequently Asked Questions",
+      "subheadline": "Everything you need to know about physical asset minting, digital licenses, and trading on Shake.",
+      "ctaText": "Have more questions? Check our full FAQ page",
+      "ctaLink": "/faq"
+    },
+    "finalCta": {
+      "headline": "Ready to Mint or Trade Your First NFT?",
+      "description": "Connect your wallet, sign your ownership deed, and issue your real-world asset or digital image on Base or TON in minutes.",
+      "cta": "Get Started",
+      "subtext": "Available on iOS, Android, Telegram, Farcaster, and Web Browser • Non-custodial"
     }
   }
 }
