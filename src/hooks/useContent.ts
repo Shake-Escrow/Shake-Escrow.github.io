@@ -1,4 +1,5 @@
 import { useLocale, type Locale } from '../context/LocaleContext';
+import { resolveContentPlaceholders } from '../utils/contentPlaceholders';
 
 import enSite    from '../content/en/sitecontent.json';
 import esSite    from '../content/es/sitecontent.json';
@@ -26,7 +27,16 @@ const registry: Record<Locale, {
 
 type ContentKey = keyof typeof registry.en;
 
+const resolvedContent = new Map<string, unknown>();
+
 export function useContent<K extends ContentKey>(key: K): typeof registry['en'][K] {
   const { locale } = useLocale();
-  return (registry[locale] ?? registry.en)[key];
+  const resolvedLocale: Locale = registry[locale] ? locale : 'en';
+  const cacheKey = `${resolvedLocale}:${key}`;
+  const cached = resolvedContent.get(cacheKey);
+  if (cached) return cached as typeof registry['en'][K];
+
+  const resolved = resolveContentPlaceholders(registry[resolvedLocale][key]);
+  resolvedContent.set(cacheKey, resolved);
+  return resolved;
 }

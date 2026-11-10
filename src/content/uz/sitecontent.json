@@ -303,7 +303,6 @@
   },
   "footer": {
     "tagline": "Kriptoning haqiqiy hayotdagi tranzaksiyalar uchun foydalanishga yaroqliligini taʼminlash",
-    "disclaimer": "Shake Defi, Inc. — Viskonsin shtati qonunlariga muvofiq tashkil etilgan korporatsiya.",
     "quickLinksLabel": "Tezkor havolalar",
     "privacyPolicyLabel": "Maxfiylik siyosati",
     "eulaLabel": "Yakuniy foydalanuvchi litsenziya shartnomasi",
@@ -507,7 +506,7 @@
       },
       {
         "question": "Shake Defi qayerda roʻyxatdan oʻtgan?",
-        "answer": "Shake Defi, Inc. AQSh, Viskonsin shtati, Brukfild shahrida roʻyxatdan oʻtgan."
+        "answer": "Shake Defi, Inc. {{COMPANY_COUNTRY_UZ}}, {{COMPANY_STATE_UZ}} shtati, {{COMPANY_CITY_UZ}} shahrida roʻyxatdan oʻtgan."
       },
       {
         "question": "Hakam sifatida pul ishlashim mumkinmi?",
@@ -801,7 +800,7 @@
     "legal": {
       "headline": "Muhim maʼlumot",
       "paragraphs": [
-        "Shake DeFi, Inc. — Viskonsin shtati qonunlariga muvofiq tashkil etilgan korporatsiya.",
+        "Shake DeFi, Inc. — {{COMPANY_STATE_UZ}} shtati qonunlariga muvofiq tashkil etilgan korporatsiya.",
         "Shake xizmatlari va uchinchi tomon integratsiyalari geografik va boshqa mavjudlik cheklovlariga boʻysunadi. Coinbase va boshqa uchinchi tomon xizmatlari barcha mamlakatlarda mavjud emas.",
         "Kriptovalyuta tranzaksiyalari soliq va boshqa huquqiy oqibatlarga olib kelishi mumkin. Foydalanuvchilar tegishli qonunlar va soliq talablarini tushunish va ularga rioya qilish uchun javobgardir.",
         "Shake 18 yosh va undan katta foydalanuvchilar uchun moʻljallangan."

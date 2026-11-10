@@ -240,7 +240,7 @@
         },
         {
           "subtitle": "15.5 Aloqa ma'lumotlari",
-          "content": "Ushbu Shartlar yoki Xizmatlar haqida savollar bo'yicha, iltimos, quyidagilar bilan bog'laning:\n\nShake Defi, Inc.\nElektron pochta: contact@shakedefi.com\nManzil: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>VEB ILOVA VA XIZMATLARDAN FOYDALANISH ORQALI SIZ USHBU SHARTLARNI O'QIGANINGIZNI, TUSHUNGANINGIZNI VA ULARGA RIOYA QILISHGA ROZI BO'LGANINGIZNI TAN OLASIZ.</strong>"
+          "content": "Ushbu Shartlar yoki Xizmatlar haqida savollar bo'yicha, iltimos, quyidagilar bilan bog'laning:\n\nShake Defi, Inc.\nElektron pochta: contact@shakedefi.com\nManzil: {{COMPANY_ADDRESS_ONELINE}}\n\n<strong>VEB ILOVA VA XIZMATLARDAN FOYDALANISH ORQALI SIZ USHBU SHARTLARNI O'QIGANINGIZNI, TUSHUNGANINGIZNI VA ULARGA RIOYA QILISHGA ROZI BO'LGANINGIZNI TAN OLASIZ.</strong>"
         }
       ]
     }

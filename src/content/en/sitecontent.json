@@ -303,7 +303,6 @@
   },
   "footer": {
     "tagline": "Enabling crypto's usability for real world transactions",
-    "disclaimer": "Shake Defi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
     "quickLinksLabel": "Quick Links",
     "privacyPolicyLabel": "Privacy Policy",
     "eulaLabel": "End User License Agreement",
@@ -507,7 +506,7 @@
       },
       {
         "question": "Where is Shake Defi incorporated?",
-        "answer": "Shake Defi, Inc. is incorporated in Brookfield, Wisconsin, United States ."
+        "answer": "Shake Defi, Inc. is incorporated in {{COMPANY_CITY_STATE}}, {{COMPANY_COUNTRY}} ."
       },
       {
         "question": "Can I earn money as an arbiter?",
@@ -801,7 +800,7 @@
     "legal": {
       "headline": "Important Information",
       "paragraphs": [
-        "Shake DeFi, Inc. is a corporation organized under the laws of the State of Wisconsin.",
+        "Shake DeFi, Inc. is a corporation organized under the laws of the State of {{COMPANY_STATE}}.",
         "Shake services and third-party integrations are subject to geographic and other availability restrictions. Coinbase and other third-party services are not available in all countries.",
         "Cryptocurrency transactions may have tax and other legal consequences. Users are responsible for understanding and complying with applicable laws and tax requirements.",
         "Shake is intended for users age 18 and older."

@@ -425,13 +425,13 @@
         },
         {
           "subtitle": "17.10 Notices",
-          "content": "All notices to the Company under these Terms shall be sent to:\n\nShake Defi, Inc.\nEmail: contact@shakedefi.com\nAddress: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nNotices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
+          "content": "All notices to the Company under these Terms shall be sent to:\n\nShake Defi, Inc.\nEmail: contact@shakedefi.com\nAddress: {{COMPANY_ADDRESS_ONELINE}}\n\nNotices to you may be sent to the email address or physical address associated with your account. You agree that electronic notices shall satisfy any legal communication requirements."
         }
       ]
     },
     {
       "title": "18. Contact Information",
-      "content": "For questions about these Terms or the Services, please contact us at:\n\n<strong>Shake Defi, Inc.</strong>\nEmail: contact@shakedefi.com\nAddress: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS, TOGETHER WITH THE END USER LICENSE AGREEMENT AND PRIVACY POLICY, CONSTITUTE THE COMPLETE AND EXCLUSIVE AGREEMENT BETWEEN YOU AND SHAKE DEFI, INC. REGARDING YOUR USE OF THE SERVICES.</strong>"
+      "content": "For questions about these Terms or the Services, please contact us at:\n\n<strong>Shake Defi, Inc.</strong>\nEmail: contact@shakedefi.com\nAddress: {{COMPANY_ADDRESS_ONELINE}}\n\n<strong>BY USING THE SERVICES, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THESE TERMS OF SERVICE. YOU FURTHER ACKNOWLEDGE THAT THESE TERMS, TOGETHER WITH THE END USER LICENSE AGREEMENT AND PRIVACY POLICY, CONSTITUTE THE COMPLETE AND EXCLUSIVE AGREEMENT BETWEEN YOU AND SHAKE DEFI, INC. REGARDING YOUR USE OF THE SERVICES.</strong>"
     }
   ],
   "previousPublishedEffectiveDate": "October 5, 2026",

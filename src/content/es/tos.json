@@ -425,13 +425,13 @@
         },
         {
           "subtitle": "17.10 Notificaciones",
-          "content": "Todas las notificaciones a la Empresa bajo estos Términos deben enviarse a:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nLas notificaciones para usted pueden enviarse a la dirección de correo electrónico o dirección física asociada con su cuenta. Usted acepta que las notificaciones electrónicas satisfarán cualquier requisito legal de comunicación."
+          "content": "Todas las notificaciones a la Empresa bajo estos Términos deben enviarse a:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: {{COMPANY_ADDRESS_ONELINE}}\n\nLas notificaciones para usted pueden enviarse a la dirección de correo electrónico o dirección física asociada con su cuenta. Usted acepta que las notificaciones electrónicas satisfarán cualquier requisito legal de comunicación."
         }
       ]
     },
     {
       "title": "18. Información de Contacto",
-      "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con nosotros en:\n\n<strong>Shake Defi, Inc.</strong>\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>AL USAR LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, COMPRENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS DE SERVICIO. ADEMÁS, USTED RECONOCE QUE ESTOS TÉRMINOS, JUNTO CON EL ACUERDO DE LICENCIA DE USUARIO FINAL Y LA POLÍTICA DE PRIVACIDAD, CONSTITUYEN EL ACUERDO COMPLETO Y EXCLUSIVO ENTRE USTED Y SHAKE DEFI, INC. CON RESPECTO A SU USO DE LOS SERVICIOS.</strong>"
+      "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con nosotros en:\n\n<strong>Shake Defi, Inc.</strong>\nCorreo electrónico: contact@shakedefi.com\nDirección: {{COMPANY_ADDRESS_ONELINE}}\n\n<strong>AL USAR LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, COMPRENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS DE SERVICIO. ADEMÁS, USTED RECONOCE QUE ESTOS TÉRMINOS, JUNTO CON EL ACUERDO DE LICENCIA DE USUARIO FINAL Y LA POLÍTICA DE PRIVACIDAD, CONSTITUYEN EL ACUERDO COMPLETO Y EXCLUSIVO ENTRE USTED Y SHAKE DEFI, INC. CON RESPECTO A SU USO DE LOS SERVICIOS.</strong>"
     }
   ],
   "previousPublishedEffectiveDate": "5 de octubre de 2026",

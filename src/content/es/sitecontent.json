@@ -303,7 +303,6 @@
   },
   "footer": {
     "tagline": "Habilitando el uso de cripto para transacciones del mundo real",
-    "disclaimer": "Shake Defi, Inc. es una corporación organizada bajo las leyes del Estado de Wisconsin.",
     "quickLinksLabel": "Enlaces Rápidos",
     "privacyPolicyLabel": "Política de Privacidad",
     "eulaLabel": "Acuerdo de Licencia de Usuario Final",
@@ -507,7 +506,7 @@
       },
       {
         "question": "¿Dónde está incorporado Shake Defi?",
-        "answer": "Shake Defi, Inc. está incorporado en Brookfield, Wisconsin, Estados Unidos."
+        "answer": "Shake Defi, Inc. está incorporado en {{COMPANY_CITY_STATE}}, {{COMPANY_COUNTRY_ES}}."
       },
       {
         "question": "¿Puedo ganar dinero como árbitro?",
@@ -801,7 +800,7 @@
     "legal": {
       "headline": "Información Importante",
       "paragraphs": [
-        "Shake DeFi, Inc. es una corporación organizada bajo las leyes del Estado de Wisconsin.",
+        "Shake DeFi, Inc. es una corporación organizada bajo las leyes del Estado de {{COMPANY_STATE}}.",
         "Los servicios de Shake y las integraciones de terceros están sujetos a restricciones geográficas y de otro tipo de disponibilidad. Coinbase y otros servicios de terceros no están disponibles en todos los países.",
         "Las transacciones de criptomonedas pueden tener consecuencias fiscales y legales. Los usuarios son responsables de comprender y cumplir con las leyes y requisitos fiscales aplicables.",
         "Shake está destinado a usuarios de 18 años o más."

@@ -425,13 +425,13 @@
         },
         {
           "subtitle": "17.10 Bildirishnomalar",
-          "content": "Ushbu Shartlar bo'yicha Kompaniyaga yuboriladigan barcha bildirishnomalar quyidagi manzilga yuborilishi shart:\n\nShake Defi, Inc.\nElektron pochta: contact@shakedefi.com\nManzil: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\nSizga yuboriladigan bildirishnomalar hisobingizga bog'langan elektron pochta manziliga yoki jismoniy manzilga yuborilishi mumkin. Siz elektron bildirishnomalar har qanday qonuniy aloqa talablariga javob berishiga rozilik bildirasiz."
+          "content": "Ushbu Shartlar bo'yicha Kompaniyaga yuboriladigan barcha bildirishnomalar quyidagi manzilga yuborilishi shart:\n\nShake Defi, Inc.\nElektron pochta: contact@shakedefi.com\nManzil: {{COMPANY_ADDRESS_ONELINE}}\n\nSizga yuboriladigan bildirishnomalar hisobingizga bog'langan elektron pochta manziliga yoki jismoniy manzilga yuborilishi mumkin. Siz elektron bildirishnomalar har qanday qonuniy aloqa talablariga javob berishiga rozilik bildirasiz."
         }
       ]
     },
     {
       "title": "18. Aloqa ma'lumotlari",
-      "content": "Ushbu Shartlar yoki Xizmatlar bo'yicha savollar uchun, iltimos, biz bilan quyidagi manzil orqali bog'laning:\n\n<strong>Shake Defi, Inc.</strong>\nElektron pochta: contact@shakedefi.com\nManzil: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>XIZMATLARDAN FOYDALANISH ORQALI SIZ USHBU XIZMAT KO'RSATISH SHARTLARINI O'QIB CHIQIB, TUSHUNGANINGIZNI VA ULARGA RIOYA QILISHGA ROZI EKANINGIZNI TASDIQLAYSIZ. SIZ, SHUNINGDEK, USHBU SHARTLAR YAKUNIY FOYDALANUVCHI LITSENZIYA SHARTNOMASI VA MAXFIYLIK SIYOSATI BILAN BIRGALIKDA SIZNING XIZMATLARDAN FOYDALANISHINGIZ BO'YICHA SIZ VA SHAKE DEFI, INC. O'RTASIDAGI TO'LIQ VA EKSKLYUZIV SHARTNOMANI TASHKIL ETISHINI TAN OLASIZ.</strong>"
+      "content": "Ushbu Shartlar yoki Xizmatlar bo'yicha savollar uchun, iltimos, biz bilan quyidagi manzil orqali bog'laning:\n\n<strong>Shake Defi, Inc.</strong>\nElektron pochta: contact@shakedefi.com\nManzil: {{COMPANY_ADDRESS_ONELINE}}\n\n<strong>XIZMATLARDAN FOYDALANISH ORQALI SIZ USHBU XIZMAT KO'RSATISH SHARTLARINI O'QIB CHIQIB, TUSHUNGANINGIZNI VA ULARGA RIOYA QILISHGA ROZI EKANINGIZNI TASDIQLAYSIZ. SIZ, SHUNINGDEK, USHBU SHARTLAR YAKUNIY FOYDALANUVCHI LITSENZIYA SHARTNOMASI VA MAXFIYLIK SIYOSATI BILAN BIRGALIKDA SIZNING XIZMATLARDAN FOYDALANISHINGIZ BO'YICHA SIZ VA SHAKE DEFI, INC. O'RTASIDAGI TO'LIQ VA EKSKLYUZIV SHARTNOMANI TASHKIL ETISHINI TAN OLASIZ.</strong>"
     }
   ],
   "previousPublishedEffectiveDate": "2026-yil 5-oktabr",

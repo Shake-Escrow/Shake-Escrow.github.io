@@ -29,11 +29,10 @@ const Footer: React.FC<FooterProps> = ({ platform = 'android' }) => {
     <footer className="bg-white text-[#2d3440]">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 items-start">
-          {/* First column: logo, tagline, disclaimer (left-aligned, col-span-2) */}
+          {/* First column: logo and tagline (left-aligned, col-span-2) */}
           <div className="lg:col-span-2 flex flex-col items-start space-y-2">
             <img src="/images/shake-logo_horizontal_color.png" alt="Shake Logo" className="h-16 w-auto mb-2" />
             <div className="font-semibold text-lg font-body text-[#2d3440] mb-1 break-words text-left">{siteContent.footer.tagline}</div>
-            <div className="text-sm font-body text-[#2d3440] opacity-70 mt-1 text-left">{siteContent.footer.disclaimer}</div>
           </div>
           {/* Second column: QR code, centered */}
           <div className="lg:col-span-1 flex justify-center items-center">

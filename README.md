@@ -126,6 +126,20 @@ This is a GitHub User Pages setup (URL: `https://github.com/Shake-Escrow/Shake-E
 - **`public/sitemap.xml`**: Provides search engines with a structured list of all the URLs on the website to help them index the site.
 - **`public/llms.txt`**: A newer standard designed to guide AI models and LLM crawlers to markdown-friendly versions of the site content.
 
+## Legal content
+
+Terms, privacy, and the web license are maintained in the `legal` repository (`legal/json_en`, `legal/json_es`, and `legal/json_uz`) and copied into `src/content`. The company address lives in `legal/company-address.json`. Legal text uses `{{COMPANY_*}}` tokens instead of a written street. The website fills those tokens from `src/config/company-address.json` when it renders.
+
+The license placeholders `{{REFUND_PROTOCOL_ETH_BASE}}` and `{{REFUND_PROTOCOL_USDC_BASE}}` are the Base refund-protocol addresses. Their source is `Shake-MobileApp/app/utils/EvmSmartContracts.ts` (`base.refundProtocolETH` and `base.refundProtocolUSDC`). The mobile app license screen reads those fields directly. This site reads the copy in `src/config/refundProtocolContracts.ts`.
+
+From the Shake-MobileApp repository, run:
+
+```
+node scripts/sync-nft-signing-legal.cjs
+```
+
+That copies terms, privacy, licenses, and the company address into this site and into `Shake-MobileApp/assets/legaldocs`, and writes the Base contract addresses to `src/config/refundProtocolContracts.ts`. After an address change in `EvmSmartContracts.ts`, run the script again before publishing the website.
+
 ## Custom Scripts
 Add these to `package.json` (already included):
 - `"build:full": "npm run build && npm run generate-privacy"` → Full prod build + static gen.

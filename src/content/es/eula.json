@@ -240,7 +240,7 @@
         },
         {
           "subtitle": "15.5 Información de Contacto",
-          "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: 280 N. Market St, Unit 321, Brookfield, WI 53045\n\n<strong>AL USAR LA APP WEB Y LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, ENTENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS.</strong>"
+          "content": "Para preguntas sobre estos Términos o los Servicios, comuníquese con:\n\nShake Defi, Inc.\nCorreo electrónico: contact@shakedefi.com\nDirección: {{COMPANY_ADDRESS_ONELINE}}\n\n<strong>AL USAR LA APP WEB Y LOS SERVICIOS, USTED RECONOCE QUE HA LEÍDO, ENTENDIDO Y ACEPTA ESTAR SUJETO A ESTOS TÉRMINOS.</strong>"
         }
       ]
     }

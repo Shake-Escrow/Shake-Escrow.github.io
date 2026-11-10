@@ -1,3 +1,8 @@
+// Copied from Shake-MobileApp/app/utils/EvmSmartContracts.ts
+// (base.refundProtocolETH and base.refundProtocolUSDC).
+// Edit the addresses there, then from the Shake-MobileApp repository run:
+// node scripts/sync-nft-signing-legal.cjs
+
 export const REFUND_PROTOCOL_ETH_BASE = '0x43F093b25E622403D596797B7F54454dAef85E15';
 export const REFUND_PROTOCOL_USDC_BASE = '0xBf6C85d19388F06037B3080cfE2924A288f7d35f';
 

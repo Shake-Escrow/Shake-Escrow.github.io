@@ -27,6 +27,7 @@ import SEO from '../components/common/seo';
 import { useLocale } from '../context/LocaleContext';
 import { useContent } from '../hooks/useContent';
 import enSite from '../content/en/sitecontent.json';
+import { resolveContentPlaceholders } from '../utils/contentPlaceholders';
 import EscrowOptions from '../components/common/escrow-options';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
@@ -45,7 +46,7 @@ const SecurePayments: React.FC = () => {
   const { locale } = useLocale();
   const [isPlatformModalOpen, setIsPlatformModalOpen] = useState(false);
   const siteContent = useContent('sitecontent');
-  const content = siteContent.securePayments || enSite.securePayments;
+  const content = siteContent.securePayments || resolveContentPlaceholders(enSite.securePayments);
 
   const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 

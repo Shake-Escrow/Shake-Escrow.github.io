@@ -24,6 +24,7 @@ interface PrivacyPolicyData {
 
 // Import your JSON (same path as in the component)
 import privacyPolicyData from '../src/content/en/privacy.json' with { type: 'json' };
+import { replaceContentPlaceholders } from '../src/utils/contentPlaceholders';
 
 const generatePrivacyHtml = async () => {
   const data: PrivacyPolicyData = privacyPolicyData;
@@ -74,7 +75,7 @@ ${effectiveDate ? `<small><strong>Effective Date:</strong> ${effectiveDate}</sma
       <small><strong>Last Updated:</strong> ${lastUpdated}</small>
     </div>
     <hr>
-${data.publicationStatus === 'not_published' && data.publicationNotice ? `<p>${data.publicationNotice}</p>` : ''}
+${data.publicationStatus === 'not_published' && data.publicationNotice ? `<p>${replaceContentPlaceholders(data.publicationNotice)}</p>` : ''}
   `;
 
   // Dynamically render sections/subsections without adding duplicate numbers
@@ -86,10 +87,10 @@ ${data.publicationStatus === 'not_published' && data.publicationNotice ? `<p>${d
       section.subsections.forEach((subsection) => {
         htmlContent += `
         <h3>${subsection.subtitle}</h3>
-        <div>${subsection.content.replace(/\n\n/g, '<br><br>')}</div>`;
+        <div>${replaceContentPlaceholders(subsection.content).replace(/\n\n/g, '<br><br>')}</div>`;
       });
     } else if (section.content) {
-      htmlContent += `<div>${section.content}</div>`;
+      htmlContent += `<div>${replaceContentPlaceholders(section.content)}</div>`;
     }
     
     htmlContent += `</div>`;

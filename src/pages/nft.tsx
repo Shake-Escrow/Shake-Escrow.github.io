@@ -29,6 +29,7 @@ import SEO from '../components/common/seo';
 import { useLocale } from '../context/LocaleContext';
 import { useContent } from '../hooks/useContent';
 import enSite from '../content/en/sitecontent.json';
+import { resolveContentPlaceholders } from '../utils/contentPlaceholders';
 
 const FARCASTER_APP_URL = 'https://farcaster.xyz/miniapps/4LNSH2r_Bkx7/shake-defi';
 
@@ -49,8 +50,8 @@ const Nft: React.FC = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const siteContent = useContent('sitecontent');
-  const content = siteContent.nft || enSite.nft;
-  const securePaymentsContent = siteContent.securePayments || enSite.securePayments;
+  const content = siteContent.nft || resolveContentPlaceholders(enSite.nft);
+  const securePaymentsContent = siteContent.securePayments || resolveContentPlaceholders(enSite.securePayments);
 
   const webAppUrl = `https://app.shakedefi.com/?lang=${encodeURIComponent(locale)}`;
 
@@ -109,7 +110,7 @@ const Nft: React.FC = () => {
   };
 
   // Find NFT-specific questions from FAQ
-  const nftFaqItems = (siteContent.faq?.questions || enSite.faq.questions).filter((q: { question: string }) =>
+  const nftFaqItems = (siteContent.faq?.questions || resolveContentPlaceholders(enSite.faq.questions)).filter((q: { question: string }) =>
     q.question.toLowerCase().includes('nft') ||
     q.question.toLowerCase().includes('asset reference') ||
     q.question.toLowerCase().includes('digital image')
