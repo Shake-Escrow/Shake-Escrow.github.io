@@ -52,7 +52,7 @@
   "home": {
     "hero": {
       "headline": "Trato hecho.",
-      "subhead": "Custodia con contrato inteligente que protege a compradores y vendedores en cada transacción con criptomonedas — sin bancos, sin intermediarios, sin esperas.",
+      "subhead": "Pide prestado cripto contra activos verificados que mantienes en tus manos, respaldado por una nota de deuda negociable en cadena que paga a quien la posea — sin bancos, sin intermediarios, sin llamadas de margen.",
       "button": "Disponible Ahora",
       "availableNowHeading": "Disponible Ahora",
       "ctaLabel": "Descarga Gratuita",
@@ -63,66 +63,66 @@
       "partnerLinkText": "socio de entrada/salida de criptomonedas"
     },
     "features": {
-      "headline": "Potencia Tu Pago\ncon Escrow Reembolsable",
+      "headline": "Préstamos Cripto con Colateral\ny Notas de Deuda Negociables",
       "items": [
         {
-          "title": "Escrow\nreembolsable",
-          "description": "Shake utiliza un escrow de contrato inteligente — como una caja fuerte digital neutral — que bloquea los fondos según reglas transparentes en la red Ethereum Base. Shake nunca retiene tu dinero, y nadie puede mover fondos fuera de los términos acordados."
+          "title": "Conserva tus Activos\nen Mano",
+          "description": "Pide prestado cripto sin desprenderte de tus bienes físicos o medios digitales. Tu NFT se custodia de forma segura en la bóveda de contrato inteligente sin custodia mientras conservas los bienes tangibles en mano."
         },
         {
-          "title": "Paga con cualquier cripto que tengas",
-          "description": "Los comerciantes establecen su moneda preferida, pero tú puedes pagar con lo que tienes — incluyendo USDC, ETH, TON, USDT, Bitcoin o ETH en staking. Usa nuestra función de intercambio integrada para adaptarte a lo que el comerciante necesita, de forma fluida y segura."
+          "title": "Nota de Deuda\nNegociable",
+          "description": "Cada préstamo origina una nota de deuda NFT transferible que paga a quien la posea. Los titulares reciben pagos mensuales regulares de capital e intereses, o pueden transferir y negociar la nota libremente en mercados secundarios."
         },
         {
-          "title": "Confía en las transacciones – y en los demás",
-          "description": "Cada transacción está sellada con una firma, y cada persona tiene una reputación, para que puedas confiar en que la persona con la que tratas es de fiar."
+          "title": "Sin Llamadas de Margen,\nAmortización Fija",
+          "description": "Los préstamos utilizan estrictamente calendarios de amortización mensual de cuota fija de 1 a 60 meses, sin oráculos de precios ni llamadas de margen. Los pagos adicionales reducen directamente el capital y disminuyen el interés total."
         },
         {
-          "title": "Conveniencia que Empodera",
-          "description": "Agrega información del producto directamente a tu contrato con herramientas de IA. Los detalles de cada transacción ofrecen una imagen más completa del intercambio, y puedes agregar todas las imágenes que quieras."
+          "title": "Paridad en\nDoble Red",
+          "description": "Origina y paga en Ethereum Base (ETH y USDC) o TON (TON nativo y USDT Jetton). Ambas redes ofrecen paridad funcional completa con bóvedas no custodiales y pruebas legales a prueba de manipulaciones."
         }
       ]
     },
     "howToUse": {
-      "headline": "Comenzar es Fácil",
-      "subhead": "Sigue estos simples pasos para comenzar con Shake.",
+      "headline": "Cómo Funcionan las Notas de Deuda Negociables",
+      "subhead": "Desde la acuñación del colateral hasta la negociación de la nota de deuda en cadena en tres sencillos pasos.",
       "steps": [
         {
-          "title": "Crea una cuenta",
-          "description": "Crea tu cuenta y completa las verificaciones de identidad que requiera tu operación."
+          "title": "Acuña el NFT colateral",
+          "description": "El prestatario acuña un NFT que representa bienes tangibles verificados o una imagen digital, con fotos, descripción e firma criptográfica en el dispositivo vinculada al título legal de propiedad."
         },
         {
-          "title": "Agrega un método de pago",
-          "description": "Financia tus pagos con criptomonedas que ya tienes, o usa Coinbase Onramp para comprar cripto directamente. ¿Necesitas otra moneda? Nuestra función de intercambio integrada te permite convertir entre criptomonedas compatibles."
+          "title": "Bloquea en bóveda y origina",
+          "description": "El NFT queda bajo custodia de la bóveda de la nota de préstamo colateralizada transferible. Un prestamista financia el préstamo en cripto (ETH, USDC, TON o USDT) y recibe una nota de deuda NFT transferible que paga a quien la posea."
         },
         {
-          "title": "Comienza a transaccionar",
-          "description": "Empieza a enviar y recibir con total confianza porque Shake es no custodial. Cuando quieras retirar, Coinbase Offramp te permite convertir cripto a moneda fiat. Shake nunca toca tus fondos durante este proceso."
+          "title": "Paga y negocia la nota",
+          "description": "El prestatario realiza pagos regulares al titular de la nota. Los titulares pueden conservarla hasta el vencimiento para cobrar rendimientos mensuales o negociar y transferir la nota de deuda en mercados secundarios en cualquier momento."
         }
       ]
     },
     "businessCustomerCards": {
       "business": {
-        "label": "Comerciante",
-        "headline": "Cobra con\nseguridad",
-        "description": "Escrow con plazo: Establece la duración de tu escrow (de 0 a 180 días), compártelo con tu comprador y recibe los fondos después de que finalice el período de escrow. Pon el período en 0 para una transferencia instantánea: igual obtendrás verificación de identidad, un acuerdo firmado y calificaciones del comprador.",
+        "label": "Prestatario",
+        "headline": "Pide prestado contra\nactivos verificados",
+        "description": "El prestatario acuña un NFT con fotos, descripciones y firma criptográfica. El NFT se custodia en la bóveda de préstamo no custodial como colateral mientras conservas la posesión física del activo. Recibe cripto directamente en tu billetera y realiza pagos amortizados regulares.",
         "button": "Saber más"
       },
       "customer": {
-        "label": "Comprador",
-        "headline": "Paga con\nuna red de seguridad",
-        "description": "Escrow con plazo: Deposita fondos en escrow a través de la app. Tu dinero se retiene de forma segura durante el período acordado. Si algo sale mal, puedes solicitar un reembolso antes de que se cierre la ventana.",
+        "label": "Prestamista y Titular",
+        "headline": "Nota de deuda\nnegociable en cadena",
+        "description": "Financia préstamos con colateral y recibe una nota de deuda NFT transferible que paga a quien la posea. El titular cobra pagos mensuales regulares de capital e intereses, con total libertad para negociar o transferir la nota en mercados secundarios. La nota de deuda retiene el colateral subyacente hasta el pago total.",
         "button": "Saber más"
       }
     },
     "marketplace": {
-      "eyebrow": "Mercado de Shake",
-      "headline": "Convierte tu anuncio en una oportunidad local",
-      "description": "Comparte anuncios en Shake Marketplace en Telegram, o pega cualquier anuncio de Craigslist o Facebook Marketplace en Shake o @ShakeDefiBot para invitar al vendedor a un trato seguro en custodia.",
-      "sellerBenefitTitle": "Llega a más compradores",
-      "sellerBenefit": "Comparte el anuncio que ya creaste con personas que buscan bienes y servicios en Telegram.",
-      "buyerBenefitTitle": "Pegar en custodia y descubrir",
-      "buyerBenefit": "Pega cualquier anuncio de Craigslist o Facebook en Shake o @ShakeDefiBot para iniciar un trato en custodia, o explora el canal de la comunidad.",
+      "eyebrow": "Mercado Shake y Tablero de Préstamos",
+      "headline": "Descubre operaciones con colateral y solicitudes de préstamo abiertas",
+      "description": "Comparte anuncios en Shake Marketplace en Telegram o explora solicitudes activas de préstamo. Los prestatarios publican solicitudes respaldadas por colateral NFT verificado y los prestamistas financian directamente notas de deuda negociables.",
+      "sellerBenefitTitle": "Para prestatarios",
+      "sellerBenefit": "Publica solicitudes de préstamo con colateral NFT verificado y tu código de referencia permanente de 3 palabras para conectar con prestamistas en Telegram y la Web.",
+      "buyerBenefitTitle": "Para prestamistas y titulares",
+      "buyerBenefit": "Explora solicitudes de préstamo abiertas, revisa la procedencia de los activos y títulos firmados, y financia préstamos respaldados por notas de deuda transferibles en cadena.",
       "learnMoreLabel": "Conoce el Mercado",
       "exploreLabel": "Explorar Mercado"
     }

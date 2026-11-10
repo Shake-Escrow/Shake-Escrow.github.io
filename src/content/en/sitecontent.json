@@ -52,7 +52,7 @@
   "home": {
     "hero": {
       "headline": "Shake on It.",
-      "subhead": "Smart-contract escrow that protects buyers and sellers on every crypto transaction — no banks, no middlemen, no waiting.",
+      "subhead": "Borrow crypto against verified assets you keep in hand, backed by a tradable on-chain debt note that pays whoever holds it — no banks, no middlemen, no margin calls.",
       "button": "Available Now",
       "availableNowHeading": "Available Now",
       "ctaLabel": "Free Download",
@@ -63,66 +63,66 @@
       "partnerLinkText": "crypto onramp/offramp partner"
     },
     "features": {
-      "headline": "Supercharge Your Payment\nwith Refundable Escrow",
+      "headline": "Collateralized Crypto Loans\nwith Tradable Debt Notes",
       "items": [
         {
-          "title": "Refundable\nescrow",
-          "description": "Shake uses a smart-contract escrow — like a neutral digital safe — that locks funds according to transparent rules on the Ethereum Base network. Shake never holds your money, and no one can move funds outside the agreed terms."
+          "title": "Keep Assets\nin Hand",
+          "description": "Borrow crypto without parting with your physical property or digital media. Your NFT is safely held in the non-custodial loan vault as collateral while you keep tangible items in hand."
         },
         {
-          "title": "Pay with any crypto you own",
-          "description": "Merchants set their preferred currency, but you can pay with what you have — including USDC, ETH, TON, USDT, Bitcoin, or Staked ETH. Use our built-in swapping to match what the merchant needs, seamlessly and securely."
+          "title": "Tradable\nDebt Note",
+          "description": "Every loan originates a transferable NFT debt note that pays whoever holds it. Note holders receive regular monthly payments of principal and interest, or can trade the note freely on secondary markets."
         },
         {
-          "title": "Trust transactions – and each other",
-          "description": "Every transaction is sealed with a signature, and every person has a reputation – so you can be confident that the person you're talking to is trustworthy."
+          "title": "No Margin Calls,\nFixed Amortization",
+          "description": "Loans use strictly level-payment monthly amortizing schedules over 1 to 60 months with zero price oracles and zero margin calls. Overpayments directly lower principal and cut total interest."
         },
         {
-          "title": "Convenience that Empowers",
-          "description": "Add product info right into your contract with AI tools. Each transaction's details provide a more complete picture of the exchange, and you can add as many images as you want."
+          "title": "Dual-Network\nParity",
+          "description": "Originate and repay on Ethereum Base (ETH and USDC) or TON (native TON and USDT Jetton). Both networks provide full functional parity with non-custodial vaults and tamper-proof legal proofs."
         }
       ]
     },
     "howToUse": {
-      "headline": "Getting Started is Easy",
-      "subhead": "Follow these simple steps to get started with Shake.",
+      "headline": "How Tradable Debt Notes Work",
+      "subhead": "From collateral minting to on-chain debt note trading in three simple steps.",
       "steps": [
         {
-          "title": "Create an account",
-          "description": "Create your account and complete the identity checks required for your transaction."
+          "title": "Mint collateral NFT",
+          "description": "The borrower mints an NFT representing verified tangible property or a digital image, complete with photos, description text, and an on-device cryptographic signature binding the legal ownership deed."
         },
         {
-          "title": "Add a payment method",
-          "description": "Fund your payments using crypto you already own, or use Coinbase Onramp to purchase crypto directly. Need a different currency? Our integrated swap feature lets you convert between supported cryptocurrencies."
+          "title": "Lock in vault & originate",
+          "description": "The NFT is held by the transferable collateral loan note vault. A lender funds the loan in crypto (ETH, USDC, TON, or USDT) and receives a transferable NFT debt note that pays whoever holds it."
         },
         {
-          "title": "Start transacting",
-          "description": "Begin sending and receiving with complete confidence because Shake is non-custodial. When you're ready to cash out, Coinbase Offramp lets you convert crypto back to fiat. Shake never touches your funds during this process."
+          "title": "Repay & trade note",
+          "description": "The borrower makes regular payments to the holder of the note. Note holders can hold to maturity to collect monthly yield or freely transfer and trade the debt note on secondary markets."
         }
       ]
     },
     "businessCustomerCards": {
       "business": {
-        "label": "Merchant",
-        "headline": "Get paid\nsecurely",
-        "description": "Timed escrow: Set your escrow duration (0–180 days), share it with your buyer, and receive funds after the escrow period ends. Set the period to 0 for an instant transfer — you'll still get identity verification, a signed agreement, and buyer ratings.",
+        "label": "Borrower",
+        "headline": "Borrow against\nverified assets",
+        "description": "The borrower mints an NFT with item photos, descriptions, and a cryptographic signature. The NFT is held by the non-custodial loan vault as collateral while you keep physical possession of the asset. Receive crypto directly to your wallet and make regular amortizing monthly payments.",
         "button": "Learn more"
       },
       "customer": {
-        "label": "Buyer",
-        "headline": "Pay with\na safety net",
-        "description": "Timed escrow: Deposit funds into escrow through the app. Your money is held securely for the agreed period. If something goes wrong, you can request a refund before the window closes.",
+        "label": "Lender & Note Holder",
+        "headline": "Tradable\non-chain debt note",
+        "description": "Fund collateralized loans and receive a transferable NFT debt note that pays whoever holds it. The note holder collects regular monthly payments of principal and interest, with full freedom to trade or transfer the note at any time on secondary markets. The debt note holds the underlying collateral until the loan is fully repaid.",
         "button": "Learn more"
       }
     },
     "marketplace": {
-      "eyebrow": "Shake Marketplace",
-      "headline": "Turn your listing into a local opportunity",
-      "description": "Share listings to the Shake Marketplace on Telegram, or paste any listing from Craigslist or Facebook Marketplace into Shake or @ShakeDefiBot to invite the seller to a secure escrow deal.",
-      "sellerBenefitTitle": "Reach more buyers",
-      "sellerBenefit": "Share the listing you already made with people looking for goods and services on Telegram.",
-      "buyerBenefitTitle": "Paste to Escrow & discover",
-      "buyerBenefit": "Paste any external marketplace listing into Shake or @ShakeDefiBot to start an escrow deal, or scroll the community channel feed.",
+      "eyebrow": "Shake Marketplace & Browse Board",
+      "headline": "Discover collateralized deals and open loan requests",
+      "description": "Share listings to the Shake Marketplace on Telegram or browse active open loan requests. Borrowers post requests backed by verified NFT collateral, and lenders fund tradable debt notes directly.",
+      "sellerBenefitTitle": "For borrowers",
+      "sellerBenefit": "Post loan requests using verified NFT collateral and your permanent 3-word reference code to connect with prospective lenders on Telegram and the Web.",
+      "buyerBenefitTitle": "For lenders & note holders",
+      "buyerBenefit": "Browse active loan requests, review public asset provenance and signed deeds, and fund loans backed by transferable on-chain debt notes.",
       "learnMoreLabel": "Learn about Marketplace",
       "exploreLabel": "Explore Marketplace"
     }

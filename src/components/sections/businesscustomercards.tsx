@@ -23,7 +23,7 @@ const BusinessCustomerCards: React.FC = () => {
     <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">
       {siteContent.home.businessCustomerCards.business.description}
     </p>
-    <Link to="/get-paid">
+    <Link to="/nft">
       <Button size="md" variant="secondary" className="self-start rounded-full py-3 px-8 text-lg mb-4">
         {siteContent.home.businessCustomerCards.business.button}
       </Button>
@@ -34,7 +34,7 @@ const BusinessCustomerCards: React.FC = () => {
           <div className="h-full w-full">
             <img 
               src="/images/iStock-1266980652.png"
-              alt="Business Bitcoin Solutions"
+              alt="Borrower collateral solutions"
               className="object-contain w-full h-full"
             />
           </div>
@@ -53,7 +53,7 @@ const BusinessCustomerCards: React.FC = () => {
     <p className="text-description mb-6 text-[#2d3440] opacity-90 font-body">
       {siteContent.home.businessCustomerCards.customer.description}
     </p>
-    <Link to="/send-payments">
+    <Link to="/nft">
       <Button size="md" variant="secondary" className="self-start rounded-full py-3 px-8 text-lg mb-4">
         {siteContent.home.businessCustomerCards.customer.button}
       </Button>
@@ -64,7 +64,7 @@ const BusinessCustomerCards: React.FC = () => {
           <div className="h-full w-full">
             <img 
               src="/images/iStock-1360028311.png" 
-              alt="Customer Bitcoin Solutions" 
+              alt="Tradable debt note solutions" 
               className="object-cover w-full h-full"
             />
           </div>

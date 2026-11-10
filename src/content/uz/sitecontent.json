@@ -52,7 +52,7 @@
   "home": {
     "hero": {
       "headline": "Qo'l siqdik!",
-      "subhead": "Har bir kripto operatsiyada xaridor va sotuvchini himoya qiluvchi smart-kontrakt eskrou — banklarsiz, vositachilarsiz, kutishlarsiz.",
+      "subhead": "O'z qo'lingizda qoladigan tasdiqlangan aktivlar evaziga kripto qarz oling — uni ushlab turgan har qanday shaxsga to'lov keltiruvchi, zanjirdagi savdosi mumkin bo'lgan qarz vekseli bilan ta'minlangan — banklarsiz, vositachilarsiz, marja chaqiruvlarisiz.",
       "button": "Hozir mavjud",
       "availableNowHeading": "Hozir mavjud",
       "ctaLabel": "Bepul yuklab olish",
@@ -63,66 +63,66 @@
       "partnerLinkText": "kripto onramp/offramp hamkori"
     },
     "features": {
-      "headline": "Toʻlovingizni qaytariladigan eskrou bilan kuchaytiring",
+      "headline": "Garovli kripto kreditlar va\nsavdosi mumkin bo'lgan qarz veksellari",
       "items": [
         {
-          "title": "Qaytariladigan\neskrou",
-          "description": "Shake — neytral raqamli seyf kabi ishlaydigan smart-kontrakt eskroudan foydalanadi, u mablagʻlarni Ethereum Base tarmogʻidagi shaffof qoidalarga muvofiq bloklab qoʻyadi. Shake hech qachon sizning pulingizni saqlamaydi va hech kim mablagʻlarni kelishilgan shartlardan tashqarida koʻchira olmaydi."
+          "title": "Aktivlaringiz o'zingizda\nqoladi",
+          "description": "Moddiy mulkingiz yoki raqamli mediaingizni topshirmasdan kripto qarz oling. Moddiy buyumlar o'zingizda qolgan holda, NFT garov sifatida saqlashsiz smart-kontrakt omborida xavfsiz saqlanadi."
         },
         {
-          "title": "Sizda mavjud boʻlgan istalgan kripto bilan toʻlang",
-          "description": "Sotuvchilar oʻzlari xohlagan valyutani belgilaydi, lekin siz oʻzingizda mavjud boʻlgan mablagʻ — jumladan USDC, ETH, TON, USDT, Bitcoin yoki Staked ETH bilan toʻlashingiz mumkin. Sotuvchiga kerakli valyutaga moslashish uchun bizning oʻrnatilgan svop funksiyamizdan qulay va xavfsiz foydalaning."
+          "title": "Savdosi mumkin bo'lgan\nqarz vekseli",
+          "description": "Har bir kredit uni ushlab turgan shaxsga to'lov keltiradigan o'tkaziluvchi NFT qarz vekselini yaratadi. Veksel egalari asosiy qarz va foizlar bo'yicha muntazam oylik to'lovlarni oladi yoki ikkilamchi bozorda erkin savdo qilishi mumkin."
         },
         {
-          "title": "Tranzaksiyalarga – va bir-biringizga ishoning",
-          "description": "Har bir tranzaksiya imzo bilan tasdiqlanadi va har bir foydalanuvchining obroʻ-reytingi mavjud – shuning uchun siz suhbatlashayotgan odamning ishonchli ekanligiga amin boʻlishingiz mumkin."
+          "title": "Marja chaqiruvlarisiz,\nbelgilangan amortizatsiya",
+          "description": "Kreditlar narx orakullarisiz va marja chaqiruvlarisiz 1 oydan 60 oygacha qat'iy teng to'lovli oylik amortizatsiya jadvalidan foydalanadi. Ortiqcha to'lovlar to'g'ridan-to'g'ri asosiy qarzni kamaytiradi va umumiy foizni qisqartiradi."
         },
         {
-          "title": "Imkoniyat beruvchi qulaylik",
-          "description": "Sun'iy intellekt vositalari yordamida mahsulot maʼlumotlarini toʻgʻridan-toʻgʻri shartnomangizga qoʻshing. Har bir tranzaksiya tafsilotlari almashuv haqida toʻliqroq tasavvur beradi va siz istalgancha rasm qoʻshishingiz mumkin."
+          "title": "Ikki tarmoqda\nteng imkoniyat",
+          "description": "Ethereum Base (ETH va USDC) yoki TON (asosiy TON va USDT Jetton) tarmoqlarida kredit oling va to'lang. Ikkala tarmoq ham saqlashsiz omborlar va o'zgartirib bo'lmaydigan huquqiy dalillar bilan to'liq funksional tenglikni ta'minlaydi."
         }
       ]
     },
     "howToUse": {
-      "headline": "Boshlash oson",
-      "subhead": "Shake bilan ishni boshlash uchun quyidagi oddiy qadamlarni bajaring.",
+      "headline": "Savdosi mumkin bo'lgan qarz veksellari qanday ishlaydi",
+      "subhead": "Garov NFT zarb qilishdan to zanjirdagi qarz vekseli savdosigacha uch oddiy qadamda.",
       "steps": [
         {
-          "title": "Hisob yarating",
-          "description": "Hisob yarating va bitimingiz uchun kerakli shaxsni tasdiqlash tekshiruvlaridan o‘ting."
+          "title": "Garov NFT zarb qiling",
+          "description": "Qarz oluvchi tasdiqlangan moddiy mulk yoki raqamli tasvir uchun rasmlar, tavsif matni va qonuniy mulkchilik shartnomasini bog'lovchi qurilmadagi kriptografik imzo bilan NFT zarb qiladi."
         },
         {
-          "title": "Toʻlov usulini qoʻshing",
-          "description": "Toʻlovlaringizni allaqachon mavjud boʻlgan kripto bilan toʻldiring yoki Coinbase Onramp orqali toʻgʻridan-toʻgʻri kripto sotib oling. Boshqa valyuta kerakmi? Bizning integratsiyalashgan svop funksiyamiz qoʻllab-quvvatlanadigan kriptovalyutalar oʻrtasida almashtirish imkonini beradi."
+          "title": "Omborga bloklang va kredit oling",
+          "description": "NFT o'tkaziluvchi garov kredit vekseli omborida xavfsiz saqlanadi. Qarz beruvchi kreditni kriptoda (ETH, USDC, TON yoki USDT) moliyalashtiradi va uni ushlab turgan shaxsga to'lov keltiradigan o'tkaziluvchi NFT qarz vekselini oladi."
         },
         {
-          "title": "Tranzaksiyalarni boshlang",
-          "description": "Shake mablagʻlarni saqlamagani uchun toʻliq ishonch bilan yuborish va qabul qilishni boshlang. Pulni yechib olishga tayyor boʻlganingizda, Coinbase Offramp kriptoni qaytadan fiat valyutaga aylantirish imkonini beradi. Bu jarayon davomida Shake hech qachon mablagʻlaringizga tegmaydi."
+          "title": "To'lang va veksel savdosini qiling",
+          "description": "Qarz oluvchi veksel egasiga muntazam to'lovlarni amalga oshiradi. Veksel egalari oylik daromad olish uchun uni to'lov muddatigacha saqlashi yoki ikkilamchi bozorda istalgan vaqtda erkin o'tkazishi va savdo qilishi mumkin."
         }
       ]
     },
     "businessCustomerCards": {
       "business": {
-        "label": "Sotuvchi",
-        "headline": "Xavfsiz\ntoʻlov oling",
-        "description": "Muddatli eskrou: Eskrou muddatini belgilang (0–180 kun), uni xaridoringiz bilan baham koʻring va eskrou muddati tugagach mablagʻlarni oling. Muddatni 0 ga oʻrnatib, tezkor oʻtkazma qiling — baribir shaxsni tasdiqlash, imzolangan kelishuv va xaridor reytinglariga ega boʻlasiz.",
+        "label": "Qarz oluvchi",
+        "headline": "Tasdiqlangan aktivlar\nevaziga qarz oling",
+        "description": "Qarz oluvchi rasmlar, tavsiflar va kriptografik imzo bilan NFT zarb qiladi. Siz aktivga egalik qilishni saqlab qolganingizda, NFT garov sifatida saqlashsiz kredit omborida saqlanadi. Hamyoningizga to'g'ridan-to'g'ri kripto oling va muntazam amortizatsiya to'lovlarini amalga oshiring.",
         "button": "Batafsil"
       },
       "customer": {
-        "label": "Xaridor",
-        "headline": "Xavfsizlik tarmogʻi\nbilan toʻlang",
-        "description": "Muddatli eskrou: Ilova orqali mablagʻlarni eskrouga joylashtiring. Pulingiz kelishilgan muddat davomida xavfsiz saqlanadi. Agar biror narsa notoʻgʻri ketsa, muddat tugashidan oldin pulni qaytarishni soʻrashingiz mumkin.",
+        "label": "Qarz beruvchi va Veksel egasi",
+        "headline": "Savdosi mumkin bo'lgan\nzanjirdagi qarz vekseli",
+        "description": "Garovli kreditlarni moliyalashtiring va uni ushlab turgan har qanday shaxsga to'lov keltiruvchi o'tkaziluvchi NFT qarz vekselini oling. Veksel egasi asosiy qarz va foizlar bo'yicha muntazam oylik to'lovlarni oladi hamda istalgan vaqtda ikkilamchi bozorda vekselni erkin savdo qilishi yoki o'tkazishi mumkin.",
         "button": "Batafsil"
       }
     },
     "marketplace": {
-      "eyebrow": "Shake Marketplace",
-      "headline": "Eʼloningizni mahalliy imkoniyatga aylantiring",
-      "description": "Eʼlonlarni Telegram'dagi Shake Marketplace'da ulashing yoki Craigslist yoxud Facebook Marketplace'dagi istalgan eʼlonni Shake yoki @ShakeDefiBot'ga joylashtirib sotuvchini xavfsiz eskrou bitimiga taklif qiling.",
-      "sellerBenefitTitle": "Koʻproq xaridorga yeting",
-      "sellerBenefit": "Allaqachon yaratgan eʼloningizni tovar va xizmat izlayotgan odamlar bilan Telegram'da baham koʻring.",
-      "buyerBenefitTitle": "Eskrouga joylashtirish va koʻrish",
-      "buyerBenefit": "Craigslist yoki Facebook'dagi istalgan eʼlon matnini Shake yoki @ShakeDefiBot'ga joylashtirib eskrou bitimini boshlang yoki hamjamiyat eʼlonlarini koʻrib chiqing.",
+      "eyebrow": "Shake bozori va Kreditlar doskasi",
+      "headline": "Garovli bitimlar va ochiq kredit so'rovlarini kashf eting",
+      "description": "Eʼlonlarni Telegram'dagi Shake Marketplace'da ulashing yoki faol ochiq kredit so'rovlarini koʻrib chiqing. Qarz oluvchilar tasdiqlangan NFT garovi bilan so'rovlar joylashtiradi, qarz beruvchilar esa savdosi mumkin bo'lgan qarz veksellarini to'g'ridan-to'g'ri moliyalashtiradi.",
+      "sellerBenefitTitle": "Qarz oluvchilar uchun",
+      "sellerBenefit": "Telegram va Vebda potentsial qarz beruvchilar bilan bog'lanish uchun tasdiqlangan NFT garovi va doimiy 3 so'zli havola kodingizdan foydalanib kredit so'rovlarini joylashtiring.",
+      "buyerBenefitTitle": "Qarz beruvchilar va veksel egalari uchun",
+      "buyerBenefit": "Faol kredit so'rovlarini ko'rib chiqing, ochiq aktivlar manbai va imzolangan hujjatlarni tekshiring hamda zanjirdagi o'tkaziluvchi qarz veksellari bilan ta'minlangan kreditlarni moliyalashtiring.",
       "learnMoreLabel": "Bozor haqida bilib oling",
       "exploreLabel": "Bozorni koʻrib chiqish"
     }

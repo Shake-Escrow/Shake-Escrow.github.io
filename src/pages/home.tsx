@@ -17,8 +17,8 @@ const Home: React.FC<HomeProps> = ({ platform, onPlatformChange }) => {
   return (
     <>
       <SEO
-        title="Shake Defi: Smart Contract Escrow"
-        description="Secure decentralized escrow payments for global transactions, peer-to-peer deals, and e-commerce with automated smart contracts."
+        title="Shake DeFi: Tradable Debt Notes & Collateralized NFT Lending"
+        description="Borrow crypto against verified assets you keep in hand, backed by a tradable on-chain debt note that pays whoever holds it — no banks, no middlemen, no margin calls."
         canonical="/"
       />
       <Hero platform={platform} onPlatformChange={onPlatformChange} />
