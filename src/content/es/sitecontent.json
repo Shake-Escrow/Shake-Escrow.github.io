@@ -111,8 +111,7 @@
       "customer": {
         "label": "Prestamista y Titular",
         "headline": "Nota de deuda\nnegociable en cadena",
-        "description": "Financia préstamos con colateral y recibe una nota de deuda NFT transferible que paga a quien la posea. El titular cobra pagos mensuales regulares de capital e intereses, con total libertad para negociar o transferir la nota en mercados secundarios. La nota de deuda retiene el colateral subyacente hasta el pago total.",
-        "button": "Saber más"
+        "description": "Financia préstamos con colateral y recibe una nota de deuda NFT transferible que paga a quien la posea. El titular cobra pagos mensuales regulares de capital e intereses, con total libertad para negociar o transferir la nota en mercados secundarios. La nota de deuda retiene el colateral subyacente hasta el pago total."
       }
     },
     "marketplace": {
@@ -128,6 +127,90 @@
     }
   },
   "marketplace": {
+    "seo": {
+      "title": "Mercados Shake | Pagarés de Deuda NFT y Mercado P2P",
+      "description": "Explora los Mercados de Pagarés de Deuda NFT de Shake (Web y Mini App de Telegram) o bienes y servicios P2P directos con escrow."
+    },
+    "pageHeader": {
+      "title": "Mercados de Shake",
+      "subtitle": "Elige entre los Mercados de Pagarés de Deuda NFT y bienes y servicios P2P directos.",
+      "tablistLabel": "Categorías de mercados de Shake"
+    },
+    "tabs": {
+      "debtNotes": "Pagarés NFT",
+      "p2p": "Mercado P2P"
+    },
+    "p2pPlatformNote": {
+      "text": "Los bienes y servicios directos con escrow están disponibles en Web, Telegram, iOS y Android. ¿Buscas financiar deuda mediante Pagarés NFT?",
+      "switchToDebtNotesCta": "Ver Mercados de Pagarés de Deuda NFT"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "Mercados de Pagarés de Deuda NFT",
+        "headline": "Financia deuda respaldada por NFT adquiriendo Pagarés transferibles",
+        "description": "Explora pagarés respaldados por NFT abiertos en Base y TON —ya sea financiando la solicitud de un prestatario o comprando un pagaré existente— y cobra pagos respaldados por garantías NFT verificadas.",
+        "webAppCta": "Abrir Mercados de Pagarés (Web)",
+        "telegramAppCta": "Abrir en Telegram Mini App"
+      },
+      "distinction": {
+        "badge": "Distinción Importante",
+        "title": "Comprar un Pagaré de Deuda NO es comprar el artículo directamente",
+        "body": "Al comprar o financiar un Pagaré de Deuda, adquieres el derecho en cadena del acreedor a cobrar los pagos del préstamo (capital más intereses) respaldado por el NFT en garantía; solo adquieres derechos sobre la garantía si el prestatario incumple. Para comprar bienes o servicios directamente, usa el Mercado P2P.",
+        "switchToP2pCta": "Cambiar al Mercado P2P"
+      },
+      "availability": {
+        "badge": "Disponibilidad de Plataforma",
+        "title": "Disponible solo en Web y Telegram Mini App",
+        "description": "Los Mercados de Pagarés de Deuda NFT están disponibles exclusivamente en la aplicación web de Shake y en Telegram Mini App. No están disponibles en las aplicaciones nativas de iOS o Android."
+      },
+      "benefits": [
+        {
+          "title": "Para Compradores de Pagarés (Prestamistas)",
+          "description": "Financia deuda respaldada por NFT —ya sea financiando una nueva solicitud o comprando un pagaré existente— y cobra pagos de capital e intereses en cadena respaldados por NFTs de garantía verificados.",
+          "highlights": [
+            "Revisa PDFs verificados del NFT de Propiedad, saldo pendiente, TAE y calendario de pagos desde el inicio",
+            "Compra al precio solicitado o envía una oferta directamente desde tu billetera",
+            "Liquidación sin custodia en cadena en Base y TON"
+          ]
+        },
+        {
+          "title": "Para Prestatarios y Titulares de Pagarés",
+          "description": "Obtén liquidez sin vender tu artículo —pide prestado contra tu NFT de Propiedad verificado, o vende un pagaré que ya posees cuando necesites liquidez antes del vencimiento.",
+          "highlights": [
+            "Conserva la propiedad de tu artículo en garantía mientras pagas a tiempo",
+            "Los términos del prestatario permanecen fijos en cadena aunque el pagaré cambie de titular",
+            "Publica un pagaré activo en venta en cualquier momento mientras el préstamo esté al día"
+          ]
+        }
+      ],
+      "stepsHeading": "Cómo funcionan los Mercados de Pagarés de Deuda NFT",
+      "stepsDescription": "Verificación transparente de garantías y liquidación sin custodia en cadena.",
+      "steps": [
+        {
+          "title": "Inspecciona la garantía y los términos",
+          "description": "Revisa la documentación pública del NFT de Propiedad, el saldo pendiente, la tasa de interés (TAE) y el calendario de pagos antes de comprometer fondos."
+        },
+        {
+          "title": "Compra o haz una oferta",
+          "description": "Compra un pagaré abierto al precio solicitado o envía una oferta de préstamo con tu billetera Web o de Telegram (USDC, ETH, TON o USDT)."
+        },
+        {
+          "title": "Cobra cuotas o vende cuando quieras",
+          "description": "Recibe los pagos en cadena como titular del pagaré, mantenlo hasta su vencimiento o publícalo en venta antes de su liquidación."
+        }
+      ],
+      "openData": {
+        "badge": "Instantánea Pública del Mercado",
+        "title": "Pagarés y Solicitudes Abiertos (JSON de Instantánea del Mercado)",
+        "description": "Descarga un único JSON público de instantánea del mercado sin autenticación con todas las oportunidades abiertas de Pagarés de Deuda NFT.",
+        "downloadLabel": "Descargar JSON de Instantánea"
+      },
+      "trust": {
+        "title": "¿Listo para explorar los Pagarés de Deuda NFT?",
+        "description": "Accede a los Mercados de Pagarés de Deuda NFT desde tu navegador o dentro de Telegram. No disponible en las apps nativas de iOS o Android.",
+        "nftCtaLabel": "Conoce los NFT de Propiedad"
+      }
+    },
     "hero": {
       "badge": "Mercado Comunitario",
       "headline": "Encuentra compradores más allá de tus contactos",
@@ -191,6 +274,104 @@
     "howItWorksLabel": "Cómo funciona Shake"
   },
   "howItWorks": {
+    "seo": {
+      "title": "Cómo Funciona | Pagarés Negociables y Escrow Inteligente",
+      "description": "Aprende cómo funciona Shake DeFi: financia o pide prestado contra NFTs de Propiedad verificados con Pagarés Negociables en Web y Telegram, o protege pagos P2P con escrow."
+    },
+    "pageHeader": {
+      "title": "Cómo Funciona Shake",
+      "subtitle": "Dos formas de usar Shake DeFi: Pagarés de Deuda respaldados por NFT negociables y pagos protegidos con escrow inteligente.",
+      "tablistLabel": "Guías de productos de Shake"
+    },
+    "tabs": {
+      "debtNotes": "Pagarés Negociables",
+      "escrow": "Escrow Inteligente"
+    },
+    "escrowTabNote": {
+      "text": "El escrow mediante contrato inteligente para bienes y servicios directos está disponible en Web, Telegram, iOS y Android. ¿Buscas aprender cómo funcionan los Pagarés de Deuda NFT?",
+      "switchToDebtNotesCta": "Ver Pagarés Negociables"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "Pagarés de Deuda Negociables",
+        "headline": "Cómo Funcionan los Pagarés de Deuda Respaldados por NFT",
+        "description": "Pide cripto prestado contra un NFT de Propiedad verificado sin vender tu artículo, o financia la deuda de otra persona adquiriendo un Pagaré transferible que paga capital e intereses directamente en cadena.",
+        "browseMarketsCta": "Explorar Mercados de Pagarés",
+        "webAppCta": "Abrir App Web",
+        "telegramAppCta": "Abrir en Telegram Mini App"
+      },
+      "distinction": {
+        "badge": "Pagaré vs. Compra Directa",
+        "title": "Un Pagaré financia deuda — NO es una venta del artículo",
+        "body": "Adquirir un Pagaré de Deuda te otorga el derecho en cadena del acreedor a cobrar los pagos programados del préstamo respaldado por un NFT de garantía verificado. Los derechos sobre la garantía solo se transfieren al titular del pagaré si el prestatario incumple tras el período de subsanación. Para comprar o vender bienes y servicios directamente, usa el Escrow Inteligente.",
+        "switchToEscrowCta": "Ver cómo funciona el Escrow Inteligente"
+      },
+      "availability": {
+        "badge": "Disponibilidad de Plataforma",
+        "title": "Solo en Web y Telegram Mini App",
+        "description": "Los Pagarés de Deuda Negociables están disponibles exclusivamente en la aplicación web de Shake y en Telegram Mini App. No están disponibles en las aplicaciones nativas de iOS o Android."
+      },
+      "stepsHeading": "De activo verificado a Pagaré negociable en 4 pasos",
+      "stepsDescription": "Contratos inteligentes sin custodia en Ethereum Base y TON hacen cumplir cada pago, transferencia y regla de garantía automáticamente.",
+      "steps": [
+        {
+          "title": "Verifica y compromete un NFT de Propiedad",
+          "description": "Un prestatario acuña un NFT de Propiedad firmado que documenta un artículo físico o activo digital con fotos, detalles y prueba criptográfica. El NFT se guarda en un contrato inteligente sin custodia mientras el prestatario conserva la posesión física de su artículo."
+        },
+        {
+          "title": "Financia la deuda y recibe el Pagaré",
+          "description": "Un prestamista revisa la documentación pública del NFT de Propiedad, el saldo pendiente o monto del préstamo, la tasa de interés (TAE) y el calendario de pagos, y luego financia la deuda en ETH, USDC, TON o USDT. A cambio, el contrato inteligente emite un NFT Pagaré de Deuda transferible que representa el derecho a cobrar los pagos."
+        },
+        {
+          "title": "Pagos mensuales fijos fluyen en cadena",
+          "description": "El prestatario paga capital e intereses en un calendario mensual fijo (de 1 a 60 meses) sin oráculos de precios ni llamadas de margen. Cada pago se dirige automáticamente en cadena a quien posea el Pagaré en ese momento, y los pagos adicionales reducen directamente el capital."
+        },
+        {
+          "title": "Conserva al vencimiento, vende cuando quieras o reclama en incumplimiento",
+          "description": "El titular puede conservar el Pagaré para cobrar cada cuota, o venderlo y transferirlo a otro comprador en cualquier momento sin cambiar los términos bloqueados del prestatario. Al liquidarse por completo, el NFT de garantía vuelve al prestatario; si el prestatario incumple tras el plazo de gracia, el titular actual puede reclamar el NFT de garantía."
+        }
+      ],
+      "rolesHeading": "Diseñado para ambos lados del pagaré",
+      "rolesDescription": "Reglas transparentes ejecutadas por código para prestatarios, prestamistas y titulares de pagarés.",
+      "roles": [
+        {
+          "label": "Para Prestatarios",
+          "title": "Obtén liquidez sin vender tu artículo",
+          "description": "Conserva la posesión física de tu activo mientras tu NFT de Propiedad verificado sirve como garantía dentro de un contrato inteligente sin custodia. Tu tasa de interés y calendario de pagos mensuales permanecen bloqueados, incluso si el Pagaré cambia de titular.",
+          "imageAlt": "Prestatario comprometiendo un NFT de Propiedad verificado como garantía mientras conserva la posesión física del artículo",
+          "ctaLabel": "Conoce los NFT de Propiedad"
+        },
+        {
+          "label": "Para Prestamistas y Titulares",
+          "title": "Financia deuda con liquidez integrada",
+          "description": "Ya sea financiando la solicitud de un prestatario o comprando un Pagaré existente, los pagos programados llegan directamente a tu billetera en cadena. ¿Necesitas liquidez antes del vencimiento? Publica tu Pagaré activo en venta en cualquier momento mientras el préstamo esté al día.",
+          "imageAlt": "Pagaré de Deuda NFT transferible en cadena que dirige los pagos del prestatario al titular actual",
+          "ctaLabel": "Explorar Mercados de Pagarés"
+        }
+      ],
+      "protectionsHeading": "Protecciones integradas en cadena",
+      "protections": [
+        {
+          "title": "Contratos Inteligentes sin Custodia",
+          "description": "Shake DeFi nunca retiene fondos de prestatarios ni NFTs de garantía. Los contratos inteligentes en Ethereum Base y TON custodian el NFT de garantía y enrutan los pagos automáticamente."
+        },
+        {
+          "title": "Sin Oráculos ni Llamadas de Margen",
+          "description": "Los pagos siguen un calendario mensual de cuota fija sin liquidaciones repentinas por precios de mercado. Los prestatarios pueden pagar por adelantado para reducir capital e intereses totales."
+        },
+        {
+          "title": "Términos del Prestatario Bloqueados",
+          "description": "Un Pagaré de Deuda se puede vender o transferir en cualquier momento, y los pagos futuros siguen automáticamente al nuevo titular, mientras que la tasa, el saldo y el calendario del prestatario nunca cambian."
+        }
+      ],
+      "cta": {
+        "header": "¿Listo para explorar los Pagarés Negociables?",
+        "subhead": "Revisa oportunidades abiertas, documentos verificados de NFT de Propiedad y calendarios de pagos en la aplicación web de Shake o en Telegram Mini App. No disponible en apps nativas de iOS o Android.",
+        "browseMarketsButton": "Explorar Mercados de Pagarés",
+        "webAppButton": "Abrir App Web",
+        "telegramButton": "Abrir en Telegram Mini App"
+      }
+    },
     "hero": {
       "headline": "Cómo el Sistema de Pago de Shake Te Mantiene Seguro, Literalmente"
     },

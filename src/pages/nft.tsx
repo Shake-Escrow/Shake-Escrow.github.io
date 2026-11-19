@@ -231,15 +231,22 @@ const Nft: React.FC = () => {
               {/* Card Header Info */}
               {activeAssetTab === 'physical' ? (
                 <div>
-                  <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-700/80 pb-5 mb-5">
-                    <div>
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold border border-emerald-500/30">
-                        <CheckCircle2 className="w-3.5 h-3.5" />
-                        <span>{content.interactivePreview.physical.badge}</span>
+                  <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-700/80 pb-5 mb-5">
+                    <div className="flex items-center gap-4 min-w-0">
+                      <img
+                        src="/images/nft-deed-watch-card.jpg"
+                        alt="Illustrated NFT deed with legal terms above vintage watch photo"
+                        className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border border-white/10 shrink-0 shadow-md"
+                      />
+                      <div className="min-w-0">
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold border border-emerald-500/30">
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          <span>{content.interactivePreview.physical.badge}</span>
+                        </div>
+                        <h4 className="font-display text-lg sm:text-2xl font-bold text-white mt-1.5">
+                          {content.interactivePreview.physical.assetName}
+                        </h4>
                       </div>
-                      <h4 className="font-display text-lg sm:text-2xl font-bold text-white mt-1.5">
-                        {content.interactivePreview.physical.assetName}
-                      </h4>
                     </div>
 
                     <div className="flex items-center gap-2">
@@ -328,15 +335,22 @@ const Nft: React.FC = () => {
               ) : (
                 /* Digital Image Asset Tab */
                 <div>
-                  <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gray-700/80 pb-5 mb-5">
-                    <div>
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 text-xs font-semibold border border-sky-500/30">
-                        <Sparkles className="w-3.5 h-3.5" />
-                        <span>{content.interactivePreview.digital.badge}</span>
+                  <div className="flex flex-wrap items-center justify-between gap-4 border-b border-gray-700/80 pb-5 mb-5">
+                    <div className="flex items-center gap-4 min-w-0">
+                      <img
+                        src="/images/nft-license-digital-card.jpg"
+                        alt="Illustrated Digital Image NFT with license terms above digital artwork"
+                        className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border border-white/10 shrink-0 shadow-md"
+                      />
+                      <div className="min-w-0">
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sky-500/20 text-sky-400 text-xs font-semibold border border-sky-500/30">
+                          <Sparkles className="w-3.5 h-3.5" />
+                          <span>{content.interactivePreview.digital.badge}</span>
+                        </div>
+                        <h4 className="font-display text-lg sm:text-2xl font-bold text-white mt-1.5">
+                          {content.interactivePreview.digital.assetName}
+                        </h4>
                       </div>
-                      <h4 className="font-display text-lg sm:text-2xl font-bold text-white mt-1.5">
-                        {content.interactivePreview.digital.assetName}
-                      </h4>
                     </div>
 
                     <div className="flex items-center gap-2">

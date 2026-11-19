@@ -138,7 +138,7 @@ From the Shake-MobileApp repository, run:
 node scripts/sync-nft-signing-legal.cjs
 ```
 
-That copies terms, privacy, licenses, and the company address into this site and into `Shake-MobileApp/assets/legaldocs`, and writes the Base contract addresses to `src/config/refundProtocolContracts.ts`. After an address change in `EvmSmartContracts.ts`, run the script again before publishing the website.
+That copies terms, privacy, licenses, and the company address into this site and into `Shake-MobileApp/assets/legaldocs`, copies `company-address.json` into `Shake-MessageHub/lib/module` for that repo's own deploy, and writes the Base contract addresses to `src/config/refundProtocolContracts.ts`. After an address change in `EvmSmartContracts.ts`, run the script again before publishing the website.
 
 ## Custom Scripts
 Add these to `package.json` (already included):

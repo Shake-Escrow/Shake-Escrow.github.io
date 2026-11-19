@@ -73,3 +73,29 @@ h1, h2, h3, h4, h5, h6, .font-display {
 .tos-content li {
   margin-bottom: 0.25rem;
 }
+
+/* Accessible single-row tablist & WCAG 1.4.1 non-color selection indicator */
+.marketplace-tablist,
+.page-tablist {
+  scrollbar-width: none;
+}
+.marketplace-tablist::-webkit-scrollbar,
+.page-tablist::-webkit-scrollbar {
+  display: none;
+}
+.marketplace-tab,
+.page-tab {
+  position: relative;
+}
+.marketplace-tab[aria-selected="true"]::after,
+.page-tab[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  border-block-end: 3px solid currentColor;
+}
+.marketplace-tab:focus-visible,
+.page-tab:focus-visible {
+  outline: 3px solid #2d3440;
+  outline-offset: 2px;
+}

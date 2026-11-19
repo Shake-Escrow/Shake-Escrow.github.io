@@ -14,6 +14,10 @@ const languages = [
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const [openDropdownIndex, setOpenDropdownIndex] = useState<number | null>(null);
+  const hoverPreviewIndexRef = useRef<number | null>(null);
+  const desktopNavRef = useRef<HTMLDivElement>(null);
+  const dropdownTriggerRefs = useRef<Record<number, HTMLButtonElement | null>>({});
   const languageRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const { locale, setLocale } = useLocale();
@@ -22,9 +26,20 @@ const Navbar: React.FC = () => {
   const selectedLanguage = languages.find((l) => l.locale === locale) ?? languages[0];
 
   useEffect(() => {
+    setOpenDropdownIndex(null);
+    hoverPreviewIndexRef.current = null;
+    setIsOpen(false);
+    setIsLanguageOpen(false);
+  }, [location.pathname, location.search]);
+
+  useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (languageRef.current && !languageRef.current.contains(event.target as Node)) {
         setIsLanguageOpen(false);
+      }
+      if (desktopNavRef.current && !desktopNavRef.current.contains(event.target as Node)) {
+        setOpenDropdownIndex(null);
+        hoverPreviewIndexRef.current = null;
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -36,6 +51,8 @@ const Navbar: React.FC = () => {
   const closeMenu = () => {
     setIsOpen(false);
     setIsLanguageOpen(false);
+    setOpenDropdownIndex(null);
+    hoverPreviewIndexRef.current = null;
   };
 
   const handleSelectLanguage = (lang: typeof languages[number]) => {
@@ -61,35 +78,103 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center space-x-4 xl:space-x-8">
-          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }) => {
+        <div ref={desktopNavRef} className="hidden lg:flex items-center space-x-4 xl:space-x-8">
+          {navItems.map((item: { title: string; path?: string; sublinks?: { title: string; path: string }[] }, idx: number) => {
             const isChildActive = item.sublinks?.some((sub) => location.pathname === sub.path);
+            const isDropdownOpen = openDropdownIndex === idx;
+            const submenuId = `nav-submenu-${idx}`;
             return item.sublinks ? (
-              <div key={item.title} className="relative group">
+              <div
+                key={item.title}
+                className="relative"
+                onPointerEnter={(e) => {
+                  if (
+                    e.pointerType !== 'touch' &&
+                    typeof window !== 'undefined' &&
+                    window.matchMedia('(hover: hover)').matches
+                  ) {
+                    hoverPreviewIndexRef.current = idx;
+                    setOpenDropdownIndex(idx);
+                    setIsLanguageOpen(false);
+                  }
+                }}
+                onPointerLeave={() => {
+                  if (hoverPreviewIndexRef.current === idx) {
+                    hoverPreviewIndexRef.current = null;
+                    setOpenDropdownIndex((current) => (current === idx ? null : current));
+                  }
+                }}
+                onBlur={(e) => {
+                  if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
+                    hoverPreviewIndexRef.current = null;
+                    setOpenDropdownIndex((current) => (current === idx ? null : current));
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Escape' && isDropdownOpen) {
+                    e.preventDefault();
+                    hoverPreviewIndexRef.current = null;
+                    setOpenDropdownIndex(null);
+                    dropdownTriggerRefs.current[idx]?.focus();
+                  }
+                }}
+              >
                 <button
-                  className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center font-body flex items-center gap-1 ${
-                    isChildActive ? 'bg-[#e6e9ed] shadow-sm text-secondary-dark' : 'hover:border-accent'
+                  ref={(el) => {
+                    dropdownTriggerRefs.current[idx] = el;
+                  }}
+                  type="button"
+                  aria-expanded={isDropdownOpen}
+                  aria-controls={submenuId}
+                  onClick={() => {
+                    if (hoverPreviewIndexRef.current === idx) {
+                      hoverPreviewIndexRef.current = null;
+                      setOpenDropdownIndex(idx);
+                      return;
+                    }
+                    setIsLanguageOpen(false);
+                    setOpenDropdownIndex((current) => (current === idx ? null : idx));
+                  }}
+                  className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center font-body flex items-center gap-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
+                    isChildActive || isDropdownOpen
+                      ? 'bg-[#e6e9ed] shadow-sm text-secondary-dark'
+                      : 'hover:border-accent'
                   }`}
                 >
-                  {item.title}
-                  <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180" />
+                  <span>{item.title}</span>
+                  <ChevronDown
+                    size={16}
+                    aria-hidden="true"
+                    className={`transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
+                  />
                 </button>
-                <div className="absolute left-1/2 -translate-x-1/2 pt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 z-50">
+                <div
+                  id={submenuId}
+                  hidden={!isDropdownOpen}
+                  className="absolute left-1/2 -translate-x-1/2 pt-2 w-48 z-50"
+                >
                   <div className="rounded-3xl border border-gray-200 bg-white shadow-xl ring-1 ring-black/5 overflow-hidden py-2 mt-1">
-                    {item.sublinks.map((subItem) => (
-                      <Link
-                        key={subItem.path}
-                        to={subItem.path}
-                        className={`block px-5 py-2.5 text-sm font-medium transition-colors duration-200 font-body ${
-                          location.pathname === subItem.path 
-                            ? 'bg-[#e6e9ed] text-secondary-dark' 
-                            : 'text-gray-700 hover:bg-gray-50'
-                        }`}
-                        onClick={closeMenu}
-                      >
-                        {subItem.title}
-                      </Link>
-                    ))}
+                    {item.sublinks.map((subItem) => {
+                      const isSubActive = location.pathname === subItem.path;
+                      return (
+                        <Link
+                          key={subItem.path}
+                          to={subItem.path}
+                          aria-current={isSubActive ? 'page' : undefined}
+                          className={`block px-5 py-2.5 text-sm font-medium transition-colors duration-200 font-body focus:outline-none focus-visible:bg-gray-100 ${
+                            isSubActive
+                              ? 'bg-[#e6e9ed] text-secondary-dark font-semibold border-l-4 border-secondary-dark pl-4'
+                              : 'text-gray-700 hover:bg-gray-50'
+                          }`}
+                          onClick={(e) => {
+                            (e.currentTarget as HTMLElement).blur();
+                            closeMenu();
+                          }}
+                        >
+                          {subItem.title}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -97,6 +182,8 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.path}
                 to={item.path!}
+                aria-current={location.pathname === item.path ? 'page' : undefined}
+                onClick={closeMenu}
                 className={`font-medium text-base px-4 py-1 rounded-full transition-colors duration-200 relative border border-transparent text-center ${location.pathname === item.path ? 'bg-[#e6e9ed] shadow-sm' : 'hover:border-accent'} font-body`}
               >
                 {item.title}

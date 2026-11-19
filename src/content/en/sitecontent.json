@@ -111,8 +111,7 @@
       "customer": {
         "label": "Lender & Note Holder",
         "headline": "Tradable\non-chain debt note",
-        "description": "Fund collateralized loans and receive a transferable NFT debt note that pays whoever holds it. The note holder collects regular monthly payments of principal and interest, with full freedom to trade or transfer the note at any time on secondary markets. The debt note holds the underlying collateral until the loan is fully repaid.",
-        "button": "Learn more"
+        "description": "Fund collateralized loans and receive a transferable NFT debt note that pays whoever holds it. The note holder collects regular monthly payments of principal and interest, with full freedom to trade or transfer the note at any time on secondary markets. The debt note holds the underlying collateral until the loan is fully repaid."
       }
     },
     "marketplace": {
@@ -128,6 +127,90 @@
     }
   },
   "marketplace": {
+    "seo": {
+      "title": "Shake Markets | NFT Debt Note Markets & P2P Marketplace",
+      "description": "Explore Shake's NFT Debt Note Markets (Web & Telegram Mini App) or direct P2P goods and services with smart-contract escrow."
+    },
+    "pageHeader": {
+      "title": "Shake Markets",
+      "subtitle": "Choose between NFT Debt Note Markets and direct P2P goods & services.",
+      "tablistLabel": "Shake market categories"
+    },
+    "tabs": {
+      "debtNotes": "NFT Debt Notes",
+      "p2p": "P2P Marketplace"
+    },
+    "p2pPlatformNote": {
+      "text": "Direct goods & services with escrow are available on Web, Telegram, iOS, and Android. Looking to fund debt via NFT Debt Notes instead?",
+      "switchToDebtNotesCta": "View NFT Debt Note Markets"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "NFT Debt Note Markets",
+        "headline": "Fund NFT-backed debt by acquiring transferable Debt Notes",
+        "description": "Browse open NFT-backed Debt Notes on Base and TON—whether funding a borrower's request or purchasing an existing note—and earn repayments backed by verified collateral NFTs.",
+        "webAppCta": "Open Debt Note Markets (Web)",
+        "telegramAppCta": "Open in Telegram Mini App"
+      },
+      "distinction": {
+        "badge": "Important Distinction",
+        "title": "Buying a Debt Note is NOT buying the item directly",
+        "body": "When you buy or fund a Debt Note, you acquire the lender's on-chain right to collect loan repayments (principal plus interest) backed by the borrower's collateral NFT—you only acquire collateral rights if the borrower defaults. To buy physical goods or services directly, use the P2P Marketplace.",
+        "switchToP2pCta": "Switch to P2P Marketplace"
+      },
+      "availability": {
+        "badge": "Platform Availability",
+        "title": "Available on Web & Telegram Mini App Only",
+        "description": "NFT Debt Note Markets are exclusively available in the Shake Web App and Telegram Mini App. They are not available on the iOS or Android native mobile apps."
+      },
+      "benefits": [
+        {
+          "title": "For Note Buyers (Lenders)",
+          "description": "Fund NFT-backed debt—whether funding a borrower's new request or buying an existing Debt Note—and collect on-chain principal and interest payments backed by verified collateral NFTs.",
+          "highlights": [
+            "Review verified Ownership NFT PDFs, remaining balance, APR, and payment schedule upfront",
+            "Buy at the asking price or submit an offer/bid directly from your wallet",
+            "Non-custodial on-chain settlement on Base and TON"
+          ]
+        },
+        {
+          "title": "For Borrowers & Note Holders",
+          "description": "Unlock liquidity without selling your item—borrow against your verified Ownership NFT, or sell a Debt Note you already hold whenever you want liquidity before maturity.",
+          "highlights": [
+            "Keep ownership of your pledged item while repaying on schedule",
+            "Borrower terms stay locked on-chain even if a Debt Note changes hands",
+            "List an active Debt Note for sale anytime while the loan is current"
+          ]
+        }
+      ],
+      "stepsHeading": "How NFT Debt Note Markets work",
+      "stepsDescription": "Transparent collateral verification and non-custodial on-chain settlement.",
+      "steps": [
+        {
+          "title": "Inspect Verified Collateral & Terms",
+          "description": "Review the public Ownership NFT documentation, remaining balance, interest rate (APR), and repayment schedule before committing funds."
+        },
+        {
+          "title": "Buy or Make an Offer",
+          "description": "Buy an open Debt Note at the asking price or submit a loan offer/bid using your Web or Telegram wallet (USDC, ETH, TON, or USDT)."
+        },
+        {
+          "title": "Collect Repayments or Sell Anytime",
+          "description": "Receive borrower installment payments on-chain as the note holder, hold to maturity, or list your Debt Note for sale before payoff."
+        }
+      ],
+      "openData": {
+        "badge": "Public Market Snapshot",
+        "title": "Open Debt Notes & Loan Requests (Market Snapshot JSON)",
+        "description": "Download a single public, unauthenticated market snapshot JSON of all currently open NFT Debt Note opportunities.",
+        "downloadLabel": "Download Market Snapshot JSON"
+      },
+      "trust": {
+        "title": "Ready to explore NFT Debt Notes?",
+        "description": "Access NFT Debt Note Markets directly from your browser or inside Telegram. Not available in the iOS or Android native apps.",
+        "nftCtaLabel": "Learn about Ownership NFTs"
+      }
+    },
     "hero": {
       "badge": "Community Marketplace",
       "headline": "Find buyers beyond your contacts",
@@ -191,6 +274,104 @@
     "howItWorksLabel": "How Shake works"
   },
   "howItWorks": {
+    "seo": {
+      "title": "How It Works | Tradable Debt Notes & Smart-Contract Escrow",
+      "description": "Learn how Shake DeFi works: fund or borrow against verified Ownership NFTs with tradable Debt Notes on Web & Telegram, or protect P2P payments with smart-contract escrow."
+    },
+    "pageHeader": {
+      "title": "How Shake Works",
+      "subtitle": "Two ways to use Shake DeFi: tradable NFT-backed Debt Notes and smart-contract payment escrow.",
+      "tablistLabel": "Shake product guides"
+    },
+    "tabs": {
+      "debtNotes": "Tradable Debt Notes",
+      "escrow": "Smart Escrow"
+    },
+    "escrowTabNote": {
+      "text": "Smart-contract escrow for direct goods and services is available on Web, Telegram, iOS, and Android. Looking to learn how NFT-backed Debt Notes work instead?",
+      "switchToDebtNotesCta": "View Tradable Debt Notes"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "Tradable Debt Notes",
+        "headline": "How Tradable NFT-Backed Debt Notes Work",
+        "description": "Borrow crypto against a verified Ownership NFT without selling your item, or fund someone else's debt by acquiring a transferable Debt Note that pays principal and interest directly on-chain.",
+        "browseMarketsCta": "Explore Debt Note Markets",
+        "webAppCta": "Open Web App",
+        "telegramAppCta": "Open in Telegram Mini App"
+      },
+      "distinction": {
+        "badge": "Debt Note vs. Direct Purchase",
+        "title": "A Debt Note funds debt — it is NOT an item sale",
+        "body": "Acquiring a Debt Note gives you the lender's on-chain right to collect scheduled loan repayments backed by a verified collateral NFT. Collateral rights only transfer to the note holder if the borrower defaults past the cure window. To buy or sell goods and services directly, use Smart-Contract Escrow.",
+        "switchToEscrowCta": "See how Smart-Contract Escrow works"
+      },
+      "availability": {
+        "badge": "Platform Availability",
+        "title": "Web & Telegram Mini App Only",
+        "description": "Tradable Debt Notes are available exclusively in the Shake Web App and Telegram Mini App. They are not available on the iOS or Android native mobile apps."
+      },
+      "stepsHeading": "From verified asset to tradable Debt Note in 4 steps",
+      "stepsDescription": "Non-custodial smart contracts on Ethereum Base and TON enforce every payment, transfer, and collateral rule automatically.",
+      "steps": [
+        {
+          "title": "Verify & Pledge an Ownership NFT",
+          "description": "A borrower mints a signed Ownership NFT documenting a physical item or digital asset with photos, details, and cryptographic proof. The NFT is held in a non-custodial smart contract while the borrower keeps physical possession of their item."
+        },
+        {
+          "title": "Fund the Debt & Receive the Debt Note",
+          "description": "A lender reviews the public Ownership NFT documentation, remaining balance or loan amount, interest rate (APR), and repayment schedule, then funds the debt in ETH, USDC, TON, or USDT. In return, the smart contract issues a transferable Debt Note NFT representing the right to receive repayments."
+        },
+        {
+          "title": "Fixed Monthly Repayments Flow On-Chain",
+          "description": "The borrower repays principal and interest on a fixed monthly schedule (1 to 60 months) with zero price oracles and zero margin calls. Every payment routes automatically on-chain to whoever currently holds the Debt Note, and extra payments reduce principal directly."
+        },
+        {
+          "title": "Hold to Maturity, Sell Anytime, or Claim on Default",
+          "description": "The note holder can hold the Debt Note to collect every payment, or sell and transfer it to another buyer anytime—without changing the borrower's locked terms. Once paid in full, the collateral NFT returns to the borrower; if the borrower defaults past the cure window, the current note holder can claim the collateral NFT."
+        }
+      ],
+      "rolesHeading": "Built for both sides of the note",
+      "rolesDescription": "Transparent rules enforced by code for borrowers, lenders, and note holders.",
+      "roles": [
+        {
+          "label": "For Borrowers",
+          "title": "Unlock liquidity without selling your item",
+          "description": "Keep physical possession of your asset while your verified Ownership NFT serves as collateral inside a non-custodial smart contract. Your interest rate and monthly payment schedule stay locked—even if the Debt Note changes hands.",
+          "imageAlt": "Borrower pledging a verified Ownership NFT as collateral while keeping physical possession of the item",
+          "ctaLabel": "Learn about Ownership NFTs"
+        },
+        {
+          "label": "For Lenders & Note Holders",
+          "title": "Fund debt with built-in liquidity",
+          "description": "Whether funding a borrower's request or buying an existing Debt Note, scheduled repayments route straight to your wallet on-chain. Need liquidity before maturity? List your active Debt Note for sale anytime while the loan is current.",
+          "imageAlt": "Transferable on-chain Debt Note NFT routing borrower repayments to the current note holder",
+          "ctaLabel": "Explore Debt Note Markets"
+        }
+      ],
+      "protectionsHeading": "Built-in on-chain safeguards",
+      "protections": [
+        {
+          "title": "Non-Custodial Smart Contracts",
+          "description": "Shake DeFi never holds borrower funds or collateral NFTs. Smart contracts on Ethereum Base and TON hold the collateral NFT and route repayments automatically."
+        },
+        {
+          "title": "No Oracles, No Margin Calls",
+          "description": "Repayments follow a fixed level-payment monthly schedule with no sudden price-feed liquidations. Borrowers can pay early to cut principal and total interest."
+        },
+        {
+          "title": "Locked Borrower Terms",
+          "description": "A Debt Note can be sold or transferred at any time, and future payments automatically follow the new holder—while the borrower's rate, balance, and schedule never change."
+        }
+      ],
+      "cta": {
+        "header": "Ready to explore Tradable Debt Notes?",
+        "subhead": "Review open opportunities, verified Ownership NFT documents, and repayment schedules in the Shake Web App or Telegram Mini App. Not available on iOS or Android native apps.",
+        "browseMarketsButton": "Explore Debt Note Markets",
+        "webAppButton": "Open Web App",
+        "telegramButton": "Open in Telegram Mini App"
+      }
+    },
     "hero": {
       "headline": "How Shake's Payment System Keeps You Safe, Literally"
     },

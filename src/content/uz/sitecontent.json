@@ -111,8 +111,7 @@
       "customer": {
         "label": "Qarz beruvchi va Veksel egasi",
         "headline": "Savdosi mumkin bo'lgan\nzanjirdagi qarz vekseli",
-        "description": "Garovli kreditlarni moliyalashtiring va uni ushlab turgan har qanday shaxsga to'lov keltiruvchi o'tkaziluvchi NFT qarz vekselini oling. Veksel egasi asosiy qarz va foizlar bo'yicha muntazam oylik to'lovlarni oladi hamda istalgan vaqtda ikkilamchi bozorda vekselni erkin savdo qilishi yoki o'tkazishi mumkin.",
-        "button": "Batafsil"
+        "description": "Garovli kreditlarni moliyalashtiring va uni ushlab turgan har qanday shaxsga to'lov keltiruvchi o'tkaziluvchi NFT qarz vekselini oling. Veksel egasi asosiy qarz va foizlar bo'yicha muntazam oylik to'lovlarni oladi hamda istalgan vaqtda ikkilamchi bozorda vekselni erkin savdo qilishi yoki o'tkazishi mumkin."
       }
     },
     "marketplace": {
@@ -128,6 +127,90 @@
     }
   },
   "marketplace": {
+    "seo": {
+      "title": "Shake Bozorlari | NFT Qarz Majburiyatnomalari va P2P Bozor",
+      "description": "Shake’ning NFT Qarz Majburiyatnomalari bozorlarini (Web va Telegram Mini App) yoki smart-kontrakt eskrou bilan to‘g‘ridan-to‘g‘ri P2P tovar va xizmatlarni kashf qiling."
+    },
+    "pageHeader": {
+      "title": "Shake Bozorlari",
+      "subtitle": "NFT Qarz Majburiyatnomalari bozorlari va to‘g‘ridan-to‘g‘ri P2P tovar va xizmatlar orasidan tanlang.",
+      "tablistLabel": "Shake bozor toifalari"
+    },
+    "tabs": {
+      "debtNotes": "NFT Qarz Bozorlari",
+      "p2p": "P2P Bozor"
+    },
+    "p2pPlatformNote": {
+      "text": "Eskrou himoyali to‘g‘ridan-to‘g‘ri tovar va xizmatlar Web, Telegram, iOS va Android’da mavjud. NFT Qarz Majburiyatnomalari orqali qarz moliyalashtirmoqchimisiz?",
+      "switchToDebtNotesCta": "NFT Qarz Majburiyatnomalari bozorlarini ko‘rish"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "NFT Qarz Majburiyatnomalari Bozorlari",
+        "headline": "O‘tkaziladigan Qarz Majburiyatnomalarini sotib olib, NFT garovli qarzni moliyalashtiring",
+        "description": "Base va TON tarmoqlaridagi ochiq NFT garovli qarz majburiyatnomalarini ko‘rib chiqing — qarz oluvchining so‘rovini moliyalashtiring yoki mavjud majburiyatnomani sotib oling — va tasdiqlangan garov NFT’lari bilan ta’minlangan to‘lovlarni oling.",
+        "webAppCta": "Qarz Bozorlarini Ochish (Web)",
+        "telegramAppCta": "Telegram Mini App’da Ochish"
+      },
+      "distinction": {
+        "badge": "Muhim Farq",
+        "title": "Qarz majburiyatnomasini sotib olish buyumni to‘g‘ridan-to‘g‘ri sotib olish EMAS",
+        "body": "Qarz majburiyatnomasini sotib olganingizda yoki moliyalashtirganingizda, siz garov NFT bilan ta’minlangan qarz to‘lovlarini (asosiy qarz va foizlar) olish huquqini qo‘lga kiritasiz — garovga bo‘lgan huquq faqat qarz oluvchi to‘lovni bajarmaganda yuzaga keladi. Tovar yoki xizmatlarni to‘g‘ridan-to‘g‘ri sotib olish uchun P2P Bozordan foydalaning.",
+        "switchToP2pCta": "P2P Bozorga o‘tish"
+      },
+      "availability": {
+        "badge": "Platforma Mavjudligi",
+        "title": "Faqat Web va Telegram Mini App’da mavjud",
+        "description": "NFT Qarz Majburiyatnomalari bozorlari faqat Shake Web ilovasi va Telegram Mini App’da ishlaydi. Ular iOS yoki Android ilovalarida mavjud emas."
+      },
+      "benefits": [
+        {
+          "title": "Majburiyatnoma xaridorlari (Qarz beruvchilar) uchun",
+          "description": "NFT bilan ta’minlangan qarzni moliyalashtiring — yangi qarz so‘rovini moliyalashtiring yoki mavjud majburiyatnomani sotib oling — va tasdiqlangan garov NFT’lari bilan ta’minlangan asosiy qarz hamda foiz to‘lovlarini blokcheynda oling.",
+          "highlights": [
+            "Tasdiqlangan Egalik NFT PDF’lari, qolgan qarz qoldig‘i, APR va to‘lov jadvalini oldindan ko‘ring",
+            "So‘ralgan narxda sotib oling yoki bevosita hamyoningizdan taklif yuboring",
+            "Base va TON’da kafil bo‘lmagan blokcheyn hisob-kitobi"
+          ]
+        },
+        {
+          "title": "Qarz oluvchilar va majburiyatnoma egalari uchun",
+          "description": "Buyumingizni sotmasdan likvidlik oling — tasdiqlangan Egalik NFT’ingiz garovi asosida qarz oling yoki qo‘lingizdagi qarz majburiyatnomasini muddatidan oldin soting.",
+          "highlights": [
+            "Jadval bo‘yicha to‘lar ekansiz, garovga qo‘yilgan buyumingizga egalikni saqlab qoling",
+            "Majburiyatnoma qo‘ldan-qo‘lga o‘tsa ham qarz oluvchi shartlari blokcheynda o‘zgarishsiz qoladi",
+            "Qarz joriy holatda ekan, faol majburiyatnomani istalgan vaqtda sotuvga qo‘ying"
+          ]
+        }
+      ],
+      "stepsHeading": "NFT Qarz Majburiyatnomalari bozorlari qanday ishlaydi",
+      "stepsDescription": "Garovni shaffof tekshirish va blokcheynda kafil bo‘lmagan hisob-kitob.",
+      "steps": [
+        {
+          "title": "Garov va shartlarni tekshiring",
+          "description": "Mablag‘ ajratishdan oldin ommaviy Egalik NFT hujjatlarini, qolgan qarz qoldig‘ini, foiz stavkasini (APR) va to‘lov jadvalini ko‘rib chiqing."
+        },
+        {
+          "title": "Sotib oling yoki taklif bering",
+          "description": "Ochiq qarz majburiyatnomasini so‘ralgan narxda sotib oling yoki Web yoxud Telegram hamyoningiz (USDC, ETH, TON yoki USDT) orqali qarz taklifi yuboring."
+        },
+        {
+          "title": "To‘lovlarni oling yoki istalgan vaqtda soting",
+          "description": "Majburiyatnoma egasi sifatida qarz oluvchining davriy to‘lovlarini blokcheynda qabul qiling, muddatigacha saqlang yoki yopilishidan oldin sotuvga qo‘ying."
+        }
+      ],
+      "openData": {
+        "badge": "Ommaviy Bozor Snapshot",
+        "title": "Ochiq Qarz Majburiyatnomalari va So‘rovlar (Bozor Snapshot JSON)",
+        "description": "Barcha hozirda ochiq NFT Qarz Majburiyatnomasi imkoniyatlarini o‘z ichiga olgan yagona ommaviy, autentifikatsiyasiz bozor snapshot JSON faylini yuklab oling.",
+        "downloadLabel": "Bozor Snapshot JSON yuklab olish"
+      },
+      "trust": {
+        "title": "NFT Qarz Majburiyatnomalarini ko‘rishga tayyormisiz?",
+        "description": "NFT Qarz Majburiyatnomalari bozorlariga brauzeringizdan yoki Telegram ichidan to‘g‘ridan-to‘g‘ri kiring. iOS yoki Android ilovalarida mavjud emas.",
+        "nftCtaLabel": "Egalik NFT’lari haqida bilib oling"
+      }
+    },
     "hero": {
       "badge": "Jamoat bozori",
       "headline": "Kontaktlaringizdan tashqarida xaridorlarni toping",
@@ -191,6 +274,104 @@
     "howItWorksLabel": "Shake qanday ishlaydi"
   },
   "howItWorks": {
+    "seo": {
+      "title": "Qanday Ishlaydi | Savdosi Mumkin Qarz Veksellari va Smart Eskrou",
+      "description": "Shake DeFi qanday ishlashini bilib oling: Web va Telegram’da tasdiqlangan Egalik NFT’lari asosida savdosi mumkin Qarz Veksellari bilan kredit oling yoki moliyalashtiring, yoxud P2P to‘lovlarni smart-kontrakt eskrou bilan himoya qiling."
+    },
+    "pageHeader": {
+      "title": "Shake Qanday Ishlaydi",
+      "subtitle": "Shake DeFi’dan foydalanishning ikki yo‘li: savdosi mumkin bo‘lgan NFT garovli Qarz Veksellari va smart-kontrakt to‘lov eskroui.",
+      "tablistLabel": "Shake mahsulot qo‘llanmalari"
+    },
+    "tabs": {
+      "debtNotes": "Qarz Veksellari",
+      "escrow": "Smart Eskrou"
+    },
+    "escrowTabNote": {
+      "text": "Tovar va xizmatlar uchun to‘g‘ridan-to‘g‘ri smart-kontrakt eskroui Web, Telegram, iOS va Android’da mavjud. NFT garovli Qarz Veksellari qanday ishlashini bilmoqchimisiz?",
+      "switchToDebtNotesCta": "Qarz Veksellarini ko‘rish"
+    },
+    "debtNotes": {
+      "hero": {
+        "badge": "Savdosi Mumkin Qarz Veksellari",
+        "headline": "NFT Garovli Savdosi Mumkin Qarz Veksellari Qanday Ishlaydi",
+        "description": "Buyumingizni sotmasdan tasdiqlangan Egalik NFT’i evaziga kripto qarz oling yoki asosiy qarz va foizlarni to‘g‘ridan-to‘g‘ri blokcheynda to‘laydigan o‘tkaziladigan Qarz Vekselini sotib olib boshqa birovning qarzini moliyalashtiring.",
+        "browseMarketsCta": "NFT Qarz Bozorlarini Ko‘rish",
+        "webAppCta": "Web Ilovani Ochish",
+        "telegramAppCta": "Telegram Mini App’da Ochish"
+      },
+      "distinction": {
+        "badge": "Qarz Vekseli va To‘g‘ridan-to‘g‘ri Xarid",
+        "title": "Qarz Vekseli qarzni moliyalashtiradi — bu buyum sotuvi EMAS",
+        "body": "Qarz Vekselini olish sizga tasdiqlangan garov NFT’i bilan ta’minlangan rejali qarz to‘lovlarini yig‘ish bo‘yicha qarz beruvchining blokcheyndagi huquqini beradi. Garovga bo‘lgan huquq faqat qarz oluvchi imtiyozli muddatdan keyin ham to‘lovni bajarmaganda veksel egasiga o‘tadi. Tovar va xizmatlarni to‘g‘ridan-to‘g‘ri sotib olish yoki sotish uchun Smart Eskroudan foydalaning.",
+        "switchToEscrowCta": "Smart Eskrou qanday ishlashini ko‘rish"
+      },
+      "availability": {
+        "badge": "Platforma Mavjudligi",
+        "title": "Faqat Web va Telegram Mini App’da",
+        "description": "Savdosi mumkin Qarz Veksellari faqat Shake Web ilovasi va Telegram Mini App’da mavjud. Ular iOS yoki Android mobil ilovalarida mavjud emas."
+      },
+      "stepsHeading": "Tasdiqlangan aktivdan savdosi mumkin Qarz Vekseligacha 4 qadamda",
+      "stepsDescription": "Ethereum Base va TON tarmoqlaridagi kafil bo‘lmagan smart-kontraktlar har bir to‘lov, o‘tkazma va garov qoidasini avtomatik bajaradi.",
+      "steps": [
+        {
+          "title": "Egalik NFT’ini tasdiqlang va garovga qo‘ying",
+          "description": "Qarz oluvchi rasmlar, tafsilotlar va kriptografik dalil bilan jismoniy buyum yoki raqamli aktivni hujjatlashtiruvchi imzolangan Egalik NFT’ini zarb qiladi. Qarz oluvchi o‘z buyumiga jismoniy egalikni saqlab qolgan holda, NFT kafil bo‘lmagan smart-kontraktda saqlanadi."
+        },
+        {
+          "title": "Qarzni moliyalashtiring va Qarz Vekselini oling",
+          "description": "Qarz beruvchi ommaviy Egalik NFT hujjatlarini, qolgan qoldiq yoki kredit summasini, foiz stavkasini (APR) va to‘lov jadvalini ko‘rib chiqadi, so‘ngra qarzni ETH, USDC, TON yoki USDT’da moliyalashtiradi. Buning evaziga smart-kontrakt to‘lovlarni olish huquqini bildiruvchi o‘tkaziladigan NFT Qarz Vekselini beradi."
+        },
+        {
+          "title": "Belgilangan oylik to‘lovlar blokcheynda oqadi",
+          "description": "Qarz oluvchi narx orakullarisiz va marja chaqiruvlarisiz belgilangan oylik jadval bo‘yicha (1 oydan 60 oygacha) asosiy qarz va foizlarni to‘laydi. Har bir to‘lov blokcheynda avtomatik ravishda o‘sha paytda Qarz Vekseli egasi bo‘lgan shaxsga yo‘naltiriladi va ortiqcha to‘lovlar asosiy qarzni to‘g‘ridan-to‘g‘ri kamaytiradi."
+        },
+        {
+          "title": "Muddatigacha saqlang, istalgan vaqtda soting yoki bajarilmasa garovni talab qiling",
+          "description": "Veksel egasi barcha to‘lovlarni yig‘ish uchun Qarz Vekselini saqlashi yoki qarz oluvchining belgilangan shartlarini o‘zgartirmagan holda uni istalgan vaqtda boshqa xaridorga sotishi va o‘tkazishi mumkin. To‘liq to‘langach, garov NFT’i qarz oluvchiga qaytadi; agar qarz oluvchi imtiyozli muddatdan keyin to‘lovni bajarmasa, joriy veksel egasi garov NFT’ini talab qilishi mumkin."
+        }
+      ],
+      "rolesHeading": "Vekselning har ikki tomoni uchun yaratilgan",
+      "rolesDescription": "Qarz oluvchilar, qarz beruvchilar va veksel egalari uchun kod bilan ta’minlanadigan shaffof qoidalar.",
+      "roles": [
+        {
+          "label": "Qarz Oluvchilar Uchun",
+          "title": "Buyumingizni sotmasdan likvidlik oling",
+          "description": "Tasdiqlangan Egalik NFT’ingiz kafil bo‘lmagan smart-kontrakt ichida garov sifatida xizmat qilar ekan, aktivingizga jismoniy egalikni saqlab qoling. Qarz Vekseli qo‘ldan-qo‘lga o‘tsa ham foiz stavkangiz va oylik to‘lov jadvalingiz o‘zgarishsiz qoladi.",
+          "imageAlt": "Buyumga jismoniy egalikni saqlagan holda tasdiqlangan Egalik NFT’ini garovga qo‘yayotgan qarz oluvchi",
+          "ctaLabel": "Egalik NFT’lari haqida bilib oling"
+        },
+        {
+          "label": "Qarz Beruvchilar va Veksel Egalari Uchun",
+          "title": "O‘rnatilgan likvidlik bilan qarzni moliyalashtiring",
+          "description": "Qarz oluvchining so‘rovini moliyalashtirasizmi yoki mavjud Qarz Vekselini sotib olasizmi, rejalashtirilgan to‘lovlar blokcheynda to‘g‘ridan-to‘g‘ri hamyoningizga keladi. Muddatidan oldin likvidlik kerakmi? Kredit joriy holatda ekan, faol Qarz Vekselingizni istalgan vaqtda sotuvga qo‘ying.",
+          "imageAlt": "Qarz oluvchining to‘lovlarini joriy veksel egasiga yo‘naltiruvchi blokcheyndagi o‘tkaziladigan NFT Qarz Vekseli",
+          "ctaLabel": "NFT Qarz Bozorlarini Ko‘rish"
+        }
+      ],
+      "protectionsHeading": "Blokcheyndagi o‘rnatilgan himoya mexanizmlari",
+      "protections": [
+        {
+          "title": "Kafil Bo‘lmagan Smart-Kontraktlar",
+          "description": "Shake DeFi hech qachon qarz oluvchi mablag‘larini yoki garov NFT’larini saqlamaydi. Ethereum Base va TON’dagi smart-kontraktlar garov NFT’ini saqlaydi va to‘lovlarni avtomatik yo‘naltiradi."
+        },
+        {
+          "title": "Orakullarsiz, Marja Chaqiruvlarisiz",
+          "description": "To‘lovlar to‘satdan narx bo‘yicha majburiy yopishlarsiz qat’iy teng to‘lovli oylik jadvalga amal qiladi. Qarz oluvchilar asosiy qarz va umumiy foizni kamaytirish uchun muddatidan oldin to‘lashlari mumkin."
+        },
+        {
+          "title": "O‘zgarmas Qarz Oluvchi Shartlari",
+          "description": "Qarz Vekseli istalgan vaqtda sotilishi yoki o‘tkazilishi mumkin va kelgusi to‘lovlar avtomatik ravishda yangi egaga o‘tadi — qarz oluvchining stavkasi, qoldig‘i va jadvali esa hech qachon o‘zgarmaydi."
+        }
+      ],
+      "cta": {
+        "header": "Savdosi Mumkin Qarz Veksellarini ko‘rishga tayyormisiz?",
+        "subhead": "Shake Web ilovasida yoki Telegram Mini App’da ochiq imkoniyatlar, tasdiqlangan Egalik NFT hujjatlari va to‘lov jadvallarini ko‘rib chiqing. iOS yoki Android ilovalarida mavjud emas.",
+        "browseMarketsButton": "NFT Qarz Bozorlarini Ko‘rish",
+        "webAppButton": "Web Ilovani Ochish",
+        "telegramButton": "Telegram Mini App’da Ochish"
+      }
+    },
     "hero": {
       "headline": "Shake toʻlov tizimi sizni qanday qilib, aynan, xavfsiz saqlaydi"
     },
