@@ -169,14 +169,6 @@ const Hero: React.FC<HeroProps> = ({ platform: controlledPlatform, onPlatformCha
                   )}
                 </span>
               </Button>
-              <a href="https://t.me/Shake_Marketplace" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="lg">
-                <span className="inline-flex items-center gap-2">
-                  {siteContent.home.hero.marketplaceCtaLabel}
-                  <FaTelegramPlane size={24} aria-hidden="true" />
-                </span>
-              </Button>
-              </a>
             </div>
           </div>
           

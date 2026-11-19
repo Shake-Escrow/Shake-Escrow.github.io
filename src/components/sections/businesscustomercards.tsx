@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Smartphone } from 'lucide-react';
 import Section from '../common/section';
 import Button from '../common/button';
 import { useContent } from '../../hooks/useContent';
@@ -38,6 +39,11 @@ const BusinessCustomerCards: React.FC = () => {
               className="object-contain w-full h-full"
             />
           </div>
+        </div>
+        {/* Platform Availability Note */}
+        <div className="w-full rounded-2xl border border-gray-200 bg-[#f7f9fb] px-6 py-4 flex items-center justify-center gap-2.5 text-center font-body text-sm sm:text-base font-medium text-[#2d3440]">
+          <Smartphone size={18} className="shrink-0 text-[#2d3440]" aria-hidden="true" />
+          <span>{siteContent.home.businessCustomerCards.availabilityNote}</span>
         </div>
         {/* Customer Card */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden">

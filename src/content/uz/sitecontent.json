@@ -108,6 +108,7 @@
         "description": "Qarz oluvchi rasmlar, tavsiflar va kriptografik imzo bilan NFT zarb qiladi. Siz aktivga egalik qilishni saqlab qolganingizda, NFT garov sifatida saqlashsiz kredit omborida saqlanadi. Hamyoningizga to'g'ridan-to'g'ri kripto oling va muntazam amortizatsiya to'lovlarini amalga oshiring.",
         "button": "Batafsil"
       },
+      "availabilityNote": "Qarz majburiyatnomalari faqat Shake Web ilovasi va Telegram Mini App’da mavjud — iOS va Android’da mavjud emas.",
       "customer": {
         "label": "Qarz beruvchi va Veksel egasi",
         "headline": "Savdosi mumkin bo'lgan\nzanjirdagi qarz vekseli",
@@ -218,7 +219,6 @@
     },
     "exploreLabel": "Bozorni koʻrib chiqish",
     "createListingLabel": "Eʼlon yaratish",
-    "botCtaLabel": "@ShakeDefiBot bilan muloqot",
     "preview": {
       "badge": "Jonli Telegram kanali",
       "headline": "Eʼlonlar xaridorlarga qanday koʻrinishini koʻring",

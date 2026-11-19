@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaTelegramPlane } from 'react-icons/fa';
 import { MapPin, Store } from 'lucide-react';
 import Button from '../common/button';
 import Section from '../common/section';
@@ -26,11 +25,6 @@ const MarketplaceSpotlight: React.FC = () => {
               <Link to="/marketplace">
                 <Button size="lg">{content.learnMoreLabel}</Button>
               </Link>
-              <a href="https://t.me/Shake_Marketplace" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" size="lg" className="border-white text-white hover:text-secondary-dark">
-                  <span className="inline-flex items-center gap-2"><FaTelegramPlane aria-hidden="true" />{content.exploreLabel}</span>
-                </Button>
-              </a>
             </div>
           </div>
           <div className="rounded-2xl bg-white p-6 text-secondary-dark shadow-xl">

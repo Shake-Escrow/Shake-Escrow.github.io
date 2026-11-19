@@ -445,14 +445,6 @@ const Marketplace: React.FC = () => {
                   </span>
                 </Button>
               </a>
-              <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button variant="outline" size="lg" fullWidth className="sm:w-auto min-h-[48px]">
-                  <span className="inline-flex items-center gap-2">
-                    <FaTelegramPlane aria-hidden="true" />
-                    {content.botCtaLabel || 'Chat with @ShakeDefiBot'}
-                  </span>
-                </Button>
-              </a>
               <a href={webAppRootUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button variant="outline" size="lg" fullWidth className="sm:w-auto min-h-[48px]">
                   {content.createListingLabel}
@@ -539,14 +531,6 @@ const Marketplace: React.FC = () => {
                         <span className="inline-flex items-center gap-2">
                           <FaTelegramPlane size={18} aria-hidden="true" />
                           <span>{content.exploreLabel}</span>
-                        </span>
-                      </Button>
-                    </a>
-                    <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                      <Button variant="outline" size="lg" fullWidth className="sm:w-auto shadow-sm hover:shadow-md">
-                        <span className="inline-flex items-center gap-2">
-                          <FaTelegramPlane size={18} aria-hidden="true" />
-                          <span>{content.botCtaLabel || 'Chat with @ShakeDefiBot'}</span>
                         </span>
                       </Button>
                     </a>
@@ -664,19 +648,6 @@ const Marketplace: React.FC = () => {
                   <span className="inline-flex items-center gap-2">
                     <FaTelegramPlane aria-hidden="true" />
                     {content.exploreLabel}
-                  </span>
-                </Button>
-              </a>
-              <a href="https://t.me/ShakeDefiBot" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  fullWidth
-                  className="sm:w-auto border-white text-white hover:text-secondary-dark hover:bg-white"
-                >
-                  <span className="inline-flex items-center gap-2">
-                    <FaTelegramPlane aria-hidden="true" />
-                    {content.botCtaLabel || 'Chat with @ShakeDefiBot'}
                   </span>
                 </Button>
               </a>

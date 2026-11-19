@@ -108,6 +108,7 @@
         "description": "El prestatario acuña un NFT con fotos, descripciones y firma criptográfica. El NFT se custodia en la bóveda de préstamo no custodial como colateral mientras conservas la posesión física del activo. Recibe cripto directamente en tu billetera y realiza pagos amortizados regulares.",
         "button": "Saber más"
       },
+      "availabilityNote": "Los pagarés de deuda están disponibles solo en la aplicación web de Shake y en Telegram Mini App — no están disponibles en iOS ni en Android.",
       "customer": {
         "label": "Prestamista y Titular",
         "headline": "Nota de deuda\nnegociable en cadena",
@@ -218,7 +219,6 @@
     },
     "exploreLabel": "Explorar Mercado",
     "createListingLabel": "Crear un Anuncio",
-    "botCtaLabel": "Chatear con @ShakeDefiBot",
     "preview": {
       "badge": "Canal en Vivo de Telegram",
       "headline": "Descubre cómo ven tus anuncios los compradores",

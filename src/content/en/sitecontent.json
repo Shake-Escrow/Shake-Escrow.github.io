@@ -108,6 +108,7 @@
         "description": "The borrower mints an NFT with item photos, descriptions, and a cryptographic signature. The NFT is held by the non-custodial loan vault as collateral while you keep physical possession of the asset. Receive crypto directly to your wallet and make regular amortizing monthly payments.",
         "button": "Learn more"
       },
+      "availabilityNote": "Debt notes are available on the Shake Web App and Telegram Mini App only — not available on iOS or Android.",
       "customer": {
         "label": "Lender & Note Holder",
         "headline": "Tradable\non-chain debt note",
@@ -218,7 +219,6 @@
     },
     "exploreLabel": "Explore Marketplace",
     "createListingLabel": "Create a Listing",
-    "botCtaLabel": "Chat with @ShakeDefiBot",
     "preview": {
       "badge": "Live Telegram Channel",
       "headline": "See how listings look to buyers",
