@@ -27,6 +27,8 @@ interface ProvisionResult {
   };
 }
 
+const PROVISIONING_SECRET_STORAGE_PREFIX = 'shake_provisioning_secret:';
+
 const Provision: React.FC = () => {
   const [merchantWallet, setMerchantWallet] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -34,6 +36,7 @@ const Provision: React.FC = () => {
   const [result, setResult] = useState<ProvisionResult | null>(null);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [generatedMnemonic, setGeneratedMnemonic] = useState<string | null>(null);
+  const [provisioningSecret, setProvisioningSecret] = useState<string | null>(null);
   const { locale } = useLocale();
   const siteContent = useContent('sitecontent');
   const ecommerce = siteContent.ecommerce;
@@ -49,6 +52,48 @@ const Provision: React.FC = () => {
     }
   }, [applicationId, navigate, result]);
 
+  useEffect(() => {
+    if (!applicationId) return;
+
+    const storageKey = `${PROVISIONING_SECRET_STORAGE_PREFIX}${applicationId}`;
+    const stateSecret = (location.state as { provisioningSecret?: string } | null)?.provisioningSecret;
+    const hashParams = new URLSearchParams(location.hash.replace(/^#/, ''));
+    const hashSecret = hashParams.get('provisioning_secret');
+
+    if (hashSecret) {
+      setProvisioningSecret(hashSecret);
+      try {
+        sessionStorage.setItem(storageKey, hashSecret);
+      } catch {
+        // Ignore storage errors if browser storage is restricted
+      }
+      navigate(`${location.pathname}${location.search}`, {
+        replace: true,
+        state: { provisioningSecret: hashSecret },
+      });
+      return;
+    }
+
+    if (stateSecret) {
+      setProvisioningSecret(stateSecret);
+      try {
+        sessionStorage.setItem(storageKey, stateSecret);
+      } catch {
+        // Ignore storage errors if browser storage is restricted
+      }
+      return;
+    }
+
+    try {
+      const storedSecret = sessionStorage.getItem(storageKey);
+      if (storedSecret) {
+        setProvisioningSecret(storedSecret);
+      }
+    } catch {
+      // Ignore storage errors if browser storage is restricted
+    }
+  }, [applicationId, location.hash, location.pathname, location.search, location.state, navigate]);
+
   const handleProvision = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
@@ -57,12 +102,17 @@ const Provision: React.FC = () => {
     try {
       const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
       const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
-      
+
+      const headers: Record<string, string> = {
+        'Content-Type': 'application/json',
+      };
+      if (provisioningSecret) {
+        headers['X-Provisioning-Secret'] = provisioningSecret;
+      }
+
       const response = await fetch(`${API_ENDPOINT}/v1/provision-full`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers,
         body: JSON.stringify({
           applicationId,
           merchantWalletInput: merchantWallet,
@@ -77,6 +127,14 @@ const Provision: React.FC = () => {
 
       if (data.success) {
         setResult(data);
+        setProvisioningSecret(null);
+        if (applicationId) {
+          try {
+            sessionStorage.removeItem(`${PROVISIONING_SECRET_STORAGE_PREFIX}${applicationId}`);
+          } catch {
+            // Ignore storage errors
+          }
+        }
       }
     } catch (err: any) {
       setError(err.message);

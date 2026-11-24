@@ -7,6 +7,8 @@ import { useContent } from '../hooks/useContent';
 
 export const secondaryColor = '#1184b0';
 
+const PROVISIONING_SECRET_STORAGE_PREFIX = 'shake_provisioning_secret:';
+
 const Ecommerce: React.FC = () => {
   const [accountName, setAccountName] = useState('');
   const [addressLine1, setAddressLine1] = useState('');
@@ -22,6 +24,7 @@ const Ecommerce: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [applicationId, setApplicationId] = useState<string | null>(null);
+  const [provisioningSecret, setProvisioningSecret] = useState<string | null>(null);
 
   const siteContent = useContent('sitecontent');
   const ecommerce = siteContent.ecommerce;
@@ -36,20 +39,26 @@ const Ecommerce: React.FC = () => {
   }, [applicationId]);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    let intervalId: ReturnType<typeof setInterval>;
 
     if (applicationId) {
       intervalId = setInterval(async () => {
         try {
           const rawEndpoint = import.meta.env.VITE_API_ENDPOINT || '';
           const API_ENDPOINT = rawEndpoint.replace(/\/api\/website\/?$/, '');
-          const response = await fetch(`${API_ENDPOINT}/v1/applications/${applicationId}`);
+          const response = await fetch(`${API_ENDPOINT}/v1/applications/status`, {
+            headers: {
+              'X-Application-Token': applicationId,
+            },
+          });
 
           if (response.ok) {
             const data = await response.json();
             if (data.emailVerified) {
               clearInterval(intervalId);
-              navigate(`/provision?application_id=${applicationId}`);
+              navigate(`/provision?application_id=${encodeURIComponent(applicationId)}`, {
+                state: provisioningSecret ? { provisioningSecret } : undefined,
+              });
             }
           }
         } catch (e) {
@@ -61,7 +70,7 @@ const Ecommerce: React.FC = () => {
     return () => {
       if (intervalId) clearInterval(intervalId);
     };
-  }, [applicationId, navigate]);
+  }, [applicationId, provisioningSecret, navigate]);
 
   const handleApplication = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -99,6 +108,17 @@ const Ecommerce: React.FC = () => {
 
       if (data.success) {
         setApplicationId(data.applicationId);
+        if (typeof data.provisioningSecret === 'string' && data.provisioningSecret) {
+          setProvisioningSecret(data.provisioningSecret);
+          try {
+            sessionStorage.setItem(
+              `${PROVISIONING_SECRET_STORAGE_PREFIX}${data.applicationId}`,
+              data.provisioningSecret
+            );
+          } catch {
+            // Ignore storage errors if browser storage is restricted
+          }
+        }
       }
     } catch (err: any) {
       setError(err.message);
