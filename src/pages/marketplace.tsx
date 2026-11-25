@@ -26,7 +26,7 @@ type MarketTab = 'debt-notes' | 'p2p';
 
 const DEBT_NOTES_BOARD_URL_BASE = 'https://app.shakedefi.com/support/nftLoan?tab=board';
 const TELEGRAM_MINI_APP_URL = 'https://t.me/ShakeDefiBot/app';
-const UNIFIED_LOAN_BOARD_JSON_URL = 'https://api.shake-defi.com/api/nft/loan-board/v1.json';
+const UNIFIED_LOAN_BOARD_JSON_URL = 'https://api.shake-defi.com/api/nft/shake-loan-board-v1.json';
 
 const Marketplace: React.FC = () => {
   const { locale } = useLocale();
