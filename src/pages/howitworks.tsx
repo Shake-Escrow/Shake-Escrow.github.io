@@ -110,10 +110,10 @@ const HowItWorks: React.FC = () => {
   return (
     <div className="pt-20 md:pt-24 bg-white">
       <SEO
-        title={content.seo?.title || 'How It Works | Tradable Debt Notes & Smart-Contract Escrow'}
+        title={content.seo?.title || 'How It Works | Tradable NFT Debt Notes & Smart-Contract Escrow'}
         description={
           content.seo?.description ||
-          'Learn how Shake DeFi works: borrow or fund verified Ownership NFTs with tradable Debt Notes on Web & Telegram, or protect P2P payments with smart-contract escrow.'
+          'Learn how tradable NFT-backed debt notes work on TON & Base: earn monthly yield with verified collateral and sell before maturity, borrow with no margin calls, or use P2P escrow.'
         }
         canonical="/how-it-works"
       />

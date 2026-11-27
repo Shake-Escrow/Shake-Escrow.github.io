@@ -24,6 +24,7 @@ const ROUTES = [
   '/provision',
   '/api-docs',
   '/marketplace',
+  '/nft',
   '/secure-payments'
 ];
 
@@ -85,6 +86,18 @@ async function prerender() {
         
         console.log(`✅ Generated ${routeFolder}/index.html and ${routeName}.html`);
       }
+
+      // Prerender '/' last because express.static and the SPA fallback serve dist/index.html for sub-routes
+      console.log('Prerendering /...');
+      await page.goto(`http://localhost:${PORT}/`, {
+        waitUntil: 'networkidle2',
+        timeout: 10000
+      }).catch(e => console.log('Navigation timeout hit, proceeding with extraction...'));
+
+      await new Promise(r => setTimeout(r, 2000));
+      const rootHtml = await page.content();
+      await fs.writeFile(path.join(DIST_DIR, 'index.html'), rootHtml);
+      console.log('✅ Generated dist/index.html');
 
       await browser.close();
       console.log('All routes prerendered successfully!');

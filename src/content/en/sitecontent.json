@@ -129,8 +129,8 @@
   },
   "marketplace": {
     "seo": {
-      "title": "Shake Markets | NFT Debt Note Markets & P2P Marketplace",
-      "description": "Explore Shake's NFT Debt Note Markets (Web & Telegram Mini App) or direct P2P goods and services with smart-contract escrow."
+      "title": "Shake Markets | Tradable NFT Debt Notes on TON & Base & P2P Escrow",
+      "description": "Browse tradable NFT-backed debt notes on TON & Base to earn fixed monthly yield in TON, USDT, USDC & ETH, or trade P2P goods and services with smart-contract escrow."
     },
     "pageHeader": {
       "title": "Shake Markets",
@@ -275,8 +275,8 @@
   },
   "howItWorks": {
     "seo": {
-      "title": "How It Works | Tradable Debt Notes & Smart-Contract Escrow",
-      "description": "Learn how Shake DeFi works: fund or borrow against verified Ownership NFTs with tradable Debt Notes on Web & Telegram, or protect P2P payments with smart-contract escrow."
+      "title": "How It Works | Tradable NFT Debt Notes & Smart-Contract Escrow",
+      "description": "Learn how tradable NFT-backed debt notes work on TON & Base: earn monthly yield with verified collateral and sell before maturity, borrow with no margin calls, or use P2P escrow."
     },
     "pageHeader": {
       "title": "How Shake Works",

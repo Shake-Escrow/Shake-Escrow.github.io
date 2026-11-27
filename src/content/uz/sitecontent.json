@@ -129,8 +129,8 @@
   },
   "marketplace": {
     "seo": {
-      "title": "Shake Bozorlari | NFT Qarz Majburiyatnomalari va P2P Bozor",
-      "description": "Shake’ning NFT Qarz Majburiyatnomalari bozorlarini (Web va Telegram Mini App) yoki smart-kontrakt eskrou bilan to‘g‘ridan-to‘g‘ri P2P tovar va xizmatlarni kashf qiling."
+      "title": "Shake Bozorlari | TON va Base’da Savdoli NFT Qarz Veksellari va P2P Eskrou",
+      "description": "TON, USDT, USDC va ETH’da belgilangan oylik daromad olish uchun TON va Base’dagi savdoli NFT garovli qarz majburiyatnomalarini ko‘rib chiqing yoki smart-kontrakt eskrou bilan P2P tovar va xizmatlar savdosini qiling."
     },
     "pageHeader": {
       "title": "Shake Bozorlari",
@@ -275,8 +275,8 @@
   },
   "howItWorks": {
     "seo": {
-      "title": "Qanday Ishlaydi | Savdosi Mumkin Qarz Veksellari va Smart Eskrou",
-      "description": "Shake DeFi qanday ishlashini bilib oling: Web va Telegram’da tasdiqlangan Egalik NFT’lari asosida savdosi mumkin Qarz Veksellari bilan kredit oling yoki moliyalashtiring, yoxud P2P to‘lovlarni smart-kontrakt eskrou bilan himoya qiling."
+      "title": "Qanday Ishlaydi | Savdoli NFT Qarz Veksellari va Smart Eskrou",
+      "description": "TON va Base’da savdoli NFT garovli qarz majburiyatnomalari qanday ishlashini bilib oling: tasdiqlangan garov bilan oylik daromad oling va muddatidan oldin soting, margin call’siz qarz oling yoki P2P eskroudan foydalaning."
     },
     "pageHeader": {
       "title": "Shake Qanday Ishlaydi",

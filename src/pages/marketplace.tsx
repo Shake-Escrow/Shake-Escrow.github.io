@@ -110,10 +110,10 @@ const Marketplace: React.FC = () => {
   return (
     <div className="pt-20 md:pt-24 bg-white">
       <SEO
-        title={content.seo?.title || 'Shake Markets | NFT Debt Note Markets & P2P Marketplace'}
+        title={content.seo?.title || 'Shake Markets | Tradable NFT Debt Notes on TON & Base & P2P Escrow'}
         description={
           content.seo?.description ||
-          'Explore Shake NFT Debt Note Markets (Web & Telegram Mini App) or direct P2P goods and services with smart-contract escrow.'
+          'Browse tradable NFT-backed debt notes on TON & Base to earn fixed monthly yield in TON, USDT, USDC & ETH, or trade P2P goods and services with smart-contract escrow.'
         }
         canonical="/marketplace"
       />

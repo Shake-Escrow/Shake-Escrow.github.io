@@ -129,8 +129,8 @@
   },
   "marketplace": {
     "seo": {
-      "title": "Mercados Shake | Pagarés de Deuda NFT y Mercado P2P",
-      "description": "Explora los Mercados de Pagarés de Deuda NFT de Shake (Web y Mini App de Telegram) o bienes y servicios P2P directos con escrow."
+      "title": "Mercados Shake | Pagarés NFT Negociables en TON y Base y Escrow P2P",
+      "description": "Explora pagarés de deuda respaldados por NFT negociables en TON y Base para obtener rendimiento mensual fijo en TON, USDT, USDC y ETH, o comercia bienes y servicios P2P con escrow inteligente."
     },
     "pageHeader": {
       "title": "Mercados de Shake",
@@ -275,8 +275,8 @@
   },
   "howItWorks": {
     "seo": {
-      "title": "Cómo Funciona | Pagarés Negociables y Escrow Inteligente",
-      "description": "Aprende cómo funciona Shake DeFi: financia o pide prestado contra NFTs de Propiedad verificados con Pagarés Negociables en Web y Telegram, o protege pagos P2P con escrow."
+      "title": "Cómo Funciona | Pagarés NFT Negociables y Escrow Inteligente",
+      "description": "Aprende cómo funcionan los pagarés de deuda respaldados por NFT en TON y Base: obtén rendimiento mensual con garantía verificada y vende antes del vencimiento, pide prestado sin margin calls o usa escrow P2P."
     },
     "pageHeader": {
       "title": "Cómo Funciona Shake",

@@ -114,8 +114,8 @@ const FAQ: React.FC = () => {
   return (
     <div className="pt-24">
       <SEO
-        title="Frequently Asked Questions - Shake Defi Escrow"
-        description="Find answers to common questions about smart contract escrow, NFTs, payment protection, fees, and dispute resolution."
+        title="FAQ: NFT Debt Notes, Ownership NFTs & Escrow | Shake DeFi"
+        description="Find answers to common questions about Shake DeFi tradable NFT-backed debt notes on TON & Base, repayments and yield, Ownership NFTs, smart-contract escrow, fees, and wallets."
         canonical="/faq"
       />
       <Section className="pb-0" bgColor="bg-white">

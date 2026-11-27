@@ -1,19 +1,24 @@
-# Shake Defi
+# Shake DeFi
 
-> Shake Defi provides smart-contract escrow for real-world crypto payments, helping buyers and merchants transact with verified identities, signed agreements, transparent fees, and non-custodial blockchain payment protection.
+> Shake DeFi is a non-custodial DeFi platform on TON and Ethereum Base featuring two core products:
+> 1. **Tradable NFT-Backed Debt Notes (TON & Base)**: Collateralized crypto loans backed by verified physical-asset or digital-image Ownership NFTs. Lenders and note buyers earn fixed monthly principal and interest payments (yield) in TON, USDT, USDC, or ETH, and can sell or transfer active notes on secondary markets before maturity. Borrowers keep physical possession of pledged items with fixed 1–60 month amortization, zero price oracles, and zero margin calls. Available on the Shake Web App and Telegram Mini App only (not iOS or Android native apps).
+> 2. **Smart-Contract Escrow & Ownership NFTs**: Non-custodial payment escrow (0.1%–1% fee) for P2P goods, services, and e-commerce, plus direct Ownership NFT minting and wallet-to-wallet NFT sales (0.1% fee).
 
 ## Key Pages
-- [Home](https://shakedefi.com/): Overview of Shake Defi's smart-contract escrow payment app and core benefits.
-- [How It Works](https://shakedefi.com/how-it-works): Explanation of Shake's non-custodial escrow process, payment release rules, refund path, and on-chain smart contract design on the Ethereum Base network.
-- [Get Paid](https://shakedefi.com/get-paid): Merchant-focused information about accepting crypto payments, fees, escrow periods, withdrawals, and payment flexibility.
+- [Home](https://shakedefi.com/): Overview of Shake DeFi's tradable NFT-backed debt notes on TON & Base, collateralized lending, and non-custodial smart-contract architecture.
+- [Shake Markets](https://shakedefi.com/marketplace): Explore NFT Debt Note Markets (Web & Telegram Mini App), including the public unauthenticated Market Snapshot JSON, and the P2P Marketplace with smart-contract escrow.
+- [How It Works](https://shakedefi.com/how-it-works): Step-by-step guide to Tradable NFT-Backed Debt Notes (collateral verification, funding, fixed monthly repayments, secondary trading, and default claims) and Smart-Contract Escrow.
+- [Physical Asset & Digital NFTs](https://shakedefi.com/nft): How to mint Ownership NFTs for real-world physical assets and digital images on Base (ERC-721) and TON, dual-layer privacy verification, and 0.1% direct sales.
+- [Secure Payments](https://shakedefi.com/secure-payments): Non-custodial smart-contract payment escrow for real-world commerce, vehicles, wholesale commodities, and services.
+- [Get Paid](https://shakedefi.com/get-paid): Merchant-focused information about accepting crypto payments, fees (0.1%–1%), escrow periods, withdrawals, and payment flexibility.
 - [Send Payments](https://shakedefi.com/send-payments): Buyer-focused information about paying through escrow, transaction documentation, reputation, privacy, and dispute protection.
-- [FAQ](https://shakedefi.com/faq): Common questions about escrow, supported crypto payments, fees, refunds, disputes, privacy, eligibility, and country availability.
+- [FAQ](https://shakedefi.com/faq): Common questions about Shake DeFi's escrow, Ownership NFTs, supported wallets and chains (TON & Base), fees, refunds, disputes, privacy, and country availability.
 - [E-Commerce Registration](https://shakedefi.com/e-commerce): Merchants can set up an account to use Shake's API to accept cryptocurrency in their own e-commerce storefront.
 
 ## Reference Documents
-- [White Paper](https://shakedefi.com/assets/shake_defi_whitepaper_v2-3.pdf): Technical and product background for Shake Defi.
+- [White Paper](https://shakedefi.com/assets/shake_defi_whitepaper_v2-3.pdf): Technical and product background for Shake DeFi.
 - [Privacy Policy](https://shakedefi.com/privacy-policy): Data handling, privacy, and user information practices.
-- [Terms of Service](https://shakedefi.com/terms-of-service): Terms governing use of Shake Defi services.
+- [Terms of Service](https://shakedefi.com/terms-of-service): Terms governing use of Shake DeFi services.
 - [End User License Agreement](https://shakedefi.com/end-user-license-agreement): App license terms for end users.
 
 ## Contact
